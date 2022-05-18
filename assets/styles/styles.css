@@ -1,0 +1,17 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import './_typography.css';
+@import './_code.css';
+@import './_tips.css';
+
+html,
+body,
+#__nuxt {
+  height: 100%;
+}
+
+body {
+  @apply bg-gray-100 dark:bg-gray-900 text-gray-200;
+}

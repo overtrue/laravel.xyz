@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "start": "node .output/server/index.mjs"
+  },
+  "devDependencies": {
+    "@nuxtjs/color-mode": "^3.0.2",
+    "@nuxtjs/supabase": "^0.1.7",
+    "@tailwindcss/line-clamp": "^0.3.1",
+    "autoprefixer": "^10.4.4",
+    "nuxt3": "^3.0.0-rc.3-27545866.cd37a21",
+    "postcss": "^8.4.12",
+    "tailwindcss": "^3.0.23"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.1",
+    "highlight.js": "^11.5.1",
+    "markdown-it": "^12.3.2",
+    "markdown-it-container": "^3.0.0",
+    "markdown-it-deflist": "^2.1.0",
+    "markdown-it-emoji": "^2.0.0",
+    "markdown-it-footnote": "^3.0.3",
+    "markdown-it-ins": "^3.0.1",
+    "markdown-it-sub": "^1.0.0",
+    "markdown-it-sup": "^1.0.0"
+  }
+}

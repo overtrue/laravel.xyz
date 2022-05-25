@@ -104,6 +104,38 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/nuxt/dist/head/runtime/composables.mjs ($id_04ea9504)
 // - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// - /node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs ($id_12ce52f3)
+// - /node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.mjs ($id_8f3d0953)
+// - /node_modules/@nuxt/content/dist/runtime/components/MarkdownRenderer.mjs ($id_4c793316)
+// - /node_modules/@nuxt/content/dist/runtime/components/ContentQuery.mjs ($id_3f801a38)
+// - /node_modules/nuxt/dist/app/compat/capi.mjs ($id_0c5717a4)
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs ($id_3d849a97)
+// - /node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs ($id_9fab5abb)
+// - /node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.mjs ($id_d2da4ccd)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseA.vue ($id_558bf79f)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseBlockquote.vue ($id_01e2b479)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue ($id_19429b58)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue ($id_fab9e310)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseEm.vue ($id_840411f2)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH1.vue ($id_b479ada6)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH2.vue ($id_9c1df7ff)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH3.vue ($id_f86082f5)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH4.vue ($id_7f627a67)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH5.vue ($id_caec80eb)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH6.vue ($id_26303ae9)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseHr.vue ($id_6f4fac0c)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseImg.vue ($id_f72b4351)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseLi.vue ($id_1b78ec5d)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseOl.vue ($id_2e24a6f5)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseP.vue ($id_0990778f)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseStrong.vue ($id_6d4c23c7)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTable.vue ($id_10f5aef2)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTbody.vue ($id_faffa2d8)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTd.vue ($id_b51a8b09)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTh.vue ($id_07608f57)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseThead.vue ($id_17b6f147)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTr.vue ($id_16f58501)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseUl.vue ($id_7728c86d)
 // - /node_modules/@vueuse/head/dist/index.mjs ($id_c032264e)
 // - /node_modules/nuxt/dist/head/runtime/lib/vueuse-head.plugin.mjs ($id_e6f12003)
 // - /node_modules/nuxt/dist/head/runtime/plugin.mjs ($id_a2650341)
@@ -134,8 +166,6 @@ __vite_ssr_exports__.default = (ctx) => entry(ctx);
 // - /plugins/dayjs.js ($id_e4088396)
 // - /plugins/markdown-it.js ($id_254393a2)
 // - /node_modules/nuxt/dist/app/components/nuxt-root.vue ($id_e9bfada3)
-// - /node_modules/nuxt/dist/app/compat/capi.mjs ($id_0c5717a4)
-// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs ($id_3d849a97)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-404.vue ($id_b90d4d0f)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-500.vue ($id_14c8b574)
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue ($id_bc2d74a1)
@@ -211,6 +241,9 @@ Object.defineProperty(__vite_ssr_exports__, "publicAssetsURL", { enumerable: tru
 // Parents: 
 // - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/paths.mjs ($id_946a6a82)
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
+// - /node_modules/@nuxt/content/dist/runtime/components/ContentQuery.mjs ($id_3f801a38)
+// - /node_modules/@nuxt/content/dist/runtime/composables/utils.mjs ($id_3db3e041)
+// - /node_modules/@nuxt/content/dist/runtime/composables/query.mjs ($id_47535763)
 // - /node_modules/nuxt/dist/pages/runtime/router.mjs ($id_a090977b)
 // Dependencies: 
 
@@ -243,16 +276,23 @@ import("file:///Users/overtrue/www/laravel.xyz/node_modules/ufo/dist/index.mjs")
 // - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
 // - /node_modules/nuxt/dist/head/runtime/composables.mjs ($id_04ea9504)
 // - /node_modules/nuxt/dist/app/plugins/preload.server.mjs ($id_9871bba0)
+// - /node_modules/@nuxt/content/dist/runtime/components/MarkdownRenderer.mjs ($id_4c793316)
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs ($id_3d849a97)
+// - /node_modules/@nuxt/content/dist/runtime/composables/utils.mjs ($id_3db3e041)
+// - /node_modules/@nuxt/content/dist/runtime/composables/query.mjs ($id_47535763)
+// - /node_modules/@nuxt/content/dist/runtime/composables/navigation.mjs ($id_e209d000)
 // - /node_modules/nuxt/dist/head/runtime/lib/vueuse-head.plugin.mjs ($id_e6f12003)
 // - /node_modules/nuxt/dist/head/runtime/plugin.mjs ($id_a2650341)
 // - /node_modules/nuxt/dist/pages/runtime/page.mjs ($id_5fc14cdc)
 // - /node_modules/nuxt/dist/pages/runtime/router.mjs ($id_a090977b)
+// - /pages/stars.vue?macro=true ($id_de6eeb3d)
 // - /pages/tips/:id.vue?macro=true ($id_b2d27d81)
+// - /pages/stars.vue ($id_765c962d)
 // - /pages/tips/:id.vue ($id_d4dd6cfe)
+// - /node_modules/@nuxt/content/dist/runtime/composables/web-socket.mjs ($id_575fe152)
 // - /plugins/dayjs.js ($id_e4088396)
 // - /plugins/markdown-it.js ($id_254393a2)
 // - /node_modules/nuxt/dist/app/components/nuxt-root.vue ($id_e9bfada3)
-// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs ($id_3d849a97)
 // Dependencies: 
 // - /node_modules/nuxt/dist/app/nuxt.mjs ($id_e069d411)
 // - /node_modules/nuxt/dist/app/composables/index.mjs ($id_b067a79a)
@@ -1082,6 +1122,9 @@ Object.defineProperty(__vite_ssr_exports__, "useLazyFetch", { enumerable: true, 
 // Request: /node_modules/ohash/dist/index.mjs
 // Parents: 
 // - /node_modules/nuxt/dist/app/composables/fetch.mjs ($id_41f5ae4e)
+// - /node_modules/@nuxt/content/dist/runtime/composables/query.mjs ($id_47535763)
+// - /node_modules/@nuxt/content/dist/runtime/composables/navigation.mjs ($id_e209d000)
+// - /node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.mjs ($id_d2da4ccd)
 // Dependencies: 
 
 // --------------------
@@ -1228,6 +1271,7 @@ import("file:///Users/overtrue/www/laravel.xyz/node_modules/h3/dist/index.mjs")
 // Request: /node_modules/destr/dist/index.mjs
 // Parents: 
 // - /node_modules/nuxt/dist/app/composables/cookie.mjs ($id_511b441d)
+// - /node_modules/@nuxt/content/dist/runtime/components/MarkdownRenderer.mjs ($id_4c793316)
 // Dependencies: 
 
 // --------------------
@@ -1372,6 +1416,10 @@ Object.defineProperty(__vite_ssr_exports__, "defineNuxtLink", { enumerable: true
 // Request: /node_modules/nuxt/dist/app/components/nuxt-link.mjs
 // Parents: 
 // - /node_modules/nuxt/dist/app/components/index.mjs ($id_161bfe9f)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseA.vue ($id_558bf79f)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH2.vue ($id_9c1df7ff)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH3.vue ($id_f86082f5)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH4.vue ($id_7f627a67)
 // - /components/StarCard.vue ($id_ce2fb5c2)
 // - /pages/tips/:id.vue?macro=true ($id_b2d27d81)
 // - /pages/tips/:id.vue ($id_d4dd6cfe)
@@ -1588,7 +1636,7 @@ const __vite_ssr_import_0__ = await __vite_ssr_import__("/assets/styles/styles.c
 
 // --------------------
 const $id_b69da117 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-__vite_ssr_exports__.default = "/*! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:\"\"}html{-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\";line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-size:100%;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]{display:none}*,:after,:before{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.absolute{position:absolute}.relative{position:relative}.right-2{right:.5rem}.top-2{top:.5rem}.m-0{margin:0}.m-2{margin:.5rem}.mx-auto{margin-left:auto;margin-right:auto}.my-4{margin-bottom:1rem;margin-top:1rem}.-mx-2{margin-left:-.5rem;margin-right:-.5rem}.mx-2{margin-left:.5rem;margin-right:.5rem}.-mx-4{margin-left:-1rem;margin-right:-1rem}.mx-8{margin-left:2rem;margin-right:2rem}.my-0{margin-bottom:0;margin-top:0}.my-6{margin-bottom:1.5rem;margin-top:1.5rem}.mt-8{margin-top:2rem}.mt-3{margin-top:.75rem}.mt-2{margin-top:.5rem}.mt-4{margin-top:1rem}.mb-0{margin-bottom:0}.mt-6{margin-top:1.5rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-full{height:100%}.h-52{height:13rem}.h-32{height:8rem}.h-6{height:1.5rem}.h-8{height:2rem}.h-16{height:4rem}.h-screen{height:100vh}.w-64{width:16rem}.w-32{width:8rem}.w-6{width:1.5rem}.w-8{width:2rem}.w-full{width:100%}.max-w-3xl{max-width:48rem}.flex-1{flex:1 1 0%}.border-collapse{border-collapse:collapse}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.list-disc{list-style-type:disc}.auto-rows-auto{grid-auto-rows:auto}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-6{gap:1.5rem}.space-x-1>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-left:calc(.25rem*(1 - var(--tw-space-x-reverse)));margin-right:calc(.25rem*var(--tw-space-x-reverse))}.space-x-2>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-left:calc(.5rem*(1 - var(--tw-space-x-reverse)));margin-right:calc(.5rem*var(--tw-space-x-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-bottom:calc(.5rem*var(--tw-space-y-reverse));margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)))}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-bottom:calc(1.5rem*var(--tw-space-y-reverse));margin-top:calc(1.5rem*(1 - var(--tw-space-y-reverse)))}.space-x-4>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-left:calc(1rem*(1 - var(--tw-space-x-reverse)));margin-right:calc(1rem*var(--tw-space-x-reverse))}.overflow-hidden{overflow:hidden}.rounded-lg{border-radius:.5rem}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.rounded{border-radius:.25rem}.rounded-bl-none{border-bottom-left-radius:0}.border{border-width:1px}.border-transparent{border-color:transparent}.border-gray-400{--tw-border-opacity:1;border-color:rgb(156 163 175/var(--tw-border-opacity))}.bg-gray-200{--tw-bg-opacity:1;background-color:rgb(229 231 235/var(--tw-bg-opacity))}.bg-gray-600{--tw-bg-opacity:1;background-color:rgb(75 85 99/var(--tw-bg-opacity))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246/var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-indigo-800{--tw-bg-opacity:1;background-color:rgb(55 48 163/var(--tw-bg-opacity))}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity))}.fill-current{fill:currentColor}.object-cover{-o-object-fit:cover;object-fit:cover}.p-6{padding:1.5rem}.p-2{padding:.5rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-4{padding-left:1rem;padding-right:1rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.py-8{padding-bottom:2rem;padding-top:2rem}.py-4{padding-bottom:1rem;padding-top:1rem}.px-2{padding-left:.5rem;padding-right:.5rem}.py-1{padding-bottom:.25rem;padding-top:.25rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.text-center{text-align:center}.align-bottom{vertical-align:bottom}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xs{font-size:.75rem;line-height:1rem}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.font-semibold{font-weight:600}.font-bold{font-weight:700}.font-medium{font-weight:500}.uppercase{text-transform:uppercase}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.tracking-widest{letter-spacing:.1em}.text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235/var(--tw-text-opacity))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99/var(--tw-text-opacity))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55/var(--tw-text-opacity))}.opacity-25{opacity:.25}.shadow{--tw-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color),0 1px 2px -1px var(--tw-shadow-color)}.shadow,.shadow-sm{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-text-decoration-color,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-text-decoration-color,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,fill,stroke,-webkit-text-decoration-color;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,-webkit-text-decoration-color;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-200{transition-duration:.2s}.line-clamp-2{-webkit-line-clamp:2}.line-clamp-2,.line-clamp-3{-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}.line-clamp-3{-webkit-line-clamp:3}.line-clamp-5{-webkit-box-orient:vertical;-webkit-line-clamp:5;display:-webkit-box;overflow:hidden}article h1,article h2,article h3,article h4,article h5,article h6{font-weight:500;margin-bottom:.75em}article h2,article h3{margin-top:2em}article h4{margin-top:1.5em}article h1{font-size:2em;letter-spacing:-1px;line-height:1.125em;margin-bottom:.65em}@media (min-width:768px){article h1{font-size:2.2em}}@media (min-width:1024px){article h1{font-size:2.6em}}@media (min-width:1280px){article h1{font-size:3em}}@media (min-width:1536px){article h1{font-size:3.5em}}article h2{font-weight:400;letter-spacing:-.5px;line-height:1.125em}@media (min-width:768px){article h2{font-size:2.25em}}@media (min-width:1024px){article h2{font-size:3em}}article h3{letter-spacing:-.33px;line-height:1.25em}@media (min-width:640px){article h3{font-size:1.75em}}@media (min-width:768px){article h3{font-size:2em}}article h4{font-weight:400;letter-spacing:-.25px}@media (min-width:640px){article h4{font-size:1.5em}}article h5{color:#374151;font-size:.95em;font-weight:700;line-height:1.666em}@media (min-width:640px){article h5{font-size:1.125em}}article h6{color:#4b5563;font-size:.875em;font-weight:500}article a{position:relative;text-decoration:none;transition:all .3s ease}article a.learn_more{color:#dc2626;font-weight:500}article a.learn_more span{display:inline-block;transition:transform .3s ease}article a.learn_more:hover span{transform:translateX(.5em)}article p{font-size:1em;line-height:1.666em}article p strong{font-weight:500}article p.small{font-size:.75em;line-height:1.714em}@media (min-width:768px){article p{font-size:1.125em}article p.small{font-size:.875em}}article p{--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity))}@media (prefers-color-scheme:dark){article p{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}}article p+pre{margin-top:0}article ol,article p,article pre,article ul{margin-bottom:1.5em}article ol a,article p a,article pre a,article ul a{color:#dc2626;text-decoration:underline;word-break:break-word}article ol a:hover,article p a:hover,article pre a:hover,article ul a:hover{color:darken(#dc2626,10%)}article blockquote p,article q{quotes:\"“\" \"”\" \"‘\" \"’\"}@media (min-width:640px){article blockquote{margin-left:0;margin-right:0}}article span.small_text{color:#374151;display:block;font-size:.625em;line-height:1.4em}article label,article span.label{display:block;font-size:.625em;letter-spacing:2.5px;line-height:1.4em;margin-bottom:.875em;opacity:.4;text-transform:uppercase}article code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace;font-size:.875em;line-height:1.714em}article :not(pre)>code{background:#f9fafb;color:#991b1b;padding:0 .25em}:not(pre)>code{word-wrap:normal;background:none;border-radius:.125rem;color:#111827;display:inline-flex;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;max-width:100%;overflow-x:auto;padding:0 .125rem;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;vertical-align:middle;white-space:pre;word-break:normal;word-spacing:normal}@media (prefers-color-scheme:dark){:not(pre)>code{--tw-bg-opacity:1;--tw-text-opacity:1;background-color:rgb(75 85 99/var(--tw-bg-opacity));color:rgb(220 38 38/var(--tw-text-opacity))}}pre{word-wrap:normal;--tw-bg-opacity:1;background-color:rgb(75 85 99/var(--tw-bg-opacity));border-radius:.5rem;box-shadow:0 1px 1px rgb(0 0 0/8%);margin-bottom:1rem;margin-top:1rem;overflow-x:auto;padding-right:1rem;padding:1rem;position:relative;-moz-tab-size:4;-o-tab-size:4;tab-size:4;white-space:pre;word-break:normal;word-spacing:normal}.code-block-wrapper .copyBtn{--tw-text-opacity:1;color:rgb(229 231 235/var(--tw-text-opacity));opacity:.25;outline:2px solid transparent;outline-offset:2px;position:absolute;right:.5rem;top:.5rem}.code-block-wrapper .copyBtn:hover{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity));opacity:1}pre .copyBtn:active,pre .copyBtn:focus,pre .copyBtn:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity));outline:2px solid transparent;outline-offset:2px}pre code.torchlight{--tw-bg-opacity:1!important;background-color:rgb(75 85 99/var(--tw-bg-opacity))!important;display:block;min-width:-webkit-max-content;min-width:-moz-max-content;min-width:max-content;padding-bottom:1rem;padding-top:1rem}pre code.torchlight .line{padding-left:1rem;padding-right:1rem}.callout p{margin-bottom:0}article a[name]{display:block;position:relative;top:-45px;visibility:hidden}article table{border-collapse:collapse;font-size:13px;margin-bottom:2em;width:100%}article table td,article table th{border:1px solid #d1d5db;padding:10px;text-align:left}article table th{font-size:16px}@media (min-width:640px){article a[name]{display:block;position:relative;top:-30px;visibility:hidden}}article .page_title{display:none}article h1{font-size:2.5em;letter-spacing:0}article h2{font-size:1.75em;letter-spacing:0}article h3{font-size:1.25em}article h3,article h4{font-weight:500;letter-spacing:0}article h4{font-size:1em}article h2 a,article h3 a,article h4 a{color:#111827}article h2 a:before,article h3 a:before,article h4 a:before{color:#dc2626;content:\"#\";font-weight:400;opacity:.6;position:absolute}article h2 a:before,article h3 a:before{font-size:28px;margin-left:-25px}article h4 a:before{font-size:17px;margin-left:-18px}article code{color:#111827;font-size:.8rem;font-weight:500;line-height:1.9}article p{font-size:1rem;line-height:1.8em}article p code{font-size:.8rem}article .content-list ul,article ul:not(:first-of-type){list-style-type:none;margin:0 0 2.5em;padding:0}article .content-list ul li,article ul:not(:first-of-type) li{color:#374151;display:block;font-size:.89em;line-height:1.714em;margin-bottom:1rem;padding-left:1.25em;position:relative}article .content-list ul li a,article ul:not(:first-of-type) li a{text-decoration:none}article .content-list ul li code,article ul:not(:first-of-type) li code{font-size:.875em}article .content-list ul li:before,article ul:not(:first-of-type) li:before{background:url(/img/icons/ul_marker.min.svg) no-repeat 50%;background-size:contain;content:\"\";height:10px;left:0;position:absolute;top:.4em;width:9px}article h1+ul{list-style-type:none;margin:0;padding:0}article h1+ul li{display:block;margin-bottom:.5em}article h1+ul li a{color:#111827;font-size:.89em;font-weight:500;position:relative;text-decoration:none}article h1+ul li a:before{color:#dc2626;content:\"# \"}article h1+ul ul{margin-bottom:0;margin-top:.5em;padding:0}article h1+ul ul li{padding-left:1.5em}article h1+ul ul li a{font-weight:400}#__nuxt,body,html{height:100%}body{--tw-bg-opacity:1;--tw-text-opacity:1;background-color:rgb(243 244 246/var(--tw-bg-opacity));color:rgb(229 231 235/var(--tw-text-opacity))}@media (prefers-color-scheme:dark){body{--tw-bg-opacity:1;background-color:rgb(17 24 39/var(--tw-bg-opacity))}}.hover\\:bg-gray-800:hover{--tw-bg-opacity:1;background-color:rgb(31 41 55/var(--tw-bg-opacity))}.hover\\:bg-indigo-700:hover{--tw-bg-opacity:1;background-color:rgb(67 56 202/var(--tw-bg-opacity))}.hover\\:bg-gray-300:hover{--tw-bg-opacity:1;background-color:rgb(209 213 219/var(--tw-bg-opacity))}.hover\\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246/var(--tw-bg-opacity))}.hover\\:text-gray-500:hover{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.hover\\:text-gray-700:hover{--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity))}.hover\\:text-gray-600:hover{--tw-text-opacity:1;color:rgb(75 85 99/var(--tw-text-opacity))}.hover\\:shadow-lg:hover{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.focus\\:border-indigo-900:focus{--tw-border-opacity:1;border-color:rgb(49 46 129/var(--tw-border-opacity))}.focus\\:text-gray-600:focus{--tw-text-opacity:1;color:rgb(75 85 99/var(--tw-text-opacity))}.focus\\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\\:ring:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus\\:ring-indigo-300:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(165 180 252/var(--tw-ring-opacity))}.active\\:bg-indigo-900:active{--tw-bg-opacity:1;background-color:rgb(49 46 129/var(--tw-bg-opacity))}.disabled\\:opacity-25:disabled{opacity:.25}@media (prefers-color-scheme:dark){.dark\\:bg-gray-700{--tw-bg-opacity:1;background-color:rgb(55 65 81/var(--tw-bg-opacity))}.dark\\:bg-gray-600{--tw-bg-opacity:1;background-color:rgb(75 85 99/var(--tw-bg-opacity))}.dark\\:bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39/var(--tw-bg-opacity))}.dark\\:bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55/var(--tw-bg-opacity))}.dark\\:text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.dark\\:text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity))}.dark\\:text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99/var(--tw-text-opacity))}.dark\\:text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.dark\\:text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235/var(--tw-text-opacity))}.dark\\:text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.dark\\:hover\\:bg-black:hover{--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity))}.dark\\:hover\\:bg-gray-700:hover{--tw-bg-opacity:1;background-color:rgb(55 65 81/var(--tw-bg-opacity))}.dark\\:hover\\:text-gray-300:hover,.hover\\:dark\\:text-gray-300:hover{--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity))}.dark\\:focus\\:text-gray-400:focus,.dark\\:hover\\:text-gray-400:hover{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}}@media (min-width:640px){.sm\\:mt-0{margin-top:0}.sm\\:flex-row{flex-direction:row}.sm\\:justify-between{justify-content:space-between}}@media (min-width:768px){.md\\:mx-8{margin-left:2rem;margin-right:2rem}.md\\:mt-0{margin-top:0}.md\\:block{display:block}.md\\:flex{display:flex}.md\\:hidden{display:none}.md\\:w-64{width:16rem}.md\\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\\:flex-row{flex-direction:row}.md\\:items-center{align-items:center}.md\\:justify-between{justify-content:space-between}}@media (min-width:1024px){.lg\\:text-3xl{font-size:1.875rem;line-height:2.25rem}}@media (min-width:1280px){.xl\\:w-80{width:20rem}.xl\\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}}";
+__vite_ssr_exports__.default = "/*! tailwindcss v3.0.24 | MIT License | https://tailwindcss.com*/*,:after,:before{border:0 solid #e5e7eb;box-sizing:border-box}:after,:before{--tw-content:\"\"}html{-webkit-text-size-adjust:100%;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,\"Segoe UI\",Roboto,\"Helvetica Neue\",Arial,\"Noto Sans\",sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\",\"Segoe UI Symbol\",\"Noto Color Emoji\";line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4}body{line-height:inherit;margin:0}hr{border-top-width:1px;color:inherit;height:0}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{border-collapse:collapse;border-color:inherit;text-indent:0}button,input,optgroup,select,textarea{color:inherit;font-family:inherit;font-size:100%;line-height:inherit;margin:0;padding:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0}fieldset,legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;opacity:1}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#9ca3af;opacity:1}input::placeholder,textarea::placeholder{color:#9ca3af;opacity:1}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{height:auto;max-width:100%}[hidden]{display:none}*,:after,:before{--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: }.container{width:100%}@media (min-width:640px){.container{max-width:640px}}@media (min-width:768px){.container{max-width:768px}}@media (min-width:1024px){.container{max-width:1024px}}@media (min-width:1280px){.container{max-width:1280px}}@media (min-width:1536px){.container{max-width:1536px}}.absolute{position:absolute}.relative{position:relative}.right-2{right:.5rem}.top-2{top:.5rem}.m-0{margin:0}.m-2{margin:.5rem}.mx-auto{margin-left:auto;margin-right:auto}.my-4{margin-bottom:1rem;margin-top:1rem}.-mx-2{margin-left:-.5rem;margin-right:-.5rem}.mx-2{margin-left:.5rem;margin-right:.5rem}.-mx-4{margin-left:-1rem;margin-right:-1rem}.mx-8{margin-left:2rem;margin-right:2rem}.my-0{margin-bottom:0;margin-top:0}.my-6{margin-bottom:1.5rem;margin-top:1.5rem}.mt-8{margin-top:2rem}.mt-3{margin-top:.75rem}.mt-2{margin-top:.5rem}.mt-4{margin-top:1rem}.mb-0{margin-bottom:0}.mt-6{margin-top:1.5rem}.block{display:block}.flex{display:flex}.inline-flex{display:inline-flex}.table{display:table}.grid{display:grid}.hidden{display:none}.h-full{height:100%}.h-52{height:13rem}.h-32{height:8rem}.h-6{height:1.5rem}.h-4{height:1rem}.h-8{height:2rem}.h-16{height:4rem}.h-screen{height:100vh}.w-64{width:16rem}.w-32{width:8rem}.w-6{width:1.5rem}.w-4{width:1rem}.w-8{width:2rem}.w-full{width:100%}.max-w-3xl{max-width:48rem}.flex-1{flex:1 1 0%}.border-collapse{border-collapse:collapse}.transform{transform:translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.cursor-pointer{cursor:pointer}.list-disc{list-style-type:disc}.auto-rows-auto{grid-auto-rows:auto}.grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-6{gap:1.5rem}.space-x-1>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-left:calc(.25rem*(1 - var(--tw-space-x-reverse)));margin-right:calc(.25rem*var(--tw-space-x-reverse))}.space-x-2>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-left:calc(.5rem*(1 - var(--tw-space-x-reverse)));margin-right:calc(.5rem*var(--tw-space-x-reverse))}.space-y-2>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-bottom:calc(.5rem*var(--tw-space-y-reverse));margin-top:calc(.5rem*(1 - var(--tw-space-y-reverse)))}.space-y-6>:not([hidden])~:not([hidden]){--tw-space-y-reverse:0;margin-bottom:calc(1.5rem*var(--tw-space-y-reverse));margin-top:calc(1.5rem*(1 - var(--tw-space-y-reverse)))}.space-x-4>:not([hidden])~:not([hidden]){--tw-space-x-reverse:0;margin-left:calc(1rem*(1 - var(--tw-space-x-reverse)));margin-right:calc(1rem*var(--tw-space-x-reverse))}.overflow-hidden{overflow:hidden}.rounded-lg{border-radius:.5rem}.rounded-full{border-radius:9999px}.rounded-md{border-radius:.375rem}.rounded{border-radius:.25rem}.rounded-bl-none{border-bottom-left-radius:0}.border{border-width:1px}.border-transparent{border-color:transparent}.border-gray-400{--tw-border-opacity:1;border-color:rgb(156 163 175/var(--tw-border-opacity))}.bg-gray-200{--tw-bg-opacity:1;background-color:rgb(229 231 235/var(--tw-bg-opacity))}.bg-gray-600{--tw-bg-opacity:1;background-color:rgb(75 85 99/var(--tw-bg-opacity))}.bg-gray-100{--tw-bg-opacity:1;background-color:rgb(243 244 246/var(--tw-bg-opacity))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255/var(--tw-bg-opacity))}.bg-indigo-800{--tw-bg-opacity:1;background-color:rgb(55 48 163/var(--tw-bg-opacity))}.bg-blue-500{--tw-bg-opacity:1;background-color:rgb(59 130 246/var(--tw-bg-opacity))}.fill-current{fill:currentColor}.object-cover{-o-object-fit:cover;object-fit:cover}.p-6{padding:1.5rem}.p-2{padding:.5rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-4{padding-left:1rem;padding-right:1rem}.py-2{padding-bottom:.5rem;padding-top:.5rem}.py-8{padding-bottom:2rem;padding-top:2rem}.py-4{padding-bottom:1rem;padding-top:1rem}.px-2{padding-left:.5rem;padding-right:.5rem}.py-1{padding-bottom:.25rem;padding-top:.25rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.text-center{text-align:center}.align-bottom{vertical-align:bottom}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-sm{font-size:.875rem;line-height:1.25rem}.text-xs{font-size:.75rem;line-height:1rem}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.font-semibold{font-weight:600}.font-bold{font-weight:700}.font-medium{font-weight:500}.uppercase{text-transform:uppercase}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.tracking-widest{letter-spacing:.1em}.text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235/var(--tw-text-opacity))}.text-gray-700{--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99/var(--tw-text-opacity))}.text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.text-gray-800{--tw-text-opacity:1;color:rgb(31 41 55/var(--tw-text-opacity))}.opacity-25{opacity:.25}.shadow{--tw-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color),0 1px 2px -1px var(--tw-shadow-color)}.shadow,.shadow-sm{box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgba(0,0,0,.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color)}.outline-none{outline:2px solid transparent;outline-offset:2px}.transition{transition-duration:.15s;transition-property:color,background-color,border-color,fill,stroke,opacity,box-shadow,transform,filter,-webkit-text-decoration-color,-webkit-backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,opacity,box-shadow,transform,filter,backdrop-filter,-webkit-text-decoration-color,-webkit-backdrop-filter;transition-timing-function:cubic-bezier(.4,0,.2,1)}.transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,fill,stroke,-webkit-text-decoration-color;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke,-webkit-text-decoration-color;transition-timing-function:cubic-bezier(.4,0,.2,1)}.duration-200{transition-duration:.2s}.line-clamp-2{-webkit-line-clamp:2}.line-clamp-2,.line-clamp-3{-webkit-box-orient:vertical;display:-webkit-box;overflow:hidden}.line-clamp-3{-webkit-line-clamp:3}.line-clamp-5{-webkit-box-orient:vertical;-webkit-line-clamp:5;display:-webkit-box;overflow:hidden}article h1,article h2,article h3,article h4,article h5,article h6{font-weight:500;margin-bottom:.75em}article h2,article h3{margin-top:2em}article h4{margin-top:1.5em}article h1{font-size:2em;letter-spacing:-1px;line-height:1.125em;margin-bottom:.65em}@media (min-width:768px){article h1{font-size:2.2em}}@media (min-width:1024px){article h1{font-size:2.6em}}@media (min-width:1280px){article h1{font-size:3em}}@media (min-width:1536px){article h1{font-size:3.5em}}article h2{font-weight:400;letter-spacing:-.5px;line-height:1.125em}@media (min-width:768px){article h2{font-size:2.25em}}@media (min-width:1024px){article h2{font-size:3em}}article h3{letter-spacing:-.33px;line-height:1.25em}@media (min-width:640px){article h3{font-size:1.75em}}@media (min-width:768px){article h3{font-size:2em}}article h4{font-weight:400;letter-spacing:-.25px}@media (min-width:640px){article h4{font-size:1.5em}}article h5{color:#374151;font-size:.95em;font-weight:700;line-height:1.666em}@media (min-width:640px){article h5{font-size:1.125em}}article h6{color:#4b5563;font-size:.875em;font-weight:500}article a{position:relative;text-decoration:none;transition:all .3s ease}article a.learn_more{color:#dc2626;font-weight:500}article a.learn_more span{display:inline-block;transition:transform .3s ease}article a.learn_more:hover span{transform:translateX(.5em)}article p{font-size:1em;line-height:1.666em}article p strong{font-weight:500}article p.small{font-size:.75em;line-height:1.714em}@media (min-width:768px){article p{font-size:1.125em}article p.small{font-size:.875em}}article p{--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity))}@media (prefers-color-scheme:dark){article p{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}}article p+pre{margin-top:0}article ol,article p,article pre,article ul{margin-bottom:1.5em}article ol a,article p a,article pre a,article ul a{color:#dc2626;text-decoration:underline;word-break:break-word}article ol a:hover,article p a:hover,article pre a:hover,article ul a:hover{color:darken(#dc2626,10%)}article blockquote p,article q{quotes:\"“\" \"”\" \"‘\" \"’\"}@media (min-width:640px){article blockquote{margin-left:0;margin-right:0}}article span.small_text{color:#374151;display:block;font-size:.625em;line-height:1.4em}article label,article span.label{display:block;font-size:.625em;letter-spacing:2.5px;line-height:1.4em;margin-bottom:.875em;opacity:.4;text-transform:uppercase}article code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,\"Liberation Mono\",\"Courier New\",monospace;font-size:.875em;line-height:1.714em}article :not(pre)>code{background:#f9fafb;color:#991b1b;padding:0 .25em}:not(pre)>code{word-wrap:normal;background:none;border-radius:.125rem;color:#111827;display:inline-flex;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;max-width:100%;overflow-x:auto;padding:0 .125rem;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;vertical-align:middle;white-space:pre;word-break:normal;word-spacing:normal}@media (prefers-color-scheme:dark){:not(pre)>code{--tw-bg-opacity:1;--tw-text-opacity:1;background-color:rgb(75 85 99/var(--tw-bg-opacity));color:rgb(220 38 38/var(--tw-text-opacity))}}pre{word-wrap:normal;--tw-bg-opacity:1;background-color:rgb(75 85 99/var(--tw-bg-opacity));border-radius:.5rem;box-shadow:0 1px 1px rgb(0 0 0/8%);margin-bottom:1rem;margin-top:1rem;overflow-x:auto;padding-right:1rem;padding:1rem;position:relative;-moz-tab-size:4;-o-tab-size:4;tab-size:4;white-space:pre;word-break:normal;word-spacing:normal}.code-block-wrapper .copyBtn{--tw-text-opacity:1;color:rgb(229 231 235/var(--tw-text-opacity));opacity:.25;outline:2px solid transparent;outline-offset:2px;position:absolute;right:.5rem;top:.5rem}.code-block-wrapper .copyBtn:hover{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity));opacity:1}pre .copyBtn:active,pre .copyBtn:focus,pre .copyBtn:hover{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity));outline:2px solid transparent;outline-offset:2px}pre code.torchlight{--tw-bg-opacity:1!important;background-color:rgb(75 85 99/var(--tw-bg-opacity))!important;display:block;min-width:-webkit-max-content;min-width:-moz-max-content;min-width:max-content;padding-bottom:1rem;padding-top:1rem}pre code.torchlight .line{padding-left:1rem;padding-right:1rem}.callout p{margin-bottom:0}article a[name]{display:block;position:relative;top:-45px;visibility:hidden}article table{border-collapse:collapse;font-size:13px;margin-bottom:2em;width:100%}article table td,article table th{border:1px solid #d1d5db;padding:10px;text-align:left}article table th{font-size:16px}@media (min-width:640px){article a[name]{display:block;position:relative;top:-30px;visibility:hidden}}article .page_title{display:none}article h1{font-size:2.5em;letter-spacing:0}article h2{font-size:1.75em;letter-spacing:0}article h3{font-size:1.25em}article h3,article h4{font-weight:500;letter-spacing:0}article h4{font-size:1em}article h2 a,article h3 a,article h4 a{color:#111827}article h2 a:before,article h3 a:before,article h4 a:before{color:#dc2626;content:\"#\";font-weight:400;opacity:.6;position:absolute}article h2 a:before,article h3 a:before{font-size:28px;margin-left:-25px}article h4 a:before{font-size:17px;margin-left:-18px}article code{color:#111827;font-size:.8rem;font-weight:500;line-height:1.9}article p{font-size:1rem;line-height:1.8em}article p code{font-size:.8rem}article .content-list ul,article ul:not(:first-of-type){list-style-type:none;margin:0 0 2.5em;padding:0}article .content-list ul li,article ul:not(:first-of-type) li{color:#374151;display:block;font-size:.89em;line-height:1.714em;margin-bottom:1rem;padding-left:1.25em;position:relative}article .content-list ul li a,article ul:not(:first-of-type) li a{text-decoration:none}article .content-list ul li code,article ul:not(:first-of-type) li code{font-size:.875em}article .content-list ul li:before,article ul:not(:first-of-type) li:before{background:url(/img/icons/ul_marker.min.svg) no-repeat 50%;background-size:contain;content:\"\";height:10px;left:0;position:absolute;top:.4em;width:9px}article h1+ul{list-style-type:none;margin:0;padding:0}article h1+ul li{display:block;margin-bottom:.5em}article h1+ul li a{color:#111827;font-size:.89em;font-weight:500;position:relative;text-decoration:none}article h1+ul li a:before{color:#dc2626;content:\"# \"}article h1+ul ul{margin-bottom:0;margin-top:.5em;padding:0}article h1+ul ul li{padding-left:1.5em}article h1+ul ul li a{font-weight:400}#__nuxt,body,html{height:100%}body{--tw-bg-opacity:1;--tw-text-opacity:1;background-color:rgb(243 244 246/var(--tw-bg-opacity));color:rgb(229 231 235/var(--tw-text-opacity))}@media (prefers-color-scheme:dark){body{--tw-bg-opacity:1;background-color:rgb(17 24 39/var(--tw-bg-opacity))}}.hover\\:bg-gray-300:hover{--tw-bg-opacity:1;background-color:rgb(209 213 219/var(--tw-bg-opacity))}.hover\\:bg-gray-800:hover{--tw-bg-opacity:1;background-color:rgb(31 41 55/var(--tw-bg-opacity))}.hover\\:bg-indigo-700:hover{--tw-bg-opacity:1;background-color:rgb(67 56 202/var(--tw-bg-opacity))}.hover\\:bg-gray-100:hover{--tw-bg-opacity:1;background-color:rgb(243 244 246/var(--tw-bg-opacity))}.hover\\:text-gray-500:hover{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.hover\\:text-gray-700:hover{--tw-text-opacity:1;color:rgb(55 65 81/var(--tw-text-opacity))}.hover\\:text-gray-600:hover{--tw-text-opacity:1;color:rgb(75 85 99/var(--tw-text-opacity))}.hover\\:shadow-lg:hover{--tw-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color),0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow)}.focus\\:border-indigo-900:focus{--tw-border-opacity:1;border-color:rgb(49 46 129/var(--tw-border-opacity))}.focus\\:text-gray-600:focus{--tw-text-opacity:1;color:rgb(75 85 99/var(--tw-text-opacity))}.focus\\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.focus\\:ring:focus{--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow),var(--tw-ring-shadow),var(--tw-shadow,0 0 #0000)}.focus\\:ring-indigo-300:focus{--tw-ring-opacity:1;--tw-ring-color:rgb(165 180 252/var(--tw-ring-opacity))}.active\\:bg-indigo-900:active{--tw-bg-opacity:1;background-color:rgb(49 46 129/var(--tw-bg-opacity))}.disabled\\:opacity-25:disabled{opacity:.25}@media (prefers-color-scheme:dark){.dark\\:bg-gray-700{--tw-bg-opacity:1;background-color:rgb(55 65 81/var(--tw-bg-opacity))}.dark\\:bg-gray-600{--tw-bg-opacity:1;background-color:rgb(75 85 99/var(--tw-bg-opacity))}.dark\\:bg-gray-900{--tw-bg-opacity:1;background-color:rgb(17 24 39/var(--tw-bg-opacity))}.dark\\:bg-gray-800{--tw-bg-opacity:1;background-color:rgb(31 41 55/var(--tw-bg-opacity))}.dark\\:text-gray-400{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.dark\\:text-gray-300{--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity))}.dark\\:text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99/var(--tw-text-opacity))}.dark\\:text-white{--tw-text-opacity:1;color:rgb(255 255 255/var(--tw-text-opacity))}.dark\\:text-gray-200{--tw-text-opacity:1;color:rgb(229 231 235/var(--tw-text-opacity))}.dark\\:text-gray-500{--tw-text-opacity:1;color:rgb(107 114 128/var(--tw-text-opacity))}.dark\\:hover\\:bg-black:hover{--tw-bg-opacity:1;background-color:rgb(0 0 0/var(--tw-bg-opacity))}.dark\\:hover\\:bg-gray-800:hover{--tw-bg-opacity:1;background-color:rgb(31 41 55/var(--tw-bg-opacity))}.dark\\:hover\\:bg-gray-700:hover{--tw-bg-opacity:1;background-color:rgb(55 65 81/var(--tw-bg-opacity))}.dark\\:hover\\:text-gray-300:hover,.hover\\:dark\\:text-gray-300:hover{--tw-text-opacity:1;color:rgb(209 213 219/var(--tw-text-opacity))}.dark\\:hover\\:text-gray-400:hover{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}.dark\\:hover\\:text-gray-200:hover{--tw-text-opacity:1;color:rgb(229 231 235/var(--tw-text-opacity))}.dark\\:focus\\:text-gray-400:focus{--tw-text-opacity:1;color:rgb(156 163 175/var(--tw-text-opacity))}}@media (min-width:640px){.sm\\:mt-0{margin-top:0}.sm\\:flex-row{flex-direction:row}.sm\\:justify-between{justify-content:space-between}}@media (min-width:768px){.md\\:mx-8{margin-left:2rem;margin-right:2rem}.md\\:mt-0{margin-top:0}.md\\:block{display:block}.md\\:flex{display:flex}.md\\:hidden{display:none}.md\\:w-64{width:16rem}.md\\:grid-cols-3{grid-template-columns:repeat(3,minmax(0,1fr))}.md\\:flex-row{flex-direction:row}.md\\:items-center{align-items:center}.md\\:justify-between{justify-content:space-between}}@media (min-width:1024px){.lg\\:text-3xl{font-size:1.875rem;line-height:2.25rem}}@media (min-width:1280px){.xl\\:w-80{width:20rem}.xl\\:grid-cols-4{grid-template-columns:repeat(4,minmax(0,1fr))}}";
 }
 
 
@@ -1602,6 +1650,7 @@ __vite_ssr_exports__.default = "/*! tailwindcss v3.0.24 | MIT License | https://
 // - /node_modules/nuxt/dist/head/runtime/lib/vueuse-head.plugin.mjs ($id_e6f12003)
 // - /node_modules/nuxt/dist/head/runtime/plugin.mjs ($id_a2650341)
 // - /node_modules/nuxt/dist/pages/runtime/router.mjs ($id_a090977b)
+// - /node_modules/@nuxt/content/dist/runtime/plugin.mjs ($id_a4132d07)
 // - /plugins/dayjs.js ($id_e4088396)
 // - /plugins/markdown-it.js ($id_254393a2)
 // --------------------
@@ -1616,9 +1665,11 @@ const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/nuxt/dist
 
 const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/nuxt/dist/pages/runtime/router.mjs");
 
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/plugins/dayjs.js");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/plugin.mjs");
 
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/plugins/markdown-it.js");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/plugins/dayjs.js");
+
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/plugins/markdown-it.js");
 
 __vite_ssr_exports__.default = [
   __vite_ssr_import_0__.default,
@@ -1627,7 +1678,8 @@ __vite_ssr_exports__.default = [
   __vite_ssr_import_3__.default,
   __vite_ssr_import_4__.default,
   __vite_ssr_import_5__.default,
-  __vite_ssr_import_6__.default
+  __vite_ssr_import_6__.default,
+  __vite_ssr_import_7__.default
 ];
 }
 
@@ -1661,12 +1713,75 @@ __vite_ssr_exports__.default = __vite_ssr_import_0__.defineNuxtPlugin((nuxtApp) 
 // - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/plugins/server.mjs ($id_cd2348f9)
 // Dependencies: 
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs ($id_12ce52f3)
+// - /node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs ($id_9fab5abb)
+// - /node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.mjs ($id_d2da4ccd)
+// - /node_modules/@nuxt/content/dist/runtime/components/ContentQuery.mjs ($id_3f801a38)
+// - /node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.mjs ($id_8f3d0953)
+// - /node_modules/@nuxt/content/dist/runtime/components/Markdown.mjs ($id_f4cbbc2c)
+// - /node_modules/@nuxt/content/dist/runtime/components/MarkdownRenderer.mjs ($id_4c793316)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseA.vue ($id_558bf79f)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseBlockquote.vue ($id_01e2b479)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue ($id_19429b58)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue ($id_fab9e310)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseEm.vue ($id_840411f2)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH1.vue ($id_b479ada6)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH2.vue ($id_9c1df7ff)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH3.vue ($id_f86082f5)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH4.vue ($id_7f627a67)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH5.vue ($id_caec80eb)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH6.vue ($id_26303ae9)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseHr.vue ($id_6f4fac0c)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseImg.vue ($id_f72b4351)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseLi.vue ($id_1b78ec5d)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseOl.vue ($id_2e24a6f5)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseP.vue ($id_0990778f)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseStrong.vue ($id_6d4c23c7)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTable.vue ($id_10f5aef2)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTbody.vue ($id_faffa2d8)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTd.vue ($id_b51a8b09)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTh.vue ($id_07608f57)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseThead.vue ($id_17b6f147)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTr.vue ($id_16f58501)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseUl.vue ($id_7728c86d)
 // --------------------
 const $id_759f3471 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 
-const components = {}
+const components = {
+  ContentDoc: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs' /* webpackChunkName: "components/content-doc" */).then(c => c.default || c)),
+  ContentList: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs' /* webpackChunkName: "components/content-list" */).then(c => c.default || c)),
+  ContentNavigation: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.mjs' /* webpackChunkName: "components/content-navigation" */).then(c => c.default || c)),
+  ContentQuery: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.mjs' /* webpackChunkName: "components/content-query" */).then(c => c.default || c)),
+  ContentRenderer: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.mjs' /* webpackChunkName: "components/content-renderer" */).then(c => c.default || c)),
+  Markdown: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Markdown.mjs' /* webpackChunkName: "components/markdown" */).then(c => c.default || c)),
+  MarkdownRenderer: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/MarkdownRenderer.mjs' /* webpackChunkName: "components/markdown-renderer" */).then(c => c.default || c)),
+  ProseA: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseA.vue' /* webpackChunkName: "components/prose-a" */).then(c => c.default || c)),
+  ProseBlockquote: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseBlockquote.vue' /* webpackChunkName: "components/prose-blockquote" */).then(c => c.default || c)),
+  ProseCode: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue' /* webpackChunkName: "components/prose-code" */).then(c => c.default || c)),
+  ProseCodeInline: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue' /* webpackChunkName: "components/prose-code-inline" */).then(c => c.default || c)),
+  ProseEm: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseEm.vue' /* webpackChunkName: "components/prose-em" */).then(c => c.default || c)),
+  ProseH1: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH1.vue' /* webpackChunkName: "components/prose-h1" */).then(c => c.default || c)),
+  ProseH2: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH2.vue' /* webpackChunkName: "components/prose-h2" */).then(c => c.default || c)),
+  ProseH3: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH3.vue' /* webpackChunkName: "components/prose-h3" */).then(c => c.default || c)),
+  ProseH4: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH4.vue' /* webpackChunkName: "components/prose-h4" */).then(c => c.default || c)),
+  ProseH5: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH5.vue' /* webpackChunkName: "components/prose-h5" */).then(c => c.default || c)),
+  ProseH6: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH6.vue' /* webpackChunkName: "components/prose-h6" */).then(c => c.default || c)),
+  ProseHr: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseHr.vue' /* webpackChunkName: "components/prose-hr" */).then(c => c.default || c)),
+  ProseImg: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseImg.vue' /* webpackChunkName: "components/prose-img" */).then(c => c.default || c)),
+  ProseLi: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseLi.vue' /* webpackChunkName: "components/prose-li" */).then(c => c.default || c)),
+  ProseOl: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseOl.vue' /* webpackChunkName: "components/prose-ol" */).then(c => c.default || c)),
+  ProseP: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseP.vue' /* webpackChunkName: "components/prose-p" */).then(c => c.default || c)),
+  ProseStrong: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseStrong.vue' /* webpackChunkName: "components/prose-strong" */).then(c => c.default || c)),
+  ProseTable: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTable.vue' /* webpackChunkName: "components/prose-table" */).then(c => c.default || c)),
+  ProseTbody: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTbody.vue' /* webpackChunkName: "components/prose-tbody" */).then(c => c.default || c)),
+  ProseTd: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTd.vue' /* webpackChunkName: "components/prose-td" */).then(c => c.default || c)),
+  ProseTh: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTh.vue' /* webpackChunkName: "components/prose-th" */).then(c => c.default || c)),
+  ProseThead: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseThead.vue' /* webpackChunkName: "components/prose-thead" */).then(c => c.default || c)),
+  ProseTr: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTr.vue' /* webpackChunkName: "components/prose-tr" */).then(c => c.default || c)),
+  ProseUl: __vite_ssr_import_0__.defineAsyncComponent(() => __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseUl.vue' /* webpackChunkName: "components/prose-ul" */).then(c => c.default || c))
+}
 
 __vite_ssr_exports__.default = function (nuxtApp) {
   for (const name in components) {
@@ -1675,6 +1790,2528 @@ __vite_ssr_exports__.default = function (nuxtApp) {
   }
 }
 ;
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.mjs ($id_8f3d0953)
+// - /node_modules/@nuxt/content/dist/runtime/components/ContentQuery.mjs ($id_3f801a38)
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs ($id_3d849a97)
+// --------------------
+const $id_12ce52f3 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.mjs");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.mjs");
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs");
+
+__vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
+  props: {
+    tag: {
+      type: String,
+      required: false,
+      default: "div"
+    },
+    excerpt: {
+      type: Boolean,
+      default: false
+    },
+    path: {
+      type: String,
+      required: false,
+      default: () => __vite_ssr_import_3__.useRoute().path
+    },
+    query: {
+      type: Object,
+      required: false,
+      default: void 0
+    }
+  },
+  render(ctx) {
+    const slots = __vite_ssr_import_0__.useSlots();
+    const { tag, excerpt, path, query } = ctx;
+    const contentQueryProps = Object.assign(query || {}, { path, find: "one" });
+    const emptyNode = (slot, data) => __vite_ssr_import_0__.h("pre", null, JSON.stringify({ message: "You should use slots with <ContentDoc>", slot, data }, null, 2));
+    const addHead = (doc) => {
+      if (path !== __vite_ssr_import_3__.useRoute().path) {
+        return;
+      }
+      const head = Object.assign({}, doc.head);
+      head.title = head.title || doc.title;
+      head.meta = head.meta || [];
+      const description = head.description || doc.description;
+      if (description && head.meta.filter((m) => m.name === "description").length === 0) {
+        head.meta.push({
+          name: "description",
+          content: description
+        });
+      }
+      if (head.image && head.meta.filter((m) => m.property === "og:image").length === 0) {
+        head.meta.push({
+          property: "og:image",
+          content: head.image
+        });
+      }
+      if (false) {
+        __vite_ssr_import_0__.nextTick(() => __vite_ssr_import_3__.useHead(head));
+      } else {
+        __vite_ssr_import_3__.useHead(head);
+      }
+    };
+    return __vite_ssr_import_0__.h(__vite_ssr_import_2__.default, contentQueryProps, {
+      default: slots?.default ? ({ data, refresh, isPartial }) => {
+        addHead(data);
+        return slots.default({ doc: data, refresh, isPartial, excerpt, ...this.$attrs });
+      } : ({ data }) => {
+        addHead(data);
+        return __vite_ssr_import_0__.h(__vite_ssr_import_1__.default, { value: data, excerpt, tag, ...this.$attrs }, { empty: (bindings) => slots?.empty ? slots.empty(bindings) : emptyNode("default", data) });
+      },
+      empty: (bindings) => slots?.empty?.(bindings) || __vite_ssr_import_0__.h("p", null, "Document is empty, overwrite this content with #empty slot in <ContentDoc>."),
+      "not-found": (bindings) => slots?.["not-found"]?.(bindings) || __vite_ssr_import_0__.h("p", null, "Document not found, overwrite this content with #not-found slot in <ContentDoc>.")
+    });
+  }
+});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.mjs
+// Parents: 
+// - /node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs ($id_12ce52f3)
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/@nuxt/content/dist/runtime/components/MarkdownRenderer.mjs ($id_4c793316)
+// --------------------
+const $id_8f3d0953 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/components/MarkdownRenderer.mjs");
+
+__vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
+  props: {
+    value: {
+      type: Object,
+      required: false,
+      default: () => ({})
+    },
+    excerpt: {
+      type: Boolean,
+      default: false
+    },
+    tag: {
+      type: String,
+      default: "div"
+    }
+  },
+  setup(props) {
+    __vite_ssr_import_0__.watch(() => props.excerpt, (newExcerpt) => {
+      if (newExcerpt && !props.value?.excerpt) {
+        console.warn(`No excerpt found for document content/${props?.value?._path}.${props?.value?._extension}!`);
+        console.warn("Make sure to use <!--more--> in your content if you want to use excerpt feature.");
+      }
+    }, {
+      immediate: true
+    });
+  },
+  render(ctx) {
+    const slots = __vite_ssr_import_0__.useSlots();
+    const { value, excerpt, tag } = ctx;
+    if (value && value?._type === "markdown" && value?.body?.children?.length) {
+      return __vite_ssr_import_0__.h(__vite_ssr_import_1__.default, {
+        value,
+        excerpt,
+        tag,
+        ...this.$attrs
+      });
+    }
+    if (value && slots?.default) {
+      return slots.default({ value, excerpt, tag, ...this.$attrs });
+    } else if (slots?.empty) {
+      return slots.empty({ value, excerpt, tag, ...this.$attrs });
+    } else if (slots?.default) {
+      return slots.default({ value, excerpt, tag, ...this.$attrs });
+    }
+    return __vite_ssr_import_0__.h("pre", null, JSON.stringify({ message: "You should use slots with <ContentRenderer>", value, excerpt, tag }, null, 2));
+  }
+});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/MarkdownRenderer.mjs
+// Parents: 
+// - /node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.mjs ($id_8f3d0953)
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/destr/dist/index.mjs ($id_03d15ecd)
+// - /node_modules/scule/dist/index.mjs ($id_ff332d11)
+// - /node_modules/property-information/index.js ($id_882dd793)
+// - /node_modules/html-tags/index.js ($id_4503b399)
+// - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
+// --------------------
+const $id_4c793316 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/destr/dist/index.mjs");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/scule/dist/index.mjs");
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/property-information/index.js");
+
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/html-tags/index.js");
+
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
+
+const DEFAULT_SLOT = "default";
+const rxOn = /^@|^v-on:/;
+const rxBind = /^:|^v-bind:/;
+const rxModel = /^v-model/;
+const nativeInputs = ["select", "textarea", "input"];
+__vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
+  name: "ContentRendererMarkdown",
+  props: {
+    value: {
+      type: Object,
+      required: true
+    },
+    excerpt: {
+      type: Boolean,
+      default: false
+    },
+    tag: {
+      type: String,
+      default: "div"
+    }
+  },
+  setup(props) {
+    const { content: { tags = {} } } = __vite_ssr_import_5__.useRuntimeConfig().public;
+    const { tag: _t, value: _d, ...contentProps } = __vite_ssr_import_0__.toRefs(props);
+    return {
+      tags,
+      contentProps
+    };
+  },
+  render(ctx) {
+    const { tags, tag, value, contentProps } = ctx;
+    if (!value) {
+      return null;
+    }
+    let body = value.body || value;
+    if (this.excerpt && value.excerpt) {
+      body = value.excerpt;
+    }
+    const meta = {
+      ...value,
+      tags: {
+        ...tags,
+        ...value?.tags || {}
+      }
+    };
+    let component = meta.component || tag;
+    if (typeof meta.component === "object") {
+      component = meta.component.name;
+    }
+    component = resolveVueComponent(component);
+    const children = (body.children || []).map((child) => renderNode(child, __vite_ssr_import_0__.h, meta));
+    return __vite_ssr_import_0__.h(component, {
+      ...contentProps,
+      ...meta.component?.props,
+      ...this.$attrs
+    }, {
+      default: createSlotFunction(children)
+    });
+  }
+});
+function renderNode(node, h2, documentMeta) {
+  const originalTag = node.tag;
+  const renderTag = typeof node.props?.__ignoreMap === "undefined" && documentMeta.tags[node.tag] || node.tag;
+  if (node.type === "text") {
+    return h2(__vite_ssr_import_0__.Text, node.value);
+  }
+  const component = resolveVueComponent(renderTag);
+  if (typeof component === "object") {
+    component.tag = originalTag;
+  }
+  return h2(component, propsToData(node, documentMeta), renderSlots(node, h2, documentMeta));
+}
+function renderSlots(node, h2, documentMeta) {
+  const children = node.children || [];
+  const slots = children.reduce((data, node2) => {
+    if (!isTemplate(node2)) {
+      data[DEFAULT_SLOT].push(renderNode(node2, h2, documentMeta));
+      return data;
+    }
+    if (isDefaultTemplate(node2)) {
+      data[DEFAULT_SLOT].push(...node2.children.map((child) => renderNode(child, h2, documentMeta)));
+      return data;
+    }
+    const slotName = getSlotName(node2);
+    data[slotName] = node2.children.map((child) => renderNode(child, h2, documentMeta));
+    return data;
+  }, {
+    [DEFAULT_SLOT]: []
+  });
+  return Object.fromEntries(Object.entries(slots).map(([name, vDom]) => [name, createSlotFunction(vDom)]));
+}
+function propsToData(node, documentMeta) {
+  const { tag = "", props = {} } = node;
+  return Object.keys(props).reduce(function(data, key) {
+    if (key === "__ignoreMap") {
+      return data;
+    }
+    const value = props[key];
+    if (rxModel.test(key) && !nativeInputs.includes(tag)) {
+      return propsToDataRxModel(key, value, data, documentMeta);
+    }
+    if (key === "v-bind") {
+      return propsToDataVBind(key, value, data, documentMeta);
+    }
+    if (rxOn.test(key)) {
+      return propsToDataRxOn(key, value, data, documentMeta);
+    }
+    if (rxBind.test(key)) {
+      return propsToDataRxBind(key, value, data, documentMeta);
+    }
+    const { attribute } = __vite_ssr_import_3__.find(__vite_ssr_import_3__.html, key);
+    if (Array.isArray(value) && value.every((v) => typeof v === "string")) {
+      data[attribute] = value.join(" ");
+      return data;
+    }
+    data[attribute] = value;
+    return data;
+  }, {});
+}
+function propsToDataRxModel(key, value, data, documentMeta) {
+  const number = (d) => +d;
+  const trim = (d) => d.trim();
+  const noop = (d) => d;
+  const mods = key.replace(rxModel, "").split(".").filter((d) => d).reduce((d, k) => {
+    d[k] = true;
+    return d;
+  }, {});
+  const field = "value";
+  const event = mods.lazy ? "change" : "input";
+  const processor = mods.number ? number : mods.trim ? trim : noop;
+  data[field] = evalInContext(value, documentMeta);
+  data.on = data.on || {};
+  data.on[event] = (e) => documentMeta[value] = processor(e);
+  return data;
+}
+function propsToDataVBind(_key, value, data, documentMeta) {
+  const val = evalInContext(value, documentMeta);
+  data = Object.assign(data, val);
+  return data;
+}
+function propsToDataRxOn(key, value, data, documentMeta) {
+  key = key.replace(rxOn, "");
+  data.on = data.on || {};
+  data.on[key] = () => evalInContext(value, documentMeta);
+  return data;
+}
+function propsToDataRxBind(key, value, data, documentMeta) {
+  key = key.replace(rxBind, "");
+  data[key] = evalInContext(value, documentMeta);
+  return data;
+}
+const resolveVueComponent = (component) => {
+  if (!__vite_ssr_import_4__.default.includes(component)) {
+    const componentFn = __vite_ssr_import_0__.resolveComponent(__vite_ssr_import_2__.pascalCase(component), false);
+    if (typeof componentFn === "object") {
+      return componentFn;
+    }
+  }
+  return component;
+};
+function evalInContext(code, context) {
+  const result = code.split(".").reduce((o, k) => typeof o === "object" ? o[k] : void 0, context);
+  return typeof result === "undefined" ? __vite_ssr_import_1__.default(code) : result;
+}
+function getSlotName(node) {
+  let name = "";
+  for (const propName of Object.keys(node.props || {})) {
+    if (!propName.startsWith("#") && !propName.startsWith("v-slot:")) {
+      continue;
+    }
+    name = propName.split(/[:#]/, 2)[1];
+    break;
+  }
+  return name || DEFAULT_SLOT;
+}
+function createSlotFunction(nodes) {
+  return nodes.length ? () => nodes : void 0;
+}
+function isDefaultTemplate(node) {
+  return isTemplate(node) && getSlotName(node) === DEFAULT_SLOT;
+}
+function isTemplate(node) {
+  return node.tag === "template";
+}
+;
+}
+
+
+// --------------------
+// Request: /node_modules/scule/dist/index.mjs
+// Parents: 
+// - /node_modules/@nuxt/content/dist/runtime/components/MarkdownRenderer.mjs ($id_4c793316)
+// Dependencies: 
+
+// --------------------
+const $id_ff332d11 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
+import("file:///Users/overtrue/www/laravel.xyz/node_modules/scule/dist/index.mjs")
+  .then(r => {
+    if (r.default && r.default.__esModule)
+      r = r.default
+    exports.default = r.default
+    ssrExportAll(r)
+  })
+  .catch(e => {
+    console.error(e)
+    throw new Error("[vite dev] Error loading external \"/Users/overtrue/www/laravel.xyz/node_modules/scule/dist/index.mjs\".")
+  })
+
+
+// --------------------
+// Request: /node_modules/property-information/index.js
+// Parents: 
+// - /node_modules/@nuxt/content/dist/runtime/components/MarkdownRenderer.mjs ($id_4c793316)
+// Dependencies: 
+
+// --------------------
+const $id_882dd793 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
+import("file:///Users/overtrue/www/laravel.xyz/node_modules/property-information/index.js")
+  .then(r => {
+    if (r.default && r.default.__esModule)
+      r = r.default
+    exports.default = r.default
+    ssrExportAll(r)
+  })
+  .catch(e => {
+    console.error(e)
+    throw new Error("[vite dev] Error loading external \"/Users/overtrue/www/laravel.xyz/node_modules/property-information/index.js\".")
+  })
+
+
+// --------------------
+// Request: /node_modules/html-tags/index.js
+// Parents: 
+// - /node_modules/@nuxt/content/dist/runtime/components/MarkdownRenderer.mjs ($id_4c793316)
+// Dependencies: 
+
+// --------------------
+const $id_4503b399 = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
+import("file:///Users/overtrue/www/laravel.xyz/node_modules/html-tags/index.js")
+  .then(r => {
+    if (r.default && r.default.__esModule)
+      r = r.default
+    exports.default = r.default
+    ssrExportAll(r)
+  })
+  .catch(e => {
+    console.error(e)
+    throw new Error("[vite dev] Error loading external \"/Users/overtrue/www/laravel.xyz/node_modules/html-tags/index.js\".")
+  })
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/ContentQuery.mjs
+// Parents: 
+// - /node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs ($id_12ce52f3)
+// - /node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs ($id_9fab5abb)
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/ufo/dist/index.mjs ($id_614de060)
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs ($id_3d849a97)
+// --------------------
+const $id_3f801a38 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/ufo/dist/index.mjs");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs");
+
+__vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
+  props: {
+    path: {
+      type: String,
+      required: false,
+      default: void 0
+    },
+    only: {
+      type: Array,
+      required: false,
+      default: void 0
+    },
+    without: {
+      type: Array,
+      required: false,
+      default: void 0
+    },
+    where: {
+      type: Object,
+      required: false,
+      default: void 0
+    },
+    sort: {
+      type: Object,
+      required: false,
+      default: void 0
+    },
+    limit: {
+      type: Number,
+      required: false,
+      default: void 0
+    },
+    skip: {
+      type: Number,
+      required: false,
+      default: void 0
+    },
+    locale: {
+      type: String,
+      required: false,
+      default: void 0
+    },
+    find: {
+      type: String,
+      required: false,
+      default: void 0
+    }
+  },
+  async setup(props) {
+    const {
+      path,
+      only,
+      without,
+      where,
+      sort,
+      limit,
+      skip,
+      locale,
+      find
+    } = __vite_ssr_import_0__.toRefs(props);
+    const isPartial = __vite_ssr_import_2__.computed(() => path.value.includes("/_"));
+    const { data, refresh } = await __vite_ssr_import_2__.useAsyncData(`content-doc-${path.value}`, () => {
+      let queryBuilder = __vite_ssr_import_2__.queryContent();
+      if (path.value) {
+        const _path = __vite_ssr_import_1__.withLeadingSlash(__vite_ssr_import_1__.withoutTrailingSlash(path.value));
+        queryBuilder = queryBuilder.where({ _path });
+      }
+      if (only.value) {
+        queryBuilder = queryBuilder.only(only.value);
+      }
+      if (without.value) {
+        queryBuilder = queryBuilder.without(without.value);
+      }
+      if (where.value) {
+        queryBuilder = queryBuilder.where(where.value);
+      }
+      if (sort.value) {
+        queryBuilder = queryBuilder.sort(sort.value);
+      }
+      if (limit.value) {
+        queryBuilder = queryBuilder.limit(limit.value);
+      }
+      if (skip.value) {
+        queryBuilder = queryBuilder.skip(skip.value);
+      }
+      if (locale.value) {
+        queryBuilder = queryBuilder.where({ _locale: locale.value });
+      }
+      if (find.value === "one") {
+        return queryBuilder.findOne();
+      }
+      if (find.value === "surround") {
+        if (!path.value) {
+          console.warn("[Content] Surround queries requires `path` prop to be set.");
+          console.warn("[Content] Query without `path` will return regular `find()` results.");
+          return queryBuilder.find();
+        }
+        return queryBuilder.findSurround(path);
+      }
+      return queryBuilder.find();
+    });
+    return {
+      isPartial,
+      data,
+      refresh
+    };
+  },
+  render(ctx) {
+    const slots = __vite_ssr_import_0__.useSlots();
+    const {
+      data,
+      refresh,
+      isPartial,
+      path,
+      only,
+      without,
+      where,
+      sort,
+      limit,
+      skip,
+      locale,
+      find
+    } = ctx;
+    const props = {
+      path,
+      only,
+      without,
+      where,
+      sort,
+      limit,
+      skip,
+      locale,
+      find
+    };
+    if (props.find === "one") {
+      if (!data && slots?.["not-found"]) {
+        return slots["not-found"]({ props, ...this.$attrs });
+      }
+      if (data._type && data._type === "markdown" && !data?.body?.children.length) {
+        return slots.empty({ props, ...this.$attrs });
+      }
+    } else if (!data || !data.length) {
+      if (slots?.["not-found"]) {
+        return slots["not-found"]({ props, ...this.$attrs });
+      }
+    }
+    if (slots?.default) {
+      return slots.default({ data, refresh, isPartial, props, ...this.$attrs });
+    }
+    const emptyNode = (slot, data2) => __vite_ssr_import_0__.h("pre", null, JSON.stringify({ message: "You should use slots with <ContentQuery>!", slot, data: data2 }, null, 2));
+    return emptyNode("default", { data, props, isPartial });
+  }
+});
+;
+}
+
+
+// --------------------
+// Request: /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs
+// Parents: 
+// - /node_modules/@nuxt/content/dist/runtime/components/ContentQuery.mjs ($id_3f801a38)
+// - /node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs ($id_12ce52f3)
+// - /node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.mjs ($id_d2da4ccd)
+// - /node_modules/@nuxt/content/dist/runtime/components/Markdown.mjs ($id_f4cbbc2c)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue ($id_19429b58)
+// - /node_modules/@nuxt/content/dist/runtime/plugin.mjs ($id_a4132d07)
+// - /node_modules/@nuxt/content/dist/runtime/composables/web-socket.mjs ($id_575fe152)
+// - /node_modules/@nuxt/ui-templates/dist/templates/error-404.vue ($id_b90d4d0f)
+// - /node_modules/@nuxt/ui-templates/dist/templates/error-500.vue ($id_14c8b574)
+// - /node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue ($id_bc2d74a1)
+// Dependencies: 
+// - /node_modules/nuxt/dist/head/runtime/index.mjs ($id_b7351483)
+// - /node_modules/nuxt/dist/app/compat/vue-demi.mjs ($id_a8110be7)
+// - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/@nuxt/content/dist/runtime/composables/utils.mjs ($id_3db3e041)
+// - /node_modules/@nuxt/content/dist/runtime/composables/query.mjs ($id_47535763)
+// - /node_modules/@nuxt/content/dist/runtime/composables/navigation.mjs ($id_e209d000)
+// - /node_modules/nuxt/dist/pages/runtime/composables.mjs ($id_ff6ed455)
+// --------------------
+const $id_3d849a97 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/index.mjs");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/compat/vue-demi.mjs");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/composables/utils.mjs");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/index.mjs");
+
+Object.defineProperty(__vite_ssr_exports__, "useHead", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_5__.useHead }});
+Object.defineProperty(__vite_ssr_exports__, "useMeta", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_5__.useMeta }});
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/compat/vue-demi.mjs");
+
+Object.defineProperty(__vite_ssr_exports__, "isVue2", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.isVue2 }});
+Object.defineProperty(__vite_ssr_exports__, "isVue3", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.isVue3 }});
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
+
+Object.defineProperty(__vite_ssr_exports__, "useAsyncData", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.useAsyncData }});
+Object.defineProperty(__vite_ssr_exports__, "useLazyAsyncData", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.useLazyAsyncData }});
+Object.defineProperty(__vite_ssr_exports__, "refreshNuxtData", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.refreshNuxtData }});
+Object.defineProperty(__vite_ssr_exports__, "defineNuxtComponent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.defineNuxtComponent }});
+Object.defineProperty(__vite_ssr_exports__, "useNuxtApp", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.useNuxtApp }});
+Object.defineProperty(__vite_ssr_exports__, "defineNuxtPlugin", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.defineNuxtPlugin }});
+Object.defineProperty(__vite_ssr_exports__, "useRuntimeConfig", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.useRuntimeConfig }});
+Object.defineProperty(__vite_ssr_exports__, "useState", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.useState }});
+Object.defineProperty(__vite_ssr_exports__, "useFetch", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.useFetch }});
+Object.defineProperty(__vite_ssr_exports__, "useLazyFetch", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.useLazyFetch }});
+Object.defineProperty(__vite_ssr_exports__, "useCookie", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.useCookie }});
+Object.defineProperty(__vite_ssr_exports__, "useRequestHeaders", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.useRequestHeaders }});
+Object.defineProperty(__vite_ssr_exports__, "useRequestEvent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.useRequestEvent }});
+Object.defineProperty(__vite_ssr_exports__, "useRouter", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.useRouter }});
+Object.defineProperty(__vite_ssr_exports__, "useRoute", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.useRoute }});
+Object.defineProperty(__vite_ssr_exports__, "useActiveRoute", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.useActiveRoute }});
+Object.defineProperty(__vite_ssr_exports__, "defineNuxtRouteMiddleware", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.defineNuxtRouteMiddleware }});
+Object.defineProperty(__vite_ssr_exports__, "navigateTo", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.navigateTo }});
+Object.defineProperty(__vite_ssr_exports__, "abortNavigation", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.abortNavigation }});
+Object.defineProperty(__vite_ssr_exports__, "addRouteMiddleware", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.addRouteMiddleware }});
+Object.defineProperty(__vite_ssr_exports__, "throwError", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.throwError }});
+Object.defineProperty(__vite_ssr_exports__, "clearError", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.clearError }});
+Object.defineProperty(__vite_ssr_exports__, "useError", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.useError }});
+Object.defineProperty(__vite_ssr_exports__, "defineNuxtLink", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.defineNuxtLink }});
+const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+Object.defineProperty(__vite_ssr_exports__, "withCtx", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.withCtx }});
+Object.defineProperty(__vite_ssr_exports__, "withDirectives", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.withDirectives }});
+Object.defineProperty(__vite_ssr_exports__, "withKeys", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.withKeys }});
+Object.defineProperty(__vite_ssr_exports__, "withMemo", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.withMemo }});
+Object.defineProperty(__vite_ssr_exports__, "withModifiers", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.withModifiers }});
+Object.defineProperty(__vite_ssr_exports__, "withScopeId", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.withScopeId }});
+Object.defineProperty(__vite_ssr_exports__, "onActivated", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.onActivated }});
+Object.defineProperty(__vite_ssr_exports__, "onBeforeMount", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.onBeforeMount }});
+Object.defineProperty(__vite_ssr_exports__, "onBeforeUnmount", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.onBeforeUnmount }});
+Object.defineProperty(__vite_ssr_exports__, "onBeforeUpdate", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.onBeforeUpdate }});
+Object.defineProperty(__vite_ssr_exports__, "onDeactivated", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.onDeactivated }});
+Object.defineProperty(__vite_ssr_exports__, "onErrorCaptured", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.onErrorCaptured }});
+Object.defineProperty(__vite_ssr_exports__, "onMounted", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.onMounted }});
+Object.defineProperty(__vite_ssr_exports__, "onRenderTracked", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.onRenderTracked }});
+Object.defineProperty(__vite_ssr_exports__, "onRenderTriggered", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.onRenderTriggered }});
+Object.defineProperty(__vite_ssr_exports__, "onServerPrefetch", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.onServerPrefetch }});
+Object.defineProperty(__vite_ssr_exports__, "onUnmounted", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.onUnmounted }});
+Object.defineProperty(__vite_ssr_exports__, "onUpdated", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.onUpdated }});
+Object.defineProperty(__vite_ssr_exports__, "computed", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.computed }});
+Object.defineProperty(__vite_ssr_exports__, "customRef", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.customRef }});
+Object.defineProperty(__vite_ssr_exports__, "isProxy", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.isProxy }});
+Object.defineProperty(__vite_ssr_exports__, "isReactive", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.isReactive }});
+Object.defineProperty(__vite_ssr_exports__, "isReadonly", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.isReadonly }});
+Object.defineProperty(__vite_ssr_exports__, "isRef", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.isRef }});
+Object.defineProperty(__vite_ssr_exports__, "markRaw", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.markRaw }});
+Object.defineProperty(__vite_ssr_exports__, "proxyRefs", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.proxyRefs }});
+Object.defineProperty(__vite_ssr_exports__, "reactive", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.reactive }});
+Object.defineProperty(__vite_ssr_exports__, "readonly", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.readonly }});
+Object.defineProperty(__vite_ssr_exports__, "ref", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.ref }});
+Object.defineProperty(__vite_ssr_exports__, "shallowReactive", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.shallowReactive }});
+Object.defineProperty(__vite_ssr_exports__, "shallowReadonly", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.shallowReadonly }});
+Object.defineProperty(__vite_ssr_exports__, "shallowRef", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.shallowRef }});
+Object.defineProperty(__vite_ssr_exports__, "toRaw", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.toRaw }});
+Object.defineProperty(__vite_ssr_exports__, "toRef", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.toRef }});
+Object.defineProperty(__vite_ssr_exports__, "toRefs", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.toRefs }});
+Object.defineProperty(__vite_ssr_exports__, "triggerRef", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.triggerRef }});
+Object.defineProperty(__vite_ssr_exports__, "unref", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.unref }});
+Object.defineProperty(__vite_ssr_exports__, "watch", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.watch }});
+Object.defineProperty(__vite_ssr_exports__, "watchEffect", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.watchEffect }});
+Object.defineProperty(__vite_ssr_exports__, "isShallow", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.isShallow }});
+Object.defineProperty(__vite_ssr_exports__, "effect", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.effect }});
+Object.defineProperty(__vite_ssr_exports__, "effectScope", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.effectScope }});
+Object.defineProperty(__vite_ssr_exports__, "getCurrentScope", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.getCurrentScope }});
+Object.defineProperty(__vite_ssr_exports__, "onScopeDispose", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.onScopeDispose }});
+Object.defineProperty(__vite_ssr_exports__, "defineComponent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.defineComponent }});
+Object.defineProperty(__vite_ssr_exports__, "defineAsyncComponent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.defineAsyncComponent }});
+Object.defineProperty(__vite_ssr_exports__, "resolveComponent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.resolveComponent }});
+Object.defineProperty(__vite_ssr_exports__, "getCurrentInstance", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.getCurrentInstance }});
+Object.defineProperty(__vite_ssr_exports__, "h", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.h }});
+Object.defineProperty(__vite_ssr_exports__, "inject", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.inject }});
+Object.defineProperty(__vite_ssr_exports__, "nextTick", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.nextTick }});
+Object.defineProperty(__vite_ssr_exports__, "provide", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.provide }});
+Object.defineProperty(__vite_ssr_exports__, "useAttrs", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.useAttrs }});
+Object.defineProperty(__vite_ssr_exports__, "useCssModule", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.useCssModule }});
+Object.defineProperty(__vite_ssr_exports__, "useCssVars", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.useCssVars }});
+Object.defineProperty(__vite_ssr_exports__, "useSlots", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.useSlots }});
+Object.defineProperty(__vite_ssr_exports__, "useTransitionState", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.useTransitionState }});
+const __vite_ssr_import_9__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/composables/query.mjs");
+
+Object.defineProperty(__vite_ssr_exports__, "queryContent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_9__.queryContent }});
+const __vite_ssr_import_10__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/composables/utils.mjs");
+
+Object.defineProperty(__vite_ssr_exports__, "withContentBase", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_10__.withContentBase }});
+Object.defineProperty(__vite_ssr_exports__, "useUnwrap", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_10__.useUnwrap }});
+const __vite_ssr_import_11__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/composables/navigation.mjs");
+
+Object.defineProperty(__vite_ssr_exports__, "fetchContentNavigation", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_11__.fetchContentNavigation }});
+const __vite_ssr_import_12__ = await __vite_ssr_import__("/node_modules/nuxt/dist/pages/runtime/composables.mjs");
+
+Object.defineProperty(__vite_ssr_exports__, "definePageMeta", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_12__.definePageMeta }});;
+}
+
+
+// --------------------
+// Request: /node_modules/nuxt/dist/app/compat/vue-demi.mjs
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs ($id_3d849a97)
+// Dependencies: 
+// - /node_modules/nuxt/dist/app/compat/capi.mjs ($id_0c5717a4)
+// --------------------
+const $id_a8110be7 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/compat/capi.mjs");
+__vite_ssr_exportAll__(__vite_ssr_import_0__);
+const Vue2 = void 0;
+Object.defineProperty(__vite_ssr_exports__, "Vue2", { enumerable: true, configurable: true, get(){ return Vue2 }});
+const isVue2 = false;
+Object.defineProperty(__vite_ssr_exports__, "isVue2", { enumerable: true, configurable: true, get(){ return isVue2 }});
+const isVue3 = true;
+Object.defineProperty(__vite_ssr_exports__, "isVue3", { enumerable: true, configurable: true, get(){ return isVue3 }});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/nuxt/dist/app/compat/capi.mjs
+// Parents: 
+// - /node_modules/nuxt/dist/app/compat/vue-demi.mjs ($id_a8110be7)
+// Dependencies: 
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// --------------------
+const $id_0c5717a4 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+__vite_ssr_exportAll__(__vite_ssr_import_0__);
+const install = () => {
+};
+Object.defineProperty(__vite_ssr_exports__, "install", { enumerable: true, configurable: true, get(){ return install }});
+function set(target, key, val) {
+  if (Array.isArray(target)) {
+    target.length = Math.max(target.length, key);
+    target.splice(key, 1, val);
+    return val;
+  }
+  target[key] = val;
+  return val;
+}
+Object.defineProperty(__vite_ssr_exports__, "set", { enumerable: true, configurable: true, get(){ return set }});
+function del(target, key) {
+  if (Array.isArray(target)) {
+    target.splice(key, 1);
+    return;
+  }
+  delete target[key];
+}
+Object.defineProperty(__vite_ssr_exports__, "del", { enumerable: true, configurable: true, get(){ return del }});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/composables/utils.mjs
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs ($id_3d849a97)
+// - /node_modules/@nuxt/content/dist/runtime/composables/query.mjs ($id_47535763)
+// - /node_modules/@nuxt/content/dist/runtime/composables/navigation.mjs ($id_e209d000)
+// Dependencies: 
+// - /node_modules/ufo/dist/index.mjs ($id_614de060)
+// - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
+// - /node_modules/@nuxt/content/dist/runtime/markdown-parser/utils/node.mjs ($id_eacbabc5)
+// --------------------
+const $id_3db3e041 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/ufo/dist/index.mjs");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/markdown-parser/utils/node.mjs");
+
+const withContentBase = (url) => __vite_ssr_import_0__.withBase(url, "/api/" + __vite_ssr_import_1__.useRuntimeConfig().public.content.base);
+Object.defineProperty(__vite_ssr_exports__, "withContentBase", { enumerable: true, configurable: true, get(){ return withContentBase }});
+const useUnwrap = () => ({
+  unwrap: __vite_ssr_import_2__.unwrap,
+  flatUnwrap: __vite_ssr_import_2__.flatUnwrap
+});
+Object.defineProperty(__vite_ssr_exports__, "useUnwrap", { enumerable: true, configurable: true, get(){ return useUnwrap }});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/markdown-parser/utils/node.mjs
+// Parents: 
+// - /node_modules/@nuxt/content/dist/runtime/composables/utils.mjs ($id_3db3e041)
+// Dependencies: 
+
+// --------------------
+const $id_eacbabc5 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const TEXT_TAGS = ["p", "h1", "h2", "h3", "h4", "h5", "h6", "li"];
+Object.defineProperty(__vite_ssr_exports__, "TEXT_TAGS", { enumerable: true, configurable: true, get(){ return TEXT_TAGS }});
+function isTag(vnode, tag) {
+  if (vnode.type === tag) {
+    return true;
+  }
+  if (typeof vnode.type === "object" && vnode.type.tag === tag) {
+    return true;
+  }
+  if (vnode.tag === tag) {
+    return true;
+  }
+  return false;
+}
+Object.defineProperty(__vite_ssr_exports__, "isTag", { enumerable: true, configurable: true, get(){ return isTag }});
+function isText(vnode) {
+  return isTag(vnode, "text") || typeof vnode.children === "string";
+}
+Object.defineProperty(__vite_ssr_exports__, "isText", { enumerable: true, configurable: true, get(){ return isText }});
+function nodeChildren(node) {
+  if (Array.isArray(node.children) || typeof node.children === "string") {
+    return node.children;
+  }
+  if (typeof node.children.default === "function") {
+    return node.children.default();
+  }
+  return [];
+}
+Object.defineProperty(__vite_ssr_exports__, "nodeChildren", { enumerable: true, configurable: true, get(){ return nodeChildren }});
+function nodeTextContent(node) {
+  if (!node) {
+    return "";
+  }
+  if (Array.isArray(node)) {
+    return node.map(nodeTextContent).join("");
+  }
+  if (isText(node)) {
+    return node.children || node.value;
+  }
+  const children = nodeChildren(node);
+  if (Array.isArray(children)) {
+    return children.map(nodeTextContent).join("");
+  }
+  return "";
+}
+Object.defineProperty(__vite_ssr_exports__, "nodeTextContent", { enumerable: true, configurable: true, get(){ return nodeTextContent }});
+function unwrap(vnode, tags = ["p"]) {
+  if (Array.isArray(vnode)) {
+    return vnode.flatMap((node) => unwrap(node, tags));
+  }
+  let result = vnode;
+  if (tags.some((tag) => tag === "*" || isTag(vnode, tag))) {
+    result = nodeChildren(vnode) || vnode;
+    if (!Array.isArray(result) && TEXT_TAGS.some((tag) => isTag(vnode, tag))) {
+      result = [result];
+    }
+  }
+  return result;
+}
+Object.defineProperty(__vite_ssr_exports__, "unwrap", { enumerable: true, configurable: true, get(){ return unwrap }});
+function flatUnwrap(vnodes, tags = ["p"]) {
+  vnodes = Array.isArray(vnodes) ? vnodes : [vnodes];
+  if (!tags.length) {
+    return vnodes;
+  }
+  return vnodes.flatMap((vnode) => flatUnwrap(unwrap(vnode, [tags[0]]), tags.slice(1))).filter((vnode) => !(isText(vnode) && nodeTextContent(vnode).trim() === ""));
+}
+Object.defineProperty(__vite_ssr_exports__, "flatUnwrap", { enumerable: true, configurable: true, get(){ return flatUnwrap }});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/composables/query.mjs
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs ($id_3d849a97)
+// - /pages/stars.vue?macro=true ($id_de6eeb3d)
+// - /pages/stars.vue ($id_765c962d)
+// Dependencies: 
+// - /node_modules/ufo/dist/index.mjs ($id_614de060)
+// - /node_modules/ohash/dist/index.mjs ($id_b1b82cf3)
+// - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
+// - /node_modules/@nuxt/content/dist/runtime/query/query.mjs ($id_7961d5dc)
+// - /node_modules/@nuxt/content/dist/runtime/utils/json.mjs ($id_45454526)
+// - /node_modules/@nuxt/content/dist/runtime/composables/utils.mjs ($id_3db3e041)
+// --------------------
+const $id_47535763 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/ufo/dist/index.mjs");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/ohash/dist/index.mjs");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/query/query.mjs");
+
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/utils/json.mjs");
+
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/composables/utils.mjs");
+
+const queryFetch = (params) => {
+  const apiPath = __vite_ssr_import_5__.withContentBase(true ? "/query" : `/query/${__vite_ssr_import_1__.hash(params)}`);
+  if (!true && true) {
+    __vite_ssr_import_2__.useHead({
+      link: [
+        { rel: "prefetch", href: apiPath }
+      ]
+    });
+  }
+  return $fetch(apiPath, {
+    method: "GET",
+    responseType: "json",
+    params: {
+      _params: __vite_ssr_import_4__.jsonStringify(params),
+      previewToken: __vite_ssr_import_2__.useCookie("previewToken").value
+    }
+  });
+};
+Object.defineProperty(__vite_ssr_exports__, "queryFetch", { enumerable: true, configurable: true, get(){ return queryFetch }});
+function queryContent(query, ...pathParts) {
+  if (typeof query === "string") {
+    const path = __vite_ssr_import_0__.withLeadingSlash(__vite_ssr_import_0__.withoutTrailingSlash(__vite_ssr_import_0__.joinURL(query, ...pathParts)));
+    return __vite_ssr_import_3__.createQuery(queryFetch).where({ _path: new RegExp(`^${path}`) });
+  }
+  return __vite_ssr_import_3__.createQuery(queryFetch, query);
+}
+Object.defineProperty(__vite_ssr_exports__, "queryContent", { enumerable: true, configurable: true, get(){ return queryContent }});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/query/query.mjs
+// Parents: 
+// - /node_modules/@nuxt/content/dist/runtime/composables/query.mjs ($id_47535763)
+// Dependencies: 
+// - /node_modules/@nuxt/content/dist/runtime/query/match/utils.mjs ($id_e943acfb)
+// --------------------
+const $id_7961d5dc = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/query/match/utils.mjs");
+
+const arrayParams = ["sort", "where", "only", "without"];
+const createQuery = (fetcher, queryParams) => {
+  const params = {
+    ...queryParams
+  };
+  for (const key of arrayParams) {
+    if (params[key]) {
+      params[key] = __vite_ssr_import_0__.ensureArray(params[key]);
+    }
+  }
+  const $set = (key, fn = (v) => v) => {
+    return (...values) => {
+      params[key] = fn(...values);
+      return query;
+    };
+  };
+  const query = {
+    params: () => Object.freeze(params),
+    only: $set("only", __vite_ssr_import_0__.ensureArray),
+    without: $set("without", __vite_ssr_import_0__.ensureArray),
+    where: $set("where", (q) => [...__vite_ssr_import_0__.ensureArray(params.where), q]),
+    sort: $set("sort", (sort) => [...__vite_ssr_import_0__.ensureArray(params.sort), ...__vite_ssr_import_0__.ensureArray(sort)]),
+    limit: $set("limit", (v) => parseInt(String(v), 10)),
+    skip: $set("skip", (v) => parseInt(String(v), 10)),
+    findOne: () => fetcher({ ...params, first: true }),
+    find: () => fetcher(params),
+    findSurround: (query2, options) => fetcher({ ...params, surround: { query: query2, ...options } }),
+    locale: (_locale) => query.where({ _locale })
+  };
+  return query;
+};
+Object.defineProperty(__vite_ssr_exports__, "createQuery", { enumerable: true, configurable: true, get(){ return createQuery }});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/query/match/utils.mjs
+// Parents: 
+// - /node_modules/@nuxt/content/dist/runtime/query/query.mjs ($id_7961d5dc)
+// Dependencies: 
+
+// --------------------
+const $id_e943acfb = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const get = (obj, path) => path.split(".").reduce((acc, part) => acc && acc[part], obj);
+Object.defineProperty(__vite_ssr_exports__, "get", { enumerable: true, configurable: true, get(){ return get }});
+const _pick = (obj, condition) => Object.keys(obj).filter(condition).reduce((newObj, key) => Object.assign(newObj, { [key]: obj[key] }), {});
+const pick = (keys) => (obj) => keys && keys.length ? _pick(obj, (key) => keys.includes(key)) : obj;
+Object.defineProperty(__vite_ssr_exports__, "pick", { enumerable: true, configurable: true, get(){ return pick }});
+const omit = (keys) => (obj) => keys && keys.length ? _pick(obj, (key) => !keys.includes(key)) : obj;
+Object.defineProperty(__vite_ssr_exports__, "omit", { enumerable: true, configurable: true, get(){ return omit }});
+const apply = (fn) => (data) => Array.isArray(data) ? data.map((item) => fn(item)) : fn(data);
+Object.defineProperty(__vite_ssr_exports__, "apply", { enumerable: true, configurable: true, get(){ return apply }});
+const detectProperties = (keys) => {
+  const prefixes = [];
+  const properties = [];
+  for (const key of keys) {
+    if (["$", "_"].includes(key)) {
+      prefixes.push(key);
+    } else {
+      properties.push(key);
+    }
+  }
+  return { prefixes, properties };
+};
+Object.defineProperty(__vite_ssr_exports__, "detectProperties", { enumerable: true, configurable: true, get(){ return detectProperties }});
+const withoutKeys = (keys = []) => (obj) => {
+  if (keys.length === 0) {
+    return obj;
+  }
+  const { prefixes, properties } = detectProperties(keys);
+  return _pick(obj, (key) => !properties.includes(key) && !prefixes.includes(key[0]));
+};
+Object.defineProperty(__vite_ssr_exports__, "withoutKeys", { enumerable: true, configurable: true, get(){ return withoutKeys }});
+const withKeys = (keys = []) => (obj) => {
+  if (keys.length === 0) {
+    return obj;
+  }
+  const { prefixes, properties } = detectProperties(keys);
+  return _pick(obj, (key) => properties.includes(key) || prefixes.includes(key[0]));
+};
+Object.defineProperty(__vite_ssr_exports__, "withKeys", { enumerable: true, configurable: true, get(){ return withKeys }});
+const sortList = (data, params) => {
+  const comperable = new Intl.Collator(params.$locale, {
+    numeric: params.$numeric,
+    caseFirst: params.$caseFirst,
+    sensitivity: params.$sensitivity
+  });
+  const keys = Object.keys(params).filter((key) => !key.startsWith("$"));
+  for (const key of keys) {
+    data = data.sort((a, b) => {
+      const values = [get(a, key), get(b, key)].map((value) => value === null ? void 0 : value);
+      if (params[key] === 0) {
+        values.reverse();
+      }
+      return comperable.compare(values[0], values[1]);
+    });
+  }
+  return data;
+};
+Object.defineProperty(__vite_ssr_exports__, "sortList", { enumerable: true, configurable: true, get(){ return sortList }});
+const assertArray = (value, message = "Expected an array") => {
+  if (!Array.isArray(value)) {
+    throw new TypeError(message);
+  }
+};
+Object.defineProperty(__vite_ssr_exports__, "assertArray", { enumerable: true, configurable: true, get(){ return assertArray }});
+const ensureArray = (value) => Array.isArray(value) ? value : value ? [value] : [];
+Object.defineProperty(__vite_ssr_exports__, "ensureArray", { enumerable: true, configurable: true, get(){ return ensureArray }});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/utils/json.mjs
+// Parents: 
+// - /node_modules/@nuxt/content/dist/runtime/composables/query.mjs ($id_47535763)
+// - /node_modules/@nuxt/content/dist/runtime/composables/navigation.mjs ($id_e209d000)
+// Dependencies: 
+
+// --------------------
+const $id_45454526 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+function jsonStringify(value) {
+  return JSON.stringify(value, regExpReplacer);
+}
+Object.defineProperty(__vite_ssr_exports__, "jsonStringify", { enumerable: true, configurable: true, get(){ return jsonStringify }});
+function jsonParse(value) {
+  return JSON.parse(value, regExpReviver);
+}
+Object.defineProperty(__vite_ssr_exports__, "jsonParse", { enumerable: true, configurable: true, get(){ return jsonParse }});
+function regExpReplacer(_key, value) {
+  if (value instanceof RegExp) {
+    return `--REGEX ${value.toString()}`;
+  }
+  return value;
+}
+function regExpReviver(_key, value) {
+  const withOperator = typeof value === "string" && value.match(/^--([A-Z]+) (.+)$/) || [];
+  if (withOperator[1] === "REGEX") {
+    const regex = withOperator[2].match(/\/(.*)\/([dgimsuy]*)$/);
+    return regex ? new RegExp(regex[1], regex[2] || "") : value;
+  }
+  return value;
+}
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/composables/navigation.mjs
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs ($id_3d849a97)
+// Dependencies: 
+// - /node_modules/ohash/dist/index.mjs ($id_b1b82cf3)
+// - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
+// - /node_modules/@nuxt/content/dist/runtime/utils/json.mjs ($id_45454526)
+// - /node_modules/@nuxt/content/dist/runtime/composables/utils.mjs ($id_3db3e041)
+// --------------------
+const $id_e209d000 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/ohash/dist/index.mjs");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/utils/json.mjs");
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/composables/utils.mjs");
+
+const fetchContentNavigation = (queryBuilder) => {
+  const params = queryBuilder?.params();
+  const apiPath = __vite_ssr_import_3__.withContentBase(params ? `/navigation/${__vite_ssr_import_0__.hash(params)}` : "/navigation");
+  if (!true && true) {
+    __vite_ssr_import_1__.useHead({
+      link: [
+        { rel: "prefetch", href: apiPath }
+      ]
+    });
+  }
+  return $fetch(apiPath, {
+    method: "GET",
+    responseType: "json",
+    params: {
+      _params: __vite_ssr_import_2__.jsonStringify(params || {}),
+      previewToken: __vite_ssr_import_1__.useCookie("previewToken").value
+    }
+  });
+};
+Object.defineProperty(__vite_ssr_exports__, "fetchContentNavigation", { enumerable: true, configurable: true, get(){ return fetchContentNavigation }});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/nuxt/dist/pages/runtime/composables.mjs
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs ($id_3d849a97)
+// Dependencies: 
+
+// --------------------
+const $id_ff6ed455 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const warnRuntimeUsage = (method) => console.warn(`${method}() is a compiler-hint helper that is only usable inside the script block of a single file component. Its arguments should be compiled away and passing it at runtime has no effect.`);
+const definePageMeta = (meta) => {
+  if (true) {
+    warnRuntimeUsage("definePageMeta");
+  }
+};
+Object.defineProperty(__vite_ssr_exports__, "definePageMeta", { enumerable: true, configurable: true, get(){ return definePageMeta }});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/@nuxt/content/dist/runtime/components/ContentQuery.mjs ($id_3f801a38)
+// --------------------
+const $id_9fab5abb = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.mjs");
+
+__vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
+  props: {
+    path: {
+      type: String,
+      required: false,
+      default: "/"
+    },
+    query: {
+      type: Object,
+      required: false,
+      default: void 0
+    }
+  },
+  render(ctx) {
+    const slots = __vite_ssr_import_0__.useSlots();
+    const { path, query } = ctx;
+    const contentQueryProps = Object.assign(query || {}, { path });
+    const emptyNode = (slot, data) => __vite_ssr_import_0__.h("pre", null, JSON.stringify({ message: "You should use slots with <ContentList>", slot, data }, null, 2));
+    return __vite_ssr_import_0__.h(__vite_ssr_import_1__.default, contentQueryProps, {
+      default: slots?.default ? ({ data, refresh, isPartial }) => slots?.default({ list: data, refresh, isPartial, ...this.$attrs }) : ({ data }) => emptyNode("default", data),
+      empty: (bindings) => slots?.empty ? slots.empty(bindings) : ({ data }) => emptyNode("default", data),
+      "not-found": (bindings) => slots?.["not-found"] ? slots?.["not-found"]?.(bindings) : ({ data }) => emptyNode("not-found", data)
+    });
+  }
+});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.mjs
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/ohash/dist/index.mjs ($id_b1b82cf3)
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs ($id_3d849a97)
+// --------------------
+const $id_d2da4ccd = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/ohash/dist/index.mjs");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs");
+
+__vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
+  props: {
+    query: {
+      type: Object,
+      required: false,
+      default: void 0
+    }
+  },
+  async setup(props) {
+    const {
+      query
+    } = __vite_ssr_import_0__.toRefs(props);
+    const { data, refresh } = await __vite_ssr_import_2__.useAsyncData(`content-navigation-${__vite_ssr_import_1__.hash(query.value)}`, () => __vite_ssr_import_2__.fetchContentNavigation(query.value));
+    return {
+      data,
+      refresh
+    };
+  },
+  render(ctx) {
+    const slots = __vite_ssr_import_0__.useSlots();
+    const {
+      query,
+      data,
+      refresh
+    } = ctx;
+    const emptyNode = (slot, data2) => __vite_ssr_import_0__.h("pre", null, JSON.stringify({ message: "You should use slots with <ContentNavigation>", slot, data: data2 }, null, 2));
+    if (slots?.empty && (!data || !data?.length)) {
+      return slots?.empty?.({ query, ...this.$attrs }) || emptyNode("empty", { query, data });
+    }
+    return slots?.default ? slots.default({ navigation: data, refresh, ...this.$attrs }) : emptyNode("default", data);
+  }
+});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Markdown.mjs
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs ($id_3d849a97)
+// --------------------
+const $id_f4cbbc2c = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs");
+
+__vite_ssr_exports__.default = __vite_ssr_import_0__.defineComponent({
+  name: "Markdown",
+  functional: true,
+  props: {
+    use: {
+      type: [String, Function],
+      default: "default"
+    },
+    unwrap: {
+      type: [Boolean, String],
+      default: false
+    }
+  },
+  setup(props) {
+    const { parent } = __vite_ssr_import_0__.getCurrentInstance();
+    const { between } = __vite_ssr_import_0__.useSlots();
+    const tags = __vite_ssr_import_0__.computed(() => {
+      if (typeof props.unwrap === "string") {
+        return props.unwrap.split(" ");
+      }
+      return ["*"];
+    });
+    return {
+      tags,
+      between,
+      parent
+    };
+  },
+  render({ use, unwrap, between, tags, parent }) {
+    try {
+      const slot = typeof use === "string" ? parent?.slots[use] || parent?.parent?.slots[use] : use;
+      if (!slot) {
+        return __vite_ssr_import_0__.h("div");
+      }
+      if (!unwrap) {
+        return [slot()];
+      }
+      const { flatUnwrap } = __vite_ssr_import_0__.useUnwrap();
+      const unwrapped = flatUnwrap(slot(), tags);
+      if (between) {
+        return unwrapped.flatMap((vnode, index) => index === 0 ? [vnode] : [between(), vnode]);
+      }
+      return unwrapped.reduce((acc, item) => {
+        if (typeof item.children === "string") {
+          if (typeof acc[acc.length - 1] === "string") {
+            acc[acc.length - 1] += item.children;
+          } else {
+            acc.push(item.children);
+          }
+        } else {
+          acc.push(item);
+        }
+        return acc;
+      }, []);
+    } catch (e) {
+      return __vite_ssr_import_0__.h("div");
+    }
+  }
+});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseA.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_558bf79f = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/nuxt-link.mjs");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_main = /* @__PURE__ */ __vite_ssr_import_1__.defineComponent({
+  props: {
+    href: {
+      type: String,
+      default: ""
+    },
+    blank: {
+      type: Boolean,
+      default: false
+    }
+  },
+  setup(__props, { expose }) {
+    expose();
+    const __returned__ = {};
+    Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
+    return __returned__;
+  }
+});
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_NuxtLink = __vite_ssr_import_0__.default;
+  _push(__vite_ssr_import_3__.ssrRenderComponent(_component_NuxtLink, __vite_ssr_import_2__.mergeProps({ href: $props.href }, _attrs), {
+    default: __vite_ssr_import_2__.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        __vite_ssr_import_3__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push2, _parent2, _scopeId);
+      } else {
+        return [
+          __vite_ssr_import_2__.renderSlot(_ctx.$slots, "default")
+        ];
+      }
+    }),
+    _: 3
+  }, _parent));
+}
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup;
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_4__.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseA.vue");
+  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
+};
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseA.vue"]]);
+;
+}
+
+
+// --------------------
+// Request: /node_modules/vue/server-renderer/index.js
+// Parents: 
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseA.vue ($id_558bf79f)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseBlockquote.vue ($id_01e2b479)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue ($id_19429b58)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue ($id_fab9e310)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseEm.vue ($id_840411f2)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH1.vue ($id_b479ada6)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH2.vue ($id_9c1df7ff)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH3.vue ($id_f86082f5)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH4.vue ($id_7f627a67)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH5.vue ($id_caec80eb)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH6.vue ($id_26303ae9)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseHr.vue ($id_6f4fac0c)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseImg.vue ($id_f72b4351)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseLi.vue ($id_1b78ec5d)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseOl.vue ($id_2e24a6f5)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseP.vue ($id_0990778f)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseStrong.vue ($id_6d4c23c7)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTable.vue ($id_10f5aef2)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTbody.vue ($id_faffa2d8)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTd.vue ($id_b51a8b09)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTh.vue ($id_07608f57)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseThead.vue ($id_17b6f147)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTr.vue ($id_16f58501)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseUl.vue ($id_7728c86d)
+// - /pages/about.vue?macro=true ($id_9ddc318c)
+// - /pages/index.vue?macro=true ($id_5dd70240)
+// - /pages/jobs.vue?macro=true ($id_da245256)
+// - /pages/packages.vue?macro=true ($id_84d7e9a6)
+// - /components/StarCard.vue ($id_ce2fb5c2)
+// - /pages/stars.vue?macro=true ($id_de6eeb3d)
+// - /components/Card.vue ($id_243aaff2)
+// - /pages/tips/:id.vue?macro=true ($id_b2d27d81)
+// - /components/TheTag.vue ($id_83290242)
+// - /components/TheTags.vue ($id_a54c4874)
+// - /components/TipCard.vue ($id_f4d8b7fe)
+// - /pages/tips/index.vue?macro=true ($id_7b998549)
+// - /pages/about.vue ($id_a93ccd0b)
+// - /pages/index.vue ($id_cca58e97)
+// - /pages/jobs.vue ($id_1eaf0ed3)
+// - /pages/packages.vue ($id_d713bde7)
+// - /pages/stars.vue ($id_765c962d)
+// - /pages/tips/:id.vue ($id_d4dd6cfe)
+// - /pages/tips/index.vue ($id_2a5fe106)
+// - /node_modules/@nuxt/ui-templates/dist/templates/error-404.vue ($id_b90d4d0f)
+// - /node_modules/@nuxt/ui-templates/dist/templates/error-500.vue ($id_14c8b574)
+// - /node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue ($id_bc2d74a1)
+// - /node_modules/nuxt/dist/app/components/nuxt-error-page.vue ($id_8cc6d73f)
+// - /node_modules/nuxt/dist/app/components/nuxt-root.vue ($id_e9bfada3)
+// - /components/TheNavbar.vue ($id_1e19b72c)
+// - /components/TheFooter.vue ($id_cdfd5170)
+// - /app.vue ($id_2b46e842)
+// Dependencies: 
+
+// --------------------
+const $id_b215fa1c = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
+import("file:///Users/overtrue/www/laravel.xyz/node_modules/vue/server-renderer/index.js")
+  .then(r => {
+    if (r.default && r.default.__esModule)
+      r = r.default
+    exports.default = r.default
+    ssrExportAll(r)
+  })
+  .catch(e => {
+    console.error(e)
+    throw new Error("[vite dev] Error loading external \"/Users/overtrue/www/laravel.xyz/node_modules/vue/server-renderer/index.js\".")
+  })
+
+
+// --------------------
+// Request: /@id/plugin-vue:export-helper
+// Parents: 
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseA.vue ($id_558bf79f)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseBlockquote.vue ($id_01e2b479)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue ($id_19429b58)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue ($id_fab9e310)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseEm.vue ($id_840411f2)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH1.vue ($id_b479ada6)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH2.vue ($id_9c1df7ff)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH3.vue ($id_f86082f5)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH4.vue ($id_7f627a67)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH5.vue ($id_caec80eb)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH6.vue ($id_26303ae9)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseHr.vue ($id_6f4fac0c)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseImg.vue ($id_f72b4351)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseLi.vue ($id_1b78ec5d)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseOl.vue ($id_2e24a6f5)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseP.vue ($id_0990778f)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseStrong.vue ($id_6d4c23c7)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTable.vue ($id_10f5aef2)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTbody.vue ($id_faffa2d8)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTd.vue ($id_b51a8b09)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTh.vue ($id_07608f57)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseThead.vue ($id_17b6f147)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTr.vue ($id_16f58501)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseUl.vue ($id_7728c86d)
+// - /pages/about.vue?macro=true ($id_9ddc318c)
+// - /pages/index.vue?macro=true ($id_5dd70240)
+// - /pages/jobs.vue?macro=true ($id_da245256)
+// - /pages/packages.vue?macro=true ($id_84d7e9a6)
+// - /components/StarCard.vue ($id_ce2fb5c2)
+// - /pages/stars.vue?macro=true ($id_de6eeb3d)
+// - /components/Card.vue ($id_243aaff2)
+// - /pages/tips/:id.vue?macro=true ($id_b2d27d81)
+// - /components/TheTag.vue ($id_83290242)
+// - /components/TheTags.vue ($id_a54c4874)
+// - /components/TipCard.vue ($id_f4d8b7fe)
+// - /pages/tips/index.vue?macro=true ($id_7b998549)
+// - /pages/about.vue ($id_a93ccd0b)
+// - /pages/index.vue ($id_cca58e97)
+// - /pages/jobs.vue ($id_1eaf0ed3)
+// - /pages/packages.vue ($id_d713bde7)
+// - /pages/stars.vue ($id_765c962d)
+// - /pages/tips/:id.vue ($id_d4dd6cfe)
+// - /pages/tips/index.vue ($id_2a5fe106)
+// - /node_modules/@nuxt/ui-templates/dist/templates/error-404.vue ($id_b90d4d0f)
+// - /node_modules/@nuxt/ui-templates/dist/templates/error-500.vue ($id_14c8b574)
+// - /node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue ($id_bc2d74a1)
+// - /node_modules/nuxt/dist/app/components/nuxt-error-page.vue ($id_8cc6d73f)
+// - /node_modules/nuxt/dist/app/components/nuxt-root.vue ($id_e9bfada3)
+// - /components/TheNavbar.vue ($id_1e19b72c)
+// - /components/TheFooter.vue ($id_cdfd5170)
+// - /app.vue ($id_2b46e842)
+// Dependencies: 
+
+// --------------------
+const $id_bbb863c1 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+
+__vite_ssr_exports__.default = (sfc, props) => {
+  const target = sfc.__vccOpts || sfc;
+  for (const [key, val] of props) {
+    target[key] = val;
+  }
+  return target;
+}
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseBlockquote.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_01e2b479 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<blockquote${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}>`)
+  __vite_ssr_import_0__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent)
+  _push(`</blockquote>`)
+}
+
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseBlockquote.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseBlockquote.vue"]]);
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs ($id_3d849a97)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue?vue&type=style&index=0&lang.css ($id_d7e7fe44)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_19429b58 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs");
+
+const _sfc_main = __vite_ssr_import_0__.defineComponent({
+  props: {
+    code: {
+      type: String,
+      default: ""
+    },
+    language: {
+      type: String,
+      default: null
+    },
+    filename: {
+      type: String,
+      default: null
+    },
+    highlights: {
+      type: Array,
+      default: () => []
+    }
+  }
+});
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  __vite_ssr_import_1__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent)
+}
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue?vue&type=style&index=0&lang.css");
+
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_3__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_4__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue"]]);
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue?vue&type=style&index=0&lang.css
+// Parents: 
+// - /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue ($id_19429b58)
+// Dependencies: 
+
+// --------------------
+const $id_d7e7fe44 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+__vite_ssr_exports__.default = "pre code .line{display:block;min-height:1rem}";
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_fab9e310 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<code${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}>`)
+  __vite_ssr_import_0__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent)
+  _push(`</code>`)
+}
+
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue"]]);
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseEm.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_840411f2 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<em${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}>`)
+  __vite_ssr_import_0__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent)
+  _push(`</em>`)
+}
+
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseEm.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseEm.vue"]]);
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH1.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_b479ada6 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<h1${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}>`)
+  __vite_ssr_import_0__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent)
+  _push(`</h1>`)
+}
+
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH1.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH1.vue"]]);
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH2.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_9c1df7ff = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/nuxt-link.mjs");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_main = /* @__PURE__ */ __vite_ssr_import_1__.defineComponent({
+  props: {
+    id: { type: String, required: true }
+  },
+  setup(__props, { expose }) {
+    expose();
+    const __returned__ = {};
+    Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
+    return __returned__;
+  }
+});
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_NuxtLink = __vite_ssr_import_0__.default;
+  _push(`<h2${__vite_ssr_import_3__.ssrRenderAttrs(__vite_ssr_import_2__.mergeProps({ id: $props.id }, _attrs))}>`);
+  _push(__vite_ssr_import_3__.ssrRenderComponent(_component_NuxtLink, {
+    href: `#${$props.id}`
+  }, {
+    default: __vite_ssr_import_2__.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        __vite_ssr_import_3__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push2, _parent2, _scopeId);
+      } else {
+        return [
+          __vite_ssr_import_2__.renderSlot(_ctx.$slots, "default")
+        ];
+      }
+    }),
+    _: 3
+  }, _parent));
+  _push(`</h2>`);
+}
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup;
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_4__.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH2.vue");
+  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
+};
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH2.vue"]]);
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH3.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_f86082f5 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/nuxt-link.mjs");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_main = /* @__PURE__ */ __vite_ssr_import_1__.defineComponent({
+  props: {
+    id: { type: String, required: true }
+  },
+  setup(__props, { expose }) {
+    expose();
+    const __returned__ = {};
+    Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
+    return __returned__;
+  }
+});
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_NuxtLink = __vite_ssr_import_0__.default;
+  _push(`<h3${__vite_ssr_import_3__.ssrRenderAttrs(__vite_ssr_import_2__.mergeProps({ id: $props.id }, _attrs))}>`);
+  _push(__vite_ssr_import_3__.ssrRenderComponent(_component_NuxtLink, {
+    href: `#${$props.id}`
+  }, {
+    default: __vite_ssr_import_2__.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        __vite_ssr_import_3__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push2, _parent2, _scopeId);
+      } else {
+        return [
+          __vite_ssr_import_2__.renderSlot(_ctx.$slots, "default")
+        ];
+      }
+    }),
+    _: 3
+  }, _parent));
+  _push(`</h3>`);
+}
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup;
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_4__.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH3.vue");
+  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
+};
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH3.vue"]]);
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH4.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/nuxt/dist/app/components/nuxt-link.mjs ($id_ffac87b5)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_7f627a67 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/components/nuxt-link.mjs");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_main = /* @__PURE__ */ __vite_ssr_import_1__.defineComponent({
+  props: {
+    id: { type: String, required: true }
+  },
+  setup(__props, { expose }) {
+    expose();
+    const __returned__ = {};
+    Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
+    return __returned__;
+  }
+});
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  const _component_NuxtLink = __vite_ssr_import_0__.default;
+  _push(`<h4${__vite_ssr_import_3__.ssrRenderAttrs(__vite_ssr_import_2__.mergeProps({ id: $props.id }, _attrs))}>`);
+  _push(__vite_ssr_import_3__.ssrRenderComponent(_component_NuxtLink, {
+    href: `#${$props.id}`
+  }, {
+    default: __vite_ssr_import_2__.withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        __vite_ssr_import_3__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push2, _parent2, _scopeId);
+      } else {
+        return [
+          __vite_ssr_import_2__.renderSlot(_ctx.$slots, "default")
+        ];
+      }
+    }),
+    _: 3
+  }, _parent));
+  _push(`</h4>`);
+}
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup;
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_4__.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH4.vue");
+  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
+};
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_5__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH4.vue"]]);
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH5.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_caec80eb = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<h5${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}>`)
+  __vite_ssr_import_0__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent)
+  _push(`</h5>`)
+}
+
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH5.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH5.vue"]]);
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH6.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_26303ae9 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<h6${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}>`)
+  __vite_ssr_import_0__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent)
+  _push(`</h6>`)
+}
+
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH6.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH6.vue"]]);
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseHr.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_6f4fac0c = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<hr${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}>`)
+}
+
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseHr.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseHr.vue"]]);
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseImg.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_f72b4351 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_main = /* @__PURE__ */ __vite_ssr_import_0__.defineComponent({
+  props: {
+    src: {
+      type: String,
+      default: ""
+    },
+    alt: {
+      type: String,
+      default: ""
+    },
+    width: {
+      type: [String, Number],
+      default: void 0
+    },
+    height: {
+      type: [String, Number],
+      default: void 0
+    }
+  },
+  setup(__props, { expose }) {
+    expose();
+    const __returned__ = {};
+    Object.defineProperty(__returned__, "__isScriptSetup", { enumerable: false, value: true });
+    return __returned__;
+  }
+});
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
+  _push(`<img${__vite_ssr_import_2__.ssrRenderAttrs(__vite_ssr_import_1__.mergeProps({
+    src: $props.src,
+    alt: $props.alt,
+    width: $props.width,
+    height: $props.height
+  }, _attrs))}>`);
+}
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup;
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_3__.useSSRContext();
+  (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseImg.vue");
+  return _sfc_setup ? _sfc_setup(props, ctx) : void 0;
+};
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /* @__PURE__ */ __vite_ssr_import_4__.default(_sfc_main, [["ssrRender", _sfc_ssrRender], ["__file", "/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseImg.vue"]]);
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseLi.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_1b78ec5d = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<li${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}>`)
+  __vite_ssr_import_0__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent)
+  _push(`</li>`)
+}
+
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseLi.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseLi.vue"]]);
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseOl.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_2e24a6f5 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<ol${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}>`)
+  __vite_ssr_import_0__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent)
+  _push(`</ol>`)
+}
+
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseOl.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseOl.vue"]]);
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseP.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_0990778f = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<p${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}>`)
+  __vite_ssr_import_0__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent)
+  _push(`</p>`)
+}
+
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseP.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseP.vue"]]);
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseStrong.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_6d4c23c7 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<strong${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}>`)
+  __vite_ssr_import_0__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent)
+  _push(`</strong>`)
+}
+
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseStrong.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseStrong.vue"]]);
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTable.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_10f5aef2 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<table${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}>`)
+  __vite_ssr_import_0__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent)
+  _push(`</table>`)
+}
+
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTable.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTable.vue"]]);
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTbody.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_faffa2d8 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<tbody${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}>`)
+  __vite_ssr_import_0__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent)
+  _push(`</tbody>`)
+}
+
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTbody.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTbody.vue"]]);
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTd.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_b51a8b09 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<td${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}>`)
+  __vite_ssr_import_0__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent)
+  _push(`</td>`)
+}
+
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTd.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTd.vue"]]);
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTh.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_07608f57 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<th${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}>`)
+  __vite_ssr_import_0__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent)
+  _push(`</th>`)
+}
+
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTh.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTh.vue"]]);
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseThead.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_17b6f147 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<thead${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}>`)
+  __vite_ssr_import_0__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent)
+  _push(`</thead>`)
+}
+
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseThead.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseThead.vue"]]);
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTr.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_16f58501 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<tr${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}>`)
+  __vite_ssr_import_0__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent)
+  _push(`</tr>`)
+}
+
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTr.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTr.vue"]]);
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/components/Prose/ProseUl.vue
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs ($id_759f3471)
+// Dependencies: 
+// - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
+// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
+// - /@id/plugin-vue:export-helper ($id_bbb863c1)
+// --------------------
+const $id_7728c86d = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const _sfc_main = {}
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+
+
+function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
+  _push(`<ul${__vite_ssr_import_0__.ssrRenderAttrs(_attrs)}>`)
+  __vite_ssr_import_0__.ssrRenderSlot(_ctx.$slots, "default", {}, null, _push, _parent)
+  _push(`</ul>`)
+}
+
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+
+const _sfc_setup = _sfc_main.setup
+_sfc_main.setup = (props, ctx) => {
+  const ssrContext = __vite_ssr_import_1__.useSSRContext()
+  ;(ssrContext.modules || (ssrContext.modules = new Set())).add("node_modules/@nuxt/content/dist/runtime/components/Prose/ProseUl.vue")
+  return _sfc_setup ? _sfc_setup(props, ctx) : undefined
+}
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseUl.vue"]]);
 }
 
 
@@ -2863,99 +5500,6 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 
 
 // --------------------
-// Request: /node_modules/vue/server-renderer/index.js
-// Parents: 
-// - /pages/about.vue?macro=true ($id_9ddc318c)
-// - /pages/index.vue?macro=true ($id_5dd70240)
-// - /pages/jobs.vue?macro=true ($id_da245256)
-// - /pages/packages.vue?macro=true ($id_84d7e9a6)
-// - /components/StarCard.vue ($id_ce2fb5c2)
-// - /pages/stars.vue?macro=true ($id_de6eeb3d)
-// - /components/Card.vue ($id_243aaff2)
-// - /pages/tips/:id.vue?macro=true ($id_b2d27d81)
-// - /components/TheTag.vue ($id_83290242)
-// - /components/TheTags.vue ($id_a54c4874)
-// - /components/TipCard.vue ($id_f4d8b7fe)
-// - /pages/tips/index.vue?macro=true ($id_7b998549)
-// - /pages/about.vue ($id_a93ccd0b)
-// - /pages/index.vue ($id_cca58e97)
-// - /pages/jobs.vue ($id_1eaf0ed3)
-// - /pages/packages.vue ($id_d713bde7)
-// - /pages/stars.vue ($id_765c962d)
-// - /pages/tips/:id.vue ($id_d4dd6cfe)
-// - /pages/tips/index.vue ($id_2a5fe106)
-// - /node_modules/@nuxt/ui-templates/dist/templates/error-404.vue ($id_b90d4d0f)
-// - /node_modules/@nuxt/ui-templates/dist/templates/error-500.vue ($id_14c8b574)
-// - /node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue ($id_bc2d74a1)
-// - /node_modules/nuxt/dist/app/components/nuxt-error-page.vue ($id_8cc6d73f)
-// - /node_modules/nuxt/dist/app/components/nuxt-root.vue ($id_e9bfada3)
-// - /components/TheNavbar.vue ($id_1e19b72c)
-// - /components/TheFooter.vue ($id_cdfd5170)
-// - /app.vue ($id_2b46e842)
-// Dependencies: 
-
-// --------------------
-const $id_b215fa1c = (global, module, _, exports, importMeta, ssrImport, ssrDynamicImport, ssrExportAll) =>
-import("file:///Users/overtrue/www/laravel.xyz/node_modules/vue/server-renderer/index.js")
-  .then(r => {
-    if (r.default && r.default.__esModule)
-      r = r.default
-    exports.default = r.default
-    ssrExportAll(r)
-  })
-  .catch(e => {
-    console.error(e)
-    throw new Error("[vite dev] Error loading external \"/Users/overtrue/www/laravel.xyz/node_modules/vue/server-renderer/index.js\".")
-  })
-
-
-// --------------------
-// Request: /@id/plugin-vue:export-helper
-// Parents: 
-// - /pages/about.vue?macro=true ($id_9ddc318c)
-// - /pages/index.vue?macro=true ($id_5dd70240)
-// - /pages/jobs.vue?macro=true ($id_da245256)
-// - /pages/packages.vue?macro=true ($id_84d7e9a6)
-// - /components/StarCard.vue ($id_ce2fb5c2)
-// - /pages/stars.vue?macro=true ($id_de6eeb3d)
-// - /components/Card.vue ($id_243aaff2)
-// - /pages/tips/:id.vue?macro=true ($id_b2d27d81)
-// - /components/TheTag.vue ($id_83290242)
-// - /components/TheTags.vue ($id_a54c4874)
-// - /components/TipCard.vue ($id_f4d8b7fe)
-// - /pages/tips/index.vue?macro=true ($id_7b998549)
-// - /pages/about.vue ($id_a93ccd0b)
-// - /pages/index.vue ($id_cca58e97)
-// - /pages/jobs.vue ($id_1eaf0ed3)
-// - /pages/packages.vue ($id_d713bde7)
-// - /pages/stars.vue ($id_765c962d)
-// - /pages/tips/:id.vue ($id_d4dd6cfe)
-// - /pages/tips/index.vue ($id_2a5fe106)
-// - /node_modules/@nuxt/ui-templates/dist/templates/error-404.vue ($id_b90d4d0f)
-// - /node_modules/@nuxt/ui-templates/dist/templates/error-500.vue ($id_14c8b574)
-// - /node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue ($id_bc2d74a1)
-// - /node_modules/nuxt/dist/app/components/nuxt-error-page.vue ($id_8cc6d73f)
-// - /node_modules/nuxt/dist/app/components/nuxt-root.vue ($id_e9bfada3)
-// - /components/TheNavbar.vue ($id_1e19b72c)
-// - /components/TheFooter.vue ($id_cdfd5170)
-// - /app.vue ($id_2b46e842)
-// Dependencies: 
-
-// --------------------
-const $id_bbb863c1 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-
-__vite_ssr_exports__.default = (sfc, props) => {
-  const target = sfc.__vccOpts || sfc;
-  for (const [key, val] of props) {
-    target[key] = val;
-  }
-  return target;
-}
-;
-}
-
-
-// --------------------
 // Request: /pages/index.vue?macro=true
 // Parents: 
 // - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/routes.mjs ($id_f1f16d9d)
@@ -3066,6 +5610,8 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 // - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/routes.mjs ($id_f1f16d9d)
 // Dependencies: 
 // - /components/StarCard.vue ($id_ce2fb5c2)
+// - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
+// - /node_modules/@nuxt/content/dist/runtime/composables/query.mjs ($id_47535763)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
@@ -3073,7 +5619,10 @@ Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configur
 const $id_de6eeb3d = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/components/StarCard.vue");
 
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/composables/query.mjs");
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 
 const _sfc_main = {
@@ -3082,32 +5631,30 @@ const _sfc_main = {
 
 let __temp, __restore
 
-const supabase = useSupabaseClient()
-
 const { data: stars } = (
-  ([__temp,__restore] = __vite_ssr_import_1__.withAsyncContext(() => supabase.from('stars').select())),
+  ([__temp,__restore] = __vite_ssr_import_3__.withAsyncContext(() => __vite_ssr_import_1__.useAsyncData('stars', () => __vite_ssr_import_2__.queryContent('/stars').findOne()))),
   __temp = await __temp,
   __restore(),
   __temp
 )
 
-const __returned__ = { supabase, stars }
+const __returned__ = { stars }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
 
 }
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_star_card = __vite_ssr_import_0__.default
 
-  _push(`<div${__vite_ssr_import_3__.ssrRenderAttrs(__vite_ssr_import_2__.mergeProps({ class: "mt-8 space-y-6" }, _attrs))}><header><h1 class="text-3xl mb-0 text-gray-700 dark:text-gray-300">Stars</h1><p class="text-gray-600 my-0 dark:text-gray-500">It&#39;s because of them that Laravel has become so popular.</p></header><div class="flex flex-wrap gap-6 w-full"><!--[-->`)
-  __vite_ssr_import_3__.ssrRenderList($setup.stars, (star) => {
-    _push(__vite_ssr_import_3__.ssrRenderComponent(_component_star_card, {
+  _push(`<div${__vite_ssr_import_5__.ssrRenderAttrs(__vite_ssr_import_4__.mergeProps({ class: "mt-8 space-y-6" }, _attrs))}><header><h1 class="text-3xl mb-0 text-gray-700 dark:text-gray-300">Stars</h1><p class="text-gray-600 my-0 dark:text-gray-500">It&#39;s because of them that Laravel has become so popular.</p></header><div class="flex flex-wrap gap-6 w-full"><!--[-->`)
+  __vite_ssr_import_5__.ssrRenderList($setup.stars.body, (star) => {
+    _push(__vite_ssr_import_5__.ssrRenderComponent(_component_star_card, {
       star: star,
       key: star.id
     }, null, _parent))
@@ -3116,17 +5663,17 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 }
 
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_4__.useSSRContext()
+  const ssrContext = __vite_ssr_import_6__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/stars.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/pages/stars.vue"]])
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_7__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/pages/stars.vue"]])
 const meta = undefined
 Object.defineProperty(__vite_ssr_exports__, "meta", { enumerable: true, configurable: true, get(){ return meta }});;
 }
@@ -3182,7 +5729,7 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
     }),
     _: 1
   }, _parent));
-  _push(`<div class="flex justify-between mt-8"><div class="text-gray-600 flex space-x-1"><a href="https://twitter.com/{{ star.twitter_id }}" class="hover:bg-gray-800 text-gray-400 dark:text-gray-600 hover:dark:text-gray-300 rounded-full p-2 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" class="icon h-6 w-6" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path></svg></a><a href="https://github.com/{{ star.github_id }}" class="hover:bg-gray-800 text-gray-400 dark:text-gray-600 hover:dark:text-gray-300 rounded-full p-2 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" class="icon h-6 w-6" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg></a></div><a href="javascrit:;" class="text-gray-400 dark:text-gray-600 hover:dark:text-gray-300 flex items-center space-x-1"><svg xmlns="http://www.w3.org/2000/svg" class="icon h-6 w-6" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572"></path></svg><span>123904</span></a></div></div>`);
+  _push(`<div class="flex justify-center mt-8"><div class="text-gray-600 flex space-x-1"><a${__vite_ssr_import_2__.ssrRenderAttr("href", `https://twitter.com/${$props.star.twitter_id}`)} class="hover:bg-gray-300 hover:text-gray-700 hover:bg-gray-800 text-gray-400 dark:text-gray-600 hover:dark:text-gray-300 rounded-full p-2 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" class="icon h-6 w-6" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c-.002 -.249 1.51 -2.772 1.818 -4.013z"></path></svg></a><a${__vite_ssr_import_2__.ssrRenderAttr("href", `https://github.com/${$props.star.github_id}`)} class="hover:bg-gray-300 hover:text-gray-700 dark:hover:bg-gray-800 text-gray-400 dark:text-gray-600 hover:dark:text-gray-300 rounded-full p-2 flex items-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" class="icon h-6 w-6" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path></svg></a></div></div></div>`);
 }
 const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
@@ -3801,6 +6348,8 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_m
 // - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/routes.mjs ($id_f1f16d9d)
 // Dependencies: 
 // - /components/StarCard.vue ($id_ce2fb5c2)
+// - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
+// - /node_modules/@nuxt/content/dist/runtime/composables/query.mjs ($id_47535763)
 // - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
 // - /node_modules/vue/server-renderer/index.js ($id_b215fa1c)
 // - /@id/plugin-vue:export-helper ($id_bbb863c1)
@@ -3808,7 +6357,10 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_2__.default(_sfc_m
 const $id_765c962d = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const __vite_ssr_import_0__ = await __vite_ssr_import__("/components/StarCard.vue");
 
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
+
+const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/@nuxt/content/dist/runtime/composables/query.mjs");
+const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 
 const _sfc_main = {
@@ -3817,32 +6369,30 @@ const _sfc_main = {
 
 let __temp, __restore
 
-const supabase = useSupabaseClient()
-
 const { data: stars } = (
-  ([__temp,__restore] = __vite_ssr_import_1__.withAsyncContext(() => supabase.from('stars').select())),
+  ([__temp,__restore] = __vite_ssr_import_3__.withAsyncContext(() => __vite_ssr_import_1__.useAsyncData('stars', () => __vite_ssr_import_2__.queryContent('/stars').findOne()))),
   __temp = await __temp,
   __restore(),
   __temp
 )
 
-const __returned__ = { supabase, stars }
+const __returned__ = { stars }
 Object.defineProperty(__returned__, '__isScriptSetup', { enumerable: false, value: true })
 return __returned__
 }
 
 }
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
+const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/vue/server-renderer/index.js");
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $options) {
   const _component_star_card = __vite_ssr_import_0__.default
 
-  _push(`<div${__vite_ssr_import_3__.ssrRenderAttrs(__vite_ssr_import_2__.mergeProps({ class: "mt-8 space-y-6" }, _attrs))}><header><h1 class="text-3xl mb-0 text-gray-700 dark:text-gray-300">Stars</h1><p class="text-gray-600 my-0 dark:text-gray-500">It&#39;s because of them that Laravel has become so popular.</p></header><div class="flex flex-wrap gap-6 w-full"><!--[-->`)
-  __vite_ssr_import_3__.ssrRenderList($setup.stars, (star) => {
-    _push(__vite_ssr_import_3__.ssrRenderComponent(_component_star_card, {
+  _push(`<div${__vite_ssr_import_5__.ssrRenderAttrs(__vite_ssr_import_4__.mergeProps({ class: "mt-8 space-y-6" }, _attrs))}><header><h1 class="text-3xl mb-0 text-gray-700 dark:text-gray-300">Stars</h1><p class="text-gray-600 my-0 dark:text-gray-500">It&#39;s because of them that Laravel has become so popular.</p></header><div class="flex flex-wrap gap-6 w-full"><!--[-->`)
+  __vite_ssr_import_5__.ssrRenderList($setup.stars.body, (star) => {
+    _push(__vite_ssr_import_5__.ssrRenderComponent(_component_star_card, {
       star: star,
       key: star.id
     }, null, _parent))
@@ -3851,17 +6401,17 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs, $props, $setup, $data, $op
 }
 
 
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
+const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
 
 const _sfc_setup = _sfc_main.setup
 _sfc_main.setup = (props, ctx) => {
-  const ssrContext = __vite_ssr_import_4__.useSSRContext()
+  const ssrContext = __vite_ssr_import_6__.useSSRContext()
   ;(ssrContext.modules || (ssrContext.modules = new Set())).add("pages/stars.vue")
   return _sfc_setup ? _sfc_setup(props, ctx) : undefined
 }
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
+const __vite_ssr_import_7__ = await __vite_ssr_import__("/@id/plugin-vue:export-helper");
 
-__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_5__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/pages/stars.vue"]]);
+__vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_7__.default(_sfc_main, [['ssrRender',_sfc_ssrRender],['__file',"/Users/overtrue/www/laravel.xyz/pages/stars.vue"]]);
 }
 
 
@@ -4140,8 +6690,8 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_m
 // --------------------
 const $id_79723d14 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
 const configRouterOptions = {
-  linkActiveClass: "bg-gray-200 dark:bg-gray-700 text-gray-200",
-  linkExactActiveClass: "bg-gray-200 dark:bg-gray-700 text-gray-200"
+  linkActiveClass: "text-gray-800 dark:text-gray-200",
+  linkExactActiveClass: "text-gray-800 dark:text-gray-200"
 }
 __vite_ssr_exports__.default = {
 ...configRouterOptions,
@@ -4161,6 +6711,109 @@ const globalMiddleware = []
 Object.defineProperty(__vite_ssr_exports__, "globalMiddleware", { enumerable: true, configurable: true, get(){ return globalMiddleware }});
 const namedMiddleware = {}
 Object.defineProperty(__vite_ssr_exports__, "namedMiddleware", { enumerable: true, configurable: true, get(){ return namedMiddleware }});;
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/plugin.mjs
+// Parents: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/plugins/server.mjs ($id_cd2348f9)
+// Dependencies: 
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs ($id_3d849a97)
+// - /node_modules/@nuxt/content/dist/runtime/composables/web-socket.mjs ($id_575fe152)
+// --------------------
+const $id_a4132d07 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs");
+
+__vite_ssr_exports__.default = __vite_ssr_import_0__.defineNuxtPlugin(() => {
+  const publicConfig = __vite_ssr_import_0__.useRuntimeConfig().public;
+  if (false && publicConfig.content.wsUrl) {
+    __vite_ssr_dynamic_import__('/node_modules/@nuxt/content/dist/runtime/composables/web-socket.mjs').then(({ useContentWebSocket }) => useContentWebSocket());
+  }
+});
+;
+}
+
+
+// --------------------
+// Request: /node_modules/@nuxt/content/dist/runtime/composables/web-socket.mjs
+// Parents: 
+// - /node_modules/@nuxt/content/dist/runtime/plugin.mjs ($id_a4132d07)
+// Dependencies: 
+// - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
+// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs ($id_3d849a97)
+// --------------------
+const $id_575fe152 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
+const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
+
+const __vite_ssr_import_1__ = await __vite_ssr_import__("/@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs");
+
+const logger = {
+  log: (...args) => console.log("[Content]", ...args),
+  warn: (...args) => console.warn("[Content]", ...args)
+};
+let ws;
+function useContentWebSocket() {
+  if (!window.WebSocket) {
+    logger.warn("Could not enable hot reload, your browser does not support WebSocket.");
+    return;
+  }
+  const onMessage = (message) => {
+    try {
+      const data = JSON.parse(message.data);
+      if (!data) {
+        return;
+      }
+      __vite_ssr_import_1__.refreshNuxtData();
+    } catch (err) {
+    }
+  };
+  const onOpen = () => logger.log("WS connected!");
+  const onError = (e) => {
+    switch (e.code) {
+      case "ECONNREFUSED":
+        connect(true);
+        break;
+      default:
+        logger.warn("WS Error:", e);
+        break;
+    }
+  };
+  const onClose = (e) => {
+    if (e.code === 1e3 || e.code === 1005) {
+      logger.log("WS closed!");
+    } else {
+      connect(true);
+    }
+  };
+  const connect = (retry = false) => {
+    if (retry) {
+      logger.log("WS reconnecting..");
+      setTimeout(connect, 1e3);
+      return;
+    }
+    if (ws) {
+      try {
+        ws.close();
+      } catch (err) {
+      }
+      ws = void 0;
+    }
+    const wsURL = `${__vite_ssr_import_0__.useRuntimeConfig().public.content.wsUrl}ws`;
+    logger.log(`WS connect to ${wsURL}`);
+    ws = new WebSocket(wsURL);
+    ws.onopen = onOpen;
+    ws.onmessage = onMessage;
+    ws.onerror = onError;
+    ws.onclose = onClose;
+  };
+  connect();
+  return {
+    connect
+  };
+}
+Object.defineProperty(__vite_ssr_exports__, "useContentWebSocket", { enumerable: true, configurable: true, get(){ return useContentWebSocket }});
+;
 }
 
 
@@ -4823,200 +7476,6 @@ __vite_ssr_exports__.default = /*#__PURE__*/__vite_ssr_import_6__.default(_sfc_m
 
 
 // --------------------
-// Request: /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs
-// Parents: 
-// - /node_modules/@nuxt/ui-templates/dist/templates/error-404.vue ($id_b90d4d0f)
-// - /node_modules/@nuxt/ui-templates/dist/templates/error-500.vue ($id_14c8b574)
-// - /node_modules/@nuxt/ui-templates/dist/templates/error-dev.vue ($id_bc2d74a1)
-// Dependencies: 
-// - /node_modules/nuxt/dist/head/runtime/index.mjs ($id_b7351483)
-// - /node_modules/nuxt/dist/app/compat/vue-demi.mjs ($id_a8110be7)
-// - /node_modules/nuxt/dist/app/index.mjs ($id_36927477)
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// - /node_modules/nuxt/dist/pages/runtime/composables.mjs ($id_ff6ed455)
-// --------------------
-const $id_3d849a97 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/index.mjs");
-
-const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/compat/vue-demi.mjs");
-
-const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
-
-const __vite_ssr_import_3__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-const __vite_ssr_import_4__ = await __vite_ssr_import__("/node_modules/nuxt/dist/head/runtime/index.mjs");
-
-Object.defineProperty(__vite_ssr_exports__, "useHead", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_4__.useHead }});
-Object.defineProperty(__vite_ssr_exports__, "useMeta", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_4__.useMeta }});
-const __vite_ssr_import_5__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/compat/vue-demi.mjs");
-
-Object.defineProperty(__vite_ssr_exports__, "isVue2", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_5__.isVue2 }});
-Object.defineProperty(__vite_ssr_exports__, "isVue3", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_5__.isVue3 }});
-const __vite_ssr_import_6__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/index.mjs");
-
-Object.defineProperty(__vite_ssr_exports__, "useAsyncData", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.useAsyncData }});
-Object.defineProperty(__vite_ssr_exports__, "useLazyAsyncData", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.useLazyAsyncData }});
-Object.defineProperty(__vite_ssr_exports__, "refreshNuxtData", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.refreshNuxtData }});
-Object.defineProperty(__vite_ssr_exports__, "defineNuxtComponent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.defineNuxtComponent }});
-Object.defineProperty(__vite_ssr_exports__, "useNuxtApp", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.useNuxtApp }});
-Object.defineProperty(__vite_ssr_exports__, "defineNuxtPlugin", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.defineNuxtPlugin }});
-Object.defineProperty(__vite_ssr_exports__, "useRuntimeConfig", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.useRuntimeConfig }});
-Object.defineProperty(__vite_ssr_exports__, "useState", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.useState }});
-Object.defineProperty(__vite_ssr_exports__, "useFetch", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.useFetch }});
-Object.defineProperty(__vite_ssr_exports__, "useLazyFetch", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.useLazyFetch }});
-Object.defineProperty(__vite_ssr_exports__, "useCookie", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.useCookie }});
-Object.defineProperty(__vite_ssr_exports__, "useRequestHeaders", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.useRequestHeaders }});
-Object.defineProperty(__vite_ssr_exports__, "useRequestEvent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.useRequestEvent }});
-Object.defineProperty(__vite_ssr_exports__, "useRouter", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.useRouter }});
-Object.defineProperty(__vite_ssr_exports__, "useRoute", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.useRoute }});
-Object.defineProperty(__vite_ssr_exports__, "useActiveRoute", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.useActiveRoute }});
-Object.defineProperty(__vite_ssr_exports__, "defineNuxtRouteMiddleware", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.defineNuxtRouteMiddleware }});
-Object.defineProperty(__vite_ssr_exports__, "navigateTo", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.navigateTo }});
-Object.defineProperty(__vite_ssr_exports__, "abortNavigation", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.abortNavigation }});
-Object.defineProperty(__vite_ssr_exports__, "addRouteMiddleware", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.addRouteMiddleware }});
-Object.defineProperty(__vite_ssr_exports__, "throwError", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.throwError }});
-Object.defineProperty(__vite_ssr_exports__, "clearError", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.clearError }});
-Object.defineProperty(__vite_ssr_exports__, "useError", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.useError }});
-Object.defineProperty(__vite_ssr_exports__, "defineNuxtLink", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_6__.defineNuxtLink }});
-const __vite_ssr_import_7__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-
-Object.defineProperty(__vite_ssr_exports__, "withCtx", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.withCtx }});
-Object.defineProperty(__vite_ssr_exports__, "withDirectives", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.withDirectives }});
-Object.defineProperty(__vite_ssr_exports__, "withKeys", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.withKeys }});
-Object.defineProperty(__vite_ssr_exports__, "withMemo", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.withMemo }});
-Object.defineProperty(__vite_ssr_exports__, "withModifiers", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.withModifiers }});
-Object.defineProperty(__vite_ssr_exports__, "withScopeId", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.withScopeId }});
-Object.defineProperty(__vite_ssr_exports__, "onActivated", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.onActivated }});
-Object.defineProperty(__vite_ssr_exports__, "onBeforeMount", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.onBeforeMount }});
-Object.defineProperty(__vite_ssr_exports__, "onBeforeUnmount", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.onBeforeUnmount }});
-Object.defineProperty(__vite_ssr_exports__, "onBeforeUpdate", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.onBeforeUpdate }});
-Object.defineProperty(__vite_ssr_exports__, "onDeactivated", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.onDeactivated }});
-Object.defineProperty(__vite_ssr_exports__, "onErrorCaptured", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.onErrorCaptured }});
-Object.defineProperty(__vite_ssr_exports__, "onMounted", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.onMounted }});
-Object.defineProperty(__vite_ssr_exports__, "onRenderTracked", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.onRenderTracked }});
-Object.defineProperty(__vite_ssr_exports__, "onRenderTriggered", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.onRenderTriggered }});
-Object.defineProperty(__vite_ssr_exports__, "onServerPrefetch", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.onServerPrefetch }});
-Object.defineProperty(__vite_ssr_exports__, "onUnmounted", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.onUnmounted }});
-Object.defineProperty(__vite_ssr_exports__, "onUpdated", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.onUpdated }});
-Object.defineProperty(__vite_ssr_exports__, "computed", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.computed }});
-Object.defineProperty(__vite_ssr_exports__, "customRef", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.customRef }});
-Object.defineProperty(__vite_ssr_exports__, "isProxy", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.isProxy }});
-Object.defineProperty(__vite_ssr_exports__, "isReactive", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.isReactive }});
-Object.defineProperty(__vite_ssr_exports__, "isReadonly", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.isReadonly }});
-Object.defineProperty(__vite_ssr_exports__, "isRef", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.isRef }});
-Object.defineProperty(__vite_ssr_exports__, "markRaw", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.markRaw }});
-Object.defineProperty(__vite_ssr_exports__, "proxyRefs", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.proxyRefs }});
-Object.defineProperty(__vite_ssr_exports__, "reactive", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.reactive }});
-Object.defineProperty(__vite_ssr_exports__, "readonly", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.readonly }});
-Object.defineProperty(__vite_ssr_exports__, "ref", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.ref }});
-Object.defineProperty(__vite_ssr_exports__, "shallowReactive", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.shallowReactive }});
-Object.defineProperty(__vite_ssr_exports__, "shallowReadonly", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.shallowReadonly }});
-Object.defineProperty(__vite_ssr_exports__, "shallowRef", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.shallowRef }});
-Object.defineProperty(__vite_ssr_exports__, "toRaw", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.toRaw }});
-Object.defineProperty(__vite_ssr_exports__, "toRef", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.toRef }});
-Object.defineProperty(__vite_ssr_exports__, "toRefs", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.toRefs }});
-Object.defineProperty(__vite_ssr_exports__, "triggerRef", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.triggerRef }});
-Object.defineProperty(__vite_ssr_exports__, "unref", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.unref }});
-Object.defineProperty(__vite_ssr_exports__, "watch", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.watch }});
-Object.defineProperty(__vite_ssr_exports__, "watchEffect", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.watchEffect }});
-Object.defineProperty(__vite_ssr_exports__, "isShallow", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.isShallow }});
-Object.defineProperty(__vite_ssr_exports__, "effect", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.effect }});
-Object.defineProperty(__vite_ssr_exports__, "effectScope", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.effectScope }});
-Object.defineProperty(__vite_ssr_exports__, "getCurrentScope", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.getCurrentScope }});
-Object.defineProperty(__vite_ssr_exports__, "onScopeDispose", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.onScopeDispose }});
-Object.defineProperty(__vite_ssr_exports__, "defineComponent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.defineComponent }});
-Object.defineProperty(__vite_ssr_exports__, "defineAsyncComponent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.defineAsyncComponent }});
-Object.defineProperty(__vite_ssr_exports__, "resolveComponent", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.resolveComponent }});
-Object.defineProperty(__vite_ssr_exports__, "getCurrentInstance", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.getCurrentInstance }});
-Object.defineProperty(__vite_ssr_exports__, "h", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.h }});
-Object.defineProperty(__vite_ssr_exports__, "inject", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.inject }});
-Object.defineProperty(__vite_ssr_exports__, "nextTick", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.nextTick }});
-Object.defineProperty(__vite_ssr_exports__, "provide", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.provide }});
-Object.defineProperty(__vite_ssr_exports__, "useAttrs", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.useAttrs }});
-Object.defineProperty(__vite_ssr_exports__, "useCssModule", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.useCssModule }});
-Object.defineProperty(__vite_ssr_exports__, "useCssVars", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.useCssVars }});
-Object.defineProperty(__vite_ssr_exports__, "useSlots", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.useSlots }});
-Object.defineProperty(__vite_ssr_exports__, "useTransitionState", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_7__.useTransitionState }});
-const __vite_ssr_import_8__ = await __vite_ssr_import__("/node_modules/nuxt/dist/pages/runtime/composables.mjs");
-
-Object.defineProperty(__vite_ssr_exports__, "definePageMeta", { enumerable: true, configurable: true, get(){ return __vite_ssr_import_8__.definePageMeta }});;
-}
-
-
-// --------------------
-// Request: /node_modules/nuxt/dist/app/compat/vue-demi.mjs
-// Parents: 
-// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs ($id_3d849a97)
-// Dependencies: 
-// - /node_modules/nuxt/dist/app/compat/capi.mjs ($id_0c5717a4)
-// --------------------
-const $id_a8110be7 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/nuxt/dist/app/compat/capi.mjs");
-__vite_ssr_exportAll__(__vite_ssr_import_0__);
-const Vue2 = void 0;
-Object.defineProperty(__vite_ssr_exports__, "Vue2", { enumerable: true, configurable: true, get(){ return Vue2 }});
-const isVue2 = false;
-Object.defineProperty(__vite_ssr_exports__, "isVue2", { enumerable: true, configurable: true, get(){ return isVue2 }});
-const isVue3 = true;
-Object.defineProperty(__vite_ssr_exports__, "isVue3", { enumerable: true, configurable: true, get(){ return isVue3 }});
-;
-}
-
-
-// --------------------
-// Request: /node_modules/nuxt/dist/app/compat/capi.mjs
-// Parents: 
-// - /node_modules/nuxt/dist/app/compat/vue-demi.mjs ($id_a8110be7)
-// Dependencies: 
-// - /node_modules/vue/dist/vue.cjs.js ($id_60f0615f)
-// --------------------
-const $id_0c5717a4 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const __vite_ssr_import_0__ = await __vite_ssr_import__("/node_modules/vue/dist/vue.cjs.js");
-__vite_ssr_exportAll__(__vite_ssr_import_0__);
-const install = () => {
-};
-Object.defineProperty(__vite_ssr_exports__, "install", { enumerable: true, configurable: true, get(){ return install }});
-function set(target, key, val) {
-  if (Array.isArray(target)) {
-    target.length = Math.max(target.length, key);
-    target.splice(key, 1, val);
-    return val;
-  }
-  target[key] = val;
-  return val;
-}
-Object.defineProperty(__vite_ssr_exports__, "set", { enumerable: true, configurable: true, get(){ return set }});
-function del(target, key) {
-  if (Array.isArray(target)) {
-    target.splice(key, 1);
-    return;
-  }
-  delete target[key];
-}
-Object.defineProperty(__vite_ssr_exports__, "del", { enumerable: true, configurable: true, get(){ return del }});
-;
-}
-
-
-// --------------------
-// Request: /node_modules/nuxt/dist/pages/runtime/composables.mjs
-// Parents: 
-// - /@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs ($id_3d849a97)
-// Dependencies: 
-
-// --------------------
-const $id_ff6ed455 = async function (global, module, exports, __vite_ssr_exports__, __vite_ssr_import_meta__, __vite_ssr_import__, __vite_ssr_dynamic_import__, __vite_ssr_exportAll__) {
-const warnRuntimeUsage = (method) => console.warn(`${method}() is a compiler-hint helper that is only usable inside the script block of a single file component. Its arguments should be compiled away and passing it at runtime has no effect.`);
-const definePageMeta = (meta) => {
-  if (true) {
-    warnRuntimeUsage("definePageMeta");
-  }
-};
-Object.defineProperty(__vite_ssr_exports__, "definePageMeta", { enumerable: true, configurable: true, get(){ return definePageMeta }});
-;
-}
-
-
-// --------------------
 // Request: /node_modules/@nuxt/ui-templates/dist/templates/error-404.vue?vue&type=style&index=0&scoped=true&lang.css
 // Parents: 
 // - /node_modules/@nuxt/ui-templates/dist/templates/error-404.vue ($id_b90d4d0f)
@@ -5329,38 +7788,47 @@ const __vite_ssr_import_2__ = await __vite_ssr_import__("/node_modules/vue/serve
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   const _component_NuxtLink = __vite_ssr_import_0__.default
 
-  _push(`<nav${__vite_ssr_import_2__.ssrRenderAttrs(__vite_ssr_import_1__.mergeProps({ class: "bg-white shadow dark:bg-gray-800" }, _attrs))}><div class="container px-6 py-4 mx-auto"><div class="md:flex md:items-center md:justify-between"><div class="flex items-center justify-between"><div class="text-xl font-semibold text-gray-700"><a href="/" class="flex items-center space-x-2 text-2xl font-bold text-gray-800 transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300"><h1 class="text-3xl leading-none m-0">Laravel</h1><span class="bg-blue-500 text-white text-sm px-2 py-1 rounded rounded-bl-none">小宇宙</span></a></div><!-- Mobile menu button --><div class="flex md:hidden"><button type="button" class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu"><svg viewBox="0 0 24 24" class="w-6 h-6 fill-current"><path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path></svg></button></div></div><!-- Mobile Menu open: "block", Menu closed: "hidden" --><div class="flex-1 md:flex md:items-center md:justify-between"><div class="flex flex-col -mx-4 md:flex-row md:items-center md:mx-8">`)
-  _push(__vite_ssr_import_2__.ssrRenderComponent(_component_NuxtLink, {
-    to: "/articles",
-    class: "px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
-  }, {
-    default: __vite_ssr_import_1__.withCtx((_, _push, _parent, _scopeId) => {
-      if (_push) {
-        _push(` Articles `)
-      } else {
-        return [
-          __vite_ssr_import_1__.createTextVNode(" Articles ")
-        ]
-      }
-    }),
-    _: 1 /* STABLE */
-  }, _parent))
-  _push(`<!-- <NuxtLink
+  _push(`<nav${__vite_ssr_import_2__.ssrRenderAttrs(__vite_ssr_import_1__.mergeProps({ class: "bg-white shadow dark:bg-gray-800" }, _attrs))}><div class="container px-6 py-4 mx-auto"><div class="md:flex md:items-center md:justify-between"><div class="flex items-center justify-between"><div class="text-xl font-semibold text-gray-700"><a href="/" class="flex items-center space-x-2 text-2xl font-bold text-gray-800 transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text-gray-600 dark:hover:text-gray-300"><h1 class="text-3xl leading-none m-0">Laravel</h1><span class="bg-blue-500 text-white text-sm px-2 py-1 rounded rounded-bl-none">小宇宙</span></a></div><!-- Mobile menu button --><div class="flex md:hidden"><button type="button" class="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu"><svg viewBox="0 0 24 24" class="w-6 h-6 fill-current"><path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path></svg></button></div></div><!-- Mobile Menu open: "block", Menu closed: "hidden" --><div class="flex-1 md:flex md:items-center md:justify-between"><div class="flex flex-col -mx-4 md:flex-row md:items-center md:mx-8"><!-- <NuxtLink
+              to="/articles"
+              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
+            >
+              Articles
+            </NuxtLink> --><!-- <NuxtLink
               to="/tips"
-              class="px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
+              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
             >
               Tips
             </NuxtLink> -->`)
   _push(__vite_ssr_import_2__.ssrRenderComponent(_component_NuxtLink, {
     to: "/stars",
-    class: "px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
+    class: "flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
   }, {
     default: __vite_ssr_import_1__.withCtx((_, _push, _parent, _scopeId) => {
       if (_push) {
-        _push(` Stars `)
+        _push(`<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"${
+          _scopeId
+        }><path stroke-linecap="round" stroke-linejoin="round" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"${
+          _scopeId
+        }></path></svg><span${
+          _scopeId
+        }>Stars</span>`)
       } else {
         return [
-          __vite_ssr_import_1__.createTextVNode(" Stars ")
+          (__vite_ssr_import_1__.openBlock(), __vite_ssr_import_1__.createBlock("svg", {
+            xmlns: "http://www.w3.org/2000/svg",
+            class: "h-4 w-4",
+            fill: "none",
+            viewBox: "0 0 24 24",
+            stroke: "currentColor",
+            "stroke-width": "2"
+          }, [
+            __vite_ssr_import_1__.createVNode("path", {
+              "stroke-linecap": "round",
+              "stroke-linejoin": "round",
+              d: "M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
+            })
+          ])),
+          __vite_ssr_import_1__.createVNode("span", null, "Stars")
         ]
       }
     }),
@@ -5368,14 +7836,34 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   }, _parent))
   _push(__vite_ssr_import_2__.ssrRenderComponent(_component_NuxtLink, {
     to: "/packages",
-    class: "px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
+    class: "flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
   }, {
     default: __vite_ssr_import_1__.withCtx((_, _push, _parent, _scopeId) => {
       if (_push) {
-        _push(` Packages `)
+        _push(`<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"${
+          _scopeId
+        }><path stroke-linecap="round" stroke-linejoin="round" d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"${
+          _scopeId
+        }></path></svg><span${
+          _scopeId
+        }>Packages</span>`)
       } else {
         return [
-          __vite_ssr_import_1__.createTextVNode(" Packages ")
+          (__vite_ssr_import_1__.openBlock(), __vite_ssr_import_1__.createBlock("svg", {
+            xmlns: "http://www.w3.org/2000/svg",
+            class: "h-4 w-4",
+            fill: "none",
+            viewBox: "0 0 24 24",
+            stroke: "currentColor",
+            "stroke-width": "2"
+          }, [
+            __vite_ssr_import_1__.createVNode("path", {
+              "stroke-linecap": "round",
+              "stroke-linejoin": "round",
+              d: "M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
+            })
+          ])),
+          __vite_ssr_import_1__.createVNode("span", null, "Packages")
         ]
       }
     }),
@@ -5383,20 +7871,52 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   }, _parent))
   _push(__vite_ssr_import_2__.ssrRenderComponent(_component_NuxtLink, {
     to: "/jobs",
-    class: "px-2 py-1 mx-2 mt-2 text-sm font-medium text-gray-700 transition-colors duration-200 transform rounded-md md:mt-0 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
+    class: "flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
   }, {
     default: __vite_ssr_import_1__.withCtx((_, _push, _parent, _scopeId) => {
       if (_push) {
-        _push(` Jobs `)
+        _push(`<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"${
+          _scopeId
+        }><path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"${
+          _scopeId
+        }></path></svg><span${
+          _scopeId
+        }>Jobs</span>`)
       } else {
         return [
-          __vite_ssr_import_1__.createTextVNode(" Jobs ")
+          (__vite_ssr_import_1__.openBlock(), __vite_ssr_import_1__.createBlock("svg", {
+            xmlns: "http://www.w3.org/2000/svg",
+            class: "h-4 w-4",
+            fill: "none",
+            viewBox: "0 0 24 24",
+            stroke: "currentColor",
+            "stroke-width": "2"
+          }, [
+            __vite_ssr_import_1__.createVNode("path", {
+              "stroke-linecap": "round",
+              "stroke-linejoin": "round",
+              d: "M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
+            })
+          ])),
+          __vite_ssr_import_1__.createVNode("span", null, "Jobs")
         ]
       }
     }),
     _: 1 /* STABLE */
   }, _parent))
-  _push(`</div><div class="flex items-center mt-4 md:mt-0"><button type="button" class="flex items-center focus:outline-none" aria-label="toggle profile dropdown"><div class="w-8 h-8 overflow-hidden border-gray-400 rounded-full"><img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=334&amp;q=80" class="object-cover w-full h-full" alt="avatar"></div><h3 class="mx-2 text-sm font-medium text-gray-700 dark:text-gray-200 md:hidden">Khatab wedaa</h3></button></div></div></div></div></nav>`)
+  _push(`</div><!-- <div class="flex items-center mt-4 md:mt-0">
+            <button type="button" class="flex items-center focus:outline-none" aria-label="toggle profile dropdown">
+              <div class="w-8 h-8 overflow-hidden border-gray-400 rounded-full">
+                <img
+                  src="https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=334&q=80"
+                  class="object-cover w-full h-full"
+                  alt="avatar"
+                />
+              </div>
+
+              <h3 class="mx-2 text-sm font-medium text-gray-600 dark:text-gray-200 md:hidden">Khatab wedaa</h3>
+            </button>
+          </div> --></div></div></div></nav>`)
 }
 
 
@@ -5431,7 +7951,11 @@ const __vite_ssr_import_1__ = await __vite_ssr_import__("/node_modules/vue/serve
 
 
 function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
-  _push(`<footer${__vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "bg-white dark:bg-gray-800 mt-8" }, _attrs))}><div class="container px-6 py-8 mx-auto"><div class="flex flex-col items-center sm:flex-row sm:justify-between"><p class="text-sm text-gray-400">© Copyright 2021. All Rights Reserved.</p><div class="flex mt-3 -mx-2 sm:mt-0"><a href="#" class="mx-2 text-sm text-gray-400 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Reddit"> Teams </a><a href="#" class="mx-2 text-sm text-gray-400 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Reddit"> Privacy </a><a href="#" class="mx-2 text-sm text-gray-400 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Reddit"> Cookies </a></div></div></div></footer>`)
+  _push(`<footer${
+    __vite_ssr_import_1__.ssrRenderAttrs(__vite_ssr_import_0__.mergeProps({ class: "bg-white dark:bg-gray-800 mt-8" }, _attrs))
+  }><div class="container px-6 py-8 mx-auto"><div class="flex flex-col items-center sm:flex-row sm:justify-between"><p class="text-sm text-gray-400">© Copyright ${
+    __vite_ssr_import_1__.ssrInterpolate(new Date().getFullYear())
+  }. All Rights Reserved.</p><div class="flex mt-3 -mx-2 sm:mt-0"><a href="#" class="mx-2 text-sm text-gray-400 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Reddit"> Teams </a><a href="#" class="mx-2 text-sm text-gray-400 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Reddit"> Privacy </a><a href="#" class="mx-2 text-sm text-gray-400 hover:text-gray-500 dark:hover:text-gray-300" aria-label="Reddit"> Cookies </a></div></div></div></footer>`)
 }
 
 
@@ -5487,6 +8011,54 @@ const __modules__ = {
   "/@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/plugins/server.mjs": $id_cd2348f9,
   "/node_modules/nuxt/dist/app/plugins/preload.server.mjs": $id_9871bba0,
   "/@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/components.plugin.mjs": $id_759f3471,
+  "/node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs": $id_12ce52f3,
+  "/node_modules/@nuxt/content/dist/runtime/components/ContentRenderer.mjs": $id_8f3d0953,
+  "/node_modules/@nuxt/content/dist/runtime/components/MarkdownRenderer.mjs": $id_4c793316,
+  "/node_modules/scule/dist/index.mjs": $id_ff332d11,
+  "/node_modules/property-information/index.js": $id_882dd793,
+  "/node_modules/html-tags/index.js": $id_4503b399,
+  "/node_modules/@nuxt/content/dist/runtime/components/ContentQuery.mjs": $id_3f801a38,
+  "/@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs": $id_3d849a97,
+  "/node_modules/nuxt/dist/app/compat/vue-demi.mjs": $id_a8110be7,
+  "/node_modules/nuxt/dist/app/compat/capi.mjs": $id_0c5717a4,
+  "/node_modules/@nuxt/content/dist/runtime/composables/utils.mjs": $id_3db3e041,
+  "/node_modules/@nuxt/content/dist/runtime/markdown-parser/utils/node.mjs": $id_eacbabc5,
+  "/node_modules/@nuxt/content/dist/runtime/composables/query.mjs": $id_47535763,
+  "/node_modules/@nuxt/content/dist/runtime/query/query.mjs": $id_7961d5dc,
+  "/node_modules/@nuxt/content/dist/runtime/query/match/utils.mjs": $id_e943acfb,
+  "/node_modules/@nuxt/content/dist/runtime/utils/json.mjs": $id_45454526,
+  "/node_modules/@nuxt/content/dist/runtime/composables/navigation.mjs": $id_e209d000,
+  "/node_modules/nuxt/dist/pages/runtime/composables.mjs": $id_ff6ed455,
+  "/node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs": $id_9fab5abb,
+  "/node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.mjs": $id_d2da4ccd,
+  "/node_modules/@nuxt/content/dist/runtime/components/Markdown.mjs": $id_f4cbbc2c,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseA.vue": $id_558bf79f,
+  "/node_modules/vue/server-renderer/index.js": $id_b215fa1c,
+  "/@id/plugin-vue:export-helper": $id_bbb863c1,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseBlockquote.vue": $id_01e2b479,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue": $id_19429b58,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCode.vue?vue&type=style&index=0&lang.css": $id_d7e7fe44,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseCodeInline.vue": $id_fab9e310,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseEm.vue": $id_840411f2,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH1.vue": $id_b479ada6,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH2.vue": $id_9c1df7ff,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH3.vue": $id_f86082f5,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH4.vue": $id_7f627a67,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH5.vue": $id_caec80eb,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseH6.vue": $id_26303ae9,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseHr.vue": $id_6f4fac0c,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseImg.vue": $id_f72b4351,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseLi.vue": $id_1b78ec5d,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseOl.vue": $id_2e24a6f5,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseP.vue": $id_0990778f,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseStrong.vue": $id_6d4c23c7,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTable.vue": $id_10f5aef2,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTbody.vue": $id_faffa2d8,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTd.vue": $id_b51a8b09,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTh.vue": $id_07608f57,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseThead.vue": $id_17b6f147,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseTr.vue": $id_16f58501,
+  "/node_modules/@nuxt/content/dist/runtime/components/Prose/ProseUl.vue": $id_7728c86d,
   "/node_modules/nuxt/dist/head/runtime/lib/vueuse-head.plugin.mjs": $id_e6f12003,
   "/node_modules/@vueuse/head/dist/index.mjs": $id_c032264e,
   "/node_modules/defu/dist/defu.mjs": $id_d7afab65,
@@ -5499,8 +8071,6 @@ const __modules__ = {
   "/node_modules/nuxt/dist/app/components/utils.mjs": $id_69c52686,
   "/@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/routes.mjs": $id_f1f16d9d,
   "/pages/about.vue?macro=true": $id_9ddc318c,
-  "/node_modules/vue/server-renderer/index.js": $id_b215fa1c,
-  "/@id/plugin-vue:export-helper": $id_bbb863c1,
   "/pages/index.vue?macro=true": $id_5dd70240,
   "/pages/jobs.vue?macro=true": $id_da245256,
   "/pages/packages.vue?macro=true": $id_84d7e9a6,
@@ -5521,6 +8091,8 @@ const __modules__ = {
   "/pages/tips/index.vue": $id_2a5fe106,
   "/@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/router.options.mjs": $id_79723d14,
   "/@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/middleware.mjs": $id_26232596,
+  "/node_modules/@nuxt/content/dist/runtime/plugin.mjs": $id_a4132d07,
+  "/node_modules/@nuxt/content/dist/runtime/composables/web-socket.mjs": $id_575fe152,
   "/plugins/dayjs.js": $id_e4088396,
   "/node_modules/dayjs/dayjs.min.js": $id_0bbcdaab,
   "/node_modules/dayjs/plugin/relativeTime.js": $id_574d0a3a,
@@ -5539,10 +8111,6 @@ const __modules__ = {
   "/@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/error-component.mjs": $id_328456ef,
   "/node_modules/nuxt/dist/app/components/nuxt-error-page.vue": $id_8cc6d73f,
   "/node_modules/@nuxt/ui-templates/dist/templates/error-404.vue": $id_b90d4d0f,
-  "/@id/virtual:nuxt:/Users/overtrue/www/laravel.xyz/.nuxt/imports.mjs": $id_3d849a97,
-  "/node_modules/nuxt/dist/app/compat/vue-demi.mjs": $id_a8110be7,
-  "/node_modules/nuxt/dist/app/compat/capi.mjs": $id_0c5717a4,
-  "/node_modules/nuxt/dist/pages/runtime/composables.mjs": $id_ff6ed455,
   "/node_modules/@nuxt/ui-templates/dist/templates/error-404.vue?vue&type=style&index=0&scoped=true&lang.css": $id_e68b6b38,
   "/node_modules/@nuxt/ui-templates/dist/templates/error-500.vue": $id_14c8b574,
   "/node_modules/@nuxt/ui-templates/dist/templates/error-500.vue?vue&type=style&index=0&scoped=true&lang.css": $id_a2b3b709,

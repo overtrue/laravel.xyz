@@ -5,11 +5,11 @@
       <h3 class="text-xl text-gray-700 dark:text-gray-300 m-0">{{ star.name }}</h3>
       <p class="text-gray-500 line-clamp-3 text-sm overflow-hidden">{{ star.introduction || '' }}</p>
     </NuxtLink>
-    <div class="flex justify-between mt-8">
+    <div class="flex justify-center mt-8">
       <div class="text-gray-600 flex space-x-1">
         <a
-          href="https://twitter.com/{{ star.twitter_id }}"
-          class="hover:bg-gray-800 text-gray-400 dark:text-gray-600 hover:dark:text-gray-300 rounded-full p-2 flex items-center justify-center"
+          :href="`https://twitter.com/${star.twitter_id}`"
+          class="hover:bg-gray-300 hover:text-gray-700 hover:bg-gray-800 text-gray-400 dark:text-gray-600 hover:dark:text-gray-300 rounded-full p-2 flex items-center justify-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -28,8 +28,8 @@
           </svg>
         </a>
         <a
-          href="https://github.com/{{ star.github_id }}"
-          class="hover:bg-gray-800 text-gray-400 dark:text-gray-600 hover:dark:text-gray-300 rounded-full p-2 flex items-center justify-center"
+          :href="`https://github.com/${star.github_id}`"
+          class="hover:bg-gray-300 hover:text-gray-700 dark:hover:bg-gray-800 text-gray-400 dark:text-gray-600 hover:dark:text-gray-300 rounded-full p-2 flex items-center justify-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -48,22 +48,6 @@
           </svg>
         </a>
       </div>
-      <a href="javascrit:;" class="text-gray-400 dark:text-gray-600 hover:dark:text-gray-300 flex items-center space-x-1">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          class="icon h-6 w-6"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          fill="none"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-        >
-          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-          <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
-        </svg>
-        <span>123904</span>
-      </a>
     </div>
   </div>
 </template>

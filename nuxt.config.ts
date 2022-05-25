@@ -4,11 +4,11 @@ import { defineNuxtConfig } from 'nuxt'
 export default defineNuxtConfig({
   router: {
     options: {
-      linkActiveClass: 'bg-gray-200 dark:bg-gray-700 text-gray-200',
-      linkExactActiveClass: 'bg-gray-200 dark:bg-gray-700 text-gray-200',
+      linkActiveClass: 'text-gray-800 dark:text-gray-200',
+      linkExactActiveClass: 'text-gray-800 dark:text-gray-200',
     },
   },
-  modules: [],
+  modules: ['@nuxt/content'],
   supabase: {
     // Options
   },

@@ -5,13 +5,11 @@
       <p class="text-gray-600 my-0 dark:text-gray-500">It's because of them that Laravel has become so popular.</p>
     </header>
     <div class="flex flex-wrap gap-6 w-full">
-      <star-card v-for="star of stars" :star="star" :key="star.id"></star-card>
+      <star-card v-for="star of stars.body" :star="star" :key="star.id"></star-card>
     </div>
   </div>
 </template>
 
 <script setup>
-const supabase = useSupabaseClient()
-
-const { data: stars } = await supabase.from('stars').select()
+const { data: stars } = await useAsyncData('stars', () => queryContent('/stars').findOne())
 </script>

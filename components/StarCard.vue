@@ -1,9 +1,9 @@
 <template>
   <div class="rounded-lg shadow bg-white dark:bg-gray-800 p-6 w-64 hover:shadow-lg dark:hover:bg-black relative">
-    <NuxtLink class="block text-center h-52 cursor-pointer" :to="star.html_url">
+    <NuxtLink class="block text-center h-48 cursor-pointer" :to="star.html_url">
       <img :src="star.avatar_url" alt="" class="rounded-full h-32 w-32 my-4 mx-auto" />
       <h3 class="text-xl text-gray-700 dark:text-gray-300 m-0">{{ star.name }}</h3>
-      <p class="text-gray-500 line-clamp-3 text-sm overflow-hidden">{{ star.introduction || star.bio || '' }}</p>
+      <p class="text-gray-500 line-clamp-2 text-sm overflow-hidden">{{ star.introduction || star.bio || '' }}</p>
     </NuxtLink>
     <div class="flex justify-center mt-8">
       <div class="text-gray-600 flex space-x-1">

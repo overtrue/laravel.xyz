@@ -23,7 +23,7 @@
           </label>
         </div>
       </card>
-      <div class="space-y-6 flex-1">
+      <div class="gap-6 flex-1 grid grid-cols-1 xl:grid-cols-2">
         <package-card v-for="repo of repos.body" :repo="repo" :key="repo.name"></package-card>
       </div>
     </div>

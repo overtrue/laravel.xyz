@@ -1,14 +1,38 @@
 [
   {
+    "name": "php",
+    "packages_count": 16
+  },
+  {
+    "name": "symfony",
+    "packages_count": 11
+  },
+  {
+    "name": "symfony-component",
+    "packages_count": 10
+  },
+  {
+    "name": "component",
+    "packages_count": 9
+  },
+  {
+    "name": "hacktoberfest",
+    "packages_count": 4
+  },
+  {
     "name": "laravel",
+    "packages_count": 3
+  },
+  {
+    "name": "php7",
+    "packages_count": 2
+  },
+  {
+    "name": "http",
     "packages_count": 2
   },
   {
     "name": "framework",
-    "packages_count": 1
-  },
-  {
-    "name": "php",
     "packages_count": 1
   },
   {
@@ -105,6 +129,122 @@
   },
   {
     "name": "user-relations",
+    "packages_count": 1
+  },
+  {
+    "name": "cors",
+    "packages_count": 1
+  },
+  {
+    "name": "closure",
+    "packages_count": 1
+  },
+  {
+    "name": "serialize",
+    "packages_count": 1
+  },
+  {
+    "name": "guid",
+    "packages_count": 1
+  },
+  {
+    "name": "identifiers",
+    "packages_count": 1
+  },
+  {
+    "name": "php8",
+    "packages_count": 1
+  },
+  {
+    "name": "uuid",
+    "packages_count": 1
+  },
+  {
+    "name": "cli",
+    "packages_count": 1
+  },
+  {
+    "name": "cli-command",
+    "packages_count": 1
+  },
+  {
+    "name": "console",
+    "packages_count": 1
+  },
+  {
+    "name": "errors",
+    "packages_count": 1
+  },
+  {
+    "name": "files",
+    "packages_count": 1
+  },
+  {
+    "name": "finder",
+    "packages_count": 1
+  },
+  {
+    "name": "iterator",
+    "packages_count": 1
+  },
+  {
+    "name": "http-messages",
+    "packages_count": 1
+  },
+  {
+    "name": "email",
+    "packages_count": 1
+  },
+  {
+    "name": "mailer",
+    "packages_count": 1
+  },
+  {
+    "name": "mime",
+    "packages_count": 1
+  },
+  {
+    "name": "process",
+    "packages_count": 1
+  },
+  {
+    "name": "process-manager",
+    "packages_count": 1
+  },
+  {
+    "name": "router",
+    "packages_count": 1
+  },
+  {
+    "name": "routing",
+    "packages_count": 1
+  },
+  {
+    "name": "configuration",
+    "packages_count": 1
+  },
+  {
+    "name": "dotenv",
+    "packages_count": 1
+  },
+  {
+    "name": "environment",
+    "packages_count": 1
+  },
+  {
+    "name": "environment-variables",
+    "packages_count": 1
+  },
+  {
+    "name": "ascii",
+    "packages_count": 1
+  },
+  {
+    "name": "string",
+    "packages_count": 1
+  },
+  {
+    "name": "translit",
     "packages_count": 1
   }
 ]

@@ -1,9 +1,9 @@
 <template>
   <div class="rounded-lg shadow bg-white dark:bg-gray-800 p-6 w-64 hover:shadow-lg dark:hover:bg-black relative">
-    <NuxtLink class="block text-center h-52 cursor-pointer" :to="`https://github.com/${star.github_id}`">
+    <NuxtLink class="block text-center h-52 cursor-pointer" :to="star.html_url">
       <img :src="star.avatar_url" alt="" class="rounded-full h-32 w-32 my-4 mx-auto" />
       <h3 class="text-xl text-gray-700 dark:text-gray-300 m-0">{{ star.name }}</h3>
-      <p class="text-gray-500 line-clamp-3 text-sm overflow-hidden">{{ star.introduction || '' }}</p>
+      <p class="text-gray-500 line-clamp-3 text-sm overflow-hidden">{{ star.introduction || star.bio || '' }}</p>
     </NuxtLink>
     <div class="flex justify-center mt-8">
       <div class="text-gray-600 flex space-x-1">
@@ -28,7 +28,7 @@
           </svg>
         </a>
         <a
-          :href="`https://github.com/${star.github_id}`"
+          :href="star.html_url"
           class="hover:bg-gray-300 hover:text-gray-700 dark:hover:bg-gray-800 text-gray-400 dark:text-gray-600 hover:dark:text-gray-300 rounded-full p-2 flex items-center justify-center"
         >
           <svg

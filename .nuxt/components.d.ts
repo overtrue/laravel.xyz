@@ -2,6 +2,7 @@
 declare module 'vue' {
   export interface GlobalComponents {
     'Card': typeof import("../components/Card.vue")['default'],
+    'PackageCard': typeof import("../components/PackageCard.vue")['default'],
     'StarCard': typeof import("../components/StarCard.vue")['default'],
     'TheButton': typeof import("../components/TheButton.vue")['default'],
     'TheFooter': typeof import("../components/TheFooter.vue")['default'],
@@ -47,6 +48,7 @@ declare module 'vue' {
     'ServerPlaceholder': typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default'],
     'NuxtLink': typeof import("../node_modules/nuxt/dist/app/components/nuxt-link")['default']
     'LazyCard': typeof import("../components/Card.vue")['default'],
+    'LazyPackageCard': typeof import("../components/PackageCard.vue")['default'],
     'LazyStarCard': typeof import("../components/StarCard.vue")['default'],
     'LazyTheButton': typeof import("../components/TheButton.vue")['default'],
     'LazyTheFooter': typeof import("../components/TheFooter.vue")['default'],
@@ -94,6 +96,7 @@ declare module 'vue' {
   }
 }
 export const Card: typeof import("../components/Card.vue")['default']
+export const PackageCard: typeof import("../components/PackageCard.vue")['default']
 export const StarCard: typeof import("../components/StarCard.vue")['default']
 export const TheButton: typeof import("../components/TheButton.vue")['default']
 export const TheFooter: typeof import("../components/TheFooter.vue")['default']
@@ -139,6 +142,7 @@ export const ClientOnly: typeof import("../node_modules/nuxt/dist/app/components
 export const ServerPlaceholder: typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']
 export const NuxtLink: typeof import("../node_modules/nuxt/dist/app/components/nuxt-link")['default']
 export const LazyCard: typeof import("../components/Card.vue")['default']
+export const LazyPackageCard: typeof import("../components/PackageCard.vue")['default']
 export const LazyStarCard: typeof import("../components/StarCard.vue")['default']
 export const LazyTheButton: typeof import("../components/TheButton.vue")['default']
 export const LazyTheFooter: typeof import("../components/TheFooter.vue")['default']

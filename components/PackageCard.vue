@@ -1,8 +1,8 @@
 <template>
-  <div class="rounded-lg shadow bg-white dark:bg-gray-800 p-6 hover:shadow-lg dark:hover:bg-black space-y-2">
+  <div class="rounded-lg shadow bg-white dark:bg-gray-800 p-6 hover:shadow-lg dark:hover:bg-black space-y-4">
     <div class="space-y-2">
       <div class="flex items-center justify-between">
-        <NuxtLink class="font-semibold text-gray-800" :to="repo.html_url">{{ repo.full_name }}</NuxtLink>
+        <NuxtLink class="font-semibold text-gray-800 flex-1" :to="repo.html_url">{{ repo.full_name }}</NuxtLink>
         <div class="flex items-center justify-evenly">
           <div class="flex items-center space-x-2 text-sm">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">

@@ -6,6 +6,7 @@ declare module 'vue' {
     'StarCard': typeof import("../components/StarCard.vue")['default'],
     'TheButton': typeof import("../components/TheButton.vue")['default'],
     'TheFooter': typeof import("../components/TheFooter.vue")['default'],
+    'TheLinkButton': typeof import("../components/TheLinkButton.vue")['default'],
     'TheNavbar': typeof import("../components/TheNavbar.vue")['default'],
     'TheTag': typeof import("../components/TheTag.vue")['default'],
     'TheTags': typeof import("../components/TheTags.vue")['default'],
@@ -52,6 +53,7 @@ declare module 'vue' {
     'LazyStarCard': typeof import("../components/StarCard.vue")['default'],
     'LazyTheButton': typeof import("../components/TheButton.vue")['default'],
     'LazyTheFooter': typeof import("../components/TheFooter.vue")['default'],
+    'LazyTheLinkButton': typeof import("../components/TheLinkButton.vue")['default'],
     'LazyTheNavbar': typeof import("../components/TheNavbar.vue")['default'],
     'LazyTheTag': typeof import("../components/TheTag.vue")['default'],
     'LazyTheTags': typeof import("../components/TheTags.vue")['default'],
@@ -100,6 +102,7 @@ export const PackageCard: typeof import("../components/PackageCard.vue")['defaul
 export const StarCard: typeof import("../components/StarCard.vue")['default']
 export const TheButton: typeof import("../components/TheButton.vue")['default']
 export const TheFooter: typeof import("../components/TheFooter.vue")['default']
+export const TheLinkButton: typeof import("../components/TheLinkButton.vue")['default']
 export const TheNavbar: typeof import("../components/TheNavbar.vue")['default']
 export const TheTag: typeof import("../components/TheTag.vue")['default']
 export const TheTags: typeof import("../components/TheTags.vue")['default']
@@ -146,6 +149,7 @@ export const LazyPackageCard: typeof import("../components/PackageCard.vue")['de
 export const LazyStarCard: typeof import("../components/StarCard.vue")['default']
 export const LazyTheButton: typeof import("../components/TheButton.vue")['default']
 export const LazyTheFooter: typeof import("../components/TheFooter.vue")['default']
+export const LazyTheLinkButton: typeof import("../components/TheLinkButton.vue")['default']
 export const LazyTheNavbar: typeof import("../components/TheNavbar.vue")['default']
 export const LazyTheTag: typeof import("../components/TheTag.vue")['default']
 export const LazyTheTags: typeof import("../components/TheTags.vue")['default']

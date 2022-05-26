@@ -8,7 +8,9 @@
   "devDependencies": {
     "@nuxt/content": "^2.0.0",
     "@nuxtjs/color-mode": "^3.0.2",
+    "@tailwindcss/forms": "^0.5.2",
     "@tailwindcss/line-clamp": "^0.3.1",
+    "@tailwindcss/typography": "^0.5.2",
     "autoprefixer": "^10.4.4",
     "nuxt": "^3.0.0-rc.3",
     "postcss": "^8.4.12",

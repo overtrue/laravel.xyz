@@ -1,29 +1,110 @@
-{
-  "framework": 1,
-  "laravel": 2,
-  "php": 1,
-  "alipay": 1,
-  "baidu": 1,
-  "dingtalk": 1,
-  "douban": 1,
-  "douyin": 1,
-  "facebook": 1,
-  "feishu": 1,
-  "google": 1,
-  "linkedin": 1,
-  "login": 1,
-  "oauth": 1,
-  "oauth2": 1,
-  "oauth2-authentication": 1,
-  "qq": 1,
-  "social-login": 1,
-  "socialite": 1,
-  "taobao": 1,
-  "wechat": 1,
-  "weibo": 1,
-  "favorites": 1,
-  "followers": 1,
-  "following": 1,
-  "laravel-favorite": 1,
-  "user-relations": 1
-}
+[
+  {
+    "name": "laravel",
+    "packages_count": 2
+  },
+  {
+    "name": "framework",
+    "packages_count": 1
+  },
+  {
+    "name": "php",
+    "packages_count": 1
+  },
+  {
+    "name": "alipay",
+    "packages_count": 1
+  },
+  {
+    "name": "baidu",
+    "packages_count": 1
+  },
+  {
+    "name": "dingtalk",
+    "packages_count": 1
+  },
+  {
+    "name": "douban",
+    "packages_count": 1
+  },
+  {
+    "name": "douyin",
+    "packages_count": 1
+  },
+  {
+    "name": "facebook",
+    "packages_count": 1
+  },
+  {
+    "name": "feishu",
+    "packages_count": 1
+  },
+  {
+    "name": "google",
+    "packages_count": 1
+  },
+  {
+    "name": "linkedin",
+    "packages_count": 1
+  },
+  {
+    "name": "login",
+    "packages_count": 1
+  },
+  {
+    "name": "oauth",
+    "packages_count": 1
+  },
+  {
+    "name": "oauth2",
+    "packages_count": 1
+  },
+  {
+    "name": "oauth2-authentication",
+    "packages_count": 1
+  },
+  {
+    "name": "qq",
+    "packages_count": 1
+  },
+  {
+    "name": "social-login",
+    "packages_count": 1
+  },
+  {
+    "name": "socialite",
+    "packages_count": 1
+  },
+  {
+    "name": "taobao",
+    "packages_count": 1
+  },
+  {
+    "name": "wechat",
+    "packages_count": 1
+  },
+  {
+    "name": "weibo",
+    "packages_count": 1
+  },
+  {
+    "name": "favorites",
+    "packages_count": 1
+  },
+  {
+    "name": "followers",
+    "packages_count": 1
+  },
+  {
+    "name": "following",
+    "packages_count": 1
+  },
+  {
+    "name": "laravel-favorite",
+    "packages_count": 1
+  },
+  {
+    "name": "user-relations",
+    "packages_count": 1
+  }
+]

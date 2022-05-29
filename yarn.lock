@@ -277,6 +277,11 @@
   dependencies:
     mime "^3.0.0"
 
+"@headlessui/vue@^1.6.4":
+  version "1.6.4"
+  resolved "http://mirrors.tencent.com/npm/@headlessui%2fvue/-/vue-1.6.4.tgz#8492bbb044a9b19ee92bef9cd4d0c3d8feed8588"
+  integrity sha512-axZMcfRLNuwHESPMgDb0Vj7xxlNPmsPl77pvoRZGzJh7lRdRic9kC/qbVM8G36OpIJRZzqrlADLQ2JIObhQjBg==
+
 "@ioredis/commands@^1.1.1":
   version "1.1.1"
   resolved "http://mirrors.tencent.com/npm/@ioredis%2fcommands/-/commands-1.1.1.tgz#2ba4299ea624a6bfac15b35f6df90b0015691ec3"
@@ -5994,6 +5999,16 @@ vue-bundle-renderer@^0.3.8:
   integrity sha512-1F4P4Aw92PW9XUX0ojC18Ye1P0/kvwq6Jx6kaeokQ+/FoVrfBsKtuJPib1TqGRvGYKCiTCweefun6DidoEvECg==
   dependencies:
     bundle-runner "^0.0.1"
+
+vue-gtag-next@^1.14.0:
+  version "1.14.0"
+  resolved "http://mirrors.tencent.com/npm/vue-gtag-next/-/vue-gtag-next-1.14.0.tgz#793aef0b90dff4213b9f3a79827cd99b06e678dd"
+  integrity sha512-iJl+cOG2GU5NuxqzSSIpt03WVOvZqyKB9TOy7d55KiuvRklcnb2nlqxW5B/a3/sbIt7fla+XEkRyMCcoz0zAHw==
+
+vue-gtag@^2.0.1:
+  version "2.0.1"
+  resolved "http://mirrors.tencent.com/npm/vue-gtag/-/vue-gtag-2.0.1.tgz#d4dc1b9cf79809c37ce844824c0f7fa97af520dd"
+  integrity sha512-aM4A58FVL0wV2ptYi+xzAjeg+pQVRyUcfBc5UkXAwQrR4t3WBhor50Izp2I+3Oo7+l+vWJ7u78DGcNzReb8S/A==
 
 vue-router@^4.0.15:
   version "4.0.15"

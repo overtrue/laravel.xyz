@@ -12,24 +12,40 @@
       </div>
       <p class="text-gray-500 dark:text-gray-500">一些开源的让你更方便创建Laravel应用的库或者组件。</p>
     </header>
-    <div class="flex gap-6">
+    <div class="flex gap-6 items-start">
       <card class="rounded-lg p-6 shadow w-64">
-        <h2 class="text-xl font-semibold text-gray-700">标签</h2>
-        <div class="mt-6">
-          <label class="flex items-center space-x-2 w-full" v-for="topic in topics.body" :key="topic">
-            <input type="checkbox" class="form-checkbox rounded" />
-            <div class="flex-1 truncate min-w-0 whitespace-nowrap">{{ topic.name }}</div>
-            <span class="justify-self-end text-gray-400 text-sm rounded bg-gray-200 px-2">{{ topic.packages_count }}</span>
-          </label>
-        </div>
+        <topic-selector v-model="topic" />
       </card>
       <div class="gap-6 flex-1 grid grid-cols-1 xl:grid-cols-2">
-        <package-card v-for="repo of repos.body" :repo="repo" :key="repo.name"></package-card>
+        <package-card v-for="repo of filteredRepos" :repo="repo" :key="repo.name"></package-card>
       </div>
     </div>
   </div>
 </template>
-<script setup>
-const { data: repos } = await useAsyncData('packages', () => queryContent('/compiled/packages').findOne())
-const { data: topics } = await useAsyncData('topics', () => queryContent('/compiled/topics').findOne())
+<script>
+export default {
+  data() {
+    return {
+      topic: null,
+      repos: [],
+    }
+  },
+  methods: {
+    async fetchRepos() {
+      const { body } = await queryContent('/compiled/packages').findOne()
+      this.repos = body
+    },
+  },
+  created() {
+    this.fetchRepos()
+  },
+  computed: {
+    filteredRepos() {
+      if (!this.topic) {
+        return this.repos
+      }
+      return this.repos.filter((repo) => repo.topics.includes(this.topic))
+    },
+  },
+}
 </script>

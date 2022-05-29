@@ -11,6 +11,7 @@ declare module 'vue' {
     'TheTag': typeof import("../components/TheTag.vue")['default'],
     'TheTags': typeof import("../components/TheTags.vue")['default'],
     'TipCard': typeof import("../components/TipCard.vue")['default'],
+    'TopicSelector': typeof import("../components/TopicSelector.vue")['default'],
     'ContentDoc': typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs")['default'],
     'ContentList': typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs")['default'],
     'ContentNavigation': typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.mjs")['default'],
@@ -58,6 +59,7 @@ declare module 'vue' {
     'LazyTheTag': typeof import("../components/TheTag.vue")['default'],
     'LazyTheTags': typeof import("../components/TheTags.vue")['default'],
     'LazyTipCard': typeof import("../components/TipCard.vue")['default'],
+    'LazyTopicSelector': typeof import("../components/TopicSelector.vue")['default'],
     'LazyContentDoc': typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs")['default'],
     'LazyContentList': typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs")['default'],
     'LazyContentNavigation': typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.mjs")['default'],
@@ -107,6 +109,7 @@ export const TheNavbar: typeof import("../components/TheNavbar.vue")['default']
 export const TheTag: typeof import("../components/TheTag.vue")['default']
 export const TheTags: typeof import("../components/TheTags.vue")['default']
 export const TipCard: typeof import("../components/TipCard.vue")['default']
+export const TopicSelector: typeof import("../components/TopicSelector.vue")['default']
 export const ContentDoc: typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs")['default']
 export const ContentList: typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs")['default']
 export const ContentNavigation: typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.mjs")['default']
@@ -154,6 +157,7 @@ export const LazyTheNavbar: typeof import("../components/TheNavbar.vue")['defaul
 export const LazyTheTag: typeof import("../components/TheTag.vue")['default']
 export const LazyTheTags: typeof import("../components/TheTags.vue")['default']
 export const LazyTipCard: typeof import("../components/TipCard.vue")['default']
+export const LazyTopicSelector: typeof import("../components/TopicSelector.vue")['default']
 export const LazyContentDoc: typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentDoc.mjs")['default']
 export const LazyContentList: typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentList.mjs")['default']
 export const LazyContentNavigation: typeof import("../node_modules/@nuxt/content/dist/runtime/components/ContentNavigation.mjs")['default']

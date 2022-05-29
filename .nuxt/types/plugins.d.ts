@@ -13,6 +13,7 @@ type NuxtAppInjections =
   InjectionType<typeof import("../../node_modules/@nuxt/content/dist/runtime/plugin").default> &
   InjectionType<typeof import("../../plugins/dayjs").default> &
   InjectionType<typeof import("../../plugins/emoji").default> &
+  InjectionType<typeof import("../../plugins/ga").default> &
   InjectionType<typeof import("../../plugins/markdown-it").default>
 
 declare module '#app' {

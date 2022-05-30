@@ -31,9 +31,18 @@ export default {
     }
   },
   methods: {
+    // getRepos() {
+    //   const cachedRepos = window.localStorage.getItem('packages')
+
+    //   if (cachedRepos) {
+    //     this.repos = JSON.parse(cachedRepos)
+    //     return this.fetchRepos()
+    //   }
+    // },
     async fetchRepos() {
       const { body } = await queryContent('/compiled/packages').findOne()
       this.repos = body
+      // window.localStorage.setItem('packages', JSON.stringify(this.repos))
     },
   },
   created() {

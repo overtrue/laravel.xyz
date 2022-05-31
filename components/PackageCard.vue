@@ -23,7 +23,9 @@
         <img :src="repo.owner.avatar_url" alt="" class="rounded-full h-6 w-6" />
         <h5 class="text-gray-700 dark:text-gray-400">{{ repo.owner.login }}</h5>
       </NuxtLink>
-      <div class="flex items-center gap-1"><span class="block rounded-full h-3 w-3 border dark:border-gray-600"></span>{{ repo.language }}</div>
+      <div class="flex items-center gap-1">
+        <span class="block rounded-full h-3 w-3 border dark:border-gray-600" :style="`background-color:${repo.language_color}`"></span>{{ repo.language }}
+      </div>
       <nuxt-link :to="repo.html_url" class="ml-auto">
         <time :datetime="repo.updated_at" :title="repo.updated_at"> {{ $dayjs().to(repo.updated_at) }}更新 </time>
       </nuxt-link>

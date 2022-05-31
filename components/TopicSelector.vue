@@ -1,19 +1,19 @@
 <template>
   <RadioGroup v-model="selected">
     <RadioGroupLabel class="text-gray-700 space-x-2">
-      <span class="text-xl font-semibold">标签</span><span class="text-gray-500">{{ topics.length }}</span>
+      <span class="text-xl font-semibold dark:text-gray-400">标签</span><span class="text-gray-500">{{ topics.length }}</span>
     </RadioGroupLabel>
-    <div class="space-y-2 max-h-[65vh] overflow-y-auto mt-4">
+    <div class="space-y-2 max-h-[65vh] overflow-y-auto mt-4 text-gray-600 dark:text-gray-400">
       <RadioGroupOption as="template" v-for="topic in topics" :key="topic.name" :value="topic.name" v-slot="{ checked }">
         <div
-          :class="checked ? 'border-transparent bg-indigo-900 text-white' : ' text-gray-500'"
-          class="border ring-2 ring-white relative flex cursor-pointer rounded px-2 py-1 focus:outline-none"
+          :class="checked ? 'border-indigo-900 bg-indigo-900' : ' text-gray-500'"
+          class="border dark:border-gray-700 hover:border-transparent hover:bg-indigo-900 hover:text-gray-500 relative flex cursor-pointer rounded px-2 py-1 focus:outline-none"
         >
           <div class="flex flex-1 items-center justify-between text-sm">
-            <RadioGroupLabel as="span" :class="checked ? 'text-white' : 'text-gray-900'" class="truncated font-medium">
+            <RadioGroupLabel as="span" :class="checked ? '' : 'text-gray-900 dark:text-gray-400'" class="truncated font-medium">
               {{ topic.name }}
             </RadioGroupLabel>
-            <RadioGroupDescription as="span" :class="checked ? 'text-sky-100' : 'text-gray-500'" class="inline">
+            <RadioGroupDescription as="span" :class="checked ? 'text-sky-100' : 'text-gray-400'" class="inline">
               <span> {{ topic.packages_count }}</span>
             </RadioGroupDescription>
           </div>

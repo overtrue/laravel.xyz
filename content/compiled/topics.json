@@ -1,7 +1,7 @@
 [
   {
     "name": "php",
-    "packages_count": 16
+    "packages_count": 21
   },
   {
     "name": "symfony",
@@ -17,11 +17,19 @@
   },
   {
     "name": "hacktoberfest",
-    "packages_count": 4
+    "packages_count": 7
   },
   {
     "name": "laravel",
     "packages_count": 3
+  },
+  {
+    "name": "email",
+    "packages_count": 2
+  },
+  {
+    "name": "psr-3",
+    "packages_count": 2
   },
   {
     "name": "php7",
@@ -132,6 +140,14 @@
     "packages_count": 1
   },
   {
+    "name": "emailvalidator",
+    "packages_count": 1
+  },
+  {
+    "name": "validator",
+    "packages_count": 1
+  },
+  {
     "name": "cors",
     "packages_count": 1
   },
@@ -141,6 +157,42 @@
   },
   {
     "name": "serialize",
+    "packages_count": 1
+  },
+  {
+    "name": "commonmark",
+    "packages_count": 1
+  },
+  {
+    "name": "gfm",
+    "packages_count": 1
+  },
+  {
+    "name": "github-flavored-markdown",
+    "packages_count": 1
+  },
+  {
+    "name": "markdown",
+    "packages_count": 1
+  },
+  {
+    "name": "filesystem",
+    "packages_count": 1
+  },
+  {
+    "name": "filesystem-library",
+    "packages_count": 1
+  },
+  {
+    "name": "thephpleague",
+    "packages_count": 1
+  },
+  {
+    "name": "logger",
+    "packages_count": 1
+  },
+  {
+    "name": "logging",
     "packages_count": 1
   },
   {
@@ -189,10 +241,6 @@
   },
   {
     "name": "http-messages",
-    "packages_count": 1
-  },
-  {
-    "name": "email",
     "packages_count": 1
   },
   {

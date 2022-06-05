@@ -7,7 +7,7 @@
           <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
             <path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
           </svg>
-          <span>提议更多扩展包</span>
+          <span>推荐更多扩展包</span>
         </the-link-button>
       </div>
       <p class="text-gray-500 dark:text-gray-500">一些开源的让你更方便创建Laravel应用的库或者组件。</p>

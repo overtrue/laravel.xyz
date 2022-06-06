@@ -1,0 +1,82 @@
+{
+  "framework": [
+    {
+      "name": "Laravel 官方文档（英文）",
+      "url": "https://laravel.com/docs"
+    },
+    {
+      "name": "Laravel 官方文档社区翻译版（中文）",
+      "url": "https://learnku.com/docs/laravel/9.x"
+    }
+  ],
+  "packages": [
+    {
+      "name": "Laravel Breeze",
+      "url": "https://laravel.com/docs/9.x/starter-kits#laravel-breeze"
+    },
+    {
+      "name": "Laravel Cashier (Stripe)",
+      "url": "https://laravel.com/docs/9.x/billing"
+    },
+    {
+      "name": "Laravel Cashier (Paddle)",
+      "url": "https://laravel.com/docs/9.x/cashier-paddle"
+    },
+    {
+      "name": "Laravel Dusk",
+      "url": "https://laravel.com/docs/9.x/dusk"
+    },
+    {
+      "name": "Laravel Envoy",
+      "url": "https://laravel.com/docs/9.x/envoy"
+    },
+    {
+      "name": "Laravel Fortify",
+      "url": "https://laravel.com/docs/9.x/fortify"
+    },
+    {
+      "name": "Laravel Homestead",
+      "url": "https://laravel.com/docs/9.x/homestead"
+    },
+    {
+      "name": "Laravel Horizon",
+      "url": "https://laravel.com/docs/9.x/horizon"
+    },
+    {
+      "name": "Laravel Jetstream",
+      "url": "https://jetstream.laravel.com/2.x/introduction.html"
+    },
+    {
+      "name": "Laravel Octane",
+      "url": "https://laravel.com/docs/9.x/octane"
+    },
+    {
+      "name": "Laravel Passport",
+      "url": "https://laravel.com/docs/9.x/passport"
+    },
+    {
+      "name": "Laravel Sail",
+      "url": "https://laravel.com/docs/9.x/sail"
+    },
+    {
+      "name": "Laravel Sanctum",
+      "url": "https://laravel.com/docs/9.x/sanctum"
+    },
+    {
+      "name": "Laravel Scout",
+      "url": "https://laravel.com/docs/9.x/scout"
+    },
+    {
+      "name": "Laravel Socialite",
+      "url": "https://laravel.com/docs/9.x/socialite"
+    },
+    {
+      "name": "Laravel Telescope",
+      "url": "https://laravel.com/docs/9.x/telescope"
+    },
+    {
+      "name": "Laravel Valet",
+      "url": "https://laravel.com/docs/9.x/valet"
+    }
+  ]
+}

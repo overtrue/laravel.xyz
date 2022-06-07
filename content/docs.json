@@ -1,81 +1,166 @@
 {
   "framework": [
     {
-      "name": "Laravel 官方文档（英文）",
+      "name": "Laravel 文档",
+      "introduction": "官方英文版",
+      "logo_url": "https://laravel.com/img/logomark.min.svg",
+      "color": "bg-white",
       "url": "https://laravel.com/docs"
     },
     {
-      "name": "Laravel 官方文档社区翻译版（中文）",
+      "name": "Laravel 文档",
+      "introduction": "社区翻译版（中文）",
+      "logo_url": "https://laravel.com/img/logomark.min.svg",
+      "color": "bg-white",
       "url": "https://learnku.com/docs/laravel/9.x"
     }
   ],
   "packages": [
     {
       "name": "Laravel Breeze",
+      "introduction": "基于 Blade 和 Inertia 的新项目脚手架",
+      "color": "bg-teal-500",
+      "logo_url": "https://laravel.com/img/ecosystem/breeze.min.svg",
       "url": "https://laravel.com/docs/9.x/starter-kits#laravel-breeze"
     },
     {
+      "name": "Laravel Nova",
+      "introduction": "",
+      "color": "bg-cyan-600",
+      "logo_url": "https://laravel.com/img/ecosystem/nova.min.svg",
+      "url": "https://nova.laravel.com/"
+    },
+    {
+      "name": "Laravel Mix",
+      "introduction": "",
+      "color": "bg-sky-900",
+      "logo_url": "https://laravel.com/img/ecosystem/mix.min.svg",
+      "url": "https://laravel.com/docs/9.x/mix"
+    },
+    {
+      "name": "Laravel Spark",
+      "introduction": "",
+      "color": "bg-violet-500",
+      "logo_url": "https://laravel.com/img/ecosystem/spark.min.svg",
+      "url": "https://spark.laravel.com/"
+    },
+    {
       "name": "Laravel Cashier (Stripe)",
+      "introduction": "",
+      "logo_url": "https://laravel.com/img/ecosystem/cashier.min.svg",
+      "color": "bg-green-500",
       "url": "https://laravel.com/docs/9.x/billing"
     },
     {
+      "name": "Laravel Envoyer",
+      "introduction": "",
+      "logo_url": "https://laravel.com/img/ecosystem/envoyer.min.svg",
+      "color": "bg-red-700",
+      "url": "https://envoyer.io/"
+    },
+    {
       "name": "Laravel Cashier (Paddle)",
+      "introduction": "",
+      "logo_url": "https://laravel.com/img/ecosystem/cashier.min.svg",
+      "color": "bg-green-500",
       "url": "https://laravel.com/docs/9.x/cashier-paddle"
     },
     {
       "name": "Laravel Dusk",
+      "introduction": "",
+      "logo_url": "https://laravel.com/img/ecosystem/dusk.min.svg",
+      "color": "bg-fuchsia-500",
       "url": "https://laravel.com/docs/9.x/dusk"
     },
     {
       "name": "Laravel Envoy",
+      "introduction": "",
+      "logo_url": null,
+      "color": "bg-blue-500",
       "url": "https://laravel.com/docs/9.x/envoy"
     },
     {
       "name": "Laravel Fortify",
+      "introduction": "",
+      "logo_url": null,
+      "color": "bg-blue-500",
       "url": "https://laravel.com/docs/9.x/fortify"
     },
     {
       "name": "Laravel Homestead",
+      "introduction": "",
+      "logo_url": "https://laravel.com/img/ecosystem/homestead.min.svg",
+      "color": "bg-blue-500",
       "url": "https://laravel.com/docs/9.x/homestead"
     },
     {
       "name": "Laravel Horizon",
+      "introduction": "",
+      "logo_url": "https://laravel.com/img/ecosystem/horizon.min.svg",
+      "color": "bg-blue-500",
       "url": "https://laravel.com/docs/9.x/horizon"
     },
     {
       "name": "Laravel Jetstream",
+      "introduction": "",
+      "logo_url": "https://laravel.com/img/ecosystem/jetstream.min.svg",
+      "color": "bg-indigo-500",
       "url": "https://jetstream.laravel.com/2.x/introduction.html"
     },
     {
       "name": "Laravel Octane",
+      "introduction": "",
+      "logo_url": "https://laravel.com/img/ecosystem/octane.min.svg",
+      "color": "bg-rose-600",
       "url": "https://laravel.com/docs/9.x/octane"
     },
     {
       "name": "Laravel Passport",
+      "introduction": "",
+      "logo_url": "https://laravel.com/img/ecosystem/passport.min.svg",
+      "color": "bg-blue-500",
       "url": "https://laravel.com/docs/9.x/passport"
     },
     {
       "name": "Laravel Sail",
+      "introduction": "",
+      "logo_url": "https://laravel.com/img/ecosystem/sail.min.svg",
+      "color": "bg-blue-500",
       "url": "https://laravel.com/docs/9.x/sail"
     },
     {
       "name": "Laravel Sanctum",
+      "introduction": "",
+      "logo_url": "https://laravel.com/img/ecosystem/sanctum.min.svg",
+      "color": "bg-cyan-800",
       "url": "https://laravel.com/docs/9.x/sanctum"
     },
     {
       "name": "Laravel Scout",
+      "introduction": "",
+      "logo_url": "https://laravel.com/img/ecosystem/scout.min.svg",
+      "color": "bg-red-400",
       "url": "https://laravel.com/docs/9.x/scout"
     },
     {
       "name": "Laravel Socialite",
+      "introduction": "",
+      "logo_url": "https://laravel.com/img/ecosystem/socialite.min.svg",
+      "color": "bg-pink-400",
       "url": "https://laravel.com/docs/9.x/socialite"
     },
     {
       "name": "Laravel Telescope",
+      "introduction": "",
+      "logo_url": "https://laravel.com/img/ecosystem/telescope.min.svg",
+      "color": "bg-purple-700",
       "url": "https://laravel.com/docs/9.x/telescope"
     },
     {
       "name": "Laravel Valet",
+      "introduction": "",
+      "logo_url": "https://laravel.com/img/ecosystem/valet.min.svg",
+      "color": "bg-purple-800",
       "url": "https://laravel.com/docs/9.x/valet"
     }
   ]

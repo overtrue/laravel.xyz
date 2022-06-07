@@ -10,7 +10,9 @@ module.exports = {
     './plugins/**/*.{js,ts}',
   ],
   safelist: [
-    'bg-gray-200',
+    {
+      pattern: /^bg-/,
+    },
     'dark:bg-gray-700',
     'text-gray-200',
   ],

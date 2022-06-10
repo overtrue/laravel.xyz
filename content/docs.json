@@ -25,140 +25,133 @@
     },
     {
       "name": "Laravel Nova",
-      "introduction": "",
+      "introduction": "一个漂亮的管理后台",
       "color": "bg-cyan-600",
       "logo_url": "https://laravel.com/img/ecosystem/nova.min.svg",
       "url": "https://nova.laravel.com/"
     },
     {
       "name": "Laravel Mix",
-      "introduction": "",
+      "introduction": "零配置完成 Javascript 和 CSS 的编译",
       "color": "bg-sky-900",
       "logo_url": "https://laravel.com/img/ecosystem/mix.min.svg",
       "url": "https://laravel.com/docs/9.x/mix"
     },
     {
       "name": "Laravel Spark",
-      "introduction": "",
+      "introduction": "构建商业应用的基础",
       "color": "bg-violet-500",
       "logo_url": "https://laravel.com/img/ecosystem/spark.min.svg",
       "url": "https://spark.laravel.com/"
     },
     {
       "name": "Laravel Cashier (Stripe)",
-      "introduction": "",
+      "introduction": "Stripe 支付插件",
       "logo_url": "https://laravel.com/img/ecosystem/cashier.min.svg",
       "color": "bg-green-500",
       "url": "https://laravel.com/docs/9.x/billing"
     },
     {
-      "name": "Laravel Envoyer",
-      "introduction": "",
-      "logo_url": "https://laravel.com/img/ecosystem/envoyer.min.svg",
-      "color": "bg-red-700",
-      "url": "https://envoyer.io/"
-    },
-    {
       "name": "Laravel Cashier (Paddle)",
-      "introduction": "",
+      "introduction": "Paddle 支付插件",
       "logo_url": "https://laravel.com/img/ecosystem/cashier.min.svg",
       "color": "bg-green-500",
       "url": "https://laravel.com/docs/9.x/cashier-paddle"
     },
     {
       "name": "Laravel Dusk",
-      "introduction": "",
+      "introduction": "一个优雅的测试工具",
       "logo_url": "https://laravel.com/img/ecosystem/dusk.min.svg",
       "color": "bg-fuchsia-500",
       "url": "https://laravel.com/docs/9.x/dusk"
     },
     {
       "name": "Laravel Envoy",
-      "introduction": "",
+      "introduction": "使用 Blade 语法方便的在远程服务器上运行各种任务",
       "logo_url": null,
       "color": "bg-blue-500",
       "url": "https://laravel.com/docs/9.x/envoy"
     },
     {
       "name": "Laravel Fortify",
-      "introduction": "",
+      "introduction": "一个登录授权脚手架",
       "logo_url": null,
       "color": "bg-blue-500",
       "url": "https://laravel.com/docs/9.x/fortify"
     },
     {
       "name": "Laravel Homestead",
-      "introduction": "",
+      "introduction": "Windows 开发继承环境",
       "logo_url": "https://laravel.com/img/ecosystem/homestead.min.svg",
       "color": "bg-blue-500",
       "url": "https://laravel.com/docs/9.x/homestead"
     },
     {
       "name": "Laravel Horizon",
-      "introduction": "",
+      "introduction": "一款漂亮的队列管理工具",
       "logo_url": "https://laravel.com/img/ecosystem/horizon.min.svg",
       "color": "bg-blue-500",
       "url": "https://laravel.com/docs/9.x/horizon"
     },
     {
       "name": "Laravel Jetstream",
-      "introduction": "",
+      "introduction": "基于 Livewire 和 Inertia 的新项目脚手架",
       "logo_url": "https://laravel.com/img/ecosystem/jetstream.min.svg",
       "color": "bg-indigo-500",
       "url": "https://jetstream.laravel.com/2.x/introduction.html"
     },
     {
       "name": "Laravel Octane",
-      "introduction": "",
+      "introduction": "Laravel 项目性能加速器",
       "logo_url": "https://laravel.com/img/ecosystem/octane.min.svg",
       "color": "bg-rose-600",
       "url": "https://laravel.com/docs/9.x/octane"
     },
     {
       "name": "Laravel Passport",
-      "introduction": "",
+      "introduction": "一个包搞定 OAuth 授权服务",
       "logo_url": "https://laravel.com/img/ecosystem/passport.min.svg",
       "color": "bg-blue-500",
       "url": "https://laravel.com/docs/9.x/passport"
     },
     {
       "name": "Laravel Sail",
-      "introduction": "",
+      "introduction": "一个轻量级的 Laravel Docker 交互接口",
       "logo_url": "https://laravel.com/img/ecosystem/sail.min.svg",
       "color": "bg-blue-500",
       "url": "https://laravel.com/docs/9.x/sail"
     },
     {
       "name": "Laravel Sanctum",
-      "introduction": "",
+      "introduction": "超简单的登录组件",
       "logo_url": "https://laravel.com/img/ecosystem/sanctum.min.svg",
       "color": "bg-cyan-800",
       "url": "https://laravel.com/docs/9.x/sanctum"
     },
     {
       "name": "Laravel Scout",
-      "introduction": "",
+      "introduction": "高度自动化的全文索引实现",
       "logo_url": "https://laravel.com/img/ecosystem/scout.min.svg",
       "color": "bg-red-400",
       "url": "https://laravel.com/docs/9.x/scout"
     },
     {
       "name": "Laravel Socialite",
-      "introduction": "",
+      "introduction": "一个包搞定各种社交网站登录接入",
       "logo_url": "https://laravel.com/img/ecosystem/socialite.min.svg",
       "color": "bg-pink-400",
       "url": "https://laravel.com/docs/9.x/socialite"
     },
     {
       "name": "Laravel Telescope",
-      "introduction": "",
+      "introduction": "开发环境绝佳的伴侣，帮你追踪应用的各种活动",
       "logo_url": "https://laravel.com/img/ecosystem/telescope.min.svg",
       "color": "bg-purple-700",
       "url": "https://laravel.com/docs/9.x/telescope"
     },
     {
       "name": "Laravel Valet",
-      "introduction": "",
+      "introduction": "超好用的 MacOS 开发环境",
       "logo_url": "https://laravel.com/img/ecosystem/valet.min.svg",
       "color": "bg-purple-800",
       "url": "https://laravel.com/docs/9.x/valet"

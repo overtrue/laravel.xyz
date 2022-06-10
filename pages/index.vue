@@ -3,7 +3,7 @@
     <div class="flex-1 flex flex-col items-center justify-center space-y-20">
       <div class="flex justify-center">
         <h1 class="tagline text-left text-3xl md:text-7xl xl:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-400">
-          人生苦短，我选择 Laravel
+          人生苦短 我选择 Laravel
         </h1>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-6 flex-wrap justify-center">

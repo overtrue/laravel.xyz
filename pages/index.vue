@@ -6,7 +6,7 @@
           人生苦短 我选择 Laravel
         </h1>
       </div>
-      <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-5 gap-6 flex-wrap justify-center">
+      <div class="flex items-center justify-center gap-6 flex-wrap justify-center">
         <NuxtLink
           to="/courses"
           class="block xl:space-y-4 px-8 py-4 border-4 rounded-xl dark:border-gray-600 font-medium transition-colors duration-200 transform text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
@@ -59,7 +59,7 @@
           </svg>
           <span>扩展包</span>
         </NuxtLink>
-        <NuxtLink
+        <!-- <NuxtLink
           to="/jobs"
           class="block xl:space-y-4 px-8 py-4 border-4 rounded-xl dark:border-gray-600 font-medium transition-colors duration-200 transform text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
         >
@@ -71,7 +71,7 @@
             />
           </svg>
           <span>工作</span>
-        </NuxtLink>
+        </NuxtLink> -->
       </div>
     </div>
     <div class="py-4 md:py-12 md:flex items-center md:space-x-6 xl:space-x-12 xl:flex justify-center">

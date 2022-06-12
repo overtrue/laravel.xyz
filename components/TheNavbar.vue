@@ -94,7 +94,7 @@
               </svg>
               <span>扩展包</span>
             </NuxtLink>
-            <NuxtLink
+            <!-- <NuxtLink
               to="/jobs"
               class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
             >
@@ -106,7 +106,7 @@
                 />
               </svg>
               <span>工作</span>
-            </NuxtLink>
+            </NuxtLink> -->
           </div>
 
           <!-- <div class="flex items-center mt-4 md:mt-0">

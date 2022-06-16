@@ -331,6 +331,18 @@
     "codemirror_mime_type": "application/xml",
     "language_id": 15
   },
+  "Antlers": {
+    "type": "markup",
+    "color": "#ff269e",
+    "extensions": [
+      ".antlers.html",
+      ".antlers.php",
+      ".antlers.xml"
+    ],
+    "tm_scope": "text.html.statamic",
+    "ace_mode": "text",
+    "language_id": 1067292663
+  },
   "ApacheConf": {
     "type": "data",
     "color": "#d12127",
@@ -633,6 +645,18 @@
     "ace_mode": "text",
     "language_id": 321200902
   },
+  "Bikeshed": {
+    "type": "markup",
+    "color": "#5562ac",
+    "extensions": [
+      ".bs"
+    ],
+    "tm_scope": "source.csswg",
+    "ace_mode": "html",
+    "codemirror_mode": "htmlmixed",
+    "codemirror_mime_type": "text/html",
+    "language_id": 1055528081
+  },
   "Bison": {
     "type": "programming",
     "color": "#6A463F",
@@ -741,13 +765,23 @@
     "codemirror_mime_type": "text/x-brainfuck",
     "language_id": 38
   },
+  "BrighterScript": {
+    "type": "programming",
+    "color": "#66AABB",
+    "extensions": [
+      ".bs"
+    ],
+    "tm_scope": "source.brs",
+    "ace_mode": "text",
+    "language_id": 943571030
+  },
   "Brightscript": {
     "type": "programming",
     "color": "#662D91",
     "extensions": [
       ".brs"
     ],
-    "tm_scope": "source.brightscript",
+    "tm_scope": "source.brs",
     "ace_mode": "text",
     "language_id": 39
   },
@@ -1100,6 +1134,43 @@
     "ace_mode": "text",
     "language_id": 56
   },
+  "Checksums": {
+    "type": "data",
+    "tm_scope": "text.checksums",
+    "aliases": [
+      "checksum",
+      "hash",
+      "hashes",
+      "sum",
+      "sums"
+    ],
+    "filenames": [
+      "MD5SUMS",
+      "SHA1SUMS",
+      "SHA256SUMS",
+      "SHA256SUMS.txt",
+      "SHA512SUMS",
+      "checksums.txt",
+      "cksums",
+      "md5sum.txt"
+    ],
+    "extensions": [
+      ".crc32",
+      ".md2",
+      ".md4",
+      ".md5",
+      ".sha1",
+      ".sha2",
+      ".sha224",
+      ".sha256",
+      ".sha256sum",
+      ".sha3",
+      ".sha384",
+      ".sha512"
+    ],
+    "ace_mode": "text",
+    "language_id": 372063053
+  },
   "ChucK": {
     "type": "programming",
     "color": "#3f8000",
@@ -1185,6 +1256,7 @@
     "color": "#db5855",
     "extensions": [
       ".clj",
+      ".bb",
       ".boot",
       ".cl2",
       ".cljc",
@@ -1196,6 +1268,9 @@
     ],
     "filenames": [
       "riemann.config"
+    ],
+    "interpreters": [
+      "bb"
     ],
     "language_id": 62
   },
@@ -2660,6 +2735,19 @@
     "tm_scope": "source.gitconfig",
     "language_id": 807968997
   },
+  "Git Revision List": {
+    "type": "data",
+    "color": "#F44D27",
+    "aliases": [
+      "Git Blame Ignore Revs"
+    ],
+    "filenames": [
+      ".git-blame-ignore-revs"
+    ],
+    "tm_scope": "source.git-revlist",
+    "ace_mode": "text",
+    "language_id": 461881235
+  },
   "Gleam": {
     "type": "programming",
     "color": "#ffaff3",
@@ -3444,6 +3532,8 @@
     ],
     "extensions": [
       ".json",
+      ".4DForm",
+      ".4DProject",
       ".avsc",
       ".geojson",
       ".gltf",
@@ -7636,7 +7726,7 @@
   },
   "TSX": {
     "type": "programming",
-    "color": "#2b7489",
+    "color": "#3178c6",
     "group": "TypeScript",
     "extensions": [
       ".tsx"
@@ -7906,7 +7996,7 @@
   },
   "TypeScript": {
     "type": "programming",
-    "color": "#2b7489",
+    "color": "#3178c6",
     "aliases": [
       "ts"
     ],
@@ -7915,7 +8005,9 @@
       "ts-node"
     ],
     "extensions": [
-      ".ts"
+      ".ts",
+      ".cts",
+      ".mts"
     ],
     "tm_scope": "source.ts",
     "ace_mode": "typescript",
@@ -7960,6 +8052,11 @@
     "extensions": [
       ".s",
       ".ms"
+    ],
+    "aliases": [
+      "gas",
+      "gnu asm",
+      "unix asm"
     ],
     "tm_scope": "source.x86",
     "ace_mode": "assembly_x86",

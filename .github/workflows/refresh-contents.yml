@@ -28,7 +28,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
-    - run: yarn i
+    - run: yarn install
     - run: node ./scripts/stars.js
     - run: node ./scripts/packages.js
     - run: node ./scripts/languages.js

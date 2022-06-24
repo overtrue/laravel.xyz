@@ -1,5 +1,15 @@
 [
   {
+    "name": "Taylor Otwell",
+    "github_id": "taylorotwell",
+    "twitter_id": "taylorotwell"
+  },
+  {
+    "name": "Freek Van der Herten",
+    "github_id": "freekmurze",
+    "twitter_id": "freekmurze"
+  },
+  {
     "name": "Nuno Maduro",
     "github_id": "nunomaduro",
     "twitter_id": "nunomaduro"
@@ -9,16 +19,6 @@
     "introduction": "A full-stack developer at Laravel.",
     "github_id": "themsaid",
     "twitter_id": "themsaid"
-  },
-  {
-    "name": "Taylor Otwell",
-    "github_id": "taylorotwell",
-    "twitter_id": "taylorotwell"
-  },
-  {
-    "name": "Freek Van der Herten",
-    "github_id": "freekmurze",
-    "twitter_id": "freekmurze"
   },
   {
     "name": "Spatie",

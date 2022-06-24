@@ -9,7 +9,7 @@ const output = path.join(process.cwd(), 'content/compiled/stars.json')
 Promise.all(stars.map((item) => {
     return client.user(item.github_id)
         .infoAsync()
-        .then(user => user ? { ...item, ...user[0] } : null)
+        .then(user => user ? { ...item, ...user[0], introduction: item.introduction || user.bio } : null)
         .catch(console.error)
 })).then((users) => {
     users = users.filter(v => !!v)

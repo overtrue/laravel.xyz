@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded-lg shadow bg-white dark:bg-gray-800 p-6 w-64 hover:shadow-lg dark:hover:bg-black relative">
+  <div class="rounded-lg shadow bg-white dark:bg-gray-800 p-6 hover:shadow-lg dark:hover:bg-black relative">
     <NuxtLink class="block text-center h-48 cursor-pointer" :to="star.html_url">
       <img :src="star.avatar_url" alt="" class="rounded-full h-32 w-32 my-4 mx-auto" />
       <h3 class="text-xl text-gray-700 dark:text-gray-300 m-0">{{ star.name }}</h3>

@@ -6,9 +6,9 @@
   },
   {
     "name": "Mohamed Said",
+    "introduction": "A full-stack developer at Laravel.",
     "github_id": "themsaid",
-    "twitter_id": "themsaid",
-    "introduction": "test"
+    "twitter_id": "themsaid"
   },
   {
     "name": "Taylor Otwell",
@@ -16,8 +16,173 @@
     "twitter_id": "taylorotwell"
   },
   {
-    "name": "spatie",
+    "name": "Freek Van der Herten",
+    "github_id": "freekmurze",
+    "twitter_id": "freekmurze"
+  },
+  {
+    "name": "Spatie",
     "github_id": "spatie",
     "twitter_id": "spatie"
+  },
+  {
+    "name": "Dries Vints",
+    "github_id": "driesvints",
+    "twitter_id": "driesvints"
+  },
+  {
+    "name": "Graham Campbell",
+    "github_id": "GrahamCampbell",
+    "twitter_id": "GrahamJCampbell"
+  },
+  {
+    "name": "Caleb Porzio",
+    "introduction": "Creator of @livewire",
+    "github_id": "calebporzio",
+    "twitter_id": "calebporzio"
+  },
+  {
+    "name": "Matt Stauffer",
+    "github_id": "mattstauffer",
+    "twitter_id": "stauffermatt"
+  },
+  {
+    "name": "James Brooks",
+    "github_id": "jbrooksuk",
+    "twitter_id": "jbrooksuk"
+  },
+  {
+    "name": "Tetiana Blindaruk",
+    "github_id": "TBlindaruk",
+    "twitter_id": null
+  },
+  {
+    "name": "Mior Muhammad Zaki",
+    "github_id": "crynobone",
+    "twitter_id": "crynobone"
+  },
+  {
+    "name": "Luke Downing",
+    "introduction": "Musician Member of @pestphp Creator of Pest in Practice",
+    "github_id": "lukeraymonddowning",
+    "twitter_id": "LukeDowning19"
+  },
+  {
+    "name": "Eric Barnes",
+    "github_id": "ericlbarnes",
+    "twitter_id": "ericlbarnes"
+  },
+  {
+    "name": "Stefan Zweifel",
+    "github_id": "stefanzweifel",
+    "twitter_id": "_stefanzweifel"
+  },
+  {
+    "name": "Claudio Dekker",
+    "github_id": "claudiodekker",
+    "twitter_id": "claudiodekker"
+  },
+  {
+    "name": "Jess Archer",
+    "github_id": "jessarcher",
+    "twitter_id": "jessarchercodes"
+  },
+  {
+    "name": "Frank de Jonge",
+    "github_id": "frankdejonge",
+    "twitter_id": "frankdejonge"
+  },
+  {
+    "name": "Jordi Boggiano",
+    "github_id": "Seldaek",
+    "twitter_id": "seldaek"
+  },
+  {
+    "name": "Tim MacDonald",
+    "github_id": "timacdonald",
+    "twitter_id": "timacdonald87"
+  },
+  {
+    "name": "Caneco",
+    "github_id": "caneco",
+    "twitter_id": "caneco"
+  },
+  {
+    "name": "Marcel Pociot",
+    "introduction": "Creator of Tinkerwell, HELO",
+    "github_id": "mpociot",
+    "twitter_id": "mpociot"
+  },
+  {
+    "name": "Alex Vanderbist",
+    "introduction": "Developer at @spatie",
+    "github_id": "AlexVanderbist",
+    "twitter_id": null
+  },
+  {
+    "name": "Pedro Oliveira",
+    "github_id": "PH7-Jack",
+    "twitter_id": "ph7jack"
+  },
+  {
+    "name": "Nicolas Grekas",
+    "github_id": "nicolas-grekas",
+    "twitter_id": "nicolasgrekas"
+  },
+  {
+    "name": "Jonathan Reinink",
+    "github_id": "reinink",
+    "twitter_id": "reinink"
+  },
+  {
+    "name": "Nico Verbruggen",
+    "github_id": "nicoverbruggen",
+    "twitter_id": "nicoverbruggen"
+  },
+  {
+    "name": "Adam Wathan",
+    "github_id": "adamwathan",
+    "twitter_id": "adamwathan"
+  },
+  {
+    "name": "Evan You",
+    "introduction": "Creator of @vuejs",
+    "github_id": "yyx990803",
+    "twitter_id": "yyx990803"
+  },
+  {
+    "name": "安正超",
+    "introduction": "Laravel 死忠粉，本站站长",
+    "github_id": "overtrue",
+    "twitter_id": "overtrue666"
+  },
+  {
+    "name": "Fabien Potencier",
+    "introduction": "Headless UI @tailwindlabs",
+    "github_id": "fabpot",
+    "twitter_id": "fabpot"
+  },
+  {
+    "name": "Robin Malfait",
+    "introduction": "Headless UI @tailwindlabs",
+    "github_id": "RobinMalfait",
+    "twitter_id": "malfaitrobin"
+  },
+  {
+    "name": "Jeffrey Way",
+    "github_id": "JeffreyWay",
+    "twitter_id": "JeffreyWay"
+  },
+  {
+    "name": "Summer",
+    "introduction": "Creator of Learnku.com",
+    "github_id": "summerblue",
+    "twitter_id": null
+  },
+  {
+    "name": "Fred Delrieu",
+    "introduction": "Creator of @Laravel-Lang",
+    "github_id": "caouecs",
+    "twitter_id": "caouecs"
   }
 ]

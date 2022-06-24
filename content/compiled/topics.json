@@ -1,22 +1,46 @@
 [
   {
-    "name": "laravel",
-    "packages_count": 9
+    "name": "php",
+    "packages_count": 29
   },
   {
-    "name": "php",
-    "packages_count": 9
+    "name": "laravel",
+    "packages_count": 21
   },
   {
     "name": "hacktoberfest",
+    "packages_count": 9
+  },
+  {
+    "name": "symfony",
+    "packages_count": 8
+  },
+  {
+    "name": "symfony-component",
+    "packages_count": 8
+  },
+  {
+    "name": "component",
+    "packages_count": 7
+  },
+  {
+    "name": "oauth",
     "packages_count": 3
   },
   {
-    "name": "favorites",
+    "name": "followers",
+    "packages_count": 3
+  },
+  {
+    "name": "image",
     "packages_count": 2
   },
   {
-    "name": "followers",
+    "name": "laravel-package",
+    "packages_count": 2
+  },
+  {
+    "name": "favorites",
     "packages_count": 2
   },
   {
@@ -32,6 +56,14 @@
     "packages_count": 2
   },
   {
+    "name": "http",
+    "packages_count": 2
+  },
+  {
+    "name": "framework",
+    "packages_count": 1
+  },
+  {
     "name": "auth",
     "packages_count": 1
   },
@@ -40,11 +72,23 @@
     "packages_count": 1
   },
   {
-    "name": "oauth",
+    "name": "passport",
     "packages_count": 1
   },
   {
-    "name": "passport",
+    "name": "algolia",
+    "packages_count": 1
+  },
+  {
+    "name": "meilisearch",
+    "packages_count": 1
+  },
+  {
+    "name": "search",
+    "packages_count": 1
+  },
+  {
+    "name": "queue",
     "packages_count": 1
   },
   {
@@ -64,11 +108,35 @@
     "packages_count": 1
   },
   {
-    "name": "gif",
+    "name": "cleaning",
     "packages_count": 1
   },
   {
-    "name": "image",
+    "name": "htmlpurifier",
+    "packages_count": 1
+  },
+  {
+    "name": "crash-reporting",
+    "packages_count": 1
+  },
+  {
+    "name": "crash-reports",
+    "packages_count": 1
+  },
+  {
+    "name": "error-monitoring",
+    "packages_count": 1
+  },
+  {
+    "name": "sentry",
+    "packages_count": 1
+  },
+  {
+    "name": "sentry-client",
+    "packages_count": 1
+  },
+  {
+    "name": "gif",
     "packages_count": 1
   },
   {
@@ -100,6 +168,14 @@
     "packages_count": 1
   },
   {
+    "name": "permission",
+    "packages_count": 1
+  },
+  {
+    "name": "secure",
+    "packages_count": 1
+  },
+  {
     "name": "database",
     "packages_count": 1
   },
@@ -128,6 +204,10 @@
     "packages_count": 1
   },
   {
+    "name": "autocompletion",
+    "packages_count": 1
+  },
+  {
     "name": "mock",
     "packages_count": 1
   },
@@ -149,6 +229,154 @@
   },
   {
     "name": "test-doubles",
+    "packages_count": 1
+  },
+  {
+    "name": "curl",
+    "packages_count": 1
+  },
+  {
+    "name": "guzzle",
+    "packages_count": 1
+  },
+  {
+    "name": "http-client",
+    "packages_count": 1
+  },
+  {
+    "name": "httpclient",
+    "packages_count": 1
+  },
+  {
+    "name": "psr-7",
+    "packages_count": 1
+  },
+  {
+    "name": "requests",
+    "packages_count": 1
+  },
+  {
+    "name": "webservices",
+    "packages_count": 1
+  },
+  {
+    "name": "client",
+    "packages_count": 1
+  },
+  {
+    "name": "elasticsearch",
+    "packages_count": 1
+  },
+  {
+    "name": "gd",
+    "packages_count": 1
+  },
+  {
+    "name": "imagick",
+    "packages_count": 1
+  },
+  {
+    "name": "intervention",
+    "packages_count": 1
+  },
+  {
+    "name": "manipulation",
+    "packages_count": 1
+  },
+  {
+    "name": "thumbnail",
+    "packages_count": 1
+  },
+  {
+    "name": "watermark",
+    "packages_count": 1
+  },
+  {
+    "name": "csv",
+    "packages_count": 1
+  },
+  {
+    "name": "laravel-5-package",
+    "packages_count": 1
+  },
+  {
+    "name": "phpexcel",
+    "packages_count": 1
+  },
+  {
+    "name": "phpoffice",
+    "packages_count": 1
+  },
+  {
+    "name": "alipay",
+    "packages_count": 1
+  },
+  {
+    "name": "baidu",
+    "packages_count": 1
+  },
+  {
+    "name": "dingtalk",
+    "packages_count": 1
+  },
+  {
+    "name": "douban",
+    "packages_count": 1
+  },
+  {
+    "name": "douyin",
+    "packages_count": 1
+  },
+  {
+    "name": "facebook",
+    "packages_count": 1
+  },
+  {
+    "name": "feishu",
+    "packages_count": 1
+  },
+  {
+    "name": "google",
+    "packages_count": 1
+  },
+  {
+    "name": "linkedin",
+    "packages_count": 1
+  },
+  {
+    "name": "login",
+    "packages_count": 1
+  },
+  {
+    "name": "oauth2",
+    "packages_count": 1
+  },
+  {
+    "name": "oauth2-authentication",
+    "packages_count": 1
+  },
+  {
+    "name": "qq",
+    "packages_count": 1
+  },
+  {
+    "name": "social-login",
+    "packages_count": 1
+  },
+  {
+    "name": "socialite",
+    "packages_count": 1
+  },
+  {
+    "name": "taobao",
+    "packages_count": 1
+  },
+  {
+    "name": "wechat",
+    "packages_count": 1
+  },
+  {
+    "name": "weibo",
     "packages_count": 1
   },
   {
@@ -193,6 +421,22 @@
   },
   {
     "name": "tencent-cos",
+    "packages_count": 1
+  },
+  {
+    "name": "favorite",
+    "packages_count": 1
+  },
+  {
+    "name": "follow",
+    "packages_count": 1
+  },
+  {
+    "name": "like",
+    "packages_count": 1
+  },
+  {
+    "name": "subscribe",
     "packages_count": 1
   },
   {
@@ -252,6 +496,18 @@
     "packages_count": 1
   },
   {
+    "name": "laravel-model-versionable",
+    "packages_count": 1
+  },
+  {
+    "name": "laravel-reversion",
+    "packages_count": 1
+  },
+  {
+    "name": "model-versioning",
+    "packages_count": 1
+  },
+  {
     "name": "accept-language",
     "packages_count": 1
   },
@@ -276,6 +532,22 @@
     "packages_count": 1
   },
   {
+    "name": "commonmark",
+    "packages_count": 1
+  },
+  {
+    "name": "gfm",
+    "packages_count": 1
+  },
+  {
+    "name": "github-flavored-markdown",
+    "packages_count": 1
+  },
+  {
+    "name": "markdown",
+    "packages_count": 1
+  },
+  {
     "name": "php-library",
     "packages_count": 1
   },
@@ -293,6 +565,38 @@
   },
   {
     "name": "xml",
+    "packages_count": 1
+  },
+  {
+    "name": "filesystem",
+    "packages_count": 1
+  },
+  {
+    "name": "filesystem-library",
+    "packages_count": 1
+  },
+  {
+    "name": "thephpleague",
+    "packages_count": 1
+  },
+  {
+    "name": "logger",
+    "packages_count": 1
+  },
+  {
+    "name": "logging",
+    "packages_count": 1
+  },
+  {
+    "name": "psr-3",
+    "packages_count": 1
+  },
+  {
+    "name": "libphonenumber",
+    "packages_count": 1
+  },
+  {
+    "name": "phone-number",
     "packages_count": 1
   },
   {
@@ -316,6 +620,34 @@
     "packages_count": 1
   },
   {
+    "name": "cli",
+    "packages_count": 1
+  },
+  {
+    "name": "cli-command",
+    "packages_count": 1
+  },
+  {
+    "name": "console",
+    "packages_count": 1
+  },
+  {
+    "name": "files",
+    "packages_count": 1
+  },
+  {
+    "name": "finder",
+    "packages_count": 1
+  },
+  {
+    "name": "iterator",
+    "packages_count": 1
+  },
+  {
+    "name": "http-messages",
+    "packages_count": 1
+  },
+  {
     "name": "email",
     "packages_count": 1
   },
@@ -324,11 +656,39 @@
     "packages_count": 1
   },
   {
-    "name": "symfony",
+    "name": "mime",
     "packages_count": 1
   },
   {
-    "name": "symfony-component",
+    "name": "process",
+    "packages_count": 1
+  },
+  {
+    "name": "process-manager",
+    "packages_count": 1
+  },
+  {
+    "name": "router",
+    "packages_count": 1
+  },
+  {
+    "name": "routing",
+    "packages_count": 1
+  },
+  {
+    "name": "configuration",
+    "packages_count": 1
+  },
+  {
+    "name": "dotenv",
+    "packages_count": 1
+  },
+  {
+    "name": "environment",
+    "packages_count": 1
+  },
+  {
+    "name": "environment-variables",
     "packages_count": 1
   }
 ]

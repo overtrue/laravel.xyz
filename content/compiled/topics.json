@@ -1,86 +1,42 @@
 [
   {
+    "name": "laravel",
+    "packages_count": 12
+  },
+  {
     "name": "php",
-    "packages_count": 21
-  },
-  {
-    "name": "symfony",
-    "packages_count": 11
-  },
-  {
-    "name": "symfony-component",
     "packages_count": 10
   },
   {
-    "name": "component",
-    "packages_count": 9
-  },
-  {
     "name": "hacktoberfest",
-    "packages_count": 7
-  },
-  {
-    "name": "laravel",
     "packages_count": 3
   },
   {
-    "name": "email",
+    "name": "favorites",
     "packages_count": 2
   },
   {
-    "name": "psr-3",
+    "name": "followers",
     "packages_count": 2
   },
   {
-    "name": "php7",
+    "name": "following",
     "packages_count": 2
   },
   {
-    "name": "http",
+    "name": "laravel-favorite",
     "packages_count": 2
   },
   {
-    "name": "framework",
+    "name": "user-relations",
+    "packages_count": 2
+  },
+  {
+    "name": "auth",
     "packages_count": 1
   },
   {
-    "name": "alipay",
-    "packages_count": 1
-  },
-  {
-    "name": "baidu",
-    "packages_count": 1
-  },
-  {
-    "name": "dingtalk",
-    "packages_count": 1
-  },
-  {
-    "name": "douban",
-    "packages_count": 1
-  },
-  {
-    "name": "douyin",
-    "packages_count": 1
-  },
-  {
-    "name": "facebook",
-    "packages_count": 1
-  },
-  {
-    "name": "feishu",
-    "packages_count": 1
-  },
-  {
-    "name": "google",
-    "packages_count": 1
-  },
-  {
-    "name": "linkedin",
-    "packages_count": 1
-  },
-  {
-    "name": "login",
+    "name": "sanctum",
     "packages_count": 1
   },
   {
@@ -88,75 +44,191 @@
     "packages_count": 1
   },
   {
-    "name": "oauth2",
+    "name": "queue",
     "packages_count": 1
   },
   {
-    "name": "oauth2-authentication",
+    "name": "format",
     "packages_count": 1
   },
   {
-    "name": "qq",
+    "name": "formatter",
     "packages_count": 1
   },
   {
-    "name": "social-login",
+    "name": "lint",
     "packages_count": 1
   },
   {
-    "name": "socialite",
+    "name": "linter",
     "packages_count": 1
   },
   {
-    "name": "taobao",
+    "name": "audit",
     "packages_count": 1
   },
   {
-    "name": "wechat",
+    "name": "log",
     "packages_count": 1
   },
   {
-    "name": "weibo",
+    "name": "monitoring",
     "packages_count": 1
   },
   {
-    "name": "favorites",
+    "name": "permission",
     "packages_count": 1
   },
   {
-    "name": "followers",
+    "name": "secure",
     "packages_count": 1
   },
   {
-    "name": "following",
+    "name": "database",
     "packages_count": 1
   },
   {
-    "name": "laravel-favorite",
+    "name": "eloquent",
     "packages_count": 1
   },
   {
-    "name": "user-relations",
+    "name": "tags",
     "packages_count": 1
   },
   {
-    "name": "emailvalidator",
+    "name": "collection",
     "packages_count": 1
   },
   {
-    "name": "validator",
+    "name": "macros",
     "packages_count": 1
   },
   {
-    "name": "cors",
+    "name": "composer",
     "packages_count": 1
   },
   {
-    "name": "closure",
+    "name": "hashids",
     "packages_count": 1
   },
   {
-    "name": "serialize",
+    "name": "csv",
+    "packages_count": 1
+  },
+  {
+    "name": "laravel-5-package",
+    "packages_count": 1
+  },
+  {
+    "name": "laravel-package",
+    "packages_count": 1
+  },
+  {
+    "name": "phpexcel",
+    "packages_count": 1
+  },
+  {
+    "name": "phpoffice",
+    "packages_count": 1
+  },
+  {
+    "name": "php-sms",
+    "packages_count": 1
+  },
+  {
+    "name": "sms",
+    "packages_count": 1
+  },
+  {
+    "name": "sms-client",
+    "packages_count": 1
+  },
+  {
+    "name": "sms-gateway",
+    "packages_count": 1
+  },
+  {
+    "name": "cos",
+    "packages_count": 1
+  },
+  {
+    "name": "flysystem-adapter",
+    "packages_count": 1
+  },
+  {
+    "name": "flysystem-qcloud-cos",
+    "packages_count": 1
+  },
+  {
+    "name": "laravel-filesystem",
+    "packages_count": 1
+  },
+  {
+    "name": "qcloud-cos",
+    "packages_count": 1
+  },
+  {
+    "name": "tencent-cloud",
+    "packages_count": 1
+  },
+  {
+    "name": "tencent-cos",
+    "packages_count": 1
+  },
+  {
+    "name": "i18n",
+    "packages_count": 1
+  },
+  {
+    "name": "localization",
+    "packages_count": 1
+  },
+  {
+    "name": "laravel-options",
+    "packages_count": 1
+  },
+  {
+    "name": "options",
+    "packages_count": 1
+  },
+  {
+    "name": "settings",
+    "packages_count": 1
+  },
+  {
+    "name": "cache",
+    "packages_count": 1
+  },
+  {
+    "name": "laravel-passport",
+    "packages_count": 1
+  },
+  {
+    "name": "laravel-passport-cache",
+    "packages_count": 1
+  },
+  {
+    "name": "token-cache",
+    "packages_count": 1
+  },
+  {
+    "name": "laravel-api",
+    "packages_count": 1
+  },
+  {
+    "name": "laravel-stateless",
+    "packages_count": 1
+  },
+  {
+    "name": "session",
+    "packages_count": 1
+  },
+  {
+    "name": "laravel-upload",
+    "packages_count": 1
+  },
+  {
+    "name": "laravel-uploader",
     "packages_count": 1
   },
   {
@@ -176,15 +248,23 @@
     "packages_count": 1
   },
   {
-    "name": "filesystem",
+    "name": "php-library",
     "packages_count": 1
   },
   {
-    "name": "filesystem-library",
+    "name": "security",
     "packages_count": 1
   },
   {
-    "name": "thephpleague",
+    "name": "svg",
+    "packages_count": 1
+  },
+  {
+    "name": "svg-sanitizer",
+    "packages_count": 1
+  },
+  {
+    "name": "xml",
     "packages_count": 1
   },
   {
@@ -196,51 +276,11 @@
     "packages_count": 1
   },
   {
-    "name": "guid",
+    "name": "psr-3",
     "packages_count": 1
   },
   {
-    "name": "identifiers",
-    "packages_count": 1
-  },
-  {
-    "name": "php8",
-    "packages_count": 1
-  },
-  {
-    "name": "uuid",
-    "packages_count": 1
-  },
-  {
-    "name": "cli",
-    "packages_count": 1
-  },
-  {
-    "name": "cli-command",
-    "packages_count": 1
-  },
-  {
-    "name": "console",
-    "packages_count": 1
-  },
-  {
-    "name": "errors",
-    "packages_count": 1
-  },
-  {
-    "name": "files",
-    "packages_count": 1
-  },
-  {
-    "name": "finder",
-    "packages_count": 1
-  },
-  {
-    "name": "iterator",
-    "packages_count": 1
-  },
-  {
-    "name": "http-messages",
+    "name": "email",
     "packages_count": 1
   },
   {
@@ -248,51 +288,11 @@
     "packages_count": 1
   },
   {
-    "name": "mime",
+    "name": "symfony",
     "packages_count": 1
   },
   {
-    "name": "process",
-    "packages_count": 1
-  },
-  {
-    "name": "process-manager",
-    "packages_count": 1
-  },
-  {
-    "name": "router",
-    "packages_count": 1
-  },
-  {
-    "name": "routing",
-    "packages_count": 1
-  },
-  {
-    "name": "configuration",
-    "packages_count": 1
-  },
-  {
-    "name": "dotenv",
-    "packages_count": 1
-  },
-  {
-    "name": "environment",
-    "packages_count": 1
-  },
-  {
-    "name": "environment-variables",
-    "packages_count": 1
-  },
-  {
-    "name": "ascii",
-    "packages_count": 1
-  },
-  {
-    "name": "string",
-    "packages_count": 1
-  },
-  {
-    "name": "translit",
+    "name": "symfony-component",
     "packages_count": 1
   }
 ]

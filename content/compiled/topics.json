@@ -1,11 +1,11 @@
 [
   {
     "name": "laravel",
-    "packages_count": 12
+    "packages_count": 9
   },
   {
     "name": "php",
-    "packages_count": 10
+    "packages_count": 9
   },
   {
     "name": "hacktoberfest",
@@ -44,7 +44,7 @@
     "packages_count": 1
   },
   {
-    "name": "queue",
+    "name": "passport",
     "packages_count": 1
   },
   {
@@ -64,6 +64,30 @@
     "packages_count": 1
   },
   {
+    "name": "gif",
+    "packages_count": 1
+  },
+  {
+    "name": "image",
+    "packages_count": 1
+  },
+  {
+    "name": "jpeg",
+    "packages_count": 1
+  },
+  {
+    "name": "optimizer",
+    "packages_count": 1
+  },
+  {
+    "name": "performance",
+    "packages_count": 1
+  },
+  {
+    "name": "png",
+    "packages_count": 1
+  },
+  {
     "name": "audit",
     "packages_count": 1
   },
@@ -73,14 +97,6 @@
   },
   {
     "name": "monitoring",
-    "packages_count": 1
-  },
-  {
-    "name": "permission",
-    "packages_count": 1
-  },
-  {
-    "name": "secure",
     "packages_count": 1
   },
   {
@@ -112,23 +128,27 @@
     "packages_count": 1
   },
   {
-    "name": "csv",
+    "name": "mock",
     "packages_count": 1
   },
   {
-    "name": "laravel-5-package",
+    "name": "mockery",
     "packages_count": 1
   },
   {
-    "name": "laravel-package",
+    "name": "mocking",
     "packages_count": 1
   },
   {
-    "name": "phpexcel",
+    "name": "phpunit",
     "packages_count": 1
   },
   {
-    "name": "phpoffice",
+    "name": "stub",
+    "packages_count": 1
+  },
+  {
+    "name": "test-doubles",
     "packages_count": 1
   },
   {
@@ -232,19 +252,27 @@
     "packages_count": 1
   },
   {
-    "name": "commonmark",
+    "name": "accept-language",
     "packages_count": 1
   },
   {
-    "name": "gfm",
+    "name": "browser",
     "packages_count": 1
   },
   {
-    "name": "github-flavored-markdown",
+    "name": "mobile-detect",
     "packages_count": 1
   },
   {
-    "name": "markdown",
+    "name": "platform",
+    "packages_count": 1
+  },
+  {
+    "name": "robot",
+    "packages_count": 1
+  },
+  {
+    "name": "user-agent",
     "packages_count": 1
   },
   {
@@ -268,15 +296,23 @@
     "packages_count": 1
   },
   {
-    "name": "logger",
+    "name": "guid",
     "packages_count": 1
   },
   {
-    "name": "logging",
+    "name": "identifiers",
     "packages_count": 1
   },
   {
-    "name": "psr-3",
+    "name": "php7",
+    "packages_count": 1
+  },
+  {
+    "name": "php8",
+    "packages_count": 1
+  },
+  {
+    "name": "uuid",
     "packages_count": 1
   },
   {

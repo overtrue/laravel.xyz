@@ -8,6 +8,7 @@
     <div class="flex justify-center mt-8">
       <div class="text-gray-600 flex space-x-1">
         <a
+          v-if="star.twitter_id"
           :href="`https://twitter.com/${star.twitter_id}`"
           class="hover:bg-gray-300 hover:text-gray-700 dark:hover:bg-gray-800 text-gray-400 dark:text-gray-600 hover:dark:text-gray-300 rounded-full p-2 flex items-center justify-center"
         >

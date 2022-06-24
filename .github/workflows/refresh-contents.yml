@@ -5,15 +5,14 @@ name: Update contents
 
 on:
   push:
-    branches: [ "master" ]
+    branches: ['master']
   pull_request:
-    branches: [ "master" ]
+    branches: ['master']
   schedule:
-  - cron: "0 2 * * *"
+    - cron: '0 2 * * *'
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
@@ -22,23 +21,23 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v3
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v3
-      env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
-      with:
-        node-version: ${{ matrix.node-version }}
-        cache: 'npm'
-    - run: yarn install
-    - run: node ./scripts/stars.js
-    - run: node ./scripts/packages.js
-    - run: node ./scripts/languages.js
-    - name: Commit & Push
-      run: |
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        git add -A .
-        git commit -m "contents refreshed"
-        git push
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'npm'
+      - run: yarn install
+      - run: node ./scripts/stars.js
+      - run: node ./scripts/packages.js
+      - run: node ./scripts/languages.js
+      - name: Commit & Push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A .
+          git commit -m "contents refreshed"
+          git push

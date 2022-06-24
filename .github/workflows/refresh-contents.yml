@@ -25,11 +25,12 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         env:
-          GITHUB_TOKEN: ${{ secrets.PERSONAL_GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
+      - run: echo "GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}" > .env
       - run: yarn install
       - run: node ./scripts/stars.js
       - run: node ./scripts/packages.js

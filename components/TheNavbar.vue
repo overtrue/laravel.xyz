@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-white shadow dark:bg-gray-800">
+  <nav class="bg-white dark:bg-neutral-800">
     <div class="container px-6 py-4 mx-auto">
       <div class="md:flex md:items-center md:justify-between">
         <div class="flex items-center justify-between">
@@ -32,19 +32,19 @@
           <div class="flex flex-col -mx-4 md:flex-row md:items-center md:mx-8">
             <!-- <NuxtLink
               to="/articles"
-              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
+              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-neutral-300 dark:hover:bg-neutral-700"
             >
               Articles
             </NuxtLink> -->
             <!-- <NuxtLink
               to="/tips"
-              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
+              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-neutral-300 dark:hover:bg-neutral-700"
             >
               Tips
             </NuxtLink> -->
             <NuxtLink
               to="/courses"
-              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
+              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-neutral-300 dark:hover:bg-neutral-700"
             >
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path
@@ -57,7 +57,7 @@
             </NuxtLink>
             <NuxtLink
               to="/docs"
-              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
+              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-neutral-300 dark:hover:bg-neutral-700"
             >
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path
@@ -70,7 +70,7 @@
             </NuxtLink>
             <NuxtLink
               to="/stars"
-              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
+              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-neutral-300 dark:hover:bg-neutral-700"
             >
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path
@@ -83,7 +83,7 @@
             </NuxtLink>
             <NuxtLink
               to="/packages"
-              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
+              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-neutral-300 dark:hover:bg-neutral-700"
             >
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path
@@ -96,7 +96,7 @@
             </NuxtLink>
             <!-- <NuxtLink
               to="/jobs"
-              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
+              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-neutral-300 dark:hover:bg-neutral-700"
             >
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path
@@ -110,7 +110,7 @@
           </div>
 
           <div class="flex items-center space-x-4">
-            <a href="https://github.com/overtrue/laravel.xyz" class="text-gray-600 hover:text-gray-900 dark:hover:bg-gray-800 hover:dark:text-gray-300">
+            <a href="https://github.com/overtrue/laravel.xyz" class="text-gray-600 hover:text-gray-900 dark:hover:bg-neutral-800 hover:dark:text-gray-300">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon h-6 w-6"
@@ -127,7 +127,7 @@
                 />
               </svg>
             </a>
-            <a href="https://twitter.com/overtrue666" class="text-gray-600 hover:text-gray-900 dark:hover:bg-gray-800 hover:dark:text-gray-300">
+            <a href="https://twitter.com/overtrue666" class="text-gray-600 hover:text-gray-900 dark:hover:bg-neutral-800 hover:dark:text-gray-300">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon h-6 w-6"

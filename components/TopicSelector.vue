@@ -6,8 +6,8 @@
     <div class="space-y-2 max-h-[65vh] overflow-y-auto mt-4 text-gray-600 dark:text-gray-400">
       <RadioGroupOption as="template" v-for="topic in topics" :key="topic.name" :value="topic.name" v-slot="{ checked }">
         <div
-          :class="checked ? 'border-indigo-900 bg-indigo-900' : ' text-gray-500'"
-          class="border dark:border-gray-700 hover:border-transparent hover:bg-indigo-900 hover:text-gray-500 relative flex cursor-pointer rounded px-2 py-1 focus:outline-none"
+          :class="checked ? 'border-neutral-500 bg-neutral-800' : ' text-gray-500'"
+          class="border dark:border-neutral-600 hover:border-transparent hover:bg-neutral-900 hover:text-gray-500 relative flex cursor-pointer rounded px-2 py-1 focus:outline-none"
         >
           <div class="flex flex-1 items-center justify-between text-sm">
             <RadioGroupLabel as="span" :class="checked ? '' : 'text-gray-900 dark:text-gray-400'" class="truncated font-medium">

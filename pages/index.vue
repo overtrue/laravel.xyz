@@ -1,17 +1,15 @@
 <template>
-  <section class="text-center flex flex-col flex-1 px-4 md:px-12 h-full">
-    <div class="flex-1 flex flex-col items-center justify-center space-y-20">
-      <div class="flex justify-center">
-        <h1 class="tagline text-left text-3xl md:text-7xl xl:text-8xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-400">
-          人生苦短 我选择 Laravel
-        </h1>
-      </div>
-      <div class="flex items-center justify-center gap-6 flex-wrap justify-center">
+  <section class="flex flex-col flex-1 px-4 md:px-12 h-full py-16 max-w-6xl">
+    <div class="flex-1 space-y-20">
+      <h1 class="tagline text-left text-3xl md:text-6xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-400">
+        人生苦短<br />我选择 Laravel
+      </h1>
+      <div class="flex items-center gap-6 flex-wrap">
         <NuxtLink
           to="/courses"
-          class="block xl:space-y-4 px-8 py-4 border-4 rounded-xl dark:border-gray-600 font-medium transition-colors duration-200 transform text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
+          class="rounded-full text-gray-800 dark:text-gray-300 py-2 px-6 flex items-center space-x-2 border dark:border-neutral-600 dark:bg-neutral-700 dark:hover:bg-neutral-600"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -22,9 +20,9 @@
         </NuxtLink>
         <NuxtLink
           to="/docs"
-          class="block xl:space-y-4 px-8 py-4 border-4 rounded-xl dark:border-gray-600 font-medium transition-colors duration-200 transform text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
+          class="rounded-full text-gray-800 dark:text-gray-300 py-2 px-6 flex items-center space-x-2 border dark:border-neutral-600 dark:bg-neutral-700 dark:hover:bg-neutral-600"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -35,9 +33,9 @@
         </NuxtLink>
         <NuxtLink
           to="/stars"
-          class="block xl:space-y-4 px-8 py-4 border-4 rounded-xl dark:border-gray-600 font-medium transition-colors duration-200 transform text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
+          class="rounded-full text-gray-800 dark:text-gray-300 py-2 px-6 flex items-center space-x-2 border dark:border-neutral-600 dark:bg-neutral-700 dark:hover:bg-neutral-600"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -48,9 +46,9 @@
         </NuxtLink>
         <NuxtLink
           to="/packages"
-          class="block xl:space-y-4 px-8 py-4 border-4 rounded-xl dark:border-gray-600 font-medium transition-colors duration-200 transform text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
+          class="rounded-full text-gray-800 dark:text-gray-300 py-2 px-6 flex items-center space-x-2 border dark:border-neutral-600 dark:bg-neutral-700 dark:hover:bg-neutral-600"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -61,9 +59,9 @@
         </NuxtLink>
         <!-- <NuxtLink
           to="/jobs"
-          class="block xl:space-y-4 px-8 py-4 border-4 rounded-xl dark:border-gray-600 font-medium transition-colors duration-200 transform text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-gray-300 dark:hover:bg-gray-700"
+          class="rounded-full text-gray-800 dark:text-gray-300  py-4 px-12  flex items-center space-x-4 border"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -73,17 +71,21 @@
           <span>工作</span>
         </NuxtLink> -->
       </div>
-    </div>
-    <div class="py-4 md:py-12 md:flex items-center md:space-x-6 xl:space-x-12 xl:flex justify-center">
-      <a href="https://github.com/overtrue" target="_blank" class="flex items-center group hover:bg-gray-200 dark:hover:bg-indigo-500 px-6 py-2 rounded-lg">
-        <div class="h-12 w-12 rounded-full border-2 border-blue-200 group-hover:border-blue-400 dark:group-hover:border-gray-300 p-0.5">
-          <img src="~/assets/images/overtrue.webp" alt="overtrue" class="rounded-full" />
-        </div>
-        <div class="p-2 text-left text-gray-400 dark:group-hover:text-gray-300">
-          <div class="text-gray-700 dark:group-hover:text-white dark:text-gray-400 font-semibold">overtrue</div>
-          <small>用心为你整理</small>
-        </div>
-      </a>
+      <div class="md:flex items-center md:space-x-6 xl:space-x-12 xl:flex">
+        <a
+          href="https://github.com/overtrue"
+          target="_blank"
+          class="flex items-center group rounded-lg py-2 px-6 space-x-2 border dark:border-neutral-600 dark:bg-neutral-700 dark:hover:bg-neutral-600"
+        >
+          <div class="h-12 w-12 rounded-full border-2 border-blue-200 group-hover:border-blue-400 dark:group-hover:border-gray-300 p-0.5">
+            <img src="~/assets/images/overtrue.webp" alt="overtrue" class="rounded-full" />
+          </div>
+          <div class="p-2 text-left text-gray-400 dark:group-hover:text-gray-300">
+            <div class="text-gray-700 dark:group-hover:text-white dark:text-gray-300 font-semibold">overtrue</div>
+            <small>用心为你整理</small>
+          </div>
+        </a>
+      </div>
     </div>
   </section>
 </template>

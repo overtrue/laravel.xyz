@@ -1,16 +1,16 @@
 <template>
-  <div class="rounded-lg shadow bg-white dark:bg-gray-800 p-6 hover:shadow-lg dark:hover:bg-black relative">
+  <div class="rounded-lg bg-white border dark:border-neutral-600 dark:bg-neutral-700 p-6 hover:shadow-lg dark:hover:bg-neutral-600 relative">
     <NuxtLink class="block text-center h-48 cursor-pointer" :to="star.html_url">
       <img :src="star.avatar_url" alt="" class="rounded-full h-32 w-32 my-4 mx-auto" />
       <h3 class="text-xl text-gray-700 dark:text-gray-300 m-0">{{ star.name }}</h3>
       <p class="text-gray-500 line-clamp-2 text-sm overflow-hidden">{{ star.introduction || star.bio || '' }}</p>
     </NuxtLink>
     <div class="flex justify-center mt-8">
-      <div class="text-gray-600 flex space-x-1">
+      <div class="text-gray-500 flex space-x-1">
         <a
           v-if="star.twitter_id"
           :href="`https://twitter.com/${star.twitter_id}`"
-          class="hover:bg-gray-300 hover:text-gray-700 dark:hover:bg-gray-800 text-gray-400 dark:text-gray-600 hover:dark:text-gray-300 rounded-full p-2 flex items-center justify-center"
+          class="hover:bg-neutral-300 hover:text-gray-700 dark:hover:bg-neutral-800 text-gray-400 dark:text-gray-500 hover:dark:text-gray-300 rounded-full p-2 flex items-center justify-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -30,7 +30,7 @@
         </a>
         <a
           :href="star.html_url"
-          class="hover:bg-gray-300 hover:text-gray-700 dark:hover:bg-gray-800 text-gray-400 dark:text-gray-600 hover:dark:text-gray-300 rounded-full p-2 flex items-center justify-center"
+          class="hover:bg-neutral-300 hover:text-gray-700 dark:hover:bg-neutral-800 text-gray-400 dark:text-gray-500 hover:dark:text-gray-300 rounded-full p-2 flex items-center justify-center"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

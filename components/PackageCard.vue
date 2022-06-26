@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col rounded-lg shadow bg-white dark:bg-gray-800 p-6 hover:shadow-lg dark:hover:bg-black space-y-4">
+  <div class="flex flex-col rounded-lg bg-white border dark:border-neutral-600 dark:bg-neutral-700 p-6 hover:shadow-lg dark:hover:bg-neutral-600">
     <div class="space-y-2 flex-1">
       <div class="flex items-center justify-between">
         <NuxtLink class="font-semibold text-gray-800 dark:text-gray-300 flex-1" :to="repo.html_url">{{ repo.full_name }}</NuxtLink>

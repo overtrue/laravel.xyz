@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded-lg shadow bg-white dark:bg-gray-800 p-6 hover:shadow-lg dark:hover:bg-black relative">
+  <div class="rounded-lg shadow bg-white dark:bg-neutral-800 p-6 hover:shadow-lg dark:hover:bg-black relative">
     <a class="h-full cursor-pointer flex flex-col justify-between space-y-2" :href="`/tips/${tip.id}`">
       <h2 class="text-2xl line-clamp-2 h-16 text-gray-700 dark:text-gray-300">{{ tip.title }}</h2>
       <article class="flex-1 text-gray-400 line-clamp-3 overflow-hidden" v-html="markdownContents" />

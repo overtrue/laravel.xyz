@@ -10,10 +10,10 @@
           <span>推荐更多文档</span>
         </the-link-button>
       </div>
-      <p class="text-gray-500 dark:text-gray-500">所有和 Laravel 相关的文档都在这里</p>
+      <p class="text-gray-500 dark:text-neutral-400">所有和 Laravel 相关的文档都在这里</p>
     </header>
     <section class="space-y-6">
-      <h2 class="font-bold">框架文档</h2>
+      <h2 class="font-medium">框架文档</h2>
 
       <div class="flex gap-6 items-start">
         <div class="gap-6 flex-1 grid grid-cols-1 xl:grid-cols-2">
@@ -23,7 +23,7 @@
     </section>
 
     <section class="space-y-6">
-      <h2 class="font-bold">官方拓展</h2>
+      <h2 class="font-medium">官方拓展</h2>
 
       <div class="flex gap-6 items-start">
         <div class="gap-6 flex-1 grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4">

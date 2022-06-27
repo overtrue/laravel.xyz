@@ -30,22 +30,7 @@
         <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
         <div class="flex-1 md:flex md:items-center md:justify-between">
           <div class="flex flex-col -mx-4 md:flex-row md:items-center md:mx-8">
-            <!-- <NuxtLink
-              to="/articles"
-              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-neutral-300 dark:hover:bg-neutral-700"
-            >
-              Articles
-            </NuxtLink> -->
-            <!-- <NuxtLink
-              to="/tips"
-              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-neutral-300 dark:hover:bg-neutral-700"
-            >
-              Tips
-            </NuxtLink> -->
-            <NuxtLink
-              to="/courses"
-              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-neutral-300 dark:hover:bg-neutral-700"
-            >
+            <the-nav-item to="/courses">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path
                   stroke-linecap="round"
@@ -54,11 +39,8 @@
                 />
               </svg>
               <span>教程</span>
-            </NuxtLink>
-            <NuxtLink
-              to="/docs"
-              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-neutral-300 dark:hover:bg-neutral-700"
-            >
+            </the-nav-item>
+            <the-nav-item to="/docs">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path
                   stroke-linecap="round"
@@ -67,11 +49,8 @@
                 />
               </svg>
               <span>文档</span>
-            </NuxtLink>
-            <NuxtLink
-              to="/stars"
-              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-neutral-300 dark:hover:bg-neutral-700"
-            >
+            </the-nav-item>
+            <the-nav-item to="/stars">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path
                   stroke-linecap="round"
@@ -80,11 +59,8 @@
                 />
               </svg>
               <span>人物</span>
-            </NuxtLink>
-            <NuxtLink
-              to="/packages"
-              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-neutral-300 dark:hover:bg-neutral-700"
-            >
+            </the-nav-item>
+            <the-nav-item to="/packages">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path
                   stroke-linecap="round"
@@ -93,10 +69,10 @@
                 />
               </svg>
               <span>扩展包</span>
-            </NuxtLink>
-            <!-- <NuxtLink
+            </the-nav-item>
+            <!-- <the-nav-item
               to="/jobs"
-              class="flex items-center space-x-2 px-2 py-1 mx-2 mt-2 text-sm font-medium transition-colors duration-200 transform rounded-md md:mt-0 text-gray-600 hover:text-gray-700 dark:hover:text-gray-200 dark:text-gray-200 hover:bg-neutral-300 dark:hover:bg-neutral-700"
+
             >
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path
@@ -106,11 +82,11 @@
                 />
               </svg>
               <span>工作</span>
-            </NuxtLink> -->
+            </the-nav-item> -->
           </div>
 
           <div class="flex items-center space-x-4">
-            <a href="https://github.com/overtrue/laravel.xyz" class="text-gray-600 hover:text-gray-900 dark:hover:bg-neutral-800 hover:dark:text-gray-300">
+            <a href="https://github.com/overtrue/laravel.xyz" class="text-gray-600 dark:text-neutral-300 hover:text-gray-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon h-6 w-6"
@@ -127,7 +103,7 @@
                 />
               </svg>
             </a>
-            <a href="https://twitter.com/overtrue666" class="text-gray-600 hover:text-gray-900 dark:hover:bg-neutral-800 hover:dark:text-gray-300">
+            <a href="https://twitter.com/overtrue666" class="text-gray-600 dark:text-neutral-300 hover:text-gray-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="icon h-6 w-6"

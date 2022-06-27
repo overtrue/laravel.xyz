@@ -2,7 +2,7 @@
   <div class="mt-8 space-y-6">
     <header>
       <h1 class="text-3xl mb-0 text-gray-700 dark:text-gray-300 leading-relaxed">Tips</h1>
-      <p class="text-gray-600 my-0 dark:text-gray-500">Awesome tips for Laravel.</p>
+      <p class="text-gray-600 my-0 dark:text-neutral-400">Awesome tips for Laravel.</p>
     </header>
 
     <div class="flex flex-wrap -mx-2">

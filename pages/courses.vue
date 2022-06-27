@@ -10,7 +10,7 @@
           <span>推荐更多课程</span>
         </the-link-button>
       </div>
-      <div class="text-gray-500 dark:text-gray-500">通过教程，我们可以更深入系统的学习使用 Laravel。</div>
+      <div class="text-gray-500 dark:text-neutral-400">通过教程，我们可以更深入系统的学习使用 Laravel。</div>
     </header>
     <div class="gap-6 flex-1 grid grid-cols-1 xl:grid-cols-2">
       <course-card v-for="course of courses.body" :course="course" :key="course.name"></course-card>

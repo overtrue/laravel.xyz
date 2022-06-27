@@ -1,9 +1,9 @@
 <template>
-  <div class="rounded-lg bg-white border dark:border-neutral-600 dark:bg-neutral-700 p-6 hover:shadow-lg dark:hover:bg-neutral-600 relative">
+  <content-card class="relative">
     <NuxtLink class="block text-center h-48 cursor-pointer" :to="star.html_url">
       <img :src="star.avatar_url" alt="" class="rounded-full h-32 w-32 my-4 mx-auto" />
-      <h3 class="text-xl text-gray-700 dark:text-gray-300 m-0">{{ star.name }}</h3>
-      <p class="text-gray-500 line-clamp-2 text-sm overflow-hidden">{{ star.introduction || star.bio || '' }}</p>
+      <h3 class="text-xl font-medium text-gray-700 dark:text-gray-300 m-0">{{ star.name }}</h3>
+      <p class="text-neutral-400 line-clamp-2 text-sm overflow-hidden">{{ star.introduction || star.bio || '' }}</p>
     </NuxtLink>
     <div class="flex justify-center mt-8">
       <div class="text-gray-500 flex space-x-1">
@@ -50,7 +50,7 @@
         </a>
       </div>
     </div>
-  </div>
+  </content-card>
 </template>
 <script lang="ts">
 export default {

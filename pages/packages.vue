@@ -10,12 +10,12 @@
           <span>推荐更多扩展包</span>
         </the-link-button>
       </div>
-      <p class="text-gray-500 dark:text-gray-500">一些开源的让你更方便创建Laravel应用的库或者组件。</p>
+      <p class="text-gray-500 dark:text-neutral-400">一些开源的让你更方便创建Laravel应用的库或者组件。</p>
     </header>
     <div class="flex gap-6 items-start">
-      <card class="rounded-lg p-6 shadow w-64">
+      <div class="w-64">
         <topic-selector v-model="topic" />
-      </card>
+      </div>
       <div class="gap-6 flex-1 grid grid-cols-1 xl:grid-cols-2">
         <package-card v-for="repo of filteredRepos" :repo="repo" :key="repo.name"></package-card>
       </div>

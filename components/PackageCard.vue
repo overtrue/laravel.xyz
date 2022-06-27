@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col rounded-lg bg-white border dark:border-neutral-600 dark:bg-neutral-700 p-6 hover:shadow-lg dark:hover:bg-neutral-600">
+  <content-card class="flex flex-col dark:text-gray-400">
     <div class="space-y-2 flex-1">
       <div class="flex items-center justify-between">
         <NuxtLink class="font-semibold text-gray-800 dark:text-gray-300 flex-1" :to="repo.html_url">{{ repo.full_name }}</NuxtLink>
@@ -16,21 +16,21 @@
           </div>
         </div>
       </div>
-      <NuxtLink class="block text-gray-600 dark:text-gray-500 line-clamp-2" :to="repo.html_url">{{ $emoji.replace_colons(repo.description) }}</NuxtLink>
+      <NuxtLink class="block text-gray-600 dark:text-neutral-400 line-clamp-2" :to="repo.html_url">{{ $emoji.replace_colons(repo.description) }}</NuxtLink>
     </div>
-    <div class="flex items-center gap-4 text-sm text-gray-400 dark:text-gray-500">
+    <div class="flex mt-4 items-center gap-4 text-sm">
       <NuxtLink class="text-center cursor-pointer inline-flex items-center space-x-2" :to="repo.owner.html_url">
         <img :src="repo.owner.avatar_url" alt="" class="rounded-full h-6 w-6" />
         <h5 class="text-gray-700 dark:text-gray-400">{{ repo.owner.login }}</h5>
       </NuxtLink>
       <div class="flex items-center gap-1">
-        <span class="block rounded-full h-3 w-3 border dark:border-gray-600" :style="`background-color:${repo.language_color}`"></span>{{ repo.language }}
+        <span class="block rounded-full h-3 w-3 border dark:border-neutral-400" :style="`background-color:${repo.language_color}`"></span>{{ repo.language }}
       </div>
-      <nuxt-link :to="repo.html_url" class="ml-auto">
+      <nuxt-link :to="repo.html_url" class="ml-auto text-xs text-gray-400 dark:text-neutral-400">
         <time :datetime="repo.updated_at" :title="repo.updated_at"> {{ $dayjs().to(repo.updated_at) }}更新 </time>
       </nuxt-link>
     </div>
-  </div>
+  </content-card>
 </template>
 <script lang="ts">
 export default {

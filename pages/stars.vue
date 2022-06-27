@@ -10,7 +10,7 @@
           <span>推荐更多人选</span>
         </the-link-button>
       </div>
-      <div class="text-gray-500 dark:text-gray-500">关注他们，学习和模仿。</div>
+      <div class="text-gray-500 dark:text-neutral-400">关注他们，学习和模仿。</div>
     </header>
     <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 content-center gap-6 w-full">
       <star-card v-for="star of stars.body" :star="star" class="mx-auto w-full" :key="star.name"></star-card>

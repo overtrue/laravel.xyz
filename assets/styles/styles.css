@@ -13,5 +13,5 @@ body,
 }
 
 body {
-  @apply bg-gray-100 dark:bg-neutral-800 text-gray-200;
+  @apply bg-white dark:bg-neutral-800 text-gray-700 dark:text-gray-400;
 }

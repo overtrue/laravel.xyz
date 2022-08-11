@@ -5,7 +5,7 @@
   },
   {
     "name": "laravel",
-    "packages_count": 21
+    "packages_count": 22
   },
   {
     "name": "hacktoberfest",
@@ -681,6 +681,22 @@
   },
   {
     "name": "environment-variables",
+    "packages_count": 1
+  },
+  {
+    "name": "database-migrations",
+    "packages_count": 1
+  },
+  {
+    "name": "existing-database",
+    "packages_count": 1
+  },
+  {
+    "name": "lumen",
+    "packages_count": 1
+  },
+  {
+    "name": "migrations",
     "packages_count": 1
   }
 ]

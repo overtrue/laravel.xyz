@@ -52,5 +52,5 @@
   "symfony/process",
   "symfony/routing",
   "vlucas/phpdotenv"
-  "laravel-migrations-generator"
+  "kitloong/laravel-migrations-generator"
 ]

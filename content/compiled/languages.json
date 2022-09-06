@@ -3759,7 +3759,8 @@
       "jsp"
     ],
     "extensions": [
-      ".jsp"
+      ".jsp",
+      ".tag"
     ],
     "tm_scope": "text.html.jsp",
     "ace_mode": "jsp",

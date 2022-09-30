@@ -8,8 +8,8 @@
               href="/"
               class="flex items-center space-x-2 text-2xl font-bold text-gray-800 transition-colors duration-200 transform dark:text-white lg:text-3xl hover:text-gray-600 dark:hover:text-gray-300"
             >
-              <h1 class="text-3xl leading-none m-0">Laravel</h1>
-              <span class="bg-blue-500 text-white text-sm px-2 py-1 rounded rounded-bl-none">小宇宙</span>
+              <h1 class="m-0 text-3xl leading-none">Laravel</h1>
+              <span class="px-2 py-1 text-sm text-white bg-blue-500 rounded rounded-bl-none">小宇宙</span>
             </a>
           </div>
 
@@ -31,7 +31,7 @@
         <div class="flex-1 md:flex md:items-center md:justify-between">
           <div class="flex flex-col -mx-4 md:flex-row md:items-center md:mx-8">
             <the-nav-item to="/courses">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -41,7 +41,7 @@
               <span>教程</span>
             </the-nav-item>
             <the-nav-item to="/docs">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -51,7 +51,7 @@
               <span>文档</span>
             </the-nav-item>
             <the-nav-item to="/stars">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -61,7 +61,7 @@
               <span>人物</span>
             </the-nav-item>
             <the-nav-item to="/packages">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -70,11 +70,21 @@
               </svg>
               <span>扩展包</span>
             </the-nav-item>
+            <the-nav-item to="/sites">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59"
+                />
+              </svg>
+              <span>网站</span>
+            </the-nav-item>
             <!-- <the-nav-item
               to="/jobs"
 
             >
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -89,7 +99,7 @@
             <a href="https://github.com/overtrue/laravel.xyz" class="text-gray-600 dark:text-neutral-300 hover:text-gray-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="icon h-6 w-6"
+                class="w-6 h-6 icon"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"
@@ -106,7 +116,7 @@
             <a href="https://twitter.com/overtrue666" class="text-gray-600 dark:text-neutral-300 hover:text-gray-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="icon h-6 w-6"
+                class="w-6 h-6 icon"
                 viewBox="0 0 24 24"
                 stroke-width="1.5"
                 stroke="currentColor"

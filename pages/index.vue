@@ -1,13 +1,13 @@
 <template>
-  <section class="flex flex-col flex-1 px-4 md:px-12 h-full py-24 max-w-6xl">
-    <div class="flex-1 space-y-20">
-      <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-green-400">人生苦短<br />我选择 Laravel</h1>
-      <div class="flex items-center gap-6 flex-wrap">
+  <section class="flex items-center justify-center h-full px-4 py-24 md:px-12">
+    <div class="flex flex-col items-center max-w-6xl space-y-20">
+      <h1 class="text-4xl font-extrabold text-transparent md:text-6xl lg:text-7xl bg-clip-text bg-gradient-to-r from-blue-600 to-green-400">人生苦短<br />我选择 Laravel</h1>
+      <div class="flex flex-wrap items-center gap-6">
         <NuxtLink
           to="/courses"
-          class="rounded-full text-gray-800 dark:text-gray-300 py-2 px-6 flex items-center space-x-2 border dark:border-neutral-600 bg-gray-100 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600"
+          class="flex items-center px-6 py-2 space-x-2 text-white bg-gray-700 rounded dark:text-gray-300 dark:border-gray-600 hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -18,9 +18,9 @@
         </NuxtLink>
         <NuxtLink
           to="/docs"
-          class="rounded-full text-gray-800 dark:text-gray-300 py-2 px-6 flex items-center space-x-2 border dark:border-neutral-600 bg-gray-100 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600"
+          class="flex items-center px-6 py-2 space-x-2 text-white bg-gray-700 rounded dark:text-gray-300 dark:border-gray-600 hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -31,9 +31,9 @@
         </NuxtLink>
         <NuxtLink
           to="/stars"
-          class="rounded-full text-gray-800 dark:text-gray-300 py-2 px-6 flex items-center space-x-2 border dark:border-neutral-600 bg-gray-100 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600"
+          class="flex items-center px-6 py-2 space-x-2 text-white bg-gray-700 rounded dark:text-gray-300 dark:border-gray-600 hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -44,9 +44,9 @@
         </NuxtLink>
         <NuxtLink
           to="/packages"
-          class="rounded-full text-gray-800 dark:text-gray-300 py-2 px-6 flex items-center space-x-2 border dark:border-neutral-600 bg-gray-100 hover:bg-neutral-200 dark:bg-neutral-700 dark:hover:bg-neutral-600"
+          class="flex items-center px-6 py-2 space-x-2 text-white bg-gray-700 rounded dark:text-gray-300 dark:border-gray-600 hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -55,28 +55,15 @@
           </svg>
           <span>扩展包</span>
         </NuxtLink>
-        <!-- <NuxtLink
-          to="/jobs"
-          class="rounded-full text-gray-800 dark:text-gray-300  py-4 px-12  flex items-center space-x-4 border"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z"
-            />
-          </svg>
-          <span>工作</span>
-        </NuxtLink> -->
       </div>
-      <div class="md:flex items-center md:space-x-6 xl:space-x-12 xl:flex">
+      <div class="items-center md:flex md:space-x-6 xl:space-x-12 xl:flex">
         <a href="https://github.com/overtrue" target="_blank" class="group">
-          <content-card class="flex items-center py-2 px-6 space-x-2">
+          <content-card class="flex items-center px-6 py-2 space-x-2">
             <div class="h-12 w-12 rounded-full border-2 border-blue-200 group-hover:border-blue-400 dark:group-hover:border-gray-300 p-0.5">
               <img src="~/assets/images/overtrue.webp" alt="overtrue" class="rounded-full" />
             </div>
             <div class="p-2 text-left text-gray-400 dark:group-hover:text-gray-300">
-              <div class="text-gray-700 dark:group-hover:text-white dark:text-gray-300 font-semibold">overtrue</div>
+              <div class="font-semibold text-gray-700 dark:group-hover:text-white dark:text-gray-300">overtrue</div>
               <small>用心为你整理</small>
             </div>
           </content-card>

@@ -1,0 +1,84 @@
+[
+  {
+    "name": "Laravel Bootcamp",
+    "url": "https://bootcamp.laravel.com/",
+    "description": "Together let's walk through building and deploying a modern Laravel application from scratch.",
+    "tags": ["course", "tutorials"],
+    "logo_url": "https://bootcamp.laravel.com/img/logomark.min.svg"
+  },
+  {
+    "name": "Laravel News",
+    "url": "https://laravel-news.com",
+    "description": "Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.",
+    "tags": ["news"],
+    "logo_url": "https://laravelnews.imgix.net/laravel-news__logo.png?dpr=2&ixlib=php-3.3.1"
+  },
+  {
+    "name": "Laracasts",
+    "url": "https://laracasts.com",
+    "description": "Laracasts is a video tutorial website for web developers. It features over 1,000 videos on a variety of topics, including PHP, Laravel, JavaScript, and more.",
+    "tags": ["tutorials", "videos"],
+    "logo_url": "https://assets.laracasts.com/images/logo.svg"
+  },
+  {
+    "name": "Laravel.io",
+    "url": "https://laravel.io",
+    "description": "Laravel.io is a community portal for Laravel developers. It features a forum, job board, and a list of useful resources.",
+    "tags": ["community"],
+    "logo_url": "https://laravel.io/images/laravelio-logo.svg"
+  },
+  {
+    "name": "Laracasts Forum",
+    "url": "https://laracasts.com/discuss",
+    "description": "Laracasts is a video tutorial website for web developers. It features over 1,000 videos on a variety of topics, including PHP, Laravel, JavaScript, and more.",
+    "tags": ["community", "videos"],
+    "logo_url": "https://assets.laracasts.com/images/logo.svg"
+  },
+  {
+    "name": "Laravel Podcast",
+    "url": "https://laravelpodcast.com",
+    "description": "The Laravel Podcast is a weekly podcast about the Laravel PHP framework. It features interviews with the creators of Laravel and other Laravel community members.",
+    "tags": ["podcast"]
+  },
+  {
+    "name": "Laravel Daily",
+    "url": "https://laraveldaily.com",
+    "description": "Laravel Daily is a blog that publishes articles about Laravel and other PHP frameworks. It also features a newsletter with the latest news in the Laravel ecosystem.",
+    "tags": ["news", "tutorials"],
+    "logo_url": "https://laraveldaily.com/img/logos/mono.svg",
+    "logo_bg_color": "#2563eb"
+  },
+  {
+    "name": "Learnku",
+    "url": "https://learnku.com",
+    "description": "Learnku is a Chinese community portal for Laravel developers. It features a forum, job board, and a list of useful resources.",
+    "tags": ["community"],
+    "logo_url": "https://cdn.learnku.com/uploads/images/201901/24/1/OyBnfB2vlk.png!/both/100x100"
+  },
+  {
+    "name": "Larajobs",
+    "url": "https://larajobs.com",
+    "description": "Larajobs is a job board for Laravel developers. It features jobs from companies all over the world.",
+    "tags": ["jobs"],
+    "logo_url": "https://larajobs.com/img/logo.svg"
+  },
+  {
+    "name": "Laravel Gurus",
+    "url": "https://laravelgurus.com",
+    "description": "Laravel Gurus is a job board for Laravel developers. It features jobs from companies all over the world.",
+    "tags": ["jobs"]
+  },
+  {
+    "name": "Laravel Playground",
+    "url": "https://laravelplayground.com",
+    "description": "Run and embed PHP code in your browser.",
+    "tags": ["tools"]
+  },
+  {
+    "name": "Laravel Tricks",
+    "url": "https://laravel-tricks.com",
+    "description": "Laravel tricks is a website that aggregates useful tips and tricks for Laravel PHP framework",
+    "tags": ["tricks", "tutorials"],
+    "logo_url": "https://laravel-tricks.com/svg/logo.svg"
+  }
+]

@@ -1,13 +1,13 @@
 <template>
   <nuxt-link :to="doc.url">
     <content-card class="flex gap-6">
-      <div class="rounded p-2 w-12 h-12 grid place-content-center" :class="doc.color">
-        <img v-if="doc.logo_url" :src="doc.logo_url" :alt="doc.name" class="h-6 w-6" />
-        <div v-else class="rounded-full h-6 w-6 bg-opacity-75 bg-white"></div>
+      <div class="grid w-12 h-12 p-2 rounded place-content-center" :class="doc.color">
+        <img v-if="doc.logo_url" :src="doc.logo_url" :alt="doc.name" class="w-6 h-6" />
+        <div v-else class="w-6 h-6 bg-white bg-opacity-75 rounded-full"></div>
       </div>
       <div>
-        <div class="dark:text-neutral-300 font-medium">{{ doc.name }}</div>
-        <div class="text-neutral-400 text-sm">{{ doc.introduction }}</div>
+        <div class="font-medium dark:text-neutral-300">{{ doc.name }}</div>
+        <div class="h-12 text-sm text-gray-500">{{ doc.introduction }}</div>
       </div>
     </content-card>
   </nuxt-link>

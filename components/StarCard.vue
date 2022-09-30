@@ -1,20 +1,20 @@
 <template>
   <content-card class="relative">
-    <NuxtLink class="block text-center h-48 cursor-pointer" :to="star.html_url">
-      <img :src="star.avatar_url" alt="" class="rounded-full h-32 w-32 my-4 mx-auto" />
-      <h3 class="text-xl font-medium text-gray-700 dark:text-gray-300 m-0">{{ star.name }}</h3>
-      <p class="text-neutral-400 line-clamp-2 text-sm overflow-hidden">{{ star.introduction || star.bio || '' }}</p>
+    <NuxtLink class="block h-48 text-center cursor-pointer" :to="star.html_url">
+      <img :src="star.avatar_url" alt="" class="w-32 h-32 mx-auto my-4 rounded-full" />
+      <h3 class="m-0 text-xl font-semibold text-gray-700 dark:text-gray-300">{{ star.name }}</h3>
+      <p class="mt-2 overflow-hidden text-sm text-gray-500 line-clamp-2">{{ star.introduction || star.bio || '' }}</p>
     </NuxtLink>
     <div class="flex justify-center mt-8">
-      <div class="text-gray-500 flex space-x-1">
+      <div class="flex space-x-1 text-gray-500">
         <a
           v-if="star.twitter_id"
           :href="`https://twitter.com/${star.twitter_id}`"
-          class="hover:bg-neutral-300 hover:text-gray-700 dark:hover:bg-neutral-800 text-gray-400 dark:text-gray-500 hover:dark:text-gray-300 rounded-full p-2 flex items-center justify-center"
+          class="flex items-center justify-center p-2 text-gray-400 rounded-full hover:bg-neutral-300 hover:text-gray-700 dark:hover:bg-neutral-800 dark:text-gray-500 hover:dark:text-gray-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="icon h-6 w-6"
+            class="w-6 h-6 icon"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
@@ -30,11 +30,11 @@
         </a>
         <a
           :href="star.html_url"
-          class="hover:bg-neutral-300 hover:text-gray-700 dark:hover:bg-neutral-800 text-gray-400 dark:text-gray-500 hover:dark:text-gray-300 rounded-full p-2 flex items-center justify-center"
+          class="flex items-center justify-center p-2 text-gray-500 rounded-full hover:bg-neutral-300 hover:text-gray-700 dark:hover:bg-neutral-800 dark:text-gray-500 hover:dark:text-gray-300"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="icon h-6 w-6"
+            class="w-6 h-6 icon"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"

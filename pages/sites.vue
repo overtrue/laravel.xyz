@@ -14,7 +14,7 @@
     </header>
 
     <div class="flex items-start gap-6">
-      <div class="grid flex-1 grid-cols-1 gap-6 md:grid-cols-3 xl:grid-cols-4">
+      <div class="grid flex-1 grid-cols-1 gap-6 md:grid-cols-3 xxl:grid-cols-4">
         <site-card v-for="site of sites.body" :site="site" :key="site.url"></site-card>
       </div>
     </div>

@@ -1,73 +1,40 @@
 <template>
   <section class="flex items-center justify-center h-full px-4 py-24 md:px-12">
     <div class="flex flex-col items-center max-w-6xl space-y-20">
-      <h1 class="text-4xl font-extrabold text-transparent md:text-6xl lg:text-7xl bg-clip-text bg-gradient-to-r from-blue-600 to-green-400">人生苦短<br />我选择 Laravel</h1>
-      <div class="flex flex-wrap items-center gap-6">
-        <NuxtLink
-          to="/courses"
-          class="flex items-center px-6 py-2 space-x-2 text-white bg-gray-700 rounded dark:text-gray-300 dark:border-gray-600 hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
-            />
-          </svg>
-          <span>教程</span>
-        </NuxtLink>
-        <NuxtLink
-          to="/docs"
-          class="flex items-center px-6 py-2 space-x-2 text-white bg-gray-700 rounded dark:text-gray-300 dark:border-gray-600 hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-            />
-          </svg>
-          <span>文档</span>
-        </NuxtLink>
-        <NuxtLink
-          to="/stars"
-          class="flex items-center px-6 py-2 space-x-2 text-white bg-gray-700 rounded dark:text-gray-300 dark:border-gray-600 hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"
-            />
-          </svg>
-          <span>人物</span>
-        </NuxtLink>
-        <NuxtLink
-          to="/packages"
-          class="flex items-center px-6 py-2 space-x-2 text-white bg-gray-700 rounded dark:text-gray-300 dark:border-gray-600 hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600"
-        >
-          <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1">
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M11 4a2 2 0 114 0v1a1 1 0 001 1h3a1 1 0 011 1v3a1 1 0 01-1 1h-1a2 2 0 100 4h1a1 1 0 011 1v3a1 1 0 01-1 1h-3a1 1 0 01-1-1v-1a2 2 0 10-4 0v1a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-1-1H4a2 2 0 110-4h1a1 1 0 001-1V7a1 1 0 011-1h3a1 1 0 001-1V4z"
-            />
-          </svg>
-          <span>扩展包</span>
-        </NuxtLink>
-      </div>
+      <h1 class="text-4xl font-extrabold text-transparent md:text-6xl lg:text-7xl bg-clip-text bg-gradient-to-r from-blue-600 to-green-400">人生苦短，我选择 Laravel</h1>
       <div class="items-center md:flex md:space-x-6 xl:space-x-12 xl:flex">
-        <a href="https://github.com/overtrue" target="_blank" class="group">
-          <content-card class="flex items-center px-6 py-2 space-x-2">
-            <div class="h-12 w-12 rounded-full border-2 border-blue-200 group-hover:border-blue-400 dark:group-hover:border-gray-300 p-0.5">
-              <img src="~/assets/images/overtrue.webp" alt="overtrue" class="rounded-full" />
+        <div class="group">
+          <div class="flex items-center gap-6 px-6 py-2 text-white rounded-lg bg-neutral-700">
+            <a href="https://github.com/overtrue" target="_blank" class="flex items-center gap-2">
+              <div class="h-12 w-12 rounded-full border-2 border-blue-200 group-hover:border-blue-400 dark:group-hover:border-gray-300 p-0.5">
+                <img src="~/assets/images/overtrue.webp" alt="overtrue" class="rounded-full" />
+              </div>
+              <div class="p-2 text-left text-gray-400 dark:group-hover:text-gray-300">
+                <div class="font-semibold text-white dark:group-hover:text-white dark:text-gray-300">overtrue</div>
+                <small>用心为你整理</small>
+              </div>
+            </a>
+            <div class="h-12 border-l border-gray-200"></div>
+            <div class="flex items-center gap-6 justify-evenly">
+              <a href="https://github.com/overtrue" class="text-white hover:text-gray-200">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="w-12 h-12 fill-current">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 2C6.477 2 2 6.463 2 11.97c0 4.404 2.865 8.14 6.839 9.458.5.092.682-.216.682-.48 0-.236-.008-.864-.013-1.695-2.782.602-3.369-1.337-3.369-1.337-.454-1.151-1.11-1.458-1.11-1.458-.908-.618.069-.606.069-.606 1.003.07 1.531 1.027 1.531 1.027.892 1.524 2.341 1.084 2.91.828.092-.643.35-1.083.636-1.332-2.22-.251-4.555-1.107-4.555-4.927 0-1.088.39-1.979 1.029-2.675-.103-.252-.446-1.266.098-2.638 0 0 .84-.268 2.75 1.022A9.607 9.607 0 0 1 12 6.82c.85.004 1.705.114 2.504.336 1.909-1.29 2.747-1.022 2.747-1.022.546 1.372.202 2.386.1 2.638.64.696 1.028 1.587 1.028 2.675 0 3.83-2.339 4.673-4.566 4.92.359.307.678.915.678 1.846 0 1.332-.012 2.407-.012 2.734 0 .267.18.577.688.48 3.97-1.32 6.833-5.054 6.833-9.458C22 6.463 17.522 2 12 2Z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="https://twitter.com/overtrue666" class="text-white hover:text-gray-200">
+                <svg viewBox="0 0 20 20" aria-hidden="true" class="w-12 h-12 fill-current">
+                  <path
+                    d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0 0 20 3.92a8.19 8.19 0 0 1-2.357.646 4.118 4.118 0 0 0 1.804-2.27 8.224 8.224 0 0 1-2.605.996 4.107 4.107 0 0 0-6.993 3.743 11.65 11.65 0 0 1-8.457-4.287 4.106 4.106 0 0 0 1.27 5.477A4.073 4.073 0 0 1 .8 7.713v.052a4.105 4.105 0 0 0 3.292 4.022 4.095 4.095 0 0 1-1.853.07 4.108 4.108 0 0 0 3.834 2.85A8.233 8.233 0 0 1 0 16.407a11.615 11.615 0 0 0 6.29 1.84"
+                  ></path>
+                </svg>
+              </a>
             </div>
-            <div class="p-2 text-left text-gray-400 dark:group-hover:text-gray-300">
-              <div class="font-semibold text-gray-700 dark:group-hover:text-white dark:text-gray-300">overtrue</div>
-              <small>用心为你整理</small>
-            </div>
-          </content-card>
-        </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>

@@ -1,11 +1,11 @@
 <template>
   <content-card class="flex flex-col dark:text-gray-400">
-    <div class="space-y-2 flex-1">
+    <div class="flex-1 space-y-2">
       <div class="flex items-center justify-between">
-        <NuxtLink class="font-semibold text-gray-800 dark:text-gray-300 flex-1" :to="repo.html_url">{{ repo.full_name }}</NuxtLink>
+        <NuxtLink class="flex-1 font-semibold text-gray-800 dark:text-white" :to="repo.html_url">{{ repo.full_name }}</NuxtLink>
         <div class="flex items-center justify-evenly">
           <div class="flex items-center space-x-2 text-sm">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -18,13 +18,13 @@
       </div>
       <NuxtLink class="block text-gray-600 dark:text-neutral-400 line-clamp-2" :to="repo.html_url">{{ $emoji.replace_colons(repo.description) }}</NuxtLink>
     </div>
-    <div class="flex mt-4 items-center gap-4 text-sm">
-      <NuxtLink class="text-center cursor-pointer inline-flex items-center space-x-2" :to="repo.owner.html_url">
-        <img :src="repo.owner.avatar_url" alt="" class="rounded-full h-6 w-6" />
+    <div class="flex items-center gap-4 mt-4 text-sm">
+      <NuxtLink class="inline-flex items-center space-x-2 text-center cursor-pointer" :to="repo.owner.html_url">
+        <img :src="repo.owner.avatar_url" alt="" class="w-6 h-6 rounded-full" />
         <h5 class="text-gray-700 dark:text-gray-400">{{ repo.owner.login }}</h5>
       </NuxtLink>
       <div class="flex items-center gap-1">
-        <span class="block rounded-full h-3 w-3 border dark:border-neutral-400" :style="`background-color:${repo.language_color}`"></span>{{ repo.language }}
+        <span class="block w-3 h-3 border rounded-full dark:border-neutral-400" :style="`background-color:${repo.language_color}`"></span>{{ repo.language }}
       </div>
       <nuxt-link :to="repo.html_url" class="ml-auto text-xs text-gray-400 dark:text-neutral-400">
         <time :datetime="repo.updated_at" :title="repo.updated_at"> {{ $dayjs().to(repo.updated_at) }}更新 </time>

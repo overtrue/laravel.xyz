@@ -5,9 +5,9 @@
         <img v-if="doc.logo_url" :src="doc.logo_url" :alt="doc.name" class="w-6 h-6" />
         <div v-else class="w-6 h-6 bg-white bg-opacity-75 rounded-full"></div>
       </div>
-      <div>
-        <div class="font-medium dark:text-neutral-300">{{ doc.name }}</div>
-        <div class="h-12 text-sm text-gray-500">{{ doc.introduction }}</div>
+      <div class="space-y-1">
+        <div class="font-medium dark:text-white">{{ doc.name }}</div>
+        <div class="h-12 text-sm text-neutral-500 dark:text-neutral-400">{{ doc.introduction }}</div>
       </div>
     </content-card>
   </nuxt-link>

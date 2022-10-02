@@ -2,7 +2,7 @@
   <content-card class="relative">
     <NuxtLink class="block h-48 text-center cursor-pointer" :to="star.html_url">
       <img :src="star.avatar_url" alt="" class="w-32 h-32 mx-auto my-4 rounded-full" />
-      <h3 class="m-0 text-xl font-semibold text-gray-700 dark:text-gray-300">{{ star.name }}</h3>
+      <h3 class="m-0 text-xl font-semibold text-gray-700 dark:text-white">{{ star.name }}</h3>
       <p class="mt-2 overflow-hidden text-sm text-gray-500 line-clamp-2">{{ star.introduction || star.bio || '' }}</p>
     </NuxtLink>
     <div class="flex justify-center mt-8">

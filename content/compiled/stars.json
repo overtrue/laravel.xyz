@@ -30,7 +30,7 @@
     "twitter_username": null,
     "public_repos": 27,
     "public_gists": 9,
-    "followers": 26733,
+    "followers": 26735,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2022-07-08T18:23:06Z"
@@ -69,7 +69,7 @@
     "followers": 4101,
     "following": 16,
     "created_at": "2010-11-16T13:38:15Z",
-    "updated_at": "2022-09-26T21:44:21Z"
+    "updated_at": "2022-10-07T15:06:29Z"
   },
   {
     "name": "Nuno Maduro",
@@ -102,10 +102,10 @@
     "twitter_username": "enunomaduro",
     "public_repos": 220,
     "public_gists": 23,
-    "followers": 4590,
+    "followers": 4593,
     "following": 4,
     "created_at": "2013-09-14T08:11:58Z",
-    "updated_at": "2022-09-23T09:36:08Z"
+    "updated_at": "2022-10-07T09:09:09Z"
   },
   {
     "name": "Mohamed Said",
@@ -175,7 +175,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 436,
     "public_gists": 0,
-    "followers": 919,
+    "followers": 921,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2021-09-28T17:31:24Z"
@@ -247,7 +247,7 @@
     "twitter_username": "GrahamJCampbell",
     "public_repos": 57,
     "public_gists": 9,
-    "followers": 6132,
+    "followers": 6134,
     "following": 130,
     "created_at": "2012-11-18T22:14:00Z",
     "updated_at": "2022-08-31T17:30:07Z"
@@ -320,7 +320,7 @@
     "twitter_username": "stauffermatt",
     "public_repos": 105,
     "public_gists": 41,
-    "followers": 1858,
+    "followers": 1857,
     "following": 20,
     "created_at": "2009-11-11T16:01:24Z",
     "updated_at": "2022-10-03T21:08:20Z"
@@ -392,7 +392,7 @@
     "twitter_username": null,
     "public_repos": 29,
     "public_gists": 0,
-    "followers": 973,
+    "followers": 974,
     "following": 5,
     "created_at": "2015-05-31T15:34:11Z",
     "updated_at": "2022-07-12T08:42:46Z"
@@ -426,7 +426,7 @@
     "hireable": null,
     "bio": "Software Developer @laravel ",
     "twitter_username": "crynobone",
-    "public_repos": 128,
+    "public_repos": 127,
     "public_gists": 31,
     "followers": 1181,
     "following": 44,
@@ -465,7 +465,7 @@
     "twitter_username": "LukeDowning19",
     "public_repos": 62,
     "public_gists": 5,
-    "followers": 231,
+    "followers": 230,
     "following": 0,
     "created_at": "2015-05-01T18:32:33Z",
     "updated_at": "2022-09-29T15:47:14Z"
@@ -573,7 +573,7 @@
     "twitter_username": "claudiodekker",
     "public_repos": 35,
     "public_gists": 9,
-    "followers": 435,
+    "followers": 434,
     "following": 14,
     "created_at": "2012-05-18T12:06:13Z",
     "updated_at": "2022-09-13T12:50:49Z"
@@ -607,9 +607,9 @@
     "hireable": null,
     "bio": "Full-stack developer, maker, podcaster, and speaker.\r\n\r\nI ❤ open source, Laravel, Vue, Tailwind, Linux, and Neovim.",
     "twitter_username": "jessarchercodes",
-    "public_repos": 69,
+    "public_repos": 70,
     "public_gists": 4,
-    "followers": 809,
+    "followers": 811,
     "following": 26,
     "created_at": "2013-07-09T22:40:40Z",
     "updated_at": "2022-10-05T06:47:48Z"
@@ -681,10 +681,10 @@
     "twitter_username": "seldaek",
     "public_repos": 254,
     "public_gists": 33,
-    "followers": 4201,
+    "followers": 4200,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
-    "updated_at": "2022-09-27T10:30:33Z"
+    "updated_at": "2022-10-07T15:34:43Z"
   },
   {
     "name": "Tim MacDonald",
@@ -717,7 +717,7 @@
     "twitter_username": "timacdonald87",
     "public_repos": 30,
     "public_gists": 6,
-    "followers": 454,
+    "followers": 455,
     "following": 0,
     "created_at": "2016-12-28T04:15:41Z",
     "updated_at": "2022-10-04T10:12:04Z"
@@ -753,7 +753,7 @@
     "twitter_username": "Caneco",
     "public_repos": 64,
     "public_gists": 2,
-    "followers": 484,
+    "followers": 485,
     "following": 13,
     "created_at": "2010-11-29T16:08:58Z",
     "updated_at": "2022-09-08T09:45:53Z"
@@ -790,7 +790,7 @@
     "twitter_username": null,
     "public_repos": 197,
     "public_gists": 49,
-    "followers": 2728,
+    "followers": 2729,
     "following": 11,
     "created_at": "2011-05-23T08:11:19Z",
     "updated_at": "2022-09-30T16:39:25Z"
@@ -827,7 +827,7 @@
     "twitter_username": "alex_",
     "public_repos": 78,
     "public_gists": 65,
-    "followers": 452,
+    "followers": 453,
     "following": 7,
     "created_at": "2013-12-30T17:01:15Z",
     "updated_at": "2022-09-07T16:00:52Z"
@@ -899,7 +899,7 @@
     "twitter_username": null,
     "public_repos": 90,
     "public_gists": 28,
-    "followers": 1632,
+    "followers": 1633,
     "following": 5,
     "created_at": "2010-04-14T09:44:17Z",
     "updated_at": "2022-09-18T17:03:02Z"
@@ -935,7 +935,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 67,
-    "followers": 2369,
+    "followers": 2370,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2022-08-23T19:21:03Z"
@@ -971,7 +971,7 @@
     "twitter_username": "nicoverbruggen",
     "public_repos": 31,
     "public_gists": 10,
-    "followers": 116,
+    "followers": 115,
     "following": 14,
     "created_at": "2013-02-27T11:50:57Z",
     "updated_at": "2022-02-08T13:05:44Z"
@@ -1007,7 +1007,7 @@
     "twitter_username": null,
     "public_repos": 163,
     "public_gists": 28,
-    "followers": 8606,
+    "followers": 8614,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2022-08-15T12:38:11Z"
@@ -1044,7 +1044,7 @@
     "twitter_username": null,
     "public_repos": 180,
     "public_gists": 71,
-    "followers": 86222,
+    "followers": 86239,
     "following": 93,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2022-08-12T12:57:56Z"
@@ -1117,7 +1117,7 @@
     "twitter_username": "fabpot",
     "public_repos": 71,
     "public_gists": 12,
-    "followers": 12597,
+    "followers": 12598,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2022-09-06T07:15:29Z"
@@ -1154,7 +1154,7 @@
     "twitter_username": "malfaitrobin",
     "public_repos": 49,
     "public_gists": 42,
-    "followers": 985,
+    "followers": 984,
     "following": 160,
     "created_at": "2012-06-09T22:00:12Z",
     "updated_at": "2022-10-06T09:59:57Z"
@@ -1190,7 +1190,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 63,
     "public_gists": 159,
-    "followers": 14466,
+    "followers": 14468,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2022-07-07T20:03:15Z"

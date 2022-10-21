@@ -1607,6 +1607,17 @@
     "codemirror_mime_type": "text/javascript",
     "language_id": 78
   },
+  "Cypher": {
+    "type": "programming",
+    "color": "#34c0eb",
+    "extensions": [
+      ".cyp",
+      ".cypher"
+    ],
+    "tm_scope": "source.cypher",
+    "ace_mode": "text",
+    "language_id": 850806976
+  },
   "Cython": {
     "type": "programming",
     "color": "#fedf5b",
@@ -3465,6 +3476,16 @@
     "tm_scope": "none",
     "language_id": 575143428
   },
+  "Imba": {
+    "type": "programming",
+    "color": "#16cec6",
+    "extensions": [
+      ".imba"
+    ],
+    "ace_mode": "text",
+    "tm_scope": "source.imba",
+    "language_id": 1057618448
+  },
   "Inform 7": {
     "type": "programming",
     "wrap": true,
@@ -3735,7 +3756,8 @@
     "color": "#b07219",
     "extensions": [
       ".java",
-      ".jav"
+      ".jav",
+      ".jsh"
     ],
     "language_id": 181
   },
@@ -4816,7 +4838,8 @@
     "color": "#ff1111",
     "tm_scope": "source.miniyaml",
     "extensions": [
-      ".yaml"
+      ".yaml",
+      ".yml"
     ],
     "ace_mode": "yaml",
     "codemirror_mode": "yaml",
@@ -5309,6 +5332,60 @@
     "ace_mode": "nunjucks",
     "language_id": 461856962
   },
+  "OASv2-json": {
+    "type": "data",
+    "color": "#85ea2d",
+    "extensions": [
+      ".json"
+    ],
+    "group": "OpenAPI Specification v2",
+    "tm_scope": "source.json",
+    "ace_mode": "json",
+    "codemirror_mode": "javascript",
+    "codemirror_mime_type": "application/json",
+    "language_id": 834374816
+  },
+  "OASv2-yaml": {
+    "type": "data",
+    "color": "#85ea2d",
+    "extensions": [
+      ".yaml",
+      ".yml"
+    ],
+    "group": "OpenAPI Specification v2",
+    "tm_scope": "source.yaml",
+    "ace_mode": "yaml",
+    "codemirror_mode": "yaml",
+    "codemirror_mime_type": "text/x-yaml",
+    "language_id": 105187618
+  },
+  "OASv3-json": {
+    "type": "data",
+    "color": "#85ea2d",
+    "extensions": [
+      ".json"
+    ],
+    "group": "OpenAPI Specification v3",
+    "tm_scope": "source.json",
+    "ace_mode": "json",
+    "codemirror_mode": "javascript",
+    "codemirror_mime_type": "application/json",
+    "language_id": 980062566
+  },
+  "OASv3-yaml": {
+    "type": "data",
+    "color": "#85ea2d",
+    "extensions": [
+      ".yaml",
+      ".yml"
+    ],
+    "group": "OpenAPI Specification v3",
+    "tm_scope": "source.yaml",
+    "ace_mode": "yaml",
+    "codemirror_mode": "yaml",
+    "codemirror_mime_type": "text/x-yaml",
+    "language_id": 51239111
+  },
   "OCaml": {
     "type": "programming",
     "ace_mode": "ocaml",
@@ -5463,6 +5540,26 @@
     ],
     "language_id": 840483232,
     "tm_scope": "source.rego"
+  },
+  "OpenAPI Specification v2": {
+    "aliases": [
+      "oasv2"
+    ],
+    "type": "data",
+    "color": "#85ea2d",
+    "tm_scope": "none",
+    "ace_mode": "text",
+    "language_id": 848295328
+  },
+  "OpenAPI Specification v3": {
+    "aliases": [
+      "oasv3"
+    ],
+    "type": "data",
+    "color": "#85ea2d",
+    "tm_scope": "none",
+    "ace_mode": "text",
+    "language_id": 557959099
   },
   "OpenCL": {
     "type": "programming",
@@ -5622,6 +5719,16 @@
     "tm_scope": "source.p4",
     "ace_mode": "text",
     "language_id": 348895984
+  },
+  "PDDL": {
+    "type": "programming",
+    "color": "#0d00ff",
+    "extensions": [
+      ".pddl"
+    ],
+    "tm_scope": "source.pddl",
+    "ace_mode": "text",
+    "language_id": 736235603
   },
   "PEG.js": {
     "type": "programming",
@@ -5977,6 +6084,16 @@
     "tm_scope": "source.pogoscript",
     "ace_mode": "text",
     "language_id": 289
+  },
+  "Polar": {
+    "type": "programming",
+    "color": "#ae81ff",
+    "extensions": [
+      ".polar"
+    ],
+    "tm_scope": "source.polar",
+    "ace_mode": "text",
+    "language_id": 839112914
   },
   "Pony": {
     "type": "programming",
@@ -7276,6 +7393,19 @@
     "ace_mode": "text",
     "language_id": 342
   },
+  "Scenic": {
+    "type": "programming",
+    "color": "#fdc700",
+    "extensions": [
+      ".scenic"
+    ],
+    "tm_scope": "source.scenic",
+    "ace_mode": "text",
+    "interpreters": [
+      "scenic"
+    ],
+    "language_id": 619814037
+  },
   "Scheme": {
     "type": "programming",
     "color": "#1e4aec",
@@ -7668,7 +7798,8 @@
       "BUILD",
       "BUILD.bazel",
       "Tiltfile",
-      "WORKSPACE"
+      "WORKSPACE",
+      "WORKSPACE.bazel"
     ],
     "aliases": [
       "bazel",
@@ -7887,8 +8018,14 @@
     "extensions": [
       ".tcl",
       ".adp",
+      ".sdc",
       ".tcl.in",
-      ".tm"
+      ".tm",
+      ".xdc"
+    ],
+    "aliases": [
+      "sdc",
+      "xdc"
     ],
     "filenames": [
       "owh",
@@ -8252,8 +8389,6 @@
     ],
     "tm_scope": "source.vbnet",
     "aliases": [
-      "vb6",
-      "visual basic 6",
       "visual basic for applications"
     ],
     "ace_mode": "text",
@@ -8434,6 +8569,26 @@
     "codemirror_mode": "vb",
     "codemirror_mime_type": "text/x-vb",
     "language_id": 389
+  },
+  "Visual Basic 6.0": {
+    "type": "programming",
+    "color": "#2c6353",
+    "extensions": [
+      ".ctl",
+      ".Dsr"
+    ],
+    "tm_scope": "source.vbnet",
+    "aliases": [
+      "vb6",
+      "vb 6",
+      "visual basic 6",
+      "visual basic classic",
+      "classic visual basic"
+    ],
+    "ace_mode": "text",
+    "codemirror_mode": "vb",
+    "codemirror_mime_type": "text/x-vb",
+    "language_id": 679594952
   },
   "Volt": {
     "type": "programming",
@@ -9237,6 +9392,19 @@
     ],
     "tm_scope": "source.jq",
     "language_id": 905371884
+  },
+  "just": {
+    "type": "programming",
+    "aliases": [
+      "Justfile"
+    ],
+    "color": "#384d54",
+    "tm_scope": "source.just",
+    "filenames": [
+      "Justfile"
+    ],
+    "ace_mode": "text",
+    "language_id": 128447695
   },
   "kvlang": {
     "type": "markup",

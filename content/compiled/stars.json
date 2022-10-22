@@ -30,7 +30,7 @@
     "twitter_username": null,
     "public_repos": 27,
     "public_gists": 9,
-    "followers": 26834,
+    "followers": 26841,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2022-07-08T18:23:06Z"
@@ -66,7 +66,7 @@
     "twitter_username": "freekmurze",
     "public_repos": 137,
     "public_gists": 21,
-    "followers": 4115,
+    "followers": 4116,
     "following": 16,
     "created_at": "2010-11-16T13:38:15Z",
     "updated_at": "2022-10-07T15:06:29Z"
@@ -102,7 +102,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 221,
     "public_gists": 23,
-    "followers": 4637,
+    "followers": 4641,
     "following": 4,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2022-10-14T12:47:49Z"
@@ -139,7 +139,7 @@
     "twitter_username": null,
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 4348,
+    "followers": 4349,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2022-08-04T06:52:21Z"
@@ -175,7 +175,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 438,
     "public_gists": 0,
-    "followers": 963,
+    "followers": 970,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2021-09-28T17:31:24Z"
@@ -209,12 +209,12 @@
     "hireable": null,
     "bio": "👨‍🚀 @laravel Core Team • ⭐️ @github Star • 💸 @stripe Community Expert • 🎙 Organising @fullstackbelgium & @fullstackeurope • 💻 Building @laravelio ",
     "twitter_username": "driesvints",
-    "public_repos": 10,
+    "public_repos": 8,
     "public_gists": 13,
-    "followers": 3917,
+    "followers": 3920,
     "following": 26,
     "created_at": "2011-02-01T12:16:19Z",
-    "updated_at": "2022-10-11T19:27:13Z"
+    "updated_at": "2022-10-21T16:53:30Z"
   },
   {
     "name": "Graham Campbell",
@@ -247,7 +247,7 @@
     "twitter_username": "GrahamJCampbell",
     "public_repos": 57,
     "public_gists": 9,
-    "followers": 6150,
+    "followers": 6152,
     "following": 130,
     "created_at": "2012-11-18T22:14:00Z",
     "updated_at": "2022-08-31T17:30:07Z"
@@ -320,7 +320,7 @@
     "twitter_username": "stauffermatt",
     "public_repos": 106,
     "public_gists": 41,
-    "followers": 1863,
+    "followers": 1865,
     "following": 20,
     "created_at": "2009-11-11T16:01:24Z",
     "updated_at": "2022-10-10T14:11:52Z"
@@ -392,10 +392,10 @@
     "twitter_username": null,
     "public_repos": 29,
     "public_gists": 0,
-    "followers": 977,
+    "followers": 979,
     "following": 5,
     "created_at": "2015-05-31T15:34:11Z",
-    "updated_at": "2022-07-12T08:42:46Z"
+    "updated_at": "2022-10-21T16:49:45Z"
   },
   {
     "name": "Mior Muhammad Zaki",
@@ -431,7 +431,7 @@
     "followers": 1183,
     "following": 44,
     "created_at": "2009-12-28T10:34:03Z",
-    "updated_at": "2022-10-10T12:36:56Z"
+    "updated_at": "2022-10-21T04:51:04Z"
   },
   {
     "name": "Luke Downing",
@@ -465,7 +465,7 @@
     "twitter_username": "LukeDowning19",
     "public_repos": 62,
     "public_gists": 5,
-    "followers": 232,
+    "followers": 233,
     "following": 0,
     "created_at": "2015-05-01T18:32:33Z",
     "updated_at": "2022-09-29T15:47:14Z"
@@ -645,7 +645,7 @@
     "twitter_username": "frankdejonge",
     "public_repos": 79,
     "public_gists": 38,
-    "followers": 1001,
+    "followers": 1000,
     "following": 15,
     "created_at": "2010-12-23T15:39:26Z",
     "updated_at": "2022-10-09T17:50:06Z"
@@ -681,7 +681,7 @@
     "twitter_username": "seldaek",
     "public_repos": 254,
     "public_gists": 33,
-    "followers": 4208,
+    "followers": 4207,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2022-10-10T11:06:20Z"
@@ -751,7 +751,7 @@
     "hireable": null,
     "bio": "Full-Stack Developer @Medicare; Host of LaravelPortugal Podcast; Logo Contributor (@blade-ui-kit, @thenpingme, @pestphp);",
     "twitter_username": "Caneco",
-    "public_repos": 64,
+    "public_repos": 65,
     "public_gists": 2,
     "followers": 494,
     "following": 13,
@@ -897,9 +897,9 @@
     "hireable": null,
     "bio": "Submitting features and bug(fixes) @symfony, to make it always faster, easier to use and better designed, uncompromising.\r\n@ESPCI_Alumni engineer.",
     "twitter_username": null,
-    "public_repos": 91,
+    "public_repos": 90,
     "public_gists": 29,
-    "followers": 1647,
+    "followers": 1648,
     "following": 5,
     "created_at": "2010-04-14T09:44:17Z",
     "updated_at": "2022-09-18T17:03:02Z"
@@ -1007,7 +1007,7 @@
     "twitter_username": null,
     "public_repos": 163,
     "public_gists": 28,
-    "followers": 8651,
+    "followers": 8652,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2022-08-15T12:38:11Z"
@@ -1044,7 +1044,7 @@
     "twitter_username": null,
     "public_repos": 180,
     "public_gists": 71,
-    "followers": 86592,
+    "followers": 86622,
     "following": 93,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2022-10-19T04:45:39Z"
@@ -1081,7 +1081,7 @@
     "twitter_username": "overtrue666",
     "public_repos": 114,
     "public_gists": 29,
-    "followers": 6698,
+    "followers": 6697,
     "following": 179,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2022-10-19T16:24:51Z"
@@ -1117,7 +1117,7 @@
     "twitter_username": "fabpot",
     "public_repos": 71,
     "public_gists": 12,
-    "followers": 12618,
+    "followers": 12620,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2022-09-06T07:15:29Z"
@@ -1154,7 +1154,7 @@
     "twitter_username": "malfaitrobin",
     "public_repos": 49,
     "public_gists": 42,
-    "followers": 1044,
+    "followers": 1073,
     "following": 160,
     "created_at": "2012-06-09T22:00:12Z",
     "updated_at": "2022-10-06T09:59:57Z"
@@ -1190,7 +1190,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 63,
     "public_gists": 159,
-    "followers": 14500,
+    "followers": 14504,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2022-07-07T20:03:15Z"

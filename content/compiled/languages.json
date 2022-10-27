@@ -3627,6 +3627,7 @@
       ".yyp"
     ],
     "filenames": [
+      ".all-contributorsrc",
       ".arcconfig",
       ".auto-changelog",
       ".c8rc",
@@ -4783,6 +4784,20 @@
     "tm_scope": "source.mercury",
     "language_id": 229
   },
+  "Mermaid": {
+    "type": "markup",
+    "color": "#ff3670",
+    "aliases": [
+      "mermaid example"
+    ],
+    "extensions": [
+      ".mmd",
+      ".mermaid"
+    ],
+    "tm_scope": "source.mermaid",
+    "ace_mode": "text",
+    "language_id": 385992043
+  },
   "Meson": {
     "type": "programming",
     "color": "#007800",
@@ -5658,7 +5673,8 @@
     ],
     "filenames": [
       ".ackrc",
-      "ackrc"
+      "ackrc",
+      "mocha.opts"
     ],
     "tm_scope": "source.opts",
     "ace_mode": "sh",

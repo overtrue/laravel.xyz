@@ -30,7 +30,7 @@
     "twitter_username": null,
     "public_repos": 27,
     "public_gists": 9,
-    "followers": 26960,
+    "followers": 26973,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2022-07-08T18:23:06Z"
@@ -69,7 +69,7 @@
     "followers": 4147,
     "following": 16,
     "created_at": "2010-11-16T13:38:15Z",
-    "updated_at": "2022-10-26T13:30:11Z"
+    "updated_at": "2022-11-08T07:43:11Z"
   },
   {
     "name": "Nuno Maduro",
@@ -102,7 +102,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 221,
     "public_gists": 23,
-    "followers": 4718,
+    "followers": 4722,
     "following": 4,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2022-10-14T12:47:49Z"
@@ -139,7 +139,7 @@
     "twitter_username": null,
     "public_repos": 59,
     "public_gists": 13,
-    "followers": 4381,
+    "followers": 4383,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2022-08-04T06:52:21Z"
@@ -173,9 +173,9 @@
     "hireable": null,
     "bio": "We create open source, digital products and courses for the developer community",
     "twitter_username": "spatie_be",
-    "public_repos": 443,
+    "public_repos": 444,
     "public_gists": 0,
-    "followers": 1030,
+    "followers": 1036,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2021-09-28T17:31:24Z"
@@ -207,14 +207,14 @@
     "location": "Belgium",
     "email": null,
     "hireable": null,
-    "bio": "👨‍🚀 @laravel Core Team • ⭐️ @github Star • 💸 @stripe Community Expert • 🎙 Organising @fullstackbelgium & @fullstackeurope • 💻 Building @laravelio ",
+    "bio": "👨‍🚀 @laravel Core Team • ⭐️ @github Star • 💸 @stripe Community Expert • 🎙 Organising @fullstackbelgium & @fullstackeurope • Building @laravelio & @eventyio",
     "twitter_username": "driesvints",
-    "public_repos": 9,
+    "public_repos": 8,
     "public_gists": 13,
     "followers": 3954,
     "following": 26,
     "created_at": "2011-02-01T12:16:19Z",
-    "updated_at": "2022-10-28T09:13:00Z"
+    "updated_at": "2022-11-08T08:24:29Z"
   },
   {
     "name": "Graham Campbell",
@@ -501,7 +501,7 @@
     "twitter_username": "ericlbarnes",
     "public_repos": 51,
     "public_gists": 48,
-    "followers": 1597,
+    "followers": 1596,
     "following": 11,
     "created_at": "2009-08-18T16:49:21Z",
     "updated_at": "2022-11-05T19:35:06Z"
@@ -537,7 +537,7 @@
     "twitter_username": "_stefanzweifel",
     "public_repos": 106,
     "public_gists": 26,
-    "followers": 326,
+    "followers": 327,
     "following": 106,
     "created_at": "2011-09-26T14:44:55Z",
     "updated_at": "2022-10-16T18:40:48Z"
@@ -609,7 +609,7 @@
     "twitter_username": "jessarchercodes",
     "public_repos": 70,
     "public_gists": 4,
-    "followers": 845,
+    "followers": 846,
     "following": 26,
     "created_at": "2013-07-09T22:40:40Z",
     "updated_at": "2022-10-27T00:21:31Z"
@@ -643,9 +643,9 @@
     "hireable": true,
     "bio": "Creator of Flysystem and EventSauce",
     "twitter_username": "frankdejonge",
-    "public_repos": 79,
+    "public_repos": 80,
     "public_gists": 38,
-    "followers": 1002,
+    "followers": 1001,
     "following": 15,
     "created_at": "2010-12-23T15:39:26Z",
     "updated_at": "2022-10-09T17:50:06Z"
@@ -790,7 +790,7 @@
     "twitter_username": null,
     "public_repos": 198,
     "public_gists": 49,
-    "followers": 2742,
+    "followers": 2740,
     "following": 11,
     "created_at": "2011-05-23T08:11:19Z",
     "updated_at": "2022-10-31T08:54:13Z"
@@ -827,7 +827,7 @@
     "twitter_username": "alex_",
     "public_repos": 78,
     "public_gists": 65,
-    "followers": 458,
+    "followers": 459,
     "following": 7,
     "created_at": "2013-12-30T17:01:15Z",
     "updated_at": "2022-10-29T15:45:23Z"
@@ -934,7 +934,7 @@
     "bio": "Coauthor of @tailwindcss. Creator of @inertiajs. Fan of @laravelphp and fast database queries. Dad to three great kids. Husband to Amy. Follower of Christ.",
     "twitter_username": "reinink",
     "public_repos": 27,
-    "public_gists": 67,
+    "public_gists": 68,
     "followers": 2413,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
@@ -1044,7 +1044,7 @@
     "twitter_username": null,
     "public_repos": 182,
     "public_gists": 71,
-    "followers": 87512,
+    "followers": 87563,
     "following": 93,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2022-11-07T01:39:57Z"
@@ -1081,7 +1081,7 @@
     "twitter_username": "overtrue666",
     "public_repos": 114,
     "public_gists": 29,
-    "followers": 6713,
+    "followers": 6715,
     "following": 179,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2022-11-05T16:57:45Z"
@@ -1190,7 +1190,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 63,
     "public_gists": 160,
-    "followers": 14545,
+    "followers": 14548,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2022-07-07T20:03:15Z"

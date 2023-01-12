@@ -30,7 +30,7 @@
     "twitter_username": null,
     "public_repos": 27,
     "public_gists": 9,
-    "followers": 27444,
+    "followers": 27452,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2023-01-02T17:16:34Z"
@@ -66,7 +66,7 @@
     "twitter_username": "freekmurze",
     "public_repos": 139,
     "public_gists": 21,
-    "followers": 4223,
+    "followers": 4226,
     "following": 16,
     "created_at": "2010-11-16T13:38:15Z",
     "updated_at": "2022-11-08T07:43:11Z"
@@ -102,7 +102,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 224,
     "public_gists": 23,
-    "followers": 4910,
+    "followers": 4912,
     "following": 4,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2023-01-10T23:06:32Z"
@@ -139,7 +139,7 @@
     "twitter_username": null,
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 4457,
+    "followers": 4458,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2023-01-05T12:29:47Z"
@@ -175,7 +175,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 446,
     "public_gists": 0,
-    "followers": 1225,
+    "followers": 1227,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2021-09-28T17:31:24Z"
@@ -284,7 +284,7 @@
     "twitter_username": null,
     "public_repos": 83,
     "public_gists": 46,
-    "followers": 3940,
+    "followers": 3945,
     "following": 1,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2023-01-06T15:49:04Z"
@@ -320,7 +320,7 @@
     "twitter_username": "stauffermatt",
     "public_repos": 106,
     "public_gists": 41,
-    "followers": 1915,
+    "followers": 1916,
     "following": 20,
     "created_at": "2009-11-11T16:01:24Z",
     "updated_at": "2023-01-03T17:25:48Z"
@@ -356,7 +356,7 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 61,
     "public_gists": 52,
-    "followers": 1498,
+    "followers": 1500,
     "following": 109,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2023-01-09T09:36:35Z"
@@ -428,7 +428,7 @@
     "twitter_username": "crynobone",
     "public_repos": 131,
     "public_gists": 31,
-    "followers": 1213,
+    "followers": 1214,
     "following": 44,
     "created_at": "2009-12-28T10:34:03Z",
     "updated_at": "2022-12-26T11:54:08Z"
@@ -609,7 +609,7 @@
     "twitter_username": "jessarchercodes",
     "public_repos": 69,
     "public_gists": 4,
-    "followers": 966,
+    "followers": 969,
     "following": 27,
     "created_at": "2013-07-09T22:40:40Z",
     "updated_at": "2022-12-14T03:57:26Z"
@@ -645,7 +645,7 @@
     "twitter_username": "frankdejonge",
     "public_repos": 80,
     "public_gists": 38,
-    "followers": 1012,
+    "followers": 1011,
     "following": 15,
     "created_at": "2010-12-23T15:39:26Z",
     "updated_at": "2022-12-21T09:26:09Z"
@@ -717,7 +717,7 @@
     "twitter_username": "timacdonald87",
     "public_repos": 36,
     "public_gists": 6,
-    "followers": 549,
+    "followers": 550,
     "following": 0,
     "created_at": "2016-12-28T04:15:41Z",
     "updated_at": "2023-01-10T01:50:03Z"
@@ -790,10 +790,10 @@
     "twitter_username": null,
     "public_repos": 202,
     "public_gists": 49,
-    "followers": 2931,
+    "followers": 2932,
     "following": 11,
     "created_at": "2011-05-23T08:11:19Z",
-    "updated_at": "2022-12-09T08:59:04Z"
+    "updated_at": "2023-01-11T20:54:11Z"
   },
   {
     "name": "Alex Vanderbist",
@@ -897,9 +897,9 @@
     "hireable": null,
     "bio": "Submitting features and bug(fixes) @symfony, to make it always faster, easier to use and better designed, uncompromising.\r\n@ESPCI_Alumni engineer.",
     "twitter_username": null,
-    "public_repos": 88,
+    "public_repos": 89,
     "public_gists": 29,
-    "followers": 1695,
+    "followers": 1696,
     "following": 5,
     "created_at": "2010-04-14T09:44:17Z",
     "updated_at": "2022-12-29T09:43:25Z"
@@ -935,7 +935,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 68,
-    "followers": 2499,
+    "followers": 2501,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2023-01-09T16:24:45Z"
@@ -1005,9 +1005,9 @@
     "hireable": null,
     "bio": "Creator of Tailwind CSS, author of Refactoring UI, host of Full Stack Radio.",
     "twitter_username": null,
-    "public_repos": 164,
+    "public_repos": 165,
     "public_gists": 28,
-    "followers": 8914,
+    "followers": 8918,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2022-12-19T17:31:05Z"
@@ -1044,7 +1044,7 @@
     "twitter_username": null,
     "public_repos": 182,
     "public_gists": 71,
-    "followers": 89073,
+    "followers": 89103,
     "following": 93,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2023-01-08T00:58:30Z"
@@ -1081,7 +1081,7 @@
     "twitter_username": "overtrue666",
     "public_repos": 113,
     "public_gists": 29,
-    "followers": 6750,
+    "followers": 6751,
     "following": 193,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2022-12-30T13:31:51Z"
@@ -1117,7 +1117,7 @@
     "twitter_username": "fabpot",
     "public_repos": 72,
     "public_gists": 12,
-    "followers": 12743,
+    "followers": 12745,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2022-11-11T10:05:32Z"
@@ -1190,7 +1190,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 63,
     "public_gists": 160,
-    "followers": 14756,
+    "followers": 14761,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2022-07-07T20:03:15Z"
@@ -1227,7 +1227,7 @@
     "twitter_username": null,
     "public_repos": 95,
     "public_gists": 49,
-    "followers": 2988,
+    "followers": 2987,
     "following": 91,
     "created_at": "2010-07-06T23:12:44Z",
     "updated_at": "2022-08-17T11:24:49Z"
@@ -1264,7 +1264,7 @@
     "twitter_username": "caouecs",
     "public_repos": 10,
     "public_gists": 2,
-    "followers": 202,
+    "followers": 201,
     "following": 3,
     "created_at": "2010-10-21T04:52:43Z",
     "updated_at": "2022-12-27T12:09:52Z"

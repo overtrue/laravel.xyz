@@ -30,7 +30,7 @@
     "twitter_username": null,
     "public_repos": 27,
     "public_gists": 9,
-    "followers": 27554,
+    "followers": 27564,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2023-01-23T17:26:05Z"
@@ -64,12 +64,12 @@
     "hireable": null,
     "bio": "Developer at @spatie",
     "twitter_username": "freekmurze",
-    "public_repos": 139,
+    "public_repos": 140,
     "public_gists": 21,
-    "followers": 4252,
+    "followers": 4255,
     "following": 16,
     "created_at": "2010-11-16T13:38:15Z",
-    "updated_at": "2023-01-19T11:34:15Z"
+    "updated_at": "2023-01-24T23:01:25Z"
   },
   {
     "name": "Nuno Maduro",
@@ -102,7 +102,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 224,
     "public_gists": 23,
-    "followers": 4963,
+    "followers": 4965,
     "following": 4,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2023-01-10T23:06:32Z"
@@ -175,7 +175,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 448,
     "public_gists": 0,
-    "followers": 1278,
+    "followers": 1284,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2021-09-28T17:31:24Z"
@@ -211,10 +211,10 @@
     "twitter_username": "driesvints",
     "public_repos": 11,
     "public_gists": 13,
-    "followers": 4121,
+    "followers": 4126,
     "following": 25,
     "created_at": "2011-02-01T12:16:19Z",
-    "updated_at": "2022-12-30T10:52:16Z"
+    "updated_at": "2023-01-24T16:30:11Z"
   },
   {
     "name": "Graham Campbell",
@@ -247,7 +247,7 @@
     "twitter_username": "GrahamJCampbell",
     "public_repos": 61,
     "public_gists": 9,
-    "followers": 6237,
+    "followers": 6240,
     "following": 130,
     "created_at": "2012-11-18T22:14:00Z",
     "updated_at": "2022-08-31T17:30:07Z"
@@ -284,7 +284,7 @@
     "twitter_username": null,
     "public_repos": 83,
     "public_gists": 46,
-    "followers": 3965,
+    "followers": 3967,
     "following": 1,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2023-01-06T15:49:04Z"
@@ -356,7 +356,7 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 61,
     "public_gists": 52,
-    "followers": 1513,
+    "followers": 1514,
     "following": 109,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2023-01-09T09:36:35Z"
@@ -529,7 +529,7 @@
     "type": "User",
     "site_admin": false,
     "company": "@2media ",
-    "blog": "https://stefanzweifel.io",
+    "blog": "https://stefanzweifel.dev",
     "location": "Zurich",
     "email": null,
     "hireable": null,
@@ -540,7 +540,7 @@
     "followers": 333,
     "following": 112,
     "created_at": "2011-09-26T14:44:55Z",
-    "updated_at": "2023-01-05T07:29:20Z"
+    "updated_at": "2023-01-24T19:51:48Z"
   },
   {
     "name": "Claudio Dekker",
@@ -609,7 +609,7 @@
     "twitter_username": "jessarchercodes",
     "public_repos": 70,
     "public_gists": 4,
-    "followers": 991,
+    "followers": 993,
     "following": 27,
     "created_at": "2013-07-09T22:40:40Z",
     "updated_at": "2022-12-14T03:57:26Z"
@@ -645,7 +645,7 @@
     "twitter_username": "frankdejonge",
     "public_repos": 80,
     "public_gists": 38,
-    "followers": 1016,
+    "followers": 1017,
     "following": 15,
     "created_at": "2010-12-23T15:39:26Z",
     "updated_at": "2022-12-21T09:26:09Z"
@@ -715,9 +715,9 @@
     "hireable": null,
     "bio": "🐘 Core Team Member @laravel; 📦 Building packages for fun; 📣 Speaking, Blogging, Viming; ✌️ He/Him",
     "twitter_username": "timacdonald87",
-    "public_repos": 37,
+    "public_repos": 38,
     "public_gists": 6,
-    "followers": 578,
+    "followers": 579,
     "following": 0,
     "created_at": "2016-12-28T04:15:41Z",
     "updated_at": "2023-01-17T09:13:21Z"
@@ -753,7 +753,7 @@
     "twitter_username": "Caneco",
     "public_repos": 65,
     "public_gists": 2,
-    "followers": 542,
+    "followers": 543,
     "following": 13,
     "created_at": "2010-11-29T16:08:58Z",
     "updated_at": "2022-09-08T09:45:53Z"
@@ -790,7 +790,7 @@
     "twitter_username": null,
     "public_repos": 202,
     "public_gists": 49,
-    "followers": 2963,
+    "followers": 2964,
     "following": 11,
     "created_at": "2011-05-23T08:11:19Z",
     "updated_at": "2023-01-18T17:47:59Z"
@@ -827,7 +827,7 @@
     "twitter_username": "alex_",
     "public_repos": 78,
     "public_gists": 65,
-    "followers": 468,
+    "followers": 469,
     "following": 7,
     "created_at": "2013-12-30T17:01:15Z",
     "updated_at": "2023-01-17T18:59:38Z"
@@ -899,7 +899,7 @@
     "twitter_username": null,
     "public_repos": 90,
     "public_gists": 29,
-    "followers": 1697,
+    "followers": 1698,
     "following": 5,
     "created_at": "2010-04-14T09:44:17Z",
     "updated_at": "2022-12-29T09:43:25Z"
@@ -935,7 +935,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 68,
-    "followers": 2518,
+    "followers": 2521,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2023-01-09T16:24:45Z"
@@ -1007,10 +1007,10 @@
     "twitter_username": null,
     "public_repos": 165,
     "public_gists": 28,
-    "followers": 8991,
+    "followers": 8994,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
-    "updated_at": "2023-01-16T20:01:07Z"
+    "updated_at": "2023-01-25T02:05:48Z"
   },
   {
     "name": "Evan You",
@@ -1044,7 +1044,7 @@
     "twitter_username": null,
     "public_repos": 182,
     "public_gists": 71,
-    "followers": 89347,
+    "followers": 89370,
     "following": 93,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2023-01-21T08:56:13Z"
@@ -1152,9 +1152,9 @@
     "hireable": null,
     "bio": null,
     "twitter_username": "malfaitrobin",
-    "public_repos": 47,
+    "public_repos": 48,
     "public_gists": 42,
-    "followers": 1217,
+    "followers": 1224,
     "following": 162,
     "created_at": "2012-06-09T22:00:12Z",
     "updated_at": "2023-01-21T10:03:05Z"
@@ -1190,7 +1190,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 63,
     "public_gists": 160,
-    "followers": 14794,
+    "followers": 14800,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2022-07-07T20:03:15Z"

@@ -41,19 +41,19 @@
     "tags": ["podcast"]
   },
   {
+    "name": "Laravel 中国社区",
+    "url": "https://learnku.com/laravel",
+    "description": "最优质的 Laravel 中国社区",
+    "tags": ["course", "community"],
+    "logo_url": "https://cdn.learnku.com/uploads/images/201901/24/1/OyBnfB2vlk.png!/both/100x100"
+  },
+  {
     "name": "Laravel Daily",
     "url": "https://laraveldaily.com",
     "description": "Laravel Daily is a blog that publishes articles about Laravel and other PHP frameworks. It also features a newsletter with the latest news in the Laravel ecosystem.",
     "tags": ["news", "tutorials"],
     "logo_url": "https://laraveldaily.com/img/logos/mono.svg",
     "logo_bg_color": "#2563eb"
-  },
-  {
-    "name": "Learnku",
-    "url": "https://learnku.com",
-    "description": "Learnku is a Chinese community portal for Laravel developers. It features a forum, job board, and a list of useful resources.",
-    "tags": ["community"],
-    "logo_url": "https://cdn.learnku.com/uploads/images/201901/24/1/OyBnfB2vlk.png!/both/100x100"
   },
   {
     "name": "Larajobs",

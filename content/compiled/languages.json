@@ -8059,6 +8059,18 @@
     ],
     "language_id": 928734530
   },
+  "Sway": {
+    "type": "programming",
+    "color": "#dea584",
+    "extensions": [
+      ".sw"
+    ],
+    "tm_scope": "source.sway",
+    "ace_mode": "rust",
+    "codemirror_mode": "rust",
+    "codemirror_mime_type": "text/x-rustsrc",
+    "language_id": 271471144
+  },
   "Swift": {
     "type": "programming",
     "color": "#F05138",
@@ -9127,6 +9139,7 @@
       ".srdf",
       ".storyboard",
       ".sublime-snippet",
+      ".sw",
       ".targets",
       ".tml",
       ".ts",

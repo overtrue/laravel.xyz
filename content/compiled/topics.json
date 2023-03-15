@@ -12,16 +12,16 @@
     "packages_count": 8
   },
   {
+    "name": "component",
+    "packages_count": 8
+  },
+  {
     "name": "symfony",
     "packages_count": 8
   },
   {
     "name": "symfony-component",
     "packages_count": 8
-  },
-  {
-    "name": "component",
-    "packages_count": 7
   },
   {
     "name": "oauth",
@@ -53,10 +53,6 @@
   },
   {
     "name": "user-relations",
-    "packages_count": 2
-  },
-  {
-    "name": "http",
     "packages_count": 2
   },
   {
@@ -616,7 +612,7 @@
     "packages_count": 1
   },
   {
-    "name": "cli-command",
+    "name": "command-line",
     "packages_count": 1
   },
   {
@@ -624,27 +620,7 @@
     "packages_count": 1
   },
   {
-    "name": "files",
-    "packages_count": 1
-  },
-  {
-    "name": "finder",
-    "packages_count": 1
-  },
-  {
-    "name": "iterator",
-    "packages_count": 1
-  },
-  {
-    "name": "http-messages",
-    "packages_count": 1
-  },
-  {
-    "name": "email",
-    "packages_count": 1
-  },
-  {
-    "name": "mailer",
+    "name": "terminal",
     "packages_count": 1
   },
   {
@@ -652,11 +628,7 @@
     "packages_count": 1
   },
   {
-    "name": "process",
-    "packages_count": 1
-  },
-  {
-    "name": "process-manager",
+    "name": "mime-type",
     "packages_count": 1
   },
   {
@@ -665,6 +637,14 @@
   },
   {
     "name": "routing",
+    "packages_count": 1
+  },
+  {
+    "name": "uri",
+    "packages_count": 1
+  },
+  {
+    "name": "url",
     "packages_count": 1
   },
   {

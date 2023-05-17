@@ -30,7 +30,7 @@
     "twitter_username": null,
     "public_repos": 28,
     "public_gists": 9,
-    "followers": 28533,
+    "followers": 28540,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2023-05-03T13:45:21Z"
@@ -66,7 +66,7 @@
     "twitter_username": "freekmurze",
     "public_repos": 142,
     "public_gists": 21,
-    "followers": 4442,
+    "followers": 4443,
     "following": 16,
     "created_at": "2010-11-16T13:38:15Z",
     "updated_at": "2023-04-06T06:35:09Z"
@@ -102,7 +102,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 227,
     "public_gists": 23,
-    "followers": 5492,
+    "followers": 5496,
     "following": 0,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2023-05-15T13:50:55Z"
@@ -139,7 +139,7 @@
     "twitter_username": null,
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 4625,
+    "followers": 4626,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2023-04-28T06:32:35Z"
@@ -175,7 +175,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 454,
     "public_gists": 0,
-    "followers": 1606,
+    "followers": 1613,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2021-09-28T17:31:24Z"
@@ -211,7 +211,7 @@
     "twitter_username": "driesvints",
     "public_repos": 9,
     "public_gists": 13,
-    "followers": 4383,
+    "followers": 4382,
     "following": 28,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2023-03-31T19:05:15Z"
@@ -247,10 +247,10 @@
     "twitter_username": "GrahamJCampbell",
     "public_repos": 46,
     "public_gists": 9,
-    "followers": 6338,
+    "followers": 6339,
     "following": 133,
     "created_at": "2012-11-18T22:14:00Z",
-    "updated_at": "2023-05-12T00:08:09Z"
+    "updated_at": "2023-05-16T18:01:11Z"
   },
   {
     "name": "Caleb Porzio",
@@ -465,7 +465,7 @@
     "twitter_username": "LukeDowning19",
     "public_repos": 69,
     "public_gists": 5,
-    "followers": 290,
+    "followers": 291,
     "following": 0,
     "created_at": "2015-05-01T18:32:33Z",
     "updated_at": "2023-05-05T16:47:25Z"
@@ -609,7 +609,7 @@
     "twitter_username": "jessarchercodes",
     "public_repos": 71,
     "public_gists": 4,
-    "followers": 1157,
+    "followers": 1158,
     "following": 27,
     "created_at": "2013-07-09T22:40:40Z",
     "updated_at": "2022-12-14T03:57:26Z"
@@ -681,7 +681,7 @@
     "twitter_username": "seldaek",
     "public_repos": 254,
     "public_gists": 33,
-    "followers": 4317,
+    "followers": 4318,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2023-05-13T14:37:44Z"
@@ -717,7 +717,7 @@
     "twitter_username": "timacdonald87",
     "public_repos": 43,
     "public_gists": 6,
-    "followers": 846,
+    "followers": 848,
     "following": 0,
     "created_at": "2016-12-28T04:15:41Z",
     "updated_at": "2023-05-15T05:24:22Z"
@@ -793,7 +793,7 @@
     "followers": 3181,
     "following": 12,
     "created_at": "2011-05-23T08:11:19Z",
-    "updated_at": "2023-05-14T21:11:39Z"
+    "updated_at": "2023-05-16T21:25:47Z"
   },
   {
     "name": "Alex Vanderbist",
@@ -935,7 +935,7 @@
     "twitter_username": "reinink",
     "public_repos": 28,
     "public_gists": 68,
-    "followers": 2650,
+    "followers": 2651,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2023-01-09T16:24:45Z"
@@ -1007,7 +1007,7 @@
     "twitter_username": null,
     "public_repos": 170,
     "public_gists": 28,
-    "followers": 9880,
+    "followers": 9917,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2023-05-02T12:48:36Z"
@@ -1042,9 +1042,9 @@
     "hireable": null,
     "bio": null,
     "twitter_username": null,
-    "public_repos": 183,
+    "public_repos": 184,
     "public_gists": 72,
-    "followers": 92615,
+    "followers": 92658,
     "following": 93,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2023-05-09T09:30:27Z"
@@ -1115,9 +1115,9 @@
     "hireable": null,
     "bio": "CEO at Symfony, CPO at Platform.sh\r\n",
     "twitter_username": "fabpot",
-    "public_repos": 72,
+    "public_repos": 73,
     "public_gists": 12,
-    "followers": 12932,
+    "followers": 12933,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2023-03-17T08:05:27Z"
@@ -1157,7 +1157,7 @@
     "followers": 1299,
     "following": 162,
     "created_at": "2012-06-09T22:00:12Z",
-    "updated_at": "2023-05-09T17:16:34Z"
+    "updated_at": "2023-05-16T18:46:10Z"
   },
   {
     "name": "Jeffrey Way",
@@ -1190,7 +1190,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 63,
     "public_gists": 160,
-    "followers": 15161,
+    "followers": 15164,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2023-05-06T23:05:16Z"

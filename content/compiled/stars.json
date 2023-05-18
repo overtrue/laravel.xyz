@@ -30,7 +30,7 @@
     "twitter_username": null,
     "public_repos": 28,
     "public_gists": 9,
-    "followers": 28540,
+    "followers": 28553,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2023-05-03T13:45:21Z"
@@ -66,7 +66,7 @@
     "twitter_username": "freekmurze",
     "public_repos": 142,
     "public_gists": 21,
-    "followers": 4443,
+    "followers": 4442,
     "following": 16,
     "created_at": "2010-11-16T13:38:15Z",
     "updated_at": "2023-04-06T06:35:09Z"
@@ -102,7 +102,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 227,
     "public_gists": 23,
-    "followers": 5496,
+    "followers": 5500,
     "following": 0,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2023-05-15T13:50:55Z"
@@ -139,7 +139,7 @@
     "twitter_username": null,
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 4626,
+    "followers": 4628,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2023-04-28T06:32:35Z"
@@ -175,7 +175,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 454,
     "public_gists": 0,
-    "followers": 1613,
+    "followers": 1617,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2021-09-28T17:31:24Z"
@@ -211,7 +211,7 @@
     "twitter_username": "driesvints",
     "public_repos": 9,
     "public_gists": 13,
-    "followers": 4382,
+    "followers": 4381,
     "following": 28,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2023-03-31T19:05:15Z"
@@ -247,7 +247,7 @@
     "twitter_username": "GrahamJCampbell",
     "public_repos": 46,
     "public_gists": 9,
-    "followers": 6339,
+    "followers": 6337,
     "following": 133,
     "created_at": "2012-11-18T22:14:00Z",
     "updated_at": "2023-05-16T18:01:11Z"
@@ -320,7 +320,7 @@
     "twitter_username": "stauffermatt",
     "public_repos": 107,
     "public_gists": 42,
-    "followers": 2019,
+    "followers": 2018,
     "following": 20,
     "created_at": "2009-11-11T16:01:24Z",
     "updated_at": "2023-05-15T16:11:56Z"
@@ -392,7 +392,7 @@
     "twitter_username": null,
     "public_repos": 29,
     "public_gists": 0,
-    "followers": 1062,
+    "followers": 1063,
     "following": 5,
     "created_at": "2015-05-31T15:34:11Z",
     "updated_at": "2023-03-23T16:32:42Z"
@@ -428,10 +428,10 @@
     "twitter_username": "crynobone",
     "public_repos": 131,
     "public_gists": 31,
-    "followers": 1275,
+    "followers": 1274,
     "following": 45,
     "created_at": "2009-12-28T10:34:03Z",
-    "updated_at": "2023-04-05T13:24:48Z"
+    "updated_at": "2023-05-17T17:02:44Z"
   },
   {
     "name": "Luke Downing",
@@ -463,7 +463,7 @@
     "hireable": null,
     "bio": null,
     "twitter_username": "LukeDowning19",
-    "public_repos": 69,
+    "public_repos": 68,
     "public_gists": 5,
     "followers": 291,
     "following": 0,
@@ -501,7 +501,7 @@
     "twitter_username": "ericlbarnes",
     "public_repos": 51,
     "public_gists": 48,
-    "followers": 1621,
+    "followers": 1620,
     "following": 11,
     "created_at": "2009-08-18T16:49:21Z",
     "updated_at": "2023-04-17T12:16:28Z"
@@ -643,7 +643,7 @@
     "hireable": true,
     "bio": "Creator of Flysystem and EventSauce",
     "twitter_username": "frankdejonge",
-    "public_repos": 82,
+    "public_repos": 83,
     "public_gists": 38,
     "followers": 1048,
     "following": 15,
@@ -717,10 +717,10 @@
     "twitter_username": "timacdonald87",
     "public_repos": 43,
     "public_gists": 6,
-    "followers": 848,
+    "followers": 849,
     "following": 0,
     "created_at": "2016-12-28T04:15:41Z",
-    "updated_at": "2023-05-15T05:24:22Z"
+    "updated_at": "2023-05-17T08:37:40Z"
   },
   {
     "name": "Caneco",
@@ -793,7 +793,7 @@
     "followers": 3181,
     "following": 12,
     "created_at": "2011-05-23T08:11:19Z",
-    "updated_at": "2023-05-16T21:25:47Z"
+    "updated_at": "2023-05-17T11:23:48Z"
   },
   {
     "name": "Alex Vanderbist",
@@ -897,7 +897,7 @@
     "hireable": null,
     "bio": "Submitting features and bug(fixes) @symfony, to make it always faster, easier to use and better designed, uncompromising.\r\n@ESPCI_Alumni engineer.",
     "twitter_username": "nicolasgrekas",
-    "public_repos": 97,
+    "public_repos": 92,
     "public_gists": 29,
     "followers": 1762,
     "following": 5,
@@ -1007,7 +1007,7 @@
     "twitter_username": null,
     "public_repos": 170,
     "public_gists": 28,
-    "followers": 9917,
+    "followers": 9955,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2023-05-02T12:48:36Z"
@@ -1044,7 +1044,7 @@
     "twitter_username": null,
     "public_repos": 184,
     "public_gists": 72,
-    "followers": 92658,
+    "followers": 92705,
     "following": 93,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2023-05-09T09:30:27Z"
@@ -1081,7 +1081,7 @@
     "twitter_username": "overtrue666",
     "public_repos": 119,
     "public_gists": 29,
-    "followers": 6851,
+    "followers": 6852,
     "following": 208,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2023-02-20T14:52:10Z"
@@ -1117,7 +1117,7 @@
     "twitter_username": "fabpot",
     "public_repos": 73,
     "public_gists": 12,
-    "followers": 12933,
+    "followers": 12934,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2023-03-17T08:05:27Z"
@@ -1190,7 +1190,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 63,
     "public_gists": 160,
-    "followers": 15164,
+    "followers": 15168,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2023-05-06T23:05:16Z"
@@ -1267,6 +1267,6 @@
     "followers": 205,
     "following": 3,
     "created_at": "2010-10-21T04:52:43Z",
-    "updated_at": "2023-04-27T11:14:45Z"
+    "updated_at": "2023-05-17T19:45:06Z"
   }
 ]

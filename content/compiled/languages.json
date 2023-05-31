@@ -383,9 +383,10 @@
     "type": "programming",
     "color": "#1797c0",
     "extensions": [
-      ".cls"
+      ".cls",
+      ".trigger"
     ],
-    "tm_scope": "source.java",
+    "tm_scope": "source.apex",
     "ace_mode": "java",
     "codemirror_mode": "clike",
     "codemirror_mime_type": "text/x-java",
@@ -881,7 +882,8 @@
       ".ixx",
       ".re",
       ".tcc",
-      ".tpp"
+      ".tpp",
+      ".txx"
     ],
     "language_id": 43
   },
@@ -1670,6 +1672,19 @@
     "tm_scope": "objdump.x86asm",
     "ace_mode": "assembly_x86",
     "language_id": 81
+  },
+  "D2": {
+    "type": "markup",
+    "color": "#526ee8",
+    "extensions": [
+      ".d2"
+    ],
+    "aliases": [
+      "d2lang"
+    ],
+    "tm_scope": "source.d2",
+    "ace_mode": "text",
+    "language_id": 37531557
   },
   "DIGITAL Command Language": {
     "type": "programming",
@@ -2936,10 +2951,13 @@
     "color": "#00ADD8",
     "aliases": [
       "go.sum",
-      "go sum"
+      "go sum",
+      "go.work.sum",
+      "go work sum"
     ],
     "filenames": [
-      "go.sum"
+      "go.sum",
+      "go.work.sum"
     ],
     "tm_scope": "go.sum",
     "ace_mode": "text",
@@ -2958,6 +2976,20 @@
     "tm_scope": "go.mod",
     "ace_mode": "text",
     "language_id": 947461016
+  },
+  "Go Workspace": {
+    "type": "data",
+    "color": "#00ADD8",
+    "aliases": [
+      "go.work",
+      "go work"
+    ],
+    "filenames": [
+      "go.work"
+    ],
+    "tm_scope": "go.mod",
+    "ace_mode": "text",
+    "language_id": 934546256
   },
   "Godot Resource": {
     "type": "data",
@@ -3155,6 +3187,10 @@
     "color": "#9ff8ee",
     "extensions": [
       ".hocon"
+    ],
+    "filenames": [
+      ".scalafix.conf",
+      ".scalafmt.conf"
     ],
     "tm_scope": "source.hocon",
     "ace_mode": "text",
@@ -3468,7 +3504,8 @@
       ".flake8",
       ".pylintrc",
       "buildozer.spec",
-      "pylintrc"
+      "pylintrc",
+      "vlcrc"
     ],
     "tm_scope": "source.ini",
     "aliases": [
@@ -3780,6 +3817,7 @@
       ".jscsrc",
       ".jshintrc",
       ".jslintrc",
+      ".swcrc",
       "api-extractor.json",
       "devcontainer.json",
       "jsconfig.json",
@@ -4273,7 +4311,7 @@
       ".lol"
     ],
     "color": "#cc9900",
-    "tm_scope": "none",
+    "tm_scope": "source.lolcode",
     "ace_mode": "text",
     "language_id": 192
   },
@@ -4668,6 +4706,19 @@
     "ace_mode": "text",
     "language_id": 217
   },
+  "MDX": {
+    "type": "markup",
+    "color": "#fcb32c",
+    "ace_mode": "markdown",
+    "codemirror_mode": "gfm",
+    "codemirror_mime_type": "text/x-gfm",
+    "wrap": true,
+    "extensions": [
+      ".mdx"
+    ],
+    "tm_scope": "source.mdx",
+    "language_id": 512838272
+  },
   "MLIR": {
     "type": "programming",
     "color": "#5EC8DB",
@@ -4796,6 +4847,7 @@
     "type": "prose",
     "color": "#083fa1",
     "aliases": [
+      "md",
       "pandoc"
     ],
     "ace_mode": "markdown",
@@ -4808,7 +4860,6 @@
       ".markdown",
       ".mdown",
       ".mdwn",
-      ".mdx",
       ".mkd",
       ".mkdn",
       ".mkdown",
@@ -4819,7 +4870,7 @@
     "filenames": [
       "contents.lr"
     ],
-    "tm_scope": "source.gfm",
+    "tm_scope": "text.md",
     "language_id": 222
   },
   "Marko": {
@@ -5273,7 +5324,7 @@
     "extensions": [
       ".nas"
     ],
-    "tm_scope": "none",
+    "tm_scope": "source.nasal",
     "ace_mode": "text",
     "language_id": 178322513
   },
@@ -5483,6 +5534,25 @@
     "ace_mode": "nunjucks",
     "language_id": 461856962
   },
+  "Nushell": {
+    "type": "programming",
+    "color": "#4E9906",
+    "extensions": [
+      ".nu"
+    ],
+    "interpreters": [
+      "nu"
+    ],
+    "aliases": [
+      "nu-script",
+      "nushell-script"
+    ],
+    "tm_scope": "source.nushell",
+    "ace_mode": "sh",
+    "codemirror_mode": "shell",
+    "codemirror_mime_type": "text/x-sh",
+    "language_id": 446573572
+  },
   "OASv2-json": {
     "type": "data",
     "color": "#85ea2d",
@@ -5542,7 +5612,7 @@
     "ace_mode": "ocaml",
     "codemirror_mode": "mllike",
     "codemirror_mime_type": "text/x-ocaml",
-    "color": "#3be133",
+    "color": "#ef7a08",
     "extensions": [
       ".ml",
       ".eliom",
@@ -5982,6 +6052,16 @@
     "ace_mode": "text",
     "language_id": 275
   },
+  "Pact": {
+    "type": "programming",
+    "color": "#F7A8B8",
+    "ace_mode": "text",
+    "tm_scope": "source.pact",
+    "extensions": [
+      ".pact"
+    ],
+    "language_id": 756774415
+  },
   "Pan": {
     "type": "programming",
     "color": "#cc0000",
@@ -6409,6 +6489,7 @@
   "Protocol Buffer": {
     "type": "data",
     "aliases": [
+      "proto",
       "protobuf",
       "Protocol Buffers"
     ],
@@ -6689,6 +6770,19 @@
     ],
     "language_id": 308
   },
+  "RBS": {
+    "type": "data",
+    "ace_mode": "ruby",
+    "codemirror_mode": "ruby",
+    "codemirror_mime_type": "text/x-ruby",
+    "extensions": [
+      ".rbs"
+    ],
+    "color": "#701516",
+    "tm_scope": "source.rbs",
+    "group": "Ruby",
+    "language_id": 899227493
+  },
   "RDoc": {
     "type": "prose",
     "color": "#701516",
@@ -6744,7 +6838,7 @@
       ".qmd",
       ".rmd"
     ],
-    "tm_scope": "source.gfm",
+    "tm_scope": "text.md",
     "language_id": 313
   },
   "RPC": {
@@ -7282,6 +7376,9 @@
     "ace_mode": "rust",
     "codemirror_mode": "rust",
     "codemirror_mime_type": "text/x-rustsrc",
+    "interpreters": [
+      "rust-script"
+    ],
     "language_id": 327
   },
   "SAS": {
@@ -7649,6 +7746,7 @@
       ".sh.in",
       ".tmux",
       ".tool",
+      ".trigger",
       ".zsh",
       ".zsh-theme"
     ],
@@ -8138,6 +8236,16 @@
     ],
     "language_id": 422,
     "tm_scope": "none"
+  },
+  "TL-Verilog": {
+    "type": "programming",
+    "extensions": [
+      ".tlv"
+    ],
+    "tm_scope": "source.tlverilog",
+    "ace_mode": "verilog",
+    "color": "#C40023",
+    "language_id": 118656070
   },
   "TLA": {
     "type": "programming",
@@ -8782,6 +8890,7 @@
     "type": "programming",
     "color": "#2c6353",
     "extensions": [
+      ".bas",
       ".cls",
       ".ctl",
       ".Dsr",
@@ -8876,6 +8985,21 @@
     "codemirror_mode": "commonlisp",
     "codemirror_mime_type": "text/x-common-lisp",
     "language_id": 956556503
+  },
+  "WebAssembly Interface Type": {
+    "type": "data",
+    "color": "#6250e7",
+    "extensions": [
+      ".wit"
+    ],
+    "aliases": [
+      "wit"
+    ],
+    "ace_mode": "text",
+    "tm_scope": "source.wit",
+    "codemirror_mode": "webidl",
+    "codemirror_mime_type": "text/x-webidl",
+    "language_id": 134534086
   },
   "WebIDL": {
     "type": "programming",

@@ -132,6 +132,10 @@
     "packages_count": 1
   },
   {
+    "name": "tag-production",
+    "packages_count": 1
+  },
+  {
     "name": "gif",
     "packages_count": 1
   },

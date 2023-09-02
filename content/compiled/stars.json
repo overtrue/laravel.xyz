@@ -30,7 +30,7 @@
     "twitter_username": null,
     "public_repos": 28,
     "public_gists": 9,
-    "followers": 29423,
+    "followers": 29429,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2023-08-05T15:10:27Z"
@@ -102,7 +102,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 229,
     "public_gists": 23,
-    "followers": 5910,
+    "followers": 5912,
     "following": 1,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2023-08-19T09:57:58Z"
@@ -139,7 +139,7 @@
     "twitter_username": "themsaid",
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 4777,
+    "followers": 4779,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2023-08-09T09:52:39Z"
@@ -175,7 +175,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 462,
     "public_gists": 0,
-    "followers": 1910,
+    "followers": 1914,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2021-09-28T17:31:24Z"
@@ -211,7 +211,7 @@
     "twitter_username": "driesvints",
     "public_repos": 9,
     "public_gists": 13,
-    "followers": 4575,
+    "followers": 4576,
     "following": 29,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2023-08-11T10:32:05Z"
@@ -245,7 +245,7 @@
     "hireable": true,
     "bio": "OSS Maintainer | Laravel Core | StyleCI",
     "twitter_username": "GrahamJCampbell",
-    "public_repos": 59,
+    "public_repos": 61,
     "public_gists": 9,
     "followers": 6450,
     "following": 133,
@@ -392,7 +392,7 @@
     "twitter_username": null,
     "public_repos": 29,
     "public_gists": 0,
-    "followers": 1099,
+    "followers": 1100,
     "following": 5,
     "created_at": "2015-05-31T15:34:11Z",
     "updated_at": "2023-05-19T12:43:57Z"
@@ -426,7 +426,7 @@
     "hireable": null,
     "bio": "Software Developer @laravel ",
     "twitter_username": "crynobone",
-    "public_repos": 137,
+    "public_repos": 138,
     "public_gists": 31,
     "followers": 1344,
     "following": 44,
@@ -607,9 +607,9 @@
     "hireable": null,
     "bio": "Laravel core team. Building airlume.cloud. Neovim is my lightsaber.",
     "twitter_username": "jessarchercodes",
-    "public_repos": 73,
+    "public_repos": 74,
     "public_gists": 5,
-    "followers": 1342,
+    "followers": 1343,
     "following": 27,
     "created_at": "2013-07-09T22:40:40Z",
     "updated_at": "2023-08-14T09:42:17Z"
@@ -645,7 +645,7 @@
     "twitter_username": "frankdejonge",
     "public_repos": 84,
     "public_gists": 38,
-    "followers": 1066,
+    "followers": 1067,
     "following": 16,
     "created_at": "2010-12-23T15:39:26Z",
     "updated_at": "2023-08-17T20:28:35Z"
@@ -681,7 +681,7 @@
     "twitter_username": "seldaek",
     "public_repos": 255,
     "public_gists": 33,
-    "followers": 4376,
+    "followers": 4377,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2023-08-10T11:19:16Z"
@@ -717,7 +717,7 @@
     "twitter_username": "timacdonald87",
     "public_repos": 46,
     "public_gists": 7,
-    "followers": 986,
+    "followers": 988,
     "following": 1,
     "created_at": "2016-12-28T04:15:41Z",
     "updated_at": "2023-08-25T07:41:17Z"
@@ -753,7 +753,7 @@
     "twitter_username": "Caneco",
     "public_repos": 67,
     "public_gists": 2,
-    "followers": 605,
+    "followers": 606,
     "following": 13,
     "created_at": "2010-11-29T16:08:58Z",
     "updated_at": "2023-07-10T22:51:59Z"
@@ -790,7 +790,7 @@
     "twitter_username": null,
     "public_repos": 210,
     "public_gists": 50,
-    "followers": 3556,
+    "followers": 3557,
     "following": 12,
     "created_at": "2011-05-23T08:11:19Z",
     "updated_at": "2023-08-03T21:52:04Z"
@@ -863,7 +863,7 @@
     "twitter_username": "ph7jack",
     "public_repos": 26,
     "public_gists": 4,
-    "followers": 140,
+    "followers": 141,
     "following": 43,
     "created_at": "2018-05-02T12:25:53Z",
     "updated_at": "2023-08-31T04:53:46Z"
@@ -899,10 +899,10 @@
     "twitter_username": "nicolasgrekas",
     "public_repos": 93,
     "public_gists": 29,
-    "followers": 1826,
+    "followers": 1828,
     "following": 5,
     "created_at": "2010-04-14T09:44:17Z",
-    "updated_at": "2023-07-13T11:50:58Z"
+    "updated_at": "2023-09-01T08:18:11Z"
   },
   {
     "name": "Jonathan Reinink",
@@ -935,7 +935,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 68,
-    "followers": 2747,
+    "followers": 2748,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2023-07-20T15:57:01Z"
@@ -1007,7 +1007,7 @@
     "twitter_username": null,
     "public_repos": 171,
     "public_gists": 28,
-    "followers": 10828,
+    "followers": 10829,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2023-08-08T16:19:33Z"
@@ -1042,9 +1042,9 @@
     "hireable": null,
     "bio": null,
     "twitter_username": null,
-    "public_repos": 185,
+    "public_repos": 184,
     "public_gists": 72,
-    "followers": 94984,
+    "followers": 95011,
     "following": 95,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2023-08-26T13:06:50Z"
@@ -1117,7 +1117,7 @@
     "twitter_username": "fabpot",
     "public_repos": 73,
     "public_gists": 12,
-    "followers": 13070,
+    "followers": 13073,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2023-08-05T11:09:06Z"
@@ -1154,7 +1154,7 @@
     "twitter_username": "malfaitrobin",
     "public_repos": 53,
     "public_gists": 42,
-    "followers": 1403,
+    "followers": 1404,
     "following": 162,
     "created_at": "2012-06-09T22:00:12Z",
     "updated_at": "2023-08-20T19:47:38Z"
@@ -1190,7 +1190,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 64,
     "public_gists": 160,
-    "followers": 15496,
+    "followers": 15498,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2023-05-06T23:05:16Z"

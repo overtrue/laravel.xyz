@@ -3074,6 +3074,17 @@
     "ace_mode": "text",
     "language_id": 136
   },
+  "Gradle Kotlin DSL": {
+    "group": "Gradle",
+    "type": "data",
+    "color": "#02303a",
+    "extensions": [
+      ".gradle.kts"
+    ],
+    "ace_mode": "text",
+    "tm_scope": "source.kotlin",
+    "language_id": 432600901
+  },
   "Grammatical Framework": {
     "type": "programming",
     "aliases": [
@@ -8667,7 +8678,7 @@
     "extensions": [
       ".typ"
     ],
-    "tm_scope": "source.typ",
+    "tm_scope": "source.typst",
     "ace_mode": "text",
     "language_id": 704730682
   },

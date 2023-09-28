@@ -30,7 +30,7 @@
     "twitter_username": null,
     "public_repos": 28,
     "public_gists": 9,
-    "followers": 29623,
+    "followers": 29627,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2023-08-05T15:10:27Z"
@@ -102,7 +102,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 229,
     "public_gists": 23,
-    "followers": 6008,
+    "followers": 6011,
     "following": 1,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2023-08-19T09:57:58Z"
@@ -175,7 +175,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 463,
     "public_gists": 0,
-    "followers": 1964,
+    "followers": 1969,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2021-09-28T17:31:24Z"
@@ -284,7 +284,7 @@
     "twitter_username": null,
     "public_repos": 84,
     "public_gists": 49,
-    "followers": 4366,
+    "followers": 4367,
     "following": 1,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2023-07-23T16:03:50Z"
@@ -359,7 +359,7 @@
     "followers": 1738,
     "following": 116,
     "created_at": "2010-04-17T14:13:52Z",
-    "updated_at": "2023-09-21T14:51:29Z"
+    "updated_at": "2023-09-27T09:29:58Z"
   },
   {
     "name": "Tetiana Blindaruk",
@@ -468,7 +468,7 @@
     "followers": 332,
     "following": 0,
     "created_at": "2015-05-01T18:32:33Z",
-    "updated_at": "2023-09-06T11:57:53Z"
+    "updated_at": "2023-09-27T12:42:25Z"
   },
   {
     "name": "Eric Barnes",
@@ -609,7 +609,7 @@
     "twitter_username": "jessarchercodes",
     "public_repos": 74,
     "public_gists": 5,
-    "followers": 1367,
+    "followers": 1368,
     "following": 27,
     "created_at": "2013-07-09T22:40:40Z",
     "updated_at": "2023-08-14T09:42:17Z"
@@ -681,7 +681,7 @@
     "twitter_username": "seldaek",
     "public_repos": 255,
     "public_gists": 33,
-    "followers": 4387,
+    "followers": 4388,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2023-09-10T11:22:23Z"
@@ -717,10 +717,10 @@
     "twitter_username": "timacdonald87",
     "public_repos": 46,
     "public_gists": 7,
-    "followers": 1002,
+    "followers": 1003,
     "following": 1,
     "created_at": "2016-12-28T04:15:41Z",
-    "updated_at": "2023-09-10T22:12:57Z"
+    "updated_at": "2023-09-27T23:12:56Z"
   },
   {
     "name": "Caneco",
@@ -753,7 +753,7 @@
     "twitter_username": "Caneco",
     "public_repos": 67,
     "public_gists": 2,
-    "followers": 610,
+    "followers": 611,
     "following": 13,
     "created_at": "2010-11-29T16:08:58Z",
     "updated_at": "2023-07-10T22:51:59Z"
@@ -790,7 +790,7 @@
     "twitter_username": null,
     "public_repos": 210,
     "public_gists": 50,
-    "followers": 3594,
+    "followers": 3595,
     "following": 13,
     "created_at": "2011-05-23T08:11:19Z",
     "updated_at": "2023-09-26T10:10:09Z"
@@ -1044,7 +1044,7 @@
     "twitter_username": null,
     "public_repos": 185,
     "public_gists": 72,
-    "followers": 95485,
+    "followers": 95506,
     "following": 95,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2023-09-26T13:44:39Z"
@@ -1079,7 +1079,7 @@
     "hireable": true,
     "bio": "Keep calm and coding.",
     "twitter_username": "overtrue666",
-    "public_repos": 101,
+    "public_repos": 100,
     "public_gists": 29,
     "followers": 6943,
     "following": 213,
@@ -1117,7 +1117,7 @@
     "twitter_username": "fabpot",
     "public_repos": 73,
     "public_gists": 12,
-    "followers": 13085,
+    "followers": 13084,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2023-08-05T11:09:06Z"
@@ -1154,7 +1154,7 @@
     "twitter_username": "malfaitrobin",
     "public_repos": 53,
     "public_gists": 42,
-    "followers": 1418,
+    "followers": 1420,
     "following": 162,
     "created_at": "2012-06-09T22:00:12Z",
     "updated_at": "2023-08-20T19:47:38Z"
@@ -1190,7 +1190,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 64,
     "public_gists": 160,
-    "followers": 15560,
+    "followers": 15563,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2023-09-04T14:45:48Z"
@@ -1267,6 +1267,6 @@
     "followers": 207,
     "following": 3,
     "created_at": "2010-10-21T04:52:43Z",
-    "updated_at": "2023-08-27T11:20:18Z"
+    "updated_at": "2023-09-27T11:17:30Z"
   }
 ]

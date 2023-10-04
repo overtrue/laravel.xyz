@@ -30,10 +30,10 @@
     "twitter_username": null,
     "public_repos": 28,
     "public_gists": 9,
-    "followers": 29659,
+    "followers": 29663,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
-    "updated_at": "2023-08-05T15:10:27Z"
+    "updated_at": "2023-10-04T01:02:32Z"
   },
   {
     "name": "Freek Van der Herten",
@@ -66,7 +66,7 @@
     "twitter_username": "freekmurze",
     "public_repos": 142,
     "public_gists": 21,
-    "followers": 4583,
+    "followers": 4585,
     "following": 17,
     "created_at": "2010-11-16T13:38:15Z",
     "updated_at": "2023-08-17T16:02:56Z"
@@ -102,10 +102,10 @@
     "twitter_username": "enunomaduro",
     "public_repos": 229,
     "public_gists": 23,
-    "followers": 6025,
+    "followers": 6031,
     "following": 1,
     "created_at": "2013-09-14T08:11:58Z",
-    "updated_at": "2023-09-28T20:21:59Z"
+    "updated_at": "2023-10-03T19:08:49Z"
   },
   {
     "name": "Mohamed Said",
@@ -139,7 +139,7 @@
     "twitter_username": "themsaid",
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 4805,
+    "followers": 4806,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2023-08-09T09:52:39Z"
@@ -175,7 +175,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 463,
     "public_gists": 0,
-    "followers": 1980,
+    "followers": 1981,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2021-09-28T17:31:24Z"
@@ -211,7 +211,7 @@
     "twitter_username": "driesvints",
     "public_repos": 9,
     "public_gists": 13,
-    "followers": 4631,
+    "followers": 4630,
     "following": 29,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2023-08-11T10:32:05Z"
@@ -247,7 +247,7 @@
     "twitter_username": "GrahamJCampbell",
     "public_repos": 66,
     "public_gists": 9,
-    "followers": 6466,
+    "followers": 6468,
     "following": 134,
     "created_at": "2012-11-18T22:14:00Z",
     "updated_at": "2023-05-16T18:01:11Z"
@@ -356,7 +356,7 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 64,
     "public_gists": 52,
-    "followers": 1739,
+    "followers": 1740,
     "following": 116,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2023-09-28T11:18:04Z"
@@ -392,7 +392,7 @@
     "twitter_username": null,
     "public_repos": 30,
     "public_gists": 0,
-    "followers": 1103,
+    "followers": 1104,
     "following": 5,
     "created_at": "2015-05-31T15:34:11Z",
     "updated_at": "2023-05-19T12:43:57Z"
@@ -428,7 +428,7 @@
     "twitter_username": "crynobone",
     "public_repos": 139,
     "public_gists": 31,
-    "followers": 1356,
+    "followers": 1355,
     "following": 44,
     "created_at": "2009-12-28T10:34:03Z",
     "updated_at": "2023-08-07T04:00:57Z"
@@ -538,7 +538,7 @@
     "public_repos": 121,
     "public_gists": 27,
     "followers": 394,
-    "following": 153,
+    "following": 154,
     "created_at": "2011-09-26T14:44:55Z",
     "updated_at": "2023-09-23T08:01:22Z"
   },
@@ -607,7 +607,7 @@
     "hireable": null,
     "bio": "Laravel core team. Building airlume.cloud. Neovim is my lightsaber.",
     "twitter_username": "jessarchercodes",
-    "public_repos": 74,
+    "public_repos": 75,
     "public_gists": 5,
     "followers": 1372,
     "following": 27,
@@ -717,7 +717,7 @@
     "twitter_username": "timacdonald87",
     "public_repos": 46,
     "public_gists": 7,
-    "followers": 1008,
+    "followers": 1009,
     "following": 1,
     "created_at": "2016-12-28T04:15:41Z",
     "updated_at": "2023-09-27T23:12:56Z"
@@ -790,7 +790,7 @@
     "twitter_username": null,
     "public_repos": 210,
     "public_gists": 50,
-    "followers": 3596,
+    "followers": 3600,
     "following": 13,
     "created_at": "2011-05-23T08:11:19Z",
     "updated_at": "2023-09-26T10:10:09Z"
@@ -863,7 +863,7 @@
     "twitter_username": "ph7jack",
     "public_repos": 27,
     "public_gists": 4,
-    "followers": 152,
+    "followers": 153,
     "following": 43,
     "created_at": "2018-05-02T12:25:53Z",
     "updated_at": "2023-08-31T04:53:46Z"
@@ -897,9 +897,9 @@
     "hireable": null,
     "bio": "Submitting features and bug(fixes) @symfony, to make it always faster, easier to use and better designed, uncompromising.\r\n@ESPCI_Alumni engineer.",
     "twitter_username": "nicolasgrekas",
-    "public_repos": 93,
+    "public_repos": 94,
     "public_gists": 29,
-    "followers": 1834,
+    "followers": 1837,
     "following": 5,
     "created_at": "2010-04-14T09:44:17Z",
     "updated_at": "2023-09-22T09:21:52Z"
@@ -935,7 +935,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 68,
-    "followers": 2779,
+    "followers": 2778,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2023-09-04T20:55:06Z"
@@ -1007,7 +1007,7 @@
     "twitter_username": null,
     "public_repos": 171,
     "public_gists": 28,
-    "followers": 10880,
+    "followers": 10881,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2023-08-08T16:19:33Z"
@@ -1044,7 +1044,7 @@
     "twitter_username": null,
     "public_repos": 185,
     "public_gists": 72,
-    "followers": 95557,
+    "followers": 95567,
     "following": 95,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2023-09-26T13:44:39Z"
@@ -1081,7 +1081,7 @@
     "twitter_username": "overtrue666",
     "public_repos": 100,
     "public_gists": 29,
-    "followers": 6942,
+    "followers": 6941,
     "following": 213,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2023-09-28T04:42:57Z"
@@ -1117,7 +1117,7 @@
     "twitter_username": "fabpot",
     "public_repos": 73,
     "public_gists": 12,
-    "followers": 13078,
+    "followers": 13076,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2023-08-05T11:09:06Z"
@@ -1190,7 +1190,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 64,
     "public_gists": 160,
-    "followers": 15571,
+    "followers": 15574,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2023-09-04T14:45:48Z"

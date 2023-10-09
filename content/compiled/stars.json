@@ -30,7 +30,7 @@
     "twitter_username": null,
     "public_repos": 28,
     "public_gists": 9,
-    "followers": 29680,
+    "followers": 29683,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2023-10-04T01:02:32Z"
@@ -66,7 +66,7 @@
     "twitter_username": "freekmurze",
     "public_repos": 142,
     "public_gists": 21,
-    "followers": 4588,
+    "followers": 4591,
     "following": 17,
     "created_at": "2010-11-16T13:38:15Z",
     "updated_at": "2023-08-17T16:02:56Z"
@@ -102,7 +102,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 229,
     "public_gists": 23,
-    "followers": 6057,
+    "followers": 6061,
     "following": 1,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2023-10-06T20:07:54Z"
@@ -139,7 +139,7 @@
     "twitter_username": "themsaid",
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 4810,
+    "followers": 4814,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2023-08-09T09:52:39Z"
@@ -175,7 +175,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 464,
     "public_gists": 0,
-    "followers": 1993,
+    "followers": 1996,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2021-09-28T17:31:24Z"
@@ -211,7 +211,7 @@
     "twitter_username": "driesvints",
     "public_repos": 9,
     "public_gists": 13,
-    "followers": 4634,
+    "followers": 4636,
     "following": 29,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2023-08-11T10:32:05Z"
@@ -247,7 +247,7 @@
     "twitter_username": "GrahamJCampbell",
     "public_repos": 66,
     "public_gists": 9,
-    "followers": 6474,
+    "followers": 6475,
     "following": 134,
     "created_at": "2012-11-18T22:14:00Z",
     "updated_at": "2023-10-07T13:27:28Z"
@@ -284,7 +284,7 @@
     "twitter_username": null,
     "public_repos": 84,
     "public_gists": 49,
-    "followers": 4378,
+    "followers": 4381,
     "following": 1,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2023-07-23T16:03:50Z"
@@ -320,7 +320,7 @@
     "twitter_username": "stauffermatt",
     "public_repos": 107,
     "public_gists": 42,
-    "followers": 2090,
+    "followers": 2092,
     "following": 20,
     "created_at": "2009-11-11T16:01:24Z",
     "updated_at": "2023-10-05T14:32:20Z"
@@ -356,7 +356,7 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 64,
     "public_gists": 52,
-    "followers": 1742,
+    "followers": 1744,
     "following": 116,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2023-09-28T11:18:04Z"
@@ -576,7 +576,7 @@
     "followers": 483,
     "following": 14,
     "created_at": "2012-05-18T12:06:13Z",
-    "updated_at": "2023-09-19T08:28:28Z"
+    "updated_at": "2023-10-08T09:51:40Z"
   },
   {
     "name": "Jess Archer",
@@ -609,7 +609,7 @@
     "twitter_username": "jessarchercodes",
     "public_repos": 75,
     "public_gists": 5,
-    "followers": 1376,
+    "followers": 1379,
     "following": 27,
     "created_at": "2013-07-09T22:40:40Z",
     "updated_at": "2023-08-14T09:42:17Z"
@@ -790,7 +790,7 @@
     "twitter_username": null,
     "public_repos": 210,
     "public_gists": 50,
-    "followers": 3601,
+    "followers": 3602,
     "following": 13,
     "created_at": "2011-05-23T08:11:19Z",
     "updated_at": "2023-09-26T10:10:09Z"
@@ -1007,10 +1007,10 @@
     "twitter_username": null,
     "public_repos": 171,
     "public_gists": 28,
-    "followers": 10891,
+    "followers": 10893,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
-    "updated_at": "2023-10-06T12:13:57Z"
+    "updated_at": "2023-10-08T21:55:04Z"
   },
   {
     "name": "Evan You",
@@ -1044,7 +1044,7 @@
     "twitter_username": null,
     "public_repos": 185,
     "public_gists": 72,
-    "followers": 95647,
+    "followers": 95663,
     "following": 95,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2023-09-26T13:44:39Z"
@@ -1117,7 +1117,7 @@
     "twitter_username": "fabpot",
     "public_repos": 73,
     "public_gists": 12,
-    "followers": 13075,
+    "followers": 13074,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2023-08-05T11:09:06Z"
@@ -1154,7 +1154,7 @@
     "twitter_username": "malfaitrobin",
     "public_repos": 53,
     "public_gists": 42,
-    "followers": 1419,
+    "followers": 1420,
     "following": 162,
     "created_at": "2012-06-09T22:00:12Z",
     "updated_at": "2023-08-20T19:47:38Z"

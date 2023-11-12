@@ -20,7 +20,7 @@
     "vue-gtag-next": "^1.14.0"
   },
   "dependencies": {
-    "axios": "^0.27.2",
+    "axios": "^1.6.0",
     "dayjs": "^1.11.1",
     "dotenv": "^16.0.1",
     "emoji-js": "^3.7.0",

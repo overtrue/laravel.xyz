@@ -8548,6 +8548,19 @@
     ],
     "language_id": 371
   },
+  "Terraform Template": {
+    "type": "markup",
+    "extensions": [
+      ".tftpl"
+    ],
+    "color": "#7b42bb",
+    "tm_scope": "source.hcl.terraform",
+    "ace_mode": "ruby",
+    "codemirror_mode": "ruby",
+    "codemirror_mime_type": "text/x-ruby",
+    "group": "HCL",
+    "language_id": 856832701
+  },
   "Texinfo": {
     "type": "prose",
     "wrap": true,

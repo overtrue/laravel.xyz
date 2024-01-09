@@ -272,18 +272,6 @@
     "packages_count": 1
   },
   {
-    "name": "manipulation",
-    "packages_count": 1
-  },
-  {
-    "name": "thumbnail",
-    "packages_count": 1
-  },
-  {
-    "name": "watermark",
-    "packages_count": 1
-  },
-  {
     "name": "csv",
     "packages_count": 1
   },

@@ -1,7 +1,7 @@
 [
   {
     "name": "php",
-    "packages_count": 28
+    "packages_count": 29
   },
   {
     "name": "laravel",
@@ -257,6 +257,14 @@
   },
   {
     "name": "webservices",
+    "packages_count": 1
+  },
+  {
+    "name": "client",
+    "packages_count": 1
+  },
+  {
+    "name": "elasticsearch",
     "packages_count": 1
   },
   {

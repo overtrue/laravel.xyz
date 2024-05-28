@@ -30,7 +30,7 @@
     "twitter_username": null,
     "public_repos": 29,
     "public_gists": 9,
-    "followers": 31242,
+    "followers": 31248,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2024-05-10T02:46:28Z"
@@ -102,10 +102,10 @@
     "twitter_username": "enunomaduro",
     "public_repos": 239,
     "public_gists": 23,
-    "followers": 6880,
+    "followers": 6882,
     "following": 0,
     "created_at": "2013-09-14T08:11:58Z",
-    "updated_at": "2024-05-22T22:04:39Z"
+    "updated_at": "2024-05-27T11:52:31Z"
   },
   {
     "name": "Mohamed Said",
@@ -211,7 +211,7 @@
     "twitter_username": "driesvints",
     "public_repos": 10,
     "public_gists": 14,
-    "followers": 4955,
+    "followers": 4956,
     "following": 31,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2024-04-24T08:36:19Z"
@@ -247,7 +247,7 @@
     "twitter_username": "GrahamJCampbell",
     "public_repos": 73,
     "public_gists": 7,
-    "followers": 6654,
+    "followers": 6655,
     "following": 141,
     "created_at": "2012-11-18T22:14:00Z",
     "updated_at": "2024-04-22T15:21:03Z"
@@ -356,7 +356,7 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 64,
     "public_gists": 52,
-    "followers": 1941,
+    "followers": 1944,
     "following": 118,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2024-05-08T11:20:15Z"
@@ -465,7 +465,7 @@
     "twitter_username": "LukeDowning19",
     "public_repos": 68,
     "public_gists": 5,
-    "followers": 439,
+    "followers": 440,
     "following": 0,
     "created_at": "2015-05-01T18:32:33Z",
     "updated_at": "2024-04-11T14:58:55Z"
@@ -609,7 +609,7 @@
     "twitter_username": "jessarchercodes",
     "public_repos": 79,
     "public_gists": 5,
-    "followers": 1607,
+    "followers": 1608,
     "following": 28,
     "created_at": "2013-07-09T22:40:40Z",
     "updated_at": "2024-03-29T09:05:39Z"
@@ -681,7 +681,7 @@
     "twitter_username": "seldaek",
     "public_repos": 256,
     "public_gists": 33,
-    "followers": 4481,
+    "followers": 4480,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2024-05-10T11:19:43Z"
@@ -790,7 +790,7 @@
     "twitter_username": null,
     "public_repos": 214,
     "public_gists": 50,
-    "followers": 3747,
+    "followers": 3746,
     "following": 13,
     "created_at": "2011-05-23T08:11:19Z",
     "updated_at": "2024-04-08T06:57:47Z"
@@ -899,7 +899,7 @@
     "twitter_username": "nicolasgrekas",
     "public_repos": 106,
     "public_gists": 29,
-    "followers": 1912,
+    "followers": 1911,
     "following": 5,
     "created_at": "2010-04-14T09:44:17Z",
     "updated_at": "2024-05-17T14:53:44Z"
@@ -935,7 +935,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 68,
-    "followers": 3000,
+    "followers": 2998,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2024-05-24T23:51:29Z"
@@ -1007,7 +1007,7 @@
     "twitter_username": null,
     "public_repos": 172,
     "public_gists": 28,
-    "followers": 11545,
+    "followers": 11546,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2024-05-19T20:26:54Z"
@@ -1044,7 +1044,7 @@
     "twitter_username": "youyuxi",
     "public_repos": 191,
     "public_gists": 73,
-    "followers": 99577,
+    "followers": 99587,
     "following": 95,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2024-05-21T08:27:48Z"
@@ -1117,7 +1117,7 @@
     "twitter_username": "fabpot",
     "public_repos": 74,
     "public_gists": 12,
-    "followers": 13167,
+    "followers": 13165,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2024-05-23T18:27:03Z"
@@ -1190,10 +1190,10 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 66,
     "public_gists": 160,
-    "followers": 16135,
+    "followers": 16138,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
-    "updated_at": "2024-05-25T13:10:48Z"
+    "updated_at": "2024-05-28T01:30:38Z"
   },
   {
     "name": "Summer",
@@ -1267,6 +1267,6 @@
     "followers": 210,
     "following": 3,
     "created_at": "2010-10-21T04:52:43Z",
-    "updated_at": "2024-04-27T11:18:49Z"
+    "updated_at": "2024-05-27T11:18:43Z"
   }
 ]

@@ -30,7 +30,7 @@
     "twitter_username": null,
     "public_repos": 29,
     "public_gists": 9,
-    "followers": 31259,
+    "followers": 31265,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2024-05-10T02:46:28Z"
@@ -102,7 +102,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 239,
     "public_gists": 23,
-    "followers": 6889,
+    "followers": 6890,
     "following": 0,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2024-05-27T11:52:31Z"
@@ -175,7 +175,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 476,
     "public_gists": 0,
-    "followers": 2555,
+    "followers": 2557,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -320,7 +320,7 @@
     "twitter_username": "stauffermatt",
     "public_repos": 108,
     "public_gists": 42,
-    "followers": 2182,
+    "followers": 2183,
     "following": 20,
     "created_at": "2009-11-11T16:01:24Z",
     "updated_at": "2024-03-06T10:39:54Z"
@@ -528,7 +528,7 @@
     "received_events_url": "https://api.github.com/users/stefanzweifel/received_events",
     "type": "User",
     "site_admin": false,
-    "company": "@2media ",
+    "company": "@2media, @Trenda-AG",
     "blog": "https://stefanzweifel.dev",
     "location": "Zurich",
     "email": null,
@@ -540,7 +540,7 @@
     "followers": 438,
     "following": 174,
     "created_at": "2011-09-26T14:44:55Z",
-    "updated_at": "2024-05-12T19:34:39Z"
+    "updated_at": "2024-05-29T12:00:47Z"
   },
   {
     "name": "Claudio Dekker",
@@ -609,7 +609,7 @@
     "twitter_username": "jessarchercodes",
     "public_repos": 79,
     "public_gists": 5,
-    "followers": 1611,
+    "followers": 1613,
     "following": 28,
     "created_at": "2013-07-09T22:40:40Z",
     "updated_at": "2024-03-29T09:05:39Z"
@@ -645,7 +645,7 @@
     "twitter_username": "frankdejonge",
     "public_repos": 90,
     "public_gists": 38,
-    "followers": 1114,
+    "followers": 1115,
     "following": 16,
     "created_at": "2010-12-23T15:39:26Z",
     "updated_at": "2024-05-03T10:05:11Z"
@@ -756,7 +756,7 @@
     "followers": 710,
     "following": 13,
     "created_at": "2010-11-29T16:08:58Z",
-    "updated_at": "2024-04-18T16:16:31Z"
+    "updated_at": "2024-05-29T20:46:53Z"
   },
   {
     "name": "Marcel Pociot",
@@ -790,7 +790,7 @@
     "twitter_username": null,
     "public_repos": 214,
     "public_gists": 50,
-    "followers": 3746,
+    "followers": 3745,
     "following": 13,
     "created_at": "2011-05-23T08:11:19Z",
     "updated_at": "2024-04-08T06:57:47Z"
@@ -1007,7 +1007,7 @@
     "twitter_username": null,
     "public_repos": 172,
     "public_gists": 28,
-    "followers": 11548,
+    "followers": 11549,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2024-05-19T20:26:54Z"
@@ -1044,7 +1044,7 @@
     "twitter_username": "youyuxi",
     "public_repos": 191,
     "public_gists": 73,
-    "followers": 99607,
+    "followers": 99627,
     "following": 95,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2024-05-21T08:27:48Z"
@@ -1081,8 +1081,8 @@
     "twitter_username": "overtrue666",
     "public_repos": 106,
     "public_gists": 29,
-    "followers": 7032,
-    "following": 224,
+    "followers": 7033,
+    "following": 225,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2024-05-23T01:42:18Z"
   },
@@ -1115,12 +1115,12 @@
     "hireable": null,
     "bio": "Founder and project lead at Symfony\r\nCPO at Platform.sh\r\n",
     "twitter_username": "fabpot",
-    "public_repos": 74,
+    "public_repos": 75,
     "public_gists": 12,
-    "followers": 13168,
+    "followers": 13169,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
-    "updated_at": "2024-05-23T18:27:03Z"
+    "updated_at": "2024-05-29T12:01:33Z"
   },
   {
     "name": "Robin Malfait",
@@ -1157,7 +1157,7 @@
     "followers": 1649,
     "following": 162,
     "created_at": "2012-06-09T22:00:12Z",
-    "updated_at": "2024-05-24T10:11:43Z"
+    "updated_at": "2024-05-29T12:09:38Z"
   },
   {
     "name": "Jeffrey Way",
@@ -1190,10 +1190,10 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 66,
     "public_gists": 160,
-    "followers": 16141,
+    "followers": 16145,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
-    "updated_at": "2024-05-28T23:28:01Z"
+    "updated_at": "2024-05-29T18:19:20Z"
   },
   {
     "name": "Summer",

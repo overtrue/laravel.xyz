@@ -578,6 +578,16 @@
     "color": "#ff0000",
     "language_id": 28923963
   },
+  "BQN": {
+    "type": "programming",
+    "color": "#2b7067",
+    "extensions": [
+      ".bqn"
+    ],
+    "tm_scope": "source.bqn",
+    "ace_mode": "text",
+    "language_id": 330386870
+  },
   "Ballerina": {
     "type": "programming",
     "extensions": [
@@ -1095,6 +1105,22 @@
     "codemirror_mime_type": "text/x-haskell",
     "tm_scope": "source.cabal",
     "language_id": 677095381
+  },
+  "Caddyfile": {
+    "type": "data",
+    "color": "#22b638",
+    "aliases": [
+      "Caddy"
+    ],
+    "extensions": [
+      ".caddyfile"
+    ],
+    "filenames": [
+      "Caddyfile"
+    ],
+    "ace_mode": "text",
+    "tm_scope": "source.Caddyfile",
+    "language_id": 615465151
   },
   "Cadence": {
     "type": "programming",
@@ -2351,6 +2377,16 @@
     "ace_mode": "text",
     "language_id": 686129783
   },
+  "FIRRTL": {
+    "type": "programming",
+    "color": "#2f632f",
+    "extensions": [
+      ".fir"
+    ],
+    "tm_scope": "source.firrtl",
+    "ace_mode": "text",
+    "language_id": 906694254
+  },
   "FLUX": {
     "type": "programming",
     "color": "#88ccff",
@@ -3251,7 +3287,7 @@
     "ace_mode": "ruby",
     "codemirror_mode": "ruby",
     "codemirror_mime_type": "text/x-ruby",
-    "tm_scope": "source.terraform",
+    "tm_scope": "source.hcl",
     "language_id": 144
   },
   "HLSL": {
@@ -3878,6 +3914,7 @@
       ".tern-config",
       ".tern-project",
       ".watchmanconfig",
+      "MODULE.bazel.lock",
       "Pipfile.lock",
       "composer.lock",
       "deno.lock",
@@ -3902,6 +3939,7 @@
       ".code-snippets",
       ".code-workspace",
       ".sublime-build",
+      ".sublime-color-scheme",
       ".sublime-commands",
       ".sublime-completions",
       ".sublime-keymap",
@@ -4215,6 +4253,14 @@
     "codemirror_mime_type": "text/x-julia",
     "language_id": 184
   },
+  "Julia REPL": {
+    "type": "programming",
+    "color": "#a270ba",
+    "tm_scope": "source.julia.console",
+    "group": "Julia",
+    "ace_mode": "text",
+    "language_id": 220689142
+  },
   "Jupyter Notebook": {
     "type": "markup",
     "ace_mode": "json",
@@ -4241,9 +4287,15 @@
     "color": "#384d54",
     "tm_scope": "source.just",
     "filenames": [
+      ".JUSTFILE",
+      ".Justfile",
+      ".justfile",
       "JUSTFILE",
       "Justfile",
       "justfile"
+    ],
+    "extensions": [
+      ".just"
     ],
     "ace_mode": "text",
     "language_id": 128447695
@@ -4751,6 +4803,21 @@
       "lua"
     ],
     "language_id": 213
+  },
+  "Luau": {
+    "type": "programming",
+    "tm_scope": "source.luau",
+    "ace_mode": "lua",
+    "codemirror_mode": "lua",
+    "codemirror_mime_type": "text/x-lua",
+    "color": "#00A2FF",
+    "extensions": [
+      ".luau"
+    ],
+    "interpreters": [
+      "luau"
+    ],
+    "language_id": 365050359
   },
   "M": {
     "type": "programming",
@@ -5405,6 +5472,16 @@
     "tm_scope": "none",
     "ace_mode": "text",
     "language_id": 241
+  },
+  "NMODL": {
+    "type": "programming",
+    "color": "#00356B",
+    "extensions": [
+      ".mod"
+    ],
+    "tm_scope": "none",
+    "ace_mode": "text",
+    "language_id": 136456478
   },
   "NPM Config": {
     "type": "data",
@@ -6418,6 +6495,19 @@
     "tm_scope": "source.pip-requirements",
     "language_id": 684385621
   },
+  "Pkl": {
+    "type": "programming",
+    "color": "#6b9543",
+    "extensions": [
+      ".pkl"
+    ],
+    "interpreters": [
+      "pkl"
+    ],
+    "tm_scope": "source.pkl",
+    "ace_mode": "text",
+    "language_id": 288822799
+  },
   "PlantUML": {
     "type": "data",
     "color": "#fbbd16",
@@ -7000,6 +7090,16 @@
     ],
     "tm_scope": "text.md",
     "language_id": 313
+  },
+  "RON": {
+    "type": "data",
+    "color": "#a62c00",
+    "extensions": [
+      ".ron"
+    ],
+    "ace_mode": "rust",
+    "tm_scope": "source.ron",
+    "language_id": 587855233
   },
   "RPC": {
     "type": "programming",
@@ -7913,7 +8013,8 @@
       "sh",
       "shell-script",
       "bash",
-      "zsh"
+      "zsh",
+      "envrc"
     ],
     "extensions": [
       ".sh",
@@ -7938,6 +8039,7 @@
       ".bash_profile",
       ".bashrc",
       ".cshrc",
+      ".envrc",
       ".flaskenv",
       ".kshrc",
       ".login",
@@ -8465,6 +8567,7 @@
     ],
     "filenames": [
       "Cargo.lock",
+      "Cargo.toml.orig",
       "Gopkg.lock",
       "Pipfile",
       "pdm.lock",
@@ -8813,7 +8916,8 @@
     ],
     "interpreters": [
       "deno",
-      "ts-node"
+      "ts-node",
+      "tsx"
     ],
     "extensions": [
       ".ts",
@@ -9883,7 +9987,8 @@
     "type": "programming",
     "color": "#ec915c",
     "extensions": [
-      ".zig"
+      ".zig",
+      ".zig.zon"
     ],
     "tm_scope": "source.zig",
     "ace_mode": "text",
@@ -9914,6 +10019,20 @@
     "tm_scope": "source.curlrc",
     "ace_mode": "text",
     "language_id": 992375436
+  },
+  "crontab": {
+    "type": "data",
+    "color": "#ead7ac",
+    "aliases": [
+      "cron",
+      "cron table"
+    ],
+    "filenames": [
+      "crontab"
+    ],
+    "tm_scope": "text.crontab",
+    "ace_mode": "tcl",
+    "language_id": 705203557
   },
   "desktop": {
     "type": "data",
@@ -10139,6 +10258,16 @@
     "ace_mode": "text",
     "tm_scope": "source.sed",
     "language_id": 847830017
+  },
+  "templ": {
+    "type": "markup",
+    "color": "#66D0DD",
+    "extensions": [
+      ".templ"
+    ],
+    "ace_mode": "text",
+    "tm_scope": "source.templ",
+    "language_id": 795579337
   },
   "wisp": {
     "type": "programming",

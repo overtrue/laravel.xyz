@@ -30,7 +30,7 @@
     "twitter_username": null,
     "public_repos": 29,
     "public_gists": 9,
-    "followers": 31383,
+    "followers": 31388,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2024-05-10T02:46:28Z"
@@ -102,7 +102,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 239,
     "public_gists": 23,
-    "followers": 6942,
+    "followers": 6943,
     "following": 0,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2024-06-06T10:46:23Z"
@@ -247,7 +247,7 @@
     "twitter_username": "GrahamJCampbell",
     "public_repos": 73,
     "public_gists": 7,
-    "followers": 6679,
+    "followers": 6680,
     "following": 141,
     "created_at": "2012-11-18T22:14:00Z",
     "updated_at": "2024-06-05T18:19:15Z"
@@ -284,7 +284,7 @@
     "twitter_username": null,
     "public_repos": 88,
     "public_gists": 49,
-    "followers": 4815,
+    "followers": 4817,
     "following": 2,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2024-05-21T17:37:05Z"
@@ -426,12 +426,12 @@
     "hireable": null,
     "bio": "Software Developer @laravel ",
     "twitter_username": "crynobone",
-    "public_repos": 153,
+    "public_repos": 154,
     "public_gists": 31,
     "followers": 1495,
     "following": 45,
     "created_at": "2009-12-28T10:34:03Z",
-    "updated_at": "2024-06-12T03:51:20Z"
+    "updated_at": "2024-06-15T01:32:57Z"
   },
   {
     "name": "Luke Downing",
@@ -465,7 +465,7 @@
     "twitter_username": "LukeDowning19",
     "public_repos": 68,
     "public_gists": 5,
-    "followers": 447,
+    "followers": 448,
     "following": 0,
     "created_at": "2015-05-01T18:32:33Z",
     "updated_at": "2024-04-11T14:58:55Z"
@@ -679,9 +679,9 @@
     "hireable": null,
     "bio": "\r\n    Working on https://packagist.com and https://teamup.com - @composer lead - OSS wishlist: https://seld.be/wishlist\r\n",
     "twitter_username": "seldaek",
-    "public_repos": 256,
+    "public_repos": 257,
     "public_gists": 33,
-    "followers": 4496,
+    "followers": 4495,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2024-06-10T11:18:18Z"
@@ -790,7 +790,7 @@
     "twitter_username": null,
     "public_repos": 215,
     "public_gists": 50,
-    "followers": 3759,
+    "followers": 3760,
     "following": 13,
     "created_at": "2011-05-23T08:11:19Z",
     "updated_at": "2024-04-08T06:57:47Z"
@@ -863,7 +863,7 @@
     "twitter_username": "ph7jack",
     "public_repos": 27,
     "public_gists": 4,
-    "followers": 171,
+    "followers": 172,
     "following": 48,
     "created_at": "2018-05-02T12:25:53Z",
     "updated_at": "2024-06-05T04:50:16Z"
@@ -899,7 +899,7 @@
     "twitter_username": "nicolasgrekas",
     "public_repos": 106,
     "public_gists": 29,
-    "followers": 1912,
+    "followers": 1913,
     "following": 5,
     "created_at": "2010-04-14T09:44:17Z",
     "updated_at": "2024-05-17T14:53:44Z"
@@ -1007,7 +1007,7 @@
     "twitter_username": null,
     "public_repos": 173,
     "public_gists": 28,
-    "followers": 11588,
+    "followers": 11592,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2024-05-19T20:26:54Z"
@@ -1044,7 +1044,7 @@
     "twitter_username": "youyuxi",
     "public_repos": 191,
     "public_gists": 73,
-    "followers": 99843,
+    "followers": 99864,
     "following": 95,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2024-05-21T08:27:48Z"
@@ -1084,7 +1084,7 @@
     "followers": 7048,
     "following": 228,
     "created_at": "2012-02-25T08:17:56Z",
-    "updated_at": "2024-05-23T01:42:18Z"
+    "updated_at": "2024-06-15T00:07:05Z"
   },
   {
     "name": "Fabien Potencier",
@@ -1154,10 +1154,10 @@
     "twitter_username": "malfaitrobin",
     "public_repos": 58,
     "public_gists": 42,
-    "followers": 1665,
-    "following": 163,
+    "followers": 1666,
+    "following": 164,
     "created_at": "2012-06-09T22:00:12Z",
-    "updated_at": "2024-05-29T12:09:38Z"
+    "updated_at": "2024-06-14T23:47:30Z"
   },
   {
     "name": "Jeffrey Way",
@@ -1190,10 +1190,10 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 66,
     "public_gists": 161,
-    "followers": 16200,
+    "followers": 16202,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
-    "updated_at": "2024-06-06T15:31:34Z"
+    "updated_at": "2024-06-14T13:04:40Z"
   },
   {
     "name": "Summer",

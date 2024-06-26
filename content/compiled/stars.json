@@ -30,7 +30,7 @@
     "twitter_username": null,
     "public_repos": 29,
     "public_gists": 9,
-    "followers": 31447,
+    "followers": 31450,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2024-06-24T20:09:01Z"
@@ -102,7 +102,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 239,
     "public_gists": 23,
-    "followers": 6964,
+    "followers": 6965,
     "following": 0,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2024-06-06T10:46:23Z"
@@ -175,7 +175,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 480,
     "public_gists": 0,
-    "followers": 2614,
+    "followers": 2615,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -211,7 +211,7 @@
     "twitter_username": "driesvints",
     "public_repos": 10,
     "public_gists": 14,
-    "followers": 4989,
+    "followers": 4991,
     "following": 31,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2024-05-31T11:33:20Z"
@@ -247,7 +247,7 @@
     "twitter_username": "GrahamJCampbell",
     "public_repos": 73,
     "public_gists": 7,
-    "followers": 6685,
+    "followers": 6687,
     "following": 141,
     "created_at": "2012-11-18T22:14:00Z",
     "updated_at": "2024-06-22T13:29:38Z"
@@ -284,7 +284,7 @@
     "twitter_username": null,
     "public_repos": 88,
     "public_gists": 49,
-    "followers": 4830,
+    "followers": 4833,
     "following": 2,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2024-05-21T17:37:05Z"
@@ -356,7 +356,7 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 64,
     "public_gists": 52,
-    "followers": 1960,
+    "followers": 1961,
     "following": 118,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2024-06-05T07:25:54Z"
@@ -573,7 +573,7 @@
     "twitter_username": "claudiodekker",
     "public_repos": 32,
     "public_gists": 9,
-    "followers": 507,
+    "followers": 508,
     "following": 15,
     "created_at": "2012-05-18T12:06:13Z",
     "updated_at": "2024-06-22T20:41:46Z"
@@ -612,7 +612,7 @@
     "followers": 1636,
     "following": 28,
     "created_at": "2013-07-09T22:40:40Z",
-    "updated_at": "2024-06-09T23:16:42Z"
+    "updated_at": "2024-06-25T11:43:57Z"
   },
   {
     "name": "Frank de Jonge",
@@ -681,7 +681,7 @@
     "twitter_username": "seldaek",
     "public_repos": 257,
     "public_gists": 33,
-    "followers": 4499,
+    "followers": 4501,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2024-06-10T11:18:18Z"
@@ -899,7 +899,7 @@
     "twitter_username": "nicolasgrekas",
     "public_repos": 106,
     "public_gists": 29,
-    "followers": 1912,
+    "followers": 1913,
     "following": 5,
     "created_at": "2010-04-14T09:44:17Z",
     "updated_at": "2024-05-17T14:53:44Z"
@@ -935,7 +935,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 68,
-    "followers": 3017,
+    "followers": 3019,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2024-05-24T23:51:29Z"
@@ -1007,7 +1007,7 @@
     "twitter_username": null,
     "public_repos": 173,
     "public_gists": 28,
-    "followers": 11617,
+    "followers": 11621,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2024-05-19T20:26:54Z"
@@ -1042,9 +1042,9 @@
     "hireable": null,
     "bio": "Husband, father of two, independent OSS dev. @vuejs, @vitejs, @rolldown, and more. Connoisseur of sushi.",
     "twitter_username": "youyuxi",
-    "public_repos": 191,
+    "public_repos": 192,
     "public_gists": 73,
-    "followers": 99981,
+    "followers": 99991,
     "following": 95,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2024-06-20T12:57:54Z"
@@ -1117,7 +1117,7 @@
     "twitter_username": "fabpot",
     "public_repos": 76,
     "public_gists": 12,
-    "followers": 13174,
+    "followers": 13173,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2024-06-10T15:32:33Z"
@@ -1154,7 +1154,7 @@
     "twitter_username": "malfaitrobin",
     "public_repos": 58,
     "public_gists": 42,
-    "followers": 1670,
+    "followers": 1671,
     "following": 164,
     "created_at": "2012-06-09T22:00:12Z",
     "updated_at": "2024-06-14T23:47:30Z"
@@ -1190,10 +1190,10 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 66,
     "public_gists": 161,
-    "followers": 16223,
+    "followers": 16225,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
-    "updated_at": "2024-06-21T17:48:17Z"
+    "updated_at": "2024-06-25T20:15:44Z"
   },
   {
     "name": "Summer",

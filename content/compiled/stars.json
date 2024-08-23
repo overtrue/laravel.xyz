@@ -30,7 +30,7 @@
     "twitter_username": null,
     "public_repos": 30,
     "public_gists": 9,
-    "followers": 31801,
+    "followers": 31807,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2024-08-07T11:44:14Z"
@@ -66,10 +66,10 @@
     "twitter_username": "freekmurze",
     "public_repos": 147,
     "public_gists": 21,
-    "followers": 4878,
+    "followers": 4877,
     "following": 17,
     "created_at": "2010-11-16T13:38:15Z",
-    "updated_at": "2024-08-10T18:28:49Z"
+    "updated_at": "2024-08-22T13:54:21Z"
   },
   {
     "name": "Nuno Maduro",
@@ -102,7 +102,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 244,
     "public_gists": 23,
-    "followers": 7087,
+    "followers": 7089,
     "following": 0,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2024-08-15T00:27:52Z"
@@ -175,7 +175,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 482,
     "public_gists": 0,
-    "followers": 2743,
+    "followers": 2745,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -211,7 +211,7 @@
     "twitter_username": "driesvints",
     "public_repos": 11,
     "public_gists": 14,
-    "followers": 5046,
+    "followers": 5048,
     "following": 31,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2024-05-31T11:33:20Z"
@@ -284,7 +284,7 @@
     "twitter_username": null,
     "public_repos": 88,
     "public_gists": 50,
-    "followers": 4917,
+    "followers": 4924,
     "following": 2,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2024-05-21T17:37:05Z"
@@ -320,7 +320,7 @@
     "twitter_username": "stauffermatt",
     "public_repos": 108,
     "public_gists": 45,
-    "followers": 2215,
+    "followers": 2216,
     "following": 20,
     "created_at": "2009-11-11T16:01:24Z",
     "updated_at": "2024-08-06T03:03:07Z"
@@ -465,7 +465,7 @@
     "twitter_username": "LukeDowning19",
     "public_repos": 68,
     "public_gists": 6,
-    "followers": 477,
+    "followers": 478,
     "following": 0,
     "created_at": "2015-05-01T18:32:33Z",
     "updated_at": "2024-06-27T17:15:25Z"
@@ -537,7 +537,7 @@
     "twitter_username": "_stefanzweifel",
     "public_repos": 79,
     "public_gists": 28,
-    "followers": 456,
+    "followers": 457,
     "following": 179,
     "created_at": "2011-09-26T14:44:55Z",
     "updated_at": "2024-08-01T14:42:55Z"
@@ -679,9 +679,9 @@
     "hireable": null,
     "bio": "\r\n    Working on https://packagist.com and https://teamup.com - @composer lead - OSS wishlist: https://seld.be/wishlist\r\n",
     "twitter_username": "seldaek",
-    "public_repos": 257,
+    "public_repos": 258,
     "public_gists": 33,
-    "followers": 4536,
+    "followers": 4535,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2024-08-21T09:33:15Z"
@@ -753,7 +753,7 @@
     "twitter_username": "caneco",
     "public_repos": 70,
     "public_gists": 2,
-    "followers": 736,
+    "followers": 735,
     "following": 13,
     "created_at": "2010-11-29T16:08:58Z",
     "updated_at": "2024-08-09T20:39:25Z"
@@ -790,10 +790,10 @@
     "twitter_username": null,
     "public_repos": 216,
     "public_gists": 50,
-    "followers": 3801,
+    "followers": 3803,
     "following": 13,
     "created_at": "2011-05-23T08:11:19Z",
-    "updated_at": "2024-08-21T09:20:24Z"
+    "updated_at": "2024-08-22T12:27:02Z"
   },
   {
     "name": "Alex Vanderbist",
@@ -899,7 +899,7 @@
     "twitter_username": "nicolasgrekas",
     "public_repos": 107,
     "public_gists": 29,
-    "followers": 1930,
+    "followers": 1931,
     "following": 5,
     "created_at": "2010-04-14T09:44:17Z",
     "updated_at": "2024-08-06T16:22:45Z"
@@ -1007,7 +1007,7 @@
     "twitter_username": null,
     "public_repos": 174,
     "public_gists": 28,
-    "followers": 11747,
+    "followers": 11748,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2024-06-29T11:21:51Z"
@@ -1044,7 +1044,7 @@
     "twitter_username": "youyuxi",
     "public_repos": 195,
     "public_gists": 73,
-    "followers": 100761,
+    "followers": 100772,
     "following": 95,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2024-07-08T02:37:34Z"
@@ -1081,7 +1081,7 @@
     "twitter_username": "overtrue666",
     "public_repos": 104,
     "public_gists": 29,
-    "followers": 7073,
+    "followers": 7074,
     "following": 229,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2024-06-15T00:07:05Z"
@@ -1190,7 +1190,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 66,
     "public_gists": 161,
-    "followers": 16402,
+    "followers": 16403,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2024-08-06T18:08:39Z"
@@ -1230,7 +1230,7 @@
     "followers": 3029,
     "following": 91,
     "created_at": "2010-07-06T23:12:44Z",
-    "updated_at": "2024-08-07T08:21:59Z"
+    "updated_at": "2024-08-22T10:39:51Z"
   },
   {
     "name": "Fred Delrieu",

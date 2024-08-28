@@ -30,7 +30,7 @@
     "twitter_username": null,
     "public_repos": 30,
     "public_gists": 9,
-    "followers": 31831,
+    "followers": 31842,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2024-08-07T11:44:14Z"
@@ -69,7 +69,7 @@
     "followers": 4882,
     "following": 17,
     "created_at": "2010-11-16T13:38:15Z",
-    "updated_at": "2024-08-25T22:13:06Z"
+    "updated_at": "2024-08-27T20:24:14Z"
   },
   {
     "name": "Nuno Maduro",
@@ -102,7 +102,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 244,
     "public_gists": 23,
-    "followers": 7095,
+    "followers": 7109,
     "following": 0,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2024-08-25T05:07:11Z"
@@ -139,7 +139,7 @@
     "twitter_username": "themsaid",
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 5038,
+    "followers": 5041,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2024-07-02T07:41:07Z"
@@ -175,7 +175,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 482,
     "public_gists": 0,
-    "followers": 2748,
+    "followers": 2751,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -209,9 +209,9 @@
     "hireable": null,
     "bio": "👨‍🚀 @laravel Core Team • 💻 Building @laravelio & @eventyio • ⭐️ @github Star • 💸 @stripe Community Expert",
     "twitter_username": "driesvints",
-    "public_repos": 11,
+    "public_repos": 10,
     "public_gists": 14,
-    "followers": 5050,
+    "followers": 5051,
     "following": 31,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2024-05-31T11:33:20Z"
@@ -247,10 +247,10 @@
     "twitter_username": "GrahamJCampbell",
     "public_repos": 75,
     "public_gists": 7,
-    "followers": 6730,
+    "followers": 6733,
     "following": 141,
     "created_at": "2012-11-18T22:14:00Z",
-    "updated_at": "2024-08-26T22:16:11Z"
+    "updated_at": "2024-08-27T04:17:13Z"
   },
   {
     "name": "Caleb Porzio",
@@ -284,10 +284,10 @@
     "twitter_username": null,
     "public_repos": 88,
     "public_gists": 50,
-    "followers": 4931,
+    "followers": 4933,
     "following": 2,
     "created_at": "2013-02-22T14:58:02Z",
-    "updated_at": "2024-05-21T17:37:05Z"
+    "updated_at": "2024-08-27T15:17:48Z"
   },
   {
     "name": "Matt Stauffer",
@@ -356,7 +356,7 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 64,
     "public_gists": 52,
-    "followers": 1995,
+    "followers": 1996,
     "following": 118,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2024-08-26T04:50:05Z"
@@ -426,9 +426,9 @@
     "hireable": null,
     "bio": "Software Developer @laravel ",
     "twitter_username": "crynobone",
-    "public_repos": 155,
+    "public_repos": 156,
     "public_gists": 31,
-    "followers": 1511,
+    "followers": 1512,
     "following": 45,
     "created_at": "2009-12-28T10:34:03Z",
     "updated_at": "2024-06-15T01:32:57Z"
@@ -465,7 +465,7 @@
     "twitter_username": "LukeDowning19",
     "public_repos": 68,
     "public_gists": 6,
-    "followers": 480,
+    "followers": 481,
     "following": 0,
     "created_at": "2015-05-01T18:32:33Z",
     "updated_at": "2024-06-27T17:15:25Z"
@@ -501,7 +501,7 @@
     "twitter_username": "ericlbarnes",
     "public_repos": 52,
     "public_gists": 48,
-    "followers": 1734,
+    "followers": 1735,
     "following": 13,
     "created_at": "2009-08-18T16:49:21Z",
     "updated_at": "2024-07-08T14:09:32Z"
@@ -609,7 +609,7 @@
     "twitter_username": "jessarchercodes",
     "public_repos": 82,
     "public_gists": 5,
-    "followers": 1670,
+    "followers": 1671,
     "following": 28,
     "created_at": "2013-07-09T22:40:40Z",
     "updated_at": "2024-07-30T06:34:53Z"
@@ -681,7 +681,7 @@
     "twitter_username": "seldaek",
     "public_repos": 258,
     "public_gists": 33,
-    "followers": 4540,
+    "followers": 4541,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2024-08-23T16:27:23Z"
@@ -715,9 +715,9 @@
     "hireable": null,
     "bio": "🐘 Core Team Member @laravel; 📦 Building packages for fun; 📣 Speaking, Blogging, Viming; ✌️ He/Him",
     "twitter_username": "timacdonald87",
-    "public_repos": 51,
+    "public_repos": 47,
     "public_gists": 5,
-    "followers": 1389,
+    "followers": 1392,
     "following": 1,
     "created_at": "2016-12-28T04:15:41Z",
     "updated_at": "2024-07-12T11:44:00Z"
@@ -751,7 +751,7 @@
     "hireable": null,
     "bio": "Full-Stack Developer",
     "twitter_username": "caneco",
-    "public_repos": 70,
+    "public_repos": 71,
     "public_gists": 2,
     "followers": 740,
     "following": 13,
@@ -793,7 +793,7 @@
     "followers": 3803,
     "following": 13,
     "created_at": "2011-05-23T08:11:19Z",
-    "updated_at": "2024-08-26T19:05:05Z"
+    "updated_at": "2024-08-27T19:32:46Z"
   },
   {
     "name": "Alex Vanderbist",
@@ -935,7 +935,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 68,
-    "followers": 3068,
+    "followers": 3067,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2024-06-28T14:08:34Z"
@@ -1007,7 +1007,7 @@
     "twitter_username": null,
     "public_repos": 174,
     "public_gists": 28,
-    "followers": 11754,
+    "followers": 11757,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2024-08-26T19:04:44Z"
@@ -1044,7 +1044,7 @@
     "twitter_username": "youyuxi",
     "public_repos": 195,
     "public_gists": 73,
-    "followers": 100815,
+    "followers": 100833,
     "following": 95,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2024-07-08T02:37:34Z"
@@ -1081,7 +1081,7 @@
     "twitter_username": "overtrue666",
     "public_repos": 104,
     "public_gists": 29,
-    "followers": 7074,
+    "followers": 7075,
     "following": 229,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2024-06-15T00:07:05Z"
@@ -1117,7 +1117,7 @@
     "twitter_username": "fabpot",
     "public_repos": 76,
     "public_gists": 12,
-    "followers": 13217,
+    "followers": 13222,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2024-08-20T07:17:51Z"
@@ -1190,7 +1190,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 66,
     "public_gists": 161,
-    "followers": 16422,
+    "followers": 16423,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2024-08-26T15:38:05Z"
@@ -1267,6 +1267,6 @@
     "followers": 211,
     "following": 3,
     "created_at": "2010-10-21T04:52:43Z",
-    "updated_at": "2024-07-27T11:22:21Z"
+    "updated_at": "2024-08-27T11:22:14Z"
   }
 ]

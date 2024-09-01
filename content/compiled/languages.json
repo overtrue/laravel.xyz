@@ -7543,7 +7543,8 @@
     "type": "programming",
     "color": "#00c0b5",
     "extensions": [
-      ".robot"
+      ".robot",
+      ".resource"
     ],
     "tm_scope": "text.robot",
     "ace_mode": "text",

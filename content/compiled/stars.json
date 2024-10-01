@@ -30,10 +30,10 @@
     "twitter_username": null,
     "public_repos": 30,
     "public_gists": 9,
-    "followers": 32132,
+    "followers": 32138,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
-    "updated_at": "2024-09-27T14:20:47Z"
+    "updated_at": "2024-09-30T14:27:40Z"
   },
   {
     "name": "Freek Van der Herten",
@@ -66,7 +66,7 @@
     "twitter_username": "freekmurze",
     "public_repos": 147,
     "public_gists": 21,
-    "followers": 4902,
+    "followers": 4906,
     "following": 17,
     "created_at": "2010-11-16T13:38:15Z",
     "updated_at": "2024-09-01T18:41:55Z"
@@ -102,7 +102,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 244,
     "public_gists": 23,
-    "followers": 7257,
+    "followers": 7263,
     "following": 1,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2024-09-22T19:45:58Z"
@@ -175,7 +175,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 483,
     "public_gists": 0,
-    "followers": 2826,
+    "followers": 2828,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -211,7 +211,7 @@
     "twitter_username": "driesvints",
     "public_repos": 10,
     "public_gists": 14,
-    "followers": 5099,
+    "followers": 5100,
     "following": 32,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2024-05-31T11:33:20Z"
@@ -245,9 +245,9 @@
     "hireable": true,
     "bio": "OSS Maintainer | Laravel Core | StyleCI",
     "twitter_username": "GrahamJCampbell",
-    "public_repos": 76,
+    "public_repos": 81,
     "public_gists": 7,
-    "followers": 6751,
+    "followers": 6752,
     "following": 143,
     "created_at": "2012-11-18T22:14:00Z",
     "updated_at": "2024-09-04T08:17:02Z"
@@ -284,7 +284,7 @@
     "twitter_username": null,
     "public_repos": 88,
     "public_gists": 50,
-    "followers": 5040,
+    "followers": 5043,
     "following": 2,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2024-09-28T16:47:15Z"
@@ -320,7 +320,7 @@
     "twitter_username": "stauffermatt",
     "public_repos": 108,
     "public_gists": 45,
-    "followers": 2225,
+    "followers": 2227,
     "following": 20,
     "created_at": "2009-11-11T16:01:24Z",
     "updated_at": "2024-09-13T13:38:16Z"
@@ -356,7 +356,7 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 65,
     "public_gists": 52,
-    "followers": 2017,
+    "followers": 2018,
     "following": 118,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2024-09-11T12:01:04Z"
@@ -538,7 +538,7 @@
     "public_repos": 79,
     "public_gists": 28,
     "followers": 463,
-    "following": 183,
+    "following": 184,
     "created_at": "2011-09-26T14:44:55Z",
     "updated_at": "2024-08-01T14:42:55Z"
   },
@@ -645,7 +645,7 @@
     "twitter_username": "frankdejonge",
     "public_repos": 90,
     "public_gists": 38,
-    "followers": 1126,
+    "followers": 1125,
     "following": 16,
     "created_at": "2010-12-23T15:39:26Z",
     "updated_at": "2024-09-14T12:29:26Z"
@@ -681,7 +681,7 @@
     "twitter_username": "seldaek",
     "public_repos": 258,
     "public_gists": 33,
-    "followers": 4553,
+    "followers": 4552,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2024-09-13T11:30:23Z"
@@ -717,7 +717,7 @@
     "twitter_username": "timacdonald87",
     "public_repos": 49,
     "public_gists": 5,
-    "followers": 1417,
+    "followers": 1418,
     "following": 1,
     "created_at": "2016-12-28T04:15:41Z",
     "updated_at": "2024-09-16T23:51:55Z"
@@ -863,7 +863,7 @@
     "twitter_username": "ph7jack",
     "public_repos": 27,
     "public_gists": 4,
-    "followers": 177,
+    "followers": 178,
     "following": 49,
     "created_at": "2018-05-02T12:25:53Z",
     "updated_at": "2024-07-01T05:32:11Z"
@@ -899,7 +899,7 @@
     "twitter_username": "nicolasgrekas",
     "public_repos": 108,
     "public_gists": 29,
-    "followers": 1945,
+    "followers": 1944,
     "following": 5,
     "created_at": "2010-04-14T09:44:17Z",
     "updated_at": "2024-08-28T12:08:21Z"
@@ -935,7 +935,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 68,
-    "followers": 3101,
+    "followers": 3102,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2024-06-28T14:08:34Z"
@@ -1007,7 +1007,7 @@
     "twitter_username": null,
     "public_repos": 174,
     "public_gists": 28,
-    "followers": 11826,
+    "followers": 11833,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2024-09-25T14:37:32Z"
@@ -1044,7 +1044,7 @@
     "twitter_username": "youyuxi",
     "public_repos": 194,
     "public_gists": 73,
-    "followers": 101222,
+    "followers": 101242,
     "following": 95,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2024-07-08T02:37:34Z"
@@ -1081,7 +1081,7 @@
     "twitter_username": "overtrue666",
     "public_repos": 105,
     "public_gists": 29,
-    "followers": 7085,
+    "followers": 7086,
     "following": 232,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2024-09-28T13:00:02Z"
@@ -1117,7 +1117,7 @@
     "twitter_username": "fabpot",
     "public_repos": 76,
     "public_gists": 12,
-    "followers": 13235,
+    "followers": 13231,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2024-08-20T07:17:51Z"
@@ -1154,7 +1154,7 @@
     "twitter_username": "malfaitrobin",
     "public_repos": 60,
     "public_gists": 42,
-    "followers": 1772,
+    "followers": 1773,
     "following": 165,
     "created_at": "2012-06-09T22:00:12Z",
     "updated_at": "2024-09-04T08:54:50Z"
@@ -1190,7 +1190,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 66,
     "public_gists": 161,
-    "followers": 16528,
+    "followers": 16531,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2024-08-26T15:38:05Z"
@@ -1227,7 +1227,7 @@
     "twitter_username": null,
     "public_repos": 95,
     "public_gists": 49,
-    "followers": 3032,
+    "followers": 3033,
     "following": 91,
     "created_at": "2010-07-06T23:12:44Z",
     "updated_at": "2024-08-22T10:39:51Z"

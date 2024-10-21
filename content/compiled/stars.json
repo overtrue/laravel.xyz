@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 30,
     "public_gists": 9,
-    "followers": 32515,
+    "followers": 32528,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2024-09-30T14:27:40Z"
@@ -105,7 +105,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 244,
     "public_gists": 23,
-    "followers": 7326,
+    "followers": 7330,
     "following": 3,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2024-10-13T10:20:15Z"
@@ -143,7 +143,7 @@
     "twitter_username": "themsaid",
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 5074,
+    "followers": 5076,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2024-07-02T07:41:07Z"
@@ -250,14 +250,14 @@
     "location": "York, United Kingdom",
     "email": null,
     "hireable": true,
-    "bio": "OSS Maintainer | Laravel Core | StyleCI",
+    "bio": "OSS Maintainer | Laravel | StyleCI",
     "twitter_username": "GrahamJCampbell",
     "public_repos": 81,
     "public_gists": 7,
-    "followers": 6767,
+    "followers": 6768,
     "following": 143,
     "created_at": "2012-11-18T22:14:00Z",
-    "updated_at": "2024-10-18T11:17:53Z"
+    "updated_at": "2024-10-20T22:38:35Z"
   },
   {
     "name": "Caleb Porzio",
@@ -292,7 +292,7 @@
     "twitter_username": null,
     "public_repos": 88,
     "public_gists": 50,
-    "followers": 5088,
+    "followers": 5089,
     "following": 2,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2024-10-16T21:36:29Z"
@@ -403,7 +403,7 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 1153,
+    "followers": 1152,
     "following": 5,
     "created_at": "2015-05-31T15:34:11Z",
     "updated_at": "2024-10-02T10:48:32Z"
@@ -626,7 +626,7 @@
     "twitter_username": "jessarchercodes",
     "public_repos": 82,
     "public_gists": 5,
-    "followers": 1712,
+    "followers": 1713,
     "following": 28,
     "created_at": "2013-07-09T22:40:40Z",
     "updated_at": "2024-09-25T08:55:09Z"
@@ -700,7 +700,7 @@
     "twitter_username": "seldaek",
     "public_repos": 259,
     "public_gists": 33,
-    "followers": 4557,
+    "followers": 4560,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2024-10-18T19:02:12Z"
@@ -812,7 +812,7 @@
     "twitter_username": null,
     "public_repos": 219,
     "public_gists": 50,
-    "followers": 3823,
+    "followers": 3822,
     "following": 13,
     "created_at": "2011-05-23T08:11:19Z",
     "updated_at": "2024-10-18T12:22:43Z"
@@ -961,7 +961,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 68,
-    "followers": 3128,
+    "followers": 3130,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2024-06-28T14:08:34Z"
@@ -1035,7 +1035,7 @@
     "twitter_username": null,
     "public_repos": 174,
     "public_gists": 28,
-    "followers": 11878,
+    "followers": 11877,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2024-09-25T14:37:32Z"
@@ -1073,7 +1073,7 @@
     "twitter_username": "youyuxi",
     "public_repos": 195,
     "public_gists": 73,
-    "followers": 101607,
+    "followers": 101616,
     "following": 96,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2024-10-18T23:01:35Z"
@@ -1111,7 +1111,7 @@
     "twitter_username": "overtrue666",
     "public_repos": 105,
     "public_gists": 29,
-    "followers": 7096,
+    "followers": 7097,
     "following": 233,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2024-10-19T06:19:56Z"
@@ -1148,7 +1148,7 @@
     "twitter_username": "fabpot",
     "public_repos": 76,
     "public_gists": 12,
-    "followers": 13236,
+    "followers": 13235,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2024-08-20T07:17:51Z"
@@ -1223,7 +1223,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 66,
     "public_gists": 161,
-    "followers": 16573,
+    "followers": 16576,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2024-10-14T19:47:25Z"

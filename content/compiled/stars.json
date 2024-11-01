@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 30,
     "public_gists": 9,
-    "followers": 32623,
+    "followers": 32630,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2024-09-30T14:27:40Z"
@@ -68,7 +68,7 @@
     "twitter_username": "freekmurze",
     "public_repos": 147,
     "public_gists": 21,
-    "followers": 4937,
+    "followers": 4938,
     "following": 17,
     "created_at": "2010-11-16T13:38:15Z",
     "updated_at": "2024-10-28T08:19:24Z"
@@ -105,7 +105,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 244,
     "public_gists": 23,
-    "followers": 7374,
+    "followers": 7378,
     "following": 3,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2024-10-30T12:06:27Z"
@@ -143,7 +143,7 @@
     "twitter_username": "themsaid",
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 5080,
+    "followers": 5081,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2024-10-22T09:53:36Z"
@@ -180,7 +180,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 483,
     "public_gists": 0,
-    "followers": 2897,
+    "followers": 2898,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -217,7 +217,7 @@
     "twitter_username": "driesvints",
     "public_repos": 10,
     "public_gists": 14,
-    "followers": 5132,
+    "followers": 5134,
     "following": 32,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2024-05-31T11:33:20Z"
@@ -293,7 +293,7 @@
     "public_repos": 88,
     "public_gists": 50,
     "followers": 5106,
-    "following": 2,
+    "following": 3,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2024-10-30T14:59:24Z"
   },
@@ -329,7 +329,7 @@
     "twitter_username": "stauffermatt",
     "public_repos": 108,
     "public_gists": 45,
-    "followers": 2232,
+    "followers": 2233,
     "following": 20,
     "created_at": "2009-11-11T16:01:24Z",
     "updated_at": "2024-09-13T13:38:16Z"
@@ -366,7 +366,7 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 66,
     "public_gists": 52,
-    "followers": 2056,
+    "followers": 2058,
     "following": 121,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2024-10-28T12:23:15Z"
@@ -403,7 +403,7 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 0,
-    "followers": 1155,
+    "followers": 1156,
     "following": 5,
     "created_at": "2015-05-31T15:34:11Z",
     "updated_at": "2024-10-02T10:48:32Z"
@@ -774,7 +774,7 @@
     "twitter_username": "caneco",
     "public_repos": 73,
     "public_gists": 2,
-    "followers": 760,
+    "followers": 761,
     "following": 13,
     "created_at": "2010-11-29T16:08:58Z",
     "updated_at": "2024-10-14T04:33:51Z"
@@ -856,43 +856,6 @@
     "updated_at": "2024-10-23T13:07:23Z"
   },
   {
-    "name": "Pedro Oliveira",
-    "github_id": "PH7-Jack",
-    "twitter_id": "ph7jack",
-    "login": "PH7-Jack",
-    "id": 38913462,
-    "node_id": "MDQ6VXNlcjM4OTEzNDYy",
-    "avatar_url": "https://avatars.githubusercontent.com/u/38913462?v=4",
-    "gravatar_id": "",
-    "url": "https://api.github.com/users/PH7-Jack",
-    "html_url": "https://github.com/PH7-Jack",
-    "followers_url": "https://api.github.com/users/PH7-Jack/followers",
-    "following_url": "https://api.github.com/users/PH7-Jack/following{/other_user}",
-    "gists_url": "https://api.github.com/users/PH7-Jack/gists{/gist_id}",
-    "starred_url": "https://api.github.com/users/PH7-Jack/starred{/owner}{/repo}",
-    "subscriptions_url": "https://api.github.com/users/PH7-Jack/subscriptions",
-    "organizations_url": "https://api.github.com/users/PH7-Jack/orgs",
-    "repos_url": "https://api.github.com/users/PH7-Jack/repos",
-    "events_url": "https://api.github.com/users/PH7-Jack/events{/privacy}",
-    "received_events_url": "https://api.github.com/users/PH7-Jack/received_events",
-    "type": "User",
-    "user_view_type": "public",
-    "site_admin": false,
-    "company": "@CircleLinkHealth",
-    "blog": "https://wireui.dev",
-    "location": "Americana, São Paulo, Brazil",
-    "email": null,
-    "hireable": true,
-    "bio": "FullStack Software Engineer,\r\nVueJs, Livewire,\r\nLaravel Artisan,\r\nCreator of WireUI\r\n",
-    "twitter_username": "ph7jack",
-    "public_repos": 28,
-    "public_gists": 4,
-    "followers": 179,
-    "following": 50,
-    "created_at": "2018-05-02T12:25:53Z",
-    "updated_at": "2024-07-01T05:32:11Z"
-  },
-  {
     "name": "Nicolas Grekas",
     "github_id": "nicolas-grekas",
     "twitter_id": "nicolasgrekas",
@@ -924,7 +887,7 @@
     "twitter_username": "nicolasgrekas",
     "public_repos": 108,
     "public_gists": 29,
-    "followers": 1960,
+    "followers": 1961,
     "following": 5,
     "created_at": "2010-04-14T09:44:17Z",
     "updated_at": "2024-08-28T12:08:21Z"
@@ -961,7 +924,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 68,
-    "followers": 3134,
+    "followers": 3136,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2024-10-31T01:22:05Z"
@@ -1001,7 +964,7 @@
     "followers": 191,
     "following": 14,
     "created_at": "2013-02-27T11:50:57Z",
-    "updated_at": "2024-10-17T10:31:15Z"
+    "updated_at": "2024-10-31T21:03:02Z"
   },
   {
     "name": "Adam Wathan",
@@ -1035,7 +998,7 @@
     "twitter_username": null,
     "public_repos": 174,
     "public_gists": 28,
-    "followers": 11892,
+    "followers": 11895,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2024-09-25T14:37:32Z"
@@ -1073,7 +1036,7 @@
     "twitter_username": "youyuxi",
     "public_repos": 195,
     "public_gists": 73,
-    "followers": 101820,
+    "followers": 101831,
     "following": 96,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2024-10-18T23:01:35Z"
@@ -1111,7 +1074,7 @@
     "twitter_username": "overtrue666",
     "public_repos": 105,
     "public_gists": 29,
-    "followers": 7110,
+    "followers": 7111,
     "following": 234,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2024-10-21T03:16:34Z"
@@ -1148,7 +1111,7 @@
     "twitter_username": "fabpot",
     "public_repos": 77,
     "public_gists": 12,
-    "followers": 13245,
+    "followers": 13244,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2024-10-29T02:30:13Z"
@@ -1186,7 +1149,7 @@
     "twitter_username": "malfaitrobin",
     "public_repos": 61,
     "public_gists": 42,
-    "followers": 1795,
+    "followers": 1797,
     "following": 166,
     "created_at": "2012-06-09T22:00:12Z",
     "updated_at": "2024-10-08T07:01:08Z"
@@ -1223,7 +1186,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 66,
     "public_gists": 161,
-    "followers": 16605,
+    "followers": 16609,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2024-10-14T19:47:25Z"

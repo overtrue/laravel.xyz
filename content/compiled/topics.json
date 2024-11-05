@@ -124,6 +124,10 @@
     "packages_count": 1
   },
   {
+    "name": "sdk",
+    "packages_count": 1
+  },
+  {
     "name": "sentry",
     "packages_count": 1
   },

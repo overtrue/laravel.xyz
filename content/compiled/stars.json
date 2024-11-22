@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 30,
     "public_gists": 9,
-    "followers": 32798,
+    "followers": 32808,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2024-11-12T16:07:34Z"
@@ -143,7 +143,7 @@
     "twitter_username": "themsaid",
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 5092,
+    "followers": 5093,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2024-10-22T09:53:36Z"
@@ -180,7 +180,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 483,
     "public_gists": 0,
-    "followers": 2928,
+    "followers": 2930,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -217,7 +217,7 @@
     "twitter_username": "driesvints",
     "public_repos": 10,
     "public_gists": 14,
-    "followers": 5153,
+    "followers": 5155,
     "following": 32,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2024-11-14T16:30:21Z"
@@ -254,7 +254,7 @@
     "twitter_username": "GrahamJCampbell",
     "public_repos": 82,
     "public_gists": 7,
-    "followers": 6780,
+    "followers": 6782,
     "following": 143,
     "created_at": "2012-11-18T22:14:00Z",
     "updated_at": "2024-11-09T10:16:47Z"
@@ -292,7 +292,7 @@
     "twitter_username": null,
     "public_repos": 88,
     "public_gists": 50,
-    "followers": 5129,
+    "followers": 5132,
     "following": 3,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2024-11-15T18:48:51Z"
@@ -325,14 +325,14 @@
     "location": "Atlanta, GA",
     "email": null,
     "hireable": null,
-    "bio": "CEO at @tighten. Podcaster (Laravel Podcast, Things Worth Learning), open source maintainer, blogger, etc.",
+    "bio": "CEO at @tighten. Podcaster (Laravel Podcast, Business of Laravel), open source maintainer, blogger, etc.",
     "twitter_username": "stauffermatt",
     "public_repos": 108,
     "public_gists": 45,
     "followers": 2245,
     "following": 20,
     "created_at": "2009-11-11T16:01:24Z",
-    "updated_at": "2024-11-14T19:20:13Z"
+    "updated_at": "2024-11-22T02:02:15Z"
   },
   {
     "name": "James Brooks",
@@ -438,9 +438,9 @@
     "hireable": null,
     "bio": "Software Developer @laravel ",
     "twitter_username": "crynobone",
-    "public_repos": 159,
+    "public_repos": 161,
     "public_gists": 31,
-    "followers": 1562,
+    "followers": 1563,
     "following": 45,
     "created_at": "2009-12-28T10:34:03Z",
     "updated_at": "2024-11-20T23:48:11Z"
@@ -626,7 +626,7 @@
     "twitter_username": "jessarchercodes",
     "public_repos": 82,
     "public_gists": 5,
-    "followers": 1732,
+    "followers": 1734,
     "following": 28,
     "created_at": "2013-07-09T22:40:40Z",
     "updated_at": "2024-09-25T08:55:09Z"
@@ -700,7 +700,7 @@
     "twitter_username": "seldaek",
     "public_repos": 259,
     "public_gists": 33,
-    "followers": 4568,
+    "followers": 4569,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2024-11-10T12:19:04Z"
@@ -737,7 +737,7 @@
     "twitter_username": "timacdonald87",
     "public_repos": 50,
     "public_gists": 5,
-    "followers": 1448,
+    "followers": 1450,
     "following": 1,
     "created_at": "2016-12-28T04:15:41Z",
     "updated_at": "2024-11-19T06:04:41Z"
@@ -774,7 +774,7 @@
     "twitter_username": "caneco",
     "public_repos": 73,
     "public_gists": 2,
-    "followers": 769,
+    "followers": 770,
     "following": 13,
     "created_at": "2010-11-29T16:08:58Z",
     "updated_at": "2024-10-14T04:33:51Z"
@@ -812,7 +812,7 @@
     "twitter_username": null,
     "public_repos": 220,
     "public_gists": 50,
-    "followers": 3827,
+    "followers": 3826,
     "following": 13,
     "created_at": "2011-05-23T08:11:19Z",
     "updated_at": "2024-11-13T07:11:53Z"
@@ -887,7 +887,7 @@
     "twitter_username": "nicolasgrekas",
     "public_repos": 108,
     "public_gists": 29,
-    "followers": 1971,
+    "followers": 1972,
     "following": 5,
     "created_at": "2010-04-14T09:44:17Z",
     "updated_at": "2024-11-12T15:27:11Z"
@@ -924,7 +924,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 68,
-    "followers": 3147,
+    "followers": 3148,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2024-10-31T01:22:05Z"
@@ -998,7 +998,7 @@
     "twitter_username": null,
     "public_repos": 174,
     "public_gists": 28,
-    "followers": 11917,
+    "followers": 11921,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2024-11-18T23:11:19Z"
@@ -1036,7 +1036,7 @@
     "twitter_username": "youyuxi",
     "public_repos": 195,
     "public_gists": 73,
-    "followers": 102076,
+    "followers": 102084,
     "following": 97,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2024-10-18T23:01:35Z"
@@ -1074,7 +1074,7 @@
     "twitter_username": "overtrue666",
     "public_repos": 107,
     "public_gists": 29,
-    "followers": 7125,
+    "followers": 7128,
     "following": 235,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2024-11-14T06:30:03Z"
@@ -1111,7 +1111,7 @@
     "twitter_username": "fabpot",
     "public_repos": 77,
     "public_gists": 12,
-    "followers": 13250,
+    "followers": 13251,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2024-11-06T20:28:46Z"
@@ -1149,7 +1149,7 @@
     "twitter_username": "malfaitrobin",
     "public_repos": 61,
     "public_gists": 42,
-    "followers": 1813,
+    "followers": 1814,
     "following": 166,
     "created_at": "2012-06-09T22:00:12Z",
     "updated_at": "2024-11-01T10:44:08Z"
@@ -1186,7 +1186,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 66,
     "public_gists": 161,
-    "followers": 16659,
+    "followers": 16662,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2024-10-14T19:47:25Z"

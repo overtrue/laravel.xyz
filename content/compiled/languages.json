@@ -1066,7 +1066,7 @@
     "ace_mode": "css",
     "codemirror_mode": "css",
     "codemirror_mime_type": "text/css",
-    "color": "#563d7c",
+    "color": "#663399",
     "extensions": [
       ".css"
     ],
@@ -1964,7 +1964,8 @@
     "color": "#384d54",
     "tm_scope": "source.dockerfile",
     "extensions": [
-      ".dockerfile"
+      ".dockerfile",
+      ".containerfile"
     ],
     "filenames": [
       "Containerfile",
@@ -2615,7 +2616,7 @@
     "codemirror_mime_type": "text/x-fortran",
     "language_id": 761352333
   },
-  "FreeBasic": {
+  "FreeBASIC": {
     "type": "programming",
     "color": "#141AC9",
     "extensions": [
@@ -3563,6 +3564,16 @@
     "ace_mode": "text",
     "language_id": 156
   },
+  "Hare": {
+    "type": "programming",
+    "color": "#9d7424",
+    "extensions": [
+      ".ha"
+    ],
+    "ace_mode": "text",
+    "language_id": 463518941,
+    "tm_scope": "none"
+  },
   "Haskell": {
     "type": "programming",
     "color": "#5e5086",
@@ -3700,6 +3711,7 @@
       ".url"
     ],
     "filenames": [
+      ".buckconfig",
       ".coveragerc",
       ".flake8",
       ".pylintrc",
@@ -3763,9 +3775,11 @@
       ".coffeelintignore",
       ".cvsignore",
       ".dockerignore",
+      ".easignore",
       ".eleventyignore",
       ".eslintignore",
       ".gitignore",
+      ".ignore",
       ".markdownlintignore",
       ".nodemonignore",
       ".npmignore",
@@ -3956,9 +3970,11 @@
       ".har",
       ".ice",
       ".JSON-tmLanguage",
+      ".json.example",
       ".jsonl",
       ".mcmeta",
       ".sarif",
+      ".tact",
       ".tfstate",
       ".tfstate.backup",
       ".topojson",
@@ -5432,6 +5448,16 @@
     "tm_scope": "none",
     "ace_mode": "text",
     "language_id": 237
+  },
+  "MoonBit": {
+    "type": "programming",
+    "color": "#b92381",
+    "extensions": [
+      ".mbt"
+    ],
+    "tm_scope": "source.moonbit",
+    "ace_mode": "text",
+    "language_id": 181453007
   },
   "MoonScript": {
     "type": "programming",
@@ -7904,6 +7930,12 @@
   "SSH Config": {
     "type": "data",
     "group": "INI",
+    "aliases": [
+      "sshconfig",
+      "sshdconfig",
+      "ssh_config",
+      "sshd_config"
+    ],
     "filenames": [
       "ssh-config",
       "ssh_config",
@@ -8685,6 +8717,19 @@
     "codemirror_mime_type": "text/x-toml",
     "language_id": 365
   },
+  "TSPLIB data": {
+    "aliases": [
+      "travelling salesman problem",
+      "traveling salesman problem"
+    ],
+    "type": "data",
+    "extensions": [
+      ".tsp"
+    ],
+    "tm_scope": "none",
+    "ace_mode": "text",
+    "language_id": 89289301
+  },
   "TSQL": {
     "type": "programming",
     "color": "#e38c00",
@@ -8731,6 +8776,16 @@
     "tm_scope": "source.txl",
     "ace_mode": "text",
     "language_id": 366
+  },
+  "Tact": {
+    "type": "programming",
+    "color": "#48b5ff",
+    "extensions": [
+      ".tact"
+    ],
+    "ace_mode": "text",
+    "tm_scope": "source.tact",
+    "language_id": 606708469
   },
   "Talon": {
     "type": "programming",
@@ -9039,6 +9094,19 @@
     "codemirror_mode": "javascript",
     "codemirror_mime_type": "application/typescript",
     "language_id": 378
+  },
+  "TypeSpec": {
+    "type": "programming",
+    "color": "#4A3665",
+    "aliases": [
+      "tsp"
+    ],
+    "extensions": [
+      ".tsp"
+    ],
+    "tm_scope": "source.tsp",
+    "ace_mode": "text",
+    "language_id": 952272597
   },
   "Typst": {
     "type": "programming",
@@ -9388,7 +9456,7 @@
     "extensions": [
       ".vue"
     ],
-    "tm_scope": "text.html.vue",
+    "tm_scope": "source.vue",
     "ace_mode": "html",
     "language_id": 391
   },
@@ -9973,9 +10041,11 @@
     "filenames": [
       ".clang-format",
       ".clang-tidy",
+      ".clangd",
       ".gemrc",
       "CITATION.cff",
       "glide.lock",
+      "pixi.lock",
       "yarn.lock"
     ],
     "ace_mode": "yaml",
@@ -10317,6 +10387,16 @@
     "ace_mode": "text",
     "tm_scope": "source.nesc",
     "language_id": 417
+  },
+  "omnetpp-ned": {
+    "type": "programming",
+    "extensions": [
+      ".ned"
+    ],
+    "color": "#08607c",
+    "tm_scope": "source.ned",
+    "ace_mode": "text",
+    "language_id": 924868392
   },
   "ooc": {
     "type": "programming",

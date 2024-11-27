@@ -7113,6 +7113,25 @@
     "tm_scope": "source.quake",
     "language_id": 375265331
   },
+  "QuickBASIC": {
+    "type": "programming",
+    "color": "#008080",
+    "extensions": [
+      ".bas"
+    ],
+    "tm_scope": "source.QB64",
+    "aliases": [
+      "qb",
+      "qbasic",
+      "qb64",
+      "classic qbasic",
+      "classic quickbasic"
+    ],
+    "ace_mode": "text",
+    "codemirror_mode": "vb",
+    "codemirror_mime_type": "text/x-vb",
+    "language_id": 593107205
+  },
   "R": {
     "type": "programming",
     "color": "#198CE7",
@@ -8524,7 +8543,8 @@
       "MODULE.bazel",
       "Tiltfile",
       "WORKSPACE",
-      "WORKSPACE.bazel"
+      "WORKSPACE.bazel",
+      "WORKSPACE.bzlmod"
     ],
     "aliases": [
       "bazel",
@@ -10387,6 +10407,16 @@
     "ace_mode": "text",
     "tm_scope": "source.nesc",
     "language_id": 417
+  },
+  "omnetpp-msg": {
+    "type": "programming",
+    "extensions": [
+      ".msg"
+    ],
+    "color": "#a0e0a0",
+    "tm_scope": "source.msg",
+    "ace_mode": "text",
+    "language_id": 664100008
   },
   "omnetpp-ned": {
     "type": "programming",

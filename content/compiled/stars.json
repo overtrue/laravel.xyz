@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 30,
     "public_gists": 9,
-    "followers": 32846,
+    "followers": 32855,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2024-11-12T16:07:34Z"
@@ -180,7 +180,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 483,
     "public_gists": 0,
-    "followers": 2939,
+    "followers": 2942,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -292,7 +292,7 @@
     "twitter_username": null,
     "public_repos": 88,
     "public_gists": 50,
-    "followers": 5140,
+    "followers": 5141,
     "following": 3,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2024-11-15T18:48:51Z"
@@ -329,7 +329,7 @@
     "twitter_username": "stauffermatt",
     "public_repos": 108,
     "public_gists": 45,
-    "followers": 2246,
+    "followers": 2245,
     "following": 20,
     "created_at": "2009-11-11T16:01:24Z",
     "updated_at": "2024-11-22T02:02:15Z"
@@ -366,7 +366,7 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 67,
     "public_gists": 52,
-    "followers": 2080,
+    "followers": 2079,
     "following": 121,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2024-10-28T12:23:15Z"
@@ -478,7 +478,7 @@
     "twitter_username": "LukeDowning19",
     "public_repos": 68,
     "public_gists": 6,
-    "followers": 527,
+    "followers": 528,
     "following": 0,
     "created_at": "2015-05-01T18:32:33Z",
     "updated_at": "2024-10-06T17:24:25Z"
@@ -626,7 +626,7 @@
     "twitter_username": "jessarchercodes",
     "public_repos": 82,
     "public_gists": 5,
-    "followers": 1736,
+    "followers": 1737,
     "following": 28,
     "created_at": "2013-07-09T22:40:40Z",
     "updated_at": "2024-09-25T08:55:09Z"
@@ -812,7 +812,7 @@
     "twitter_username": null,
     "public_repos": 220,
     "public_gists": 50,
-    "followers": 3830,
+    "followers": 3829,
     "following": 13,
     "created_at": "2011-05-23T08:11:19Z",
     "updated_at": "2024-11-13T07:11:53Z"
@@ -850,7 +850,7 @@
     "twitter_username": "alex_",
     "public_repos": 78,
     "public_gists": 66,
-    "followers": 513,
+    "followers": 512,
     "following": 10,
     "created_at": "2013-12-30T17:01:15Z",
     "updated_at": "2024-10-23T13:07:23Z"
@@ -996,9 +996,9 @@
     "hireable": null,
     "bio": "Creator of Tailwind CSS, author of Refactoring UI, host of Full Stack Radio.",
     "twitter_username": null,
-    "public_repos": 174,
+    "public_repos": 175,
     "public_gists": 28,
-    "followers": 11939,
+    "followers": 11943,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2024-11-18T23:11:19Z"
@@ -1036,7 +1036,7 @@
     "twitter_username": "youyuxi",
     "public_repos": 195,
     "public_gists": 73,
-    "followers": 102146,
+    "followers": 102169,
     "following": 97,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2024-10-18T23:01:35Z"
@@ -1111,7 +1111,7 @@
     "twitter_username": "fabpot",
     "public_repos": 77,
     "public_gists": 12,
-    "followers": 13255,
+    "followers": 13257,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2024-11-24T08:48:40Z"
@@ -1149,7 +1149,7 @@
     "twitter_username": "malfaitrobin",
     "public_repos": 61,
     "public_gists": 42,
-    "followers": 1818,
+    "followers": 1817,
     "following": 166,
     "created_at": "2012-06-09T22:00:12Z",
     "updated_at": "2024-11-01T10:44:08Z"
@@ -1186,7 +1186,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 66,
     "public_gists": 161,
-    "followers": 16669,
+    "followers": 16674,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2024-10-14T19:47:25Z"
@@ -1224,7 +1224,7 @@
     "twitter_username": null,
     "public_repos": 95,
     "public_gists": 49,
-    "followers": 3037,
+    "followers": 3038,
     "following": 91,
     "created_at": "2010-07-06T23:12:44Z",
     "updated_at": "2024-08-22T10:39:51Z"
@@ -1265,6 +1265,6 @@
     "followers": 214,
     "following": 3,
     "created_at": "2010-10-21T04:52:43Z",
-    "updated_at": "2024-10-27T11:19:43Z"
+    "updated_at": "2024-11-27T12:20:48Z"
   }
 ]

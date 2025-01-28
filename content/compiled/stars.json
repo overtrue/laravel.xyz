@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 30,
     "public_gists": 9,
-    "followers": 33261,
+    "followers": 33258,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2025-01-13T16:37:23Z"
@@ -105,7 +105,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 263,
     "public_gists": 23,
-    "followers": 7738,
+    "followers": 7744,
     "following": 4,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2024-12-15T22:09:08Z"
@@ -143,7 +143,7 @@
     "twitter_username": "themsaid",
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 5121,
+    "followers": 5122,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2024-10-22T09:53:36Z"
@@ -178,9 +178,9 @@
     "hireable": null,
     "bio": "We create open source, digital products and courses for the developer community",
     "twitter_username": "spatie_be",
-    "public_repos": 484,
+    "public_repos": 485,
     "public_gists": 0,
-    "followers": 3046,
+    "followers": 3047,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -217,7 +217,7 @@
     "twitter_username": "driesvints",
     "public_repos": 10,
     "public_gists": 14,
-    "followers": 5221,
+    "followers": 5223,
     "following": 32,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2024-11-14T16:30:21Z"
@@ -254,7 +254,7 @@
     "twitter_username": "GrahamJCampbell",
     "public_repos": 83,
     "public_gists": 7,
-    "followers": 6837,
+    "followers": 6836,
     "following": 143,
     "created_at": "2012-11-18T22:14:00Z",
     "updated_at": "2024-12-29T18:10:55Z"
@@ -440,7 +440,7 @@
     "twitter_username": "crynobone",
     "public_repos": 172,
     "public_gists": 31,
-    "followers": 1603,
+    "followers": 1604,
     "following": 45,
     "created_at": "2009-12-28T10:34:03Z",
     "updated_at": "2025-01-09T07:41:25Z"
@@ -592,7 +592,7 @@
     "followers": 531,
     "following": 15,
     "created_at": "2012-05-18T12:06:13Z",
-    "updated_at": "2024-09-13T11:36:11Z"
+    "updated_at": "2025-01-27T17:43:12Z"
   },
   {
     "name": "Jess Archer",
@@ -700,7 +700,7 @@
     "twitter_username": "seldaek",
     "public_repos": 261,
     "public_gists": 33,
-    "followers": 4577,
+    "followers": 4576,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2025-01-10T12:25:00Z"
@@ -774,7 +774,7 @@
     "twitter_username": "caneco",
     "public_repos": 73,
     "public_gists": 2,
-    "followers": 794,
+    "followers": 796,
     "following": 13,
     "created_at": "2010-11-29T16:08:58Z",
     "updated_at": "2024-10-14T04:33:51Z"
@@ -887,7 +887,7 @@
     "twitter_username": "nicolasgrekas",
     "public_repos": 110,
     "public_gists": 29,
-    "followers": 1985,
+    "followers": 1986,
     "following": 5,
     "created_at": "2010-04-14T09:44:17Z",
     "updated_at": "2025-01-10T15:34:48Z"
@@ -959,7 +959,7 @@
     "hireable": null,
     "bio": "Software developer. You can find all of my public contributions (own apps, package contributions, PRs, etc) here. Learn more on my site.",
     "twitter_username": null,
-    "public_repos": 41,
+    "public_repos": 42,
     "public_gists": 12,
     "followers": 198,
     "following": 14,
@@ -998,7 +998,7 @@
     "twitter_username": null,
     "public_repos": 175,
     "public_gists": 28,
-    "followers": 12060,
+    "followers": 12063,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2025-01-24T19:17:56Z"
@@ -1036,7 +1036,7 @@
     "twitter_username": "youyuxi",
     "public_repos": 197,
     "public_gists": 73,
-    "followers": 102871,
+    "followers": 102883,
     "following": 98,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2024-10-18T23:01:35Z"
@@ -1152,7 +1152,7 @@
     "followers": 1855,
     "following": 167,
     "created_at": "2012-06-09T22:00:12Z",
-    "updated_at": "2025-01-26T15:08:42Z"
+    "updated_at": "2025-01-27T15:33:20Z"
   },
   {
     "name": "Jeffrey Way",
@@ -1186,7 +1186,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 66,
     "public_gists": 161,
-    "followers": 16809,
+    "followers": 16810,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2025-01-09T16:46:34Z"
@@ -1265,6 +1265,6 @@
     "followers": 214,
     "following": 3,
     "created_at": "2010-10-21T04:52:43Z",
-    "updated_at": "2025-01-15T07:23:27Z"
+    "updated_at": "2025-01-27T12:22:28Z"
   }
 ]

@@ -4024,6 +4024,7 @@
       ".watchmanconfig",
       "MODULE.bazel.lock",
       "Pipfile.lock",
+      "bun.lock",
       "composer.lock",
       "deno.lock",
       "flake.lock",
@@ -9248,6 +9249,7 @@
       "ts"
     ],
     "interpreters": [
+      "bun",
       "deno",
       "ts-node",
       "tsx"

@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 31,
     "public_gists": 9,
-    "followers": 33725,
+    "followers": 33730,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2025-02-28T14:11:52Z"
@@ -68,7 +68,7 @@
     "twitter_username": "freekmurze",
     "public_repos": 150,
     "public_gists": 21,
-    "followers": 5026,
+    "followers": 5027,
     "following": 17,
     "created_at": "2010-11-16T13:38:15Z",
     "updated_at": "2025-03-19T06:58:03Z"
@@ -103,9 +103,9 @@
     "hireable": null,
     "bio": "@laravel core member — created @pestphp, @laravel-zero, collision, larastan, pint, @openai for php, @phpinsights, termwind, and more.",
     "twitter_username": "enunomaduro",
-    "public_repos": 275,
+    "public_repos": 276,
     "public_gists": 23,
-    "followers": 7957,
+    "followers": 7959,
     "following": 4,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2025-03-12T13:38:58Z"
@@ -143,7 +143,7 @@
     "twitter_username": "themsaid",
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 5140,
+    "followers": 5139,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2024-10-22T09:53:36Z"
@@ -180,7 +180,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 490,
     "public_gists": 0,
-    "followers": 3148,
+    "followers": 3147,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -254,10 +254,10 @@
     "twitter_username": "GrahamJCampbell",
     "public_repos": 39,
     "public_gists": 7,
-    "followers": 6901,
+    "followers": 6902,
     "following": 144,
     "created_at": "2012-11-18T22:14:00Z",
-    "updated_at": "2025-03-04T20:44:11Z"
+    "updated_at": "2025-03-22T15:18:53Z"
   },
   {
     "name": "Caleb Porzio",
@@ -589,7 +589,7 @@
     "twitter_username": "claudiodekker",
     "public_repos": 34,
     "public_gists": 9,
-    "followers": 536,
+    "followers": 538,
     "following": 15,
     "created_at": "2012-05-18T12:06:13Z",
     "updated_at": "2025-01-31T13:22:07Z"
@@ -853,7 +853,7 @@
     "followers": 520,
     "following": 10,
     "created_at": "2013-12-30T17:01:15Z",
-    "updated_at": "2025-03-08T09:36:45Z"
+    "updated_at": "2025-03-22T18:16:50Z"
   },
   {
     "name": "Nicolas Grekas",
@@ -887,7 +887,7 @@
     "twitter_username": "nicolasgrekas",
     "public_repos": 110,
     "public_gists": 29,
-    "followers": 2000,
+    "followers": 1999,
     "following": 5,
     "created_at": "2010-04-14T09:44:17Z",
     "updated_at": "2025-03-02T07:44:07Z"
@@ -961,7 +961,7 @@
     "twitter_username": null,
     "public_repos": 48,
     "public_gists": 12,
-    "followers": 204,
+    "followers": 205,
     "following": 14,
     "created_at": "2013-02-27T11:50:57Z",
     "updated_at": "2025-03-04T11:12:18Z"
@@ -998,7 +998,7 @@
     "twitter_username": null,
     "public_repos": 177,
     "public_gists": 28,
-    "followers": 12149,
+    "followers": 12152,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2025-03-16T14:53:11Z"
@@ -1036,7 +1036,7 @@
     "twitter_username": "youyuxi",
     "public_repos": 197,
     "public_gists": 73,
-    "followers": 103540,
+    "followers": 103548,
     "following": 100,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2025-03-21T02:06:16Z"
@@ -1111,7 +1111,7 @@
     "twitter_username": "fabpot",
     "public_repos": 78,
     "public_gists": 12,
-    "followers": 13289,
+    "followers": 13287,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2025-03-20T11:27:19Z"
@@ -1186,7 +1186,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 66,
     "public_gists": 161,
-    "followers": 16908,
+    "followers": 16909,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2025-02-18T16:57:24Z"
@@ -1224,7 +1224,7 @@
     "twitter_username": null,
     "public_repos": 95,
     "public_gists": 49,
-    "followers": 3043,
+    "followers": 3042,
     "following": 91,
     "created_at": "2010-07-06T23:12:44Z",
     "updated_at": "2024-08-22T10:39:51Z"

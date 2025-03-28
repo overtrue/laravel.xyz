@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 31,
     "public_gists": 9,
-    "followers": 33748,
+    "followers": 33753,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2025-03-24T12:50:18Z"
@@ -68,7 +68,7 @@
     "twitter_username": "freekmurze",
     "public_repos": 150,
     "public_gists": 21,
-    "followers": 5028,
+    "followers": 5030,
     "following": 17,
     "created_at": "2010-11-16T13:38:15Z",
     "updated_at": "2025-03-19T06:58:03Z"
@@ -143,7 +143,7 @@
     "twitter_username": "themsaid",
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 5139,
+    "followers": 5138,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2024-10-22T09:53:36Z"
@@ -180,7 +180,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 490,
     "public_gists": 0,
-    "followers": 3149,
+    "followers": 3153,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -217,7 +217,7 @@
     "twitter_username": "driesvints",
     "public_repos": 7,
     "public_gists": 14,
-    "followers": 5275,
+    "followers": 5277,
     "following": 32,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2025-02-18T20:06:07Z"
@@ -254,7 +254,7 @@
     "twitter_username": "GrahamJCampbell",
     "public_repos": 39,
     "public_gists": 7,
-    "followers": 6903,
+    "followers": 6905,
     "following": 144,
     "created_at": "2012-11-18T22:14:00Z",
     "updated_at": "2025-03-22T15:18:53Z"
@@ -366,7 +366,7 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 67,
     "public_gists": 52,
-    "followers": 2162,
+    "followers": 2164,
     "following": 126,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2025-02-19T15:29:17Z"
@@ -666,7 +666,7 @@
     "followers": 1136,
     "following": 16,
     "created_at": "2010-12-23T15:39:26Z",
-    "updated_at": "2025-03-25T14:17:42Z"
+    "updated_at": "2025-03-27T20:52:27Z"
   },
   {
     "name": "Jordi Boggiano",
@@ -700,10 +700,10 @@
     "twitter_username": "seldaek",
     "public_repos": 265,
     "public_gists": 33,
-    "followers": 4601,
+    "followers": 4602,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
-    "updated_at": "2025-03-24T08:27:06Z"
+    "updated_at": "2025-03-27T15:50:42Z"
   },
   {
     "name": "Tim MacDonald",
@@ -737,10 +737,10 @@
     "twitter_username": "timacdonald87",
     "public_repos": 52,
     "public_gists": 5,
-    "followers": 1556,
+    "followers": 1557,
     "following": 1,
     "created_at": "2016-12-28T04:15:41Z",
-    "updated_at": "2025-03-24T23:30:48Z"
+    "updated_at": "2025-03-27T05:19:55Z"
   },
   {
     "name": "Caneco",
@@ -850,7 +850,7 @@
     "twitter_username": "alex_",
     "public_repos": 78,
     "public_gists": 66,
-    "followers": 520,
+    "followers": 521,
     "following": 10,
     "created_at": "2013-12-30T17:01:15Z",
     "updated_at": "2025-03-22T18:16:50Z"
@@ -998,7 +998,7 @@
     "twitter_username": null,
     "public_repos": 177,
     "public_gists": 28,
-    "followers": 12158,
+    "followers": 12161,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2025-03-16T14:53:11Z"
@@ -1036,10 +1036,10 @@
     "twitter_username": "youyuxi",
     "public_repos": 197,
     "public_gists": 73,
-    "followers": 103597,
+    "followers": 103606,
     "following": 100,
     "created_at": "2010-11-28T01:05:40Z",
-    "updated_at": "2025-03-21T02:06:16Z"
+    "updated_at": "2025-03-28T02:05:47Z"
   },
   {
     "name": "安正超",
@@ -1111,7 +1111,7 @@
     "twitter_username": "fabpot",
     "public_repos": 78,
     "public_gists": 12,
-    "followers": 13290,
+    "followers": 13286,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2025-03-20T11:27:19Z"
@@ -1186,7 +1186,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 66,
     "public_gists": 161,
-    "followers": 16915,
+    "followers": 16916,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2025-02-18T16:57:24Z"
@@ -1265,6 +1265,6 @@
     "followers": 214,
     "following": 3,
     "created_at": "2010-10-21T04:52:43Z",
-    "updated_at": "2025-02-27T12:26:17Z"
+    "updated_at": "2025-03-27T11:26:38Z"
   }
 ]

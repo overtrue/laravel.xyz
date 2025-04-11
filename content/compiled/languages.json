@@ -4545,6 +4545,7 @@
     ],
     "extensions": [
       ".kicad_sch",
+      ".kicad_sym",
       ".sch"
     ],
     "tm_scope": "source.pcb.schematic",

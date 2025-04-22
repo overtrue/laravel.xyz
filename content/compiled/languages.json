@@ -3368,6 +3368,18 @@
     "tm_scope": "source.hcl",
     "language_id": 144
   },
+  "HIP": {
+    "type": "programming",
+    "color": "#4F3A4F",
+    "extensions": [
+      ".hip"
+    ],
+    "tm_scope": "source.c++",
+    "ace_mode": "c_cpp",
+    "codemirror_mode": "clike",
+    "codemirror_mime_type": "text/x-c++src",
+    "language_id": 674379998
+  },
   "HLSL": {
     "type": "programming",
     "color": "#aace60",
@@ -7148,7 +7160,8 @@
       "python3",
       "py",
       "pypy",
-      "pypy3"
+      "pypy3",
+      "uv"
     ],
     "aliases": [
       "python3",
@@ -8003,7 +8016,8 @@
     "type": "programming",
     "extensions": [
       ".smt2",
-      ".smt"
+      ".smt",
+      ".z3"
     ],
     "interpreters": [
       "boolector",

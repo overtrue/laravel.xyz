@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 31,
     "public_gists": 9,
-    "followers": 33906,
+    "followers": 33911,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2025-04-22T14:05:10Z"
@@ -105,7 +105,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 278,
     "public_gists": 23,
-    "followers": 8107,
+    "followers": 8111,
     "following": 4,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2025-04-21T16:16:08Z"
@@ -143,7 +143,7 @@
     "twitter_username": "themsaid",
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 5154,
+    "followers": 5153,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2025-04-02T03:33:58Z"
@@ -180,7 +180,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 492,
     "public_gists": 0,
-    "followers": 3202,
+    "followers": 3204,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -217,7 +217,7 @@
     "twitter_username": "driesvints",
     "public_repos": 10,
     "public_gists": 14,
-    "followers": 5293,
+    "followers": 5295,
     "following": 32,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2025-02-18T20:06:07Z"
@@ -292,7 +292,7 @@
     "twitter_username": null,
     "public_repos": 89,
     "public_gists": 50,
-    "followers": 5302,
+    "followers": 5301,
     "following": 3,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2024-11-15T18:48:51Z"
@@ -366,10 +366,10 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 67,
     "public_gists": 52,
-    "followers": 2163,
+    "followers": 2162,
     "following": 126,
     "created_at": "2010-04-17T14:13:52Z",
-    "updated_at": "2025-04-21T06:12:59Z"
+    "updated_at": "2025-04-27T10:36:40Z"
   },
   {
     "name": "Tetiana Blindaruk",
@@ -815,7 +815,7 @@
     "followers": 3911,
     "following": 14,
     "created_at": "2011-05-23T08:11:19Z",
-    "updated_at": "2025-04-25T15:15:21Z"
+    "updated_at": "2025-04-27T13:58:11Z"
   },
   {
     "name": "Alex Vanderbist",
@@ -890,7 +890,7 @@
     "followers": 2009,
     "following": 5,
     "created_at": "2010-04-14T09:44:17Z",
-    "updated_at": "2025-03-02T07:44:07Z"
+    "updated_at": "2025-04-27T19:25:36Z"
   },
   {
     "name": "Jonathan Reinink",
@@ -998,7 +998,7 @@
     "twitter_username": null,
     "public_repos": 177,
     "public_gists": 28,
-    "followers": 12196,
+    "followers": 12197,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2025-04-22T00:57:47Z"
@@ -1036,7 +1036,7 @@
     "twitter_username": "youyuxi",
     "public_repos": 197,
     "public_gists": 73,
-    "followers": 103929,
+    "followers": 103932,
     "following": 100,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2025-04-10T00:13:20Z"
@@ -1074,7 +1074,7 @@
     "twitter_username": "overtrue666",
     "public_repos": 110,
     "public_gists": 29,
-    "followers": 7198,
+    "followers": 7197,
     "following": 241,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2025-03-27T01:25:04Z"
@@ -1149,7 +1149,7 @@
     "twitter_username": "malfaitrobin",
     "public_repos": 63,
     "public_gists": 42,
-    "followers": 1908,
+    "followers": 1909,
     "following": 169,
     "created_at": "2012-06-09T22:00:12Z",
     "updated_at": "2025-01-29T14:02:10Z"
@@ -1186,7 +1186,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 66,
     "public_gists": 161,
-    "followers": 16971,
+    "followers": 16973,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2025-04-09T00:51:05Z"
@@ -1224,10 +1224,10 @@
     "twitter_username": null,
     "public_repos": 95,
     "public_gists": 49,
-    "followers": 3041,
+    "followers": 3042,
     "following": 91,
     "created_at": "2010-07-06T23:12:44Z",
-    "updated_at": "2025-04-19T14:00:54Z"
+    "updated_at": "2025-04-27T15:25:48Z"
   },
   {
     "name": "Fred Delrieu",
@@ -1265,6 +1265,6 @@
     "followers": 216,
     "following": 3,
     "created_at": "2010-10-21T04:52:43Z",
-    "updated_at": "2025-03-27T11:26:38Z"
+    "updated_at": "2025-04-27T11:22:53Z"
   }
 ]

@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 31,
     "public_gists": 9,
-    "followers": 33925,
+    "followers": 33928,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2025-04-22T14:05:10Z"
@@ -105,7 +105,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 278,
     "public_gists": 23,
-    "followers": 8114,
+    "followers": 8117,
     "following": 4,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2025-04-28T12:22:52Z"
@@ -180,7 +180,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 492,
     "public_gists": 0,
-    "followers": 3206,
+    "followers": 3209,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -217,7 +217,7 @@
     "twitter_username": "driesvints",
     "public_repos": 10,
     "public_gists": 14,
-    "followers": 5296,
+    "followers": 5295,
     "following": 32,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2025-02-18T20:06:07Z"
@@ -292,7 +292,7 @@
     "twitter_username": null,
     "public_repos": 89,
     "public_gists": 50,
-    "followers": 5304,
+    "followers": 5305,
     "following": 3,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2024-11-15T18:48:51Z"
@@ -478,7 +478,7 @@
     "twitter_username": "LukeDowning19",
     "public_repos": 68,
     "public_gists": 6,
-    "followers": 558,
+    "followers": 557,
     "following": 0,
     "created_at": "2015-05-01T18:32:33Z",
     "updated_at": "2025-04-10T15:24:30Z"
@@ -515,7 +515,7 @@
     "twitter_username": "ericlbarnes",
     "public_repos": 55,
     "public_gists": 48,
-    "followers": 1781,
+    "followers": 1780,
     "following": 13,
     "created_at": "2009-08-18T16:49:21Z",
     "updated_at": "2024-10-07T17:27:01Z"
@@ -552,10 +552,10 @@
     "twitter_username": null,
     "public_repos": 83,
     "public_gists": 28,
-    "followers": 514,
-    "following": 205,
+    "followers": 513,
+    "following": 206,
     "created_at": "2011-09-26T14:44:55Z",
-    "updated_at": "2025-04-15T06:11:55Z"
+    "updated_at": "2025-04-30T17:22:10Z"
   },
   {
     "name": "Claudio Dekker",
@@ -812,7 +812,7 @@
     "twitter_username": null,
     "public_repos": 230,
     "public_gists": 50,
-    "followers": 3911,
+    "followers": 3914,
     "following": 14,
     "created_at": "2011-05-23T08:11:19Z",
     "updated_at": "2025-04-27T13:58:11Z"
@@ -887,7 +887,7 @@
     "twitter_username": "nicolasgrekas",
     "public_repos": 110,
     "public_gists": 29,
-    "followers": 2010,
+    "followers": 2012,
     "following": 5,
     "created_at": "2010-04-14T09:44:17Z",
     "updated_at": "2025-04-27T19:25:36Z"
@@ -924,7 +924,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 68,
-    "followers": 3239,
+    "followers": 3238,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2025-04-05T18:18:59Z"
@@ -998,7 +998,7 @@
     "twitter_username": null,
     "public_repos": 177,
     "public_gists": 28,
-    "followers": 12199,
+    "followers": 12203,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2025-04-28T16:59:01Z"
@@ -1027,19 +1027,19 @@
     "type": "User",
     "user_view_type": "public",
     "site_admin": false,
-    "company": null,
+    "company": "VoidZero",
     "blog": "http://evanyou.me",
     "location": "Singapore",
     "email": null,
     "hireable": null,
-    "bio": "Husband, father of two, independent OSS dev. @vuejs, @vitejs, @rolldown, and more. Connoisseur of sushi.",
+    "bio": "Founder @voidzero-dev, author of @vuejs and @vitejs. Connoisseur of sushi.",
     "twitter_username": "youyuxi",
     "public_repos": 197,
     "public_gists": 73,
-    "followers": 103941,
+    "followers": 103950,
     "following": 100,
     "created_at": "2010-11-28T01:05:40Z",
-    "updated_at": "2025-04-10T00:13:20Z"
+    "updated_at": "2025-04-30T04:00:55Z"
   },
   {
     "name": "安正超",
@@ -1074,7 +1074,7 @@
     "twitter_username": "overtrue666",
     "public_repos": 110,
     "public_gists": 29,
-    "followers": 7198,
+    "followers": 7199,
     "following": 241,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2025-03-27T01:25:04Z"
@@ -1111,7 +1111,7 @@
     "twitter_username": "fabpot",
     "public_repos": 78,
     "public_gists": 12,
-    "followers": 13295,
+    "followers": 13293,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2025-03-30T16:08:22Z"
@@ -1149,7 +1149,7 @@
     "twitter_username": "malfaitrobin",
     "public_repos": 63,
     "public_gists": 42,
-    "followers": 1914,
+    "followers": 1913,
     "following": 169,
     "created_at": "2012-06-09T22:00:12Z",
     "updated_at": "2025-01-29T14:02:10Z"
@@ -1186,7 +1186,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 66,
     "public_gists": 161,
-    "followers": 16976,
+    "followers": 16977,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2025-04-09T00:51:05Z"

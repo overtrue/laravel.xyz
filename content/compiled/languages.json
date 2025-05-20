@@ -891,6 +891,16 @@
     "ace_mode": "text",
     "language_id": 153503348
   },
+  "BuildStream": {
+    "type": "data",
+    "color": "#006bff",
+    "extensions": [
+      ".bst"
+    ],
+    "tm_scope": "source.yaml",
+    "ace_mode": "yaml",
+    "language_id": 84359046
+  },
   "C": {
     "type": "programming",
     "color": "#555555",

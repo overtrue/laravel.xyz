@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 31,
     "public_gists": 9,
-    "followers": 34039,
+    "followers": 34045,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2025-05-26T17:10:25Z"
@@ -68,7 +68,7 @@
     "twitter_username": "freekmurze",
     "public_repos": 150,
     "public_gists": 21,
-    "followers": 5059,
+    "followers": 5060,
     "following": 17,
     "created_at": "2010-11-16T13:38:15Z",
     "updated_at": "2025-05-17T15:25:51Z"
@@ -105,7 +105,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 280,
     "public_gists": 23,
-    "followers": 8187,
+    "followers": 8194,
     "following": 4,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2025-05-12T16:34:23Z"
@@ -180,7 +180,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 495,
     "public_gists": 0,
-    "followers": 3260,
+    "followers": 3263,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -254,7 +254,7 @@
     "twitter_username": "GrahamJCampbell",
     "public_repos": 42,
     "public_gists": 7,
-    "followers": 6929,
+    "followers": 6928,
     "following": 144,
     "created_at": "2012-11-18T22:14:00Z",
     "updated_at": "2025-05-12T23:17:19Z"
@@ -327,9 +327,9 @@
     "hireable": null,
     "bio": "CEO at @tighten. Podcaster (Laravel Podcast, Business of Laravel), open source maintainer, blogger, etc.",
     "twitter_username": "stauffermatt",
-    "public_repos": 109,
+    "public_repos": 107,
     "public_gists": 47,
-    "followers": 2272,
+    "followers": 2273,
     "following": 20,
     "created_at": "2009-11-11T16:01:24Z",
     "updated_at": "2025-05-10T19:54:31Z"
@@ -403,7 +403,7 @@
     "twitter_username": null,
     "public_repos": 33,
     "public_gists": 0,
-    "followers": 1165,
+    "followers": 1166,
     "following": 7,
     "created_at": "2015-05-31T15:34:11Z",
     "updated_at": "2025-01-15T19:24:41Z"
@@ -440,7 +440,7 @@
     "twitter_username": "crynobone",
     "public_repos": 175,
     "public_gists": 31,
-    "followers": 1672,
+    "followers": 1673,
     "following": 45,
     "created_at": "2009-12-28T10:34:03Z",
     "updated_at": "2025-03-13T01:00:10Z"
@@ -515,7 +515,7 @@
     "twitter_username": "ericlbarnes",
     "public_repos": 55,
     "public_gists": 48,
-    "followers": 1782,
+    "followers": 1783,
     "following": 13,
     "created_at": "2009-08-18T16:49:21Z",
     "updated_at": "2024-10-07T17:27:01Z"
@@ -552,10 +552,10 @@
     "twitter_username": null,
     "public_repos": 83,
     "public_gists": 28,
-    "followers": 518,
+    "followers": 517,
     "following": 209,
     "created_at": "2011-09-26T14:44:55Z",
-    "updated_at": "2025-04-30T17:22:10Z"
+    "updated_at": "2025-05-27T05:25:42Z"
   },
   {
     "name": "Claudio Dekker",
@@ -774,7 +774,7 @@
     "twitter_username": "caneco",
     "public_repos": 74,
     "public_gists": 2,
-    "followers": 845,
+    "followers": 847,
     "following": 13,
     "created_at": "2010-11-29T16:08:58Z",
     "updated_at": "2025-02-16T16:42:07Z"
@@ -853,7 +853,7 @@
     "followers": 519,
     "following": 10,
     "created_at": "2013-12-30T17:01:15Z",
-    "updated_at": "2025-05-23T10:31:14Z"
+    "updated_at": "2025-05-27T20:36:33Z"
   },
   {
     "name": "Nicolas Grekas",
@@ -924,7 +924,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 68,
-    "followers": 3246,
+    "followers": 3245,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2025-05-08T09:54:08Z"
@@ -998,7 +998,7 @@
     "twitter_username": null,
     "public_repos": 178,
     "public_gists": 28,
-    "followers": 12269,
+    "followers": 12271,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2025-04-28T16:59:01Z"
@@ -1036,7 +1036,7 @@
     "twitter_username": "youyuxi",
     "public_repos": 197,
     "public_gists": 73,
-    "followers": 104182,
+    "followers": 104194,
     "following": 100,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2025-05-23T21:54:05Z"
@@ -1074,10 +1074,10 @@
     "twitter_username": "overtrue666",
     "public_repos": 111,
     "public_gists": 29,
-    "followers": 7200,
+    "followers": 7201,
     "following": 241,
     "created_at": "2012-02-25T08:17:56Z",
-    "updated_at": "2025-05-17T00:37:53Z"
+    "updated_at": "2025-05-28T01:45:51Z"
   },
   {
     "name": "Fabien Potencier",
@@ -1149,7 +1149,7 @@
     "twitter_username": "malfaitrobin",
     "public_repos": 64,
     "public_gists": 42,
-    "followers": 1964,
+    "followers": 1962,
     "following": 169,
     "created_at": "2012-06-09T22:00:12Z",
     "updated_at": "2025-01-29T14:02:10Z"
@@ -1265,6 +1265,6 @@
     "followers": 216,
     "following": 3,
     "created_at": "2010-10-21T04:52:43Z",
-    "updated_at": "2025-04-27T11:22:53Z"
+    "updated_at": "2025-05-27T11:21:42Z"
   }
 ]

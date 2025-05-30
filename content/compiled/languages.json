@@ -9712,7 +9712,7 @@
     "extensions": [
       ".vy"
     ],
-    "color": "#2980b9",
+    "color": "#9F4CF2",
     "ace_mode": "text",
     "tm_scope": "source.vyper",
     "language_id": 1055641948

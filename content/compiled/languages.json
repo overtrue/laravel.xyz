@@ -8262,7 +8262,9 @@
   "SWIG": {
     "type": "programming",
     "extensions": [
-      ".i"
+      ".i",
+      ".swg",
+      ".swig"
     ],
     "tm_scope": "source.c++",
     "ace_mode": "c_cpp",

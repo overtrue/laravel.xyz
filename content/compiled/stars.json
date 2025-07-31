@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 9,
-    "followers": 34319,
+    "followers": 34320,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2025-07-25T14:05:30Z"
@@ -105,7 +105,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 284,
     "public_gists": 23,
-    "followers": 8444,
+    "followers": 8448,
     "following": 4,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2025-07-25T00:07:38Z"
@@ -143,10 +143,10 @@
     "twitter_username": "themsaid",
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 5172,
+    "followers": 5171,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
-    "updated_at": "2025-04-02T03:33:58Z"
+    "updated_at": "2025-07-30T07:23:26Z"
   },
   {
     "name": "Spatie",
@@ -180,7 +180,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 497,
     "public_gists": 0,
-    "followers": 3343,
+    "followers": 3344,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -217,7 +217,7 @@
     "twitter_username": "driesvints",
     "public_repos": 12,
     "public_gists": 14,
-    "followers": 5341,
+    "followers": 5342,
     "following": 32,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2025-07-26T23:39:41Z"
@@ -292,7 +292,7 @@
     "twitter_username": null,
     "public_repos": 90,
     "public_gists": 50,
-    "followers": 5381,
+    "followers": 5382,
     "following": 3,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2024-11-15T18:48:51Z"
@@ -329,10 +329,10 @@
     "twitter_username": "stauffermatt",
     "public_repos": 107,
     "public_gists": 47,
-    "followers": 2278,
+    "followers": 2279,
     "following": 20,
     "created_at": "2009-11-11T16:01:24Z",
-    "updated_at": "2025-07-12T21:35:29Z"
+    "updated_at": "2025-07-30T16:13:35Z"
   },
   {
     "name": "James Brooks",
@@ -366,7 +366,7 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 68,
     "public_gists": 52,
-    "followers": 2199,
+    "followers": 2200,
     "following": 130,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2025-07-26T10:16:44Z"
@@ -440,7 +440,7 @@
     "twitter_username": "crynobone",
     "public_repos": 175,
     "public_gists": 31,
-    "followers": 1696,
+    "followers": 1697,
     "following": 45,
     "created_at": "2009-12-28T10:34:03Z",
     "updated_at": "2025-07-17T00:57:02Z"
@@ -515,7 +515,7 @@
     "twitter_username": "ericlbarnes",
     "public_repos": 55,
     "public_gists": 48,
-    "followers": 1783,
+    "followers": 1784,
     "following": 13,
     "created_at": "2009-08-18T16:49:21Z",
     "updated_at": "2025-07-14T18:19:41Z"
@@ -663,7 +663,7 @@
     "twitter_username": "frankdejonge",
     "public_repos": 93,
     "public_gists": 38,
-    "followers": 1144,
+    "followers": 1145,
     "following": 16,
     "created_at": "2010-12-23T15:39:26Z",
     "updated_at": "2025-07-28T13:39:04Z"
@@ -700,10 +700,10 @@
     "twitter_username": "seldaek",
     "public_repos": 266,
     "public_gists": 33,
-    "followers": 4629,
+    "followers": 4630,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
-    "updated_at": "2025-07-26T14:45:22Z"
+    "updated_at": "2025-07-30T12:42:14Z"
   },
   {
     "name": "Tim MacDonald",
@@ -737,7 +737,7 @@
     "twitter_username": "timacdonald87",
     "public_repos": 52,
     "public_gists": 5,
-    "followers": 1604,
+    "followers": 1605,
     "following": 1,
     "created_at": "2016-12-28T04:15:41Z",
     "updated_at": "2025-04-24T10:51:20Z"
@@ -774,7 +774,7 @@
     "twitter_username": "caneco",
     "public_repos": 74,
     "public_gists": 2,
-    "followers": 860,
+    "followers": 862,
     "following": 13,
     "created_at": "2010-11-29T16:08:58Z",
     "updated_at": "2025-02-16T16:42:07Z"
@@ -815,7 +815,7 @@
     "followers": 3951,
     "following": 14,
     "created_at": "2011-05-23T08:11:19Z",
-    "updated_at": "2025-07-29T21:08:05Z"
+    "updated_at": "2025-07-30T10:34:20Z"
   },
   {
     "name": "Alex Vanderbist",
@@ -887,7 +887,7 @@
     "twitter_username": "nicolasgrekas",
     "public_repos": 112,
     "public_gists": 29,
-    "followers": 2036,
+    "followers": 2037,
     "following": 5,
     "created_at": "2010-04-14T09:44:17Z",
     "updated_at": "2025-05-10T14:15:41Z"
@@ -998,7 +998,7 @@
     "twitter_username": null,
     "public_repos": 178,
     "public_gists": 28,
-    "followers": 12385,
+    "followers": 12390,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2025-07-29T22:33:41Z"
@@ -1036,10 +1036,10 @@
     "twitter_username": "youyuxi",
     "public_repos": 198,
     "public_gists": 73,
-    "followers": 104859,
+    "followers": 104873,
     "following": 100,
     "created_at": "2010-11-28T01:05:40Z",
-    "updated_at": "2025-06-14T10:30:14Z"
+    "updated_at": "2025-07-30T13:37:23Z"
   },
   {
     "name": "安正超",
@@ -1072,9 +1072,9 @@
     "hireable": true,
     "bio": "Keep calm and coding.",
     "twitter_username": "overtrue666",
-    "public_repos": 111,
+    "public_repos": 112,
     "public_gists": 29,
-    "followers": 7214,
+    "followers": 7213,
     "following": 243,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2025-07-25T01:37:02Z"

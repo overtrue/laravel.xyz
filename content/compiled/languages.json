@@ -1009,6 +1009,18 @@
     "codemirror_mime_type": "text/x-haskell",
     "language_id": 45
   },
+  "C3": {
+    "type": "programming",
+    "color": "#2563eb",
+    "extensions": [
+      ".c3"
+    ],
+    "tm_scope": "source.c3",
+    "ace_mode": "c_cpp",
+    "codemirror_mode": "clike",
+    "codemirror_mime_type": "text/x-csrc",
+    "language_id": 769248603
+  },
   "CAP CDS": {
     "type": "programming",
     "tm_scope": "source.cds",
@@ -7489,6 +7501,21 @@
     "ace_mode": "rust",
     "tm_scope": "source.ron",
     "language_id": 587855233
+  },
+  "ROS Interface": {
+    "type": "data",
+    "color": "#22314e",
+    "aliases": [
+      "rosmsg"
+    ],
+    "ace_mode": "text",
+    "extensions": [
+      ".msg",
+      ".action",
+      ".srv"
+    ],
+    "tm_scope": "source.rosmsg",
+    "language_id": 809230569
   },
   "RPC": {
     "type": "programming",

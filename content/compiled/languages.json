@@ -2083,6 +2083,7 @@
       ".env.production",
       ".env.sample",
       ".env.staging",
+      ".env.template",
       ".env.test",
       ".env.testing"
     ],
@@ -9059,7 +9060,8 @@
     "type": "data",
     "color": "#9c4221",
     "extensions": [
-      ".toml"
+      ".toml",
+      ".toml.example"
     ],
     "filenames": [
       "Cargo.lock",

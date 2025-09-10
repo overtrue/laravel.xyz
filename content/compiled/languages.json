@@ -2721,7 +2721,8 @@
       "ftl"
     ],
     "extensions": [
-      ".ftl"
+      ".ftl",
+      ".ftlh"
     ],
     "tm_scope": "text.html.ftl",
     "ace_mode": "ftl",

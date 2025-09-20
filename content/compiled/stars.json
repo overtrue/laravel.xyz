@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 9,
-    "followers": 34577,
+    "followers": 34578,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2025-08-04T13:28:32Z"
@@ -68,7 +68,7 @@
     "twitter_username": "freekmurze",
     "public_repos": 152,
     "public_gists": 21,
-    "followers": 5091,
+    "followers": 5092,
     "following": 17,
     "created_at": "2010-11-16T13:38:15Z",
     "updated_at": "2025-09-18T21:59:39Z"
@@ -103,9 +103,9 @@
     "hireable": null,
     "bio": "staff software engineer at @laravel · speaker · content creator · created @pestphp, pint, pail, @larastan, @laravel-zero, @openai for php, @phpinsights, etc",
     "twitter_username": "enunomaduro",
-    "public_repos": 288,
+    "public_repos": 289,
     "public_gists": 23,
-    "followers": 8597,
+    "followers": 8601,
     "following": 4,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2025-09-07T00:41:40Z"
@@ -143,7 +143,7 @@
     "twitter_username": "themsaid",
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 5180,
+    "followers": 5182,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2025-09-05T12:16:26Z"
@@ -217,7 +217,7 @@
     "twitter_username": "driesvints",
     "public_repos": 12,
     "public_gists": 14,
-    "followers": 5361,
+    "followers": 5360,
     "following": 32,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2025-09-10T22:01:28Z"
@@ -257,7 +257,7 @@
     "followers": 6990,
     "following": 144,
     "created_at": "2012-11-18T22:14:00Z",
-    "updated_at": "2025-08-23T21:33:28Z"
+    "updated_at": "2025-09-19T20:08:03Z"
   },
   {
     "name": "Caleb Porzio",
@@ -292,7 +292,7 @@
     "twitter_username": null,
     "public_repos": 92,
     "public_gists": 50,
-    "followers": 5442,
+    "followers": 5443,
     "following": 3,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2025-08-30T20:58:32Z"
@@ -329,7 +329,7 @@
     "twitter_username": "stauffermatt",
     "public_repos": 107,
     "public_gists": 47,
-    "followers": 2286,
+    "followers": 2287,
     "following": 20,
     "created_at": "2009-11-11T16:01:24Z",
     "updated_at": "2025-08-02T00:08:36Z"
@@ -369,7 +369,7 @@
     "followers": 2229,
     "following": 130,
     "created_at": "2010-04-17T14:13:52Z",
-    "updated_at": "2025-09-02T10:07:18Z"
+    "updated_at": "2025-09-19T12:06:17Z"
   },
   {
     "name": "Tetiana Blindaruk",
@@ -403,7 +403,7 @@
     "twitter_username": null,
     "public_repos": 34,
     "public_gists": 0,
-    "followers": 1178,
+    "followers": 1179,
     "following": 7,
     "created_at": "2015-05-31T15:34:11Z",
     "updated_at": "2025-01-15T19:24:41Z"
@@ -440,7 +440,7 @@
     "twitter_username": "crynobone",
     "public_repos": 177,
     "public_gists": 31,
-    "followers": 1723,
+    "followers": 1724,
     "following": 45,
     "created_at": "2009-12-28T10:34:03Z",
     "updated_at": "2025-08-29T23:23:31Z"
@@ -626,7 +626,7 @@
     "twitter_username": "jessarchercodes",
     "public_repos": 82,
     "public_gists": 5,
-    "followers": 1916,
+    "followers": 1918,
     "following": 31,
     "created_at": "2013-07-09T22:40:40Z",
     "updated_at": "2025-09-16T07:33:32Z"
@@ -663,7 +663,7 @@
     "twitter_username": "frankdejonge",
     "public_repos": 93,
     "public_gists": 38,
-    "followers": 1142,
+    "followers": 1143,
     "following": 16,
     "created_at": "2010-12-23T15:39:26Z",
     "updated_at": "2025-09-13T07:44:31Z"
@@ -850,7 +850,7 @@
     "twitter_username": "alex_",
     "public_repos": 78,
     "public_gists": 67,
-    "followers": 523,
+    "followers": 522,
     "following": 10,
     "created_at": "2013-12-30T17:01:15Z",
     "updated_at": "2025-05-27T20:36:33Z"
@@ -998,7 +998,7 @@
     "twitter_username": null,
     "public_repos": 178,
     "public_gists": 28,
-    "followers": 12440,
+    "followers": 12441,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2025-09-18T22:34:55Z"
@@ -1036,7 +1036,7 @@
     "twitter_username": "youyuxi",
     "public_repos": 198,
     "public_gists": 73,
-    "followers": 105319,
+    "followers": 105328,
     "following": 100,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2025-09-12T10:40:05Z"
@@ -1111,7 +1111,7 @@
     "twitter_username": "fabpot",
     "public_repos": 79,
     "public_gists": 12,
-    "followers": 13309,
+    "followers": 13312,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2025-08-27T09:37:52Z"
@@ -1186,7 +1186,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 67,
     "public_gists": 161,
-    "followers": 17109,
+    "followers": 17111,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2025-08-29T18:49:31Z"

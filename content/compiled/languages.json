@@ -4849,6 +4849,9 @@
   "Lean 4": {
     "type": "programming",
     "group": "Lean",
+    "aliases": [
+      "lean4"
+    ],
     "extensions": [
       ".lean"
     ],

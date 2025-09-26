@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 32,
     "public_gists": 9,
-    "followers": 34603,
+    "followers": 34607,
     "following": 1,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2025-08-04T13:28:32Z"
@@ -105,7 +105,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 289,
     "public_gists": 23,
-    "followers": 8618,
+    "followers": 8622,
     "following": 4,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2025-09-07T00:41:40Z"
@@ -254,7 +254,7 @@
     "twitter_username": "GrahamJCampbell",
     "public_repos": 47,
     "public_gists": 7,
-    "followers": 6996,
+    "followers": 6995,
     "following": 144,
     "created_at": "2012-11-18T22:14:00Z",
     "updated_at": "2025-09-19T20:08:03Z"
@@ -292,7 +292,7 @@
     "twitter_username": null,
     "public_repos": 92,
     "public_gists": 50,
-    "followers": 5445,
+    "followers": 5447,
     "following": 3,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2025-08-30T20:58:32Z"
@@ -592,7 +592,7 @@
     "followers": 545,
     "following": 16,
     "created_at": "2012-05-18T12:06:13Z",
-    "updated_at": "2025-09-18T18:05:15Z"
+    "updated_at": "2025-09-25T07:06:06Z"
   },
   {
     "name": "Jess Archer",
@@ -698,9 +698,9 @@
     "hireable": null,
     "bio": "\r\n    Working on https://packagist.com and https://teamup.com - @composer lead - OSS wishlist: https://seld.be/wishlist\r\n",
     "twitter_username": "seldaek",
-    "public_repos": 266,
+    "public_repos": 267,
     "public_gists": 33,
-    "followers": 4652,
+    "followers": 4653,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2025-09-17T07:21:08Z"
@@ -735,7 +735,7 @@
     "hireable": null,
     "bio": "🐘 Core Team Member @laravel; 📦 Building packages for fun; 📣 Speaking, Blogging, Viming; ✌️ He/Him",
     "twitter_username": "timacdonald87",
-    "public_repos": 52,
+    "public_repos": 53,
     "public_gists": 5,
     "followers": 1626,
     "following": 1,
@@ -924,7 +924,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 68,
-    "followers": 3275,
+    "followers": 3276,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2025-09-01T13:08:57Z"
@@ -1036,7 +1036,7 @@
     "twitter_username": "youyuxi",
     "public_repos": 198,
     "public_gists": 73,
-    "followers": 105381,
+    "followers": 105397,
     "following": 100,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2025-09-12T10:40:05Z"
@@ -1074,7 +1074,7 @@
     "twitter_username": "overtrue666",
     "public_repos": 114,
     "public_gists": 29,
-    "followers": 7232,
+    "followers": 7234,
     "following": 244,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2025-09-18T22:55:45Z"
@@ -1111,7 +1111,7 @@
     "twitter_username": "fabpot",
     "public_repos": 79,
     "public_gists": 12,
-    "followers": 13318,
+    "followers": 13324,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2025-08-27T09:37:52Z"
@@ -1186,7 +1186,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 67,
     "public_gists": 161,
-    "followers": 17118,
+    "followers": 17117,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2025-08-29T18:49:31Z"

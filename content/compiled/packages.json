@@ -67,16 +67,16 @@
     "releases_url": "https://api.github.com/repos/laravel/framework/releases{/id}",
     "deployments_url": "https://api.github.com/repos/laravel/framework/deployments",
     "created_at": "2013-01-10T21:27:28Z",
-    "updated_at": "2025-10-03T23:28:23Z",
-    "pushed_at": "2025-10-03T21:17:17Z",
+    "updated_at": "2025-10-04T23:32:10Z",
+    "pushed_at": "2025-10-04T23:32:04Z",
     "git_url": "git://github.com/laravel/framework.git",
     "ssh_url": "git@github.com:laravel/framework.git",
     "clone_url": "https://github.com/laravel/framework.git",
     "svn_url": "https://github.com/laravel/framework",
     "homepage": "https://laravel.com",
-    "size": 93323,
-    "stargazers_count": 34133,
-    "watchers_count": 34133,
+    "size": 93347,
+    "stargazers_count": 34128,
+    "watchers_count": 34128,
     "language": "PHP",
     "has_issues": true,
     "has_projects": false,
@@ -84,11 +84,11 @@
     "has_wiki": false,
     "has_pages": false,
     "has_discussions": true,
-    "forks_count": 11573,
+    "forks_count": 11575,
     "mirror_url": null,
     "archived": false,
     "disabled": false,
-    "open_issues_count": 100,
+    "open_issues_count": 101,
     "license": {
       "key": "mit",
       "name": "MIT License",
@@ -105,9 +105,9 @@
       "php"
     ],
     "visibility": "public",
-    "forks": 11573,
-    "open_issues": 100,
-    "watchers": 34133,
+    "forks": 11575,
+    "open_issues": 101,
+    "watchers": 34128,
     "default_branch": "12.x",
     "permissions": {
       "admin": false,
@@ -139,8 +139,8 @@
       "user_view_type": "public",
       "site_admin": false
     },
-    "network_count": 11573,
-    "subscribers_count": 954,
+    "network_count": 11575,
+    "subscribers_count": 953,
     "language_color": "#4F5D95"
   },
   {
@@ -284,7 +284,7 @@
       "site_admin": false
     },
     "network_count": 305,
-    "subscribers_count": 48,
+    "subscribers_count": 47,
     "language_color": "#4F5D95"
   },
   {
@@ -428,7 +428,7 @@
       "site_admin": false
     },
     "network_count": 786,
-    "subscribers_count": 82,
+    "subscribers_count": 81,
     "language_color": "#4F5D95"
   },
   {
@@ -571,7 +571,7 @@
       "site_admin": false
     },
     "network_count": 957,
-    "subscribers_count": 163,
+    "subscribers_count": 162,
     "language_color": "#4F5D95"
   },
   {
@@ -642,7 +642,7 @@
     "releases_url": "https://api.github.com/repos/laravel/scout/releases{/id}",
     "deployments_url": "https://api.github.com/repos/laravel/scout/deployments",
     "created_at": "2016-06-29T22:11:40Z",
-    "updated_at": "2025-10-04T01:09:47Z",
+    "updated_at": "2025-10-04T11:39:19Z",
     "pushed_at": "2025-09-15T14:54:03Z",
     "git_url": "git://github.com/laravel/scout.git",
     "ssh_url": "git@github.com:laravel/scout.git",
@@ -650,8 +650,8 @@
     "svn_url": "https://github.com/laravel/scout",
     "homepage": "https://laravel.com/docs/scout",
     "size": 1023,
-    "stargazers_count": 1632,
-    "watchers_count": 1632,
+    "stargazers_count": 1633,
+    "watchers_count": 1633,
     "language": "PHP",
     "has_issues": true,
     "has_projects": false,
@@ -683,7 +683,7 @@
     "visibility": "public",
     "forks": 358,
     "open_issues": 5,
-    "watchers": 1632,
+    "watchers": 1633,
     "default_branch": "10.x",
     "permissions": {
       "admin": false,
@@ -716,7 +716,7 @@
       "site_admin": false
     },
     "network_count": 358,
-    "subscribers_count": 37,
+    "subscribers_count": 36,
     "language_color": "#4F5D95"
   },
   {
@@ -787,14 +787,14 @@
     "releases_url": "https://api.github.com/repos/laravel/horizon/releases{/id}",
     "deployments_url": "https://api.github.com/repos/laravel/horizon/deployments",
     "created_at": "2017-07-14T15:26:27Z",
-    "updated_at": "2025-10-03T19:49:00Z",
-    "pushed_at": "2025-10-03T11:29:18Z",
+    "updated_at": "2025-10-04T23:36:44Z",
+    "pushed_at": "2025-10-04T23:36:40Z",
     "git_url": "git://github.com/laravel/horizon.git",
     "ssh_url": "git@github.com:laravel/horizon.git",
     "clone_url": "https://github.com/laravel/horizon.git",
     "svn_url": "https://github.com/laravel/horizon",
     "homepage": "https://laravel.com/docs/horizon",
-    "size": 27211,
+    "size": 27212,
     "stargazers_count": 4019,
     "watchers_count": 4019,
     "language": "PHP",
@@ -808,7 +808,7 @@
     "mirror_url": null,
     "archived": false,
     "disabled": false,
-    "open_issues_count": 9,
+    "open_issues_count": 8,
     "license": {
       "key": "mit",
       "name": "MIT License",
@@ -825,7 +825,7 @@
     ],
     "visibility": "public",
     "forks": 693,
-    "open_issues": 9,
+    "open_issues": 8,
     "watchers": 4019,
     "default_branch": "5.x",
     "permissions": {
@@ -859,7 +859,7 @@
       "site_admin": false
     },
     "network_count": 693,
-    "subscribers_count": 83,
+    "subscribers_count": 82,
     "language_color": "#4F5D95"
   },
   {
@@ -1005,7 +1005,7 @@
       "site_admin": false
     },
     "network_count": 169,
-    "subscribers_count": 39,
+    "subscribers_count": 38,
     "language_color": "#4F5D95"
   },
   {
@@ -1128,7 +1128,7 @@
     },
     "temp_clone_token": "",
     "network_count": 232,
-    "subscribers_count": 36,
+    "subscribers_count": 35,
     "language_color": "#4F5D95"
   },
   {
@@ -1280,7 +1280,7 @@
       "site_admin": false
     },
     "network_count": 197,
-    "subscribers_count": 59,
+    "subscribers_count": 58,
     "language_color": "#4F5D95"
   },
   {
@@ -1351,7 +1351,7 @@
     "releases_url": "https://api.github.com/repos/spatie/image-optimizer/releases{/id}",
     "deployments_url": "https://api.github.com/repos/spatie/image-optimizer/deployments",
     "created_at": "2017-07-02T18:33:09Z",
-    "updated_at": "2025-10-03T22:22:02Z",
+    "updated_at": "2025-10-04T13:57:43Z",
     "pushed_at": "2025-09-08T08:54:56Z",
     "git_url": "git://github.com/spatie/image-optimizer.git",
     "ssh_url": "git@github.com:spatie/image-optimizer.git",
@@ -1359,8 +1359,8 @@
     "svn_url": "https://github.com/spatie/image-optimizer",
     "homepage": "https://freek.dev/797-easily-optimize-images-using-php-and-some-binaries",
     "size": 7899,
-    "stargazers_count": 2842,
-    "watchers_count": 2842,
+    "stargazers_count": 2841,
+    "watchers_count": 2841,
     "language": "PHP",
     "has_issues": true,
     "has_projects": false,
@@ -1395,7 +1395,7 @@
     "visibility": "public",
     "forks": 220,
     "open_issues": 2,
-    "watchers": 2842,
+    "watchers": 2841,
     "default_branch": "main",
     "permissions": {
       "admin": false,
@@ -1428,7 +1428,7 @@
       "site_admin": false
     },
     "network_count": 220,
-    "subscribers_count": 58,
+    "subscribers_count": 57,
     "language_color": "#4F5D95"
   },
   {
@@ -1499,7 +1499,7 @@
     "releases_url": "https://api.github.com/repos/spatie/laravel-activitylog/releases{/id}",
     "deployments_url": "https://api.github.com/repos/spatie/laravel-activitylog/deployments",
     "created_at": "2016-06-23T12:17:12Z",
-    "updated_at": "2025-10-04T01:09:46Z",
+    "updated_at": "2025-10-04T07:36:40Z",
     "pushed_at": "2025-10-04T00:17:24Z",
     "git_url": "git://github.com/spatie/laravel-activitylog.git",
     "ssh_url": "git@github.com:spatie/laravel-activitylog.git",
@@ -1507,8 +1507,8 @@
     "svn_url": "https://github.com/spatie/laravel-activitylog",
     "homepage": "https://docs.spatie.be/laravel-activitylog",
     "size": 1996,
-    "stargazers_count": 5648,
-    "watchers_count": 5648,
+    "stargazers_count": 5649,
+    "watchers_count": 5649,
     "language": "PHP",
     "has_issues": true,
     "has_projects": false,
@@ -1541,7 +1541,7 @@
     "visibility": "public",
     "forks": 737,
     "open_issues": 13,
-    "watchers": 5648,
+    "watchers": 5649,
     "default_branch": "main",
     "permissions": {
       "admin": false,
@@ -1574,7 +1574,7 @@
       "site_admin": false
     },
     "network_count": 737,
-    "subscribers_count": 89,
+    "subscribers_count": 88,
     "language_color": "#4F5D95"
   },
   {
@@ -1645,7 +1645,7 @@
     "releases_url": "https://api.github.com/repos/spatie/laravel-permission/releases{/id}",
     "deployments_url": "https://api.github.com/repos/spatie/laravel-permission/deployments",
     "created_at": "2015-09-14T22:19:38Z",
-    "updated_at": "2025-10-04T01:09:44Z",
+    "updated_at": "2025-10-04T15:56:13Z",
     "pushed_at": "2025-10-02T19:19:18Z",
     "git_url": "git://github.com/spatie/laravel-permission.git",
     "ssh_url": "git@github.com:spatie/laravel-permission.git",
@@ -1719,7 +1719,7 @@
       "site_admin": false
     },
     "network_count": 1809,
-    "subscribers_count": 191,
+    "subscribers_count": 190,
     "language_color": "#4F5D95"
   },
   {
@@ -1865,7 +1865,7 @@
       "site_admin": false
     },
     "network_count": 289,
-    "subscribers_count": 17,
+    "subscribers_count": 16,
     "language_color": "#4F5D95"
   },
   {
@@ -2011,7 +2011,7 @@
       "site_admin": false
     },
     "network_count": 145,
-    "subscribers_count": 29,
+    "subscribers_count": 28,
     "language_color": "#4F5D95"
   },
   {
@@ -2134,7 +2134,7 @@
     },
     "temp_clone_token": "",
     "network_count": 176,
-    "subscribers_count": 35,
+    "subscribers_count": 34,
     "language_color": "#4F5D95"
   },
   {
@@ -2205,7 +2205,7 @@
     "releases_url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/releases{/id}",
     "deployments_url": "https://api.github.com/repos/barryvdh/laravel-ide-helper/deployments",
     "created_at": "2013-03-10T00:12:55Z",
-    "updated_at": "2025-10-03T05:19:57Z",
+    "updated_at": "2025-10-04T17:36:44Z",
     "pushed_at": "2025-10-01T13:12:27Z",
     "git_url": "git://github.com/barryvdh/laravel-ide-helper.git",
     "ssh_url": "git@github.com:barryvdh/laravel-ide-helper.git",
@@ -2213,8 +2213,8 @@
     "svn_url": "https://github.com/barryvdh/laravel-ide-helper",
     "homepage": "",
     "size": 1691,
-    "stargazers_count": 14734,
-    "watchers_count": 14734,
+    "stargazers_count": 14733,
+    "watchers_count": 14733,
     "language": "PHP",
     "has_issues": true,
     "has_projects": false,
@@ -2245,7 +2245,7 @@
     "visibility": "public",
     "forks": 1187,
     "open_issues": 190,
-    "watchers": 14734,
+    "watchers": 14733,
     "default_branch": "master",
     "permissions": {
       "admin": false,
@@ -2256,7 +2256,7 @@
     },
     "temp_clone_token": "",
     "network_count": 1187,
-    "subscribers_count": 258,
+    "subscribers_count": 257,
     "language_color": "#4F5D95"
   },
   {
@@ -2327,7 +2327,7 @@
     "releases_url": "https://api.github.com/repos/mockery/mockery/releases{/id}",
     "deployments_url": "https://api.github.com/repos/mockery/mockery/deployments",
     "created_at": "2009-02-25T19:25:09Z",
-    "updated_at": "2025-10-02T15:45:33Z",
+    "updated_at": "2025-10-04T13:56:54Z",
     "pushed_at": "2025-07-22T15:53:46Z",
     "git_url": "git://github.com/mockery/mockery.git",
     "ssh_url": "git@github.com:mockery/mockery.git",
@@ -2335,8 +2335,8 @@
     "svn_url": "https://github.com/mockery/mockery",
     "homepage": "http://docs.mockery.io/en/stable/",
     "size": 89448,
-    "stargazers_count": 10725,
-    "watchers_count": 10725,
+    "stargazers_count": 10723,
+    "watchers_count": 10723,
     "language": "PHP",
     "has_issues": true,
     "has_projects": false,
@@ -2348,7 +2348,7 @@
     "mirror_url": null,
     "archived": false,
     "disabled": false,
-    "open_issues_count": 117,
+    "open_issues_count": 118,
     "license": {
       "key": "bsd-3-clause",
       "name": "BSD 3-Clause \"New\" or \"Revised\" License",
@@ -2370,8 +2370,8 @@
     ],
     "visibility": "public",
     "forks": 467,
-    "open_issues": 117,
-    "watchers": 10725,
+    "open_issues": 118,
+    "watchers": 10723,
     "default_branch": "1.6.x",
     "permissions": {
       "admin": false,
@@ -2404,7 +2404,7 @@
       "site_admin": false
     },
     "network_count": 467,
-    "subscribers_count": 72,
+    "subscribers_count": 71,
     "language_color": "#4F5D95"
   },
   {
@@ -2475,7 +2475,7 @@
     "releases_url": "https://api.github.com/repos/guzzle/guzzle/releases{/id}",
     "deployments_url": "https://api.github.com/repos/guzzle/guzzle/deployments",
     "created_at": "2011-02-28T02:44:05Z",
-    "updated_at": "2025-10-03T12:06:04Z",
+    "updated_at": "2025-10-04T13:56:56Z",
     "pushed_at": "2025-08-23T22:37:29Z",
     "git_url": "git://github.com/guzzle/guzzle.git",
     "ssh_url": "git@github.com:guzzle/guzzle.git",
@@ -2483,8 +2483,8 @@
     "svn_url": "https://github.com/guzzle/guzzle",
     "homepage": "https://docs.guzzlephp.org/",
     "size": 10139,
-    "stargazers_count": 23414,
-    "watchers_count": 23414,
+    "stargazers_count": 23413,
+    "watchers_count": 23413,
     "language": "PHP",
     "has_issues": true,
     "has_projects": false,
@@ -2520,7 +2520,7 @@
     "visibility": "public",
     "forks": 2386,
     "open_issues": 28,
-    "watchers": 23414,
+    "watchers": 23413,
     "default_branch": "7.10",
     "permissions": {
       "admin": false,
@@ -2553,7 +2553,7 @@
       "site_admin": false
     },
     "network_count": 2386,
-    "subscribers_count": 447,
+    "subscribers_count": 446,
     "language_color": "#4F5D95"
   },
   {
@@ -2700,7 +2700,7 @@
       "site_admin": false
     },
     "network_count": 983,
-    "subscribers_count": 466,
+    "subscribers_count": 465,
     "language_color": "#4F5D95"
   },
   {
@@ -2771,7 +2771,7 @@
     "releases_url": "https://api.github.com/repos/Intervention/image/releases{/id}",
     "deployments_url": "https://api.github.com/repos/Intervention/image/deployments",
     "created_at": "2013-01-19T15:05:32Z",
-    "updated_at": "2025-10-03T22:20:02Z",
+    "updated_at": "2025-10-04T22:45:58Z",
     "pushed_at": "2025-09-30T04:51:22Z",
     "git_url": "git://github.com/Intervention/image.git",
     "ssh_url": "git@github.com:Intervention/image.git",
@@ -2779,8 +2779,8 @@
     "svn_url": "https://github.com/Intervention/image",
     "homepage": "https://image.intervention.io",
     "size": 5292,
-    "stargazers_count": 14236,
-    "watchers_count": 14236,
+    "stargazers_count": 14234,
+    "watchers_count": 14234,
     "language": "PHP",
     "has_issues": true,
     "has_projects": false,
@@ -2788,7 +2788,7 @@
     "has_wiki": false,
     "has_pages": false,
     "has_discussions": false,
-    "forks_count": 1503,
+    "forks_count": 1502,
     "mirror_url": null,
     "archived": false,
     "disabled": false,
@@ -2811,9 +2811,9 @@
       "php"
     ],
     "visibility": "public",
-    "forks": 1503,
+    "forks": 1502,
     "open_issues": 19,
-    "watchers": 14236,
+    "watchers": 14234,
     "default_branch": "develop",
     "permissions": {
       "admin": false,
@@ -2845,8 +2845,8 @@
       "user_view_type": "public",
       "site_admin": false
     },
-    "network_count": 1503,
-    "subscribers_count": 271,
+    "network_count": 1502,
+    "subscribers_count": 270,
     "language_color": "#4F5D95"
   },
   {
@@ -2917,7 +2917,7 @@
     "releases_url": "https://api.github.com/repos/SpartnerNL/Laravel-Excel/releases{/id}",
     "deployments_url": "https://api.github.com/repos/SpartnerNL/Laravel-Excel/deployments",
     "created_at": "2013-11-09T15:28:40Z",
-    "updated_at": "2025-10-03T05:22:13Z",
+    "updated_at": "2025-10-04T17:34:27Z",
     "pushed_at": "2025-09-05T09:00:09Z",
     "git_url": "git://github.com/SpartnerNL/Laravel-Excel.git",
     "ssh_url": "git@github.com:SpartnerNL/Laravel-Excel.git",
@@ -2925,8 +2925,8 @@
     "svn_url": "https://github.com/SpartnerNL/Laravel-Excel",
     "homepage": "https://laravel-excel.com",
     "size": 3282,
-    "stargazers_count": 12574,
-    "watchers_count": 12574,
+    "stargazers_count": 12573,
+    "watchers_count": 12573,
     "language": "PHP",
     "has_issues": true,
     "has_projects": true,
@@ -2961,7 +2961,7 @@
     "visibility": "public",
     "forks": 1962,
     "open_issues": 5,
-    "watchers": 12574,
+    "watchers": 12573,
     "default_branch": "3.1",
     "permissions": {
       "admin": false,
@@ -2994,7 +2994,7 @@
       "site_admin": false
     },
     "network_count": 1962,
-    "subscribers_count": 225,
+    "subscribers_count": 224,
     "language_color": "#4F5D95"
   },
   {
@@ -3133,7 +3133,7 @@
     },
     "temp_clone_token": "",
     "network_count": 241,
-    "subscribers_count": 37,
+    "subscribers_count": 36,
     "language_color": "#4F5D95"
   },
   {
@@ -3204,7 +3204,7 @@
     "releases_url": "https://api.github.com/repos/overtrue/easy-sms/releases{/id}",
     "deployments_url": "https://api.github.com/repos/overtrue/easy-sms/deployments",
     "created_at": "2017-03-09T13:26:10Z",
-    "updated_at": "2025-09-30T01:41:49Z",
+    "updated_at": "2025-10-04T22:46:09Z",
     "pushed_at": "2025-09-02T03:32:24Z",
     "git_url": "git://github.com/overtrue/easy-sms.git",
     "ssh_url": "git@github.com:overtrue/easy-sms.git",
@@ -3212,8 +3212,8 @@
     "svn_url": "https://github.com/overtrue/easy-sms",
     "homepage": "",
     "size": 461,
-    "stargazers_count": 3281,
-    "watchers_count": 3281,
+    "stargazers_count": 3278,
+    "watchers_count": 3278,
     "language": "PHP",
     "has_issues": true,
     "has_projects": true,
@@ -3245,7 +3245,7 @@
     "visibility": "public",
     "forks": 561,
     "open_issues": 27,
-    "watchers": 3281,
+    "watchers": 3278,
     "default_branch": "master",
     "permissions": {
       "admin": false,
@@ -3256,7 +3256,7 @@
     },
     "temp_clone_token": "",
     "network_count": 561,
-    "subscribers_count": 76,
+    "subscribers_count": 75,
     "language_color": "#4F5D95"
   },
   {
@@ -3374,7 +3374,7 @@
     },
     "temp_clone_token": "",
     "network_count": 53,
-    "subscribers_count": 6,
+    "subscribers_count": 5,
     "language_color": "#4F5D95"
   },
   {
@@ -3500,7 +3500,7 @@
     },
     "temp_clone_token": "",
     "network_count": 9,
-    "subscribers_count": 2,
+    "subscribers_count": 1,
     "language_color": "#4F5D95"
   },
   {
@@ -3625,7 +3625,7 @@
     },
     "temp_clone_token": "",
     "network_count": 138,
-    "subscribers_count": 23,
+    "subscribers_count": 22,
     "language_color": "#4F5D95"
   },
   {
@@ -3747,7 +3747,7 @@
     },
     "temp_clone_token": "",
     "network_count": 146,
-    "subscribers_count": 23,
+    "subscribers_count": 22,
     "language_color": "#4F5D95"
   },
   {
@@ -3869,7 +3869,7 @@
     },
     "temp_clone_token": "",
     "network_count": 4,
-    "subscribers_count": 2,
+    "subscribers_count": 1,
     "language_color": "#4F5D95"
   },
   {
@@ -4106,7 +4106,7 @@
       "temp_clone_token": ""
     },
     "network_count": 19,
-    "subscribers_count": 2,
+    "subscribers_count": 1,
     "language_color": "#4F5D95"
   },
   {
@@ -4344,7 +4344,7 @@
       "temp_clone_token": ""
     },
     "network_count": 1,
-    "subscribers_count": 2,
+    "subscribers_count": 1,
     "language_color": "#4F5D95"
   },
   {
@@ -4582,7 +4582,7 @@
       "temp_clone_token": ""
     },
     "network_count": 5,
-    "subscribers_count": 2,
+    "subscribers_count": 1,
     "language_color": "#4F5D95"
   },
   {
@@ -4825,7 +4825,7 @@
       "temp_clone_token": ""
     },
     "network_count": 1,
-    "subscribers_count": 2,
+    "subscribers_count": 1,
     "language_color": "#4F5D95"
   },
   {
@@ -4941,7 +4941,7 @@
     },
     "temp_clone_token": "",
     "network_count": 21,
-    "subscribers_count": 7,
+    "subscribers_count": 6,
     "language_color": "#4F5D95"
   },
   {
@@ -5064,7 +5064,7 @@
     },
     "temp_clone_token": "",
     "network_count": 48,
-    "subscribers_count": 10,
+    "subscribers_count": 9,
     "language_color": "#4F5D95"
   },
   {
@@ -5135,7 +5135,7 @@
     "releases_url": "https://api.github.com/repos/jenssegers/agent/releases{/id}",
     "deployments_url": "https://api.github.com/repos/jenssegers/agent/deployments",
     "created_at": "2013-08-10T09:19:59Z",
-    "updated_at": "2025-10-02T14:15:39Z",
+    "updated_at": "2025-10-04T13:56:54Z",
     "pushed_at": "2024-08-05T12:34:44Z",
     "git_url": "git://github.com/jenssegers/agent.git",
     "ssh_url": "git@github.com:jenssegers/agent.git",
@@ -5143,8 +5143,8 @@
     "svn_url": "https://github.com/jenssegers/agent",
     "homepage": "https://jenssegers.com",
     "size": 232,
-    "stargazers_count": 4686,
-    "watchers_count": 4686,
+    "stargazers_count": 4685,
+    "watchers_count": 4685,
     "language": "PHP",
     "has_issues": true,
     "has_projects": true,
@@ -5152,7 +5152,7 @@
     "has_wiki": true,
     "has_pages": false,
     "has_discussions": false,
-    "forks_count": 507,
+    "forks_count": 508,
     "mirror_url": null,
     "archived": false,
     "disabled": false,
@@ -5176,9 +5176,9 @@
       "user-agent"
     ],
     "visibility": "public",
-    "forks": 507,
+    "forks": 508,
     "open_issues": 84,
-    "watchers": 4686,
+    "watchers": 4685,
     "default_branch": "master",
     "permissions": {
       "admin": false,
@@ -5188,8 +5188,8 @@
       "pull": false
     },
     "temp_clone_token": "",
-    "network_count": 507,
-    "subscribers_count": 89,
+    "network_count": 508,
+    "subscribers_count": 88,
     "language_color": "#4F5D95"
   },
   {
@@ -5307,7 +5307,7 @@
     },
     "temp_clone_token": "",
     "network_count": 53,
-    "subscribers_count": 6,
+    "subscribers_count": 5,
     "language_color": "#4F5D95"
   },
   {
@@ -5641,7 +5641,7 @@
       "default_branch": "master"
     },
     "network_count": 337,
-    "subscribers_count": 17,
+    "subscribers_count": 16,
     "language_color": "#4F5D95"
   },
   {
@@ -5713,7 +5713,7 @@
     "deployments_url": "https://api.github.com/repos/thephpleague/commonmark/deployments",
     "created_at": "2014-09-07T19:37:12Z",
     "updated_at": "2025-09-22T16:55:56Z",
-    "pushed_at": "2025-10-04T00:07:54Z",
+    "pushed_at": "2025-10-05T00:08:49Z",
     "git_url": "git://github.com/thephpleague/commonmark.git",
     "ssh_url": "git@github.com:thephpleague/commonmark.git",
     "clone_url": "https://github.com/thephpleague/commonmark.git",
@@ -5788,7 +5788,7 @@
       "site_admin": false
     },
     "network_count": 200,
-    "subscribers_count": 36,
+    "subscribers_count": 35,
     "language_color": "#4F5D95"
   },
   {
@@ -5859,7 +5859,7 @@
     "releases_url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/releases{/id}",
     "deployments_url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/deployments",
     "created_at": "2015-06-18T22:17:33Z",
-    "updated_at": "2025-09-26T06:36:11Z",
+    "updated_at": "2025-10-04T14:09:58Z",
     "pushed_at": "2025-08-12T15:43:45Z",
     "git_url": "git://github.com/darylldoyle/svg-sanitizer.git",
     "ssh_url": "git@github.com:darylldoyle/svg-sanitizer.git",
@@ -5867,8 +5867,8 @@
     "svn_url": "https://github.com/darylldoyle/svg-sanitizer",
     "homepage": "",
     "size": 369,
-    "stargazers_count": 522,
-    "watchers_count": 522,
+    "stargazers_count": 521,
+    "watchers_count": 521,
     "language": "PHP",
     "has_issues": true,
     "has_projects": true,
@@ -5901,7 +5901,7 @@
     "visibility": "public",
     "forks": 68,
     "open_issues": 24,
-    "watchers": 522,
+    "watchers": 521,
     "default_branch": "master",
     "permissions": {
       "admin": false,
@@ -6004,7 +6004,7 @@
     "mirror_url": null,
     "archived": false,
     "disabled": false,
-    "open_issues_count": 95,
+    "open_issues_count": 96,
     "license": {
       "key": "mit",
       "name": "MIT License",
@@ -6023,7 +6023,7 @@
     ],
     "visibility": "public",
     "forks": 844,
-    "open_issues": 95,
+    "open_issues": 96,
     "watchers": 13510,
     "default_branch": "3.x",
     "permissions": {
@@ -6057,7 +6057,7 @@
       "site_admin": false
     },
     "network_count": 844,
-    "subscribers_count": 169,
+    "subscribers_count": 168,
     "language_color": "#4F5D95"
   },
   {
@@ -6128,7 +6128,7 @@
     "releases_url": "https://api.github.com/repos/Seldaek/monolog/releases{/id}",
     "deployments_url": "https://api.github.com/repos/Seldaek/monolog/deployments",
     "created_at": "2011-02-17T02:07:15Z",
-    "updated_at": "2025-10-04T01:09:34Z",
+    "updated_at": "2025-10-05T00:44:28Z",
     "pushed_at": "2025-10-01T13:11:05Z",
     "git_url": "git://github.com/Seldaek/monolog.git",
     "ssh_url": "git@github.com:Seldaek/monolog.git",
@@ -6136,8 +6136,8 @@
     "svn_url": "https://github.com/Seldaek/monolog",
     "homepage": "https://seldaek.github.io/monolog/",
     "size": 4858,
-    "stargazers_count": 21326,
-    "watchers_count": 21326,
+    "stargazers_count": 21325,
+    "watchers_count": 21325,
     "language": "PHP",
     "has_issues": true,
     "has_projects": false,
@@ -6170,7 +6170,7 @@
     "visibility": "public",
     "forks": 1904,
     "open_issues": 55,
-    "watchers": 21326,
+    "watchers": 21325,
     "default_branch": "main",
     "permissions": {
       "admin": false,
@@ -6181,7 +6181,7 @@
     },
     "temp_clone_token": "",
     "network_count": 1904,
-    "subscribers_count": 316,
+    "subscribers_count": 315,
     "language_color": "#4F5D95"
   },
   {
@@ -6252,7 +6252,7 @@
     "releases_url": "https://api.github.com/repos/CarbonPHP/carbon/releases{/id}",
     "deployments_url": "https://api.github.com/repos/CarbonPHP/carbon/deployments",
     "created_at": "2021-11-04T22:54:54Z",
-    "updated_at": "2025-10-02T12:20:22Z",
+    "updated_at": "2025-10-05T01:21:00Z",
     "pushed_at": "2025-10-02T12:20:11Z",
     "git_url": "git://github.com/CarbonPHP/carbon.git",
     "ssh_url": "git@github.com:CarbonPHP/carbon.git",
@@ -6260,8 +6260,8 @@
     "svn_url": "https://github.com/CarbonPHP/carbon",
     "homepage": null,
     "size": 17012,
-    "stargazers_count": 129,
-    "watchers_count": 129,
+    "stargazers_count": 130,
+    "watchers_count": 130,
     "language": "PHP",
     "has_issues": true,
     "has_projects": true,
@@ -6288,7 +6288,7 @@
     "visibility": "public",
     "forks": 18,
     "open_issues": 6,
-    "watchers": 129,
+    "watchers": 130,
     "default_branch": "master",
     "permissions": {
       "admin": false,
@@ -6392,7 +6392,7 @@
     "releases_url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/releases{/id}",
     "deployments_url": "https://api.github.com/repos/giggsey/libphonenumber-for-php/deployments",
     "created_at": "2013-03-28T13:36:31Z",
-    "updated_at": "2025-09-30T10:59:20Z",
+    "updated_at": "2025-10-04T17:25:13Z",
     "pushed_at": "2025-09-30T10:59:15Z",
     "git_url": "git://github.com/giggsey/libphonenumber-for-php.git",
     "ssh_url": "git@github.com:giggsey/libphonenumber-for-php.git",
@@ -6400,8 +6400,8 @@
     "svn_url": "https://github.com/giggsey/libphonenumber-for-php",
     "homepage": "https://giggsey.com/libphonenumber/",
     "size": 22842,
-    "stargazers_count": 4930,
-    "watchers_count": 4930,
+    "stargazers_count": 4928,
+    "watchers_count": 4928,
     "language": "PHP",
     "has_issues": true,
     "has_projects": false,
@@ -6433,7 +6433,7 @@
     "visibility": "public",
     "forks": 480,
     "open_issues": 4,
-    "watchers": 4930,
+    "watchers": 4928,
     "default_branch": "master",
     "permissions": {
       "admin": false,
@@ -6444,7 +6444,7 @@
     },
     "temp_clone_token": "",
     "network_count": 480,
-    "subscribers_count": 109,
+    "subscribers_count": 108,
     "language_color": "#4F5D95"
   },
   {
@@ -6515,7 +6515,7 @@
     "releases_url": "https://api.github.com/repos/ramsey/uuid/releases{/id}",
     "deployments_url": "https://api.github.com/repos/ramsey/uuid/deployments",
     "created_at": "2012-07-05T23:24:53Z",
-    "updated_at": "2025-10-02T15:33:12Z",
+    "updated_at": "2025-10-04T13:38:01Z",
     "pushed_at": "2025-09-30T02:45:37Z",
     "git_url": "git://github.com/ramsey/uuid.git",
     "ssh_url": "git@github.com:ramsey/uuid.git",
@@ -6523,8 +6523,8 @@
     "svn_url": "https://github.com/ramsey/uuid",
     "homepage": "https://uuid.ramsey.dev",
     "size": 3474,
-    "stargazers_count": 12590,
-    "watchers_count": 12590,
+    "stargazers_count": 12588,
+    "watchers_count": 12588,
     "language": "PHP",
     "has_issues": true,
     "has_projects": false,
@@ -6558,7 +6558,7 @@
     "visibility": "public",
     "forks": 514,
     "open_issues": 21,
-    "watchers": 12590,
+    "watchers": 12588,
     "default_branch": "4.x",
     "permissions": {
       "admin": false,
@@ -6569,7 +6569,7 @@
     },
     "temp_clone_token": "",
     "network_count": 514,
-    "subscribers_count": 134,
+    "subscribers_count": 133,
     "language_color": "#4F5D95"
   },
   {
@@ -6641,13 +6641,13 @@
     "deployments_url": "https://api.github.com/repos/symfony/console/deployments",
     "created_at": "2011-02-22T18:00:31Z",
     "updated_at": "2025-10-03T22:19:08Z",
-    "pushed_at": "2025-10-02T08:11:04Z",
+    "pushed_at": "2025-10-04T12:01:44Z",
     "git_url": "git://github.com/symfony/console.git",
     "ssh_url": "git@github.com:symfony/console.git",
     "clone_url": "https://github.com/symfony/console.git",
     "svn_url": "https://github.com/symfony/console",
     "homepage": "https://symfony.com/console",
-    "size": 6944,
+    "size": 6983,
     "stargazers_count": 9829,
     "watchers_count": 9829,
     "language": "PHP",
@@ -6718,7 +6718,7 @@
       "site_admin": false
     },
     "network_count": 266,
-    "subscribers_count": 42,
+    "subscribers_count": 41,
     "language_color": "#4F5D95"
   },
   {
@@ -6863,7 +6863,7 @@
       "site_admin": false
     },
     "network_count": 57,
-    "subscribers_count": 17,
+    "subscribers_count": 16,
     "language_color": "#4F5D95"
   },
   {
@@ -7008,7 +7008,7 @@
       "site_admin": false
     },
     "network_count": 304,
-    "subscribers_count": 35,
+    "subscribers_count": 34,
     "language_color": "#4F5D95"
   },
   {
@@ -7153,7 +7153,7 @@
       "site_admin": false
     },
     "network_count": 97,
-    "subscribers_count": 16,
+    "subscribers_count": 15,
     "language_color": "#4F5D95"
   },
   {
@@ -7224,8 +7224,8 @@
     "releases_url": "https://api.github.com/repos/symfony/mailer/releases{/id}",
     "deployments_url": "https://api.github.com/repos/symfony/mailer/deployments",
     "created_at": "2019-03-30T11:54:41Z",
-    "updated_at": "2025-09-30T10:22:28Z",
-    "pushed_at": "2025-09-27T12:35:20Z",
+    "updated_at": "2025-10-04T08:33:29Z",
+    "pushed_at": "2025-10-04T08:33:25Z",
     "git_url": "git://github.com/symfony/mailer.git",
     "ssh_url": "git@github.com:symfony/mailer.git",
     "clone_url": "https://github.com/symfony/mailer.git",
@@ -7298,7 +7298,7 @@
       "site_admin": false
     },
     "network_count": 49,
-    "subscribers_count": 14,
+    "subscribers_count": 13,
     "language_color": "#4F5D95"
   },
   {
@@ -7445,7 +7445,7 @@
       "site_admin": false
     },
     "network_count": 37,
-    "subscribers_count": 6,
+    "subscribers_count": 5,
     "language_color": "#4F5D95"
   },
   {
@@ -7590,7 +7590,7 @@
       "site_admin": false
     },
     "network_count": 104,
-    "subscribers_count": 24,
+    "subscribers_count": 23,
     "language_color": "#4F5D95"
   },
   {
@@ -7739,7 +7739,7 @@
       "site_admin": false
     },
     "network_count": 96,
-    "subscribers_count": 26,
+    "subscribers_count": 25,
     "language_color": "#4F5D95"
   },
   {
@@ -7810,7 +7810,7 @@
     "releases_url": "https://api.github.com/repos/vlucas/phpdotenv/releases{/id}",
     "deployments_url": "https://api.github.com/repos/vlucas/phpdotenv/deployments",
     "created_at": "2013-01-23T06:57:12Z",
-    "updated_at": "2025-10-03T13:34:38Z",
+    "updated_at": "2025-10-04T04:30:45Z",
     "pushed_at": "2025-04-30T23:40:43Z",
     "git_url": "git://github.com/vlucas/phpdotenv.git",
     "ssh_url": "git@github.com:vlucas/phpdotenv.git",
@@ -7818,8 +7818,8 @@
     "svn_url": "https://github.com/vlucas/phpdotenv",
     "homepage": "",
     "size": 633,
-    "stargazers_count": 13454,
-    "watchers_count": 13454,
+    "stargazers_count": 13455,
+    "watchers_count": 13455,
     "language": "PHP",
     "has_issues": true,
     "has_projects": true,
@@ -7853,7 +7853,7 @@
     "visibility": "public",
     "forks": 647,
     "open_issues": 13,
-    "watchers": 13454,
+    "watchers": 13455,
     "default_branch": "master",
     "permissions": {
       "admin": false,
@@ -7864,7 +7864,7 @@
     },
     "temp_clone_token": "",
     "network_count": 647,
-    "subscribers_count": 171,
+    "subscribers_count": 170,
     "language_color": "#4F5D95"
   },
   {
@@ -7988,7 +7988,7 @@
     },
     "temp_clone_token": "",
     "network_count": 291,
-    "subscribers_count": 44,
+    "subscribers_count": 43,
     "language_color": "#4F5D95"
   }
 ]

@@ -662,6 +662,10 @@
       ".bat",
       ".cmd"
     ],
+    "filenames": [
+      "gradlew.bat",
+      "mvnw.cmd"
+    ],
     "tm_scope": "source.batchfile",
     "ace_mode": "batchfile",
     "color": "#C1F12E",
@@ -1260,6 +1264,18 @@
     "codemirror_mime_type": "text/x-ocaml",
     "group": "LigoLANG",
     "language_id": 829207807
+  },
+  "Cangjie": {
+    "type": "programming",
+    "tm_scope": "source.cj",
+    "extensions": [
+      ".cj"
+    ],
+    "color": "#00868B",
+    "ace_mode": "swift",
+    "codemirror_mode": "swift",
+    "codemirror_mime_type": "text/x-swift",
+    "language_id": 581895317
   },
   "Cap'n Proto": {
     "type": "programming",
@@ -8595,6 +8611,7 @@
       "kshrc",
       "login",
       "man",
+      "mvnw",
       "profile",
       "tmux.conf",
       "zlogin",
@@ -9301,6 +9318,21 @@
     "tm_scope": "source.tea",
     "ace_mode": "text",
     "language_id": 370
+  },
+  "Teal": {
+    "type": "programming",
+    "extensions": [
+      ".tl"
+    ],
+    "color": "#00B1BC",
+    "tm_scope": "source.teal",
+    "ace_mode": "lua",
+    "codemirror_mode": "lua",
+    "codemirror_mime_type": "text/x-lua",
+    "interpreters": [
+      "tl"
+    ],
+    "language_id": 719038619
   },
   "Terra": {
     "type": "programming",

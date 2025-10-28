@@ -71,7 +71,7 @@
     "followers": 5103,
     "following": 17,
     "created_at": "2010-11-16T13:38:15Z",
-    "updated_at": "2025-10-15T15:05:59Z"
+    "updated_at": "2025-10-27T08:30:08Z"
   },
   {
     "name": "nuno maduro",
@@ -143,7 +143,7 @@
     "twitter_username": "themsaid",
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 5194,
+    "followers": 5193,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2025-09-05T12:16:26Z"
@@ -180,7 +180,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 499,
     "public_gists": 0,
-    "followers": 3469,
+    "followers": 3470,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -217,7 +217,7 @@
     "twitter_username": "driesvints",
     "public_repos": 11,
     "public_gists": 14,
-    "followers": 5383,
+    "followers": 5381,
     "following": 32,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2025-09-10T22:01:28Z"
@@ -292,7 +292,7 @@
     "twitter_username": null,
     "public_repos": 92,
     "public_gists": 50,
-    "followers": 5472,
+    "followers": 5473,
     "following": 3,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2025-08-30T20:58:32Z"
@@ -366,7 +366,7 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 69,
     "public_gists": 52,
-    "followers": 2244,
+    "followers": 2242,
     "following": 130,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2025-10-07T15:08:06Z"
@@ -403,7 +403,7 @@
     "twitter_username": null,
     "public_repos": 34,
     "public_gists": 0,
-    "followers": 1183,
+    "followers": 1182,
     "following": 7,
     "created_at": "2015-05-31T15:34:11Z",
     "updated_at": "2025-01-15T19:24:41Z"
@@ -440,7 +440,7 @@
     "twitter_username": "crynobone",
     "public_repos": 177,
     "public_gists": 31,
-    "followers": 1736,
+    "followers": 1738,
     "following": 45,
     "created_at": "2009-12-28T10:34:03Z",
     "updated_at": "2025-08-29T23:23:31Z"
@@ -515,7 +515,7 @@
     "twitter_username": "ericlbarnes",
     "public_repos": 55,
     "public_gists": 48,
-    "followers": 1794,
+    "followers": 1793,
     "following": 13,
     "created_at": "2009-08-18T16:49:21Z",
     "updated_at": "2025-07-14T18:19:41Z"
@@ -552,7 +552,7 @@
     "twitter_username": null,
     "public_repos": 83,
     "public_gists": 28,
-    "followers": 542,
+    "followers": 543,
     "following": 214,
     "created_at": "2011-09-26T14:44:55Z",
     "updated_at": "2025-10-12T12:14:21Z"
@@ -589,7 +589,7 @@
     "twitter_username": "claudiodekker",
     "public_repos": 33,
     "public_gists": 9,
-    "followers": 545,
+    "followers": 546,
     "following": 16,
     "created_at": "2012-05-18T12:06:13Z",
     "updated_at": "2025-09-25T07:06:06Z"
@@ -663,7 +663,7 @@
     "twitter_username": "frankdejonge",
     "public_repos": 93,
     "public_gists": 38,
-    "followers": 1142,
+    "followers": 1144,
     "following": 16,
     "created_at": "2010-12-23T15:39:26Z",
     "updated_at": "2025-10-10T21:23:22Z"
@@ -1036,10 +1036,10 @@
     "twitter_username": "youyuxi",
     "public_repos": 198,
     "public_gists": 73,
-    "followers": 105811,
+    "followers": 105821,
     "following": 100,
     "created_at": "2010-11-28T01:05:40Z",
-    "updated_at": "2025-10-08T05:46:57Z"
+    "updated_at": "2025-10-27T23:14:40Z"
   },
   {
     "name": "安正超",
@@ -1077,7 +1077,7 @@
     "followers": 7243,
     "following": 244,
     "created_at": "2012-02-25T08:17:56Z",
-    "updated_at": "2025-10-01T10:36:14Z"
+    "updated_at": "2025-10-27T08:30:14Z"
   },
   {
     "name": "Fabien Potencier",
@@ -1114,7 +1114,7 @@
     "followers": 13321,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
-    "updated_at": "2025-10-21T07:06:50Z"
+    "updated_at": "2025-10-27T06:33:00Z"
   },
   {
     "name": "Robin Malfait",
@@ -1186,7 +1186,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 67,
     "public_gists": 161,
-    "followers": 17136,
+    "followers": 17135,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2025-10-24T14:21:37Z"
@@ -1224,7 +1224,7 @@
     "twitter_username": null,
     "public_repos": 95,
     "public_gists": 49,
-    "followers": 3039,
+    "followers": 3040,
     "following": 91,
     "created_at": "2010-07-06T23:12:44Z",
     "updated_at": "2025-05-14T02:27:36Z"
@@ -1265,6 +1265,6 @@
     "followers": 217,
     "following": 3,
     "created_at": "2010-10-21T04:52:43Z",
-    "updated_at": "2025-10-23T06:41:15Z"
+    "updated_at": "2025-10-27T11:27:13Z"
   }
 ]

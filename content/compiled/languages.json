@@ -98,6 +98,18 @@
     "ace_mode": "text",
     "language_id": 658971832
   },
+  "ALGOL": {
+    "type": "programming",
+    "color": "#D1E0DB",
+    "extensions": [
+      ".alg"
+    ],
+    "tm_scope": "source.algol60",
+    "ace_mode": "pascal",
+    "codemirror_mode": "pascal",
+    "codemirror_mime_type": "text/x-pascal",
+    "language_id": 79217948
+  },
   "AMPL": {
     "type": "programming",
     "color": "#E6EFBB",
@@ -454,18 +466,6 @@
     "ace_mode": "text",
     "language_id": 20
   },
-  "ArkTS": {
-    "type": "programming",
-    "color": "#0080ff",
-    "extensions": [
-      ".ets"
-    ],
-    "tm_scope": "source.ets",
-    "ace_mode": "typescript",
-    "codemirror_mode": "javascript",
-    "codemirror_mime_type": "application/typescript",
-    "language_id": 56341321
-  },
   "AsciiDoc": {
     "type": "prose",
     "color": "#73a0c5",
@@ -604,6 +604,16 @@
     "tm_scope": "source.awk",
     "ace_mode": "text",
     "language_id": 28
+  },
+  "B (Formal Method)": {
+    "type": "programming",
+    "color": "#8aa8c5",
+    "extensions": [
+      ".mch"
+    ],
+    "tm_scope": "source.b",
+    "ace_mode": "text",
+    "language_id": 700792152
   },
   "B4X": {
     "type": "programming",
@@ -1159,7 +1169,7 @@
     "type": "data",
     "color": "#237346",
     "ace_mode": "csv",
-    "tm_scope": "none",
+    "tm_scope": "source.csv",
     "extensions": [
       ".csv"
     ],
@@ -3205,6 +3215,9 @@
   },
   "Glimmer JS": {
     "type": "programming",
+    "aliases": [
+      "gjs"
+    ],
     "extensions": [
       ".gjs"
     ],
@@ -3216,6 +3229,9 @@
   },
   "Glimmer TS": {
     "type": "programming",
+    "aliases": [
+      "gts"
+    ],
     "extensions": [
       ".gts"
     ],
@@ -3520,10 +3536,12 @@
       ".nomad",
       ".tf",
       ".tfvars",
+      ".tofu",
       ".workflow"
     ],
     "aliases": [
       "HashiCorp Configuration Language",
+      "opentofu",
       "terraform"
     ],
     "ace_mode": "terraform",
@@ -4305,6 +4323,16 @@
     "tm_scope": "source.jsoniq",
     "language_id": 177
   },
+  "Jac": {
+    "type": "programming",
+    "color": "#FC792D",
+    "extensions": [
+      ".jac"
+    ],
+    "tm_scope": "source.jac",
+    "ace_mode": "text",
+    "language_id": 235277043
+  },
   "Jai": {
     "type": "programming",
     "color": "#ab8b4b",
@@ -4893,6 +4921,16 @@
     "codemirror_mode": "xml",
     "codemirror_mime_type": "text/xml",
     "language_id": 194
+  },
+  "Lambdapi": {
+    "type": "programming",
+    "color": "#8027a3",
+    "extensions": [
+      ".lp"
+    ],
+    "tm_scope": "source.lp",
+    "ace_mode": "text",
+    "language_id": 759240513
   },
   "Langium": {
     "type": "programming",
@@ -7562,6 +7600,16 @@
     ],
     "language_id": 308
   },
+  "RAScript": {
+    "type": "programming",
+    "ace_mode": "text",
+    "extensions": [
+      ".rascript"
+    ],
+    "tm_scope": "source.rascript",
+    "color": "#2C97FA",
+    "language_id": 601118790
+  },
   "RBS": {
     "type": "data",
     "ace_mode": "ruby",
@@ -8617,7 +8665,9 @@
       ".command",
       ".fcgi",
       ".ksh",
+      ".sbatch",
       ".sh.in",
+      ".slurm",
       ".tmux",
       ".tool",
       ".trigger",
@@ -9079,6 +9129,19 @@
     "ace_mode": "text",
     "language_id": 361
   },
+  "SurrealQL": {
+    "type": "programming",
+    "color": "#ff00a0",
+    "aliases": [
+      "surql"
+    ],
+    "extensions": [
+      ".surql"
+    ],
+    "ace_mode": "text",
+    "tm_scope": "source.surrealql",
+    "language_id": 735141027
+  },
   "Survex data": {
     "type": "data",
     "color": "#ffcc99",
@@ -9229,7 +9292,7 @@
     "type": "data",
     "color": "#237346",
     "ace_mode": "tsv",
-    "tm_scope": "source.generic-db",
+    "tm_scope": "source.tsv",
     "extensions": [
       ".tsv",
       ".vcf"
@@ -10420,6 +10483,7 @@
       ".ps1xml",
       ".psc1",
       ".pt",
+      ".pubxml",
       ".qhelp",
       ".rdf",
       ".res",

@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 33,
     "public_gists": 9,
-    "followers": 35110,
+    "followers": 35116,
     "following": 2,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2026-01-27T02:53:48Z"
@@ -68,10 +68,10 @@
     "twitter_username": "freekmurze",
     "public_repos": 152,
     "public_gists": 21,
-    "followers": 5149,
+    "followers": 5148,
     "following": 17,
     "created_at": "2010-11-16T13:38:15Z",
-    "updated_at": "2026-01-29T23:27:34Z"
+    "updated_at": "2026-01-30T18:03:15Z"
   },
   {
     "name": "nuno maduro",
@@ -105,7 +105,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 299,
     "public_gists": 23,
-    "followers": 8944,
+    "followers": 8946,
     "following": 5,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2026-01-29T18:17:52Z"
@@ -180,7 +180,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 503,
     "public_gists": 0,
-    "followers": 3591,
+    "followers": 3592,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -218,9 +218,9 @@
     "public_repos": 10,
     "public_gists": 15,
     "followers": 5424,
-    "following": 32,
+    "following": 33,
     "created_at": "2011-02-01T12:16:19Z",
-    "updated_at": "2025-12-07T15:54:16Z"
+    "updated_at": "2026-01-30T21:37:17Z"
   },
   {
     "name": "Graham Campbell",
@@ -257,7 +257,7 @@
     "followers": 7047,
     "following": 144,
     "created_at": "2012-11-18T22:14:00Z",
-    "updated_at": "2026-01-28T12:14:58Z"
+    "updated_at": "2026-01-30T09:41:32Z"
   },
   {
     "name": "Caleb Porzio",
@@ -552,7 +552,7 @@
     "twitter_username": null,
     "public_repos": 87,
     "public_gists": 28,
-    "followers": 566,
+    "followers": 567,
     "following": 220,
     "created_at": "2011-09-26T14:44:55Z",
     "updated_at": "2026-01-13T05:52:44Z"
@@ -626,10 +626,10 @@
     "twitter_username": "jessarchercodes",
     "public_repos": 83,
     "public_gists": 5,
-    "followers": 1946,
+    "followers": 1947,
     "following": 31,
     "created_at": "2013-07-09T22:40:40Z",
-    "updated_at": "2026-01-05T08:54:32Z"
+    "updated_at": "2026-01-30T06:55:06Z"
   },
   {
     "name": "Frank de Jonge",
@@ -703,7 +703,7 @@
     "followers": 4672,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
-    "updated_at": "2026-01-10T12:24:44Z"
+    "updated_at": "2026-01-30T15:53:18Z"
   },
   {
     "name": "Tim MacDonald",
@@ -998,7 +998,7 @@
     "twitter_username": null,
     "public_repos": 178,
     "public_gists": 28,
-    "followers": 13123,
+    "followers": 13125,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2025-12-29T12:59:17Z"
@@ -1036,7 +1036,7 @@
     "twitter_username": "youyuxi",
     "public_repos": 198,
     "public_gists": 73,
-    "followers": 106604,
+    "followers": 106621,
     "following": 100,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2026-01-13T03:36:23Z"
@@ -1074,7 +1074,7 @@
     "twitter_username": "overtrue666",
     "public_repos": 117,
     "public_gists": 30,
-    "followers": 7261,
+    "followers": 7262,
     "following": 251,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2026-01-21T13:15:42Z"
@@ -1111,7 +1111,7 @@
     "twitter_username": "fabpot",
     "public_repos": 82,
     "public_gists": 12,
-    "followers": 13348,
+    "followers": 13350,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2026-01-15T06:31:04Z"
@@ -1186,7 +1186,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 67,
     "public_gists": 161,
-    "followers": 17192,
+    "followers": 17191,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2026-01-29T18:44:13Z"

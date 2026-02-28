@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 33,
     "public_gists": 9,
-    "followers": 35260,
+    "followers": 35265,
     "following": 3,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2026-02-05T14:36:24Z"
@@ -68,7 +68,7 @@
     "twitter_username": "freekmurze",
     "public_repos": 155,
     "public_gists": 21,
-    "followers": 5165,
+    "followers": 5164,
     "following": 17,
     "created_at": "2010-11-16T13:38:15Z",
     "updated_at": "2026-02-16T22:22:14Z"
@@ -143,7 +143,7 @@
     "twitter_username": "themsaid",
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 5227,
+    "followers": 5228,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2025-09-05T12:16:26Z"
@@ -180,7 +180,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 512,
     "public_gists": 0,
-    "followers": 3641,
+    "followers": 3644,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -217,7 +217,7 @@
     "twitter_username": "driesvints",
     "public_repos": 10,
     "public_gists": 15,
-    "followers": 5431,
+    "followers": 5432,
     "following": 33,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2026-01-30T21:37:17Z"
@@ -254,7 +254,7 @@
     "twitter_username": "GrahamJCampbell",
     "public_repos": 51,
     "public_gists": 7,
-    "followers": 7063,
+    "followers": 7064,
     "following": 144,
     "created_at": "2012-11-18T22:14:00Z",
     "updated_at": "2026-02-10T17:15:34Z"
@@ -403,7 +403,7 @@
     "twitter_username": null,
     "public_repos": 34,
     "public_gists": 0,
-    "followers": 1190,
+    "followers": 1192,
     "following": 7,
     "created_at": "2015-05-31T15:34:11Z",
     "updated_at": "2025-01-15T19:24:41Z"
@@ -440,7 +440,7 @@
     "twitter_username": "crynobone",
     "public_repos": 180,
     "public_gists": 31,
-    "followers": 1761,
+    "followers": 1762,
     "following": 45,
     "created_at": "2009-12-28T10:34:03Z",
     "updated_at": "2026-02-20T00:51:21Z"
@@ -626,7 +626,7 @@
     "twitter_username": "jessarchercodes",
     "public_repos": 83,
     "public_gists": 5,
-    "followers": 1970,
+    "followers": 1969,
     "following": 31,
     "created_at": "2013-07-09T22:40:40Z",
     "updated_at": "2026-02-09T10:23:07Z"
@@ -663,7 +663,7 @@
     "twitter_username": "frankdejonge",
     "public_repos": 94,
     "public_gists": 38,
-    "followers": 1144,
+    "followers": 1143,
     "following": 16,
     "created_at": "2010-12-23T15:39:26Z",
     "updated_at": "2025-10-10T21:23:22Z"
@@ -700,7 +700,7 @@
     "twitter_username": "seldaek",
     "public_repos": 270,
     "public_gists": 33,
-    "followers": 4680,
+    "followers": 4681,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2026-02-19T18:18:16Z"
@@ -812,7 +812,7 @@
     "twitter_username": null,
     "public_repos": 237,
     "public_gists": 53,
-    "followers": 3990,
+    "followers": 3992,
     "following": 14,
     "created_at": "2011-05-23T08:11:19Z",
     "updated_at": "2026-02-26T11:06:32Z"
@@ -930,6 +930,43 @@
     "updated_at": "2026-01-28T15:05:26Z"
   },
   {
+    "name": "Nico Verbruggen",
+    "github_id": "nicoverbruggen",
+    "twitter_id": "nicoverbruggen",
+    "login": "nicoverbruggen",
+    "id": 3715845,
+    "node_id": "MDQ6VXNlcjM3MTU4NDU=",
+    "avatar_url": "https://avatars.githubusercontent.com/u/3715845?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/nicoverbruggen",
+    "html_url": "https://github.com/nicoverbruggen",
+    "followers_url": "https://api.github.com/users/nicoverbruggen/followers",
+    "following_url": "https://api.github.com/users/nicoverbruggen/following{/other_user}",
+    "gists_url": "https://api.github.com/users/nicoverbruggen/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/nicoverbruggen/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/nicoverbruggen/subscriptions",
+    "organizations_url": "https://api.github.com/users/nicoverbruggen/orgs",
+    "repos_url": "https://api.github.com/users/nicoverbruggen/repos",
+    "events_url": "https://api.github.com/users/nicoverbruggen/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/nicoverbruggen/received_events",
+    "type": "User",
+    "user_view_type": "public",
+    "site_admin": false,
+    "company": "@mylonia",
+    "blog": "https://nicoverbruggen.be",
+    "location": "Belgium",
+    "email": "mail@nicoverbruggen.be",
+    "hireable": true,
+    "bio": "Software developer. You can find all of my public contributions here. Learn more on my website and via @Mylonia.",
+    "twitter_username": null,
+    "public_repos": 50,
+    "public_gists": 12,
+    "followers": 222,
+    "following": 15,
+    "created_at": "2013-02-27T11:50:57Z",
+    "updated_at": "2026-02-16T11:34:26Z"
+  },
+  {
     "name": "Adam Wathan",
     "github_id": "adamwathan",
     "twitter_id": "adamwathan",
@@ -961,7 +998,7 @@
     "twitter_username": null,
     "public_repos": 178,
     "public_gists": 28,
-    "followers": 13165,
+    "followers": 13163,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2026-02-02T18:05:40Z"
@@ -999,7 +1036,7 @@
     "twitter_username": "youyuxi",
     "public_repos": 199,
     "public_gists": 73,
-    "followers": 107008,
+    "followers": 107021,
     "following": 100,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2026-02-26T10:32:52Z"
@@ -1037,7 +1074,7 @@
     "twitter_username": "overtrue666",
     "public_repos": 117,
     "public_gists": 30,
-    "followers": 7264,
+    "followers": 7262,
     "following": 252,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2026-02-24T03:09:36Z"
@@ -1074,7 +1111,7 @@
     "twitter_username": "fabpot",
     "public_repos": 84,
     "public_gists": 12,
-    "followers": 13357,
+    "followers": 13358,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2026-02-09T22:57:25Z"
@@ -1112,7 +1149,7 @@
     "twitter_username": "malfaitrobin",
     "public_repos": 64,
     "public_gists": 42,
-    "followers": 2071,
+    "followers": 2072,
     "following": 170,
     "created_at": "2012-06-09T22:00:12Z",
     "updated_at": "2026-02-17T19:54:27Z"
@@ -1225,9 +1262,9 @@
     "twitter_username": "caouecs",
     "public_repos": 11,
     "public_gists": 2,
-    "followers": 215,
+    "followers": 214,
     "following": 3,
     "created_at": "2010-10-21T04:52:43Z",
-    "updated_at": "2026-01-27T12:26:46Z"
+    "updated_at": "2026-02-27T12:22:28Z"
   }
 ]

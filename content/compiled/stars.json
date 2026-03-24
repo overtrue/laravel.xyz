@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 33,
     "public_gists": 9,
-    "followers": 35359,
+    "followers": 35364,
     "following": 3,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2026-03-04T23:32:56Z"
@@ -103,9 +103,9 @@
     "hireable": null,
     "bio": "staff software engineer at @laravel · speaker · content creator · created @pestphp, pint, pail, @larastan, @laravel-zero, @openai for php, @phpinsights, etc",
     "twitter_username": "enunomaduro",
-    "public_repos": 303,
+    "public_repos": 304,
     "public_gists": 23,
-    "followers": 9027,
+    "followers": 9029,
     "following": 5,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2026-03-11T19:02:13Z"
@@ -180,7 +180,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 515,
     "public_gists": 0,
-    "followers": 3685,
+    "followers": 3687,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -217,7 +217,7 @@
     "twitter_username": "driesvints",
     "public_repos": 10,
     "public_gists": 15,
-    "followers": 5439,
+    "followers": 5440,
     "following": 33,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2026-03-05T12:48:49Z"
@@ -366,7 +366,7 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 73,
     "public_gists": 52,
-    "followers": 2318,
+    "followers": 2317,
     "following": 131,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2026-03-12T08:47:17Z"
@@ -626,7 +626,7 @@
     "twitter_username": "jessarchercodes",
     "public_repos": 83,
     "public_gists": 5,
-    "followers": 1972,
+    "followers": 1973,
     "following": 31,
     "created_at": "2013-07-09T22:40:40Z",
     "updated_at": "2026-03-05T12:58:43Z"
@@ -666,7 +666,7 @@
     "followers": 1141,
     "following": 16,
     "created_at": "2010-12-23T15:39:26Z",
-    "updated_at": "2026-03-20T16:48:24Z"
+    "updated_at": "2026-03-23T14:52:57Z"
   },
   {
     "name": "Jordi Boggiano",
@@ -700,7 +700,7 @@
     "twitter_username": "seldaek",
     "public_repos": 270,
     "public_gists": 33,
-    "followers": 4690,
+    "followers": 4689,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2026-03-10T11:23:05Z"
@@ -740,7 +740,7 @@
     "followers": 1663,
     "following": 1,
     "created_at": "2016-12-28T04:15:41Z",
-    "updated_at": "2026-02-22T08:50:15Z"
+    "updated_at": "2026-03-24T00:14:55Z"
   },
   {
     "name": "Caneco",
@@ -887,7 +887,7 @@
     "twitter_username": "nicolasgrekas",
     "public_repos": 124,
     "public_gists": 29,
-    "followers": 2089,
+    "followers": 2090,
     "following": 5,
     "created_at": "2010-04-14T09:44:17Z",
     "updated_at": "2026-02-26T22:52:26Z"
@@ -998,7 +998,7 @@
     "twitter_username": null,
     "public_repos": 178,
     "public_gists": 28,
-    "followers": 13202,
+    "followers": 13204,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2026-02-02T18:05:40Z"
@@ -1036,10 +1036,10 @@
     "twitter_username": "youyuxi",
     "public_repos": 199,
     "public_gists": 73,
-    "followers": 107463,
+    "followers": 107478,
     "following": 100,
     "created_at": "2010-11-28T01:05:40Z",
-    "updated_at": "2026-02-26T10:32:52Z"
+    "updated_at": "2026-03-23T12:11:39Z"
   },
   {
     "name": "安正超",
@@ -1111,7 +1111,7 @@
     "twitter_username": "fabpot",
     "public_repos": 84,
     "public_gists": 12,
-    "followers": 13368,
+    "followers": 13369,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2026-03-21T20:43:59Z"
@@ -1186,7 +1186,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 67,
     "public_gists": 161,
-    "followers": 17233,
+    "followers": 17234,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2026-02-25T19:07:38Z"

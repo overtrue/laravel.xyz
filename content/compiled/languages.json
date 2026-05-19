@@ -3940,6 +3940,20 @@
     "ace_mode": "text",
     "language_id": 162
   },
+  "IL Assembly": {
+    "type": "programming",
+    "color": "#512BD4",
+    "extensions": [
+      ".il"
+    ],
+    "tm_scope": "source.il",
+    "ace_mode": "text",
+    "aliases": [
+      "ilasm",
+      "msil"
+    ],
+    "language_id": 592065806
+  },
   "INI": {
     "type": "data",
     "color": "#d1dbe0",

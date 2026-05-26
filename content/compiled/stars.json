@@ -31,10 +31,10 @@
     "twitter_username": null,
     "public_repos": 33,
     "public_gists": 9,
-    "followers": 35534,
+    "followers": 35532,
     "following": 3,
     "created_at": "2010-11-01T20:15:30Z",
-    "updated_at": "2026-05-05T20:36:34Z"
+    "updated_at": "2026-05-26T01:18:15Z"
   },
   {
     "name": "Freek Van der Herten",
@@ -68,7 +68,7 @@
     "twitter_username": "freekmurze",
     "public_repos": 157,
     "public_gists": 21,
-    "followers": 5216,
+    "followers": 5217,
     "following": 17,
     "created_at": "2010-11-16T13:38:15Z",
     "updated_at": "2026-05-24T09:38:50Z"
@@ -108,7 +108,7 @@
     "followers": 9147,
     "following": 5,
     "created_at": "2013-09-14T08:11:58Z",
-    "updated_at": "2026-05-22T09:30:48Z"
+    "updated_at": "2026-05-25T09:16:44Z"
   },
   {
     "name": "Mohamed Said",
@@ -143,7 +143,7 @@
     "twitter_username": "themsaid",
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 5238,
+    "followers": 5237,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2025-09-05T12:16:26Z"
@@ -217,7 +217,7 @@
     "twitter_username": "driesvints",
     "public_repos": 10,
     "public_gists": 15,
-    "followers": 5447,
+    "followers": 5446,
     "following": 34,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2026-05-16T14:04:45Z"
@@ -252,9 +252,9 @@
     "hireable": true,
     "bio": "OSS Maintainer | Laravel | StyleCI",
     "twitter_username": "GrahamJCampbell",
-    "public_repos": 60,
+    "public_repos": 61,
     "public_gists": 9,
-    "followers": 7073,
+    "followers": 7072,
     "following": 144,
     "created_at": "2012-11-18T22:14:00Z",
     "updated_at": "2026-05-22T20:23:19Z"
@@ -366,7 +366,7 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 74,
     "public_gists": 52,
-    "followers": 2368,
+    "followers": 2369,
     "following": 131,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2026-04-13T18:22:33Z"
@@ -403,7 +403,7 @@
     "twitter_username": null,
     "public_repos": 38,
     "public_gists": 0,
-    "followers": 1194,
+    "followers": 1193,
     "following": 8,
     "created_at": "2015-05-31T15:34:11Z",
     "updated_at": "2026-05-08T13:29:37Z"
@@ -552,7 +552,7 @@
     "twitter_username": null,
     "public_repos": 90,
     "public_gists": 28,
-    "followers": 576,
+    "followers": 577,
     "following": 223,
     "created_at": "2011-09-26T14:44:55Z",
     "updated_at": "2026-05-17T11:14:59Z"
@@ -737,7 +737,7 @@
     "twitter_username": "timacdonald87",
     "public_repos": 57,
     "public_gists": 5,
-    "followers": 1676,
+    "followers": 1675,
     "following": 1,
     "created_at": "2016-12-28T04:15:41Z",
     "updated_at": "2026-05-15T21:52:14Z"
@@ -887,7 +887,7 @@
     "twitter_username": "nicolasgrekas",
     "public_repos": 124,
     "public_gists": 29,
-    "followers": 2109,
+    "followers": 2108,
     "following": 5,
     "created_at": "2010-04-14T09:44:17Z",
     "updated_at": "2026-05-12T07:48:35Z"
@@ -924,7 +924,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 68,
-    "followers": 3340,
+    "followers": 3339,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2026-05-23T18:31:45Z"
@@ -1036,7 +1036,7 @@
     "twitter_username": "evanyou",
     "public_repos": 199,
     "public_gists": 73,
-    "followers": 108109,
+    "followers": 108116,
     "following": 100,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2026-04-24T09:28:14Z"
@@ -1149,7 +1149,7 @@
     "twitter_username": "malfaitrobin",
     "public_repos": 66,
     "public_gists": 42,
-    "followers": 2119,
+    "followers": 2120,
     "following": 170,
     "created_at": "2012-06-09T22:00:12Z",
     "updated_at": "2026-05-11T22:01:47Z"
@@ -1186,7 +1186,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 67,
     "public_gists": 161,
-    "followers": 17247,
+    "followers": 17246,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2026-04-23T17:12:36Z"

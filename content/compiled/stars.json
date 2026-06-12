@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 34,
     "public_gists": 9,
-    "followers": 35580,
+    "followers": 35578,
     "following": 3,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2026-06-02T01:42:07Z"
@@ -105,7 +105,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 317,
     "public_gists": 23,
-    "followers": 9193,
+    "followers": 9194,
     "following": 5,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2026-06-02T18:16:40Z"
@@ -217,7 +217,7 @@
     "twitter_username": "driesvints",
     "public_repos": 10,
     "public_gists": 15,
-    "followers": 5450,
+    "followers": 5451,
     "following": 34,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2026-05-16T14:04:45Z"
@@ -254,10 +254,10 @@
     "twitter_username": "GrahamJCampbell",
     "public_repos": 63,
     "public_gists": 9,
-    "followers": 7083,
+    "followers": 7081,
     "following": 144,
     "created_at": "2012-11-18T22:14:00Z",
-    "updated_at": "2026-05-22T20:23:19Z"
+    "updated_at": "2026-06-11T09:18:52Z"
   },
   {
     "name": "Caleb Porzio",
@@ -292,7 +292,7 @@
     "twitter_username": null,
     "public_repos": 92,
     "public_gists": 50,
-    "followers": 5601,
+    "followers": 5600,
     "following": 3,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2025-08-30T20:58:32Z"
@@ -440,7 +440,7 @@
     "twitter_username": "crynobone",
     "public_repos": 180,
     "public_gists": 31,
-    "followers": 1779,
+    "followers": 1780,
     "following": 45,
     "created_at": "2009-12-28T10:34:03Z",
     "updated_at": "2026-04-14T21:44:35Z"
@@ -552,7 +552,7 @@
     "twitter_username": null,
     "public_repos": 90,
     "public_gists": 28,
-    "followers": 577,
+    "followers": 576,
     "following": 224,
     "created_at": "2011-09-26T14:44:55Z",
     "updated_at": "2026-06-09T08:38:06Z"
@@ -774,7 +774,7 @@
     "twitter_username": "caneco",
     "public_repos": 75,
     "public_gists": 2,
-    "followers": 910,
+    "followers": 911,
     "following": 13,
     "created_at": "2010-11-29T16:08:58Z",
     "updated_at": "2026-03-26T08:37:00Z"
@@ -885,7 +885,7 @@
     "hireable": null,
     "bio": "Submitting features and bug(fixes) @symfony, to make it always faster, easier to use and better designed, uncompromising.\r\n@ESPCI_Alumni @HECAlumni.",
     "twitter_username": "nicolasgrekas",
-    "public_repos": 126,
+    "public_repos": 127,
     "public_gists": 29,
     "followers": 2114,
     "following": 5,
@@ -998,7 +998,7 @@
     "twitter_username": null,
     "public_repos": 178,
     "public_gists": 28,
-    "followers": 13266,
+    "followers": 13267,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2026-02-02T18:05:40Z"
@@ -1036,7 +1036,7 @@
     "twitter_username": "evanyou",
     "public_repos": 198,
     "public_gists": 73,
-    "followers": 108211,
+    "followers": 108215,
     "following": 100,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2026-04-24T09:28:14Z"
@@ -1074,7 +1074,7 @@
     "twitter_username": "overtrue666",
     "public_repos": 119,
     "public_gists": 31,
-    "followers": 7263,
+    "followers": 7261,
     "following": 254,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2026-06-10T13:35:19Z"
@@ -1109,9 +1109,9 @@
     "hireable": null,
     "bio": "Founder and project lead at Symfony\r\nCTO at Upsun",
     "twitter_username": "fabpot",
-    "public_repos": 84,
+    "public_repos": 85,
     "public_gists": 12,
-    "followers": 13421,
+    "followers": 13420,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2026-03-21T20:43:59Z"

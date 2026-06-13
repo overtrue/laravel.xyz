@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 34,
     "public_gists": 9,
-    "followers": 35578,
+    "followers": 35581,
     "following": 3,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2026-06-02T01:42:07Z"
@@ -68,7 +68,7 @@
     "twitter_username": "freekmurze",
     "public_repos": 165,
     "public_gists": 21,
-    "followers": 5217,
+    "followers": 5220,
     "following": 17,
     "created_at": "2010-11-16T13:38:15Z",
     "updated_at": "2026-05-24T09:38:50Z"
@@ -105,10 +105,10 @@
     "twitter_username": "enunomaduro",
     "public_repos": 317,
     "public_gists": 23,
-    "followers": 9194,
+    "followers": 9196,
     "following": 5,
     "created_at": "2013-09-14T08:11:58Z",
-    "updated_at": "2026-06-02T18:16:40Z"
+    "updated_at": "2026-06-12T09:46:17Z"
   },
   {
     "name": "Mohamed Said",
@@ -143,7 +143,7 @@
     "twitter_username": "themsaid",
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 5235,
+    "followers": 5236,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2025-09-05T12:16:26Z"
@@ -180,7 +180,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 524,
     "public_gists": 0,
-    "followers": 3765,
+    "followers": 3768,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -217,7 +217,7 @@
     "twitter_username": "driesvints",
     "public_repos": 10,
     "public_gists": 15,
-    "followers": 5451,
+    "followers": 5453,
     "following": 34,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2026-05-16T14:04:45Z"
@@ -252,9 +252,9 @@
     "hireable": true,
     "bio": "OSS Maintainer | Laravel | StyleCI",
     "twitter_username": "GrahamJCampbell",
-    "public_repos": 63,
+    "public_repos": 65,
     "public_gists": 9,
-    "followers": 7081,
+    "followers": 7082,
     "following": 144,
     "created_at": "2012-11-18T22:14:00Z",
     "updated_at": "2026-06-11T09:18:52Z"
@@ -292,7 +292,7 @@
     "twitter_username": null,
     "public_repos": 92,
     "public_gists": 50,
-    "followers": 5600,
+    "followers": 5602,
     "following": 3,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2025-08-30T20:58:32Z"
@@ -366,7 +366,7 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 74,
     "public_gists": 52,
-    "followers": 2368,
+    "followers": 2369,
     "following": 131,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2026-06-01T09:40:04Z"
@@ -440,10 +440,10 @@
     "twitter_username": "crynobone",
     "public_repos": 180,
     "public_gists": 31,
-    "followers": 1780,
+    "followers": 1779,
     "following": 45,
     "created_at": "2009-12-28T10:34:03Z",
-    "updated_at": "2026-04-14T21:44:35Z"
+    "updated_at": "2026-06-13T02:02:07Z"
   },
   {
     "name": "Luke Downing",
@@ -552,7 +552,7 @@
     "twitter_username": null,
     "public_repos": 90,
     "public_gists": 28,
-    "followers": 576,
+    "followers": 577,
     "following": 224,
     "created_at": "2011-09-26T14:44:55Z",
     "updated_at": "2026-06-09T08:38:06Z"
@@ -1036,7 +1036,7 @@
     "twitter_username": "evanyou",
     "public_repos": 198,
     "public_gists": 73,
-    "followers": 108215,
+    "followers": 108222,
     "following": 100,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2026-04-24T09:28:14Z"
@@ -1074,10 +1074,10 @@
     "twitter_username": "overtrue666",
     "public_repos": 119,
     "public_gists": 31,
-    "followers": 7261,
+    "followers": 7260,
     "following": 254,
     "created_at": "2012-02-25T08:17:56Z",
-    "updated_at": "2026-06-10T13:35:19Z"
+    "updated_at": "2026-06-12T08:10:18Z"
   },
   {
     "name": "Fabien Potencier",
@@ -1109,9 +1109,9 @@
     "hireable": null,
     "bio": "Founder and project lead at Symfony\r\nCTO at Upsun",
     "twitter_username": "fabpot",
-    "public_repos": 85,
+    "public_repos": 84,
     "public_gists": 12,
-    "followers": 13420,
+    "followers": 13423,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2026-03-21T20:43:59Z"
@@ -1149,7 +1149,7 @@
     "twitter_username": "malfaitrobin",
     "public_repos": 66,
     "public_gists": 42,
-    "followers": 2118,
+    "followers": 2119,
     "following": 170,
     "created_at": "2012-06-09T22:00:12Z",
     "updated_at": "2026-05-11T22:01:47Z"

@@ -31,10 +31,10 @@
     "twitter_username": null,
     "public_repos": 34,
     "public_gists": 9,
-    "followers": 35612,
+    "followers": 35614,
     "following": 3,
     "created_at": "2010-11-01T20:15:30Z",
-    "updated_at": "2026-06-30T12:43:20Z"
+    "updated_at": "2026-07-01T23:42:01Z"
   },
   {
     "name": "Freek Van der Herten",
@@ -71,7 +71,7 @@
     "followers": 5234,
     "following": 17,
     "created_at": "2010-11-16T13:38:15Z",
-    "updated_at": "2026-06-18T08:53:10Z"
+    "updated_at": "2026-07-01T16:24:42Z"
   },
   {
     "name": "nuno maduro",
@@ -103,9 +103,9 @@
     "hireable": null,
     "bio": "staff software engineer at @laravel · speaker · content creator · created @pestphp, pint, pail, @larastan, @laravel-zero, @openai for php, @phpinsights, etc",
     "twitter_username": "enunomaduro",
-    "public_repos": 317,
+    "public_repos": 318,
     "public_gists": 23,
-    "followers": 9209,
+    "followers": 9218,
     "following": 5,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2026-06-30T14:01:53Z"
@@ -143,7 +143,7 @@
     "twitter_username": "themsaid",
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 5241,
+    "followers": 5243,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2025-09-05T12:16:26Z"
@@ -180,7 +180,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 524,
     "public_gists": 0,
-    "followers": 3782,
+    "followers": 3786,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -217,10 +217,10 @@
     "twitter_username": "driesvints",
     "public_repos": 10,
     "public_gists": 15,
-    "followers": 5454,
+    "followers": 5455,
     "following": 34,
     "created_at": "2011-02-01T12:16:19Z",
-    "updated_at": "2026-05-16T14:04:45Z"
+    "updated_at": "2026-07-01T09:06:44Z"
   },
   {
     "name": "Graham Campbell",
@@ -252,7 +252,7 @@
     "hireable": true,
     "bio": "OSS Maintainer | Laravel | StyleCI",
     "twitter_username": "GrahamJCampbell",
-    "public_repos": 69,
+    "public_repos": 70,
     "public_gists": 10,
     "followers": 7089,
     "following": 144,
@@ -329,7 +329,7 @@
     "twitter_username": "mattstauffer",
     "public_repos": 109,
     "public_gists": 48,
-    "followers": 2316,
+    "followers": 2317,
     "following": 20,
     "created_at": "2009-11-11T16:01:24Z",
     "updated_at": "2026-05-23T17:21:12Z"
@@ -366,10 +366,10 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 74,
     "public_gists": 52,
-    "followers": 2373,
+    "followers": 2374,
     "following": 131,
     "created_at": "2010-04-17T14:13:52Z",
-    "updated_at": "2026-06-16T09:47:16Z"
+    "updated_at": "2026-07-01T09:03:34Z"
   },
   {
     "name": "Tetiana Blindaruk",
@@ -515,7 +515,7 @@
     "twitter_username": "ericlbarnes",
     "public_repos": 57,
     "public_gists": 48,
-    "followers": 1795,
+    "followers": 1794,
     "following": 13,
     "created_at": "2009-08-18T16:49:21Z",
     "updated_at": "2026-06-25T14:28:52Z"
@@ -700,7 +700,7 @@
     "twitter_username": "seldaek",
     "public_repos": 271,
     "public_gists": 33,
-    "followers": 4703,
+    "followers": 4701,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2026-06-27T17:33:10Z"
@@ -737,7 +737,7 @@
     "twitter_username": "timacdonald87",
     "public_repos": 57,
     "public_gists": 5,
-    "followers": 1676,
+    "followers": 1677,
     "following": 1,
     "created_at": "2016-12-28T04:15:41Z",
     "updated_at": "2026-05-27T04:05:07Z"
@@ -924,7 +924,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 68,
-    "followers": 3343,
+    "followers": 3344,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2026-05-23T18:31:45Z"
@@ -998,7 +998,7 @@
     "twitter_username": null,
     "public_repos": 178,
     "public_gists": 28,
-    "followers": 13292,
+    "followers": 13295,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2026-02-02T18:05:40Z"
@@ -1036,7 +1036,7 @@
     "twitter_username": "evanyou",
     "public_repos": 198,
     "public_gists": 73,
-    "followers": 108372,
+    "followers": 108376,
     "following": 100,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2026-04-24T09:28:14Z"
@@ -1077,7 +1077,7 @@
     "followers": 7262,
     "following": 254,
     "created_at": "2012-02-25T08:17:56Z",
-    "updated_at": "2026-06-26T07:13:17Z"
+    "updated_at": "2026-07-01T12:50:36Z"
   },
   {
     "name": "Fabien Potencier",
@@ -1149,7 +1149,7 @@
     "twitter_username": "malfaitrobin",
     "public_repos": 66,
     "public_gists": 42,
-    "followers": 2134,
+    "followers": 2135,
     "following": 170,
     "created_at": "2012-06-09T22:00:12Z",
     "updated_at": "2026-06-15T12:13:42Z"
@@ -1186,7 +1186,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 67,
     "public_gists": 161,
-    "followers": 17253,
+    "followers": 17252,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2026-04-23T17:12:36Z"

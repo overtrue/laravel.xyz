@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 4,
     "public_gists": 9,
-    "followers": 35660,
+    "followers": 35665,
     "following": 3,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2026-07-15T15:38:12Z"
@@ -180,7 +180,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 524,
     "public_gists": 0,
-    "followers": 3803,
+    "followers": 3804,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -329,7 +329,7 @@
     "twitter_username": "mattstauffer",
     "public_repos": 109,
     "public_gists": 48,
-    "followers": 2323,
+    "followers": 2324,
     "following": 19,
     "created_at": "2009-11-11T16:01:24Z",
     "updated_at": "2026-07-18T03:41:51Z"
@@ -366,7 +366,7 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 74,
     "public_gists": 52,
-    "followers": 2387,
+    "followers": 2388,
     "following": 131,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2026-07-07T20:44:12Z"
@@ -924,7 +924,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 68,
-    "followers": 3351,
+    "followers": 3352,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2026-07-08T17:14:18Z"
@@ -959,12 +959,12 @@
     "hireable": null,
     "bio": "Software developer. You can find all of my public contributions here. Learn more on my website.",
     "twitter_username": null,
-    "public_repos": 71,
+    "public_repos": 72,
     "public_gists": 12,
     "followers": 242,
     "following": 15,
     "created_at": "2013-02-27T11:50:57Z",
-    "updated_at": "2026-07-12T10:15:28Z"
+    "updated_at": "2026-07-19T10:11:08Z"
   },
   {
     "name": "Adam Wathan",
@@ -1036,7 +1036,7 @@
     "twitter_username": "evanyou",
     "public_repos": 198,
     "public_gists": 73,
-    "followers": 108498,
+    "followers": 108505,
     "following": 100,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2026-07-17T22:19:18Z"
@@ -1074,8 +1074,8 @@
     "twitter_username": "overtrue666",
     "public_repos": 121,
     "public_gists": 31,
-    "followers": 7256,
-    "following": 254,
+    "followers": 7255,
+    "following": 253,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2026-07-04T12:11:19Z"
   },
@@ -1109,7 +1109,7 @@
     "hireable": null,
     "bio": "Founder and project lead at Symfony\r\nCTO at Upsun",
     "twitter_username": "fabpot",
-    "public_repos": 85,
+    "public_repos": 86,
     "public_gists": 12,
     "followers": 13434,
     "following": 0,
@@ -1147,7 +1147,7 @@
     "hireable": null,
     "bio": null,
     "twitter_username": "malfaitrobin",
-    "public_repos": 66,
+    "public_repos": 67,
     "public_gists": 42,
     "followers": 2148,
     "following": 170,
@@ -1186,7 +1186,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 67,
     "public_gists": 161,
-    "followers": 17266,
+    "followers": 17267,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2026-04-23T17:12:36Z"

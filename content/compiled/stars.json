@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 4,
     "public_gists": 9,
-    "followers": 35682,
+    "followers": 35684,
     "following": 3,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2026-07-15T15:38:12Z"
@@ -68,7 +68,7 @@
     "twitter_username": "freekmurze",
     "public_repos": 166,
     "public_gists": 21,
-    "followers": 5236,
+    "followers": 5238,
     "following": 17,
     "created_at": "2010-11-16T13:38:15Z",
     "updated_at": "2026-07-10T06:40:48Z"
@@ -105,7 +105,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 318,
     "public_gists": 23,
-    "followers": 9266,
+    "followers": 9269,
     "following": 5,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2026-06-30T14:01:53Z"
@@ -143,7 +143,7 @@
     "twitter_username": "themsaid",
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 5240,
+    "followers": 5241,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2026-07-21T11:53:52Z"
@@ -217,7 +217,7 @@
     "twitter_username": "driesvints",
     "public_repos": 10,
     "public_gists": 15,
-    "followers": 5463,
+    "followers": 5465,
     "following": 34,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2026-07-01T09:06:44Z"
@@ -292,7 +292,7 @@
     "twitter_username": null,
     "public_repos": 92,
     "public_gists": 50,
-    "followers": 5629,
+    "followers": 5631,
     "following": 3,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2025-08-30T20:58:32Z"
@@ -329,7 +329,7 @@
     "twitter_username": "mattstauffer",
     "public_repos": 109,
     "public_gists": 48,
-    "followers": 2324,
+    "followers": 2325,
     "following": 19,
     "created_at": "2009-11-11T16:01:24Z",
     "updated_at": "2026-07-20T18:34:33Z"
@@ -369,7 +369,7 @@
     "followers": 2390,
     "following": 131,
     "created_at": "2010-04-17T14:13:52Z",
-    "updated_at": "2026-07-21T15:19:00Z"
+    "updated_at": "2026-07-25T21:50:20Z"
   },
   {
     "name": "Tetiana Blindaruk",
@@ -700,7 +700,7 @@
     "twitter_username": "seldaek",
     "public_repos": 271,
     "public_gists": 33,
-    "followers": 4708,
+    "followers": 4709,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2026-07-10T11:29:24Z"
@@ -737,7 +737,7 @@
     "twitter_username": "timacdonald87",
     "public_repos": 57,
     "public_gists": 5,
-    "followers": 1684,
+    "followers": 1685,
     "following": 1,
     "created_at": "2016-12-28T04:15:41Z",
     "updated_at": "2026-07-10T00:21:04Z"
@@ -812,7 +812,7 @@
     "twitter_username": null,
     "public_repos": 241,
     "public_gists": 53,
-    "followers": 4024,
+    "followers": 4025,
     "following": 14,
     "created_at": "2011-05-23T08:11:19Z",
     "updated_at": "2026-07-09T08:08:08Z"
@@ -924,7 +924,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 68,
-    "followers": 3353,
+    "followers": 3354,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2026-07-08T17:14:18Z"
@@ -998,7 +998,7 @@
     "twitter_username": null,
     "public_repos": 178,
     "public_gists": 28,
-    "followers": 13305,
+    "followers": 13306,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2026-02-02T18:05:40Z"
@@ -1036,7 +1036,7 @@
     "twitter_username": "evanyou",
     "public_repos": 198,
     "public_gists": 73,
-    "followers": 108550,
+    "followers": 108562,
     "following": 100,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2026-07-22T03:01:50Z"
@@ -1111,10 +1111,10 @@
     "twitter_username": "fabpot",
     "public_repos": 86,
     "public_gists": 12,
-    "followers": 13441,
+    "followers": 13442,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
-    "updated_at": "2026-07-05T08:52:58Z"
+    "updated_at": "2026-07-25T21:14:31Z"
   },
   {
     "name": "Robin Malfait",

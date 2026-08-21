@@ -2676,6 +2676,17 @@
     "ace_mode": "text",
     "language_id": 106
   },
+  "FPP": {
+    "type": "programming",
+    "color": "#d37327",
+    "extensions": [
+      ".fpp",
+      ".fppi"
+    ],
+    "tm_scope": "source.fpp",
+    "ace_mode": "text",
+    "language_id": 252360067
+  },
   "Factor": {
     "type": "programming",
     "color": "#636746",
@@ -10354,7 +10365,25 @@
     "ace_mode": "text",
     "language_id": 508563686
   },
-  "Vim Script": {
+  "Vim Snippet": {
+    "type": "markup",
+    "color": "#199f4b",
+    "aliases": [
+      "SnipMate",
+      "UltiSnip",
+      "UltiSnips",
+      "NeoSnippet"
+    ],
+    "extensions": [
+      ".snip",
+      ".snippet",
+      ".snippets"
+    ],
+    "tm_scope": "source.vim-snippet",
+    "ace_mode": "text",
+    "language_id": 81265970
+  },
+  "Vim script": {
     "type": "programming",
     "color": "#199f4b",
     "tm_scope": "source.viml",
@@ -10382,24 +10411,6 @@
     ],
     "ace_mode": "text",
     "language_id": 388
-  },
-  "Vim Snippet": {
-    "type": "markup",
-    "color": "#199f4b",
-    "aliases": [
-      "SnipMate",
-      "UltiSnip",
-      "UltiSnips",
-      "NeoSnippet"
-    ],
-    "extensions": [
-      ".snip",
-      ".snippet",
-      ".snippets"
-    ],
-    "tm_scope": "source.vim-snippet",
-    "ace_mode": "text",
-    "language_id": 81265970
   },
   "Visual Basic .NET": {
     "type": "programming",

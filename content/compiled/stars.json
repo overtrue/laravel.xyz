@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 8,
     "public_gists": 9,
-    "followers": 35887,
+    "followers": 35889,
     "following": 3,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2026-08-23T17:13:32Z"
@@ -68,10 +68,10 @@
     "twitter_username": "freekmurze",
     "public_repos": 166,
     "public_gists": 21,
-    "followers": 5246,
+    "followers": 5247,
     "following": 17,
     "created_at": "2010-11-16T13:38:15Z",
-    "updated_at": "2026-08-23T07:56:47Z"
+    "updated_at": "2026-08-24T09:30:53Z"
   },
   {
     "name": "nuno maduro",
@@ -143,7 +143,7 @@
     "twitter_username": "themsaid",
     "public_repos": 58,
     "public_gists": 13,
-    "followers": 5244,
+    "followers": 5246,
     "following": 29,
     "created_at": "2013-05-03T14:45:35Z",
     "updated_at": "2026-08-11T16:40:45Z"
@@ -180,7 +180,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 526,
     "public_gists": 0,
-    "followers": 3824,
+    "followers": 3825,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2024-03-20T19:24:24Z"
@@ -252,9 +252,9 @@
     "hireable": true,
     "bio": "OSS Maintainer | Laravel | StyleCI",
     "twitter_username": "GrahamJCampbell",
-    "public_repos": 103,
+    "public_repos": 105,
     "public_gists": 10,
-    "followers": 7089,
+    "followers": 7090,
     "following": 144,
     "created_at": "2012-11-18T22:14:00Z",
     "updated_at": "2026-08-22T14:03:39Z"
@@ -329,7 +329,7 @@
     "twitter_username": "mattstauffer",
     "public_repos": 109,
     "public_gists": 48,
-    "followers": 2328,
+    "followers": 2329,
     "following": 19,
     "created_at": "2009-11-11T16:01:24Z",
     "updated_at": "2026-07-28T19:28:32Z"
@@ -366,7 +366,7 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 74,
     "public_gists": 52,
-    "followers": 2403,
+    "followers": 2404,
     "following": 131,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2026-08-21T08:10:08Z"
@@ -700,7 +700,7 @@
     "twitter_username": "seldaek",
     "public_repos": 271,
     "public_gists": 33,
-    "followers": 4709,
+    "followers": 4710,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2026-08-13T23:22:03Z"
@@ -812,7 +812,7 @@
     "twitter_username": null,
     "public_repos": 241,
     "public_gists": 53,
-    "followers": 4032,
+    "followers": 4033,
     "following": 14,
     "created_at": "2011-05-23T08:11:19Z",
     "updated_at": "2026-08-01T04:45:22Z"
@@ -961,7 +961,7 @@
     "twitter_username": null,
     "public_repos": 72,
     "public_gists": 12,
-    "followers": 246,
+    "followers": 248,
     "following": 15,
     "created_at": "2013-02-27T11:50:57Z",
     "updated_at": "2026-08-14T07:01:28Z"
@@ -998,7 +998,7 @@
     "twitter_username": null,
     "public_repos": 178,
     "public_gists": 28,
-    "followers": 13339,
+    "followers": 13338,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2026-08-13T13:03:10Z"
@@ -1036,7 +1036,7 @@
     "twitter_username": "evanyou",
     "public_repos": 198,
     "public_gists": 73,
-    "followers": 109130,
+    "followers": 109267,
     "following": 100,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2026-08-23T02:44:02Z"
@@ -1074,7 +1074,7 @@
     "twitter_username": "overtrue666",
     "public_repos": 121,
     "public_gists": 31,
-    "followers": 7239,
+    "followers": 7237,
     "following": 253,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2026-08-15T05:16:51Z"
@@ -1111,7 +1111,7 @@
     "twitter_username": "fabpot",
     "public_repos": 91,
     "public_gists": 12,
-    "followers": 13581,
+    "followers": 13583,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2026-07-25T21:14:31Z"
@@ -1186,7 +1186,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 67,
     "public_gists": 161,
-    "followers": 17277,
+    "followers": 17276,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2026-04-23T17:12:36Z"

@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 9,
     "public_gists": 9,
-    "followers": 35926,
+    "followers": 35930,
     "following": 3,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2026-09-10T00:31:06Z"
@@ -68,7 +68,7 @@
     "twitter_username": "freekmurze",
     "public_repos": 166,
     "public_gists": 21,
-    "followers": 5249,
+    "followers": 5251,
     "following": 17,
     "created_at": "2010-11-16T13:38:15Z",
     "updated_at": "2026-09-09T14:47:48Z"
@@ -105,7 +105,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 319,
     "public_gists": 23,
-    "followers": 9346,
+    "followers": 9349,
     "following": 5,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2026-09-09T21:10:50Z"
@@ -180,7 +180,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 529,
     "public_gists": 0,
-    "followers": 3843,
+    "followers": 3844,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2026-09-08T12:11:06Z"
@@ -257,7 +257,7 @@
     "followers": 7093,
     "following": 144,
     "created_at": "2012-11-18T22:14:00Z",
-    "updated_at": "2026-09-08T17:39:40Z"
+    "updated_at": "2026-09-12T02:07:49Z"
   },
   {
     "name": "Caleb Porzio",
@@ -366,8 +366,8 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 74,
     "public_gists": 52,
-    "followers": 2417,
-    "following": 131,
+    "followers": 2419,
+    "following": 132,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2026-08-21T08:10:08Z"
   },
@@ -626,7 +626,7 @@
     "twitter_username": "jessarchercodes",
     "public_repos": 83,
     "public_gists": 5,
-    "followers": 1983,
+    "followers": 1984,
     "following": 32,
     "created_at": "2013-07-09T22:40:40Z",
     "updated_at": "2026-06-10T00:38:31Z"
@@ -700,7 +700,7 @@
     "twitter_username": "seldaek",
     "public_repos": 271,
     "public_gists": 33,
-    "followers": 4713,
+    "followers": 4715,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2026-09-10T11:34:01Z"
@@ -737,7 +737,7 @@
     "twitter_username": "timacdonald87",
     "public_repos": 58,
     "public_gists": 5,
-    "followers": 1688,
+    "followers": 1690,
     "following": 1,
     "created_at": "2016-12-28T04:15:41Z",
     "updated_at": "2026-08-31T00:46:12Z"
@@ -812,7 +812,7 @@
     "twitter_username": null,
     "public_repos": 241,
     "public_gists": 53,
-    "followers": 4036,
+    "followers": 4038,
     "following": 14,
     "created_at": "2011-05-23T08:11:19Z",
     "updated_at": "2026-08-27T13:14:14Z"
@@ -924,7 +924,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 68,
-    "followers": 3361,
+    "followers": 3362,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2026-09-08T15:47:48Z"
@@ -961,7 +961,7 @@
     "twitter_username": null,
     "public_repos": 74,
     "public_gists": 12,
-    "followers": 253,
+    "followers": 254,
     "following": 15,
     "created_at": "2013-02-27T11:50:57Z",
     "updated_at": "2026-09-06T19:10:54Z"
@@ -998,7 +998,7 @@
     "twitter_username": null,
     "public_repos": 178,
     "public_gists": 28,
-    "followers": 13358,
+    "followers": 13360,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2026-09-09T17:43:58Z"
@@ -1036,13 +1036,13 @@
     "twitter_username": "evanyou",
     "public_repos": 198,
     "public_gists": 73,
-    "followers": 111019,
+    "followers": 111030,
     "following": 100,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2026-09-03T01:43:10Z"
   },
   {
-    "name": "Zhengchao An",
+    "name": "Chris",
     "introduction": "Laravel 死忠粉，本站站长",
     "github_id": "overtrue",
     "twitter_id": "overtrue666",
@@ -1074,10 +1074,10 @@
     "twitter_username": "overtrue666",
     "public_repos": 122,
     "public_gists": 31,
-    "followers": 7236,
+    "followers": 7237,
     "following": 253,
     "created_at": "2012-02-25T08:17:56Z",
-    "updated_at": "2026-09-05T01:15:11Z"
+    "updated_at": "2026-09-12T04:07:51Z"
   },
   {
     "name": "Fabien Potencier",
@@ -1152,7 +1152,7 @@
     "followers": 2170,
     "following": 170,
     "created_at": "2012-06-09T22:00:12Z",
-    "updated_at": "2026-09-10T19:53:06Z"
+    "updated_at": "2026-09-11T15:27:47Z"
   },
   {
     "name": "Jeffrey Way",
@@ -1186,7 +1186,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 67,
     "public_gists": 161,
-    "followers": 17278,
+    "followers": 17279,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2026-04-23T17:12:36Z"

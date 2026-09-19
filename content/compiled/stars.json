@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 9,
     "public_gists": 9,
-    "followers": 35942,
+    "followers": 35941,
     "following": 3,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2026-09-15T02:51:32Z"
@@ -105,7 +105,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 324,
     "public_gists": 23,
-    "followers": 9358,
+    "followers": 9359,
     "following": 6,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2026-09-09T21:10:50Z"
@@ -292,7 +292,7 @@
     "twitter_username": null,
     "public_repos": 93,
     "public_gists": 50,
-    "followers": 5652,
+    "followers": 5651,
     "following": 3,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2026-08-09T11:31:29Z"
@@ -366,7 +366,7 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 74,
     "public_gists": 52,
-    "followers": 2422,
+    "followers": 2423,
     "following": 132,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2026-08-21T08:10:08Z"
@@ -700,7 +700,7 @@
     "twitter_username": "seldaek",
     "public_repos": 271,
     "public_gists": 33,
-    "followers": 4718,
+    "followers": 4720,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2026-09-10T11:34:01Z"
@@ -737,7 +737,7 @@
     "twitter_username": "timacdonald87",
     "public_repos": 58,
     "public_gists": 5,
-    "followers": 1693,
+    "followers": 1694,
     "following": 1,
     "created_at": "2016-12-28T04:15:41Z",
     "updated_at": "2026-08-31T00:46:12Z"
@@ -812,7 +812,7 @@
     "twitter_username": null,
     "public_repos": 242,
     "public_gists": 53,
-    "followers": 4046,
+    "followers": 4048,
     "following": 14,
     "created_at": "2011-05-23T08:11:19Z",
     "updated_at": "2026-09-17T19:53:41Z"
@@ -885,9 +885,9 @@
     "hireable": null,
     "bio": "Submitting features and bug(fixes) @symfony, to make it always faster, easier to use and better designed, uncompromising.\r\n@ESPCI_Alumni @HECAlumni.",
     "twitter_username": "nicolasgrekas",
-    "public_repos": 130,
+    "public_repos": 135,
     "public_gists": 29,
-    "followers": 2135,
+    "followers": 2137,
     "following": 5,
     "created_at": "2010-04-14T09:44:17Z",
     "updated_at": "2026-07-08T15:28:10Z"
@@ -961,7 +961,7 @@
     "twitter_username": null,
     "public_repos": 75,
     "public_gists": 12,
-    "followers": 256,
+    "followers": 257,
     "following": 15,
     "created_at": "2013-02-27T11:50:57Z",
     "updated_at": "2026-09-06T19:10:54Z"
@@ -998,7 +998,7 @@
     "twitter_username": null,
     "public_repos": 178,
     "public_gists": 28,
-    "followers": 13360,
+    "followers": 13361,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2026-09-09T17:43:58Z"
@@ -1036,7 +1036,7 @@
     "twitter_username": "evanyou",
     "public_repos": 198,
     "public_gists": 73,
-    "followers": 111440,
+    "followers": 111446,
     "following": 100,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2026-09-17T07:14:43Z"
@@ -1075,7 +1075,7 @@
     "public_repos": 122,
     "public_gists": 31,
     "followers": 7241,
-    "following": 253,
+    "following": 254,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2026-09-12T04:07:51Z"
   },
@@ -1111,10 +1111,10 @@
     "twitter_username": "fabpot",
     "public_repos": 92,
     "public_gists": 12,
-    "followers": 13592,
+    "followers": 13595,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
-    "updated_at": "2026-09-10T18:30:51Z"
+    "updated_at": "2026-09-18T22:33:06Z"
   },
   {
     "name": "Robin Malfait",
@@ -1140,7 +1140,7 @@
     "type": "User",
     "user_view_type": "public",
     "site_admin": false,
-    "company": "@tailwindlabs",
+    "company": "@Shopify",
     "blog": "https://robinmalfait.com",
     "location": "Ghent, Belgium",
     "email": null,
@@ -1152,7 +1152,7 @@
     "followers": 2171,
     "following": 170,
     "created_at": "2012-06-09T22:00:12Z",
-    "updated_at": "2026-09-16T16:39:08Z"
+    "updated_at": "2026-09-18T10:57:04Z"
   },
   {
     "name": "Jeffrey Way",

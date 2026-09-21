@@ -2485,7 +2485,7 @@
   },
   "Elixir": {
     "type": "programming",
-    "color": "#6e4a7e",
+    "color": "#8847B9",
     "extensions": [
       ".ex",
       ".exs"

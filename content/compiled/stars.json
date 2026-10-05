@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 10,
     "public_gists": 9,
-    "followers": 35973,
+    "followers": 35977,
     "following": 3,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2026-10-03T20:45:11Z"
@@ -108,7 +108,7 @@
     "followers": 9387,
     "following": 6,
     "created_at": "2013-09-14T08:11:58Z",
-    "updated_at": "2026-09-09T21:10:50Z"
+    "updated_at": "2026-10-05T07:33:50Z"
   },
   {
     "name": "Mohamed Said",
@@ -252,7 +252,7 @@
     "hireable": true,
     "bio": "OSS Maintainer | Laravel | StyleCI",
     "twitter_username": "GrahamJCampbell",
-    "public_repos": 107,
+    "public_repos": 108,
     "public_gists": 10,
     "followers": 7103,
     "following": 144,
@@ -329,7 +329,7 @@
     "twitter_username": "mattstauffer",
     "public_repos": 109,
     "public_gists": 48,
-    "followers": 2337,
+    "followers": 2338,
     "following": 19,
     "created_at": "2009-11-11T16:01:24Z",
     "updated_at": "2026-10-01T10:52:44Z"
@@ -666,7 +666,7 @@
     "followers": 1147,
     "following": 16,
     "created_at": "2010-12-23T15:39:26Z",
-    "updated_at": "2026-10-03T17:13:44Z"
+    "updated_at": "2026-10-04T13:24:00Z"
   },
   {
     "name": "Jordi Boggiano",
@@ -703,7 +703,7 @@
     "followers": 4723,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
-    "updated_at": "2026-10-02T16:51:40Z"
+    "updated_at": "2026-10-04T19:58:28Z"
   },
   {
     "name": "Tim MacDonald",
@@ -961,7 +961,7 @@
     "twitter_username": null,
     "public_repos": 75,
     "public_gists": 12,
-    "followers": 287,
+    "followers": 302,
     "following": 15,
     "created_at": "2013-02-27T11:50:57Z",
     "updated_at": "2026-09-06T19:10:54Z"
@@ -998,7 +998,7 @@
     "twitter_username": null,
     "public_repos": 178,
     "public_gists": 28,
-    "followers": 13421,
+    "followers": 13458,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2026-09-09T17:43:58Z"
@@ -1036,7 +1036,7 @@
     "twitter_username": "evanyou",
     "public_repos": 198,
     "public_gists": 73,
-    "followers": 111598,
+    "followers": 111637,
     "following": 101,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2026-09-17T07:14:43Z"
@@ -1111,7 +1111,7 @@
     "twitter_username": "fabpot",
     "public_repos": 93,
     "public_gists": 12,
-    "followers": 13605,
+    "followers": 13606,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2026-09-18T22:33:06Z"

@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 10,
     "public_gists": 9,
-    "followers": 35977,
+    "followers": 35978,
     "following": 3,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2026-10-03T20:45:11Z"
@@ -103,9 +103,9 @@
     "hireable": null,
     "bio": "staff software engineer at @laravel · speaker · content creator · created @pestphp, pint, pail, @larastan, @laravel-zero, @openai for php, @phpinsights, etc",
     "twitter_username": "enunomaduro",
-    "public_repos": 325,
+    "public_repos": 326,
     "public_gists": 23,
-    "followers": 9387,
+    "followers": 9388,
     "following": 6,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2026-10-05T07:33:50Z"
@@ -178,9 +178,9 @@
     "hireable": null,
     "bio": "We create open source, digital products and courses for the developer community",
     "twitter_username": "spatie_be",
-    "public_repos": 530,
+    "public_repos": 531,
     "public_gists": 0,
-    "followers": 3865,
+    "followers": 3866,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2026-09-08T12:11:06Z"
@@ -252,12 +252,12 @@
     "hireable": true,
     "bio": "OSS Maintainer | Laravel | StyleCI",
     "twitter_username": "GrahamJCampbell",
-    "public_repos": 108,
+    "public_repos": 109,
     "public_gists": 10,
-    "followers": 7103,
+    "followers": 7102,
     "following": 144,
     "created_at": "2012-11-18T22:14:00Z",
-    "updated_at": "2026-10-02T14:47:45Z"
+    "updated_at": "2026-10-05T23:50:08Z"
   },
   {
     "name": "Caleb Porzio",
@@ -329,7 +329,7 @@
     "twitter_username": "mattstauffer",
     "public_repos": 109,
     "public_gists": 48,
-    "followers": 2338,
+    "followers": 2337,
     "following": 19,
     "created_at": "2009-11-11T16:01:24Z",
     "updated_at": "2026-10-01T10:52:44Z"
@@ -364,7 +364,7 @@
     "hireable": null,
     "bio": "Head of Enterprise Enablement @laravel.\r\nFounder of @CachetHQ 🚦\r\nCreator of artisan.page\r\nOrganiser of @phpstoke ",
     "twitter_username": "jbrooksuk",
-    "public_repos": 74,
+    "public_repos": 76,
     "public_gists": 52,
     "followers": 2432,
     "following": 132,
@@ -626,7 +626,7 @@
     "twitter_username": "jessarchercodes",
     "public_repos": 83,
     "public_gists": 5,
-    "followers": 1990,
+    "followers": 1989,
     "following": 32,
     "created_at": "2013-07-09T22:40:40Z",
     "updated_at": "2026-06-10T00:38:31Z"
@@ -812,7 +812,7 @@
     "twitter_username": null,
     "public_repos": 242,
     "public_gists": 53,
-    "followers": 4053,
+    "followers": 4054,
     "following": 14,
     "created_at": "2011-05-23T08:11:19Z",
     "updated_at": "2026-09-30T19:25:37Z"
@@ -961,7 +961,7 @@
     "twitter_username": null,
     "public_repos": 75,
     "public_gists": 12,
-    "followers": 302,
+    "followers": 320,
     "following": 15,
     "created_at": "2013-02-27T11:50:57Z",
     "updated_at": "2026-09-06T19:10:54Z"
@@ -998,7 +998,7 @@
     "twitter_username": null,
     "public_repos": 178,
     "public_gists": 28,
-    "followers": 13458,
+    "followers": 13473,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
     "updated_at": "2026-09-09T17:43:58Z"
@@ -1036,7 +1036,7 @@
     "twitter_username": "evanyou",
     "public_repos": 198,
     "public_gists": 73,
-    "followers": 111637,
+    "followers": 111653,
     "following": 101,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2026-09-17T07:14:43Z"
@@ -1111,7 +1111,7 @@
     "twitter_username": "fabpot",
     "public_repos": 93,
     "public_gists": 12,
-    "followers": 13606,
+    "followers": 13604,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2026-09-18T22:33:06Z"
@@ -1186,7 +1186,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 67,
     "public_gists": 161,
-    "followers": 17291,
+    "followers": 17290,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2026-04-23T17:12:36Z"

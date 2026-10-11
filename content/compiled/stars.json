@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 10,
     "public_gists": 9,
-    "followers": 35996,
+    "followers": 36004,
     "following": 3,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2026-10-08T12:36:47Z"
@@ -68,7 +68,7 @@
     "twitter_username": "freekmurze",
     "public_repos": 167,
     "public_gists": 21,
-    "followers": 5262,
+    "followers": 5263,
     "following": 17,
     "created_at": "2010-11-16T13:38:15Z",
     "updated_at": "2026-10-08T14:19:54Z"
@@ -105,7 +105,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 326,
     "public_gists": 23,
-    "followers": 9386,
+    "followers": 9387,
     "following": 6,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2026-10-06T16:49:44Z"
@@ -217,7 +217,7 @@
     "twitter_username": "driesvints",
     "public_repos": 10,
     "public_gists": 15,
-    "followers": 5487,
+    "followers": 5488,
     "following": 34,
     "created_at": "2011-02-01T12:16:19Z",
     "updated_at": "2026-10-07T08:25:18Z"
@@ -254,7 +254,7 @@
     "twitter_username": "GrahamJCampbell",
     "public_repos": 110,
     "public_gists": 10,
-    "followers": 7102,
+    "followers": 7103,
     "following": 144,
     "created_at": "2012-11-18T22:14:00Z",
     "updated_at": "2026-10-05T23:50:08Z"
@@ -366,7 +366,7 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 75,
     "public_gists": 52,
-    "followers": 2434,
+    "followers": 2435,
     "following": 132,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2026-10-06T09:06:50Z"
@@ -403,7 +403,7 @@
     "twitter_username": null,
     "public_repos": 37,
     "public_gists": 0,
-    "followers": 1190,
+    "followers": 1191,
     "following": 8,
     "created_at": "2015-05-31T15:34:11Z",
     "updated_at": "2026-10-01T08:03:10Z"
@@ -585,14 +585,14 @@
     "location": "Amsterdam, The Netherlands",
     "email": null,
     "hireable": null,
-    "bio": "Artisan ❯ Open-source enthusiast ❯ VILT is my stack",
+    "bio": "Artisan ❯ Open-source enthusiast",
     "twitter_username": "claudiodekker",
-    "public_repos": 44,
+    "public_repos": 45,
     "public_gists": 10,
     "followers": 543,
     "following": 16,
     "created_at": "2012-05-18T12:06:13Z",
-    "updated_at": "2026-09-28T15:31:16Z"
+    "updated_at": "2026-10-10T17:25:36Z"
   },
   {
     "name": "Jess Archer",
@@ -700,10 +700,10 @@
     "twitter_username": "seldaek",
     "public_repos": 272,
     "public_gists": 33,
-    "followers": 4725,
+    "followers": 4726,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
-    "updated_at": "2026-10-04T19:58:28Z"
+    "updated_at": "2026-10-10T11:48:39Z"
   },
   {
     "name": "Tim MacDonald",
@@ -774,7 +774,7 @@
     "twitter_username": "caneco",
     "public_repos": 75,
     "public_gists": 2,
-    "followers": 925,
+    "followers": 924,
     "following": 13,
     "created_at": "2010-11-29T16:08:58Z",
     "updated_at": "2026-09-03T09:15:51Z"
@@ -887,7 +887,7 @@
     "twitter_username": "nicolasgrekas",
     "public_repos": 159,
     "public_gists": 29,
-    "followers": 2152,
+    "followers": 2154,
     "following": 5,
     "created_at": "2010-04-14T09:44:17Z",
     "updated_at": "2026-10-07T05:36:39Z"
@@ -959,9 +959,9 @@
     "hireable": null,
     "bio": "Software developer. You can find all of my public contributions here. Learn more on my website.",
     "twitter_username": null,
-    "public_repos": 76,
+    "public_repos": 77,
     "public_gists": 12,
-    "followers": 351,
+    "followers": 359,
     "following": 15,
     "created_at": "2013-02-27T11:50:57Z",
     "updated_at": "2026-10-06T15:49:11Z"
@@ -1036,7 +1036,7 @@
     "twitter_username": "evanyou",
     "public_repos": 198,
     "public_gists": 73,
-    "followers": 111701,
+    "followers": 111710,
     "following": 101,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2026-10-08T03:02:09Z"
@@ -1074,10 +1074,10 @@
     "twitter_username": "overtrue666",
     "public_repos": 124,
     "public_gists": 31,
-    "followers": 7248,
+    "followers": 7247,
     "following": 254,
     "created_at": "2012-02-25T08:17:56Z",
-    "updated_at": "2026-10-09T10:06:56Z"
+    "updated_at": "2026-10-11T04:46:15Z"
   },
   {
     "name": "Fabien Potencier",
@@ -1111,7 +1111,7 @@
     "twitter_username": "fabpot",
     "public_repos": 93,
     "public_gists": 12,
-    "followers": 13621,
+    "followers": 13627,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2026-09-18T22:33:06Z"
@@ -1224,7 +1224,7 @@
     "twitter_username": null,
     "public_repos": 95,
     "public_gists": 49,
-    "followers": 3026,
+    "followers": 3025,
     "following": 91,
     "created_at": "2010-07-06T23:12:44Z",
     "updated_at": "2026-05-10T09:55:52Z"

@@ -10073,7 +10073,7 @@
     "language_id": 1016912802
   },
   "Tree-sitter Query": {
-    "type": "programming",
+    "type": "data",
     "color": "#8ea64c",
     "aliases": [
       "tsq"
@@ -10081,8 +10081,10 @@
     "extensions": [
       ".scm"
     ],
-    "tm_scope": "source.scm",
-    "ace_mode": "text",
+    "tm_scope": "source.tsq",
+    "ace_mode": "scheme",
+    "codemirror_mode": "scheme",
+    "codemirror_mime_type": "text/x-scheme",
     "language_id": 436081647
   },
   "Turing": {

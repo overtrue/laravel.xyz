@@ -34,7 +34,7 @@
     "followers": 36047,
     "following": 3,
     "created_at": "2010-11-01T20:15:30Z",
-    "updated_at": "2026-10-22T12:25:09Z"
+    "updated_at": "2026-10-23T23:24:01Z"
   },
   {
     "name": "Freek Van der Herten",
@@ -68,7 +68,7 @@
     "twitter_username": "freekmurze",
     "public_repos": 167,
     "public_gists": 21,
-    "followers": 5270,
+    "followers": 5271,
     "following": 17,
     "created_at": "2010-11-16T13:38:15Z",
     "updated_at": "2026-10-17T23:26:49Z"
@@ -105,7 +105,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 326,
     "public_gists": 23,
-    "followers": 9467,
+    "followers": 9470,
     "following": 9,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2026-10-20T14:54:59Z"
@@ -180,7 +180,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 534,
     "public_gists": 0,
-    "followers": 3889,
+    "followers": 3893,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2026-09-08T12:11:06Z"
@@ -213,14 +213,14 @@
     "location": "Belgium",
     "email": null,
     "hireable": null,
-    "bio": "👨‍🚀 @laravel Core Team • 💻 Building @laravelio & @eventyio • ⭐️ @github Star • 💸 @stripe Community Expert",
+    "bio": "👨‍🚀 Billing engineer at @laravel • 💻 Building @laravelio, @eventyio & Moneytrees • ⭐️ @github Star",
     "twitter_username": "driesvints",
     "public_repos": 10,
     "public_gists": 15,
     "followers": 5488,
     "following": 35,
     "created_at": "2011-02-01T12:16:19Z",
-    "updated_at": "2026-10-19T20:20:08Z"
+    "updated_at": "2026-10-23T09:45:17Z"
   },
   {
     "name": "Graham Campbell",
@@ -327,7 +327,7 @@
     "hireable": null,
     "bio": "CEO at @tighten. Podcaster (Laravel Podcast, Pragmatic AI, Business of Laravel), open source maintainer, blogger, etc.",
     "twitter_username": "mattstauffer",
-    "public_repos": 110,
+    "public_repos": 111,
     "public_gists": 48,
     "followers": 2341,
     "following": 19,
@@ -406,7 +406,7 @@
     "followers": 1191,
     "following": 8,
     "created_at": "2015-05-31T15:34:11Z",
-    "updated_at": "2026-10-01T08:03:10Z"
+    "updated_at": "2026-10-23T07:59:59Z"
   },
   {
     "name": "Mior Muhammad Zaki",
@@ -587,7 +587,7 @@
     "hireable": null,
     "bio": "Artisan ❯ Open-source enthusiast",
     "twitter_username": "claudiodekker",
-    "public_repos": 47,
+    "public_repos": 48,
     "public_gists": 10,
     "followers": 544,
     "following": 15,
@@ -666,7 +666,7 @@
     "followers": 1149,
     "following": 16,
     "created_at": "2010-12-23T15:39:26Z",
-    "updated_at": "2026-10-22T19:00:38Z"
+    "updated_at": "2026-10-23T12:55:04Z"
   },
   {
     "name": "Jordi Boggiano",
@@ -698,9 +698,9 @@
     "hireable": null,
     "bio": "Working on https://packagist.com and @composer lead",
     "twitter_username": "seldaek",
-    "public_repos": 272,
+    "public_repos": 274,
     "public_gists": 33,
-    "followers": 4724,
+    "followers": 4725,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2026-10-20T21:57:59Z"
@@ -959,9 +959,9 @@
     "hireable": null,
     "bio": "Software developer. You can find all of my public contributions here. Learn more on my website.",
     "twitter_username": null,
-    "public_repos": 77,
+    "public_repos": 78,
     "public_gists": 12,
-    "followers": 379,
+    "followers": 381,
     "following": 15,
     "created_at": "2013-02-27T11:50:57Z",
     "updated_at": "2026-10-15T18:46:36Z"
@@ -1036,7 +1036,7 @@
     "twitter_username": "evanyou",
     "public_repos": 198,
     "public_gists": 73,
-    "followers": 111886,
+    "followers": 111896,
     "following": 101,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2026-10-08T03:02:09Z"
@@ -1074,7 +1074,7 @@
     "twitter_username": "overtrue666",
     "public_repos": 124,
     "public_gists": 31,
-    "followers": 7250,
+    "followers": 7248,
     "following": 255,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2026-10-22T09:45:32Z"
@@ -1152,7 +1152,7 @@
     "followers": 2195,
     "following": 170,
     "created_at": "2012-06-09T22:00:12Z",
-    "updated_at": "2026-10-22T01:41:02Z"
+    "updated_at": "2026-10-24T05:43:29Z"
   },
   {
     "name": "Jeffrey Way",
@@ -1186,7 +1186,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 67,
     "public_gists": 161,
-    "followers": 17286,
+    "followers": 17285,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2026-04-23T17:12:36Z"

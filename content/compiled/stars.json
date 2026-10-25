@@ -31,10 +31,10 @@
     "twitter_username": null,
     "public_repos": 10,
     "public_gists": 9,
-    "followers": 36047,
+    "followers": 36049,
     "following": 3,
     "created_at": "2010-11-01T20:15:30Z",
-    "updated_at": "2026-10-23T23:24:01Z"
+    "updated_at": "2026-10-25T00:39:32Z"
   },
   {
     "name": "Freek Van der Herten",
@@ -68,7 +68,7 @@
     "twitter_username": "freekmurze",
     "public_repos": 167,
     "public_gists": 21,
-    "followers": 5271,
+    "followers": 5269,
     "following": 17,
     "created_at": "2010-11-16T13:38:15Z",
     "updated_at": "2026-10-17T23:26:49Z"
@@ -105,7 +105,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 326,
     "public_gists": 23,
-    "followers": 9470,
+    "followers": 9473,
     "following": 9,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2026-10-20T14:54:59Z"
@@ -180,7 +180,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 534,
     "public_gists": 0,
-    "followers": 3893,
+    "followers": 3894,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2026-09-08T12:11:06Z"
@@ -254,7 +254,7 @@
     "twitter_username": "GrahamJCampbell",
     "public_repos": 111,
     "public_gists": 10,
-    "followers": 7100,
+    "followers": 7098,
     "following": 144,
     "created_at": "2012-11-18T22:14:00Z",
     "updated_at": "2026-10-05T23:50:08Z"
@@ -292,7 +292,7 @@
     "twitter_username": null,
     "public_repos": 93,
     "public_gists": 50,
-    "followers": 5662,
+    "followers": 5663,
     "following": 3,
     "created_at": "2013-02-22T14:58:02Z",
     "updated_at": "2026-08-09T11:31:29Z"
@@ -366,7 +366,7 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 76,
     "public_gists": 52,
-    "followers": 2448,
+    "followers": 2449,
     "following": 132,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2026-10-06T09:06:50Z"
@@ -555,7 +555,7 @@
     "followers": 592,
     "following": 229,
     "created_at": "2011-09-26T14:44:55Z",
-    "updated_at": "2026-10-19T09:31:05Z"
+    "updated_at": "2026-10-24T14:49:22Z"
   },
   {
     "name": "Claudio Dekker",
@@ -587,7 +587,7 @@
     "hireable": null,
     "bio": "Artisan ❯ Open-source enthusiast",
     "twitter_username": "claudiodekker",
-    "public_repos": 48,
+    "public_repos": 49,
     "public_gists": 10,
     "followers": 544,
     "following": 15,
@@ -663,7 +663,7 @@
     "twitter_username": "frankdejonge",
     "public_repos": 94,
     "public_gists": 38,
-    "followers": 1149,
+    "followers": 1150,
     "following": 16,
     "created_at": "2010-12-23T15:39:26Z",
     "updated_at": "2026-10-23T12:55:04Z"
@@ -698,7 +698,7 @@
     "hireable": null,
     "bio": "Working on https://packagist.com and @composer lead",
     "twitter_username": "seldaek",
-    "public_repos": 274,
+    "public_repos": 275,
     "public_gists": 33,
     "followers": 4725,
     "following": 1,
@@ -924,7 +924,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 68,
-    "followers": 3364,
+    "followers": 3366,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2026-10-20T18:24:48Z"
@@ -961,10 +961,10 @@
     "twitter_username": null,
     "public_repos": 78,
     "public_gists": 12,
-    "followers": 381,
+    "followers": 382,
     "following": 15,
     "created_at": "2013-02-27T11:50:57Z",
-    "updated_at": "2026-10-15T18:46:36Z"
+    "updated_at": "2026-10-24T20:30:47Z"
   },
   {
     "name": "Adam Wathan",
@@ -1036,13 +1036,13 @@
     "twitter_username": "evanyou",
     "public_repos": 198,
     "public_gists": 73,
-    "followers": 111896,
+    "followers": 111894,
     "following": 101,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2026-10-08T03:02:09Z"
   },
   {
-    "name": "Chris",
+    "name": "Chris An",
     "introduction": "Laravel 死忠粉，本站站长",
     "github_id": "overtrue",
     "twitter_id": "overtrue666",
@@ -1072,12 +1072,12 @@
     "hireable": true,
     "bio": "Keep calm and coding.",
     "twitter_username": "overtrue666",
-    "public_repos": 124,
+    "public_repos": 125,
     "public_gists": 31,
     "followers": 7248,
-    "following": 255,
+    "following": 256,
     "created_at": "2012-02-25T08:17:56Z",
-    "updated_at": "2026-10-22T09:45:32Z"
+    "updated_at": "2026-10-25T05:19:33Z"
   },
   {
     "name": "Fabien Potencier",
@@ -1186,7 +1186,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 67,
     "public_gists": 161,
-    "followers": 17285,
+    "followers": 17286,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2026-04-23T17:12:36Z"

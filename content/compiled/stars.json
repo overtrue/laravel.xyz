@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 10,
     "public_gists": 9,
-    "followers": 36063,
+    "followers": 36062,
     "following": 3,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2026-10-25T00:39:32Z"
@@ -105,7 +105,7 @@
     "twitter_username": "enunomaduro",
     "public_repos": 327,
     "public_gists": 23,
-    "followers": 9484,
+    "followers": 9485,
     "following": 9,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2026-10-27T20:50:13Z"
@@ -180,7 +180,7 @@
     "twitter_username": "spatie_be",
     "public_repos": 534,
     "public_gists": 0,
-    "followers": 3900,
+    "followers": 3901,
     "following": 0,
     "created_at": "2014-05-09T16:26:39Z",
     "updated_at": "2026-09-08T12:11:06Z"
@@ -254,7 +254,7 @@
     "twitter_username": "GrahamJCampbell",
     "public_repos": 112,
     "public_gists": 11,
-    "followers": 7099,
+    "followers": 7101,
     "following": 144,
     "created_at": "2012-11-18T22:14:00Z",
     "updated_at": "2026-10-05T23:50:08Z"
@@ -552,7 +552,7 @@
     "twitter_username": null,
     "public_repos": 92,
     "public_gists": 28,
-    "followers": 593,
+    "followers": 592,
     "following": 230,
     "created_at": "2011-09-26T14:44:55Z",
     "updated_at": "2026-10-24T14:49:22Z"
@@ -735,9 +735,9 @@
     "hireable": null,
     "bio": "🐘 Core Team Member @laravel; 📦 Building packages for fun; 📣 Speaking, Blogging, Viming; ✌️ He/Him",
     "twitter_username": "timacdonald87",
-    "public_repos": 60,
+    "public_repos": 61,
     "public_gists": 5,
-    "followers": 1696,
+    "followers": 1697,
     "following": 1,
     "created_at": "2016-12-28T04:15:41Z",
     "updated_at": "2026-10-16T05:12:12Z"
@@ -815,7 +815,7 @@
     "followers": 4056,
     "following": 14,
     "created_at": "2011-05-23T08:11:19Z",
-    "updated_at": "2026-10-27T23:08:09Z"
+    "updated_at": "2026-10-29T22:38:10Z"
   },
   {
     "name": "Alex Vanderbist",
@@ -924,7 +924,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 68,
-    "followers": 3367,
+    "followers": 3368,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2026-10-20T18:24:48Z"
@@ -961,7 +961,7 @@
     "twitter_username": null,
     "public_repos": 78,
     "public_gists": 12,
-    "followers": 384,
+    "followers": 385,
     "following": 15,
     "created_at": "2013-02-27T11:50:57Z",
     "updated_at": "2026-10-25T14:20:23Z"
@@ -998,10 +998,10 @@
     "twitter_username": null,
     "public_repos": 178,
     "public_gists": 28,
-    "followers": 13377,
+    "followers": 13378,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
-    "updated_at": "2026-09-09T17:43:58Z"
+    "updated_at": "2026-10-29T17:59:24Z"
   },
   {
     "name": "Evan You",
@@ -1027,19 +1027,19 @@
     "type": "User",
     "user_view_type": "public",
     "site_admin": false,
-    "company": "VoidZero",
+    "company": "Cloudflare",
     "blog": "http://evanyou.me",
     "location": "Singapore",
     "email": null,
     "hireable": null,
-    "bio": "Founder @voidzero-dev, author of @vuejs and @vitejs. Connoisseur of sushi.",
+    "bio": "Founder @voidzero-dev, acquired by @cloudflare. Author of @vuejs and @vitejs. Connoisseur of sushi.",
     "twitter_username": "evanyou",
     "public_repos": 198,
     "public_gists": 73,
-    "followers": 111878,
+    "followers": 111781,
     "following": 101,
     "created_at": "2010-11-28T01:05:40Z",
-    "updated_at": "2026-10-08T03:02:09Z"
+    "updated_at": "2026-10-29T12:18:16Z"
   },
   {
     "name": "Chris An",
@@ -1074,7 +1074,7 @@
     "twitter_username": "overtrue666",
     "public_repos": 125,
     "public_gists": 31,
-    "followers": 7250,
+    "followers": 7249,
     "following": 256,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2026-10-26T03:40:35Z"
@@ -1111,7 +1111,7 @@
     "twitter_username": "fabpot",
     "public_repos": 93,
     "public_gists": 12,
-    "followers": 13648,
+    "followers": 13649,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2026-10-21T19:00:09Z"
@@ -1149,10 +1149,10 @@
     "twitter_username": "malfaitrobin",
     "public_repos": 69,
     "public_gists": 42,
-    "followers": 2196,
+    "followers": 2197,
     "following": 170,
     "created_at": "2012-06-09T22:00:12Z",
-    "updated_at": "2026-10-27T01:33:35Z"
+    "updated_at": "2026-10-29T17:26:46Z"
   },
   {
     "name": "Jeffrey Way",

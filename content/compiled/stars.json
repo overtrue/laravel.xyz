@@ -31,7 +31,7 @@
     "twitter_username": null,
     "public_repos": 10,
     "public_gists": 9,
-    "followers": 36066,
+    "followers": 36065,
     "following": 3,
     "created_at": "2010-11-01T20:15:30Z",
     "updated_at": "2026-10-25T00:39:32Z"
@@ -103,9 +103,9 @@
     "hireable": null,
     "bio": "staff software engineer at @laravel · speaker · content creator · created @pestphp, pint, pail, @larastan, @laravel-zero, @openai for php, @phpinsights",
     "twitter_username": "enunomaduro",
-    "public_repos": 327,
+    "public_repos": 328,
     "public_gists": 23,
-    "followers": 9489,
+    "followers": 9494,
     "following": 9,
     "created_at": "2013-09-14T08:11:58Z",
     "updated_at": "2026-10-27T20:50:13Z"
@@ -366,7 +366,7 @@
     "twitter_username": "jbrooksuk",
     "public_repos": 76,
     "public_gists": 52,
-    "followers": 2449,
+    "followers": 2451,
     "following": 133,
     "created_at": "2010-04-17T14:13:52Z",
     "updated_at": "2026-10-06T09:06:50Z"
@@ -587,9 +587,9 @@
     "hireable": null,
     "bio": "Artisan ❯ Open-source enthusiast",
     "twitter_username": "claudiodekker",
-    "public_repos": 49,
+    "public_repos": 51,
     "public_gists": 10,
-    "followers": 544,
+    "followers": 546,
     "following": 15,
     "created_at": "2012-05-18T12:06:13Z",
     "updated_at": "2026-10-10T17:25:36Z"
@@ -626,7 +626,7 @@
     "twitter_username": "jessarchercodes",
     "public_repos": 83,
     "public_gists": 5,
-    "followers": 1991,
+    "followers": 1992,
     "following": 32,
     "created_at": "2013-07-09T22:40:40Z",
     "updated_at": "2026-06-10T00:38:31Z"
@@ -700,7 +700,7 @@
     "twitter_username": "seldaek",
     "public_repos": 275,
     "public_gists": 33,
-    "followers": 4726,
+    "followers": 4727,
     "following": 1,
     "created_at": "2010-01-16T18:28:47Z",
     "updated_at": "2026-10-20T21:57:59Z"
@@ -815,7 +815,7 @@
     "followers": 4056,
     "following": 14,
     "created_at": "2011-05-23T08:11:19Z",
-    "updated_at": "2026-10-30T10:49:23Z"
+    "updated_at": "2026-11-01T18:12:12Z"
   },
   {
     "name": "Alex Vanderbist",
@@ -924,7 +924,7 @@
     "twitter_username": "reinink",
     "public_repos": 27,
     "public_gists": 68,
-    "followers": 3367,
+    "followers": 3368,
     "following": 0,
     "created_at": "2011-06-28T18:50:23Z",
     "updated_at": "2026-10-20T18:24:48Z"
@@ -1001,7 +1001,7 @@
     "followers": 13380,
     "following": 12,
     "created_at": "2013-05-02T15:35:48Z",
-    "updated_at": "2026-10-31T14:04:56Z"
+    "updated_at": "2026-11-01T17:18:23Z"
   },
   {
     "name": "Evan You",
@@ -1036,7 +1036,7 @@
     "twitter_username": "evanyou",
     "public_repos": 198,
     "public_gists": 73,
-    "followers": 111794,
+    "followers": 111807,
     "following": 101,
     "created_at": "2010-11-28T01:05:40Z",
     "updated_at": "2026-10-29T12:18:16Z"
@@ -1074,7 +1074,7 @@
     "twitter_username": "overtrue666",
     "public_repos": 125,
     "public_gists": 31,
-    "followers": 7248,
+    "followers": 7247,
     "following": 256,
     "created_at": "2012-02-25T08:17:56Z",
     "updated_at": "2026-10-26T03:40:35Z"
@@ -1109,9 +1109,9 @@
     "hireable": null,
     "bio": "Founder and project lead at Symfony\r\nCTO at Upsun",
     "twitter_username": "fabpot",
-    "public_repos": 93,
+    "public_repos": 94,
     "public_gists": 12,
-    "followers": 13648,
+    "followers": 13647,
     "following": 0,
     "created_at": "2009-01-17T13:42:51Z",
     "updated_at": "2026-10-21T19:00:09Z"
@@ -1186,7 +1186,7 @@
     "twitter_username": "jeffrey_way",
     "public_repos": 67,
     "public_gists": 161,
-    "followers": 17282,
+    "followers": 17281,
     "following": 0,
     "created_at": "2010-01-15T20:52:15Z",
     "updated_at": "2026-04-23T17:12:36Z"

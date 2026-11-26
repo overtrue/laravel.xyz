@@ -1,0 +1,12 @@
+---
+import { profileFor } from '../data/community';
+import Icon from './Icon.astro';
+interface Props { handle: string; eager?: boolean }
+const { handle, eager = false } = Astro.props;
+const { avatar } = profileFor(handle);
+---
+{avatar ? <img class="avatar" src={avatar} width="224" height="224" loading={eager ? 'eager' : 'lazy'} decoding="async" alt=""/> : <span class="avatar placeholder"><Icon name="users" size={20}/></span>}
+<style>
+  .avatar { display:block; width:100%; height:100%; object-fit:cover; background:var(--wash); }
+  .placeholder { display:grid; place-items:center; color:var(--muted); }
+</style>

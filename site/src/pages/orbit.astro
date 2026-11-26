@@ -1,0 +1,156 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import AccountPanel from '../components/AccountPanel.astro';
+import QuizRecord from '../components/QuizRecord.astro';
+import OrbitStamp from '../components/OrbitStamp.astro';
+import LearningResume from '../components/LearningResume.astro';
+import { challengeIds, getChallenge } from '../data/challenges';
+import { getLocale, localize, withoutLocale } from '../lib/locale';
+import { coursePath } from '../data/courses';
+import { getCourses } from '../lib/site';
+import { searchEntries } from '../lib/search';
+const { locale, t, href } = localize(getLocale(Astro.url.pathname));
+const title = t('My Orbit','我的小宇宙');
+const description = t('Pick up your last lesson and revisit the people, tools and projects you saved.', '从上次的课时继续，找回你收藏的人物、工具和项目。');
+const items = (await searchEntries(locale)).map(entry => ({key:'key' in entry ? entry.key : withoutLocale(entry.href),link:entry.href,title:entry.title,type:entry.type}));
+const courses = await getCourses(locale);
+const manifest = [...new Map(items.map(entry => [entry.key,entry])).values()];
+---
+<Base {title} {description}>
+  <div class="shell orbit-page">
+    <header class="orbit-title"><h1>{title}<span>.</span></h1><p><a class="account-hint" href="#account"><Icon name="key" size={15}/><span data-device-hint>{t('Local progress · Sign in','本机进度 · 登录同步')}</span><Icon name="down" size={13}/></a></p></header>
+    <div class="flight">
+      <div class="next-lesson"><LearningResume/></div>
+      <section id="stamps" class="stamps" aria-labelledby="stamps-title">
+        <header><h2 id="stamps-title">{t('Challenge stamps','挑战印章')}</h2><span data-stamp-count hidden></span></header>
+        <ul role="list">{challengeIds.map(id => {const lab = getChallenge(id,locale); return <li><a class="stamp-link" data-stamp={id} href={href(lab.home) + '#quick-lab'}>
+          <OrbitStamp {id}/><strong>{lab.category}</strong><small data-stamp-state>{t('Try challenge','去挑战')}</small>
+        </a></li>})}</ul>
+        <p data-stamp-caption>{t('Solve a code challenge to ink its stamp.','答对一道代码题，就能点亮对应的印章。')}</p>
+      </section>
+    </div>
+    <AccountPanel/>
+    <div class="orbit-quizzes" id="quiz-record"><QuizRecord/></div>
+    <section class="course-finishes" data-finishes hidden aria-labelledby="finishes-title"><h2 id="finishes-title"><Icon name="flag" size={18}/>{t('Courses completed','已完成的课程')}</h2>
+      <ul role="list">{courses.map(course => <li data-finished-course={course.lessons.map(lesson => lesson.id).join(' ')} hidden><a href={href(coursePath(course.id))}><Icon name="check" size={15}/>{course.title}</a></li>)}</ul>
+    </section>
+    <noscript><p>{t('Enable JavaScript to save items and see your progress on this device.','启用 JavaScript 后可在这台设备上收藏内容、查看进度。')}</p></noscript>
+    <section id="collection" class="collection" aria-labelledby="collection-title">
+      <div class="collection-title"><Icon name="mark" size={22}/><h2 id="collection-title">{t('Saved for later','我的收藏')}</h2><span data-collection-count hidden></span></div>
+      <div class="empty-shelf" data-empty>
+        <svg viewBox="0 0 112 80" width="104" height="75" fill="none" aria-hidden="true"><path d="M6 68h100M16 62h84" stroke="#958e9f"/><g stroke="#685380" stroke-width="1.7"><path d="M23 26h12v36H23z" fill="#decee8"/><path d="M35 18h15v44H35z" fill="#f0eaf4"/><path d="m52 24 11-3 12 38-11 3z" fill="#f8c8b3"/><path d="M75 35h13v27H75z" fill="#e0e9df"/><path d="M25 33h8m4-7h11m-11 30h11m8-29 6-2m15 18h9"/></g></svg>
+        <div><h3>{t('Start your collection','把喜欢的内容收在一起')}</h3><p>{t('Keep a useful tool, a course or someone whose work you follow.','看到顺手的工具、想学的课、值得关注的人，都可以在这里找到。')}</p>
+        <a class="text-link" data-collection-start href={href('/tools/')}>{t('Browse tools','逛逛工具箱')} <Icon name="right" size={15}/></a></div>
+      </div>
+      <ul role="list" class="saved-list" data-collection></ul>
+      <template id="saved-row"><li><a data-saved-link><span><small></small><strong></strong></span><Icon name="external" size={17}/></a><button type="button" class="save-item compact" aria-pressed="true"><Icon name="mark" size={17}/></button></li></template>
+      <script type="application/json" data-orbit-index set:html={JSON.stringify(manifest).replaceAll('<','\\u003c')}/>
+    </section>
+  </div>
+</Base>
+<script>
+  import { isDone } from '../scripts/learning';
+  import { savedAt, hasStamp } from '../scripts/orbit';
+  import { renderSave } from '../scripts/bookmarks';
+  import { getLocale, localize } from '../lib/locale';
+  const {t} = localize(getLocale(location.pathname));
+  const items: {key:string;link:string;title:string;type:string}[] = JSON.parse(document.querySelector('[data-orbit-index]')!.textContent!);
+  const list = document.querySelector<HTMLElement>('[data-collection]')!;
+  const template = document.querySelector<HTMLTemplateElement>('#saved-row')!;
+  const collectionCount = document.querySelector<HTMLElement>('[data-collection-count]')!;
+  const stamps = [...document.querySelectorAll<HTMLAnchorElement>('[data-stamp]')];
+  const caption = document.querySelector<HTMLElement>('[data-stamp-caption]')!;
+  const prompt = caption.textContent!;
+  function sync(event?: Event) {
+    const finishes = document.querySelector<HTMLElement>('[data-finishes]')!;
+    for (const row of finishes.querySelectorAll<HTMLElement>('[data-finished-course]')) {
+      row.hidden = !row.dataset.finishedCourse!.split(' ').every(isDone);
+    }
+    finishes.hidden = !finishes.querySelector('li:not([hidden])');
+    let count = 0;
+    for (const stamp of stamps) {
+      const earned = hasStamp(stamp.dataset.stamp!);
+      if (earned) count++;
+      stamp.toggleAttribute('data-earned',earned);
+      stamp.querySelector('small')!.textContent = earned ? t('Earned ✓','已获得 ✓') : t('Try challenge','去挑战');
+    }
+    const counter = document.querySelector<HTMLElement>('[data-stamp-count]')!;
+    counter.textContent = count + ' / ' + stamps.length; counter.hidden = false;
+    caption.textContent = count === stamps.length ? t('Set complete. Pick any stamp to play again.','四枚印章集齐了。点任意一枚可以再练一次。') : prompt;
+    const saved = items.map(item => ({ ...item, time:savedAt(item.key) })).filter(item => item.time > 0).sort((a,b) => b.time - a.time);
+    const changed = event instanceof CustomEvent ? event.detail : null;
+    const focused = changed instanceof HTMLButtonElement && list.contains(changed) ? changed : document.activeElement;
+    const rows = [...list.querySelectorAll('li')];
+    const focusIndex = rows.findIndex(row => row.contains(focused));
+    const focusKey = rows[focusIndex]?.dataset.key;
+    const next = document.createDocumentFragment();
+    for (const item of saved) {
+      const row = template.content.firstElementChild!.cloneNode(true) as HTMLLIElement;
+      row.dataset.key = item.key;
+      const link = row.querySelector('a')!; link.href = item.link;
+      link.querySelector('small')!.textContent = item.type; link.querySelector('strong')!.textContent = item.title;
+      const button = row.querySelector('button')!;
+      button.dataset.save = item.key; button.dataset.name = item.title;
+      renderSave(button); next.append(row);
+    }
+    list.replaceChildren(next);
+    document.querySelector<HTMLElement>('[data-empty]')!.hidden = Boolean(saved.length);
+    collectionCount.textContent = String(saved.length); collectionCount.hidden = !saved.length;
+    if (focusIndex >= 0) {
+      const current = [...list.children].find(row => (row as HTMLElement).dataset.key === focusKey) ?? list.children[Math.min(focusIndex, saved.length - 1)];
+      const target = current?.querySelector<HTMLElement>(focused instanceof HTMLButtonElement ? 'button' : 'a') ?? document.querySelector<HTMLElement>('[data-collection-start]');
+      target?.focus({preventScroll:true});
+    }
+  }
+  sync(); document.addEventListener('orbit:saved',sync); window.addEventListener('storage',sync); window.addEventListener('orbit:activity',sync); window.addEventListener('pageshow',sync);
+</script>
+<style>
+  .orbit-quizzes { margin-top:24px; }
+.orbit-page { max-width:1160px; }
+.orbit-title { display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:6px 24px; padding:clamp(36px,5vw,74px) 0 25px; }
+.orbit-title h1 { font:520 clamp(2.9rem,6.4vw,6rem)/1.07 var(--display); letter-spacing:-.064em; }
+.orbit-title h1:lang(zh-CN) { letter-spacing:-.055em; } .orbit-title h1>span { color:var(--signal); }
+.orbit-title p,.stamps header span,.stamps p,.collection-title>span { font:400 .75rem/1.5 var(--mono); }
+.account-hint { display:inline-flex; align-items:center; gap:6px; min-height:38px; } .account-hint:hover { color:var(--accent); }
+.orbit-title p { display:flex; align-items:center; gap:8px; margin:0; color:var(--muted); }
+.flight { display:grid; grid-template-columns:minmax(0,1.04fr) minmax(0,1fr); background:#282531; color:#fff8f2; }
+.next-lesson,.stamps { padding:clamp(22px,3.2vw,48px); }
+.stamps { position:relative; isolation:isolate; align-content:center; background:#eae4f1; color:#302733; scroll-margin:16px; }
+.stamps header,.collection-title { display:flex; align-items:center; gap:12px; }
+.stamps header { justify-content:space-between; }
+.stamps header h2 { font:560 clamp(1.24rem,2.05vw,1.7rem)/1.15 var(--display); letter-spacing:-.035em; }
+.stamps header span { color:#5d4b6c; }
+.stamps ul { display:grid; position:relative; grid-template-columns:repeat(4,minmax(0,1fr)); isolation:isolate; margin:24px -4px 15px; padding:0; list-style:none; }
+.stamps ul::before { content:''; position:absolute; z-index:-1; inset:35% 12% auto; border-top:1px dashed #92859c; }
+.stamp-link { display:grid; justify-items:center; padding:0 3px 4px; text-align:center; }
+.stamp-link :global(svg) { width:min(95%,85px); transition:transform .25s ease; rotate:-4deg; }
+.stamps li:nth-child(even) :global(svg) { rotate:4deg; }
+.stamp-link:not([data-earned]) :global(svg) { filter:grayscale(.85); }
+.stamp-link:is(:hover,:focus-visible) :global(svg) { filter:none; transform:translateY(-3px); }
+.stamp-link strong { margin-top:4px; font-size:.84rem; } .stamp-link small { margin-top:3px; font-size:.69rem; color:#5d5465; }
+.stamps p { margin:0; color:#675b70; }
+.course-finishes { margin-top:22px; padding:15px 0; border-block:1px solid var(--line-strong); }
+.course-finishes h2,.course-finishes a { display:flex; align-items:center; gap:8px; }
+.course-finishes h2 { font-size:1rem; color:#365b44; }
+.course-finishes ul { display:flex; flex-wrap:wrap; gap:8px 20px; list-style:none; padding:0; margin:8px 0 0; }
+.course-finishes a { min-height:34px; font-size:.88rem; } .course-finishes a:hover { text-decoration:underline; }
+.collection { padding-top:clamp(36px,5vw,68px); scroll-margin:18px; }
+.collection-title { padding-bottom:16px; border-bottom:1px solid var(--line-strong); }
+.collection-title>svg { color:#705682; }
+.collection-title h2 { font:540 clamp(1.65rem,3vw,2.65rem)/1.15 var(--display); letter-spacing:-.045em; }
+.collection-title>span { margin-left:auto; color:var(--muted); }
+.empty-shelf { display:flex; align-items:center; gap:clamp(16px,3vw,45px); padding:27px 0; }
+.empty-shelf>svg { width:clamp(62px,8vw,104px); }
+.empty-shelf h3 { font-size:1.08rem; font-weight:600; } .empty-shelf p { margin:4px 0 0; color:var(--muted); font-size:.92rem; line-height:1.55; }
+.saved-list { margin:0; padding:0; list-style:none; }
+.saved-list li { display:flex; align-items:center; gap:12px; border-bottom:1px solid var(--line); }
+.saved-list a { display:flex; flex:1; min-width:0; align-items:center; gap:16px; justify-content:space-between; padding:13px 0; }
+.saved-list a span { display:grid; min-width:0; gap:4px; }
+.saved-list small { font:.72rem/1.4 var(--mono); color:var(--muted); }
+.saved-list strong { font-size:1.08rem; overflow-wrap:anywhere; font-weight:550; }
+.saved-list a:hover { color:var(--accent); } .saved-list a>svg { color:var(--muted); }
+@media(max-width:760px) { .flight { grid-template-columns:1fr; } .stamps ul { max-width:480px; margin-inline:auto; } .stamps p { text-align:center; } }
+@media(max-width:370px) { .next-lesson,.stamps { padding:18px 14px; } .stamp-link strong { font-size:.72rem; } .stamp-link small { font-size:.64rem; } .empty-shelf { align-items:flex-start; } }
+@media(prefers-reduced-motion:reduce) { .stamp-link :global(svg) { transition:none; } .stamp-link:is(:hover,:focus-visible) :global(svg) { transform:none; } }
+</style>

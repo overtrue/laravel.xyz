@@ -1,0 +1,12 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+---
+
+<Base title="Page not found" description="Find what you need in the resource directory or return home." noIndex>
+  <div class="shell narrow">
+    <header class="page-intro legal-head"><Icon name="compass" size={30}/><h1>Page not found</h1><p>Try the resource directory or head back to the home page.</p></header>
+    <a class="button primary" href="/resources/">Browse resources <Icon name="right" size={17} /></a>
+    <a class="button" href="/">Back home</a>
+  </div>
+</Base>

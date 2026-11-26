@@ -1,0 +1,294 @@
+---
+import { render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import SaveButton from '../../components/SaveButton.astro';
+import QuickLab from '../../components/QuickLab.astro';
+import RequestPractice from '../../components/RequestPractice.astro';
+import TaskPractice from '../../components/TaskPractice.astro';
+import LessonCheckpoint from '../../components/LessonCheckpoint.astro';
+import type { ChallengeId } from '../../data/challenges';
+import GuideAd from '../../components/GuideAd.astro';
+import { getGuidePages, getCourses, type CourseSummary, type Guide } from '../../lib/site';
+import { primaryPathFor, belongsToRoute } from '../../data/roadmap';
+import { coursePath } from '../../data/courses';
+import { quizPath } from '../../data/quizzes';
+import { getLocale, localize } from '../../lib/locale';
+
+type GuideStub = { id: string; title: string };
+interface Props {
+  guide: Guide;
+  course: CourseSummary;
+  steps: GuideStub[];
+  before?: GuideStub;
+  after?: GuideStub;
+  total: number;
+}
+
+export async function getStaticPaths() {
+  return (await getGuidePages('en')).map((props) => ({ params: { slug: props.guide.id }, props }));
+}
+
+const { locale, t, href } = localize(getLocale(Astro.url.pathname));
+const { guide, course, steps } = Astro.props;
+const { Content, headings } = await render(guide);
+const lessonChallenges: Partial<Record<string,ChallengeId>> = { 'first-project':'blade', 'api-validated-writes':'validation', 'dispatch-after-commit':'queues' };
+const challenge = lessonChallenges[guide.id];
+const requestPractice = guide.id === 'laravel-request-lab' || guide.id === 'api-resource-pagination' ? guide.id : undefined;
+const taskPractice = guide.id === 'first-project' || guide.id === 'form-validation' || guide.id === 'api-validated-writes' ? guide.id : undefined;
+const practice = requestPractice ?? taskPractice;
+const Contents = practice ? 'details' : 'div';
+const { title, description, minutes, sources, checkpoint } = guide.data;
+const path = primaryPathFor(course.id,guide.id);
+const courses = path ? await getCourses(locale) : [];
+const beginner = path?.skill === 'beginner';
+const courseEnd = { url:href(quizPath(course.id)), title:t('Take the course challenge','进入课程闯关') };
+const trails = [{id:'course', name:t('Course','本课程'), steps, end:courseEnd}];
+if (path) {
+  const pathSteps = path.courses.flatMap(id => courses.find(c => c.id === id)!.lessons)
+    .filter(lesson => belongsToRoute(path.track,path.skill,lesson.id))
+    .map(lesson => ({id:lesson.id,title:lesson.data.title}));
+  const end = {url:href(path.next.url),title:path.next[locale]};
+  trails.unshift({id:path.track+'/'+path.skill, name:beginner ? t('Starter path','入门路线') : t('API path','接口路线'), steps:pathSteps, end});
+}
+const checkpointProps = { lesson:guide.id, course:course.id, prompt:checkpoint };
+---
+
+<Base {title} {description} article>
+  <div class="shell reading-room">
+    <header class="page-intro article-intro">
+      <nav class="breadcrumbs" aria-label={t('Breadcrumb', '面包屑')}><a href={href('/courses/')}>{t('Free courses', '免费课程')}</a><Icon name="chevron" size={15} /><a href={href(coursePath(course.id))}>{course.title}</a></nav>
+      <h1>{title}</h1>
+      <p>{description}</p>
+      <div class="lesson-tools">
+        <div class="article-meta"><span class="tag free-tag"><Icon name="flag" size={14}/>{t('Free task', '免费任务')}</span>{!practice && <span class="tag">Laravel 13</span>}<span><Icon name="clock" size={15} /> {practice ? t('2 min practice','2 分钟练习') : minutes + t(' min',' 分钟')}</span><SaveButton compact item={'/learn/' + guide.id + '/'} name={title}/></div>
+        {trails.map((trail,i) => <nav class="step-rail" data-trail={trail.id} data-steps data-end={trail.end.url} data-end-title={trail.end.title} aria-label={trail.name} hidden={i>0}>
+          <small>{trail.name} · {trail.steps.findIndex(step=>step.id===guide.id)+1}/{trail.steps.length}</small>
+          {trail.steps.map((step, index) => <a data-rail={step.id} href={href('/learn/' + step.id + '/')} aria-current={step.id === guide.id ? 'step' : undefined} aria-label={t('Task ', '任务 ') + (index + 1) + ' · ' + step.title} title={step.title}><span>{String(index + 1).padStart(2,'0')}</span><Icon name="check" size={14}/></a>)}
+        </nav>)}
+      </div>
+    </header>
+    <article class:list={['article-layout',{'has-practice':practice}]}>
+      {practice && <div class="lesson-activity" data-example-lesson={guide.id}>
+        {requestPractice && <RequestPractice lesson={requestPractice}/>}
+        {taskPractice && <TaskPractice lesson={taskPractice}/>}
+        {(requestPractice || taskPractice === 'first-project') && <script is:inline>
+          (() => {
+            const activity = document.currentScript.parentElement;
+            const key = 'orbit:example:' + activity.dataset.exampleLesson;
+            const radios = Array.from(activity.querySelectorAll('#try-it input[type="radio"]'));
+            function restore() {
+              try {
+                const value = sessionStorage.getItem(key);
+                const previous = radios.find(input => input.value === value);
+                if (previous) previous.checked = true;
+              } catch { /* The example works without tab storage. */ }
+            }
+            restore();
+            activity.addEventListener('change', event => {
+              if (radios.includes(event.target)) {
+                try { sessionStorage.setItem(key,event.target.value); } catch { /* Keep the visible choice. */ }
+              }
+            });
+            window.addEventListener('pageshow',restore);
+          })();
+        </script>}
+        <LessonCheckpoint {...checkpointProps}/>
+      </div>}
+      <aside class="article-toc">
+        <nav aria-label={t('On this page', '本篇目录')}>
+          <Contents>
+          {practice ? <summary>{t('On this page', '本篇目录')}</summary> : <h2><Icon name="list" size={16}/>{t('On this page', '本篇目录')}</h2>}
+          <ul>{practice && <><li><a href="#try-it">{t('Try it in your browser','在浏览器里试试')}</a></li><li><a href="#local-guide">{t('Build it locally','在本地跟练')}</a></li></>}{headings.filter((heading) => heading.depth === 2).map((heading) => <li><a href={`#${heading.slug}`}>{heading.text}</a></li>)}</ul>
+          </Contents>
+        </nav>
+      </aside>
+      <div class="guide-body">
+        {practice && <header class="local-guide" id="local-guide"><h2><Icon name="code" size={18}/>{t('Build it locally','在本地跟练')}</h2><small>Laravel 13 · {minutes}{t(' min',' 分钟')}</small></header>}
+        <div class="prose" data-guide-text><Content /></div>
+        {challenge && <div class="lesson-lab"><QuickLab id={challenge}/></div>}
+        {practice ? <a class="text-link back-check" href="#checkpoint-title"><Icon name="flag" size={15}/>{t('Check my work','检验这个任务')}</a> : <LessonCheckpoint {...checkpointProps}/>}
+        <aside class="article-sources" aria-labelledby="source-heading">
+          <h2 id="source-heading">{t('References', '参考文档')}</h2>
+          <ul>{sources.map(({ label, url }) => <li><a href={url}>{label} <Icon name="external" size={14} /></a></li>)}</ul>
+        </aside>
+        <GuideAd />
+        <div class="read-controls" data-read-controls hidden>
+          <button class="button" type="button" data-read-button={guide.id} aria-pressed="false"><Icon name="mark" size={16} /><span>{t('Mark as read', '标为已读')}</span></button>
+          <small aria-live="polite" data-read-status></small>
+        </div>
+        {trails.map((trail,i) => {
+          const at = trail.steps.findIndex(step => step.id === guide.id);
+          const before = trail.steps[at-1], next = trail.steps[at+1];
+          return <nav class="article-paging" data-trail={trail.id} hidden={i>0} aria-label={t('Lesson navigation','课时导航')}>
+            {before && <a href={href('/learn/'+before.id+'/')}><small><Icon name="left" size={15}/>{t('Previous lesson','上一课')}</small><strong>{before.title}</strong></a>}
+            <a data-paging-next href={next ? href('/learn/'+next.id+'/') : trail.end.url}><small data-paging-label>{next ? t('Next lesson','下一课') : t('Up next','接下来')} <Icon name="right" size={15}/></small><strong>{next?.title ?? trail.end.title}</strong></a>
+          </nav>
+        })}
+      </div>
+    </article>
+  </div>
+</Base>
+
+<script>
+  import { itinerary, isTrack, isSkill } from '../../data/roadmap';
+  import { rememberLesson } from '../../scripts/orbit';
+  import { getSavedChoice, isDone, markDone } from '../../scripts/learning';
+  import { getReadGuides, markRead } from '../../scripts/reading';
+  import { getLocale, localize } from '../../lib/locale';
+
+  const { t } = localize(getLocale(location.pathname));
+
+  const complete = document.querySelector<HTMLButtonElement>('[data-complete]')!;
+  const completionStatus = document.querySelector<HTMLElement>('[data-completion-status]')!;
+  const slug = complete.dataset.complete!;
+  rememberLesson(slug);
+  const trails = [...document.querySelectorAll<HTMLElement>('[data-steps]')];
+  const trailParts = [...document.querySelectorAll<HTMLElement>('[data-trail]')];
+  const receipt = document.querySelector<HTMLElement>('[data-receipt]')!;
+  const nextCheckpoint = document.querySelector<HTMLAnchorElement>('[data-next-checkpoint]')!;
+  const back = document.querySelector<HTMLAnchorElement>('[data-back-course]')!;
+  function renderCompletion() {
+    const saved = getSavedChoice();
+    const trail = saved ? trails.find(nav => nav.dataset.trail === saved.track+'/'+saved.skill) ?? trails.find(nav => nav.dataset.trail === 'course')! : trails[0];
+    for (const part of trailParts) part.hidden = part.dataset.trail !== trail.dataset.trail;
+    const [track, skill] = saved ? [saved.track,saved.skill] : trail.dataset.trail!.split('/');
+    const station = isTrack(track) && isSkill(skill) && itinerary(track,skill).find(id => id === back.dataset.backCourse);
+    back.search = station ? new URLSearchParams({route:track, level:skill, station}).toString() : '';
+    const steps = [...trail.querySelectorAll<HTMLAnchorElement>('[data-rail]')];
+    for (const step of steps) {
+      const complete = isDone(step.dataset.rail!);
+      step.toggleAttribute('data-done',complete);
+      step.setAttribute('aria-label', step.title + (complete ? t(', completed','，已完成') : ''));
+    }
+    const done = isDone(slug);
+    receipt.hidden = !done;
+    const at = steps.findIndex(step => step.dataset.rail === slug);
+    const next = done ? [...steps.slice(at+1),...steps.slice(0,at)].find(step => !isDone(step.dataset.rail!)) : steps[at+1];
+    const nextHref = next?.getAttribute('href') ?? trail.dataset.end!;
+    const nextTitle = next?.title ?? trail.dataset.endTitle!;
+    const pager = document.querySelector<HTMLAnchorElement>('.article-paging:not([hidden]) [data-paging-next]')!;
+    pager.setAttribute('href',nextHref);
+    pager.querySelector('strong')!.textContent = nextTitle;
+    pager.querySelector('[data-paging-label]')!.firstChild!.textContent = (next ? t('Next lesson','下一课') : t('Up next','接下来'))+' ';
+    if (done) {
+      const count = steps.filter(step => isDone(step.dataset.rail!)).length;
+      const finished = trail.dataset.trail === 'course' ? t('Course complete!', '这门课完成了！') : t('Learning path complete!', '这条学习路线完成了！');
+      receipt.querySelector('[data-receipt-label]')!.textContent = next ? t(count+' of '+steps.length+' tasks complete','已完成 '+count+' / '+steps.length+' 个任务') : finished;
+      nextCheckpoint.setAttribute('href',nextHref);
+      nextCheckpoint.textContent = t('Up next · ', '接下来 · ')+nextTitle+' →';
+    }
+    complete.setAttribute('aria-pressed', String(done));
+    complete.querySelector('span')!.textContent = done ? t('Completed · undo', '已完成 · 撤销') : t('Complete task', '完成任务');
+  }
+  complete.hidden = false;
+  renderCompletion();
+  complete.addEventListener('click', () => {
+    const done = !isDone(slug);
+    if (markDone(slug, done)) {
+      renderCompletion();
+      completionStatus.textContent = done ? t('Task saved to your roadmap.', '已在路线图上标记完成。') : t('Task reopened.', '任务已重新开放。');
+    } else completionStatus.textContent = t('This browser could not save your progress.', '当前浏览器无法保存进度。');
+  });
+  window.addEventListener('pageshow', () => { rememberLesson(slug); renderCompletion(); });
+  window.addEventListener('storage', renderCompletion); window.addEventListener('orbit:activity',renderCompletion);
+
+  document.querySelectorAll<HTMLElement>('[data-guide-text] pre.astro-code').forEach((pre, index) => {
+    const panel = document.createElement('div');
+    panel.className = 'guide-code';
+    pre.before(panel);
+    panel.append(pre);
+    pre.id = `example-${index + 1}`;
+    pre.tabIndex = 0;
+
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.dataset.copy = pre.id;
+    button.setAttribute('aria-live', 'polite');
+    button.textContent = t('Copy', '复制');
+    panel.prepend(button);
+  });
+
+  const button = document.querySelector<HTMLButtonElement>('[data-read-button]');
+  const status = document.querySelector<HTMLElement>('[data-read-status]');
+  if (button?.dataset.readButton && status && getReadGuides()) {
+    const id = button.dataset.readButton;
+    const label = button.querySelector('span')!;
+    const sync = () => {
+      const complete = getReadGuides()?.has(id) ?? false;
+      button.setAttribute('aria-pressed', String(complete));
+      label.textContent = complete ? t('Read', '已读') : t('Mark as read', '标为已读');
+    };
+    sync();
+    window.addEventListener('orbit:activity',sync); window.addEventListener('storage',sync);
+    document.querySelector<HTMLElement>('[data-read-controls]')!.hidden = false;
+    button.addEventListener('click', () => {
+      if (markRead(id,!getReadGuides()?.has(id))) {
+        sync();
+        status.textContent = t('Reading mark updated.', '已更新阅读标记。');
+      } else {
+        status.textContent = t('This browser couldn’t save your progress.', '此浏览器无法保存进度。');
+      }
+    });
+  }
+</script>
+
+<style>
+  .reading-room { max-width:1090px; }
+  .article-intro { max-width: none; padding-bottom: 24px; border-bottom: 1px solid var(--line-strong); }
+  .article-intro h1 { max-width:24ch; font-size:clamp(3rem,5.6vw,5.35rem); text-wrap:balance; }
+  .article-intro h1:lang(zh-CN) { font-size:clamp(2.1rem,4.5vw,4.15rem); line-height:1.22; }
+  .guide-body :global(.prose h2) { font:400 clamp(1.9rem,3.1vw,2.75rem)/1.16 var(--display); letter-spacing:-.025em; }
+  .guide-body :global(.prose h2:lang(zh-CN)) { font-size:clamp(1.45rem,2.5vw,2.1rem); }
+  .lesson-lab { margin-top:32px; }
+  .local-guide { display:flex; align-items:baseline; flex-wrap:wrap; gap:5px 16px; justify-content:space-between; padding-top:17px; margin:10px 0 12px; border-top:1px solid var(--line-strong); }
+  .local-guide h2 { display:flex; gap:8px; align-items:center; font:570 1.35rem/1.24 var(--display); }
+  .local-guide small,.step-rail small { font:.74rem/1.45 var(--mono); color:var(--muted); }.back-check { margin-top:12px; }
+  .article-toc h2 { display:flex; align-items:center; gap:7px; }
+  .article-toc summary { width:fit-content; cursor:pointer; font-weight:600; }
+  .article-paging { border-block:1px solid var(--line); }
+  .lesson-tools { display:flex; flex-wrap:wrap; align-items:center; gap:9px 24px; justify-content:space-between; margin-top:18px; }
+  .step-rail { display:flex; align-items:center; flex-wrap:wrap; row-gap:5px; }
+  .step-rail small { margin-inline-end:8px; }
+  .step-rail a { position:relative; width:32px; height:32px; display:grid; place-items:center; border-block:1px solid var(--line-strong); border-left:1px solid var(--line-strong); color:var(--muted); font:.72rem var(--mono); }
+  .step-rail a:last-child { border-right:1px solid var(--line-strong); }
+  .step-rail a[aria-current] { color:var(--accent); background:var(--accent-wash); box-shadow:inset 0 -2px var(--signal); }
+  .step-rail a:hover { color:white; background:var(--ink); }
+  .step-rail a :global(svg),.step-rail [data-done] span { display:none; }
+  .step-rail [data-done] :global(svg) { display:block; }
+  .article-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 16px; color: var(--muted); font-size: .85rem; }
+  .article-meta > span:has(svg) { display: inline-flex; align-items: center; gap: 6px; }
+  .article-layout { display:grid; grid-template-columns:minmax(0,710px) minmax(155px,225px); grid-template-areas:"reading toc"; column-gap:clamp(20px,5vw,72px); align-items:start; padding-top:20px; }
+  .article-layout.has-practice { grid-template-areas:"activity toc" "reading toc"; }
+  .lesson-activity { grid-area:activity; min-width:0; }
+  .article-toc { position:sticky; top:20px; grid-area:toc; border-left:1px solid var(--line-strong); padding:3px 0 4px 18px; }
+  .article-toc h2 { font-size: .97rem; font-weight: 620; }
+  .article-toc ul { list-style: none; margin: 9px 0 0; padding: 0; }
+  .article-toc a { display: block; font-size: .87rem; padding: 6px 0; color: var(--muted); }
+  .article-toc a:hover { text-decoration: underline; }
+  .guide-body { min-width:0; grid-area:reading; }
+  .article-sources { border-top: 1px solid var(--line); margin: 29px 0; padding: 20px 0 0; }
+  .article-sources h2 { font-size: 1rem; }
+  .article-sources ul { display: flex; flex-wrap: wrap; gap: 6px 18px; list-style: none; padding: 0; }
+  .article-sources a { color: var(--accent); font-size: .9rem; padding-block: 5px; }
+  .article-sources a:hover { text-decoration: underline; }
+  .read-controls { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin-block: 24px; color: var(--muted); }
+  .read-controls button[aria-pressed="true"] { background: var(--accent-wash); color: var(--accent); }
+  .article-paging { display: flex; flex-wrap: wrap; gap: 0; }
+  .article-paging a { display: grid; flex: 1; min-width: min(210px, 100%); gap: 6px; border: 1px solid var(--line); background: var(--surface); padding: 15px; border-radius: var(--radius); }
+  .article-paging a:hover { background: var(--wash); }
+  .article-paging small { color: var(--muted); }
+  .guide-body :global(.guide-code) { position: relative; background: var(--wash); border: 1px solid var(--line); border-radius: var(--radius); margin-block: 1.15em; padding-top: 36px; }
+  .guide-body :global(.guide-code pre) { margin: 0; border: 0; border-top: 1px solid var(--line); border-radius: 0 0 var(--radius) var(--radius); }
+  .guide-body :global(.guide-code button) { position: absolute; top: 5px; right: 7px; padding: 4px 9px; border-radius: var(--radius); border: 1px solid var(--line-strong); background: var(--surface); color: var(--ink); font-size: .77rem; }
+  .guide-body :global(.guide-code button:hover) { background: var(--wash); }
+  @media (max-width: 800px) {
+    .article-layout { grid-template-columns:minmax(0,1fr); grid-template-areas:"toc" "reading"; row-gap:16px; padding-top:0; }
+    .article-layout.has-practice { grid-template-areas:"activity" "toc" "reading"; row-gap:0; padding-top:12px; }
+    .article-toc { position:static; padding:11px 14px; border:1px solid var(--line); border-radius:0; }
+    .article-toc:has(details) { border:0; padding:0; }.article-toc summary { padding-block:8px; color:var(--muted); font-size:.86rem; }
+    .article-intro { padding-block:clamp(19px,5vw,32px) 14px; }
+    .article-intro p { font-size:1rem; line-height:1.5; margin-top:10px; }
+    .lesson-tools { margin-top:12px; }
+  }
+</style>

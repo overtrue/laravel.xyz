@@ -1,0 +1,73 @@
+---
+import Home from '../index.astro';
+import Learn from '../learn/index.astro';
+import CourseList from '../courses/index.astro';
+import Challenges from '../challenges/index.astro';
+import Challenge from '../challenges/[id].astro';
+import type { CourseId } from '../../data/courses';
+import CoursePage from '../courses/[course].astro';
+import Chapter from '../learn/[slug].astro';
+import Toolbox from '../tools/index.astro';
+import ToolPage from '../tools/[tool].astro';
+import Catalog from '../[section].astro';
+import Ecosystem from '../ecosystem.astro';
+import About from '../about.astro';
+import Orbit from '../orbit.astro';
+import Privacy from '../privacy.astro';
+import { getTools, sections, type Section, type Tool } from '../../data/catalog';
+import { getCourses, getGuidePages, type Course } from '../../lib/site';
+
+type Page = {
+  kind: 'home' | 'learn' | 'courses' | 'challenges' | 'tools' | 'ecosystem' | 'about' | 'privacy' | 'orbit';
+} | { kind: 'chapter'; chapter: Awaited<ReturnType<typeof getGuidePages>>[number] }
+  | { kind: 'challenge'; id:CourseId }
+  | { kind: 'course'; course: Course }
+  | { kind: 'tool'; tool: Tool }
+  | { kind: 'catalog'; section: Section };
+
+export async function getStaticPaths() {
+  const pages: { params: { path?: string }; props: Page }[] = [
+    { params: { path: undefined }, props: { kind: 'home' } },
+    { params: { path: 'learn' }, props: { kind: 'learn' } },
+    { params: { path: 'courses' }, props: { kind: 'courses' } },
+    { params: { path: 'challenges' }, props: { kind: 'challenges' } },
+    { params: { path: 'tools' }, props: { kind: 'tools' } },
+    { params: { path: 'ecosystem' }, props: { kind: 'ecosystem' } },
+    { params: { path: 'about' }, props: { kind: 'about' } },
+    { params: { path: 'orbit' }, props: { kind: 'orbit' } },
+    { params: { path: 'privacy' }, props: { kind: 'privacy' } },
+  ];
+
+  for (const chapter of await getGuidePages('zh')) {
+    pages.push({ params: { path: `learn/${chapter.guide.id}` }, props: { kind: 'chapter', chapter } });
+  }
+  for (const course of await getCourses('zh')) {
+    pages.push({ params: { path: 'challenges/' + course.id }, props: { kind:'challenge', id:course.id } });
+    if (course.id !== 'taskboard') pages.push({ params: { path: `courses/${course.id}` }, props: { kind: 'course', course } });
+  }
+  for (const tool of getTools('zh')) {
+    pages.push({ params: { path: `tools/${tool.id}` }, props: { kind: 'tool', tool } });
+  }
+  for (const section of Object.keys(sections) as Section[]) {
+    pages.push({ params: { path: section }, props: { kind: 'catalog', section } });
+  }
+  return pages;
+}
+
+const page: Page = Astro.props;
+---
+
+{page.kind === 'home' && <Home />}
+{page.kind === 'learn' && <Learn />}
+{page.kind === 'courses' && <CourseList />}
+{page.kind === 'challenges' && <Challenges />}
+{page.kind === 'challenge' && <Challenge id={page.id} />}
+{page.kind === 'course' && <CoursePage course={page.course} />}
+{page.kind === 'chapter' && <Chapter {...page.chapter} />}
+{page.kind === 'tools' && <Toolbox />}
+{page.kind === 'ecosystem' && <Ecosystem />}
+{page.kind === 'tool' && <ToolPage tool={page.tool} />}
+{page.kind === 'catalog' && <Catalog section={page.section} />}
+{page.kind === 'about' && <About />}
+{page.kind === 'orbit' && <Orbit />}
+{page.kind === 'privacy' && <Privacy />}

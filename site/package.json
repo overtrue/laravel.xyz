@@ -1,0 +1,35 @@
+{
+  "name": "artisan-orbit",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "check": "astro check",
+    "build": "astro build",
+    "preview": "astro preview",
+    "deploy": "npm run build && wrangler d1 migrations apply DB --env=\"\" --remote && wrangler deploy --env=\"\"",
+    "deploy:production": "SITE_URL=https://laravel.xyz npm run build && wrangler d1 migrations apply DB --env production --remote && wrangler deploy --env production",
+    "deploy:www": "wrangler deploy --config wrangler.www.toml",
+    "dev:accounts": "npm run build && wrangler d1 migrations apply DB --local --env=\"\" && wrangler dev --env=\"\" --port 4379 --var ORIGIN:http://localhost:4379",
+    "test:accounts": "node --test tests/accounts.test.mjs",
+    "test:quizzes": "node --test tests/quizzes.test.mjs",
+    "test:learning": "node --test tests/learning.test.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/instrument-sans": "^5.2.8",
+    "@fontsource/ibm-plex-mono": "^5.2.7",
+    "@lucide/astro": "^1.76.0",
+    "@simplewebauthn/browser": "14.0.0",
+    "@simplewebauthn/server": "14.1.0",
+    "astro": "~7.4.13"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "playwright-core": "1.65.1",
+    "typescript": "~5.9.3",
+    "wrangler": "~4.165.0"
+  }
+}

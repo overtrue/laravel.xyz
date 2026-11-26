@@ -1,0 +1,29 @@
+---
+import Icon from './Icon.astro';
+import type { CourseId } from '../data/courses';
+import { quizKey, quizPath } from '../data/quizzes';
+import { getLocale, localize } from '../lib/locale';
+const { id, optional = false } = Astro.props as {id:CourseId;optional?:boolean};
+const {t,href} = localize(getLocale(Astro.url.pathname));
+---
+<a class="text-link course-challenge" data-course-quiz={id} data-key={quizKey(id)} href={href(quizPath(id))}><Icon name="flag" size={16}/>{optional ? t('Optional full-course quiz','选做 · 整门课的测验') : t('Course challenge','课程闯关')}<span hidden></span><Icon name="right" size={15}/></a>
+<script>
+  import { bestScore } from '../scripts/quiz-progress';
+  import { passCount, points } from '../lib/quiz-score';
+  import { getLocale,localize } from '../lib/locale';
+  const {t} = localize(getLocale(location.pathname));
+  const links = [...document.querySelectorAll<HTMLAnchorElement>('[data-course-quiz]')];
+  function render() {
+    for (const link of links) {
+      const best = bestScore(link.dataset.courseQuiz!,link.dataset.key!);
+      const mark = link.querySelector('span')!;
+      mark.hidden = best === null;
+      if (best !== null) mark.textContent = (best >= passCount ? t('Cleared','已过关') : t('Best','最高分')) + ' · ' + points(best) + '/100';
+    }
+  }
+  render(); window.addEventListener('pageshow',render); window.addEventListener('storage',render); window.addEventListener('orbit:activity',render);
+</script>
+<style>
+  .course-challenge { margin-top:10px; flex-wrap:wrap; }
+  .course-challenge span { color:var(--muted); font:.75rem/1.5 var(--mono); }
+</style>

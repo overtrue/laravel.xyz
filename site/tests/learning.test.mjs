@@ -1,0 +1,122 @@
+import assert from 'node:assert/strict';
+import test from 'node:test';
+import { chromium } from 'playwright-core';
+
+const origin = process.env.ORBIT_TEST_URL || 'http://localhost:4379';
+
+test('practice, navigation and completion follow the same learning path', {timeout:180000}, async () => {
+  const browser = await chromium.launch({channel:process.env.ORBIT_CHROME_CHANNEL || 'chrome'});
+  try {
+    for (const prefix of ['', '/zh']) {
+      const page = await browser.newPage({viewport:{width:320,height:568},reducedMotion:'reduce'});
+      const open = path => page.goto(origin+prefix+path,{waitUntil:'domcontentloaded'});
+      const rail = page.locator('[data-steps]:visible');
+      const next = page.locator('.article-paging:visible [data-paging-next]');
+      const finish = async target => {
+        await page.locator('[data-complete]').click();
+        assert.equal(await page.locator('[data-next-checkpoint]').getAttribute('href'),prefix+target);
+        assert.equal(await next.getAttribute('href'),prefix+target);
+      };
+      await open('/courses/?route=web&level=beginner');
+      await page.locator('[data-roadmap][data-ready]').waitFor();
+      const action = page.locator('[data-next-task]');
+      const box = await action.boundingBox();
+      assert.ok(box && box.y >= 0 && box.y+box.height <= 568, 'the first action fits on a small phone');
+      const settings = page.locator('[data-route-settings]');
+      assert.equal(await settings.evaluate(el=>el.open),false);
+      await settings.locator('summary').focus(); await page.keyboard.press('Enter');
+      assert.ok(await page.locator('#skill').isVisible());
+      await settings.locator('summary').click();
+      await action.click();
+      await rail.waitFor();
+      assert.equal(await rail.locator('[data-rail]').count(),3);
+      assert.equal(await next.getAttribute('href'),prefix+'/learn/first-project/');
+      await finish('/learn/first-project/');
+      await next.click();
+      const states = page.locator('.board-states label');
+      await states.nth(0).click();
+      assert.equal(await page.locator('[data-board-state]:visible').getAttribute('data-board-state'),'0');
+      await states.nth(2).click();
+      assert.match(await page.locator('[data-board-state]:visible .sample-row').innerText(),/done|已完成/);
+      await open('/learn/first-project/#try-it');
+      await page.locator('.language-link').click();
+      assert.equal(new URL(page.url()).hash,'#try-it');
+      assert.equal(await page.locator('[data-board-state]:visible').getAttribute('data-board-state'),'2');
+      await page.locator('.language-link').click();
+      await finish('/learn/form-validation/');
+      await next.click();
+      const form = page.locator('[data-task-form]');
+      const input = form.locator('[name=title]');
+      const rows = page.locator('[data-task-rows] li:not([data-empty])');
+      await form.locator('[type=submit]').click();
+      assert.equal(await input.getAttribute('aria-invalid'),'true');
+      assert.equal(await rows.count(),0);
+      await input.fill('  Plan <chapter> & notes  '); await input.press('Enter');
+      assert.deepEqual(await rows.allTextContents(),['Plan <chapter> & notes']);
+      assert.equal(await input.inputValue(),'');
+      await input.press('Enter');
+      assert.equal(await rows.count(),1);
+      await finish('/courses/?route=api&level=builder');
+      await next.click();
+      await page.locator('[data-roadmap][data-track=api][data-ready]').waitFor();
+      await action.click();
+      await rail.waitFor();
+      assert.equal(await rail.locator('[data-rail]').count(),6);
+      await finish('/learn/api-validated-writes/');
+      await next.click();
+      await input.fill(' '); await input.press('Enter');
+      const http = page.locator('[data-http-status]'), response = page.locator('[data-api-body]');
+      assert.equal(await http.innerText(),'422');
+      const missingTitle = 'The title field is required.';
+      assert.deepEqual(JSON.parse(await response.innerText()),{message:missingTitle,errors:{title:[missingTitle]}});
+      await input.fill('界'.repeat(121)); await input.press('Enter');
+      assert.equal(await http.innerText(),'422');
+      await input.fill('  Plan tomorrow  '); await page.locator('[name=done]').check();
+      await form.locator('[type=submit]').click();
+      assert.equal(await http.innerText(),'201');
+      assert.deepEqual(JSON.parse(await response.innerText()),{data:{id:1,title:'Plan tomorrow',done:false}});
+      await page.locator('[data-sent] summary').click();
+      assert.deepEqual(JSON.parse(await page.locator('[data-sent] pre').innerText()),{title:'  Plan tomorrow  ',done:true});
+      await finish('/learn/api-contract-tests/');
+      await next.click();
+      await finish('/learn/sanctum-owner-scope/');
+      await open('/orbit/');
+      assert.equal(await page.locator('[data-resume-link]').getAttribute('href'),prefix+'/learn/sanctum-owner-scope/');
+      assert.equal(await page.locator('[data-resume-progress] progress').getAttribute('max'),'6');
+      assert.equal(await page.locator('[data-resume-progress] progress').getAttribute('value'),'3');
+      for (const [lesson,target] of [['sanctum-owner-scope','/learn/task-update-policy/'],['task-update-policy','/learn/authorization-matrix-tests/'],['authorization-matrix-tests','/challenges/rest-api/']]) {
+        await open('/learn/'+lesson+'/');
+        await finish(target);
+      }
+      await open('/courses/?route=api&level=builder');
+      await page.locator('[data-roadmap][data-ready]').waitFor();
+      assert.equal(await action.getAttribute('href'),prefix+'/challenges/rest-api/');
+      await open('/');
+      assert.equal(await page.locator('[data-resume-link]').getAttribute('href'),prefix+'/challenges/rest-api/');
+      assert.equal(await page.locator('[data-home-secondary]').getAttribute('href'),prefix+'/courses/#course-library');
+      await open('/courses/?route=ship&level=advanced');
+      await page.locator('[data-roadmap][data-ready]').waitFor();
+      await open('/learn/first-project/');
+      assert.equal(await rail.getAttribute('data-trail'),'course');
+      assert.equal(await rail.locator('[data-rail]').count(),6);
+      await page.close();
+    }
+    const native = await browser.newPage();
+    await native.route('**/_astro/*.js',route=>route.abort());
+    await native.goto(origin+'/learn/first-project/#try-it');
+    await native.locator('.board-states label').nth(2).click();
+    await native.locator('.language-link').click();
+    assert.equal(new URL(native.url()).hash,'#try-it');
+    assert.equal(await native.locator('[data-board-state]:visible').getAttribute('data-board-state'),'2');
+    await native.close();
+
+    const plain = await browser.newPage({javaScriptEnabled:false,viewport:{width:320,height:568}});
+    await plain.goto(origin+'/learn/first-project/');
+    await plain.locator('.board-states label').nth(0).click();
+    assert.equal(await plain.locator('[data-board-state]:visible .sample-row').innerText(),'No tasks yet.');
+    assert.equal(await plain.locator('.article-paging:visible [data-paging-next]').getAttribute('href'),'/learn/form-validation/');
+    await plain.goto(origin+'/zh/learn/form-validation/');
+    await plain.locator('#try-it noscript details summary').first().click();
+    assert.match(await plain.locator('#try-it noscript details[open] p').innerText(),/缺少标题/);
+  } finally { await browser.close(); }
+});

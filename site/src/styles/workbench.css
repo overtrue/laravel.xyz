@@ -1,0 +1,44 @@
+.workbench { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items:stretch; gap:0; gap:clamp(18px,3.5vw,55px); }
+.settings, .result { min-width: 0; border-radius: var(--radius-lg); overflow: hidden; }
+.settings { padding:22px 0; border-top:1px solid var(--line-strong); }
+.result { --line:#464551; --line-strong:#6b6977; --muted:#c7c6d2; --accent:#ffb394; background:var(--night); color:var(--night-paper); align-self:start; }
+.workbench h2 { font-size: 1.1rem; font-weight: 600; letter-spacing: -.02em; }
+.fields { display: grid; gap: 13px; margin-top: 17px; }
+.fields label { display: grid; align-content: start; gap: 6px; font-size: .91rem; font-weight: 575; min-width: 0; }
+.fields :is(select, input:not([type="checkbox"]), textarea) { width: 100%; min-width: 0; min-height: 43px; border: 1px solid var(--line-strong); border-radius: var(--radius); background: var(--paper); color: var(--ink); padding: 8px 11px; font-weight: 475; }
+.fields textarea { resize: vertical; font: .86rem/1.65 var(--mono); }
+.fields input::placeholder, .fields textarea::placeholder { color: var(--muted); }
+.fields :is(input, textarea, select):focus-visible { outline-offset: 1px; }
+.fields .hint { font-size: .85rem; color: var(--muted); margin: -4px 0 0; }
+.fields fieldset { min-width: 0; border: 1px solid var(--line); border-radius:0; padding: 10px 12px 12px; }
+.fields legend { font-size: .87rem; font-weight: 720; padding-inline: 7px; }
+.fields fieldset[data-flags] { display: flex; align-items: center; flex-wrap: wrap; gap: 7px 15px; }
+.fields label.check { display: inline-flex; align-items: center; min-height: 29px; font-size: .88rem; }
+.check input { accent-color: var(--accent); width: 16px; height: 16px; margin: 0 2px 0 0; }
+.field-pair { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.field-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; }
+.field-actions .button { font-size: .83rem; padding-inline: 12px; }
+.rule-fields { display: grid; gap: 9px; }
+.rule-field .field-pair + .field-pair, .rule-field .field-actions { margin-top: 9px; }
+.rule-field .field-actions { justify-content: space-between; }
+.rule-field .remove-rule { background: transparent; border: 0; font-size: .82rem; color: #8c4131; padding: 7px 8px; }
+.rule-field .remove-rule:hover { text-decoration: underline; }
+.fields > [data-add-rule] { justify-self: start; }
+.result-header { display: flex; align-items: center; justify-content: space-between; gap: 10px; min-height: 62px; padding: 13px 18px; border-bottom: 1px solid var(--line); }
+.result .result-header { color:var(--night-ink); }
+.result-header .result-copy { color:var(--night-paper); background:transparent; border-radius:24px; }
+.result-copy { display: inline-flex; align-items: center; gap: 6px; padding: 7px 9px; border: 1px solid var(--line-strong); border-radius:var(--radius); background: var(--surface); color: inherit; font-size: .86rem; white-space: nowrap; }
+.result-header .result-copy:hover:not(:disabled) { background:#484550; }
+.result :focus-visible { outline-offset: -2px; }
+.result pre { margin: 0; overflow: auto; padding: 17px 18px 22px; min-height: 110px; color:#e1efa9; font: .89rem/1.75 var(--mono); }
+.result-note, .cron-result p { border-top: 1px solid var(--line); margin: 0; padding: 13px 18px; color: var(--muted); font-size: .86rem; overflow-wrap: anywhere; }
+#tool-status { color: var(--accent); font-size: .89rem; margin: 0; padding: 0 18px 14px; }
+.cron-result { border-top: 1px solid var(--line); }
+.env-result { padding: 0 18px; }
+.env-result p { color: var(--muted); font-size: .93rem; }
+.env-result ul { list-style: none; padding: 0; margin: 0 0 15px; }
+.env-result li { border-top: 1px solid var(--line); padding: 10px 0; font-size: .9rem; line-height: 1.65; }
+.env-result li::before { content: '•'; color: #f4bc8f; font-weight: 900; margin-right: 10px; }
+.tool-links { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-top: 21px; }
+@media (max-width: 800px) { .workbench { grid-template-columns:minmax(0,1fr); } .result { border-left:0; border-top:1px solid var(--line-strong); } .settings { padding-right:0; } }
+@media (max-width: 340px) { .field-pair { grid-template-columns: minmax(0, 1fr); } }

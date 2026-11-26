@@ -1,0 +1,232 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import DirectoryCover from '../components/DirectoryCover.astro';
+import type { Artwork } from '../data/artwork';
+import SaveButton from '../components/SaveButton.astro';
+import Bookshelf from '../components/Bookshelf.astro';
+import CommunityInvite from '../components/CommunityInvite.astro';
+import PeopleCards from '../components/PeopleCards.astro';
+import Avatar from '../components/Avatar.astro';
+import SocialLinks from '../components/SocialLinks.astro';
+import { getFeaturedPeople } from '../data/people';
+import { profileFor } from '../data/community';
+import { categories, getResources, resourceTabs, sections, type Section } from '../data/catalog';
+import { getLocale, localize } from '../lib/locale';
+
+export function getStaticPaths() {
+  return (Object.keys(sections) as Section[]).map((section) => ({ params: { section }, props: { section } }));
+}
+
+const { section } = Astro.props;
+const { locale, t, href } = localize(getLocale(Astro.url.pathname));
+const [title, description] = sections[section][locale];
+const entries = getResources(section, locale);
+const archive = entries.filter(entry => entry.archived);
+const groups = archive.length ? [entries.filter(entry => !entry.archived),archive] : [entries];
+const covers = { resources: 'atlas', docs: 'atlas', reading: 'atlas', packages: 'dependencies', sites: 'community', stars: 'community', jobs: 'community' } as const satisfies Record<Section, Artwork>;
+const peoplePage = section === 'stars';
+const featured = peoplePage ? getFeaturedPeople(locale) : [];
+const portraits = !peoplePage ? [] : ['jessarcher','aarondfrancis','shrutibalasa','nunomaduro'].map(id => featured.find(p => p.id === id)!);
+const glyphs = { doc: 'books', course: 'play', book: 'book', community: 'globe', package: 'package', person: 'users', job: 'work' } as const;
+const kinds = [...new Set(entries.map(entry => entry.category))];
+const kindLabels = { doc:'Docs', course:'Courses', book:'Books', community:'Communities', package:'Packages', person:'People', job:'Jobs' };
+const catalogSection = !peoplePage && section !== 'jobs';
+---
+
+<Base {title} {description}>
+  <div class="shell">
+    {peoplePage ? <header class="people-cover">
+      <div class="people-copy"><h1>{t('People behind', 'Laravel')} <em>{t('Laravel.', '社区人物')}</em></h1><p>{t('Meet the people who build the framework, teach the craft, and maintain the tools you use.', '认识开发框架、分享经验，以及维护你手中工具的人。')}</p><a class="text-link" href="#community-directory">{t('Community directory', '社区名录')} <Icon name="down" size={15}/></a></div>
+      <div class="contact-sheet">{portraits.map(p => <a href={'#' + p.id} aria-label={p.name}><Avatar handle={p.handle} eager/><span>{p.name}</span></a>)}</div>
+    </header> : <DirectoryCover {title} {description} art={covers[section]} bookshelf={section === 'reading'}>
+      <Fragment slot="bookshelf">{section === 'reading' && <Bookshelf/>}</Fragment>
+      <Fragment slot="trail">{!catalogSection && <nav class="breadcrumbs" aria-label={t('Breadcrumb', '面包屑')}><a href={href('/sites/')}>{t('Community & news', '社区与资讯')}</a><Icon name="chevron" size={15} /><span>{title}</span></nav>}</Fragment>
+    </DirectoryCover>}
+
+    {catalogSection && (
+      <nav class="catalog-tabs" aria-label={t('Resource categories', '资源类别')}>
+        {resourceTabs(locale).map(({ href, label }) => <a href={href} aria-current={Astro.url.pathname === href ? 'page' : undefined}>{label}</a>)}
+      </nav>
+    )}
+    {section === 'sites' && (
+      <div class="community-links"><a class="button" href={href('/stars/')}><Icon name="users" size={18} /> {t('People in Laravel', 'Laravel 人物')}</a><a class="button" href={href('/jobs/')}>{t('Job boards', '招聘与求职')} <Icon name="chevron" size={16} /></a></div>
+    )}
+    <div class="catalog-filter" data-catalog-controls hidden>
+      <label><Icon name="search" size={19} /><span class="sr-only">{t('Filter this directory', '筛选当前目录')}</span><input id="catalog-query" type="search" placeholder={t('Filter this directory…', '搜索当前目录…')} autocomplete="off" /></label>
+      <span id="catalog-count" aria-live="polite"></span>
+    </div>
+
+    {kinds.length > 1 && <div class="kind-picker" data-kind-picker role="group" aria-label={t('Filter by resource type','按资源类型筛选')} hidden><button type="button" data-kind="" aria-pressed="true">{t('All','全部')}</button>
+      {kinds.map(kind => <button type="button" data-kind={kind} aria-pressed="false"><Icon name={glyphs[kind]} size={14}/>{t(kindLabels[kind],categories[kind].zh)}</button>)}</div>}
+    {peoplePage && <section class="people-feature" data-filter-group aria-labelledby="featured-people">
+      <div class="section-heading"><h2 id="featured-people">{t('Featured people', '精选人物')}</h2></div>
+      <PeopleCards/>
+    </section>}
+    {peoplePage ? <section data-filter-group aria-labelledby="community-directory">
+      <div class="section-heading"><h2 id="community-directory">{t('Community directory', '社区名录')}</h2></div>
+      <ul class="community-list" id="catalog-list" role="list">{entries.map(entry => {
+        const handle = entry.detail!.slice(1);
+        return <li data-resource={entry.title + ' ' + handle} id={handle.toLowerCase()}><a class="community-person" href={entry.href}><Avatar {handle}/><span><strong>{entry.title}</strong><small>@{profileFor(handle).github}</small></span></a><div class="entry-actions"><SocialLinks {handle} name={entry.title}/><SaveButton compact item={entry.key} name={entry.title}/></div></li>;
+      })}</ul>
+    </section> : groups.map((items,index) => {
+      const archived = index > 0, Wrapper = archived ? 'details' : 'div';
+      return <Wrapper class:list={{'archive':archived}} data-archive={archived || undefined}>
+        {archived && <summary><Icon name="package" size={19}/>{t('From the original directory', '原站收藏')} <small>{items.length}</small><Icon name="down" size={16}/></summary>}
+        <ul class="catalog-grid" id={archived ? 'archive-list' : 'catalog-list'} role="list">
+          {items.map(entry => <li data-kind-row={entry.category} data-resource={[entry.title,entry.description,entry.detail,entry.keywords,categories[entry.category][locale]].join(' ')}>
+            <a href={entry.href}><span class="entry-glyph"><Icon name={glyphs[entry.category]} size={20}/></span>
+              <div><h2>{entry.title}</h2>{!archived && <p>{entry.description}</p>}</div>
+              {!archived && <small>{entry.detail ?? categories[entry.category][locale]}</small>}<Icon name="external" size={17}/>
+            </a><SaveButton compact item={entry.key} name={entry.title}/></li>)}
+        </ul>
+      </Wrapper>
+    })}
+    <div class="catalog-empty" id="catalog-empty" hidden>
+      <p>{t('No resources match your search.', '这个目录里没有匹配项。')}</p>
+      <button class="button" type="button" data-clear-query>{t('Clear search', '清除筛选')}</button>
+    </div>
+    <CommunityInvite people={peoplePage}/>
+  </div>
+</Base>
+
+<script>
+  import { getLocale, localize } from '../lib/locale';
+
+  const { t } = localize(getLocale(location.pathname));
+  const controls = document.querySelector<HTMLElement>('[data-catalog-controls]')!;
+  const input = document.querySelector<HTMLInputElement>('#catalog-query')!;
+  const count = document.querySelector('#catalog-count')!;
+  const empty = document.querySelector<HTMLElement>('#catalog-empty')!;
+  const people = !!document.querySelector('.people-cover');
+  const groups = [...document.querySelectorAll<HTMLElement>('[data-filter-group]')];
+  const archive = document.querySelector<HTMLDetailsElement>('[data-archive]');
+  let archiveWasOpen = false;
+  let searching = false;
+  const normalize = (text: string) => text.normalize('NFKC').toLowerCase().trim();
+  const entries = [...document.querySelectorAll<HTMLElement>('[data-resource]')].map((item) => ({
+    item, text: normalize(item.dataset.resource ?? ''),
+  }));
+
+  const picker = document.querySelector<HTMLElement>('[data-kind-picker]');
+  const kinds = [...(picker?.querySelectorAll<HTMLButtonElement>('[data-kind]') ?? [])];
+  let kind = '';
+  function selectKind(value: string) {
+    kind = value;
+    kinds.forEach(button => button.setAttribute('aria-pressed',String(button.dataset.kind === kind)));
+    filter();
+  }
+  if (picker) {
+    picker.hidden = false;
+    kinds.forEach(button => button.addEventListener('click',() => selectKind(button.dataset.kind!)));
+  }
+  function filter() {
+    const words = normalize(input.value).split(/\s+/);
+    let visible = 0;
+    for (const { item, text } of entries) {
+      item.hidden = Boolean(kind && item.dataset.kindRow !== kind) || !words.every((word) => text.includes(word));
+      if (!item.hidden) visible += 1;
+    }
+    if (archive) {
+      const active = Boolean(input.value.trim());
+      if (active && !searching) archiveWasOpen = archive.open;
+      if (active) archive.open = true;
+      else if (searching) archive.open = archiveWasOpen;
+      archive.hidden = !archive.querySelector('[data-resource]:not([hidden])');
+      searching = active;
+    }
+    for (const group of groups) group.hidden = !group.querySelector('[data-resource]:not([hidden])');
+    count.textContent = people ? t(visible + (visible === 1 ? ' profile' : ' profiles'), visible + ' 个档案') : t(`${visible} ${visible === 1 ? 'resource' : 'resources'}`, `${visible} 项资源`);
+    empty.hidden = visible !== 0;
+  }
+
+  controls.hidden = false;
+  filter();
+  input.addEventListener('input', filter);
+  document.querySelector('[data-clear-query]')?.addEventListener('click', () => {
+    input.value = '';
+    selectKind('');
+    input.focus();
+  });
+  function revealPerson(hash: string) {
+    const target = document.getElementById(hash.slice(1));
+    if (people && input.value && target?.closest('[hidden]')) {
+      input.value = '';
+      filter();
+      target.scrollIntoView({block:'start'});
+    }
+  }
+  document.querySelector('.people-cover')?.addEventListener('click',event => {
+    if (event.target instanceof Element) {
+      const link = event.target.closest<HTMLAnchorElement>('a[href^="#"]');
+      if (link) revealPerson(link.hash);
+    }
+  });
+  window.addEventListener('hashchange', () => revealPerson(location.hash));
+  window.addEventListener('pageshow', filter);
+</script>
+
+<style>
+  .people-cover { display:grid; grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr); align-items:center; gap:clamp(25px,4.5vw,70px); padding-block:clamp(35px,4.5vw,68px); border-bottom:1px solid var(--line-strong); }
+  .people-cover h1 { font:500 clamp(2.8rem,5.45vw,5.2rem)/1 var(--display); letter-spacing:-.06em; }
+  .people-cover h1 em { display:block; color:var(--accent); font-weight:inherit; font-style:normal; }
+  .people-cover h1:lang(zh-CN) { font-size:clamp(2.45rem,5vw,4.6rem); line-height:1.14; }
+  .people-cover h1 em:lang(zh-CN) { font-style:normal; }
+  .people-cover p { max-width:37ch; margin:14px 0 9px; font-size:clamp(1rem,1.4vw,1.15rem); color:var(--muted); line-height:1.55; text-wrap:pretty; }
+  .contact-sheet { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:clamp(5px,.8vw,12px); padding:24px 0; }
+  .contact-sheet a { align-self:center; min-width:0; transform:translateY(var(--lift,0px)) rotate(var(--tilt,0deg)); transition:transform var(--art-transition); }
+  .contact-sheet a:nth-child(1) { --lift:8px; --tilt:-2deg; }
+  .contact-sheet a:nth-child(2) { --lift:-18px; --tilt:2deg; }
+  .contact-sheet a:nth-child(3) { --lift:20px; --tilt:-2deg; }
+  .contact-sheet a:nth-child(4) { --lift:-7px; --tilt:2deg; }
+  .contact-sheet :global(img) { aspect-ratio:.76; height:auto; width:100%; border:5px solid var(--surface); box-shadow:0 1px 4px #39351c36; }
+  .contact-sheet span { display:block; margin-top:7px; text-align:center; font:500 clamp(.74rem,1vw,.95rem)/1.25 var(--sans); }
+  .contact-sheet a:is(:hover,:focus-visible) { transform:translateY(-5px) rotate(0deg); color:var(--accent); }
+  .catalog-tabs { display:flex; flex-wrap:wrap; gap:0 15px; border-bottom:1px solid var(--line-strong); }
+  .catalog-tabs a { position:relative; padding:13px 2px; color:var(--muted); font-size:.9rem; font-weight:550; }
+  .catalog-tabs a:hover,.catalog-tabs a[aria-current] { color:var(--accent); }
+  .catalog-tabs a[aria-current]::after { content:''; position:absolute; inset:auto 0 -1px; height:2px; background:var(--signal); }
+  .catalog-filter { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px 16px; padding:18px 0; color:var(--muted); font:.77rem var(--mono); }
+  .catalog-filter label { display:flex; align-items:center; gap:9px; width:min(355px,100%); border-bottom:1px solid var(--line-strong); }
+  .catalog-filter label:focus-within { border-color:var(--accent); }
+  .catalog-filter input { width:100%; min-width:0; background:transparent; border:0; outline:none; padding:10px 0; font:normal .95rem/1.4 'Instrument Sans Variable',sans-serif; color:var(--ink); }
+  .catalog-grid,.community-list { padding:0; margin:0; list-style:none; }
+  .catalog-grid li,.community-list li { border-top:1px solid var(--line); }
+  .catalog-grid li:last-child { border-bottom:1px solid var(--line); }
+  .catalog-grid li { display:grid; grid-template-columns:minmax(0,1fr) auto; align-items:center; gap:4px; }
+  .entry-actions { display:flex; align-items:center; flex-shrink:0; }
+  .kind-picker { display:flex; flex-wrap:wrap; gap:4px 8px; margin:0 0 18px; }
+  .kind-picker button { display:inline-flex; align-items:center; gap:5px; min-height:34px; padding:4px 10px; color:var(--muted); border:1px solid var(--line); background:var(--surface); border-radius:3px; font-size:.82rem; }
+  .kind-picker button[aria-pressed=true] { color:var(--night-paper); background:var(--night); border-color:var(--night); }
+  .catalog-grid a { display:grid; grid-template-columns:36px minmax(0,1fr) minmax(80px,15%) 18px; align-items:center; gap:clamp(10px,2vw,26px); padding:clamp(12px,1.6vw,21px) 3px; overflow-wrap:anywhere; }
+  .catalog-grid a:hover { background:var(--wash); }
+  .catalog-grid a>small { font:.72rem/1.5 var(--mono); color:var(--muted); }
+  .entry-glyph { color:var(--accent); display:grid; place-items:center; width:34px; height:34px; }
+  .catalog-grid h2,.community-person strong { font-size:clamp(1rem,1.6vw,1.18rem); font-weight:570; letter-spacing:-.02em; }
+  .catalog-grid p { margin:4px 0 0; color:var(--muted); font-size:.91rem; line-height:1.5; max-width:85ch; }
+  .community-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:clamp(20px,4vw,64px); }
+  .community-list li,.community-person { display:flex; align-items:center; gap:12px; }
+  .community-list li { justify-content:space-between; padding:11px 0; }
+  .community-person { min-width:0; }
+  .community-person :global(img) { width:45px; height:45px; }
+  .community-person span { display:grid; gap:2px; overflow-wrap:anywhere; }
+  .community-person small { color:var(--muted); font:.72rem var(--mono); }
+  .community-person:hover strong { color:var(--accent); }
+  .community-links { display:flex; flex-wrap:wrap; gap:9px; margin-top:15px; }
+  .people-feature { margin:8px 0 clamp(34px,5vw,68px); }
+  .archive { margin-top:25px; border-block:1px solid var(--line-strong); }
+  .archive summary { display:flex; align-items:center; gap:9px; padding:15px 3px; font-weight:550; cursor:pointer; }
+  .archive summary::-webkit-details-marker { display:none; }
+  .archive summary>svg:first-child { color:var(--accent); }
+  .archive summary small { color:var(--muted); margin-left:auto; font:.76rem var(--mono); }
+  .archive[open] summary>svg:last-child { rotate:180deg; }
+  .archive .catalog-grid a { grid-template-columns:32px minmax(0,1fr) 18px; padding-block:10px; }
+  .archive .entry-glyph { border:0; }
+  .catalog-empty { padding:20px 0; border-top:1px solid var(--line); }
+  #community-directory { scroll-margin-top:18px; }
+  @media(max-width:760px) { .people-cover { grid-template-columns:1fr; } .contact-sheet { width:100%; max-width:550px; justify-self:center; } .community-list { grid-template-columns:1fr; } }
+  @media(max-width:590px) { .catalog-grid a { grid-template-columns:29px minmax(0,1fr) 16px; } .entry-glyph { width:28px; height:30px; } .catalog-grid a>small { display:none; } .catalog-tabs { gap:0 10px; } .catalog-tabs a { padding:9px 0; } }
+  @media(max-width:460px) { .people-cover { gap:14px; } .contact-sheet { padding:15px 3px; } .contact-sheet span { font-size:.81rem; } }
+  @media(max-width:420px) { .community-list li,.community-person { gap:5px; } .entry-actions { gap:0; } .community-person { min-width:0; } .community-person strong { overflow-wrap:anywhere; } }
+  @media(max-width:350px) { .community-list li { flex-wrap:wrap; } .contact-sheet span { font-size:.74rem; } }
+</style>

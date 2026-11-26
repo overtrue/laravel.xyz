@@ -1,0 +1,10 @@
+---
+import { getLocale, localize, withoutLocale } from '../lib/locale';
+interface Props { item: string; name: string; compact?: boolean }
+const { item, name, compact = false } = Astro.props;
+const { t } = localize(getLocale(Astro.url.pathname));
+---
+<button type="button" class:list={['save-item', { compact }]} data-save={withoutLocale(item)} data-name={name} aria-label={t('Save ','收藏') + name} title={t('Save ','收藏') + name} aria-pressed="false" hidden>
+  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linejoin="round" aria-hidden="true"><path d="M6 4.5A1.5 1.5 0 0 1 7.5 3h9A1.5 1.5 0 0 1 18 4.5V21l-6-3.8L6 21z"/></svg>
+  {!compact && <span data-save-label>{t('Save','收藏')}</span>}
+</button>

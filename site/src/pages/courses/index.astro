@@ -1,0 +1,98 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import SaveButton from '../../components/SaveButton.astro';
+import CoverArt from '../../components/CoverArt.astro';
+import type { Track } from '../../data/roadmap';
+import { coursePath, levels } from '../../data/courses';
+import { tracks, skills, stops, stationLayout, trailPoints, itinerary, learningStart, belongsToRoute } from '../../data/roadmap';
+import { getCourses } from '../../lib/site';
+import CourseChallengeLink from '../../components/CourseChallengeLink.astro';
+import { getLocale, localize } from '../../lib/locale';
+import '../../styles/roadmap.css';
+
+const { locale, t, href } = localize(getLocale(Astro.url.pathname));
+const courses = await getCourses(locale);
+const total = courses.reduce((n, c) => n + c.lessons.length, 0);
+const title = t('Free learning roadmap', '免费学习路线图');
+const description = t('Build your first form in three steps, or give a working app a JSON API.', '用三个小任务做出第一个表单，或给已有的应用加上 JSON 接口。');
+const initial = itinerary('web','beginner');
+const layouts = { wide:stationLayout(initial.length,3), narrow:stationLayout(initial.length,2) };
+const first = courses.find(c => c.id === initial[0])!;
+const initialTasks = initial.flatMap(id => courses.find(c => c.id === id)!.lessons).filter(lesson => belongsToRoute('web','beginner',lesson.id)).length;
+---
+
+<Base {title} {description}>
+  <div class="shell">
+    <header class="map-intro">
+      <div><h1>{t('Free learning', '免费学习')} <em>{t('paths.', '路线图')}</em></h1><p>{description}</p></div>
+      <div class="map-stats"><span><Icon name="books" size={17}/>{t(courses.length + ' free courses', courses.length + ' 门免费课')}</span><span><Icon name="flag" size={17}/>{t(total + ' tasks', total + ' 个任务')}</span><a class="text-link" href={href('/challenges/')}><Icon name="test" size={16}/>{t('Course challenges','课程闯关')}</a></div>
+    </header>
+    <div class="roadmap" data-roadmap data-track="web">
+      <div class="route-resume" data-resume>
+        <div><small data-next-label>{t('Your next lesson','你的下一课')}</small><p data-resume-label>{first.lessons[0].data.title}</p></div><a class="button primary" data-next-task href={href('/learn/' + first.lessons[0].id + '/')}>{t('Start lesson', '开始学习')} <Icon name="right" size={16}/></a>
+      </div>
+      <aside class="map-controls">
+        <details class="route-settings" data-route-settings open>
+          <summary><Icon name="compass" size={16}/><span>{t('Change path','切换路线')}</span><small data-selected-path>{tracks.web[locale]}</small><Icon name="down" size={16}/></summary>
+        <fieldset data-route-controls disabled><legend class="sr-only">{t('Configure your roadmap','选择路线和起点')}</legend>
+          <label class="control-label" for="skill"><Icon name="compass" size={16}/>{t('Starting level', '你的水平')}</label>
+          <div class="skill-select"><select id="skill">{Object.entries(skills).map(([id, skill]) => <option value={id}>{skill[locale]}</option>)}</select><Icon name="down" size={17}/></div>
+          <fieldset class="track-options"><legend class="control-label">{t('Learning path', '学习方向')}</legend>
+            {Object.entries(tracks).map(([id, track]) => <label><input type="radio" name="track" value={id} checked={id === 'web'}/><span><Icon name={track.icon} size={20}/>{track[locale]}<Icon name="chevron" size={15}/></span></label>)}
+          </fieldset>
+        </fieldset>
+        </details>
+        <noscript><style is:inline>[data-route-settings], [data-route-progress] { display:none!important; }</style><a class="text-link" href={href('/learn/laravel-request-lab/')}>{t('Try your first route','试试第一条路由')}</a><a class="text-link" href={href('/learn/api-resource-pagination/')}>{t('Give your task list an API','给任务清单加一个接口')}</a><a class="text-link" href="#course-library">{t('Browse all free courses', '浏览全部免费课程')} <Icon name="down" size={16}/></a></noscript>
+        <div class="route-progress" data-route-progress>
+          <label for="route-progress"><span>{t('Tasks completed', '路线完成度')}</span><b data-progress-label>0 / {initialTasks}</b></label>
+          <progress id="route-progress" max={initialTasks} value="0"></progress>
+          <a class="text-link" href={href('/orbit/')}><Icon name="orbit" size={14}/>{t('My Orbit','我的小宇宙')}</a>
+        </div>
+      </aside>
+      <section class="map-stage" aria-labelledby="route-name">
+        <div class="route-horizon">
+          <div class="route-landscape" aria-hidden="true">{(Object.keys(tracks) as Track[]).map(id => <div data-scenery={id} hidden={id !== 'web'}><CoverArt art={id}/></div>)}</div>
+          <div class="route-title"><div class="map-topline"><div><Icon name="route" size={17}/><span>{t('Route map', '路线图')}</span></div><span data-station-count>{t(initial.length+' stops', initial.length+' 站')}</span></div>
+            <h2 id="route-name">{tracks.web[locale]}</h2>
+            <p data-route-goal>{learningStart('web','beginner')!.goal[locale]}</p></div>
+        </div>
+        <div class="station-map" id="route-map">
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="map-wire" aria-hidden="true">
+            {Object.entries(layouts).map(([size, coords]) => <g data-wire={size}><polyline data-trail pathLength="100" points={trailPoints(coords)} vector-effect="non-scaling-stroke"/><polyline data-traveled points="" vector-effect="non-scaling-stroke"/></g>)}
+          </svg>
+          {courses.map((course) => {
+            const index = initial.findIndex(id => id === course.id);
+            const pos = layouts.wide[index], narrow = layouts.narrow[index]; const stop = stops[course.id];
+            return <a class="map-stop" data-stop={course.id} href={href(coursePath(course.id))} hidden={!pos} aria-current={index === 0 ? 'step' : undefined} style={pos && ('--wide-x:' + pos.x + '%;--wide-y:' + pos.y + '%;--narrow-x:' + narrow.x + '%;--narrow-y:' + narrow.y + '%')}>
+              <span class="stop-mark"><Icon name={stop.icon} size={21}/><span class="stop-tick"><Icon name="check" size={10}/></span></span>
+              <span class="stop-title">{stop[locale]}</span><span class="finish-flag" aria-hidden="true"><Icon name="flag" size={12}/></span>
+            </a>
+          })}
+        </div>
+        <div class="map-key"><span><i></i>{t('Selected', '当前选中')}</span><span><i></i>{t('Available', '可探索')}</span><span><Icon name="check" size={13}/>{t('Completed', '已完成')}</span></div>
+      </section>
+      <div class="missions" id="missions">
+        {courses.map(course => <section data-panel={course.id} hidden={course !== first} aria-labelledby={'stop-' + course.id}>
+          <div class="mission-head"><div><div class="eyeline"><Icon name={stops[course.id].icon} size={15}/><span data-stop-index>{t('Stop 01', '第 01 站')}</span></div><h2 id={'stop-' + course.id}>{course.title}</h2></div><a class="text-link" href={href(coursePath(course.id))}>{t('Course outline', '课程大纲')} <Icon name="right" size={16}/></a></div>
+          <ol class="mission-list">
+            {course.lessons.map(({id, data}) => <li hidden={!belongsToRoute('web','beginner',id)}><a href={href('/learn/' + id + '/')} data-task={id}><span class="task-state"><span>{String(data.order).padStart(2, '0')}</span><Icon name="check" size={15}/></span><strong>{data.title}</strong><small><Icon name="clock" size={14}/>{data.minutes}{t(' min', ' 分钟')}</small><Icon name="right" size={16}/></a></li>)}
+          </ol>
+          <CourseChallengeLink id={course.id} optional/>
+        </section>)}
+      </div>
+    </div>
+    <section class="course-library" id="course-library">
+      <div class="section-heading"><h2>{t('Course library', '全部课程')}</h2><a class="text-link" href={href('/reading/')}>{t('Books & further reading', '书籍与延伸阅读')} <Icon name="right" size={16}/></a></div>
+      {levels.map(level => <details id={level.id} name="library"><summary><Icon name={stops[courses.find(c => c.level === level.id)!.id].icon}/><span>{level[locale].title}</span><small>{String(courses.filter(c=>c.level === level.id).length).padStart(2,'0')}</small><Icon name="down" size={17}/></summary>
+        <ul>{courses.filter(c => c.level === level.id).map(course => <li><a href={href(coursePath(course.id))}>{course.title}<Icon name="right" size={16}/></a><SaveButton compact item={coursePath(course.id)} name={course.title}/></li>)}</ul>
+      </details>)}
+    </section>
+  </div>
+</Base>
+<style>
+.course-library li { display:flex; align-items:center; gap:8px; } .course-library li a { flex:1; min-width:0; } .route-progress .text-link { font-size:.78rem; margin-top:4px; }
+</style>
+<script>
+  import '../../scripts/roadmap';
+</script>

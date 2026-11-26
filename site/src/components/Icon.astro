@@ -1,0 +1,27 @@
+---
+import {
+  ArrowLeft, ArrowRight, ArrowUpRight, BookOpen, BookOpenText, Bookmark, Boxes, Braces,
+  BriefcaseBusiness, Check, ChevronDown, ChevronRight, CircleDot, Clock3, CodeXml, Compass,
+  Copy, Database, Flag, FlaskConical, GitBranch, GitFork, Globe, Heart, KeyRound, Layers, Languages, ListChecks,
+  Map as MapIcon, Orbit, Package, Play, Radio, Rocket, Route, Search, ShieldCheck, Terminal, Ticket,
+  Users, Workflow, Wrench, X,
+} from '@lucide/astro';
+
+const icons = {
+  heart: Heart, key: KeyRound, left: ArrowLeft, right: ArrowRight, external: ArrowUpRight, book: BookOpen,
+  books: BookOpenText, check: Check, chevron: ChevronRight, down: ChevronDown, clock: Clock3,
+  code: CodeXml, copy: Copy, repo: GitFork, language: Languages, list: ListChecks,
+  orbit: Orbit, package: Package, play: Play, search: Search, shield: ShieldCheck, terminal: Terminal,
+  users: Users, close: X, route: Route, flag: Flag, compass: Compass, map: MapIcon, db: Database,
+  api: Braces, deploy: Rocket, flow: Workflow, test: FlaskConical, layers: Layers, tools: Wrench,
+  branch: GitBranch, globe: Globe, work: BriefcaseBusiness, radio: Radio, mark: Bookmark,
+  station: CircleDot, boxes: Boxes, ticket: Ticket,
+};
+
+export type IconName = keyof typeof icons;
+interface Props { name: IconName; size?: number }
+const { name, size = 20 } = Astro.props;
+const Glyph = icons[name];
+---
+
+<Glyph size={size} stroke-width="1.7" aria-hidden="true" />

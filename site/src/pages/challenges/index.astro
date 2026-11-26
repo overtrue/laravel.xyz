@@ -1,0 +1,72 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import QuizRecord from '../../components/QuizRecord.astro';
+import { courses, type CourseId } from '../../data/courses';
+import { learningStarts, stops } from '../../data/roadmap';
+import { quizPath } from '../../data/quizzes';
+import { getLocale, localize } from '../../lib/locale';
+import { questionCount, passCount } from '../../lib/quiz-score';
+const {locale,t,href} = localize(getLocale(Astro.url.pathname));
+const title = t('Course challenges','课程闯关');
+const description = t('Practice your first route and form, or build on the basics with API challenges. Each round has four questions and you can retry it.','从第一条路由和第一个表单开始练，或用接口题巩固基础。每关四题，可以反复尝试。');
+const primary:CourseId[] = learningStarts.flatMap(start => [...start.courses]);
+const groups = [
+  { title:t('New to Laravel','新手入门'), ids:learningStarts[0].courses, lesson:'laravel-request-lab', link:t('Try a route first','先试一条路由') },
+  { title:t('Build on the basics','基础提升'), ids:learningStarts[1].courses, lesson:'api-resource-pagination', link:t('Try a paginated API','先试试接口分页') },
+  { title:t('Optional challenges','延伸挑战'), ids:courses.map(c => c.id).filter(id => !primary.includes(id)) },
+];
+---
+<Base {title} {description}>
+  <div class="shell arena">
+    <nav class="breadcrumbs" aria-label={t('Breadcrumb','面包屑')}><a href={href('/courses/')}>{t('Free courses','免费课程')}</a><Icon name="chevron" size={15}/><span>{title}</span></nav>
+    <header class="arena-intro">
+      <div><h1>{title}<em>.</em></h1><p>{t('Choose a course. Solve '+questionCount+' scenarios. Get '+passCount+' right to clear the round.','挑一门课，挑战 '+questionCount+' 道实战题。答对 '+passCount+' 道就能过关。')}</p></div>
+      <QuizRecord hub/>
+    </header>
+    <div id="rounds" class="rounds">
+      {groups.map(group => {
+        const Group = group.lesson ? 'section' : 'details';
+        return <Group class="round-group" id={group.lesson ? undefined : 'more-rounds'}>
+        {group.lesson ? <header><h2>{group.title}</h2><a class="text-link" href={href('/learn/'+group.lesson+'/')}>{group.link} <Icon name="right" size={14}/></a></header> : <summary>{group.title}<small>{t('Databases, queues, testing and deployment','数据库、队列、测试与部署')}</small></summary>}
+        <ul role="list">{group.ids.map(id => {
+          const course = courses.find(c => c.id === id)!;
+          return <li id={courses.find(c => c.level === course.level)?.id === id ? 'level-'+course.level : undefined}><a class="round-row" data-quiz-row={course.id} href={href(quizPath(course.id))}>
+          <span class="round-icon"><Icon name={stops[course.id].icon} size={20}/></span><strong>{course[locale].title}</strong><small data-row-score>{t('Try this round','开始挑战')}</small><Icon name="right" size={16}/>
+        </a></li>})}</ul>
+      </Group>})}
+    </div>
+  </div>
+</Base>
+<script>
+  const extra = document.querySelector<HTMLDetailsElement>('#more-rounds')!;
+  function revealExtra() {
+    const target = document.getElementById(location.hash.slice(1));
+    if (target && extra.contains(target)) extra.open = true;
+  }
+  revealExtra();
+  window.addEventListener('hashchange',revealExtra);
+  document.querySelector('[data-recommend]')?.addEventListener('click',event => {
+    if ((event.currentTarget as HTMLAnchorElement).hash === '#more-rounds') extra.open = true;
+  });
+</script>
+<style>
+  .arena { padding-block:clamp(24px,4vw,59px) clamp(42px,7vw,94px); }
+  .arena-intro { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(290px,.8fr); gap:clamp(20px,6vw,80px); align-items:center; margin:20px 0 clamp(30px,5vw,66px); }
+  h1 { max-width:13ch; font:540 clamp(2.5rem,5.4vw,5.6rem)/1.02 var(--display); letter-spacing:-.06em; text-wrap:balance; }
+  h1 em { color:var(--accent); font-style:normal; } .arena-intro p { max-width:39ch; color:var(--muted); margin:14px 0 0; font-size:clamp(.98rem,1.35vw,1.18rem); }
+  .round-group { display:grid; grid-template-columns:minmax(145px, .6fr) minmax(0,1.4fr); gap:clamp(14px,3vw,46px); align-items:start; padding:clamp(17px,2.5vw,29px) 0; border-top:1px solid var(--line-strong); }
+  .round-group header { padding-top:3px; } .round-group header a { margin-top:6px; font-size:.83rem; }
+  details.round-group { display:block; }
+  .round-group summary { cursor:pointer; font-weight:600; padding-block:4px; }
+  .round-group summary small { display:inline-block; margin-inline-start:8px; font-weight:400; color:var(--muted); }
+  details.round-group[open] ul { margin-top:12px; }
+  h2 { margin-top:5px; font:550 clamp(1.15rem,1.8vw,1.65rem)/1.22 var(--display); letter-spacing:-.028em; }
+  .round-group ul { padding:0; margin:0; list-style:none; } .round-group li+li { border-top:1px solid var(--line); }
+  .round-row { display:grid; grid-template-columns:auto minmax(0,1fr) auto auto; gap:12px; align-items:center; padding:8px 6px; min-height:52px; }
+  .round-row:hover { background:#f4f1f7; } .round-icon { display:grid; place-items:center; width:37px; height:37px; color:#655476; background:#efebf2; }
+  .round-row strong { font-weight:550; line-height:1.38; } .round-row small { color:var(--muted); font-size:.76rem; }
+  .round-row[data-result=passed] .round-icon { background:#e3efdf; color:#386740; } .round-row[data-result=perfect] .round-icon { background:#fff0cf; color:#76531c; }
+  @media(max-width:700px){.arena-intro { grid-template-columns:1fr; } .round-group { grid-template-columns:1fr; gap:9px; }}
+  @media(max-width:520px){.round-row { grid-template-columns:auto minmax(0,1fr) auto; gap:1px 11px; } .round-icon { grid-row:1/3; } .round-row small { grid-column:2; } .round-row>:last-child { grid-column:3; grid-row:1/3; }}
+</style>

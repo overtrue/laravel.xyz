@@ -1,0 +1,4 @@
+/.astro/
+/dist/
+/.wrangler/
+/.env.local

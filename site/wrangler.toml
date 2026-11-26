@@ -1,0 +1,50 @@
+name = "php-fieldbook"
+main = "worker/index.js"
+tsconfig = "./tsconfig.json"
+compatibility_date = "2026-11-20"
+workers_dev = true
+preview_urls = false
+
+[assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "404-page"
+run_worker_first = ["/api/*"]
+
+[vars]
+ORIGIN = "https://php-fieldbook.anzhengchao.workers.dev"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "artisan-orbit-accounts-preview"
+database_id = "ec21fdea-bef8-447a-8638-d9305197730c"
+
+[[ratelimits]]
+name = "AUTH_LIMIT"
+namespace_id = "752341"
+simple = { limit = 30, period = 60 }
+
+[env.production]
+name = "php-fieldbook-production"
+workers_dev = false
+preview_urls = false
+routes = [{ pattern = "laravel.xyz/*", zone_name = "laravel.xyz" }]
+
+[env.production.assets]
+directory = "./dist"
+binding = "ASSETS"
+not_found_handling = "404-page"
+run_worker_first = ["/api/*"]
+
+[env.production.vars]
+ORIGIN = "https://laravel.xyz"
+
+[[env.production.d1_databases]]
+binding = "DB"
+database_name = "artisan-orbit-accounts"
+database_id = "614c6265-abae-45ec-810a-7f441df00758"
+
+[[env.production.ratelimits]]
+name = "AUTH_LIMIT"
+namespace_id = "752342"
+simple = { limit = 30, period = 60 }

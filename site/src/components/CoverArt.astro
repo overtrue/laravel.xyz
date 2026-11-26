@@ -1,0 +1,92 @@
+---
+import type { Artwork } from '../data/artwork';
+import { getLocale, localize } from '../lib/locale';
+interface Props { art: Artwork }
+const { art } = Astro.props;
+const { t } = localize(getLocale(Astro.url.pathname));
+const course = art === 'web' || art === 'api' || art === 'ship';
+const tint = art === 'web' ? '#df432b' : art === 'api' ? '#6452bd' : art === 'ship' ? '#b6abff' : '#cf3c26';
+const label = {
+  web:t('Taskboard','任务看板'), api:'JSON API', ship:t('Deployment','部署'),
+  atlas:t('Documentation','文档'), instruments:'php artisan', dependencies:'composer.json', community:t('Community','社区'),
+}[art];
+---
+<svg class:list={['cover-art', { course }]} viewBox={course ? '0 0 570 220' : '0 0 350 230'} style={'--tint:'+tint} data-vector={art} aria-hidden="true" focusable="false">
+  {art === 'web' && <g>
+    <g class="wire" stroke="#e6afa1"><path d="M25 153h80q14 0 14-14v-26q0-12 12-12h85"/><path d="M66 164h43q21 0 21-22v-24q0-6 6-6h80"/></g>
+    <rect x="32" y="123" width="108" height="25" rx="12.5" fill="#fffaf7" stroke="#e9bcac"/><text class="code" x="48" y="140" fill="#8e4033">GET /tasks</text>
+    <rect x="201" y="26" width="262" height="160" rx="7" fill="white" stroke="#c59d92"/><path d="M202 53h260" stroke="#e5d9d5"/>
+    <g fill="#ceaaa0">{[215,223,231].map(cx=><circle cx={cx} cy="40" r="2.3"/>)}</g>
+    <rect x="270" y="34" width="120" height="13" rx="6" fill="#f7efeb"/><text class="micro" x="329" y="43.5" text-anchor="middle">localhost/tasks</text>
+    <text class="headline" x="219" y="83">{label}</text><path d="M220 95h222" stroke="#ebe3e0"/>
+    <rect x="219" y="107" width="106" height="59" rx="3" fill="#fff0e9"/><rect x="334" y="107" width="110" height="59" rx="3" fill="#f2f1f5"/>
+    <circle cx="229" cy="118" r="2.6" fill="#e65b38"/><text class="micro" x="236" y="121">{t('To do','待办')}</text><circle cx="345" cy="118" r="2.6" fill="#7a7597"/><text class="micro" x="352" y="121">{t('Done','已完成')}</text>
+    <g stroke-linecap="round"><path d="M231 135h66m-66 9h48" stroke="white" stroke-width="4"/><path d="M231 135h48m-48 9h27" stroke="#cda89b" stroke-width="2"/><path d="m345 138 3 3 6-7" stroke="#776395" fill="none" stroke-width="1.4"/><path d="M361 138h56m-56 8h35" stroke="#c7bfce" stroke-width="2"/></g>
+    <g class="float"><rect x="421" y="152" width="97" height="28" rx="14" fill="#e34c30"/><text class="code" x="437" y="170" fill="white">+ {t('New task','新任务')}</text></g>
+  </g>}
+  {art === 'api' && <g>
+    <g class="wire" stroke="#a59acc"><path d="M32 83h90q12 0 12 12v20q0 10 12 10h69"/><path d="M477 156h42q10 0 10-10v-19h19"/></g>
+    <rect x="38" y="48" width="133" height="27" rx="13.5" fill="#faf8ff" stroke="#bcb0d8"/><text class="code" x="53" y="66" fill="#544180">GET /api/tasks</text>
+    <rect x="189" y="28" width="281" height="160" rx="7" fill="#fcfbff" stroke="#b2a8ca"/><path d="M190 57h279" stroke="#d9d2e7"/>
+    <text class="code" x="207" y="47" fill="#615188">application/json</text><g fill="#9f95b2">{[439,447,455].map(cx=><circle cx={cx} cy="43" r="2"/>)}</g>
+    <g class="json" font-family="var(--mono)" font-size="16"><text x="207" y="80" fill="#68549e">{'{'}</text><text x="225" y="104" fill="#76549d">"data"<tspan fill="#383642">: [</tspan></text><text x="241" y="127" fill="#514c5d">{'{ '}<tspan fill="#996342">"id"</tspan>: 1<tspan> {'}'}</tspan></text><text x="226" y="150" fill="#383642">]</text><text x="207" y="172" fill="#68549e">{'}'}</text></g>
+    <g class="float"><rect x="420" y="146" width="93" height="29" rx="14.5" fill="#6654ba"/><circle cx="436" cy="161" r="2.8" fill="#e3dbff"/><text class="code" x="447" y="165" fill="white">200 OK</text></g>
+  </g>}
+  {art === 'ship' && <g>
+    <g class="wire" stroke="#736b99"><path d="M13 140h110q13 0 13-13V95q0-12 12-12h67"/><path d="M436 148h46q11 0 11-11v-17h52"/></g>
+    <rect x="33" y="107" width="114" height="26" rx="13" fill="#2c293b" stroke="#6a627f"/><text class="code" x="49" y="124" fill="#e2d6f4">$ git push</text>
+    <rect x="188" y="28" width="277" height="159" rx="7" fill="#282833" stroke="#777486"/><path d="M189 57h275" stroke="#484552"/>
+    <circle cx="207" cy="43" r="3.1" fill="#b4a2ff"/><text class="code" x="219" y="47" fill="#ece8fc">{t('Release pipeline','发布流水线')}</text>
+    <g fill="none" stroke="#9a8acd" stroke-width="1.4"><path d="M219 104h77q9 0 9 9v8q0 8 9 8h44m-53-18v-21q0-7 8-7h55"/><circle cx="220" cy="104" r="8" fill="#423c57"/><circle cx="367" cy="83" r="8" fill="#423c57"/><circle cx="361" cy="129" r="8" fill="#423c57"/></g>
+    <g fill="none" stroke="#d4ccff" stroke-width="1.5" stroke-linecap="round"><path d="m217 104 2 2 4-5m141-18 2 2 4-5m-12 46 2 2 4-5"/></g>
+    <g class="micro" fill="#d2ccd9"><text x="204" y="133">Build</text><text x="381" y="86">Test</text><text x="375" y="133">Deploy</text></g>
+    <g class="float"><rect x="411" y="156" width="99" height="27" rx="13.5" fill="#d6cef7"/><path d="M422 170h5l3-5 3 10 3-5h4" fill="none" stroke="#574384" stroke-width="1.3"/><text class="micro" x="447" y="173" fill="#42335b">Healthy</text></g>
+  </g>}
+  {art === 'atlas' && <g>
+    <g class="wire guide"><path d="M14 152h40q13 0 13-13V96m193 79h34q12 0 12-12v-21h30"/></g>
+    <path d="M68 59q48-12 91 10 37-22 97-13v125q-48-8-96 12-49-22-99-11V67z" fill="#f7f7f8" stroke="#85848e"/>
+    <path d="M67 60q51-13 93 11v114q-46-21-93-14zm93 11q40-26 96-15v114q-45-10-96 15z" fill="white" stroke="#b5b3bc"/>
+    <path d="M206 57v43l11-8 9 6V56" fill="#ef5638"/><text x="84" y="95" class="headline">{t('Guide','指南')}</text>
+    <g fill="none" stroke="#c8c7ce" stroke-width="2.3" stroke-linecap="round"><path d="m84 111 47 3m-47 8 53 4m-53 8 38 2m52-16 52-6m-52 17 58-6m-58 17 35-4"/></g>
+    <g class="float"><rect x="229" y="145" width="71" height="28" rx="5" fill="#26262d"/><text class="code" x="242" y="163" fill="white">docs/</text></g>
+  </g>}
+  {art === 'instruments' && <g>
+    <path class="wire guide" d="M10 152h45q12 0 12-12v-19m214-28h45"/>
+    <rect x="49" y="42" width="235" height="144" rx="7" fill="white" stroke="#9998a2"/><path d="M50 68h233" stroke="#d9d8df"/>
+    <g fill="#b8b7bf">{[62,70,78].map(cx=><circle cx={cx} cy="55" r="2.2"/>)}</g>
+    <text class="code" x="264" y="59" text-anchor="end" fill="#706d7c">Terminal</text>
+    <path d="m69 92 6 5-6 5m11 0h7" fill="none" stroke="#db4f32" stroke-width="1.8" stroke-linecap="round"/>
+    <text class="product" x="95" y="102">{label}</text><path d="M69 120h128m-128 12h86m-86 12h106" stroke="#d2cfd8" stroke-width="3" stroke-linecap="round"/>
+    <g class="float"><rect x="195" y="147" width="111" height="28" rx="5" fill="#f15838"/><text class="code" x="207" y="165" fill="white">make:model</text></g>
+  </g>}
+  {art === 'dependencies' && <g>
+    <g class="wire" stroke="#aaa4c8"><path d="M79 60h37q13 0 13 13v22h31m-82 82h29q14 0 14-15v-21h43m93-42h25q12 0 12-11V72h32"/><path d="M256 141h30q10 0 10 11v27h32" stroke-dasharray="3 4"/></g>
+    <g fill="#f5f3fb" stroke="#a29bb8"><rect x="33" y="43" width="47" height="35" rx="5"/><rect x="40" y="159" width="39" height="35" rx="5"/><circle cx="322" cy="71" r="6" fill="white"/><circle cx="324" cy="179" r="4" fill="white"/></g>
+    <g fill="none" stroke="#716881" stroke-linecap="round"><path d="m45 60 6-6 6 6 6-6m-6 6 6 6 6-6m-18 3 5 5M51 172h15m-15 8h10"/></g>
+    <rect x="135" y="57" width="126" height="110" rx="6" fill="white" stroke="#9c989f"/><path d="M136 81h124" stroke="#d8d4d9"/>
+    <g fill="#c5c1ca"><circle cx="146" cy="69" r="2"/><circle cx="153" cy="69" r="2"/></g>
+    <path d="M175 94q-8 0-8 6v6q0 5-6 6 6 0 6 6v5q0 6 8 6m19-35q8 0 8 6v6q0 5 6 6-6 0-6 6v5q0 6-8 6" fill="none" stroke="#e85234" stroke-width="3.5" stroke-linecap="round"/>
+    <text class="code" x="147" y="150">composer.json</text>
+    <g class="float"><rect x="223" y="143" width="59" height="22" rx="11" fill="#f8e2da"/><text class="micro" x="235" y="157" fill="#9e422d">^13.0</text></g>
+  </g>}
+  {art === 'community' && <g>
+    <g class="wire guide"><path d="M13 142h45q12 0 12-13v-22h57m124 27h29q12 0 12-13V88h29"/></g>
+    <path d="M78 47h164q9 0 9 9v70q0 9-9 9h-67l-19 15v-15H78q-9 0-9-9V56q0-9 9-9z" fill="white" stroke="#a6a3ae"/>
+    <circle cx="92" cy="72" r="9" fill="#f3c5ba"/><path d="M111 68h71m-71 9h44" stroke="#c2bec9" stroke-width="3" stroke-linecap="round"/>
+    <g stroke="#df5b3b" stroke-width="2.8" stroke-linecap="round">{[6,11,17,9,23,16,6,13,25,14,19,7,13,9,4].map((h,i)=><path d={'M'+(94+i*8)+' '+(105-h/2)+'v'+h}/>)}</g>
+    <g class="float"><path d="M188 141h82q7 0 7 7v22q0 6-7 6h-10v8l-12-8h-60q-7 0-7-6v-22q0-7 7-7z" fill="#555087"/><g fill="#eeeafc">{[211,227,243].map(cx=><circle cx={cx} cy="159" r="2.8"/>)}</g></g>
+  </g>}
+</svg>
+<style>
+  .cover-art { display:block; width:100%; height:100%; overflow:visible; }
+  .wire { fill:none; stroke-width:1.4; stroke-linecap:round; stroke-linejoin:round; }
+  .guide { stroke:#c9c6cf; }
+  .code,.micro { font-family:var(--mono); }
+  .code { font-size:12px; }
+  .micro { font-size:9px; }
+  .headline,.product { font-family:var(--sans); font-weight:560; fill:#343139; }
+  .headline { font-size:21px; letter-spacing:-.8px; }
+  .product { font-size:19px; letter-spacing:-.6px; }
+  .float { transform-box:fill-box; transform-origin:center; }
+  @media(prefers-reduced-motion:no-preference) { .cover-art:hover .float { animation:acknowledge .55s ease-out; } @keyframes acknowledge { 45% { transform:translateY(-3px); } } }
+</style>

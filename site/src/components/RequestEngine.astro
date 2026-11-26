@@ -1,0 +1,253 @@
+---
+import Icon from './Icon.astro';
+import { getLocale, localize } from '../lib/locale';
+
+const { t } = localize(getLocale(Astro.url.pathname));
+const task = t('Read the first chapter', '读完入门篇');
+const taskList = t('Task list', '任务清单');
+const description = t(
+  'GET /tasks matches a route in routes/web.php. The route passes $tasks to the tasks.index view. Blade renders each title as an HTML list item, and the browser displays “Read the first chapter”.',
+  'GET /tasks 匹配 routes/web.php 中的路由。路由将 $tasks 交给 tasks.index 视图，Blade 把每个标题输出为 HTML 列表项，浏览器显示「读完入门篇」。',
+);
+const connections = [
+  {
+    layout: 'wide', viewBox: '0 0 660 366',
+    input: 'M69 253V194',
+    view: 'M234 146H266Q278 146 278 134V109Q278 97 290 97H331',
+    html: 'M544 167V176Q544 188 532 188H424Q412 188 412 200V210',
+    viewArrow: 'm305 94 4 3-4 3', htmlArrow: 'm482 185-4 3 4 3',
+    dataLabel: { x: 288, y: 87 },
+  },
+  {
+    layout: 'compact', viewBox: '0 0 360 425',
+    view: 'M212 72H252Q264 72 264 84V135',
+    html: 'M293 279V280Q293 285 288 285H137Q131 285 131 290',
+    viewArrow: 'm261 109 3 4 3-4', htmlArrow: 'm211 282-4 3 4 3',
+    dataLabel: { x: 272, y: 107 },
+  },
+];
+---
+<div class="request-stage">
+  <figure class="engine" data-engine data-phase="done">
+    <div class="scene" id="request-journey" role="img" aria-label={description}>
+      {connections.map(({ layout, viewBox, input, view, html, viewArrow, htmlArrow, dataLabel }) => (
+        <svg class={'traces ' + layout} {viewBox} aria-hidden="true" focusable="false">
+          {input && <path class="entry-wire" d={input}/>}
+          <path class="wire view-wire" d={view}/><path class="wire html-wire" d={html}/>
+          <path class="wire view-wire" d={viewArrow}/><path class="wire html-wire" d={htmlArrow}/>
+          <path class="packet view-packet" pathLength="100" d={view}/><path class="packet html-packet" pathLength="100" d={html}/>
+          <text class="payload mono" {...dataLabel}>$tasks</text>
+        </svg>
+      ))}
+
+      <svg class="module route" data-module="route" viewBox="0 0 225 128" aria-hidden="true" focusable="false">
+        <defs>
+          <linearGradient id="route-stock" x2="1" y2="1"><stop stop-color="#ff633f"/><stop offset="1" stop-color="#e84329"/></linearGradient>
+        </defs>
+        <path d="M1 11a9 9 0 0 1 9-9h62l10 9h132a7 7 0 0 1 7 7v97a7 7 0 0 1-7 7H8a7 7 0 0 1-7-7z" fill="#fff7f3" stroke="#cb513a"/>
+        <path d="M1 11a9 9 0 0 1 9-9h62l10 9h132a7 7 0 0 1 7 7v41H1z" fill="url(#route-stock)"/>
+        <g transform="translate(14 25)" stroke="white" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 19V6m0 9c0-6 13-3 13-11"/><rect x="1.5" y=".5" width="5" height="5" rx="1"/><rect x="14.5" y="-.5" width="5" height="5" rx="1"/><rect x="1.5" y="18.5" width="5" height="5" rx="1"/>
+        </g>
+        <text class="module-title" x="45" y="35" fill="white">{t('Laravel Router','Laravel 路由')}</text>
+        <text class="route-file mono" x="46" y="51" fill="#481a11">routes/web.php</text>
+        <rect class="matched-row" x="8" y="66" width="205" height="29" rx="3" fill="#ffe8df"/>
+        <rect x="15" y="72" width="34" height="17" rx="3" fill="#fffaf7" stroke="#eaa795"/>
+        <text x="32" y="84.5" text-anchor="middle" class="http-method mono">GET</text>
+        <text x="59" y="86" class="route-path mono">/tasks</text>
+        <path class="match-tick" d="m191 80 3 3 7-8" pathLength="1" fill="none" stroke="#b53826" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M19 101v7h10m-3-3 3 3-3 3" fill="none" stroke="#c38171" stroke-width="1.4"/>
+        <text class="code" x="36" y="112" fill="#643b33">view(<tspan fill="#a23c26">'tasks.index'</tspan>, …)</text>
+        <path class="port" d="M219 72h6v8h-6z" fill="#fff5ef" stroke="#c74c34"/>
+        <path class="port wide inlet" d="M57 120h8v5h-8z" fill="#fff5ef" stroke="#c74c34"/>
+      </svg>
+
+      <svg class="module blade" data-module="blade" viewBox="0 0 270 154" aria-hidden="true" focusable="false">
+        <path d="M8 1h233l28 28v116a7 7 0 0 1-7 7H8a7 7 0 0 1-7-7V8a7 7 0 0 1 7-7z" fill="#fcfbff" stroke="#9386be"/>
+        <path d="M8 1h233l28 28v25H1V8a7 7 0 0 1 7-7z" fill="#ebe5fb"/>
+        <path d="M241 1v22a6 6 0 0 0 6 6h22z" fill="#c7b7ef" stroke="#9386be" stroke-linejoin="round"/>
+        <path d="m22 16-7 8 7 8m7-16 7 8-7 8" fill="none" stroke="#7556b0" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round"/>
+        <text class="module-title" x="45" y="33" fill="#41315f">Blade</text>
+        <text class="blade-file mono" x="16" y="47" fill="#625076">tasks/index.blade.php</text>
+        <g class="evaluated-line"><rect x="186" y="15" width="43" height="19" rx="3" fill="#625080"/><text class="html-label mono" x="207.5" y="28" text-anchor="middle" fill="white">HTML</text></g>
+        <g class="gutter mono" fill="#8b8495" text-anchor="end">
+          <g class="source-gutter"><text x="20" y="77">1</text><text x="20" y="101">2</text><text x="20" y="125">3</text></g>
+          <text class="evaluated-line" x="20" y="101">1</text>
+        </g>
+        <path d="M28 64v69" stroke="#e6e1ed"/>
+        <text class="code directive template-line" x="37" y="77"><tspan class="keyword">@foreach</tspan> ($tasks as $task)</text>
+        <rect class="binding-highlight" x="33" y="84" width="229" height="23" rx="2" fill="#eae2fd"/>
+        <g class="template-line"><text class="code" x="38" y="100"><tspan class="markup">{'<li>'}</tspan><tspan class="binding">{'{{ $task->title }}'}</tspan><tspan class="markup">{'</li>'}</tspan></text></g>
+        <g class="evaluated-line"><text class="code" x="38" y="100"><tspan class="markup">{'<li>'}</tspan><tspan class="binding">{task}</tspan><tspan class="markup">{'</li>'}</tspan></text></g>
+        <text class="code keyword template-line" x="37" y="125">@endforeach</text>
+        <path class="port wide" d="M0 82h5v8H0z" fill="#eee8fb" stroke="#927bb9"/>
+        <path class="port compact" d="M169 0h8v5h-8z" fill="#eee8fb" stroke="#927bb9"/>
+        <path class="port" d="M201 149h8v5h-8z" fill="#eee8fb" stroke="#927bb9"/>
+      </svg>
+
+      <svg class="module browser" data-module="browser" viewBox="0 0 310 139" aria-hidden="true" focusable="false">
+        <rect x="1" y="1" width="308" height="136" rx="7" fill="white" stroke="#9799a4"/>
+        <path d="M8 1h294q7 0 7 7v23H1V8q0-7 7-7z" fill="#eeeff2"/><path d="M2 31h306" stroke="#c9cbd2"/>
+        <g fill="#a4a6b0"><circle cx="13" cy="16" r="2"/><circle cx="21" cy="16" r="2"/><circle cx="29" cy="16" r="2"/></g>
+        <rect x="43" y="6" width="164" height="20" rx="4" fill="#fbfbfd" stroke="#d6d7de"/>
+        <path d="M54 14v-1.6a2.3 2.3 0 0 1 4.6 0V14m-5.4 0h6.2v5h-6.2z" fill="none" stroke="#797c88" stroke-width="1.1"/>
+        <text x="66" y="20" class="address mono">localhost/tasks</text>
+        <g class="receipt"><rect x="232" y="7" width="64" height="18" rx="9" fill="#e5f0e9" stroke="#bacfc3"/><circle cx="243" cy="16" r="2.4" fill="#438267"/><text x="250" y="20" class="response-code mono">200 OK</text></g>
+        <g class="pending-page">
+          <path d="m20 66-5 5 5 5m8-10 5 5-5 5" fill="none" stroke="#9c97aa" stroke-width="1.5" stroke-linecap="round"/>
+          <text x="43" y="75" class="waiting mono">{t('Waiting for HTML…','等待 HTML…')}</text>
+        </g>
+        <g class="page-heading">
+          <path d="M16 55h19v20H16z" fill="#fff0e9"/><g stroke="#c4492b" stroke-linecap="round" stroke-linejoin="round" fill="none" stroke-width="1.3"><path d="m19 60 1.4 1.6 2.6-3m-4 9 1.4 1.6 2.6-3m2.5-5.5h5m-5 7.5h5"/></g>
+          <text x="42" y="73" class="page-title">{taskList}</text><path d="M17 85h276" stroke="#e8e8eb"/>
+        </g>
+        <g class="page-item"><rect x="16" y="94" width="277" height="28" rx="3" fill="#f5f3fa"/><circle cx="29" cy="108" r="2.7" fill="#76609d"/><text x="40" y="113" class="task-title">{task}</text></g>
+        <path class="port" d="M100 0h8v5h-8z" fill="#f0edf6" stroke="#8f849f"/>
+      </svg>
+    </div>
+    <figcaption>
+      <button class="run" type="button" data-send hidden aria-controls="request-journey"><Icon name="play" size={14}/>{t('Run request','运行请求')}</button>
+      <span class="caption" data-caption aria-hidden="true"
+        data-route={t('Matching GET /tasks','匹配 GET /tasks')}
+        data-blade={t('Opening tasks.index','打开 tasks.index')}
+        data-html={t('Blade → HTML','Blade → HTML')}
+        data-paint={t('Rendering the page','渲染页面')}
+        data-done={t('200 OK · 1 task rendered','200 OK · 已渲染 1 个任务')}></span>
+      <span class="sr-only" data-reply role="status"></span>
+    </figcaption>
+  </figure>
+</div>
+
+<script>
+  const engine = document.querySelector<HTMLElement>('[data-engine]')!;
+  const button = engine.querySelector<HTMLButtonElement>('[data-send]')!;
+  const caption = engine.querySelector<HTMLElement>('[data-caption]')!;
+  const reply = engine.querySelector<HTMLElement>('[data-reply]')!;
+  const motion = matchMedia('(prefers-reduced-motion: reduce)');
+  const sequence = [
+    { phase: 'route', ms: 950 },
+    { phase: 'blade', ms: 1050 },
+    { phase: 'html', ms: 1000 },
+    { phase: 'paint', ms: 800 },
+  ] as const;
+  let timer = 0;
+  let played = false;
+  let announce = false;
+
+  function finish() {
+    window.clearTimeout(timer);
+    engine.dataset.phase = 'done';
+    caption.textContent = caption.dataset.done!;
+    if (announce) reply.textContent = caption.textContent;
+    announce = false;
+  }
+
+  function advance(index: number) {
+    if (index === sequence.length) { finish(); return; }
+    const { phase, ms } = sequence[index];
+    engine.dataset.phase = phase;
+    caption.textContent = caption.dataset[phase]!;
+    timer = window.setTimeout(() => advance(index + 1), ms);
+  }
+
+  function play(manual: boolean) {
+    window.clearTimeout(timer);
+    played = true;
+    announce = manual;
+    reply.textContent = '';
+    if (motion.matches) { finish(); return; }
+    if (engine.dataset.phase === 'route') {
+      engine.dataset.phase = 'done';
+      void engine.getBoundingClientRect();
+    }
+    advance(0);
+  }
+
+  button.hidden = false;
+  button.addEventListener('click', () => play(true));
+  motion.addEventListener('change', () => { if (motion.matches && engine.dataset.phase !== 'done') finish(); });
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(entries => {
+      if (!entries.some(entry => entry.isIntersecting)) return;
+      observer.disconnect();
+      if (!played && !motion.matches) play(false);
+    }, { threshold: .45 });
+    observer.observe(engine);
+  }
+</script>
+
+<style>
+  .request-stage { container:request-journey / inline-size; }
+  .engine { --view-wire:#e77860; --html-wire:#9581ba; position:relative; margin:0 auto; color:var(--ink); }
+  .scene { position:relative; aspect-ratio:660/366; isolation:isolate; }
+  .scene::before { content:""; position:absolute; inset:0; z-index:-1; background-image:radial-gradient(#c7c6cf .75px,transparent .85px); background-size:16px 16px; mask-image:radial-gradient(ellipse at 52% 48%,#0008,transparent 73%); }
+  .module,.traces { position:absolute; display:block; height:auto; overflow:visible; }
+  .traces { inset:0; width:100%; height:100%; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+  .compact { display:none; }
+  .route { left:1.212%; top:19.126%; width:34.242%; }
+  .blade { left:50.152%; top:1.913%; width:42.576%; }
+  .browser { left:45.303%; top:57.377%; width:50.909%; }
+  .mono,.code { font-family:var(--mono); }
+  .module-title { font:600 25px var(--sans); letter-spacing:-1.15px; }
+  .route-file { font-size:11.7px; }
+  .http-method { font-size:10.8px; fill:#9f3724; }
+  .route-path { font-size:15px; fill:#382621; }
+  .code { font-size:12.7px; }
+  .blade-file { font-size:11.4px; }
+  .gutter { font-size:10px; }
+  .directive { fill:#51485c; }
+  .keyword { fill:#745395; }
+  .markup { fill:#716180; }
+  .binding { fill:#493260; }
+  .evaluated-line,.pending-page { opacity:0; }
+  .evaluated-line .code { font-size:11.6px; }
+  .html-label { font-size:10px; }
+  .waiting { font-size:12px; fill:#686472; }
+  .address { font-size:11.6px; fill:#515560; }
+  .response-code { font-size:10.4px; fill:#2f664d; }
+  .page-title { font:580 25px var(--sans); fill:#282832; letter-spacing:-.9px; }
+  .task-title { font:530 15px var(--sans); fill:#393544; }
+  .entry-wire { stroke:#dbaea2; stroke-width:1.3; stroke-dasharray:2 4; }
+  .engine:has(.run[hidden]) :is(.entry-wire,.inlet) { display:none; }
+  .wire { stroke-width:1.5; }
+  .view-wire { stroke:var(--view-wire); } .html-wire { stroke:var(--html-wire); }
+  .payload { font-size:10.5px; fill:#885446; }
+  .packet { opacity:0; stroke-width:4; stroke-dasharray:8 104; }
+  .view-packet { stroke:#cc432c; } .html-packet { stroke:#725499; }
+  figcaption { position:absolute; top:69%; left:1.212%; max-width:40%; display:grid; justify-items:start; gap:6px; }
+  .run { display:inline-flex; align-items:center; justify-content:center; gap:7px; min-height:38px; padding:7px 12px; color:var(--ink); background:var(--surface); border:1px solid #c7c7ce; border-radius:5px; font:550 .84rem/1.2 var(--sans); }
+  .run:hover { border-color:var(--accent); color:var(--accent); }
+  .run svg { color:var(--accent); }
+  .caption { min-height:1.35em; font:.69rem/1.35 var(--mono); color:var(--muted); }
+  @media(prefers-reduced-motion:no-preference) {
+    .matched-row,.binding-highlight,.template-line,.evaluated-line,.receipt { transition:opacity .18s ease,fill .2s ease; }
+    [data-phase="route"] .matched-row { fill:#ffd0c1; }
+    [data-phase="route"] .match-tick { animation:match .48s .14s both; }
+    [data-phase="blade"] .view-packet,[data-phase="paint"] .html-packet { animation:transfer .55s ease-in-out both; }
+    [data-phase="blade"] .binding-highlight,[data-phase="html"] .binding-highlight { fill:#dacaf7; }
+    [data-phase="html"] :is(.template-line,.source-gutter),[data-phase="paint"] :is(.template-line,.source-gutter) { opacity:0; }
+    [data-phase="html"] .evaluated-line,[data-phase="paint"] .evaluated-line { opacity:1; }
+    [data-phase="route"] .pending-page,[data-phase="blade"] .pending-page,[data-phase="html"] .pending-page { opacity:1; }
+    [data-phase="route"] :is(.page-item,.page-heading,.receipt),[data-phase="blade"] :is(.page-item,.page-heading,.receipt),[data-phase="html"] :is(.page-item,.page-heading,.receipt) { opacity:0; }
+    [data-phase="paint"] .receipt { animation:paint .17s .25s both; }
+    [data-phase="paint"] .page-heading { animation:paint .21s .35s both; }
+    [data-phase="paint"] .page-item { animation:paint .26s .49s both; }
+    @keyframes transfer { 0% { opacity:0; stroke-dashoffset:8; } 12%,84% { opacity:1; } 100% { opacity:0; stroke-dashoffset:-101; } }
+    @keyframes match { from { stroke-dasharray:1; stroke-dashoffset:1; } to { stroke-dasharray:1; stroke-dashoffset:0; } }
+    @keyframes paint { from { opacity:0; transform:translateY(2px); } to { opacity:1; transform:none; } }
+  }
+  @container request-journey (max-width:500px) {
+    .engine { max-width:380px; }
+    .scene { aspect-ratio:360/425; }
+    .wide { display:none; } .compact { display:block; }
+    .route { left:1.111%; top:.471%; width:57.778%; }
+    .blade { left:28.333%; top:31.765%; width:70%; }
+    .browser { left:8.889%; top:68.235%; width:81.944%; }
+    figcaption { left:auto; right:0; top:.5%; max-width:39%; justify-items:end; }
+    .caption { text-align:right; font-size:.63rem; }
+  }
+  @container request-journey (max-width:315px) {
+    figcaption { position:static; max-width:none; display:flex; align-items:center; justify-content:space-between; gap:8px; margin-top:8px; }
+    .run { flex:none; }
+  }
+</style>

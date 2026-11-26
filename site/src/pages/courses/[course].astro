@@ -1,0 +1,122 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import DirectoryCover from '../../components/DirectoryCover.astro';
+import { courseArtwork } from '../../data/artwork';
+import { getCourses, type Course } from '../../lib/site';
+import SaveButton from '../../components/SaveButton.astro';
+import { levels, coursePath } from '../../data/courses';
+import CourseChallengeLink from '../../components/CourseChallengeLink.astro';
+import { getLocale, localize } from '../../lib/locale';
+
+const { locale, t, href } = localize(getLocale(Astro.url.pathname));
+
+export async function getStaticPaths() {
+  return (await getCourses('en')).filter(({ id }) => id !== 'taskboard').map((course) => ({ params: { course: course.id }, props: { course } }));
+}
+
+interface Props { course: Course }
+const { course } = Astro.props;
+const { title, description, prerequisites, outcome, lessons: guides } = course;
+const level = levels.find(({ id }) => id === course.level)![locale];
+const readingMinutes = guides.reduce((sum, guide) => sum + guide.data.minutes, 0);
+---
+
+<Base {title} {description}>
+  <div class="shell">
+    <DirectoryCover {title} {description} art={courseArtwork[course.id]}>
+      <nav slot="trail" class="breadcrumbs" aria-label={t('Breadcrumb', '面包屑')}><a href={href('/courses/')}>{t('Free courses', '免费课程')}</a><Icon name="chevron" size={15} /><a href={`${href('/courses/')}#${course.level}`}>{level.title}</a></nav>
+      <div class="course-meta"><span class="tag free-tag">{t('Free course', '免费课程')}</span><span>{t(`${guides.length} lessons · About ${readingMinutes} min of reading`, `${guides.length} 节课 · 约 ${readingMinutes} 分钟阅读`)}</span><SaveButton item={coursePath(course.id)} name={course.title}/></div>
+    </DirectoryCover>
+    <div class="curriculum">
+      <aside class="project-overview">
+        <h2><Icon name="flag" size={18}/>{t('What you’ll build', '学习成果')}</h2><p>{outcome}</p>
+        <h2><Icon name="compass" size={18}/>{t('Before you start', '开课前准备')}</h2><p>{prerequisites}</p>
+        {guides[0] && <a class="button primary course-start" data-course-start href={href(`/learn/${guides[0].id}/`)}><span>{t('Start free course', '开始免费学习')}</span> <Icon name="right" size={16} /></a>}
+        <div class="progress" data-guide-progress hidden>
+          <label for="guide-progress">{t('Tasks completed', '任务完成度')} <span data-progress-count>0</span> / {guides.length} </label>
+          <progress id="guide-progress" value="0" max={guides.length}></progress>
+        </div>
+      </aside>
+      <div><h2 class="task-heading"><Icon name="route" size={20}/>{t('Your tasks','任务清单')}</h2><ol class="curriculum-guide-list">
+        {guides.map(({ id, data }) => (
+          <li>
+            <a href={href(`/learn/${id}/`)} data-lesson={id}>
+              <span class="lesson-number"><span>{String(data.order).padStart(2, '0')}</span><Icon name="check" size={16}/></span>
+              <span class="guide-detail"><strong>{data.title}</strong><small><Icon name="clock" size={13}/> {data.minutes} {t('min', '分钟')}</small></span>
+              <span class="read-state" data-read-state hidden><Icon name="mark" size={14}/><span class="sr-only">{t('Read','已读')}</span></span>
+              <Icon name="chevron" size={20} />
+            </a>
+          </li>
+        ))}
+      </ol><CourseChallengeLink id={course.id}/></div>
+    </div>
+  </div>
+</Base>
+
+<script>
+  import { getReadGuides } from '../../scripts/reading';
+
+  import { isDone } from '../../scripts/learning';
+  import { getLocale, localize } from '../../lib/locale';
+  const { t } = localize(getLocale(location.pathname));
+  const lessons = [...document.querySelectorAll<HTMLAnchorElement>('[data-lesson]')];
+  const progress = document.querySelector<HTMLProgressElement>('#guide-progress')!;
+  const start = document.querySelector<HTMLAnchorElement>('[data-course-start]')!;
+  function renderProgress() {
+    const read = getReadGuides();
+    for (const lesson of lessons) {
+      const id = lesson.dataset.lesson!;
+      const done = isDone(id);
+      lesson.toggleAttribute('data-done',done);
+      if (done) lesson.querySelector('.lesson-number')!.setAttribute('aria-label',t('Completed', '已完成'));
+      else lesson.querySelector('.lesson-number')!.removeAttribute('aria-label');
+      lesson.querySelector<HTMLElement>('[data-read-state]')!.hidden = !read?.has(id);
+    }
+    const remaining = lessons.filter(lesson => !isDone(lesson.dataset.lesson!));
+    progress.value = lessons.length - remaining.length;
+    document.querySelector('[data-progress-count]')!.textContent = String(progress.value);
+    document.querySelector<HTMLElement>('[data-guide-progress]')!.hidden = false;
+    start.href = (remaining[0] ?? lessons[0]).href;
+    start.querySelector('span')!.textContent = !remaining.length ? t('Revisit course','复习课程') : progress.value ? t('Continue course','继续学习') : t('Start free course','开始免费学习');
+  }
+  renderProgress();
+  window.addEventListener('pageshow', renderProgress);
+  window.addEventListener('storage', renderProgress); window.addEventListener('orbit:activity',renderProgress);
+</script>
+
+<style>
+  .task-heading, .project-overview h2 { display:flex; align-items:center; gap:9px; }
+  .task-heading { font:400 clamp(2rem,3.5vw,3rem)/1.06 var(--display); margin-bottom:17px; letter-spacing:-.028em; }
+  .task-heading :global(svg),.project-overview h2 :global(svg) { color:var(--accent); }
+  .curriculum { display: grid; grid-template-columns: minmax(240px, .48fr) 1fr; align-items: start; gap: 20px; margin-top: clamp(24px, 3.2vw, 44px); }
+  .project-overview { color: var(--accent); padding: 0 clamp(12px, 3vw, 44px) 18px 0; border-right: 1px solid var(--line-strong); }
+  .course-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; color: var(--muted); font-size: .9rem; }
+  .project-overview h2 { color: var(--ink); font-size: 1.18rem; font-weight: 620; letter-spacing: -.025em; }
+  .project-overview h2:not(:first-child) { margin-top: 18px; }
+  .project-overview p { color: var(--muted); font-size: .94rem; margin: 7px 0 0; }
+  .course-start { margin-top: 18px; }
+  .progress { border-top: 1px solid var(--line-strong); margin-top: 23px; padding-top: 18px; }
+  .progress label { display: block; margin-bottom: 8px; font-size: .86rem; }
+  progress { appearance: none; width: 100%; height: 6px; display: block; border: 0; border-radius: 8px; overflow: hidden; background: var(--line); color: var(--accent); }
+  progress::-webkit-progress-bar { background: var(--line); }
+  progress::-webkit-progress-value { background: var(--accent); }
+  progress::-moz-progress-bar { background: var(--accent); }
+  .curriculum-guide-list { list-style: none; padding: 0; margin: 0; border-block: 1px solid var(--line-strong); }
+  .curriculum-guide-list li + li { border-top: 1px solid var(--line); }
+  .curriculum-guide-list a { min-height: 72px; display: flex; align-items: center; gap: clamp(11px, 2.1vw, 27px); padding: 14px clamp(12px, 2vw, 23px); }
+  .curriculum-guide-list li:first-child a { border-radius: var(--radius-lg) var(--radius-lg) 0 0; }
+  .curriculum-guide-list li:last-child a { border-radius: 0 0 var(--radius-lg) var(--radius-lg); }
+  .curriculum-guide-list a:hover { background: var(--wash); }
+  .lesson-number { position:relative; display:grid; place-items:center; width:31px; height:31px; flex:none; border:1px solid var(--line-strong); border-radius:50%; background:var(--paper); color:var(--muted); font:.76rem var(--mono); }
+  li:not(:last-child) .lesson-number::after { content:''; position:absolute; top:100%; height:42px; left:50%; border-left:1px solid var(--line-strong); }
+  .lesson-number :global(svg), [data-done] .lesson-number span { display:none; }
+  [data-done] .lesson-number { background:var(--ink); color:white; }
+  [data-done] .lesson-number :global(svg) { display:block; }
+  .guide-detail small { display:flex; align-items:center; gap:5px; }
+  .guide-detail { flex: 1; display: grid; gap: 5px; }
+  .guide-detail strong { font-size: 1.125rem; font-weight: 610; }
+  .guide-detail :is(span, small) { color: var(--muted); font-size: .84rem; }
+  .read-state { color: var(--accent); }
+  @media (max-width: 760px) { .curriculum { grid-template-columns: 1fr; gap: 23px; } .project-overview { border-right:0; border-bottom:1px solid var(--line); } }
+</style>

@@ -1,0 +1,120 @@
+---
+import { getChallenge, type ChallengeId } from '../data/challenges';
+import { getLocale, localize, withoutLocale } from '../lib/locale';
+import Icon from './Icon.astro';
+import OrbitStamp from './OrbitStamp.astro';
+interface Props { id: ChallengeId }
+const { id } = Astro.props;
+const { locale, t, href } = localize(getLocale(Astro.url.pathname));
+const lab = getChallenge(id, locale);
+const lessonPath = '/learn/' + lab.lesson + '/';
+---
+<section id="quick-lab" class={'quick-lab lab-' + lab.color} data-lab={id} data-stamp-name={lab.name} data-correct={lab.correct} aria-labelledby="lab-question">
+  <div class="lab-brief">
+    <span class="lab-type"><Icon name="test" size={16}/>{t('Quick challenge','动手挑战')}</span>
+    <h2 id="lab-question">{lab.question}</h2>
+    <div class="lab-stamp"><OrbitStamp {id}/><span>{lab.name}<small data-award data-earned={t('Stamp earned','已获得印章')}>{t('Challenge stamp','挑战印章')}</small></span></div>
+  </div>
+  <div class="lab-console">
+    <div class="lab-file"><Icon name="code" size={15}/>{lab.file}</div>
+    <div class="snippet"><pre tabindex="0"><code>{lab.code}</code></pre><div class="lab-output" data-lab-output hidden><Icon name="branch" size={14}/><code>{lab.output}</code></div></div>
+    <div class="lab-options" role="group" aria-labelledby="lab-question" hidden>
+      {lab.answers.map((answer, index) => <button type="button" data-answer={index} data-feedback={lab.feedback[index]}><span class="answer-marker"></span>{answer}</button>)}
+    </div>
+    <p class="lab-feedback" role="status" data-feedback-line></p>
+    <nav class="lab-next" hidden aria-label={t('After the challenge','挑战后可继续')}>
+      <a data-my-stamps href={href('/orbit/') + '#stamps'}>{t('My stamps','我的印章')} <Icon name="right" size={14}/></a>
+      {withoutLocale(Astro.url.pathname) !== lessonPath && <a href={href(lessonPath)}>{t('Try the lesson','动手实践')} <Icon name="right" size={14}/></a>}
+      <button type="button" data-retry>{t('Try again','再练一次')}</button>
+    </nav>
+    <noscript><details><summary>{t('Reveal the answer','查看答案')}</summary><p>{lab.answers[lab.correct]} · {lab.feedback[lab.correct]}</p></details></noscript>
+  </div>
+</section>
+<script>
+  import { earnStamp, hasStamp } from '../scripts/orbit';
+  import { getLocale, localize } from '../lib/locale';
+  const {t} = localize(getLocale(location.pathname));
+  for (const lab of document.querySelectorAll<HTMLElement>('[data-lab]')) {
+    const id = lab.dataset.lab!;
+    const options = lab.querySelector<HTMLElement>('.lab-options')!;
+    const answers = [...options.querySelectorAll<HTMLButtonElement>('[data-answer]')];
+    const correct = answers[Number(lab.dataset.correct)];
+    const award = lab.querySelector<HTMLElement>('[data-award]')!;
+    const feedback = lab.querySelector<HTMLElement>('[data-feedback-line]')!;
+    const next = lab.querySelector<HTMLElement>('.lab-next')!;
+    const output = lab.querySelector<HTMLElement>('[data-lab-output]')!;
+    const stampLink = lab.querySelector<HTMLAnchorElement>('[data-my-stamps]')!;
+    const original = award.textContent!;
+    const explanation = t('Correct. ', '答对了。') + correct.dataset.feedback!;
+    const earnedFeedback = explanation + t(' Stamp earned · ', ' 已点亮印章 · ') + lab.dataset.stampName;
+    let practice = false;
+    function sync() {
+      const earned = hasStamp(id);
+      lab.toggleAttribute('data-earned', earned);
+      award.textContent = earned ? award.dataset.earned! : original;
+      stampLink.hidden = !earned;
+      if (!practice) output.hidden = !earned;
+      if (!practice && !earned) {
+        answers.forEach(other => delete other.dataset.answerState); feedback.textContent = ''; next.hidden = true;
+      } else if (earned && !practice) {
+        correct.dataset.answerState = 'correct';
+        feedback.textContent = earnedFeedback;
+        next.hidden = false;
+      }
+    }
+    options.hidden = false;
+    answers.forEach(answer => answer.addEventListener('click', () => {
+      answers.forEach(other => delete other.dataset.answerState);
+      const right = answer === correct;
+      answer.dataset.answerState = right ? 'correct' : 'wrong';
+      const stored = right && (hasStamp(id) || earnStamp(id));
+      practice = !stored;
+      feedback.textContent = answer.dataset.feedback!;
+      if (right) feedback.textContent = stored ? earnedFeedback : explanation + t(' This browser could not save the stamp.', ' 当前浏览器无法保存印章。');
+      output.hidden = !right; next.hidden = !right; stampLink.hidden = !stored;
+      if (stored) { lab.setAttribute('data-earned',''); award.textContent = award.dataset.earned!; }
+    }));
+    lab.querySelector('[data-retry]')!.addEventListener('click', () => {
+      practice = true; answers.forEach(answer => delete answer.dataset.answerState);
+      feedback.textContent = ''; next.hidden = true; output.hidden = true; answers[0].focus();
+    });
+    sync(); window.addEventListener('pageshow', sync); window.addEventListener('storage', sync); window.addEventListener('orbit:activity',sync);
+  }
+</script>
+<style>
+  .quick-lab { --lab-tint:#eeeaf9; --lab-ink:#634b92; display:grid; grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr); align-items:stretch; color:var(--ink); background:var(--lab-tint); border-top:2px solid var(--lab-ink); scroll-margin:16px; }
+  .lab-coral { --lab-tint:#fbebe2; --lab-ink:#9d412c; } .lab-mint { --lab-tint:#e4f2ea; --lab-ink:#28654e; } .lab-blue { --lab-tint:#e9effb; --lab-ink:#3d5889; }
+  .lab-brief,.lab-console { min-width:0; padding:clamp(19px,2.7vw,38px); }
+  .lab-type,.lab-file,.lab-stamp,.lab-next,.lab-next a,.lab-options button { display:flex; align-items:center; }
+  .lab-type,.lab-file { gap:8px; font:.74rem/1.5 var(--mono); }
+  .lab-type { color:var(--lab-ink); }
+  .quick-lab h2 { max-width:22ch; margin:14px 0 20px; font:560 clamp(1.45rem,2.7vw,2.55rem)/1.1 var(--display); letter-spacing:-.043em; text-wrap:balance; }
+  .quick-lab h2:lang(zh-CN) { line-height:1.25; }
+  .lab-stamp { gap:10px; font-weight:600; font-size:.93rem; }
+  .lab-stamp :global(svg) { width:51px; rotate:-4deg; }
+  .quick-lab:not([data-earned]) .lab-stamp :global(svg) { filter:saturate(.6); }
+  .lab-stamp small { display:block; color:var(--muted); font-size:.76rem; font-weight:450; margin-top:3px; }
+  .lab-console { align-self:center; border-left:1px solid color-mix(in srgb,var(--lab-ink) 20%,transparent); }
+  .lab-file { color:var(--lab-ink); }
+  .snippet { margin:9px 0 15px; padding:12px 14px; border-radius:3px; background:#282630; color:#fff8eb; }
+  pre { margin:0; overflow-x:auto; font:400 .86rem/1.6 var(--mono); }
+  .lab-output { display:flex; align-items:baseline; gap:7px; padding-top:6px; color:#bedfbd; font:.72rem/1.55 var(--mono); }
+  .lab-output code { overflow-wrap:anywhere; }
+  .lab-options { display:flex; flex-wrap:wrap; gap:7px; }
+  .lab-options button { gap:7px; padding:8px 11px; min-height:40px; max-width:100%; overflow-wrap:anywhere; text-align:left; color:var(--ink); background:var(--surface); border:1px solid #b9b6c1; border-radius:4px; font-size:.85rem; font-weight:550; }
+  .lab-options button:hover,.lab-options button:focus-visible { border-color:var(--lab-ink); }
+  .answer-marker { width:9px; height:9px; flex:none; border:1.4px solid #807b89; border-radius:50%; }
+  .lab-options [data-answer-state="correct"] { border-color:#418260; background:#e2f2e7; }
+  [data-answer-state="correct"] .answer-marker { border-color:#417650; background:#417650; }
+  .lab-options [data-answer-state="wrong"] { border-color:#b56750; background:#fff1e9; }
+  [data-answer-state="wrong"] .answer-marker { background:#a7563f; border-color:#a7563f; }
+  .lab-feedback { margin:11px 0 0; color:var(--ink); font-size:.88rem; line-height:1.5; }
+  [data-answer-state="correct"] .answer-marker,[data-answer-state="wrong"] .answer-marker { width:13px; height:13px; color:white; display:grid; place-content:center; font:700 9px/1 var(--sans); }
+  [data-answer-state="correct"] .answer-marker::after { content:'✓'; } [data-answer-state="wrong"] .answer-marker::after { content:'×'; }
+  .lab-feedback:empty { display:none; }
+  .lab-next { flex-wrap:wrap; gap:5px 17px; margin-top:8px; }
+  .lab-next a,.lab-next button { gap:5px; min-height:33px; font-size:.82rem; font-weight:590; }
+  .lab-next a { color:var(--lab-ink); } .lab-next button { border:0; padding:0; background:transparent; color:var(--muted); }
+  @media(prefers-reduced-motion:no-preference) { .quick-lab[data-earned] .lab-stamp :global(svg) { animation:imprint .38s ease-out; } @keyframes imprint { from { transform:scale(1.18) rotate(-8deg); } to { transform:none; } } }
+  @media(max-width:680px) { .quick-lab { grid-template-columns:1fr; } .lab-brief { display:grid; grid-template-columns:minmax(0,1fr) auto; gap:8px; align-items:center; } .lab-brief h2 { grid-column:1; margin:0; max-width:28ch; } .lab-stamp { grid-row:1/3; grid-column:2; } .lab-stamp>span { display:none; } .lab-console { padding-top:0; border-left:0; } }
+</style>

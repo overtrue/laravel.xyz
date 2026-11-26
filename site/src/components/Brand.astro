@@ -1,0 +1,17 @@
+---
+import { getLocale, localize, siteNames } from '../lib/locale';
+const { locale, t, href } = localize(getLocale(Astro.url.pathname));
+const name = siteNames[locale];
+---
+<a class="brand" href={href('/')} aria-label={t(name + ' home', name + '首页')}>
+  <img src="/orbit-mark.svg" alt="" width="36" height="36"/>
+  <span>{locale === 'en' ? <Fragment>Artisan <em>Orbit</em></Fragment> : name}</span>
+</a>
+<style>
+  .brand { display:inline-flex; align-items:center; gap:9px; width:max-content; white-space:nowrap; font:610 1.36rem/1 var(--display); letter-spacing:-.052em; }
+  .brand img { width:34px; height:34px; }
+  .brand em { font-style:normal; font-weight:inherit; }
+  .brand:lang(zh-CN) { font-size:1.3rem; font-weight:600; letter-spacing:-.045em; }
+  @media(max-width:340px) { .brand:lang(zh-CN) { font-size:1rem; } }
+  @media(max-width:400px) { .brand { font-size:1.22rem; gap:6px; } .brand img { width:29px; height:29px; } }
+</style>

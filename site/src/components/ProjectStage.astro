@@ -1,0 +1,190 @@
+---
+import { Code } from 'astro:components';
+import Icon from './Icon.astro';
+import RequestFlow from './RequestFlow.astro';
+import { getLocale, localize } from '../lib/locale';
+
+const { t, href } = localize(getLocale(Astro.url.pathname));
+const examples = [
+  {
+    name: t('Routing', '路由'), file: 'routes/web.php', guide: 'first-project', code: `Route::get('/tasks', function () {
+    return view('tasks.index', [
+        'tasks' => Task::query()
+            ->latest('id')->limit(20)->get(),
+    ]);
+})->name('tasks.index');`,
+  },
+  {
+    name: t('Validation', '验证'), file: 'StoreTaskRequest.php', guide: 'form-validation', code: `public function rules(): array
+{
+    return [
+        'title' => ['bail', 'required', 'string', 'max:120'],
+    ];
+}`,
+  },
+  {
+    name: t('Queues', '队列'), file: 'MarkTaskReminder.php', guide: 'queue-retries', code: `public function handle(): void
+{
+    Task::query()
+        ->whereKey($this->taskId)
+        ->whereNull('reminded_at')
+        ->update(['reminded_at' => now()]);
+}`,
+  },
+];
+---
+
+<div class="project-stage" data-project-stage>
+  <div class="stage-surface">
+    <RequestFlow />
+    <div class="code-view" id="project-code">
+      <div class="code-tabs" data-code-tabs hidden role="tablist" aria-label={t('Project code examples', '项目代码示例')}>
+        {examples.map(({ name }, index) => (
+          <button type="button" role="tab" id={'example-tab-' + index} aria-controls={'example-panel-' + index}
+            aria-selected={index === 0 ? 'true' : 'false'} tabindex={index === 0 ? 0 : -1}>{name}</button>
+        ))}
+      </div>
+      {examples.map((example, index) => (
+        <div class="example-content" role="tabpanel" id={'example-panel-' + index} aria-labelledby={'example-tab-' + index} hidden={index !== 0}>
+          <div class="file-bar"><span>{example.file}</span><button type="button" class="copy-example" data-copy={'sample-' + index} aria-live="polite"><Icon name="copy" size={13} /><span data-copy-caption>{t('Copy', '复制')}</span></button></div>
+          <div class="example-code" id={'sample-' + index}><Code code={example.code} lang="php" theme="github-dark" /></div>
+          <a class="chapter-link" href={href('/learn/' + example.guide + '/')}>{t('Read this lesson', '阅读这节课')} <Icon name="right" size={15} /></a>
+        </div>
+      ))}
+    </div>
+  </div>
+  <div class="stage-caption">
+    <a class="project-link" href={href('/learn/')}><span aria-hidden="true"></span>{t('The Taskboard project', '任务看板项目')} <Icon name="right" size={15} /></a>
+    <div class="modes" data-stage-modes role="group" aria-label={t('Project preview', '项目预览')} hidden>
+      <button type="button" data-view="flow" aria-pressed="false" aria-controls="project-flow"><Icon name="repo" size={15} />{t('Flow', '流程')}</button>
+      <button type="button" data-view="code" aria-pressed="true" aria-controls="project-code"><Icon name="code" size={15} />{t('Code', '代码')}</button>
+    </div>
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>('[data-project-stage]').forEach((stage) => {
+    const flow = stage.querySelector<HTMLElement>('[data-flow]')!;
+    const code = stage.querySelector<HTMLElement>('#project-code')!;
+    const run = flow.querySelector<HTMLButtonElement>('[data-run-request]')!;
+    const signal = flow.querySelector<HTMLElement>('[data-signal]')!;
+    const status = flow.querySelector<HTMLElement>('[data-flow-status]')!;
+    const modes = stage.querySelector<HTMLElement>('[data-stage-modes]')!;
+    const modeButtons = [...modes.querySelectorAll<HTMLButtonElement>('button')];
+    const tabs = [...code.querySelectorAll<HTMLButtonElement>('[role="tab"]')];
+    code.querySelector<HTMLElement>('[data-code-tabs]')!.hidden = false;
+    const reduced = matchMedia('(prefers-reduced-motion: reduce)');
+    let journey: Animation | undefined;
+    let viewTransition: Animation | undefined;
+
+    function stopRequest() {
+      if (journey) {
+        journey.onfinish = null;
+        journey.cancel();
+        journey = undefined;
+      }
+      flow.removeAttribute('data-running');
+    }
+
+    function sendRequest(announce: boolean) {
+      stopRequest();
+      flow.removeAttribute('data-delivered');
+      status.textContent = '';
+      const arrive = () => {
+        flow.removeAttribute('data-running');
+        flow.setAttribute('data-delivered', '');
+        if (announce) status.textContent = flow.dataset.result ?? '';
+        journey = undefined;
+      };
+      if (reduced.matches) {
+        arrive();
+        return;
+      }
+      flow.setAttribute('data-running', '');
+      journey = signal.animate([{ transform: 'scaleX(0)' }, { transform: 'scaleX(1)' }],
+        { duration: 1950, easing: 'cubic-bezier(.3,.05,.65,.95)' });
+      journey.onfinish = arrive;
+    }
+
+    run.hidden = false;
+    run.addEventListener('click', () => sendRequest(true));
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver((entries) => {
+        if (!entries.some((entry) => entry.isIntersecting)) return;
+        observer.disconnect();
+        if (!reduced.matches && !flow.hidden && !journey && !flow.hasAttribute('data-delivered')) sendRequest(false);
+      }, { threshold: .5 });
+      observer.observe(flow);
+    }
+    reduced.addEventListener('change', () => {
+      if (reduced.matches) {
+        journey?.finish();
+        viewTransition?.cancel();
+      }
+    });
+
+    modes.hidden = false;
+    for (const button of modeButtons) {
+      button.addEventListener('click', () => {
+        if (button.getAttribute('aria-pressed') === 'true') return;
+        const showCode = button.dataset.view === 'code';
+        stopRequest();
+        viewTransition?.cancel();
+        flow.hidden = showCode;
+        code.hidden = !showCode;
+        modeButtons.forEach((other) => other.setAttribute('aria-pressed', String(other === button)));
+        if (!reduced.matches) {
+          const view = showCode ? code : flow;
+          viewTransition = view.animate([{ opacity: .2, transform: 'translateY(7px)' }, { opacity: 1, transform: 'translateY(0)' }],
+            { duration: 260, easing: 'cubic-bezier(.18,.76,.24,1)' });
+        }
+      });
+    }
+
+    function selectTab(selected: HTMLButtonElement) {
+      tabs.forEach((tab) => {
+        const active = tab === selected;
+        tab.setAttribute('aria-selected', String(active));
+        tab.tabIndex = active ? 0 : -1;
+        document.getElementById(tab.getAttribute('aria-controls')!)!.hidden = !active;
+      });
+    }
+
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', () => selectTab(tab));
+      tab.addEventListener('keydown', (event) => {
+        const positions: Record<string, number> = { ArrowLeft: (index + tabs.length - 1) % tabs.length, ArrowRight: (index + 1) % tabs.length, Home: 0, End: tabs.length - 1 };
+        const next = tabs[positions[event.key]];
+        if (!next) return;
+        event.preventDefault();
+        selectTab(next);
+        next.focus();
+      });
+    });
+  });
+</script>
+
+<style>
+  .project-stage { min-width:0; }
+  .stage-surface { background:#27272f; color:#faf9fd; }
+  .code-tabs,.file-bar,.stage-caption,.modes { display:flex; align-items:center; gap:5px; }
+  .code-tabs { padding:9px 15px; border-bottom:1px solid #4d4c58; }
+  .code-tabs button,.copy-example,.modes button { display:inline-flex; align-items:center; justify-content:center; gap:6px; min-height:34px; padding:5px 10px; border:0; background:transparent; color:inherit; font-size:.84rem; font-weight:540; }
+  .code-tabs button:hover,.copy-example:hover,.code-tabs button[aria-selected="true"] { color:#ffbd99; }
+  .code-tabs button[aria-selected="true"] { box-shadow:inset 0 -1px currentColor; }
+  .file-bar { justify-content:space-between; padding:4px 13px 4px 21px; color:#cbcad3; font:.73rem var(--mono); overflow-wrap:anywhere; }
+  .file-bar button { font-size:.77rem; flex:none; }
+  .example-code { min-width:0; }
+  .example-code :global(pre) { margin:0; padding:15px 21px; overflow:auto; font:.84rem/1.65 var(--mono); }
+  .chapter-link,.project-link { display:inline-flex; align-items:center; gap:8px; min-height:42px; font-size:.85rem; font-weight:550; }
+  .chapter-link { padding-inline:21px; color:#ffbd99; }
+  .chapter-link:hover,.project-link:hover { text-decoration:underline; text-underline-offset:4px; }
+  .stage-caption { justify-content:space-between; flex-wrap:wrap; padding-top:9px; }
+  .project-link>span { width:6px; height:6px; background:var(--signal); border-radius:50%; }
+  .modes { gap:0; border:1px solid var(--line-strong); border-radius:30px; padding:2px; }
+  .modes button { border-radius:24px; min-height:31px; color:var(--muted); }
+  .modes button[aria-pressed="true"] { background:var(--ink); color:white; }
+  .modes button:hover { color:var(--accent); }
+  .modes button[aria-pressed="true"]:hover { color:white; }
+  @media(max-width:420px) { .example-code :global(pre) { font-size:.74rem; padding:12px; } }
+</style>

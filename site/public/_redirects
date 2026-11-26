@@ -1,0 +1,6 @@
+/tips /learn/ 301
+/tips/ /learn/ 301
+/tips/* /learn/ 301
+/zh/tips /zh/learn/ 301
+/zh/tips/ /zh/learn/ 301
+/zh/tips/* /zh/learn/ 301

@@ -1,0 +1,64 @@
+---
+import Icon from './Icon.astro';
+import { getLocale, localize } from '../lib/locale';
+import { quizStops, quizPath } from '../data/quizzes';
+const {locale,t,href} = localize(getLocale(Astro.url.pathname));
+const stops = quizStops(locale);
+const { hub = false } = Astro.props as {hub?:boolean};
+---
+<section class="quiz-record" data-quiz-record data-stops={JSON.stringify(stops)} aria-label={t('Your challenge record','我的闯关战绩')}>
+  <div class="record-head"><Icon name="flag" size={18}/><strong>{t('Your challenge record','我的闯关战绩')}</strong></div>
+  <div class="record-values"><p><b data-clears>0</b><span> / {stops.length} {t('cleared','关已通过')}</span></p><p><b data-total-score>0</b><span> / {stops.length * 100} {t('pts','分')}</span></p></div>
+  <ol role="list" class="score-track">{stops.map(stop => <li><a href={href(quizPath(stop.id))} data-score-stop={stop.id} aria-label={stop.title} title={stop.title}><i></i></a></li>)}</ol>
+  <a class="record-cta" data-recommend={hub ? '' : undefined} href={href(hub ? quizPath(stops[0].id) : '/challenges/')}><span>{hub ? t('Play the first round','挑战第一关') : t('Open course challenges','进入课程闯关')}</span><Icon name="right" size={16}/></a>
+</section>
+<script>
+  import { bestScore, nextStop, type Stop } from '../scripts/quiz-progress';
+  import { passCount, points, questionCount } from '../lib/quiz-score';
+  import { getLocale, localize } from '../lib/locale';
+  const {t,href} = localize(getLocale(location.pathname));
+  for (const record of document.querySelectorAll<HTMLElement>('[data-quiz-record]')) {
+    const stops:Stop[] = JSON.parse(record.dataset.stops!);
+    function render() {
+      let cleared=0, total=0;
+      for (const stop of stops) {
+        const best = bestScore(stop.id,stop.key);
+        const passed = best !== null && best >= passCount;
+        if (passed) cleared++;
+        total += points(best ?? 0);
+        const state = best === null ? 'new' : best === questionCount ? 'perfect' : passed ? 'passed' : 'tried';
+        const status = best === null ? t('Try this round','开始挑战') : (passed ? t('Cleared','已过关') : t('Best','最高分')) + ' · ' + points(best) + '/100';
+        const mark = record.querySelector<HTMLAnchorElement>('[data-score-stop="' + stop.id + '"]')!;
+        mark.dataset.result = state; mark.title = stop.title + ' · ' + status; mark.setAttribute('aria-label',mark.title);
+        const row = document.querySelector<HTMLElement>('[data-quiz-row="' + stop.id + '"]');
+        if (row) { row.dataset.result = state; row.querySelector('[data-row-score]')!.textContent = status; }
+      }
+      record.querySelector('[data-clears]')!.textContent = String(cleared);
+      record.querySelector('[data-total-score]')!.textContent = String(total);
+      const cta = record.querySelector<HTMLAnchorElement>('[data-recommend]');
+      if (cta) {
+        const next = nextStop(stops);
+        const allCleared = cleared === stops.length;
+        cta.href = next ? href('/challenges/' + next.id + '/') : allCleared ? '#rounds' : '#more-rounds';
+        cta.querySelector('span')!.textContent = next ? t('Play · ','去挑战 · ') + next.title : allCleared ? t('All cleared · revisit a round','全部通关 · 自选复习') : t('Choose an optional challenge','选一关延伸练习');
+      }
+    }
+    render();
+    window.addEventListener('pageshow',render); window.addEventListener('storage',render); window.addEventListener('orbit:activity',render);
+  }
+</script>
+<style>
+  .quiz-record { min-width:0; padding:clamp(18px,2.8vw,34px); background:#292539; color:#fbf7ee; border-top:3px solid #bfabe7; }
+  .record-head,.record-cta { display:flex; align-items:center; gap:9px; } .record-head { color:#e0d5ed; font-size:.91rem; }
+  .record-values { display:flex; flex-wrap:wrap; align-items:baseline; gap:3px 24px; margin:15px 0 4px; }
+  .record-values p { margin:0; color:#d1c9db; font:.77rem/1.4 var(--mono); }
+  .record-values b { color:#fff9ee; font:550 clamp(1.4rem,2.5vw,2.2rem)/1 var(--display); letter-spacing:-.035em; }
+  .score-track { display:flex; gap:4px; list-style:none; padding:0; margin:0 0 5px; }
+  .score-track li { flex:1; min-width:0; } .score-track a { display:grid; align-items:center; height:32px; }
+  .score-track i { display:block; height:7px; background:#4d475d; border:1px solid #726983; }
+  .score-track [data-result=tried] i { background:repeating-linear-gradient(120deg,#8f7eaa 0 2px,#50475e 2px 5px); }
+  .score-track [data-result=passed] i { background:#c4e4b7; border-color:#c4e4b7; } .score-track [data-result=perfect] i { background:#ffcf83; border-color:#ffcf83; }
+  .score-track a:hover i,.score-track a:focus-visible i { outline:1px solid #fff; outline-offset:2px; }
+  .record-cta { width:fit-content; min-height:36px; font-size:.88rem; font-weight:600; color:#efdeff; }
+  .record-cta:hover { text-decoration:underline; } .record-cta:focus-visible,.score-track a:focus-visible { outline-color:white; }
+</style>

@@ -1,0 +1,48 @@
+---
+import Icon from './Icon.astro';
+import { getLocale, localize } from '../lib/locale';
+const { t } = localize(getLocale(Astro.url.pathname));
+const steps = [
+  { label: t('Request', '请求'), value: 'GET /tasks', icon: 'globe' },
+  { label: t('Route', '路由'), value: 'tasks.index', icon: 'route' },
+  { label: t('View', '视图'), value: 'tasks/index.blade.php', icon: 'code' },
+] as const;
+---
+<div id="project-flow" hidden class="request-flow" data-flow data-result={t('GET /tasks returned 200 OK.', 'GET /tasks 已返回 200 OK。')}>
+  <div class="trace-head"><span><Icon name="terminal" size={16}/> HTTP</span><span>localhost / Laravel</span></div>
+  <ol id="request-diagram" role="list">{steps.map(step => <li><span><Icon name={step.icon} size={15}/>{step.label}</span><code>{step.value}</code></li>)}</ol>
+  <div class="response">
+    <span class="status-light"></span><span class="settled">200 OK</span><small class="settled">text/html</small><span class="pending">{t('Request in flight…','请求处理中…')}</span>
+    <button type="button" data-run-request aria-controls="request-diagram" hidden><Icon name="play" size={13}/>{t('Trace request', '演示请求')}</button>
+  </div>
+  <div class="trace-meter" aria-hidden="true"><i data-signal></i></div>
+  <span class="sr-only" role="status" data-flow-status></span>
+</div>
+<style>
+  .request-flow { padding:clamp(15px,2.4vw,32px); background:#27272f; color:#faf9fd; }
+  .trace-head,.trace-head span,.response,.response button,li span { display:flex; align-items:center; gap:8px; }
+  .trace-head { justify-content:space-between; color:#c9c7d2; font:.73rem/1.4 var(--mono); }
+  .trace-head span:first-child { color:#f4b093; }
+  ol { list-style:none; padding:0; margin:17px 0 12px; }
+  li { display:flex; align-items:center; justify-content:space-between; gap:8px; min-height:47px; border-top:1px solid #474550; }
+  li span { color:#dbd8e3; font-size:.91rem; }
+  li code { font:.83rem/1.5 var(--mono); overflow-wrap:anywhere; text-align:right; }
+  .response { min-height:41px; font:.79rem/1.4 var(--mono); color:#c1e5a9; flex-wrap:wrap; }
+  .pending,[data-running] .settled { display:none; }
+  [data-running] .pending { display:inline; }
+  [data-running] .status-light { background:#f3aa81; }
+  @media(prefers-reduced-motion:no-preference) {
+    [data-running] li { animation:trace-step 320ms ease-out both; }
+    [data-running] li:nth-child(2) { animation-delay:.55s; }
+    [data-running] li:nth-child(3) { animation-delay:1.1s; }
+    @keyframes trace-step { from { opacity:.32; transform:translateX(-3px); } to { opacity:1; transform:none; } }
+  }
+  .response small { color:#bbc8b8; font-size:.7rem; }
+  .status-light { width:7px; height:7px; border-radius:50%; background:#b5db92; }
+  .response button { margin-left:auto; min-height:36px; color:#faf5e2; background:transparent; padding:6px 12px; border:1px solid #819280; border-radius:99px; font:inherit; }
+  .response button:hover { color:white; border-color:white; }
+  .trace-meter { height:2px; overflow:hidden; margin-top:10px; }
+  .trace-meter i { display:block; width:100%; height:100%; background:#f3a57f; opacity:0; transform-origin:left; }
+  [data-running] .trace-meter i { opacity:1; }
+  @media(max-width:345px) { .response small { display:none; } }
+</style>

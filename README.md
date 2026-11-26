@@ -36,4 +36,4 @@ npm run build
 
 ## AdSense
 
-正式站提供 `ads.txt` 和首页验证标签，用于在 AdSense 添加和审核站点。广告位在原创教程的正文和参考文档之后。站点通过审核并配置适用地区的认证 CMP 后，用 `ADSENSE_ENABLED=true` 和 `ADSENSE_GUIDE_SLOT`（响应式展示单元 ID）重新部署。手动广告的展示位置由教程模板控制，自动广告在 AdSense 后台单独管理。 [站点验证](https://support.google.com/adsense/answer/7584263) · [展示广告单元](https://support.google.com/adsense/answer/9274025) · [认证 CMP](https://support.google.com/adsense/answer/13554116)
+正式站提供 `ads.txt` 和首页验证标签。每篇教程最多展示一个广告。常规教程的 `ADSENSE_GUIDE_SLOT` 位于参考文档后。请求实验课用 `ADSENSE_REQUEST_LAB_SLOT`，在 1024px 及以上的屏幕上放在右侧目录下方，窄屏放回文末。两个单元的 ID 在 `site/.env.production` 中。站点通过审核并配置适用地区的认证 CMP 后，在 `site/` 下运行 `ADSENSE_ENABLED=true npm run deploy:production` 开启投放。 [站点验证](https://support.google.com/adsense/answer/7584263) · [展示广告单元](https://support.google.com/adsense/answer/9274025) · [认证 CMP](https://support.google.com/adsense/answer/13554116)

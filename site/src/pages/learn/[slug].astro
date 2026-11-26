@@ -9,7 +9,7 @@ import TaskPractice from '../../components/TaskPractice.astro';
 import LessonCheckpoint from '../../components/LessonCheckpoint.astro';
 import type { ChallengeId } from '../../data/challenges';
 import GuideAd from '../../components/GuideAd.astro';
-import { getGuidePages, getCourses, type CourseSummary, type Guide } from '../../lib/site';
+import { adsEnabled, getGuidePages, getCourses, type CourseSummary, type Guide } from '../../lib/site';
 import { primaryPathFor, belongsToRoute } from '../../data/roadmap';
 import { coursePath } from '../../data/courses';
 import { quizPath } from '../../data/quizzes';
@@ -31,6 +31,8 @@ export async function getStaticPaths() {
 
 const { locale, t, href } = localize(getLocale(Astro.url.pathname));
 const { guide, course, steps } = Astro.props;
+const labSlot = import.meta.env.ADSENSE_REQUEST_LAB_SLOT;
+const requestLabSlot = adsEnabled && guide.id === 'laravel-request-lab' && /^\d+$/.test(labSlot ?? '') ? labSlot : undefined;
 const { Content, headings } = await render(guide);
 const lessonChallenges: Partial<Record<string,ChallengeId>> = { 'first-project':'blade', 'api-validated-writes':'validation', 'dispatch-after-commit':'queues' };
 const challenge = lessonChallenges[guide.id];
@@ -68,7 +70,7 @@ const checkpointProps = { lesson:guide.id, course:course.id, prompt:checkpoint }
         </nav>)}
       </div>
     </header>
-    <article class:list={['article-layout',{'has-practice':practice}]}>
+    <article class:list={['article-layout',{'has-practice':practice,'with-rail-ad':requestLabSlot}]}>
       {practice && <div class="lesson-activity" data-example-lesson={guide.id}>
         {requestPractice && <RequestPractice lesson={requestPractice}/>}
         {taskPractice && <TaskPractice lesson={taskPractice}/>}
@@ -104,15 +106,17 @@ const checkpointProps = { lesson:guide.id, course:course.id, prompt:checkpoint }
         </nav>
       </aside>
       <div class="guide-body">
-        {practice && <header class="local-guide" id="local-guide"><h2><Icon name="code" size={18}/>{t('Build it locally','在本地跟练')}</h2><small>Laravel 13 · {minutes}{t(' min',' 分钟')}</small></header>}
-        <div class="prose" data-guide-text><Content /></div>
-        {challenge && <div class="lesson-lab"><QuickLab id={challenge}/></div>}
-        {practice ? <a class="text-link back-check" href="#checkpoint-title"><Icon name="flag" size={15}/>{t('Check my work','检验这个任务')}</a> : <LessonCheckpoint {...checkpointProps}/>}
-        <aside class="article-sources" aria-labelledby="source-heading">
-          <h2 id="source-heading">{t('References', '参考文档')}</h2>
-          <ul>{sources.map(({ label, url }) => <li><a href={url}>{label} <Icon name="external" size={14} /></a></li>)}</ul>
-        </aside>
-        <GuideAd />
+        <div class="guide-content">
+          {practice && <header class="local-guide" id="local-guide"><h2><Icon name="code" size={18}/>{t('Build it locally','在本地跟练')}</h2><small>Laravel 13 · {minutes}{t(' min',' 分钟')}</small></header>}
+          <div class="prose" data-guide-text><Content /></div>
+          {challenge && <div class="lesson-lab"><QuickLab id={challenge}/></div>}
+          {practice ? <a class="text-link back-check" href="#checkpoint-title"><Icon name="flag" size={15}/>{t('Check my work','检验这个任务')}</a> : <LessonCheckpoint {...checkpointProps}/>}
+          <aside class="article-sources" aria-labelledby="source-heading">
+            <h2 id="source-heading">{t('References', '参考文档')}</h2>
+            <ul>{sources.map(({ label, url }) => <li><a href={url}>{label} <Icon name="external" size={14} /></a></li>)}</ul>
+          </aside>
+        </div>
+        <GuideAd {requestLabSlot} />
         <div class="read-controls" data-read-controls hidden>
           <button class="button" type="button" data-read-button={guide.id} aria-pressed="false"><Icon name="mark" size={16} /><span>{t('Mark as read', '标为已读')}</span></button>
           <small aria-live="polite" data-read-status></small>
@@ -267,6 +271,19 @@ const checkpointProps = { lesson:guide.id, course:course.id, prompt:checkpoint }
   .article-toc a { display: block; font-size: .87rem; padding: 6px 0; color: var(--muted); }
   .article-toc a:hover { text-decoration: underline; }
   .guide-body { min-width:0; grid-area:reading; }
+  .guide-content { display:contents; }
+  @media (min-width:1024px) {
+    .article-layout.with-rail-ad {
+      grid-template-areas:"activity toc" "activity ad" "reading ." "controls ." "paging .";
+      grid-template-rows:max-content 1fr auto auto auto;
+    }
+    .with-rail-ad .article-toc { position:static; }
+    .with-rail-ad .guide-body { display:contents; }
+    .with-rail-ad .guide-content { display:block; grid-area:reading; min-width:0; }
+    .with-rail-ad :global(.guide-ad) { grid-area:ad; justify-self:center; width:200px; margin:32px 0 0; }
+    .with-rail-ad .read-controls { grid-area:controls; }
+    .with-rail-ad .article-paging { grid-area:paging; }
+  }
   .article-sources { border-top: 1px solid var(--line); margin: 29px 0; padding: 20px 0 0; }
   .article-sources h2 { font-size: 1rem; }
   .article-sources ul { display: flex; flex-wrap: wrap; gap: 6px 18px; list-style: none; padding: 0; }

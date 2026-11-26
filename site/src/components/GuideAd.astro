@@ -2,6 +2,8 @@
 import { adsEnabled, adSlot, publisher } from '../lib/site';
 import { getLocale, localize } from '../lib/locale';
 
+interface Props { requestLabSlot?: string }
+const { requestLabSlot } = Astro.props;
 const { t } = localize(getLocale(Astro.url.pathname));
 const label = t('Advertisements', '广告');
 ---
@@ -9,13 +11,21 @@ const label = t('Advertisements', '广告');
 {adsEnabled && (
   <aside class="guide-ad" aria-label={label}>
     <span>{label}</span>
-    <ins class="adsbygoogle" style="display:block" data-ad-client={publisher} data-ad-slot={adSlot} data-ad-format="auto" data-full-width-responsive="true"></ins>
+    {requestLabSlot && <style is:inline>
+      .OrbitRequestAd { width:100%; height:100px; }
+      @media (min-width:1024px) { .OrbitRequestAd { width:200px; height:200px; } }
+    </style>}
+    <ins class:list={['adsbygoogle', { OrbitRequestAd: requestLabSlot }]} style="display:block"
+      data-ad-client={publisher} data-ad-slot={requestLabSlot ?? adSlot}
+      data-ad-format={requestLabSlot ? undefined : 'horizontal'}
+      data-full-width-responsive={requestLabSlot ? undefined : 'false'}></ins>
     <script is:inline>(window.adsbygoogle = window.adsbygoogle || []).push({});</script>
   </aside>
 )}
 
 <style>
   .guide-ad { margin: 36px 0; padding-block: 10px 16px; border-block: 1px solid var(--line); color: var(--muted); font-size: .75rem; text-align: center; }
-  .guide-ad ins { min-height: 120px; margin-top: 9px; }
+  .guide-ad ins { margin-top: 9px; }
+  .guide-ad ins:not(.OrbitRequestAd) { min-height: 120px; }
   .guide-ad:has(ins[data-ad-status="unfilled"]) { display: none; }
 </style>

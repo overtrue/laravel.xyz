@@ -44,7 +44,7 @@ const review = [...new Set(questions.map(q => q.lesson))];
         {questions.map((q,index) => <section class="quiz-question" data-question={index} hidden aria-labelledby={'question-'+index}>
           <span class="quiz-counter">{t('Question','第')} {index+1} / {questions.length} {t('','题')}</span>
           <h2 tabindex="-1" id={'question-'+index}>{q.prompt[locale]}</h2>
-          {q.code && <pre class="quiz-code"><code>{q.code}</code></pre>}
+          {q.code && <pre class="quiz-code" tabindex="0" role="region" aria-label={t('Code example','代码示例')}><code>{q.code}</code></pre>}
           {q.hint && <details class="quiz-hint"><summary>{t('Give me a hint','看个提示')}</summary><p>{q.hint[locale]}</p></details>}
           <form>
             <fieldset class="quiz-choices"><legend class="sr-only">{q.prompt[locale]}</legend>
@@ -67,7 +67,7 @@ const review = [...new Set(questions.map(q => q.lesson))];
         </section>
       </div>
       <noscript><section class="quiz-paper"><h2>{t('Practice questions','自测题')}</h2><p>{t('Enable JavaScript for scoring, or check the answers below.','启用 JavaScript 即可计分，也可以在下方自测核对。')}</p>
-        {questions.map(q => <details><summary>{q.prompt[locale]}</summary>{q.code && <pre class="quiz-code"><code>{q.code}</code></pre>}<p><strong>{q.choices[q.correct][locale]}</strong></p><p>{q.why[locale]}</p><a class="text-link" href={href('/learn/'+q.lesson+'/')}>{lessonTitle(q.lesson)}</a></details>)}
+        {questions.map(q => <details><summary>{q.prompt[locale]}</summary>{q.code && <pre class="quiz-code" tabindex="0" role="region" aria-label={t('Code example','代码示例')}><code>{q.code}</code></pre>}<p><strong>{q.choices[q.correct][locale]}</strong></p><p>{q.why[locale]}</p><a class="text-link" href={href('/learn/'+q.lesson+'/')}>{lessonTitle(q.lesson)}</a></details>)}
       </section></noscript>
     </div>
     <p class="quiz-rules"><Icon name="test" size={16}/>{t('Each answer is worth '+points(1)+' points. Replays keep your highest score.','每题 '+points(1)+' 分。可以反复挑战，战绩保留最高分。')}</p>

@@ -104,9 +104,9 @@ const description = communityMission(locale) + ' ' + t('Free lessons for your fi
   .mission i { width:7px; height:7px; border-radius:50%; background:var(--signal); }
   .mission:hover,.inline-link:hover { color:var(--accent); }
   .hero-copy h1 { margin:clamp(17px,2vw,32px) 0 21px; font:500 clamp(2.8rem,14.65cqi,5.55rem)/.99 var(--display); letter-spacing:-.05em; word-spacing:.055em; }
-  .hero-copy h1 span,.hero-copy h1 em { display:block; white-space:nowrap; }
+  .hero-copy h1 span,.hero-copy h1 em { display:block; }
   .hero-copy h1 em { color:var(--accent); font-weight:inherit; font-style:normal; }
-  .hero-copy h1:lang(zh-CN) { font-size:clamp(2.35rem,12.2cqi,4.6rem); line-height:1.13; letter-spacing:-.055em; }
+  .hero-copy h1:lang(zh-CN) { font-size:clamp(2.35rem,12.2cqi,4.6rem); line-height:1.2; letter-spacing:var(--title-tracking); }
   em { font-style:normal; }
   .hero-copy p,.workshop-copy p { max-width:33ch; margin:0; font-size:clamp(1rem,1.25vw,1.17rem); line-height:1.56; color:var(--muted); text-wrap:pretty; }
   .hero-copy p:lang(zh-CN) { max-width:23em; }
@@ -117,10 +117,10 @@ const description = communityMission(locale) + ' ' + t('Free lessons for your fi
   .inline-link { display:inline-flex; gap:8px; align-items:center; min-height:40px; width:fit-content; font-size:.92rem; font-weight:590; }
   .inline-link :global(svg) { transition:transform var(--transition); }
   .inline-link:hover :global(svg) { transform:translateX(3px); }
-  .path-section,.workshop { padding-block:clamp(52px,6vw,90px); }
+  .path-section,.workshop { padding-block:var(--section-space); }
   .spread-label { color:var(--accent); }
   .section-title { display:flex; gap:10px 20px; flex-wrap:wrap; align-items:baseline; justify-content:space-between; margin:12px 0 clamp(24px,3vw,42px); }
-  .section-title h2,.people-lead h2,.workshop h2 { font:510 clamp(2.2rem,4.25vw,4.15rem)/1.05 var(--display); letter-spacing:-.047em; word-spacing:.06em; }
+  .section-title h2,.people-lead h2,.workshop h2 { font:560 var(--section-title)/1.18 var(--display); letter-spacing:var(--section-tracking); }
   .path-picker { display:grid; grid-template-columns:minmax(0,.74fr) minmax(0,1.26fr); gap:clamp(28px,5.4vw,85px); align-items:center; }
   .path-picker ol,.people-inner ul { list-style:none; margin:0; padding:0; }
   .shelf-card { display:grid; grid-template-columns:auto minmax(0,1fr) auto; align-items:center; gap:clamp(12px,1.55vw,23px); padding:clamp(13px,1.2vw,23px) 2px; border-top:1px solid var(--line-strong); }
@@ -177,7 +177,6 @@ const description = communityMission(locale) + ' ' + t('Free lessons for your fi
     .hero-actions :global(.button) { min-height:45px; padding:10px 14px; font-size:.9rem; gap:8px; }
     .hero-actions .inline-link { font-size:.85rem; gap:5px; }
     .path-picker,.workshop,.people-inner { grid-template-columns:1fr; gap:23px; }
-    .path-section,.workshop { padding-block:42px; }
     .path-picker ol { display:flex; flex-wrap:wrap; align-items:stretch; column-gap:15px; }
     .path-picker li { flex:1 1 115px; }
     .shelf-card,.path-picker li:last-child .shelf-card { height:100%; grid-template-columns:1fr; align-content:start; gap:8px; border-top:2px solid var(--line); border-bottom:0; padding:12px 0 0; }

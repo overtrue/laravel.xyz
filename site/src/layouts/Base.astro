@@ -70,18 +70,18 @@ const navigation = [
       <div class="shell header-inner">
         <Brand />
         <nav class="main-nav" aria-label={t('Main navigation', '主导航')}>
-          {navigation.map((item) => (
-            <a href={href(item.path)} class:list={{
-              'nav-courses': item.path === '/courses/',
-              active: englishPath.startsWith(item.path) || (item.path === '/courses/' && (englishPath.startsWith('/learn/') || englishPath.startsWith('/challenges/'))),
-            }} aria-current={englishPath === item.path ? 'page' : undefined}><Icon name={item.icon} size={15}/>{item.title}</a>
-          ))}
+          {navigation.map((item) => {
+            const inCourses = item.path === '/courses/' && (englishPath.startsWith('/learn/') || englishPath.startsWith('/challenges/'));
+            const active = englishPath.startsWith(item.path) || inCourses;
+            return <a href={href(item.path)} class:list={{active}}
+              aria-current={englishPath === item.path ? 'page' : active ? 'location' : undefined}><Icon name={item.icon} size={15}/>{item.title}</a>;
+          })}
         </nav>
         <div class="header-actions">
           <a class="orbit-link" href={href('/orbit/')} aria-current={englishPath === '/orbit/' ? 'page' : undefined} aria-label={t('My Orbit','我的小宇宙')} title={t('My Orbit','我的小宇宙')}><Icon name="orbit" size={18}/><span>{t('My Orbit','我的小宇宙')}</span><span class="orbit-short" aria-hidden="true">{t('My Orbit','我的')}</span></a>
           <Search />
-          <a class="language-link" data-preserve-fragment={noIndex ? undefined : sharedAnchors ? 'all' : 'lab'} href={noIndex ? t('/zh/', '/') : t(chinesePath, englishPath)} hreflang={t('zh-CN', 'en')} lang={t('zh-CN', 'en')} aria-label={t('中文', 'English')}>
-            <Icon name="language" size={16} /><span class="language-wide">{t('中文', 'English')}</span><span class="language-short" aria-hidden="true">{t('中文', 'EN')}</span>
+          <a class="language-link" data-preserve-fragment={noIndex ? undefined : sharedAnchors ? 'all' : 'lab'} href={noIndex ? t('/zh/', '/') : t(chinesePath, englishPath)} hreflang={t('zh-CN', 'en')} lang={t('zh-CN', 'en')}>
+            <Icon name="language" size={16} />{t('中文', 'English')}
           </a>
         </div>
       </div>

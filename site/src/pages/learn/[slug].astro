@@ -57,7 +57,7 @@ const checkpointProps = { lesson:guide.id, course:course.id, prompt:checkpoint }
 ---
 
 <Base {title} {description} article>
-  <div class="shell reading-room">
+  <div class="shell">
     <header class="page-intro article-intro">
       <nav class="breadcrumbs" aria-label={t('Breadcrumb', '面包屑')}><a href={href('/courses/')}>{t('Free courses', '免费课程')}</a><Icon name="chevron" size={15} /><a href={href(coursePath(course.id))}>{course.title}</a></nav>
       <h1>{title}</h1>
@@ -66,7 +66,11 @@ const checkpointProps = { lesson:guide.id, course:course.id, prompt:checkpoint }
         <div class="article-meta"><span class="tag free-tag"><Icon name="flag" size={14}/>{t('Free task', '免费任务')}</span>{!practice && <span class="tag">Laravel 13</span>}<span><Icon name="clock" size={15} /> {practice ? t('2 min practice','2 分钟练习') : minutes + t(' min',' 分钟')}</span><SaveButton compact item={'/learn/' + guide.id + '/'} name={title}/></div>
         {trails.map((trail,i) => <nav class="step-rail" data-trail={trail.id} data-steps data-end={trail.end.url} data-end-title={trail.end.title} aria-label={trail.name} hidden={i>0}>
           <small>{trail.name} · {trail.steps.findIndex(step=>step.id===guide.id)+1}/{trail.steps.length}</small>
-          {trail.steps.map((step, index) => <a data-rail={step.id} href={href('/learn/' + step.id + '/')} aria-current={step.id === guide.id ? 'step' : undefined} aria-label={t('Task ', '任务 ') + (index + 1) + ' · ' + step.title} title={step.title}><span>{String(index + 1).padStart(2,'0')}</span><Icon name="check" size={14}/></a>)}
+          {trail.steps.map((step, index) => {
+            const number = String(index + 1).padStart(2,'0');
+            return <a data-rail={step.id} href={href('/learn/' + step.id + '/')} aria-current={step.id === guide.id ? 'step' : undefined}
+              aria-label={t('Task ', '任务 ') + number + ' · ' + step.title} title={step.title}><span>{number}</span><Icon name="check" size={14}/></a>;
+          })}
         </nav>)}
       </div>
     </header>
@@ -163,7 +167,8 @@ const checkpointProps = { lesson:guide.id, course:course.id, prompt:checkpoint }
     for (const step of steps) {
       const complete = isDone(step.dataset.rail!);
       step.toggleAttribute('data-done',complete);
-      step.setAttribute('aria-label', step.title + (complete ? t(', completed','，已完成') : ''));
+      if (complete) step.setAttribute('aria-description', t('Completed','已完成'));
+      else step.removeAttribute('aria-description');
     }
     const done = isDone(slug);
     receipt.hidden = !done;
@@ -238,23 +243,20 @@ const checkpointProps = { lesson:guide.id, course:course.id, prompt:checkpoint }
 </script>
 
 <style>
-  .reading-room { max-width:1090px; }
   .article-intro { max-width: none; padding-bottom: 24px; border-bottom: 1px solid var(--line-strong); }
-  .article-intro h1 { max-width:24ch; font-size:clamp(3rem,5.6vw,5.35rem); text-wrap:balance; }
-  .article-intro h1:lang(zh-CN) { font-size:clamp(2.1rem,4.5vw,4.15rem); line-height:1.22; }
-  .guide-body :global(.prose h2) { font:400 clamp(1.9rem,3.1vw,2.75rem)/1.16 var(--display); letter-spacing:-.025em; }
-  .guide-body :global(.prose h2:lang(zh-CN)) { font-size:clamp(1.45rem,2.5vw,2.1rem); }
+  .article-intro h1 { max-width:26ch; }
+  .guide-body :global(.prose h2) { font:570 var(--section-title)/1.22 var(--display); letter-spacing:var(--section-tracking); margin:var(--section-space) 0 .6em; }
   .lesson-lab { margin-top:32px; }
   .local-guide { display:flex; align-items:baseline; flex-wrap:wrap; gap:5px 16px; justify-content:space-between; padding-top:17px; margin:10px 0 12px; border-top:1px solid var(--line-strong); }
   .local-guide h2 { display:flex; gap:8px; align-items:center; font:570 1.35rem/1.24 var(--display); }
-  .local-guide small,.step-rail small { font:.74rem/1.45 var(--mono); color:var(--muted); }.back-check { margin-top:12px; }
+  .local-guide small,.step-rail small { font:var(--caption)/1.45 var(--mono); color:var(--muted); }.back-check { margin-top:12px; }
   .article-toc h2 { display:flex; align-items:center; gap:7px; }
   .article-toc summary { width:fit-content; cursor:pointer; font-weight:600; }
   .article-paging { border-block:1px solid var(--line); }
   .lesson-tools { display:flex; flex-wrap:wrap; align-items:center; gap:9px 24px; justify-content:space-between; margin-top:18px; }
   .step-rail { display:flex; align-items:center; flex-wrap:wrap; row-gap:5px; }
   .step-rail small { margin-inline-end:8px; }
-  .step-rail a { position:relative; width:32px; height:32px; display:grid; place-items:center; border-block:1px solid var(--line-strong); border-left:1px solid var(--line-strong); color:var(--muted); font:.72rem var(--mono); }
+  .step-rail a { position:relative; width:34px; height:34px; display:grid; place-items:center; border-block:1px solid var(--line-strong); border-left:1px solid var(--line-strong); color:var(--muted); font:var(--caption)/1.4 var(--mono); }
   .step-rail a:last-child { border-right:1px solid var(--line-strong); }
   .step-rail a[aria-current] { color:var(--accent); background:var(--accent-wash); box-shadow:inset 0 -2px var(--signal); }
   .step-rail a:hover { color:white; background:var(--ink); }
@@ -262,7 +264,7 @@ const checkpointProps = { lesson:guide.id, course:course.id, prompt:checkpoint }
   .step-rail [data-done] :global(svg) { display:block; }
   .article-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 16px; color: var(--muted); font-size: .85rem; }
   .article-meta > span:has(svg) { display: inline-flex; align-items: center; gap: 6px; }
-  .article-layout { display:grid; grid-template-columns:minmax(0,710px) minmax(155px,225px); grid-template-areas:"reading toc"; column-gap:clamp(20px,5vw,72px); align-items:start; padding-top:20px; }
+  .article-layout { display:grid; grid-template-columns:minmax(0,1fr) clamp(185px,22%,280px); grid-template-areas:"reading toc"; column-gap:clamp(20px,5vw,72px); align-items:start; padding-top:20px; }
   .article-layout.has-practice { grid-template-areas:"activity toc" "reading toc"; }
   .lesson-activity { grid-area:activity; min-width:0; }
   .article-toc { position:sticky; top:20px; grid-area:toc; border-left:1px solid var(--line-strong); padding:3px 0 4px 18px; }
@@ -271,6 +273,7 @@ const checkpointProps = { lesson:guide.id, course:course.id, prompt:checkpoint }
   .article-toc a { display: block; font-size: .87rem; padding: 6px 0; color: var(--muted); }
   .article-toc a:hover { text-decoration: underline; }
   .guide-body { min-width:0; grid-area:reading; }
+  .guide-content > .prose { max-width:76ch; }
   .guide-content { display:contents; }
   @media (min-width:1024px) {
     .article-layout.with-rail-ad {
@@ -305,7 +308,7 @@ const checkpointProps = { lesson:guide.id, course:course.id, prompt:checkpoint }
     .article-toc { position:static; padding:11px 14px; border:1px solid var(--line); border-radius:0; }
     .article-toc:has(details) { border:0; padding:0; }.article-toc summary { padding-block:8px; color:var(--muted); font-size:.86rem; }
     .article-intro { padding-block:clamp(19px,5vw,32px) 14px; }
-    .article-intro p { font-size:1rem; line-height:1.5; margin-top:10px; }
+    .article-intro p { margin-top:10px; }
     .lesson-tools { margin-top:12px; }
   }
 </style>

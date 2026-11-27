@@ -14,13 +14,12 @@ const scenic = ['web','api','ship'].includes(art);
   {bookshelf ? <slot name="bookshelf"/> : <div class="directory-art"><CoverArt {art}/></div>}
 </header>
 <style>
-  .directory-cover { background:var(--paper); display:grid; grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr); align-items:center; gap:clamp(20px,5vw,80px); padding-block:clamp(27px,4vw,58px); border-bottom:1px solid var(--line-strong); }
+  .directory-cover { background:var(--paper); display:grid; grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr); align-items:center; gap:clamp(20px,5vw,80px); padding-block:var(--intro-space); border-bottom:1px solid var(--line-strong); }
   .directory-copy { min-width:0; }
-  .directory-copy h1 { max-width:21ch; font:510 clamp(2.65rem,5.25vw,5rem)/1.01 var(--display); letter-spacing:-.059em; word-spacing:.025em; text-wrap:balance; overflow-wrap:break-word; }
-  .directory-copy h1:lang(zh-CN) { font-size:clamp(2.2rem,4.8vw,4.45rem); line-height:1.17; letter-spacing:-.04em; }
-  .directory-copy p { max-width:52ch; margin:14px 0 0; color:var(--muted); font-size:clamp(1rem,1.45vw,1.17rem); line-height:1.58; text-wrap:pretty; }
+  .directory-copy h1 { max-width:21ch; }
+  .directory-copy p { max-width:52ch; margin:var(--space-3) 0 0; color:var(--muted); font-size:var(--lead); line-height:1.6; text-wrap:pretty; }
   .directory-action { margin-top:16px; }
-  .directory-art { height:clamp(145px,18vw,248px); mix-blend-mode:multiply; }
+  .directory-art { height:clamp(124px,14vw,194px); mix-blend-mode:multiply; }
   .directory-art :global(svg) { height:100%; }
   .bookshelf { grid-template-columns:minmax(0,1fr) minmax(0,.85fr); }
   .scenic { grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); }
@@ -30,12 +29,13 @@ const scenic = ['web','api','ship'].includes(art);
   .directory-art:has([data-vector="ship"]) { background:#292832; }
   @media(max-width:680px) {
     .directory-cover { grid-template-columns:minmax(0,1fr) minmax(75px,25%); gap:12px; }
-    .directory-copy h1 { font-size:clamp(2.45rem,7.9vw,3.4rem); }
-    .directory-copy h1:lang(zh-CN) { font-size:clamp(1.9rem,6.6vw,2.65rem); }
     .directory-art { height:clamp(95px,23vw,145px); }
     .scenic { grid-template-columns:1fr; gap:19px; padding-bottom:0; }
     .scenic .directory-art { height:clamp(105px,23vw,160px); }
   }
   @media(max-width:740px) { .directory-cover.bookshelf { display:grid; grid-template-columns:1fr; gap:24px; } }
-  @media(max-width:420px) { .directory-cover:not(.scenic,.bookshelf) { position:relative; display:block; } .directory-cover:not(.scenic,.bookshelf) h1 { min-height:65px; padding-right:27%; align-content:center; } .directory-cover:not(.scenic,.bookshelf) .directory-art { position:absolute; right:0; top:20px; width:23%; height:80px; pointer-events:none; } }
+  @media(max-width:420px) {
+    .directory-cover:not(.scenic,.bookshelf) { grid-template-columns:1fr; }
+    .directory-cover:not(.scenic,.bookshelf) .directory-art { display:none; }
+  }
 </style>

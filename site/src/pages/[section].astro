@@ -167,12 +167,9 @@ const catalogSection = !peoplePage && section !== 'jobs';
 </script>
 
 <style>
-  .people-cover { display:grid; grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr); align-items:center; gap:clamp(25px,4.5vw,70px); padding-block:clamp(35px,4.5vw,68px); border-bottom:1px solid var(--line-strong); }
-  .people-cover h1 { font:500 clamp(2.8rem,5.45vw,5.2rem)/1 var(--display); letter-spacing:-.06em; }
+  .people-cover { display:grid; grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr); align-items:center; gap:clamp(25px,4.5vw,70px); padding-block:var(--intro-space); border-bottom:1px solid var(--line-strong); }
   .people-cover h1 em { display:block; color:var(--accent); font-weight:inherit; font-style:normal; }
-  .people-cover h1:lang(zh-CN) { font-size:clamp(2.45rem,5vw,4.6rem); line-height:1.14; }
-  .people-cover h1 em:lang(zh-CN) { font-style:normal; }
-  .people-cover p { max-width:37ch; margin:14px 0 9px; font-size:clamp(1rem,1.4vw,1.15rem); color:var(--muted); line-height:1.55; text-wrap:pretty; }
+  .people-cover p { max-width:42ch; margin:var(--space-3) 0 9px; font-size:var(--lead); color:var(--muted); line-height:1.6; text-wrap:pretty; }
   .contact-sheet { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:clamp(5px,.8vw,12px); padding:24px 0; }
   .contact-sheet a { align-self:center; min-width:0; transform:translateY(var(--lift,0px)) rotate(var(--tilt,0deg)); transition:transform var(--art-transition); }
   .contact-sheet a:nth-child(1) { --lift:8px; --tilt:-2deg; }
@@ -187,9 +184,9 @@ const catalogSection = !peoplePage && section !== 'jobs';
   .catalog-tabs a:hover,.catalog-tabs a[aria-current] { color:var(--accent); }
   .catalog-tabs a[aria-current]::after { content:''; position:absolute; inset:auto 0 -1px; height:2px; background:var(--signal); }
   .catalog-filter { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:8px 16px; padding:18px 0; color:var(--muted); font:.77rem var(--mono); }
-  .catalog-filter label { display:flex; align-items:center; gap:9px; width:min(355px,100%); border-bottom:1px solid var(--line-strong); }
+  .catalog-filter label { display:flex; align-items:center; gap:9px; width:min(355px,100%); border-bottom:1px solid var(--control-border); }
   .catalog-filter label:focus-within { border-color:var(--accent); }
-  .catalog-filter input { width:100%; min-width:0; background:transparent; border:0; outline:none; padding:10px 0; font:normal .95rem/1.4 'Instrument Sans Variable',sans-serif; color:var(--ink); }
+  .catalog-filter input { width:100%; min-width:0; background:transparent; border:0; outline:none; padding:10px 0; font:1rem/1.4 var(--sans); color:var(--ink); }
   .catalog-grid,.community-list { padding:0; margin:0; list-style:none; }
   .catalog-grid li,.community-list li { border-top:1px solid var(--line); }
   .catalog-grid li:last-child { border-bottom:1px solid var(--line); }
@@ -200,17 +197,17 @@ const catalogSection = !peoplePage && section !== 'jobs';
   .kind-picker button[aria-pressed=true] { color:var(--night-paper); background:var(--night); border-color:var(--night); }
   .catalog-grid a { display:grid; grid-template-columns:36px minmax(0,1fr) minmax(80px,15%) 18px; align-items:center; gap:clamp(10px,2vw,26px); padding:clamp(12px,1.6vw,21px) 3px; overflow-wrap:anywhere; }
   .catalog-grid a:hover { background:var(--wash); }
-  .catalog-grid a>small { font:.72rem/1.5 var(--mono); color:var(--muted); }
+  .catalog-grid a>small { font:var(--caption)/1.5 var(--mono); color:var(--muted); }
   .entry-glyph { color:var(--accent); display:grid; place-items:center; width:34px; height:34px; }
   .catalog-grid h2,.community-person strong { font-size:clamp(1rem,1.6vw,1.18rem); font-weight:570; letter-spacing:-.02em; }
-  .catalog-grid p { margin:4px 0 0; color:var(--muted); font-size:.91rem; line-height:1.5; max-width:85ch; }
+  .catalog-grid p { margin:4px 0 0; color:var(--muted); font-size:.975rem; line-height:1.55; max-width:72ch; }
   .community-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); column-gap:clamp(20px,4vw,64px); }
   .community-list li,.community-person { display:flex; align-items:center; gap:12px; }
   .community-list li { justify-content:space-between; padding:11px 0; }
   .community-person { min-width:0; }
   .community-person :global(img) { width:45px; height:45px; }
   .community-person span { display:grid; gap:2px; overflow-wrap:anywhere; }
-  .community-person small { color:var(--muted); font:.72rem var(--mono); }
+  .community-person small { color:var(--muted); font:var(--caption)/1.45 var(--mono); }
   .community-person:hover strong { color:var(--accent); }
   .community-links { display:flex; flex-wrap:wrap; gap:9px; margin-top:15px; }
   .people-feature { margin:8px 0 clamp(34px,5vw,68px); }

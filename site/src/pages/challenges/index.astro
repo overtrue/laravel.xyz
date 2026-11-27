@@ -51,10 +51,10 @@ const groups = [
   });
 </script>
 <style>
-  .arena { padding-block:clamp(24px,4vw,59px) clamp(42px,7vw,94px); }
+  .arena { padding-block:var(--intro-space) var(--section-space); }
   .arena-intro { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(290px,.8fr); gap:clamp(20px,6vw,80px); align-items:center; margin:20px 0 clamp(30px,5vw,66px); }
-  h1 { max-width:13ch; font:540 clamp(2.5rem,5.4vw,5.6rem)/1.02 var(--display); letter-spacing:-.06em; text-wrap:balance; }
-  h1 em { color:var(--accent); font-style:normal; } .arena-intro p { max-width:39ch; color:var(--muted); margin:14px 0 0; font-size:clamp(.98rem,1.35vw,1.18rem); }
+  h1 { max-width:16ch; }
+  h1 em { color:var(--accent); font-style:normal; } .arena-intro p { max-width:42ch; color:var(--muted); margin:var(--space-3) 0 0; font-size:var(--lead); line-height:1.6; }
   .round-group { display:grid; grid-template-columns:minmax(145px, .6fr) minmax(0,1.4fr); gap:clamp(14px,3vw,46px); align-items:start; padding:clamp(17px,2.5vw,29px) 0; border-top:1px solid var(--line-strong); }
   .round-group header { padding-top:3px; } .round-group header a { margin-top:6px; font-size:.83rem; }
   details.round-group { display:block; }

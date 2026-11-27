@@ -1,0 +1,40 @@
+---
+import Icon from './Icon.astro';
+import Avatar from './Avatar.astro';
+import SaveButton from './SaveButton.astro';
+import SocialLinks from './SocialLinks.astro';
+import { getFeaturedPeople } from '../data/people';
+import { getLocale, localize } from '../lib/locale';
+const { locale, t } = localize(getLocale(Astro.url.pathname));
+const people = getFeaturedPeople(locale);
+---
+<div class="people-index">
+  {people.map(person => <article id={person.id} class="person" data-resource={[person.name, person.handle, person.topic, person.work, person.description].join(' ')}>
+    <div class="portrait"><Avatar handle={person.handle}/></div>
+    <div class="person-copy"><h3>{person.name}</h3><p>{person.topic}</p>
+      <a class="work" href={person.url}><Icon name="book" size={14}/>{person.work} <Icon name="external" size={13}/></a>
+      <details><summary>{t('About','简介')}</summary><p>{person.description}</p></details>
+    </div>
+    <div class="person-actions"><SocialLinks handle={person.handle} name={person.name}/><SaveButton compact item={'/stars/#' + person.id} name={person.name}/></div>
+  </article>)}
+</div>
+<style>
+  .person-actions { display:flex; align-items:center; flex-wrap:wrap; justify-content:space-between; gap:2px; }
+  .people-index { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:clamp(25px,3.2vw,50px) clamp(17px,2.4vw,40px); }
+  .person { position:relative; min-width:0; scroll-margin-top:20px; }
+  .person:target .portrait { outline:2px solid var(--accent); outline-offset:4px; }
+  .portrait { aspect-ratio:1.27; overflow:hidden; background:var(--wash); }
+  .portrait :global(img) { object-position:50% 38%; }
+  .person-copy { margin-top:13px; }
+  .person-copy h3 { font:570 clamp(1.22rem,1.8vw,1.7rem)/1.12 var(--sans); letter-spacing:-.04em; }
+  .person-copy p { margin:4px 0 0; color:var(--muted); font-size:.92rem; line-height:1.5; }
+  .work { display:inline-flex; gap:5px; align-items:baseline; color:var(--accent); font-size:.82rem; font-weight:560; line-height:1.5; margin-top:8px; overflow-wrap:anywhere; }
+  .work :global(svg) { flex:none; align-self:center; }
+  .work:hover { text-decoration:underline; }
+  details { margin-top:7px; }
+  summary { min-height:22px; font-size:.79rem; color:var(--muted); cursor:pointer; width:fit-content; }
+  .person :global(.socials) { margin:3px 0 0 -8px; }
+  @media(max-width:950px) { .people-index { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+  @media(max-width:680px) { .people-index { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+  @media(max-width:345px) { .people-index { column-gap:13px; } }
+</style>

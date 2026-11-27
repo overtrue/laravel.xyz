@@ -1,0 +1,36 @@
+---
+import Icon from '../components/Icon.astro';
+import Base from '../layouts/Base.astro';
+import { adsEnabled, repository } from '../lib/site';
+import { getLocale, localize } from '../lib/locale';
+
+const { t } = localize(getLocale(Astro.url.pathname));
+const title = t('Privacy', '隐私');
+const description = t('How this site handles searches, tool input, reading progress, and page requests.', '了解本站如何处理搜索、工具输入、本机学习进度和页面访问。');
+---
+
+<Base {title} {description}>
+  <div class="shell narrow">
+    <header class="page-intro legal-head"><Icon name="shield" size={30}/><h1>{title}</h1><p>{t('Tools and search run in your browser.', '站内工具和筛选都在浏览器里运行。')}</p></header>
+    <article class="prose">
+      <h2>{t('Tool inputs and reading progress', '输入与进度')}</h2>
+      <p>{t('Search downloads a static index and matches terms locally. Command generation, validation, scheduling, and .env checks process inputs in the browser. In guest mode this browser stores your learning path, starting level, last lesson, completed tasks, reading marks, saved items and challenge stamps. Clear this site’s data to remove them.', '站内搜索会下载静态索引，查询词在本机匹配。命令生成、表单规则、调度和 .env 检查也在本机处理。游客模式下，学习路线和起点、上次打开的课时、任务进度、已读标记、收藏与挑战印章都保存在当前浏览器。清除本站的网站数据即可删除这些记录。')}</p>
+      <h2>{t('Optional accounts and sync', '可选账号与同步')}</h2>
+      <p>{t('Course challenges keep an unfinished round in the current tab. We keep the four choices from your highest-scoring completed round per course to calculate your score. Guest scores stay in this browser. Account scores sync with your learning progress.','课程测验会在当前标签页暂存作答进度。每门课保留最高分那一轮的四个选项，用来核算成绩。游客战绩保存在本机，账号战绩随学习进度同步。')}</p>
+      <p>{t('Guests keep their records on this device. If you create an account, we copy this browser’s learning records into your account. Signing in on another device loads your cloud records. You can also import guest progress from that device in My Orbit.', '游客记录保存在本机。创建账号时，我们会将这台设备的学习记录复制到账号中。在其他设备登录后会载入云端记录，也可以在「我的小宇宙」中主动导入那台设备的游客进度。')}</p>
+      <p>{t('Cloudflare D1 stores an account identifier, your passkey’s public credential, hashed recovery and session tokens, and the learning records listed above. Your passkey provider keeps the private key. A secure session cookie lasts 30 days. A short-lived cookie is used during sign-in. Tool inputs stay in your browser.', 'Cloudflare D1 保存账号标识、通行密钥的公开凭据、恢复码和会话令牌的哈希，以及前述学习记录。私钥由通行密钥提供方保管。安全会话 Cookie 有效期为 30 天，登录时还会使用短期 Cookie。工具输入始终留在浏览器中。')}</p>
+      <p>{t('Sign out to return to guest mode. Delete your cloud account in My Orbit to remove its live records and invalidate its sessions. Cloudflare’s managed database recovery has its own retention period.', '退出登录即可返回游客模式。在「我的小宇宙」删除账号会清除在线账号记录，并使会话失效。Cloudflare 的数据库恢复备份按其保留周期到期。')}</p>
+      <h2>{t('Hosting', '页面托管')}</h2>
+      <p>{t('Cloudflare hosts these pages. It handles connection information, including IP addresses and request paths, to serve the site and protect its network. External sites have their own policies.', '站点由 Cloudflare 托管。其提供页面和保护网络时会处理 IP 地址、请求路径等连接信息。外部站点按各自的政策处理访问。')} <a href="https://www.cloudflare.com/privacypolicy/">{t('Cloudflare privacy policy', 'Cloudflare 隐私政策')}</a></p>
+      {adsEnabled && (
+        <>
+          <h2>{t('Google advertising', 'Google 广告')}</h2>
+          <p>{t('Some guides use Google AdSense. Google and its advertising partners may use IP addresses, cookies, and similar identifiers to serve ads, measure performance, and prevent fraud. Manage consent using the advertising privacy message where available.', '部分教程使用 Google AdSense。Google 及其广告合作伙伴可能处理 IP 地址、Cookie 和类似标识符，用于提供广告、衡量效果及防止欺诈。适用地区可在广告隐私提示中管理同意。')} <a href={`https://policies.google.com/technologies/partner-sites?hl=${t('en', 'zh-CN')}`}>{t('How Google uses partner site data', 'Google 如何使用合作网站的数据')}</a></p>
+          <p>{t('Manage ad personalization in', '可在')} <a href="https://myadcenter.google.com/">{t('Google My Ad Center', 'Google 我的广告中心')}</a>{t('.', '管理广告个性化偏好。')}</p>
+        </>
+      )}
+      <h2>{t('Contact', '联系')}</h2>
+      <p>{t('Contact the maintainer through the', '关于本站隐私的问题可通过')} <a href={repository}>{t('GitHub repository', 'GitHub 仓库')}</a>{t('. Remove environment files, tokens, and other private information before posting publicly.', '联系维护者。公开提交前请移除环境配置文件、访问令牌等私人信息。')}</p>
+    </article>
+  </div>
+</Base>

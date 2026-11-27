@@ -1,0 +1,41 @@
+---
+import CoverArt from './CoverArt.astro';
+import type { Artwork } from '../data/artwork';
+interface Props { title: string; description: string; art: Artwork; bookshelf?: boolean }
+const { title, description, art, bookshelf = false } = Astro.props;
+const scenic = ['web','api','ship'].includes(art);
+---
+<header class:list={['directory-cover', { scenic, bookshelf }]}>
+  <div class="directory-copy">
+    <slot name="trail"/>
+    <h1>{title}</h1><p>{description}</p>
+    {Astro.slots.has('default') && <div class="directory-action"><slot/></div>}
+  </div>
+  {bookshelf ? <slot name="bookshelf"/> : <div class="directory-art"><CoverArt {art}/></div>}
+</header>
+<style>
+  .directory-cover { background:var(--paper); display:grid; grid-template-columns:minmax(0,1.35fr) minmax(0,.65fr); align-items:center; gap:clamp(20px,5vw,80px); padding-block:var(--intro-space); border-bottom:1px solid var(--line-strong); }
+  .directory-copy { min-width:0; }
+  .directory-copy h1 { max-width:21ch; }
+  .directory-copy p { max-width:52ch; margin:var(--space-3) 0 0; color:var(--muted); font-size:var(--lead); line-height:1.6; text-wrap:pretty; }
+  .directory-action { margin-top:16px; }
+  .directory-art { height:clamp(124px,14vw,194px); mix-blend-mode:multiply; }
+  .directory-art :global(svg) { height:100%; }
+  .bookshelf { grid-template-columns:minmax(0,1fr) minmax(0,.85fr); }
+  .scenic { grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr); }
+  .scenic .directory-art { height:clamp(185px,19vw,290px); }
+  .scenic .directory-art { background:#fcf0ea; }
+  .directory-art:has([data-vector="api"]) { background:#f3effb; }
+  .directory-art:has([data-vector="ship"]) { background:#292832; }
+  @media(max-width:680px) {
+    .directory-cover { grid-template-columns:minmax(0,1fr) minmax(75px,25%); gap:12px; }
+    .directory-art { height:clamp(95px,23vw,145px); }
+    .scenic { grid-template-columns:1fr; gap:19px; padding-bottom:0; }
+    .scenic .directory-art { height:clamp(105px,23vw,160px); }
+  }
+  @media(max-width:740px) { .directory-cover.bookshelf { display:grid; grid-template-columns:1fr; gap:24px; } }
+  @media(max-width:420px) {
+    .directory-cover:not(.scenic,.bookshelf) { grid-template-columns:1fr; }
+    .directory-cover:not(.scenic,.bookshelf) .directory-art { display:none; }
+  }
+</style>

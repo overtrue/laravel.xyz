@@ -1,0 +1,205 @@
+---
+import Sponsorship from '../components/Sponsorship.astro';
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import ProjectStage from '../components/ProjectStage.astro';
+import CoverArt from '../components/CoverArt.astro';
+import { tracks, learningStarts } from '../data/roadmap';
+import LearningResume from '../components/LearningResume.astro';
+import QuickLab from '../components/QuickLab.astro';
+import RequestEngine from '../components/RequestEngine.astro';
+import Avatar from '../components/Avatar.astro';
+import SocialLinks from '../components/SocialLinks.astro';
+import { getTools } from '../data/catalog';
+import { getOpenSourceProjects } from '../data/ecosystem';
+import { getFeaturedPeople } from '../data/people';
+import { adsEnabled, communityMission, getCourses } from '../lib/site';
+import { getLocale, localize } from '../lib/locale';
+
+const { locale, t, href } = localize(getLocale(Astro.url.pathname));
+const courses = await getCourses(locale);
+const paths = learningStarts.map(start => ({...start, url:href('/courses/') + '?route=' + start.track + '&level=' + start.skill}));
+const tools = getTools(locale);
+const projects = getOpenSourceProjects(locale);
+const people = ['jessarcher','jeffreyway','taylorotwell'].map(id => getFeaturedPeople(locale).find(person => person.id === id)!);
+const description = communityMission(locale) + ' ' + t('Free lessons for your first Laravel app and your next steps with forms, APIs and tests.', '从 Laravel 入门到基础提升，免费动手练习页面、表单、接口和测试。');
+---
+<Base title={t('Home', '首页')} {description} home>
+  <section class="frontispiece" aria-labelledby="home-title">
+    <div class="shell hero-inner"><div class="hero-copy">
+      <a class="mission" href={href('/about/')}><i></i>{adsEnabled ? t('Independent Laravel community','独立 Laravel 社区') : t('Independent, nonprofit community','独立非营利社区')}</a>
+      <h1 id="home-title"><span>{t('Learn Laravel','学 Laravel，')}</span>{' '}<em>{t('by building.','从实战开始。')}</em></h1>
+      <p>{t('New to Laravel? Try your first route in the browser. Already building forms? Give your app an API. Both paths are free.', '第一次学 Laravel，可以先在浏览器里试一条路由。已经会写表单，就给应用加个接口。两条路线都免费。')}</p>
+      <div class="hero-actions"><LearningResume home/><a class="inline-link" data-home-secondary href={paths[1].url}><span>{t('Build on the basics','从基础进阶')}</span> <Icon name="right" size={16}/></a></div>
+      <small class="return-hint" data-home-resume-context hidden></small>
+    </div><div class="hero-machine"><RequestEngine/></div></div>
+  </section>
+
+  <section class="shell path-section" aria-labelledby="shelf-title">
+    <div class="spread-label"><Icon name="compass" size={16}/>{t('Learning paths','学习路线')}</div>
+    <div class="section-title"><h2 id="shelf-title">{t('Where are you starting?','想从哪里开始？')}</h2><a class="inline-link" href={href('/courses/') + '#course-library'}>{t('All ' + courses.length + ' courses','全部 ' + courses.length + ' 门课')} <Icon name="right" size={16}/></a></div>
+    <div class="path-picker" data-path-picker>
+      <ol id="featured-courses" role="list">{paths.map(path => <li><a class="shelf-card" data-path={path.track} data-selected={path.track === 'web' || undefined} href={path.url}>
+        <Icon name={tracks[path.track].icon} size={22}/><span>{path.label[locale]}<small>{path.track === 'web' ? t('Routes → task board','第一条路由 → 任务清单') : t('JSON API → access tests','JSON 接口 → 权限测试')}</small></span><Icon name="right" size={19}/>
+      </a></li>)}</ol>
+      <div class="path-prints">
+        {paths.map(path => <a class="path-plate" data-plate={path.track} hidden={path.track !== 'web'} href={path.url}>
+          <div class="landscape"><CoverArt art={path.track}/></div>
+          <div class="plate-caption"><span>{path.goal[locale]}</span><Icon name="external" size={18}/></div>
+        </a>)}
+      </div>
+    </div>
+  </section>
+
+  <div class="shell home-lab"><QuickLab id="blade"/><a class="text-link challenge-trail-link" href={href('/challenges/')}><Icon name="flag" size={16}/>{t('Play the course challenges','进入课程闯关')} <Icon name="right" size={15}/></a></div>
+
+  <section class="people-spread" aria-labelledby="people-title"><div class="shell people-inner">
+    <div class="people-lead"><div class="spread-label"><Icon name="users" size={16}/>{t('Community voices','社区人物')}</div>
+      <h2 id="people-title">{t('Meet the','认识背后的')} <em>{t('makers.','开发者。')}</em></h2>
+      <a class="inline-link" href={href('/stars/')}>{t('People in Laravel','浏览社区人物')} <Icon name="right" size={17}/></a>
+    </div>
+    <ul role="list">{people.map(person => <li>
+      <a class="person-link" href={href('/stars/') + '#' + person.id}><div class="face"><Avatar handle={person.handle}/></div><strong>{person.name}</strong><small>{person.topic}</small></a>
+      <SocialLinks handle={person.handle} name={person.name}/>
+    </li>)}</ul>
+  </div></section>
+
+  <section class="shell workshop" aria-labelledby="workshop-title">
+    <div class="workshop-copy"><div class="spread-label"><Icon name="terminal" size={16}/>{t('The workshop','开发工作台')}</div>
+      <h2 id="workshop-title">{t('Under the','读懂项目里的')} <em>{t('hood.','PHP。')}</em></h2>
+      <p>{t('Read the PHP behind the taskboard, from form validation to a queued reminder.', '打开任务看板的 PHP 代码，看看表单如何验证，提醒任务如何进入队列。')}</p>
+      <a class="inline-link" href={href('/learn/')}>{t('Build the taskboard','动手做任务看板')} <Icon name="right" size={16}/></a></div>
+    <ProjectStage/>
+  </section>
+
+  <nav class="shell bookends" aria-label={t('Tools and open-source projects','工具与开源项目')}>
+    <a href={href('/ecosystem/') + '#projects'}><div><small>{t(projects.length + ' annotated projects',projects.length + ' 个项目导读')}</small><h2>{t('Read the source','读开源源码')}</h2></div><div class="object-print"><CoverArt art="atlas"/></div><Icon name="external" size={19}/></a>
+    <a href={href('/tools/')}><div><small>{t(tools.length + ' browser tools',tools.length + ' 款浏览器工具')}</small><h2>{t('The toolbox','开发工具箱')}</h2></div><div class="object-print"><CoverArt art="instruments"/></div><Icon name="external" size={19}/></a>
+  </nav>
+  <div class="shell"><Sponsorship/></div>
+</Base>
+
+<script>
+  const picker = document.querySelector<HTMLElement>('[data-path-picker]')!;
+  const paths = [...picker.querySelectorAll<HTMLAnchorElement>('[data-path]')];
+  const plates = [...picker.querySelectorAll<HTMLAnchorElement>('[data-plate]')];
+  function preview(id: string) {
+    paths.forEach(link => link.toggleAttribute('data-selected', link.dataset.path === id));
+    plates.forEach(plate => { plate.hidden = plate.dataset.plate !== id; });
+  }
+  paths.forEach(link => {
+    link.addEventListener('focus', () => preview(link.dataset.path!));
+    link.addEventListener('pointerenter', event => { if (event.pointerType !== 'touch') preview(link.dataset.path!); });
+  });
+</script>
+
+<style>
+  .challenge-trail-link { margin-top:12px; }
+  .frontispiece { overflow:hidden; background:var(--paper); border-bottom:1px solid var(--line); }
+  .hero-inner { display:grid; grid-template-columns:minmax(0,.84fr) minmax(0,1.16fr); gap:clamp(10px,2.3vw,38px); align-items:center; min-height:clamp(460px,39.5vw,645px); padding-block:clamp(38px,4.6vw,74px); }
+  .hero-copy { min-width:0; container-type:inline-size; }
+  .hero-machine { min-width:0; }
+  .mission,.spread-label { display:inline-flex; align-items:center; gap:9px; width:fit-content; font:400 .71rem/1.5 var(--mono); letter-spacing:.035em; }
+  .mission { min-height:32px; color:var(--muted); }
+  .mission i { width:7px; height:7px; border-radius:50%; background:var(--signal); }
+  .mission:hover,.inline-link:hover { color:var(--accent); }
+  .hero-copy h1 { margin:clamp(17px,2vw,32px) 0 21px; font:500 clamp(2.8rem,14.65cqi,5.55rem)/.99 var(--display); letter-spacing:-.05em; word-spacing:.055em; }
+  .hero-copy h1 span,.hero-copy h1 em { display:block; }
+  .hero-copy h1 em { color:var(--accent); font-weight:inherit; font-style:normal; }
+  .hero-copy h1:lang(zh-CN) { font-size:clamp(2.35rem,12.2cqi,4.6rem); line-height:1.2; letter-spacing:var(--title-tracking); }
+  em { font-style:normal; }
+  .hero-copy p,.workshop-copy p { max-width:33ch; margin:0; font-size:clamp(1rem,1.25vw,1.17rem); line-height:1.56; color:var(--muted); text-wrap:pretty; }
+  .hero-copy p:lang(zh-CN) { max-width:23em; }
+  .hero-actions { display:flex; flex-wrap:wrap; gap:8px 24px; align-items:center; margin-top:27px; }
+  .home-lab { margin-bottom:clamp(46px,5.4vw,80px); }
+  .return-hint { display:block; margin-top:10px; color:var(--muted); font-size:.81rem; }
+  .hero-actions :global(.primary) { min-height:48px; gap:14px; }
+  .inline-link { display:inline-flex; gap:8px; align-items:center; min-height:40px; width:fit-content; font-size:.92rem; font-weight:590; }
+  .inline-link :global(svg) { transition:transform var(--transition); }
+  .inline-link:hover :global(svg) { transform:translateX(3px); }
+  .path-section,.workshop { padding-block:var(--section-space); }
+  .spread-label { color:var(--accent); }
+  .section-title { display:flex; gap:10px 20px; flex-wrap:wrap; align-items:baseline; justify-content:space-between; margin:12px 0 clamp(24px,3vw,42px); }
+  .section-title h2,.people-lead h2,.workshop h2 { font:560 var(--section-title)/1.18 var(--display); letter-spacing:var(--section-tracking); }
+  .path-picker { display:grid; grid-template-columns:minmax(0,.74fr) minmax(0,1.26fr); gap:clamp(28px,5.4vw,85px); align-items:center; }
+  .path-picker ol,.people-inner ul { list-style:none; margin:0; padding:0; }
+  .shelf-card { display:grid; grid-template-columns:auto minmax(0,1fr) auto; align-items:center; gap:clamp(12px,1.55vw,23px); padding:clamp(13px,1.2vw,23px) 2px; border-top:1px solid var(--line-strong); }
+  .path-picker li:last-child .shelf-card { border-bottom:1px solid var(--line-strong); }
+  .shelf-card>span { font-size:clamp(1.12rem,1.85vw,1.52rem); letter-spacing:-.035em; font-weight:530; }
+  .shelf-card small,.bookends small { display:block; color:var(--muted); font:.72rem/1.5 var(--mono); letter-spacing:0; margin-top:5px; }
+  .shelf-card> :global(svg:first-child) { color:var(--muted); }
+  .shelf-card> :global(svg:last-child) { opacity:.38; transition:transform var(--transition),opacity var(--transition); }
+  .shelf-card[data-selected],.shelf-card[data-selected]> :global(svg:first-child) { color:var(--accent); }
+  .shelf-card[data-selected]> :global(svg:last-child) { opacity:1; transform:translateX(3px); }
+  .path-plate { display:block; }
+  .landscape { aspect-ratio:2.72; overflow:hidden; background:radial-gradient(ellipse at 64% 45%,#fff8f5,transparent 70%),#f9eee8; }
+  [data-plate="api"] .landscape { background:radial-gradient(ellipse at 64% 45%,#fbfaff,transparent 70%),#eeebf8; }
+  .plate-caption { display:flex; align-items:center; justify-content:space-between; gap:16px; margin-top:10px; font-size:.88rem; line-height:1.5; color:var(--muted); }
+  .plate-caption :global(svg) { color:var(--ink); }
+  .people-spread { background:var(--night); color:var(--night-paper); }
+  .people-inner { display:grid; grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr); gap:clamp(24px,4.5vw,80px); padding-block:clamp(44px,5.5vw,80px); align-items:center; }
+  .people-lead .spread-label { color:#f4ab82; }
+  .people-lead h2,.workshop h2 { margin:17px 0 22px; }
+  .people-lead h2 em,.workshop h2 em { display:block; font-weight:inherit; font-style:normal; }
+  .people-lead h2 em { color:#fc937b; }
+  .people-lead .inline-link:hover { color:#ffc1a4; }
+  .people-inner ul { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:clamp(12px,2.7vw,42px); }
+  .people-inner li { min-width:0; }
+  .face { aspect-ratio: .99; overflow:hidden; background:#566b63; }
+  .face :global(img) { transition:transform var(--art-transition); }
+  .person-link:hover .face :global(img) { transform:scale(1.04); }
+  .person-link strong { display:block; margin-top:11px; font:540 clamp(1.05rem,1.7vw,1.6rem)/1.12 var(--display); letter-spacing:-.02em; }
+  .person-link small { display:block; color:#d1d9ca; margin-top:5px; font-size:.82rem; }
+  .people-inner :global(.socials) { margin:4px 0 0 -8px; --muted:#c0cbc0; --accent:#ffe4c9; --accent-wash:#33463f; }
+  .workshop { display:grid; grid-template-columns:minmax(0,.73fr) minmax(0,1.27fr); align-items:center; gap:clamp(28px,5.6vw,85px); }
+  .workshop h2 em { color:var(--accent); }
+  .workshop-copy .inline-link { margin-top:13px; }
+  .bookends { display:grid; grid-template-columns:1fr 1fr; column-gap:clamp(18px,5vw,80px); }
+  .bookends a { display:grid; align-items:center; grid-template-columns:minmax(0,1fr) minmax(65px,140px) auto; gap:12px; padding:16px 0; border-block:1px solid var(--line-strong); }
+  .bookends h2 { font:530 clamp(1.5rem,2.45vw,2.3rem)/1.12 var(--display); letter-spacing:-.025em; }
+  .bookends small { margin:0 0 5px; }
+  .bookends a { background:var(--paper); }
+  .object-print { height:92px; mix-blend-mode:multiply; }
+  .object-print :global(svg) { height:100%; }
+  .bookends a:hover h2 { color:var(--accent); }
+  @media(prefers-reduced-motion:no-preference) {
+    .path-plate:not([hidden]) .landscape :global(svg) { animation:arrive .35s ease-out both; }
+    @keyframes arrive { from { opacity:.75; transform:translateY(3px); } to { opacity:1; transform:none; } }
+  }
+  @media(max-width:900px) and (min-width:741px) { .hero-inner { min-height:410px; grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr); } .hero-actions { gap:6px 13px; } }
+  @media(max-width:740px) {
+    .hero-inner { grid-template-columns:1fr; min-height:0; gap:23px; padding-block:32px 17px; }
+    .hero-copy h1 { font-size:clamp(2.3rem,14.4cqi,4.65rem); margin:13px 0; }
+    .hero-copy h1:lang(zh-CN) { font-size:clamp(2.05rem,11.7cqi,4.2rem); }
+    .hero-machine { width:min(100%,620px); margin-inline:auto; justify-self:center; }
+    .hero-copy p { max-width:39ch; }
+    .hero-actions { margin-top:15px; column-gap:14px; }
+    .hero-actions :global(.button) { min-height:45px; padding:10px 14px; font-size:.9rem; gap:8px; }
+    .hero-actions .inline-link { font-size:.85rem; gap:5px; }
+    .path-picker,.workshop,.people-inner { grid-template-columns:1fr; gap:23px; }
+    .path-picker ol { display:flex; flex-wrap:wrap; align-items:stretch; column-gap:15px; }
+    .path-picker li { flex:1 1 115px; }
+    .shelf-card,.path-picker li:last-child .shelf-card { height:100%; grid-template-columns:1fr; align-content:start; gap:8px; border-top:2px solid var(--line); border-bottom:0; padding:12px 0 0; }
+    .shelf-card[data-selected] { border-color:var(--accent); }
+    .shelf-card>span { font-size:1.06rem; }
+    .shelf-card > :global(svg:last-child) { display:none; }
+    .landscape { aspect-ratio:2.6; }
+    .people-lead h2 em,.workshop h2 em { display:inline; }
+    .people-lead h2,.workshop h2 { margin:10px 0; }
+    .bookends { grid-template-columns:1fr; }
+    .bookends a + a { border-top:0; }
+    .bookends a { grid-template-columns:minmax(0,1fr) 100px auto; }
+    .object-print { height:70px; }
+  }
+  @media(max-width:435px) {
+    .path-picker ol { display:block; }
+    .shelf-card,.path-picker li:last-child .shelf-card { display:grid; grid-template-columns:20px 1fr 16px; align-items:center; gap:12px; padding-block:12px; border-top:1px solid var(--line-strong); }
+    .shelf-card>span { display:flex; flex-wrap:wrap; align-items:baseline; gap:3px 10px; }
+    .shelf-card small { margin:0; }
+    .shelf-card > :global(svg:last-child) { display:block; }
+    .people-inner ul { gap:10px; }
+    .people-inner :global(.socials) { gap:0; }
+    .people-inner :global(.socials a) { width:28px; }
+    .person-link small { font-size:.74rem; }
+  }
+</style>

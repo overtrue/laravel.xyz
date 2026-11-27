@@ -1,0 +1,27 @@
+---
+import Icon from '../components/Icon.astro';
+import Sponsorship from '../components/Sponsorship.astro';
+import Base from '../layouts/Base.astro';
+import { communityMission, repository } from '../lib/site';
+import { getLocale, localize, siteNames } from '../lib/locale';
+
+const { locale, t } = localize(getLocale(Astro.url.pathname));
+const title = t(`About ${siteNames[locale]}`, `关于 ${siteNames[locale]}`);
+const description = `${communityMission(locale)} ${t('Maintained by overtrue.', '由 overtrue 维护。')}`;
+---
+
+<Base {title} {description}>
+  <div class="shell narrow">
+    <header class="page-intro legal-head"><Icon name="orbit" size={30}/><h1>{title}</h1><p>{description}</p></header>
+    <article class="prose">
+      <p>{t('New to Laravel? Try a route in your browser, then build a task list. If you already write pages and forms, give that same list an API and test who can edit it. Both learning paths are free.', '刚接触 Laravel，可以先在浏览器里试一条路由，再做出自己的任务清单。已经会写页面和表单，可以给同一份清单加上接口，再测试谁能修改任务。两条路线都免费。')}</p>
+      <h2>{t('How resources are selected', '资源如何挑选')}</h2>
+      <p>{t('Documentation links point to the relevant version. Courses and books link to the author or publisher. For package requirements and maintenance status, check Packagist and the maintainer’s repository.', '文档尽量链接到对应的版本，课程和电子书优先链接到作者或发行方。扩展包的版本、依赖和维护状态以 Packagist 与维护者的仓库为准。')}</p>
+      <h2>{t('Feedback', '反馈')}</h2>
+      <p>{t('Report a mistake or suggest a resource on', '欢迎报告错误或建议补充资源。')} <a href={`${repository}/issues`}>GitHub Issues</a>{t('. For a code example, include the page, PHP version, and Laravel version.', ' 上涉及代码示例的反馈请附上页面地址、PHP 版本和框架版本。')}</p>
+      <h2>{t('Attribution', '独立说明')}</h2>
+      <p>{t('Laravel is a trademark of its owner. This site is an independent community project. Third-party books, courses, and software are provided by their respective authors and owners.', 'Laravel 是其权利人的商标。本站是独立社区项目。第三方书籍、课程及软件由各自的作者和权利人提供。')}</p>
+    </article>
+    <Sponsorship/>
+  </div>
+</Base>

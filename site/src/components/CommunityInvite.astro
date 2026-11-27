@@ -1,0 +1,23 @@
+---
+import Icon from './Icon.astro';
+import { repository } from '../lib/site';
+import { getLocale, localize } from '../lib/locale';
+interface Props { people?: boolean }
+const { people = false } = Astro.props;
+const { t } = localize(getLocale(Astro.url.pathname));
+const issue = new URL(repository + '/issues/new');
+issue.searchParams.set('title',people ? t('Community nomination: ','社区人物推荐：') : t('Resource suggestion: ','资源推荐：'));
+issue.searchParams.set('body',people ? t('Who would you recommend?\n\nLink to their work:\n\nWhat did you learn from them?','你想推荐谁？\n\n作品链接：\n\n你从中学到了什么？') : t('Resource name and link:\n\nWhat did it help you build or learn?','资源名称及链接：\n\n它帮助你做出了什么，或学会了什么？'));
+---
+<aside class="invite"><div class="symbol"><Icon name="branch" size={23}/></div>
+  <div><h2>{people ? t('Who helped you learn Laravel?','谁帮你学会了 Laravel？') : t('What belongs on this list?','还有什么值得收录？')}</h2>
+  <p>{people ? t('Tell the community about their work.','把对你有帮助的作品介绍给社区。') : t('Share a Laravel resource you actually use.','和社区分享一个你真正用过的 Laravel 资源。')}</p></div>
+  <a href={issue.href}>{t('Suggest on GitHub','去 GitHub 推荐')} <Icon name="external" size={16}/></a>
+</aside>
+<style>
+.invite { display:flex; align-items:center; gap:14px 18px; margin-top:clamp(34px,4vw,60px); padding:22px clamp(14px,2vw,28px); background:#edf1eb; border-left:3px solid #66836d; }
+.symbol { flex:none; color:#486b51; } .invite h2 { font:580 clamp(1.05rem,1.55vw,1.35rem)/1.25 var(--display); letter-spacing:-.025em; } .invite p { margin:4px 0 0; color:#4f5e52; font-size:.88rem; line-height:1.5; }
+.invite a { display:inline-flex; align-items:center; gap:5px; flex:none; margin-left:auto; min-height:38px; font-weight:600; font-size:.85rem; color:#36593e; }
+.invite a:hover { text-decoration:underline; text-underline-offset:4px; }
+@media(max-width:550px) { .invite { display:grid; grid-template-columns:auto minmax(0,1fr); gap:3px 12px; } .invite a { grid-column:2; margin:0; } }
+</style>

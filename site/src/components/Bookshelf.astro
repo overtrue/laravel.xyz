@@ -1,0 +1,41 @@
+---
+import Icon from './Icon.astro';
+import SaveButton from './SaveButton.astro';
+import { getResources } from '../data/catalog';
+import { getLocale, localize } from '../lib/locale';
+const { locale, t } = localize(getLocale(Astro.url.pathname));
+const books = getResources('reading',locale).filter(entry => entry.category === 'book').slice(0,3);
+---
+<fieldset class="book-desk"><legend class="sr-only">{t('Choose a book to preview','选择一本书查看详情')}</legend>
+  <div class="book-deck">{books.map((book,i) => <label>
+    <input type="radio" class="sr-only" name="book-preview" value={i} checked={i===0}/>
+    <span class={'jacket jacket-' + i}><strong>{book.title}</strong>
+      <svg viewBox="0 0 100 53" fill="none" aria-hidden="true">
+        {i===0 && <g stroke="currentColor" stroke-width="2"><path d="M8 45h82M13 43V30h17v13m0-13V20h17v23m0-23V10h17v33m0-33V4h16v39"/><path d="M8 31 67 2m-9 0h9v7"/></g>}
+        {i===1 && <g stroke="currentColor" stroke-width="1.9"><path d="M24 6H8v40h17m47-40h16v40H71M28 16h14v14H28zM58 27h13v13H58zM42 23h14v11h2"/><circle cx="58" cy="10" r="6"/></g>}
+        {i===2 && <g stroke="currentColor" stroke-width="3" stroke-linejoin="round"><path d="m22 10-12 17 12 16m55-33 12 17-12 16M57 4 41 49"/><path d="M31 44h6m25-35h6" stroke-width="1.2"/></g>}
+      </svg>
+    </span>
+  </label>)}</div>
+  {books.map((book,i) => <div class="edition" data-edition={i}><span>{book.detail}</span><a href={book.href}>{t('Visit book site','去书籍官网')} <Icon name="external" size={14}/><span class="sr-only"> · {book.title}</span></a><SaveButton compact item={book.key} name={book.title}/></div>)}
+</fieldset>
+<style>
+.book-desk { min-width:0; margin:0; padding:clamp(15px,2.2vw,26px) clamp(15px,2.5vw,36px) 0; border:0; background:#eeeae2; }
+.book-deck { display:flex; align-items:flex-end; justify-content:center; gap:clamp(6px,1.2vw,18px); padding-top:5px; }
+.book-deck label { min-width:0; flex:1; max-width:152px; cursor:pointer; }
+.jacket { position:relative; display:flex; flex-direction:column; justify-content:space-between; min-width:0; aspect-ratio:.83; padding:11% 8% 8% 14%; overflow:hidden; color:#4e3829; background:#e4bc92; border:1px solid #0003; transform-origin:center bottom; transition:transform var(--transition); }
+.jacket:before { content:''; position:absolute; inset:0 auto 0 5%; border-left:1px solid currentColor; opacity:.42; }
+.jacket strong { font:650 clamp(.88rem,1.55vw,1.42rem)/1.05 var(--display); letter-spacing:-.043em; overflow-wrap:anywhere; }
+.jacket svg { width:100%; height:auto; max-height:42%; }
+.jacket-1 { background:#374c49; color:#e4efda; } .jacket-2 { background:#dbd2ec; color:#4d375f; }
+.book-deck input:checked+.jacket { transform:translateY(-6px); box-shadow:0 6px 0 -1px #655a53; }
+.book-deck input:focus-visible+.jacket { outline:2px solid var(--accent); outline-offset:3px; }
+.book-deck label:hover .jacket { transform:translateY(-5px); }
+.edition { display:none; border-top:2px solid #746b65; align-items:center; gap:5px 10px; min-height:45px; }
+.book-desk:has([value="0"]:checked) [data-edition="0"],.book-desk:has([value="1"]:checked) [data-edition="1"],.book-desk:has([value="2"]:checked) [data-edition="2"] { display:flex; }
+.edition>span { margin-right:auto; color:#564f47; font-size:.76rem; }
+.edition a { display:inline-flex; align-items:center; gap:5px; min-height:38px; font-size:.82rem; font-weight:585; }
+.edition a:hover { text-decoration:underline; } .edition :global(.save-item) { width:32px; min-height:36px; height:36px; }
+@media(max-width:740px) { .book-deck label { max-width:124px; } .jacket strong { font-size:clamp(.85rem,3.8vw,1.2rem); } }
+@media(prefers-reduced-motion:reduce) { .jacket { transition:none; } }
+</style>

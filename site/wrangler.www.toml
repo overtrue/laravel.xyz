@@ -1,0 +1,6 @@
+name = "php-fieldbook-www"
+main = "redirect-www.mjs"
+compatibility_date = "2026-11-20"
+workers_dev = false
+preview_urls = false
+routes = [{ pattern = "www.laravel.xyz/*", zone_name = "laravel.xyz" }]

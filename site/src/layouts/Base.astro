@@ -1,0 +1,135 @@
+---
+import '@fontsource-variable/instrument-sans';
+import instrumentLatin from '@fontsource-variable/instrument-sans/files/instrument-sans-latin-wght-normal.woff2?url';
+import '@fontsource/ibm-plex-mono/latin-400.css';
+import '../styles/base.css';
+import Brand from '../components/Brand.astro';
+import Icon from '../components/Icon.astro';
+import Search from '../components/Search.astro';
+import { adsEnabled, communityMission, publisher, repository, sponsor } from '../lib/site';
+import { getLocale, localize, siteNames, withoutLocale } from '../lib/locale';
+
+interface Props {
+  title: string;
+  description: string;
+  home?: boolean;
+  article?: boolean;
+  noIndex?: boolean;
+}
+
+const { title, description, home, article, noIndex } = Astro.props;
+const { locale, t, href } = localize(getLocale(Astro.url.pathname));
+const siteName = siteNames[locale];
+const englishPath = withoutLocale(Astro.url.pathname);
+const chinesePath = localize('zh').href(englishPath);
+const canonical = Astro.site && new URL(Astro.url.pathname, Astro.site);
+const pageTitle = home ? `${siteName} · ${t('Free Laravel courses and ecosystem guide', '免费 Laravel 课程与生态选型')}` : `${title} · ${siteName}`;
+const sharedAnchors = ['/courses/', '/challenges/', '/ecosystem/', '/stars/', '/orbit/'].includes(englishPath);
+const navigation = [
+  { title: t('Free courses', '免费课程'), path: '/courses/', icon: 'route' },
+  { title: t('Ecosystem', '生态'), path: '/ecosystem/', icon: 'orbit' },
+  { title: t('Docs', '文档'), path: '/docs/', icon: 'books' },
+  { title: t('Packages', '扩展包'), path: '/packages/', icon: 'package' },
+  { title: t('Tools', '工具'), path: '/tools/', icon: 'tools' },
+  { title: t('People', '人物'), path: '/stars/', icon: 'users' },
+] as const;
+---
+
+<!doctype html>
+<html lang={locale === 'zh' ? 'zh-CN' : 'en'}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preload" href={instrumentLatin} as="font" type="font/woff2" crossorigin="anonymous" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#fcfcfb" />
+    {(!canonical || noIndex) && <meta name="robots" content="noindex, follow" />}
+    {canonical && !noIndex && <link rel="canonical" href={canonical} />}
+    {canonical && home && <meta name="google-adsense-account" content={publisher} />}
+    {Astro.site && !noIndex && (
+      <>
+        <link rel="alternate" hreflang="en" href={new URL(englishPath, Astro.site)} />
+        <link rel="alternate" hreflang="zh-CN" href={new URL(chinesePath, Astro.site)} />
+        <link rel="alternate" hreflang="x-default" href={new URL(englishPath, Astro.site)} />
+      </>
+    )}
+    <meta property="og:site_name" content={siteName} />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={article ? 'article' : 'website'} />
+    {canonical && <meta property="og:url" content={canonical} />}
+    <link rel="icon" href="/orbit-mark.svg" type="image/svg+xml" />
+    <title>{pageTitle}</title>
+    {adsEnabled && article && (
+      <script is:inline async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${publisher}`} crossorigin="anonymous"></script>
+    )}
+  </head>
+  <body>
+    <a class="skip-link" href="#main">{t('Skip to content', '跳至内容')}</a>
+    <header class="site-header">
+      <div class="shell header-inner">
+        <Brand />
+        <nav class="main-nav" aria-label={t('Main navigation', '主导航')}>
+          {navigation.map((item) => {
+            const inCourses = item.path === '/courses/' && (englishPath.startsWith('/learn/') || englishPath.startsWith('/challenges/'));
+            const active = englishPath.startsWith(item.path) || inCourses;
+            return <a href={href(item.path)} class:list={{active}}
+              aria-current={englishPath === item.path ? 'page' : active ? 'location' : undefined}><Icon name={item.icon} size={15}/>{item.title}</a>;
+          })}
+        </nav>
+        <div class="header-actions">
+          <a class="orbit-link" href={href('/orbit/')} aria-current={englishPath === '/orbit/' ? 'page' : undefined} aria-label={t('My Orbit','我的小宇宙')} title={t('My Orbit','我的小宇宙')}><Icon name="orbit" size={18}/><span>{t('My Orbit','我的小宇宙')}</span><span class="orbit-short" aria-hidden="true">{t('My Orbit','我的')}</span></a>
+          <Search />
+          <a class="language-link" data-preserve-fragment={noIndex ? undefined : sharedAnchors ? 'all' : 'lab'} href={noIndex ? t('/zh/', '/') : t(chinesePath, englishPath)} hreflang={t('zh-CN', 'en')} lang={t('zh-CN', 'en')}>
+            <Icon name="language" size={16} />{t('中文', 'English')}
+          </a>
+        </div>
+      </div>
+    </header>
+    <script is:inline>
+      (() => {
+        const link = document.querySelector('[data-preserve-fragment]');
+        if (!link) return;
+        const shared = ['#quick-lab','#try-it','#checkpoint-title','#local-guide'];
+        function keepFragment() {
+          link.hash = link.dataset.preserveFragment === 'all' || shared.includes(location.hash) ? location.hash : '';
+        }
+        keepFragment();
+        window.addEventListener('hashchange',keepFragment);
+      })();
+    </script>
+    <main id="main" tabindex="-1"><slot /></main>
+    <div class="save-notice" data-save-notice role="status"></div>
+    <footer class="site-footer">
+      <div class="shell footer-main">
+        <div>
+          <Brand />
+          <p>{communityMission(locale)}</p>
+        </div>
+        <nav aria-label={t('Footer navigation', '页脚')}>
+          <a href={href('/courses/')}>{t('Free learning paths','免费学习路线')}</a>
+          <a href={href('/challenges/')}>{t('Course challenges','课程闯关')}</a>
+          <a href={href('/ecosystem/')}>{t('Ecosystem', '生态选型')}</a>
+          <a href={href('/orbit/')}>{t('My Orbit','我的小宇宙')}</a>
+          <a href={href('/resources/')}>{t('Resource directory', '资源库')}</a>
+          <a href={href('/reading/')}>{t('Reading list', '书单与课程')}</a>
+          <a href={href('/sites/')}>{t('Community', '社区')}</a>
+          <a href={href('/about/')}>{t('About', '关于本站')}</a>
+          <a href={href('/privacy/')}>{t('Privacy', '隐私')}</a>
+          <a href={sponsor} class="footer-sponsor"><Icon name="heart" size={15}/>{t('Sponsor overtrue','赞助 overtrue')}</a>
+          <a href={repository}>GitHub <Icon name="external" size={14} /></a>
+        </nav>
+      </div>
+      <div class="shell footer-note">
+        <span>{locale === 'zh' ? '由 ' : 'Maintained by '}<a href="https://github.com/overtrue">overtrue</a>{locale === 'zh' ? ' 维护' : ''}</span>
+        <span>{t('Laravel is a trademark of its owner. This site is independently maintained.', 'Laravel 是其权利人的商标。本站由社区独立维护。')}</span>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<script>
+  import '../scripts/clipboard';
+  import '../scripts/bookmarks';
+  import '../scripts/account-sync';
+</script>

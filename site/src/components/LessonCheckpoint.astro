@@ -1,0 +1,30 @@
+---
+import Icon from './Icon.astro';
+import { getLocale, localize } from '../lib/locale';
+interface Props { lesson:string; course:string; prompt:string }
+const { lesson, course, prompt } = Astro.props;
+const { t, href } = localize(getLocale(Astro.url.pathname));
+---
+<section class="checkpoint" aria-labelledby="checkpoint-title">
+  <h2 id="checkpoint-title"><Icon name="flag" size={20}/>{t('Check your work', '检验一下')}</h2>
+  <p>{prompt}</p>
+  <div class="checkpoint-actions">
+    <button class="button primary" type="button" data-complete={lesson} aria-pressed="false" hidden><Icon name="check" size={17}/><span>{t('Complete task', '完成任务')}</span></button>
+    <a class="text-link" data-back-course={course} href={href('/courses/')}><Icon name="map" size={16}/>{t('Back to roadmap','返回路线图')}</a>
+  </div>
+  <small data-completion-status role="status"></small>
+  <div class="checkpoint-receipt" data-receipt hidden>
+    <strong data-receipt-label></strong><a class="text-link" data-next-checkpoint href={href('/orbit/')}></a>
+  </div>
+</section>
+<style>
+  .checkpoint { margin:28px 0 22px; padding:clamp(15px,2.2vw,25px); background:#eef3e9; border-inline-start:3px solid #718e60; }
+  h2 { display:flex; align-items:center; gap:8px; font:560 clamp(1.2rem,2vw,1.55rem)/1.25 var(--display); letter-spacing:-.025em; }
+  h2 :global(svg) { color:#48683d; flex:none; }
+  p { margin:7px 0 14px; line-height:1.5; }
+  .checkpoint-actions { display:flex; gap:5px 18px; flex-wrap:wrap; align-items:center; }
+  button[aria-pressed="true"] { color:white; background:var(--ink); border-color:var(--ink); }
+  small:not(:empty) { display:block; margin-top:8px; color:var(--muted); }
+  .checkpoint-receipt { display:grid; gap:4px; justify-items:start; margin-top:14px; padding-top:12px; border-top:1px solid #c6d4bd; color:#375439; font-size:.9rem; }
+  .checkpoint-receipt a { color:#315c37; }
+</style>

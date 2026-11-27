@@ -1,0 +1,171 @@
+---
+import Icon from './Icon.astro';
+import { getLocale, localize } from '../lib/locale';
+
+const { t, href } = localize(getLocale(Astro.url.pathname));
+---
+
+<div class="search-entry">
+  <a class="search-trigger" href={href('/resources/')} data-search-open aria-haspopup="dialog" aria-keyshortcuts="Control+K Meta+K" aria-label={t('Search this site', '站内搜索')}>
+    <Icon name="search" size={17} />
+    <span>{t('Search', '搜索')}</span>
+  </a>
+  <kbd data-shortcut aria-hidden="true">⌘ K</kbd>
+</div>
+
+<dialog class="site-search" id="site-search" aria-labelledby="search-title" data-index={href('/search.json')}>
+  <form method="dialog" class="search-form" role="search">
+    <label id="search-title" class="sr-only" for="search-query">{t('Search guides, tools, and resources', '搜索教程、工具和资源')}</label>
+    <Icon name="search" size={22} />
+    <input id="search-query" type="search" placeholder={t('Search guides, tools, and resources…', '搜索教程、工具和资源…')} autocomplete="off" />
+    <button type="button" class="icon-button" data-search-close aria-label={t('Close search', '关闭搜索')}><Icon name="close" size={20} /></button>
+  </form>
+  <div class="search-panel">
+    <p class="search-status" aria-live="polite">{t('Popular pages', '常用入口')}</p>
+    <ul class="search-results" id="search-results"></ul>
+  </div>
+</dialog>
+
+<script>
+  import { getLocale, localize } from '../lib/locale';
+
+  interface Entry { title: string; description: string; href: string; type: string; keywords: string }
+
+  const dialog = document.querySelector<HTMLDialogElement>('#site-search')!;
+  const input = document.querySelector<HTMLInputElement>('#search-query')!;
+  const list = document.querySelector<HTMLUListElement>('#search-results')!;
+  const status = dialog.querySelector<HTMLElement>('.search-status')!;
+  const { t, href } = localize(getLocale(location.pathname));
+  let entries: Entry[] | undefined;
+  let loading = false;
+  let failed = false;
+
+  function render() {
+    list.replaceChildren();
+    if (!entries) {
+      status.textContent = failed ? t('Search is unavailable. You can still browse the resource directory.', '搜索暂时不可用，可以到资源库浏览。') : t('Loading search index…', '正在加载搜索索引…');
+      if (failed) {
+        const item = document.createElement('li');
+        const link = document.createElement('a');
+        link.href = href('/resources/');
+        link.textContent = t('Browse resources', '打开资源库');
+        item.append(link);
+        list.append(item);
+      }
+      return;
+    }
+
+    const query = input.value.normalize('NFKC').toLowerCase().trim();
+    const words = query.split(/\s+/);
+    const matches = query ? entries.filter(({ title, description, keywords, type }) => {
+      const text = `${title} ${description} ${keywords} ${type}`.normalize('NFKC').toLowerCase();
+      return words.every((word) => text.includes(word));
+    }).sort((a, b) => Number(b.title.toLowerCase().includes(query)) - Number(a.title.toLowerCase().includes(query))) : entries.slice(0, 5);
+
+    status.textContent = !query ? t('Popular pages', '常用入口') : matches.length
+      ? t(`${matches.length} ${matches.length === 1 ? 'result' : 'results'}`, `找到 ${matches.length} 项`)
+      : t('No matches. Try “queues” or “validation”.', '没有匹配项，试试「队列」或「验证」。');
+    for (const entry of matches.slice(0, 10)) {
+      const item = document.createElement('li');
+      const link = document.createElement('a');
+      const title = document.createElement('strong');
+      const type = document.createElement('small');
+      link.href = entry.href;
+      title.textContent = entry.title;
+      type.textContent = entry.type;
+      link.append(title, type);
+      item.append(link);
+      list.append(item);
+    }
+  }
+
+  async function openSearch() {
+    if (!dialog.open) dialog.showModal();
+    input.focus();
+    if (entries || loading) return;
+
+    loading = true;
+    failed = false;
+    render();
+    try {
+      const response = await fetch(dialog.dataset.index!);
+      if (!response.ok) throw new Error('Search index unavailable');
+      entries = await response.json();
+    } catch {
+      failed = true;
+    } finally {
+      loading = false;
+      render();
+    }
+  }
+
+  document.querySelector('[data-search-open]')?.addEventListener('click', (event) => {
+    if (!(event instanceof MouseEvent) || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    void openSearch();
+  });
+  document.querySelector('[data-search-close]')?.addEventListener('click', () => dialog.close());
+  document.addEventListener('keydown', (event) => {
+    if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === 'k') {
+      event.preventDefault();
+      void openSearch();
+    }
+  });
+  const shortcut = document.querySelector('[data-shortcut]');
+  if (shortcut && !/Mac|iPhone|iPad/.test(navigator.userAgent)) shortcut.textContent = 'Ctrl K';
+
+  input.addEventListener('input', render);
+  input.addEventListener('keydown', (event) => {
+    if (event.isComposing) return;
+    if (event.key === 'Escape') {
+      event.preventDefault();
+      dialog.close();
+      return;
+    }
+    const firstResult = list.querySelector<HTMLAnchorElement>('a');
+    if (event.key === 'ArrowDown' && firstResult) {
+      event.preventDefault();
+      firstResult.focus();
+    }
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      firstResult?.click();
+    }
+  });
+  list.addEventListener('click', (event) => {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    if (event.target instanceof Element && event.target.closest('a')) dialog.close();
+  });
+  list.addEventListener('keydown', (event) => {
+    if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') return;
+    const links = Array.from(list.querySelectorAll('a'));
+    const index = links.findIndex((link) => link === document.activeElement);
+    event.preventDefault();
+    if (event.key === 'ArrowUp' && index <= 0) input.focus();
+    else links[index + (event.key === 'ArrowDown' ? 1 : -1)]?.focus();
+  });
+</script>
+
+<style>
+  .search-entry { position: relative; display: flex; align-items: center; border: 1px solid var(--line); border-radius: 24px; background: transparent; color: var(--muted); }
+  .search-entry:hover { color: var(--ink); border-color: var(--line-strong); background: var(--wash); }
+  .search-trigger { display: inline-flex; align-items: center; gap: var(--space-2); min-height: 36px; padding: 7px 10px; font-size: .875rem; white-space: nowrap; }
+  .search-trigger::after { content: ''; position: absolute; inset: -1px; border-radius: 24px; }
+  .search-trigger:focus-visible { outline: none; }
+  .search-trigger:focus-visible::after { outline: 2px solid var(--accent); outline-offset: 4px; }
+  kbd { pointer-events: none; margin-right: 9px; font: 650 .72rem var(--mono); padding: 3px 4px; background: var(--wash); border: 1px solid var(--line); border-radius: 4px; color: var(--muted); }
+  .site-search { width: min(590px, calc(100% - 32px)); margin: min(17vh, 126px) auto auto; max-height: min(65vh, 670px); border: 1px solid var(--line); border-radius: var(--radius-lg); background: var(--surface); color: var(--ink); padding: 0; box-shadow: 0 24px 70px #271a1538; }
+  .site-search::backdrop { background: #241c1980; backdrop-filter: blur(3px); }
+  .search-form { display: flex; align-items: center; gap: 10px; padding: 12px 14px 12px 18px; border-bottom: 1px solid var(--line); }
+  .search-form input { flex: 1; width: 0; border: 0; background: transparent; color: var(--ink); padding: 8px 0; }
+  .search-form input:focus { outline: none; }
+  .search-form:focus-within { box-shadow: inset 0 -2px var(--accent); }
+  .search-panel { padding: 10px 13px 14px; }
+  .search-status { font-size: .82rem; color: var(--muted); margin: 6px 7px 8px; }
+  .search-results { list-style: none; padding: 0; margin: 0; }
+  .search-results :global(a) { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; padding: 11px 9px; border-radius: 8px; }
+  .search-results :global(a:hover), .search-results :global(a:focus-visible) { background: var(--wash); }
+  .search-results :global(small) { color: var(--muted); white-space: nowrap; }
+  @media (max-width: 600px) { kbd { display: none; } }
+  @media (max-width: 520px) { .search-trigger > span { display: none; } }
+</style>

@@ -1,0 +1,23 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { getLocale, localize } from '../lib/locale';
+
+const { t, href } = localize(getLocale(Astro.url.pathname));
+const title = t('Page not found', '找不到这个页面');
+const description = t('Try the resource directory or head back to the home page.', '可以去资源库找找，也可以返回首页。');
+---
+
+<Base {title} {description} noIndex>
+  <div class="shell narrow">
+    <header class="page-intro legal-head"><Icon name="compass" size={30}/><h1>{title}</h1><p>{description}</p></header>
+    <div class="recovery-links">
+      <a class="button primary" href={href('/resources/')}>{t('Browse resources', '浏览资源库')} <Icon name="right" size={17} /></a>
+      <a class="button" href={href('/')}>{t('Back home', '返回首页')}</a>
+    </div>
+  </div>
+</Base>
+
+<style>
+  .recovery-links { display:flex; flex-wrap:wrap; gap:10px; }
+</style>

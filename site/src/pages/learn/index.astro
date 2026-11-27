@@ -1,0 +1,9 @@
+---
+import CoursePage from '../courses/[course].astro';
+import { getLocale } from '../../lib/locale';
+import { getCourses } from '../../lib/site';
+
+const course = (await getCourses(getLocale(Astro.url.pathname))).find(({ id }) => id === 'taskboard')!;
+---
+
+<CoursePage {course} />

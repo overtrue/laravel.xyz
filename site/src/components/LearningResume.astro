@@ -1,0 +1,101 @@
+---
+import Icon from './Icon.astro';
+import { getLocale, localize } from '../lib/locale';
+import { getCourses } from '../lib/site';
+interface Props { home?: boolean }
+const { home = false } = Astro.props;
+const { locale, t, href } = localize(getLocale(Astro.url.pathname));
+const courses = (await getCourses(locale)).map(({ id, title, lessons }) => ({ id, title,
+  lessons: lessons.map(({id,data}) => ({ id, title:data.title, minutes:data.minutes })) }));
+const first = courses.find(course => course.id === 'php-composer')!.lessons[0];
+---
+<div class:list={['resume', { 'resume-home':home }]} data-learning-resume={home ? 'home' : 'orbit'}>
+  {!home && <><div class="resume-eyebrow"><Icon name="route" size={16}/><span data-resume-kicker>{t('Your next lesson','下一课')}</span></div><h2 data-resume-title>{first.title}</h2><p data-resume-meta>{t('Free course','免费课程')} · {first.minutes} {t('min','分钟')}</p></>}
+  {!home && <div class="course-progress" data-resume-progress hidden><progress value="0" max="1" aria-label={t('Learning progress','学习进度')}></progress><small></small></div>}
+  <a class="button primary" data-resume-link href={href('/learn/' + first.id + '/')}><span>{home ? t('Try my first route','试试第一条路由') : t('Start the lesson','开始这节课')}</span><Icon name="right" size={17}/></a>
+  {!home && <a class="resume-map" href={href('/courses/')}>{t('Choose a route','选择路线')}</a>}
+  <script type="application/json" data-learning-index set:html={JSON.stringify(courses).replaceAll('<','\\u003c')}/>
+</div>
+<script>
+  import { isDone, getSavedChoice } from '../scripts/learning';
+  import { lastVisitedLesson } from '../scripts/orbit';
+  import { itinerary, primaryPathFor, belongsToRoute, learningStart } from '../data/roadmap';
+  import type { CourseId } from '../data/courses';
+  import { getLocale, localize } from '../lib/locale';
+  type Course = { id:CourseId; title:string; lessons:{id:string;title:string;minutes:number}[] };
+  const { locale,t,href } = localize(getLocale(location.pathname));
+  for (const block of document.querySelectorAll<HTMLElement>('[data-learning-resume]')) {
+    const courses:Course[] = JSON.parse(block.querySelector('[data-learning-index]')!.textContent!);
+    const link = block.querySelector<HTMLAnchorElement>('[data-resume-link]')!;
+    const initialHref = link.getAttribute('href')!, initialLabel = link.querySelector('span')!.textContent!;
+    const isHome = block.dataset.learningResume === 'home';
+    function update() {
+      const last = lastVisitedLesson();
+      const visited = courses.find(course => course.lessons.some(lesson => lesson.id === last));
+      const started = courses.find(course => course.lessons.some(lesson => isDone(lesson.id)) && course.lessons.some(lesson => !isDone(lesson.id)));
+      const choice = getSavedChoice();
+      const active = Boolean(visited || started || choice || courses.some(course => course.lessons.some(lesson => isDone(lesson.id))));
+      const path = choice ?? (last && visited ? primaryPathFor(visited.id,last) : undefined);
+      const track = path?.track ?? 'web', skill = path?.skill ?? 'beginner';
+      const followPath = Boolean(path);
+      const route = itinerary(track,skill).map(id => courses.find(course => course.id === id)!);
+      const lessonsFor = (course:Course) => followPath ? course.lessons.filter(lesson => belongsToRoute(track,skill,lesson.id)) : course.lessons;
+      const currentIndex = visited ? route.indexOf(visited) : -1;
+      const targetCourse = [visited, started, ...route.slice(currentIndex + 1), ...route].find(course => course && (!followPath || route.includes(course)) && lessonsFor(course).some(lesson => !isDone(lesson.id)));
+      const firstCourse = courses.find(course => course.id === 'php-composer')!;
+      const course = active ? targetCourse : firstCourse;
+      const lessons = course ? lessonsFor(course) : [];
+      const at = Math.max(0,lessons.findIndex(lesson => lesson.id === last));
+      const lesson = [...lessons.slice(at), ...lessons.slice(0,at)].find(lesson => !isDone(lesson.id));
+      const finishedPath = !lesson && followPath ? learningStart(track,skill) : undefined;
+      link.href = !active && isHome ? initialHref : lesson ? href('/learn/' + lesson.id + '/') : href(finishedPath?.next.url ?? '/courses/#course-library');
+      let action = initialLabel;
+      if (active) {
+        action = lesson ? t('Continue learning','继续学习') : finishedPath?.next[locale] ?? t('Explore other courses','探索其他课程');
+        if (lesson && !visited && !started && choice) action = t('Start this route','开始这条路线');
+      }
+      link.querySelector('span')!.textContent = action;
+      if (isHome) {
+        const other = document.querySelector<HTMLAnchorElement>('[data-home-secondary]')!;
+        const browse = (track === 'api' && skill === 'builder') || Boolean(finishedPath);
+        other.href = href(browse ? '/courses/#course-library' : learningStart('web','beginner')!.next.url);
+        other.querySelector('span')!.textContent = browse ? t('All free courses','全部免费课程') : t('Build on the basics','从基础进阶');
+        if (active && lesson) link.title = lesson.title; else link.removeAttribute('title');
+        const context = document.querySelector<HTMLElement>('[data-home-resume-context]');
+        if (context) {
+          context.hidden = !active || !lesson;
+          if (active && lesson) context.textContent = lesson.title + ' · ' + lesson.minutes + t(' min',' 分钟');
+        }
+      } else {
+        const progress = block.querySelector<HTMLElement>('[data-resume-progress]')!;
+        progress.hidden = !active || !course;
+        if (!progress.hidden && course) {
+          const progressLessons = followPath ? route.flatMap(lessonsFor) : lessons;
+          const done = progressLessons.filter(item => isDone(item.id)).length;
+          const meter = progress.querySelector('progress')!;
+          meter.max = progressLessons.length; meter.value = done;
+          progress.querySelector('small')!.textContent = t(done + ' of ' + meter.max + ' tasks complete','已完成 ' + done + ' / ' + meter.max + ' 个任务');
+        }
+        block.querySelector('[data-resume-kicker]')!.textContent = active ? t('Continue your route','继续你的路线') : t('Your next lesson','下一课');
+        block.querySelector('[data-resume-title]')!.textContent = lesson?.title ?? t('Route complete','这条路线已完成');
+        block.querySelector('[data-resume-meta]')!.textContent = course && lesson ? course.title + ' · ' + lesson.minutes + t(' min',' 分钟') : finishedPath ? t('You’ve finished every task on this path.','这条路线上的每个任务你都完成了。') : t('Choose your next project from the course library.','去课程库挑选下一个项目。');
+      }
+    }
+    update(); window.addEventListener('pageshow',update); window.addEventListener('storage',update); window.addEventListener('orbit:activity',update);
+  }
+</script>
+<style>
+.resume { min-width:0; }
+.resume-eyebrow { display:flex; align-items:center; gap:8px; color:#f0a68f; font:.75rem/1.5 var(--mono); }
+.resume h2 { margin:20px 0 12px; font:530 clamp(1.65rem,3.2vw,3.1rem)/1.12 var(--display); max-width:20ch; letter-spacing:-.045em; text-wrap:pretty; }
+.resume h2:lang(zh-CN) { line-height:1.26; }
+.resume p { margin:0 0 21px; color:#d5d1df; font-size:.9rem; line-height:1.55; }
+.resume:not(.resume-home) .button { background:#ffe3d7; color:#572d23; border-color:#ffe3d7; }
+.resume:not(.resume-home) .button:hover { background:#fff1e9; }
+.course-progress { display:flex; align-items:center; flex-wrap:wrap; gap:8px; margin:-7px 0 19px; }
+.course-progress small { color:#ded8e6; font-size:.74rem; }
+.course-progress progress { appearance:none; display:block; width:82px; height:3px; border:0; background:#5c5569; color:#eebfab; }
+.course-progress progress::-webkit-progress-bar { background:#5c5569; } .course-progress progress::-webkit-progress-value { background:#eebfab; } .course-progress progress::-moz-progress-bar { background:#eebfab; }
+.resume-map { display:inline-flex; margin:5px 0 0 13px; font-size:.85rem; color:#ded8e6; text-underline-offset:4px; }
+.resume-map:hover { text-decoration:underline; }
+</style>

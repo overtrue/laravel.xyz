@@ -1,0 +1,166 @@
+---
+import Icon from './Icon.astro';
+import { getLocale, localize } from '../lib/locale';
+const { t } = localize(getLocale(Astro.url.pathname));
+---
+<section class="account-panel" id="account" aria-labelledby="account-title" data-account-panel>
+  <div class="account-symbol"><Icon name="key" size={22}/></div>
+  <div class="account-content">
+    <h2 id="account-title">{t('Pick up on another device','换台设备，接着学')}</h2>
+    <p data-account-description>{t('Create a free account with a passkey to sync your saved items and learning progress. Your current progress comes with you.','用通行密钥免费创建账号，就能同步收藏和学习进度。创建时会带上这台设备已有的记录。')}</p>
+    <div class="account-guest" data-guest-controls hidden>
+      <div class="account-actions"><button class="button" data-auth="register">{t('Create account','创建账号')}</button><button class="account-link" data-auth="login">{t('Sign in with a passkey','用通行密钥登录')}</button></div>
+      <details data-recover><summary>{t('Lost your passkey?','通行密钥丢了？')}</summary>
+        <form data-recovery-form><label for="orbit-recovery">{t('Recovery code','恢复码')}</label>
+          <p>{t('This creates a replacement passkey and signs out your other devices.','恢复后会创建新的通行密钥，并退出其他设备上的会话。')}</p>
+          <input id="orbit-recovery" required type="password" autocomplete="off" spellcheck="false" maxlength="80"/><button class="button" type="submit">{t('Recover account','恢复账号')}</button>
+        </form>
+      </details>
+    </div>
+    <div data-member-controls hidden>
+      <div class="account-actions"><button type="button" class="button" data-sync-now>{t('Sync now','立即同步')}</button><button class="account-link" type="button" data-sign-out>{t('Sign out','退出登录')}</button></div>
+      <details data-manage><summary>{t('Manage account','管理账号')}</summary><div class="manage-actions"><button class="account-link" data-import>{t('Import guest progress from this browser','导入这台设备的游客进度')}</button><button class="account-link remove" data-delete>{t('Delete cloud account','删除云端账号')}</button></div></details>
+    </div>
+    <div class="issued" data-issued hidden>
+      <label for="issued-code">{t('Keep your recovery code','保存好恢复码')}</label>
+      <p>{t('Store this code in your password manager. It is shown once and can replace a lost passkey.','请将它存入密码管理器。恢复码只显示这一次，丢失通行密钥时可以用它找回账号。')}</p>
+      <div><input id="issued-code" readonly autocomplete="off" spellcheck="false"/><button type="button" class="account-link" data-copy-code>{t('Copy','复制')}</button><button type="button" class="account-link" data-hide-code>{t('I saved it','我已保存')}</button></div>
+    </div>
+    <p class="account-status" role="status" data-account-message></p>
+    <noscript><p>{t('Enable JavaScript to use an account.','启用 JavaScript 即可使用账号。')}</p></noscript>
+  </div>
+</section>
+<script>
+  import { browserSupportsWebAuthn, startAuthentication, startRegistration } from '@simplewebauthn/browser';
+  import type { PublicKeyCredentialCreationOptionsJSON, PublicKeyCredentialRequestOptionsJSON } from '@simplewebauthn/browser';
+  import { getLocale, localize } from '../lib/locale';
+  import { activeAccount, canStore, guestProgress, pending, writeValue, type Account } from '../scripts/activity';
+  import { AccountError, api, connect, disconnect, synchronize, syncState } from '../scripts/account-sync';
+
+  const { t } = localize(getLocale(location.pathname));
+  const panel = document.querySelector<HTMLElement>('[data-account-panel]')!;
+  const find = <T extends HTMLElement = HTMLElement>(selector:string) => panel.querySelector<T>(selector)!;
+  const message = find('[data-account-message]'), description = find('[data-account-description]');
+  const guestText = description.textContent!;
+  const title = find('#account-title'), guestTitle = title.textContent!;
+  const issued = find('[data-issued]'), code = find<HTMLInputElement>('#issued-code');
+  const recovery = find<HTMLInputElement>('#orbit-recovery');
+  let shownFor = '', busy = false;
+  const supported = browserSupportsWebAuthn() && canStore();
+  function hideCode() { issued.hidden = true; code.value = ''; shownFor = ''; }
+  function paint() {
+    const id = activeAccount();
+    if (shownFor && id !== shownFor) hideCode();
+    find('[data-guest-controls]').hidden = Boolean(id) || !supported;
+    find('[data-member-controls]').hidden = !id;
+    title.textContent = id ? t('Your account','我的账号') : guestTitle;
+    description.textContent = id ? 'Orbit ' + id.slice(0,8) + ' · ' + ({
+      syncing:t('Syncing…','正在同步…'), offline:t('Changes pending on this device','更改已暂存在这台设备'),
+      synced:t('Synced with your account','已与账号同步'), local:t('Saved on this device','记录在本机'), expired:t('Sign in again','请重新登录'),
+    }[syncState()]) : guestText;
+    const hint = document.querySelector<HTMLElement>('[data-device-hint]');
+    if (hint) hint.textContent = id ? t('Account & sync','账号与同步') : t('Local progress · Sign in','本机进度 · 登录同步');
+    for (const button of panel.querySelectorAll('button')) button.disabled = busy;
+  }
+  function friendly(error:unknown) {
+    if (error instanceof AccountError) {
+      if (error.status === 429) return t('Too many attempts. Try again in a minute.','尝试较多，请稍等一分钟再试。');
+      if (error.message === 'invalid_recovery') return t('Check the recovery code and try again.','请核对恢复码后重试。');
+      if (error.message === 'expired_flow') return t('This sign-in expired. Start again.','此次登录已超时，请重新开始。');
+      if (error.message === 'invalid_passkey') return t('This passkey could not be verified. Choose your Artisan Orbit passkey or use recovery.','无法验证此通行密钥。请选择本站的通行密钥，或使用恢复码。');
+      if (error.message === 'pending') return t('Reconnect and sync your pending changes before signing out.','请联网同步待上传的进度，再退出账号。');
+    }
+    if (error instanceof Error && ['NotAllowedError','AbortError','InvalidStateError'].includes(error.name)) return t('Passkey setup or sign-in was not completed. You can try again.','通行密钥操作未完成，可以重试。');
+    return t('Could not reach your account. Please try again.','暂时无法连接账号服务，请重试。');
+  }
+  async function run(action:()=>Promise<void>) {
+    if (busy) return;
+    busy = true; message.textContent = ''; paint();
+    try { await action(); } catch (error) { message.textContent = friendly(error); }
+    finally { busy = false; paint(); }
+  }
+  type Result = {account:Account;recoveryCode?:string};
+  async function sign(mode:'login'|'register'|'recover') {
+    const path = 'auth/' + mode + '/';
+    let result:Result;
+    if (mode === 'login') {
+      const {options} = await api<{options:PublicKeyCredentialRequestOptionsJSON}>(path+'options','POST',{});
+      const credential = await startAuthentication({optionsJSON:options});
+      result = await api<Result>(path+'finish','POST',{credential});
+    } else {
+      const {options} = await api<{options:PublicKeyCredentialCreationOptionsJSON}>(path+'options','POST',mode === 'recover' ? {code:recovery.value} : {});
+      const credential = await startRegistration({optionsJSON:options});
+      const initial = mode === 'register' ? await guestProgress() : undefined;
+      result = await api<Result>(path+'finish','POST',{credential,initial});
+    }
+    recovery.value = ''; find<HTMLDetailsElement>('[data-recover]').open = false;
+    connect(result.account);
+    if (result.recoveryCode) {
+      shownFor = result.account.id; code.value = result.recoveryCode; issued.hidden = false;
+    }
+    if (pending(result.account.id).size) await synchronize();
+    message.textContent = t('Signed in. Your progress is ready.','已登录，可以继续学习。');
+  }
+  find('[data-auth=register]').addEventListener('click',() => run(() => sign('register')));
+  find('[data-auth=login]').addEventListener('click',() => run(() => sign('login')));
+  find('form').addEventListener('submit',event => { event.preventDefault(); void run(() => sign('recover')); });
+  find('[data-sync-now]').addEventListener('click',() => run(async () => {
+    await synchronize(); message.textContent = syncState() === 'synced' ? t('Up to date.','已同步到最新。') : t('Sync is pending. Try again when connected.','还有待同步的记录，请联网后重试。');
+  }));
+  find('[data-import]').addEventListener('click',() => run(async () => {
+    const id = activeAccount(); if (!id) return;
+    const values = await guestProgress(true);
+    if (activeAccount() !== id) return;
+    for (const [key,value] of Object.entries(values)) writeValue(key,value);
+    window.dispatchEvent(new Event('orbit:activity'));
+    await synchronize();
+    message.textContent = syncState() === 'synced' ? t('Guest progress merged.','游客进度已合并。') : t('Guest progress is queued to sync.','游客进度已加入同步队列。');
+  }));
+  find('[data-sign-out]').addEventListener('click',() => run(async () => {
+    const id = activeAccount(); if (!id) return;
+    await synchronize(); if (activeAccount() !== id) return;
+    if (pending(id).size) { await synchronize(); if (pending(id).size) throw new AccountError(503,'pending'); }
+    if (activeAccount() !== id) return;
+    await api('logout','POST',{account:id}); disconnect(id); hideCode();
+    find<HTMLDetailsElement>('[data-manage]').open = false;
+    message.textContent = t('Signed out. Your guest progress is available.','已退出，当前显示游客进度。');
+  }));
+  find('[data-delete]').addEventListener('click',() => run(async () => {
+    const id = activeAccount(); if (!id || !confirm(t('Permanently delete this account, its passkey and all cloud progress?','永久删除这个账号、通行密钥的登录权限和所有云端进度？'))) return;
+    await api('account','DELETE',{account:id}); disconnect(id); hideCode();
+    find<HTMLDetailsElement>('[data-manage]').open = false;
+    message.textContent = t('Cloud account deleted.','云端账号已删除。');
+  }));
+  find('[data-copy-code]').addEventListener('click',async () => {
+    try { await navigator.clipboard.writeText(code.value); message.textContent = t('Recovery code copied.','恢复码已复制。'); }
+    catch { code.select(); message.textContent = t('Select and copy this code.','请选择并复制恢复码。'); }
+  });
+  find('[data-hide-code]').addEventListener('click',() => { hideCode(); find('[data-sync-now]').focus(); });
+  window.addEventListener('orbit:activity',paint);
+  window.addEventListener('orbit:sync-status',() => {
+    paint();
+    if (syncState() === 'expired') message.textContent = t('Sign in again to reconnect to your cloud progress.','请重新登录，继续同步云端进度。');
+  });
+  paint();
+  if (supported) void synchronize(true);
+  else message.textContent = t('Use a browser with passkeys and site storage to sync. You can keep learning as a guest.','请在支持通行密钥、允许网站存储的浏览器中同步。也可以继续以游客身份学习。');
+</script>
+<style>
+.account-panel { display:grid; grid-template-columns:auto minmax(0,1fr); align-items:start; gap:clamp(12px,2.1vw,26px); margin-top:26px; padding:clamp(18px,2.3vw,28px); background:#eef1eb; border-left:3px solid #709079; scroll-margin:18px; }
+.account-symbol { width:38px; height:38px; display:grid; place-items:center; color:#365b46; border:1px solid #b8c5b6; }
+.account-panel h2 { font:560 clamp(1.2rem,2.1vw,1.7rem)/1.2 var(--display); letter-spacing:-.03em; }
+.account-panel p { margin:5px 0; max-width:66ch; color:#506153; font-size:.89rem; line-height:1.55; }
+.account-actions,.manage-actions,.issued>div { display:flex; flex-wrap:wrap; align-items:center; gap:6px 16px; }
+.account-actions { margin:12px 0 6px; }
+.account-actions .button { color:#fff; background:#355744; border-color:#355744; }
+.account-panel .button { min-height:38px; padding:7px 12px; font-size:.85rem; }
+.account-link,.account-panel summary { color:#385b46; font-size:.84rem; font-weight:580; cursor:pointer; }
+.account-link { border:0; background:transparent; padding:4px 0; min-height:34px; text-align:left; }
+.account-link:hover { text-decoration:underline; } .account-panel summary { width:fit-content; padding:6px 0; }
+.account-panel form,.issued { margin-top:7px; } .account-panel label { display:block; font-size:.88rem; font-weight:600; }
+.account-panel input { min-width:0; max-width:100%; padding:8px; border:1px solid #98a697; border-radius:3px; background:#fff; color:var(--ink); font:.8rem/1.6 var(--mono); }
+.account-panel form input { width:min(24em,100%); margin:4px 5px 4px 0; } .issued { padding:14px; background:#fcf8e9; border:1px solid #c9bd96; }
+.issued input { width:38ch; } .issued p { color:#645a3c; }
+.account-panel .remove { color:#9a3029; } .account-status:empty { display:none; }
+@media(max-width:450px) { .account-panel { grid-template-columns:1fr; gap:9px; } .account-symbol { width:32px; height:32px; } }
+</style>

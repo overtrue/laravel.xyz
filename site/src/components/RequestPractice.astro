@@ -1,0 +1,72 @@
+---
+import Icon from './Icon.astro';
+import { getLocale, localize } from '../lib/locale';
+
+interface Props { lesson: 'laravel-request-lab' | 'api-resource-pagination' }
+const { lesson } = Astro.props;
+const { t } = localize(getLocale(Astro.url.pathname));
+const firstRoute = lesson === 'laravel-request-lab';
+const title = firstRoute ? t('How much for two notebooks?', '两本笔记本多少钱？') : t('What changes on page two?', '翻到第二页，什么变了？');
+const tasks = [t('Buy seeds','买种子'), t('Water the plants','给花浇水')];
+const cases = firstRoute ? [
+  { label:t('1 notebook','一本'), url:'/lab/estimate?units=1', body:{units:1,total_cents:399}, why:t('One notebook costs 399 cents. Try changing the quantity.', '一本的价格是 399 美分。换个数量试试。') },
+  { label:t('2 notebooks','两本'), url:'/lab/estimate?units=2', body:{units:2,total_cents:798}, why:t('The address still calls the same route. Two notebooks at 399 cents each cost 798 cents.', '访问的还是同一条路由。两本各 399 美分，总价是 798 美分。') },
+  { label:t('No quantity','不填数量'), url:'/lab/estimate', body:{errors:{units:['The units field is required.']}}, why:t('Laravel found the route. The 422 reply names the missing field, units.', 'Laravel 找到了路由。422 表示输入有问题，错误信息指出缺少数量字段 units。') },
+] : [
+  ...tasks.map((name, index) => ({
+    label:index === 0 ? t('Page one','第一页') : t('Page two','第二页'),
+    url:'/api/v1/tasks?per_page=1&page=' + (index+1),
+    body:{ data:[{id:2-index,title:name,done:false}], meta:{current_page:index+1,per_page:1,total:2} },
+    why:index === 0 ? t('The list has two tasks. This page holds one, with the newest task first.', '清单一共有两条任务。每页显示一条，最新的排在前面。') : t('The task ID and current page changed. The page size and total stayed the same.', '任务 ID 和当前页码都变了。每页的条数和任务总数没有变。'),
+  })),
+  { label:t('51 per page','每页 51 条'), url:'/api/v1/tasks?per_page=51', body:{errors:{per_page:['The per page field must be between 1 and 50.']}}, why:t('The route accepts 1–50 items per page. Laravel rejects 51 before it reads any tasks.', '路由每页接受 1 到 50 条。请求 51 条时，Laravel 会在查任务之前返回校验错误。') },
+];
+
+function excerpt(body:object) {
+  const fields = Object.entries(body).map(([key,value]) => {
+    const json = JSON.stringify(value,null,2).replace(/\n\s*/g,' ');
+    return '  ' + JSON.stringify(key) + ': ' + json;
+  });
+  return '{\n' + fields.join(',\n') + '\n}';
+}
+---
+<section class="practice" id="try-it" aria-labelledby="practice-title">
+  <div class="practice-copy">
+    <span class="practice-label"><Icon name="terminal" size={16}/>{t('Request preview','请求预览')}</span>
+    <h2 id="practice-title">{title}</h2>
+    <p>{firstRoute ? t('Pick a quantity and see the reply from the example route. No setup needed.', '选一个数量，看看示例路由会如何回复。打开网页就能练。') : t('Pick a request and compare the example responses. Each page starts with one task.', '选一个请求，对比示例响应。先从每页一条任务开始。')}</p>
+  </div>
+  <fieldset class="practice-cases">
+    <legend class="sr-only">{t('Choose an example request','选择示例请求')}</legend>
+    <div class="options">{cases.map((item,i) => <label><input class="sr-only" type="radio" name="request-example" value={i} aria-controls={'reply-'+i} aria-describedby={'response-note-'+i} checked={i===0}/><span>{item.label}</span></label>)}</div>
+    {cases.map((item,i) => <div class="example" data-example={i} id={'reply-'+i}>
+      <div class="http"><b>GET</b><code>{item.url}</code></div>
+      <div class="reply"><div class="reply-head"><span>{t('Response excerpt','响应节选')}</span><span>{'errors' in item.body ? t('Validation error','输入有误') : t('OK','成功')} <strong class:list={{invalid:'errors' in item.body}}>{'errors' in item.body ? '422' : '200'}</strong></span></div>
+        <pre dir="ltr"><code>{excerpt(item.body)}</code></pre></div>
+      <p class="explain" id={'response-note-'+i}>{item.why}</p>
+    </div>)}
+  </fieldset>
+</section>
+<style>
+  .practice { min-width:0; padding:clamp(14px,3vw,28px); border:1px solid var(--line); border-top:3px solid var(--signal); background:var(--surface); }
+  .practice-label,.http,.reply-head,.options { display:flex; align-items:center; }
+  .practice-label { gap:7px; color:var(--accent); font:var(--caption)/1.5 var(--mono); }
+  h2 { margin:9px 0 6px; font:550 clamp(1.35rem,2.6vw,2.1rem)/1.18 var(--display); letter-spacing:-.035em; }
+  .practice-copy p,.explain { margin:0; font-size:.95rem; line-height:1.55; color:var(--muted); }
+  .practice-cases { min-width:0; margin:15px 0 10px; padding:0; border:0; }
+  .options { flex-wrap:wrap; gap:5px; padding:0 0 12px; }
+  .options label { position:relative; cursor:pointer; }
+  .options span { display:flex; align-items:center; padding:7px 12px; min-height:38px; border:1px solid var(--line-strong); font-weight:550; font-size:.86rem; }
+  .options input:checked + span { border-color:var(--ink); background:var(--ink); color:white; }
+  .options input:focus-visible + span { outline:2px solid var(--accent); outline-offset:2px; }
+  .example { display:none; }
+  .practice-cases:has(input[value="0"]:checked) [data-example="0"],.practice-cases:has(input[value="1"]:checked) [data-example="1"],.practice-cases:has(input[value="2"]:checked) [data-example="2"] { display:block; }
+  .http,.reply { background:var(--night); color:var(--night-ink); padding:11px 14px; }
+  .http { gap:9px; align-items:baseline; border-bottom:1px solid var(--night-raised); font:.83rem/1.5 var(--mono); }
+  .http b { color:var(--flare); } .http code { overflow-wrap:anywhere; }
+  .reply-head { justify-content:space-between; gap:10px; font:var(--caption)/1.5 var(--mono); color:var(--night-muted); }
+  .reply-head strong { color:#bce8be; }.reply-head .invalid { color:#ffb59c; }
+  pre { margin:7px 0 3px; white-space:pre-wrap; overflow-wrap:anywhere; font:.81rem/1.5 var(--mono); }
+  .explain { margin-top:9px; color:var(--ink); }
+  @media (max-width:495px) { .options span { padding-inline:8px; } }
+</style>

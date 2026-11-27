@@ -1,0 +1,130 @@
+---
+import Icon from './Icon.astro';
+import { getLocale, localize } from '../lib/locale';
+interface Props { lesson:'first-project'|'form-validation'|'api-validated-writes' }
+const { lesson } = Astro.props;
+const { t } = localize(getLocale(Astro.url.pathname));
+const blade = lesson === 'first-project', api = lesson === 'api-validated-writes';
+const heading = blade ? t('What does Blade put on the page?','Blade 会在页面上显示什么？') : api ? t('Send your first task to the API','向接口提交一条任务') : t('Give your task a title','给任务起个名字');
+const task = t('Read the first chapter','读完入门篇');
+const states = [
+  {label:t('Empty list','空清单'), code:'$tasks = collect([]);', output:t('No tasks yet.','还没有任务。')},
+  {label:t('One task','有任务'), code:"$task->done = false;", output:task},
+  {label:t('Completed','已完成'), code:"$task->done = true;", output:task+t(' (done)','（已完成）')},
+];
+---
+<section class="task-practice" id="try-it" data-task-practice={lesson} aria-labelledby="practice-title">
+  <span class="practice-label"><Icon name={blade?'layers':api?'api':'play'} size={15}/>{t('Browser practice','浏览器练习')}</span>
+  <h2 id="practice-title">{heading}</h2>
+  <p class="prompt">{blade ? t('Switch the sample data and watch the same template render each state.','切换示例数据，看看同一个模板会怎样显示清单。') : api ? t('Send a blank title, then try a real one. Include done to see which fields the endpoint accepts.','先提交空标题，再写一个标题试试。勾选 done，看看接口会接受哪些字段。') : t('Submit an empty title, then name a task and add it. This preview keeps the list on this page.','先提交一个空标题，再写下你想做的事。这个练习只会更新本页的清单。')}</p>
+
+  {blade ? <fieldset class="board-states">
+    <legend class="sr-only">{t('Choose task data','选择任务数据')}</legend>
+    <div class="options">{states.map((state,i) => <label><input class="sr-only" type="radio" name="blade-state" value={i} checked={i===1} aria-controls={'view-'+i} aria-describedby={'output-'+i}/><span>{state.label}</span></label>)}</div>
+    {states.map((state,i) => <div class="board-result" id={'view-'+i} data-board-state={i}>
+      <div class="line"><Icon name="code" size={16}/><code>{state.code}</code></div>
+      <div class="paper"><div class="address"><Icon name="globe" size={14}/><code>/tasks</code></div>
+        <strong>{t('Task list','任务清单')}</strong><p id={'output-'+i} class:list={['sample-row', {empty:i===0}]}><Icon name={i===2?'check':i===1?'station':'list'} size={16}/>{state.output}</p>
+      </div>
+    </div>)}
+  </fieldset> : <>
+    <form class="entry" data-task-form hidden>
+      <label for="practice-input">{t('Task title','任务标题')}</label>
+      <div class="entry-row"><input id="practice-input" name="title" type="text" maxlength={api ? undefined : 120} autocomplete="off" placeholder={t('Read the next chapter','读下一章')} aria-describedby="practice-error"/>
+        <button class="button primary" type="submit">{api ? t('Send request','发送请求') : t('Add task','添加任务')}<Icon name="right" size={15}/></button>
+      </div>
+      {api && <label class="include-done"><input type="checkbox" name="done"/><code>{'"done": true'}</code></label>}
+      <p id="practice-error" hidden></p>
+    </form>
+    <div class={api ? 'console' : 'paper'} data-form-output hidden>
+      {api ? <><div class="address"><b>POST</b><code>/api/v1/tasks</code><strong data-http-status></strong></div><details data-sent hidden><summary>{t('Request body','提交的内容')}</summary><pre></pre></details><pre data-api-body>{t('Send a request to see its JSON response.','发送请求后，这里会显示 JSON 响应。')}</pre></> :
+        <><div class="address"><Icon name="globe" size={14}/><code>/tasks</code></div><strong>{t('Task list','任务清单')}</strong><ul class="task-rows" data-task-rows><li class="empty" data-empty>{t('No tasks yet.','还没有任务。')}</li></ul></>}
+    </div>
+    <p class="result-note" role="status" data-practice-status></p>
+    <noscript><div class="paper">
+      <details><summary>{t('Submit an empty title','提交空标题')}</summary><p>{api ? t('422 · errors.title names the missing field. The task count stays at zero.','422 · errors.title 指出缺少标题，任务数仍为零。') : t('The form shows a title error and the list stays empty.','表单提示缺少标题，清单中仍然没有任务。')}</p></details>
+      <details><summary>{t('Submit “Read the next chapter”','提交「读下一章」')}</summary><p>{api ? t('201 · The response includes the new title and done: false.','201 · 响应包含新标题，done 为 false。') : t('The list now shows one task, “Read the next chapter”.','清单出现一条名为「读下一章」的任务。')}</p></details>
+    </div></noscript>
+  </>}
+</section>
+<script>
+  import { getLocale, localize } from '../lib/locale';
+  const {t} = localize(getLocale(location.pathname));
+  const form = document.querySelector<HTMLFormElement>('[data-task-form]');
+  if (form) {
+    const practice = form.closest<HTMLElement>('[data-task-practice]')!;
+    const input = form.elements.namedItem('title') as HTMLInputElement;
+    const error = form.querySelector<HTMLElement>('#practice-error')!;
+    const status = practice.querySelector<HTMLElement>('[data-practice-status]')!;
+    const body = practice.querySelector<HTMLElement>('[data-api-body]');
+    let count = 0;
+    form.hidden = false;
+    practice.querySelector<HTMLElement>('[data-form-output]')!.hidden = false;
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      const title = input.value.trim();
+      const sentDone = (form.elements.namedItem('done') as HTMLInputElement | null)?.checked;
+      const invalid = !title || Array.from(title).length > 120;
+      const invalidMessage = !title ? t('Enter a title for this task.','请填写任务标题。') : t('Use 120 characters or fewer.','标题最多 120 个字符。');
+      error.hidden = !invalid;
+      error.textContent = invalid ? invalidMessage : '';
+      input.setAttribute('aria-invalid',String(invalid));
+      if (!invalid) count++;
+      if (body) {
+        const sent = practice.querySelector<HTMLDetailsElement>('[data-sent]')!;
+        sent.hidden = false;
+        sent.querySelector('pre')!.textContent = JSON.stringify(sentDone ? {title:input.value,done:true} : {title:input.value},null,2);
+        const http = practice.querySelector<HTMLElement>('[data-http-status]')!;
+        http.textContent = invalid ? '422' : '201';
+        http.toggleAttribute('data-error',invalid);
+        const message = !title ? 'The title field is required.' : 'The title field must not be greater than 120 characters.';
+        body.textContent = JSON.stringify(invalid ? {message,errors:{title:[message]}} : {data:{id:count,title,done:false}},null,2);
+      } else if (!invalid) {
+        const rows = practice.querySelector<HTMLElement>('[data-task-rows]')!;
+        rows.querySelector('[data-empty]')?.remove();
+        const row = document.createElement('li');
+        row.textContent = title;
+        rows.prepend(row);
+        input.value = '';
+      }
+      const saved = body && sentDone ? t('The API accepted the title. The new task still has done set to false.','接口接受了标题。新任务的 done 仍然是 false。') : t('Task added.','任务已添加。');
+      const total = t(count === 1 ? '1 task in the list.' : count+' tasks in the list.','清单里有 '+count+' 条任务。');
+      status.textContent = (invalid ? invalidMessage : saved)+' '+total;
+      if (invalid) input.focus();
+    });
+  }
+</script>
+<style>
+  .task-practice { min-width:0; padding:clamp(15px,2.8vw,28px); border:1px solid var(--line); border-top:3px solid var(--signal); background:var(--surface); }
+  .practice-label,.address,.line,.sample-row,.options { display:flex; align-items:center; gap:8px; }
+  .practice-label { color:var(--accent); font:.74rem/1.45 var(--mono); }
+  h2 { margin:8px 0 6px; font:550 clamp(1.35rem,2.6vw,2rem)/1.19 var(--display); letter-spacing:-.035em; }
+  .prompt,.result-note { margin:0; color:var(--muted); font-size:.94rem; line-height:1.54; }
+  .result-note:not(:empty) { margin-top:10px; color:var(--ink); }
+  .board-states { margin:14px 0 0; border:0; padding:0; min-width:0; }
+  .options { flex-wrap:wrap; gap:5px; margin-bottom:10px; }
+  .options label { position:relative; cursor:pointer; }
+  .options span { display:inline-flex; align-items:center; min-height:39px; padding:6px 12px; border:1px solid var(--line-strong); font-weight:550; font-size:.87rem; }
+  .options input:checked + span { background:var(--ink); border-color:var(--ink); color:white; }
+  .options input:focus-visible + span { outline:2px solid var(--accent); outline-offset:2px; }
+  .board-result { display:none; }
+  .board-states:has(input[value="0"]:checked) [data-board-state="0"],.board-states:has(input[value="1"]:checked) [data-board-state="1"],.board-states:has(input[value="2"]:checked) [data-board-state="2"] { display:block; }
+  .line,.console { padding:12px 15px; background:var(--night); color:var(--night-ink); font:.84rem/1.5 var(--mono); }
+  .line :global(svg),.console b { color:var(--flare); }
+  .paper { border:1px solid #d8d2df; background:#faf9fc; padding:12px 15px; color:#342f42; }
+  .address { min-width:0; font:.75rem/1.45 var(--mono); }
+  .paper>.address { padding-bottom:8px; margin-bottom:9px; color:#695f75; border-bottom:1px solid #ded9e4; }
+  .paper>strong { font-size:1.08rem; }
+  .sample-row,.task-rows { margin:7px 0 1px; font-size:.9rem; overflow-wrap:anywhere; }
+  .sample-row :global(svg) { color:#655383; flex:none; }.empty { color:var(--muted); }
+  .entry { margin:14px 0; }.entry>label:first-child { font-size:.85rem; font-weight:600; }
+  .entry-row { display:flex; flex-wrap:wrap; gap:6px; margin-top:4px; }
+  .entry-row input { flex:1 1 9rem; min-width:0; width:100%; min-height:44px; border:1px solid var(--control-border); background:white; color:var(--ink); padding:8px 10px; font:inherit; }
+  .entry-row input[aria-invalid=true] { border-color:var(--accent); }
+  .entry-row button { flex:none; }.include-done { display:flex; align-items:center; gap:6px; margin-top:8px; font-size:.83rem; cursor:pointer; width:fit-content; }.include-done input { accent-color:var(--accent); }
+  #practice-error { margin:5px 0 0; color:var(--accent); font-size:.85rem; }
+  .task-rows { padding:0; list-style:none; }.task-rows :global(li) { padding-block:4px; }.task-rows :global(li+li) { border-top:1px solid var(--line); }
+  .console strong { margin-left:auto; color:#b5e5ba; }.console [data-error] { color:var(--flare); }
+  .console pre { max-height:19rem; overflow:auto; margin:8px 0 0; padding-top:8px; border-top:1px solid var(--night-raised); color:var(--night-ink); font:inherit; white-space:pre-wrap; overflow-wrap:anywhere; }
+  .console details { margin-top:7px; color:var(--night-muted); }.console summary,.paper summary { cursor:pointer; padding-block:4px; }
+</style>
